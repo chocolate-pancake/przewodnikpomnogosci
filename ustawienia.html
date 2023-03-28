@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ustawienia | Przewodnik po Mnogości</title>
+        <link rel="icon" href="ampersand-icon.png">
+        <meta name="color-scheme" content="dark light">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="System Tęczowego Chaosu">
+        <meta name="robots" content="noindex">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js" defer></script>
+        <script src="settings.js" defer></script>
+    </head>
+    <body>
+        <div id="shadow" class="shadow"></div>
+        <div id="sidebar-shadow" class="shadow"></div>
+        
+        <a class="to-main" href="#main">Przejdź do zawartości</a>
+        
+        <header class="header">
+            <button class="menu-icon" type="button" onclick="menu()">
+                <img src="menu-icon.png" alt="Menu" title="Menu">
+            </button>
+            <a href="index" class="title">Przewodnik po Mnogości</a>
+            <a href="ustawienia" class="settings desktop">
+                <img src="settings.png" alt="ustawienia">
+            </a>
+        </header>
+        
+        <a href="ustawienia" class="settings mobile">
+            <img src="settings.png" alt="ustawienia">
+        </a>
+        
+            <aside class="sidebar" id="sidebar">
+                <button class="menu-icon" type="button" onclick="menu()">
+                    <img src="menu-icon.png" alt="Menu" title="Menu">
+                </button>
+                <nav class="menu-options">
+                    <a href="index" id="index" class="option">Strona główna</a>    
+                    <a href="terminologia" id="terminologia" class="option">Terminologia</a>    
+                    <a href="dysocjacyjne-zaburzenie-tozsamosci" id="dysocjacyjne-zaburzenie-tozsamosci" 
+                    class="option">Dysocjacyjne zaburzenie tożsamości</a>  
+                    <a href="powstawanie" id="powstawanie" class="option">Powstawanie</a> 
+                    <a href="system" id="system" class="option">System</a>       
+                    <a href="wspolosoby" id="wspolosoby" class="option">Współosoby</a>   
+                    <a href="frontowanie" class="option" id="frontowanie">Frontowanie</a> 
+                    <a href="wewnetrzny-swiat" id="wewnetrzny-swiat" class="option">Wewnętrzny świat</a> 
+                    <a href="materialy" id="materialy" class="option">Materiały</a>
+                    <a href="zrodla" id="zrodla" class="option">Źródła</a>
+                </nav>
+            </aside>
+
+        <main id="main">
+
+            <h1>Ustawienia</h1>
+
+            <p>
+                Wszystkie twoje wybory są przechowywane bezpośrednio w pamięci przeglądarki, której obecnie używasz.
+                Oznacza to, że zamknięcie okna ich nie zresetuje, ale jeżeli usuniesz pliki cookie
+                (ciasteczka) i inne dane witryn, zostaną one przywrócone do stanu początkowego.
+            </p>
+
+            <!-- Dajemy najpierw czcionkę czy zaimki? - Natasza
+            Po męczeniu się z Narratorem głosuję na zaimki - Jonatan
+            Noo, osoby ze słabym wzrokiem zawsze mogą sobie powiększyć ekran, a czytnik ekranowy to ból istnienia - Tomek
+            Dobra, to to taka przypominajka dla nas, żeby tego z powrotem nie przestawiać - Natasza -->
+
+            
+
+
+            <p>Twoje <a href="https://zaimki.pl/zaimki" target="_blank" class="external">zaimki</a>:</p>
+
+                <label class="description">
+                    <input type="radio" name="pronouns" class="setting" id="unspecified" onclick="pronouns('unspecified')">
+                    <span class="radio"> </span>
+                    dowolne (byłxś pewnx)
+                </label>
+                <label class="description">
+                    <input type="radio" name="pronouns" class="setting" id="masculine" onclick="pronouns('masculine')">
+                    <span class="radio"> </span>
+                    męskie (byłeś pewny)
+                </label>
+                <label class="description">
+                    <input type="radio" name="pronouns" class="setting" id="feminine" onclick="pronouns('feminine')">
+                    <span class="radio"> </span>
+                    żeńskie (byłaś pewna)
+                </label>
+                <label class="description">
+                    <input type="radio" name="pronouns" class="setting" id="neutral" onclick="pronouns('neutral')">
+                    <span class="radio"> </span>
+                    neutralne (byłoś pewne)
+                </label>
+                <label class="description">
+                    <input type="radio" name="pronouns" class="setting" id="postgender" onclick="pronouns('postgender')">
+                    <span class="radio"> </span>
+                    postpłciowe (byłuś pewnu)
+                </label>
+                
+                
+                <p>Czcionka:</p>
+
+                <label class="description">
+                    <input type="radio" name="font" class="setting" id="16px" onclick="font('16px')">
+                    <span class="radio"> </span>
+                    mała 
+                </label>
+                <label class="description">
+                    <input type="radio" name="font" class="setting" id="20px" onclick="font('20px')">
+                    <span class="radio"> </span>
+                    średnia
+                </label>
+                <label class="description">
+                    <input type="radio" name="font" class="setting" id="24px" onclick="font('24px')">
+                    <span class="radio"> </span>
+                    duża  
+                </label>
+                <label class="description">
+                    <input type="radio" name="font" class="setting" id="28px" onclick="font('28px')">
+                    <span class="radio"> </span>
+                    bardzo duża 
+                </label>
+                <label class="description">
+                    <input type="radio" name="font" class="setting" id="32px" onclick="font('32px')">
+                    <span class="radio"> </span>
+                    ogromna 
+                </label>
+
+                <br>
+                <!-- Koniecznie do usunięcia potem! - Jonatan -->
+                
+            <label>
+                <input type="checkbox" id="underlineLinks" onclick="link()">
+                podkreślenia linków
+            </label>
+
+<!-- 
+            <label>
+                <input type="checkbox" id="reducedMotion" onclick="reduceMotion()">
+                wyłącz animacje
+            </label> -->
+
+
+
+            <div class="footer">
+                <i>„Ależ oczywiście to dzieje się w twojej głowie, Harry, tylko skąd, u licha, wniosek, że wobec tego nie dzieje się to naprawdę?”</i>
+
+<p>Jesteśmy poligenicznym, zapełnionym introjektowymi, poliwielorakim, blurianowym, poliświadomym systemem funkcjonującym pod nazwą <span class="name">System Tęczowego Chaosu</span> . Chaos, bo cóż, nasza wewnętrzna organizacja pogrążona jest w chaosie. Tęczowy, jak by się można było domyślić, wziął się z naszego dużego powiązania ze społecznością LGBTQ+, a także reprezentuje naszą różnorodność – w sensie metaforycznym, a dla niektórych także dosłownym (kilkoro z nas ma synestezję) jesteśmy pełną gamą najróżniejszych kolorów. Niewiele można o nas powiedzieć, żeby odnosiło się to do wszystkich, poza tym, że bardzo się od siebie różnimy. Dlatego kiedy piszemy „my”, mamy na myśli tylko część z nas. Naszą misją jest walczyć o tolerancję i równouprawnienie dla osób mnogich i wszystkich innych marginalizowanych grup. Całym sercem podpisujemy się pod <a href="https://kinhost.org/Movement/ManifestoYouDontGetToDefineUsAnymore" class="external" target="_blank">manifestem The Crisses</a>. Nic o nas bez nas. Nie będziecie nas dłużej definiować.</p>
+
+
+<p>Kontakt:
+    <a href="mailto:systemteczowegochaosu@gmail.com" class="external">systemteczowegochaosu@gmail.com</a></p>
+    
+    <p><a href="https://www.youtube.com/channel/UCDGJCOfdfaO-rN-3vrzCY-g" target="_blank" rel="noopener noreferrer" class="external">Przewodnik po Mnogości na YouTube</a></p>
+    
+    <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external">System Tęczowego Chaosu na YouTube</a></p>
+    
+    <p><a href="https://discord.gg/SVRTZzkWQC" target="_blank" rel="noopener noreferrer" class="external">Mnoga Przestrzeń na discordzie</a></p>
+    
+    <p>Nie używamy ciasteczek, bo nawet nie wiemy, jak i po co.</p>
+    
+    <p>Będziemy niezwykle wdzięczne za każde udostępnienie strony, nawet jeżeli jedynie wyślecie link do osoby znajomej albo nawet siebie, a także podlinkowanie do nas na witrynach w jakikolwiek sposób nawiązujących do mnogości. Pomoże to Przewodnikowi po Mnogości wyświetlać się wyżej w wyszukiwaniach, niż medyczne strony o dysocjacyjnym zaburzeniu tożsamości zdawkowo wspominające o kilku "osobowościach" i ogólnych objawach.</p>
+    
+    <p>Chcemy uczynić nasze treści dostępnymi dla każdego. Jeżeli jest coś, co utrudnia ci korzystanie z witryny, napisz do nas. Postaramy się rozwiązać ten problem.</p>
+    
+    <p>Strona ma wyłącznie charakter informacyjny i nie powinna być używania w celu diagnozy ani leczenia. Nie bierzemy na siebie odpowiedzialności za żadne decyzje osób czytających podjęte pod wpływem znalezionych tutaj treści.</p>
+
+
+</div>
+
+
+        </main>
+    </body>
+</html>

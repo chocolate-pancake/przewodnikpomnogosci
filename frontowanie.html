@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Frontowanie – różne osoby kontrolujące ciało | Przewodnik po Mnogości</title>
+        <link rel="icon" href="ampersand-icon.png">
+        <meta name="color-scheme" content="dark light">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="System Tęczowego Chaosu">
+        <meta name="description" content="Frontowanie to inaczej kontrolowanie ciała przez jedną z osób należących do systemu. Ciało może kontrolować jedna osoba, kilka osób na raz (współfrontowanie), albo żadna z nich (autopilot). Inne osoby mogą być współświadome i biernie wpływać na działania osoby frontującej.">
+        <meta name="twitter:description" content="Frontowanie to inaczej kontrolowanie ciała przez jedną z osób należących do systemu. Ciało może kontrolować jedna osoba, kilka osób na raz (współfrontowanie), albo żadna z nich (autopilot). Inne osoby mogą być współświadome i biernie wpływać na działania osoby frontującej.">
+        <meta property="og:description" content="Frontowanie to inaczej kontrolowanie ciała przez jedną z osób należących do systemu. Ciało może kontrolować jedna osoba, kilka osób na raz (współfrontowanie), albo żadna z nich (autopilot). Inne osoby mogą być współświadome i biernie wpływać na działania osoby frontującej.">
+        <!-- <meta name="keywords" content="frontowanie, front, frontowanie mnogość, front mnogość, frontowanie system, front system, frontowanie współosoby, front współosoby, mieszanie mnogość, zamazywanie mnogość, mieszanie system, zamazywanie system, współświadomość, współfrontowanie, autopilot, autopilot mnogość, autopilot system, wywoływacz mnogość, wywoływacz system, frontowanie dysocjacyjne zaburzenie tożsamości, mieszanie dysocjacyjne zaburzenie tożsamości, zamazywanie dysocjacyjne zaburzenie tożsamości, wywoływacz dysocjacyjne zaburzenie tożsamości, zablokowany front, utknięcie na froncie, zablokowanie na froncie, przestrzeń frontowa, bierny wpływ, bierny wpływ mnogość, bierny wpły system, bierny wpływ dysocjacyjne zaburzenie tożsamości, projekcja, projekcja mnogość, projekcja system, projekcja dysocjacyjne zaburzenie tożsamości, projekcja astralna, maskowanie, maskowanie mnogość, maskowanie system, maskowanie dysocjacyjne zaburzenie tożsamości, singletsona, zatłoczony front, zamiana mnogość, zamiana system, zamiana dysocjacyjne zaburzenie tożsamości"> -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js" defer></script>
+        <script src="settings.js" defer></script>
+    </head>
+    <body>
+        <div id="shadow" class="shadow"></div>
+        <div id="sidebar-shadow" class="shadow"></div>
+        
+        <a class="to-main" href="#main">Przejdź do zawartości</a>
+        
+        <header class="header">
+            <button class="menu-icon" type="button" onclick="menu()">
+                <img src="menu-icon.png" alt="Menu" title="Menu">
+            </button>
+            <a href="index" class="title">Przewodnik po Mnogości</a>
+            <a href="ustawienia" class="settings desktop">
+                <img src="settings.png" alt="ustawienia">
+            </a>
+        </header>
+        
+        <a href="ustawienia" class="settings mobile">
+            <img src="settings.png" alt="ustawienia">
+        </a>
+        
+            <aside class="sidebar" id="sidebar">
+                <button class="menu-icon" type="button" onclick="menu()">
+                    <img src="menu-icon.png" alt="Menu" title="Menu">
+                </button>
+                <nav class="menu-options">
+                    <a href="index" id="index" class="option">Strona główna</a>    
+                    <a href="terminologia" id="terminologia" class="option">Terminologia</a>    
+                    <a href="dysocjacyjne-zaburzenie-tozsamosci" id="dysocjacyjne-zaburzenie-tozsamosci" 
+                    class="option">Dysocjacyjne zaburzenie tożsamości</a>  
+                    <a href="powstawanie" id="powstawanie" class="option">Powstawanie</a> 
+                    <a href="system" id="system" class="option">System</a>       
+                    <a href="wspolosoby" id="wspolosoby" class="option">Współosoby</a>   
+                    <a href="frontowanie" class="option current" id="frontowanie">Frontowanie</a> 
+                    <a href="wewnetrzny-swiat" id="wewnetrzny-swiat" class="option">Wewnętrzny świat</a> 
+                    <a href="materialy" id="materialy" class="option">Materiały</a>
+                    <a href="zrodla" id="zrodla" class="option">Źródła</a>
+                </nav>
+            </aside>
+
+        <main id="main">
+
+            <h1>Frontowanie</h1>
+
+            <p>
+                Na stronie używamy <a href="index#jezyk-neutralny-plciowo" class="internal">języka neutralnego płciowo</a>.
+            </p>
+
+            <p>
+                Frontowanie to przejmowanie/posiadanie kontroli nad ciałem w danym momencie przez konkretną <a href="wspolosoby" class="internal">współosobę</a>. Jeżeli kilka osób jest na froncie (inaczej mówiąc na zewnątrz) w jednym czasie, kontrolując te same lub różne części ciała, mamy do czynienia ze współfrontowaniem. W systemach z wykształconą <a href="#wspolswiadomosc" class="internal">współświadomością</a> często zdarza się, że współosoby nie potrafią powiedzieć, która z nich właśnie frontuje. 
+            </p>
+
+            <fieldset class="contents">
+                <legend>Spis treści</legend>
+                <div class="second">
+                    <a href="#zamiana">Zamiana</a>
+                    <a href="#maskowanie">Maskowanie</a>
+                    <div class="third">
+                        <a href="#singletsona">Singletsona</a>
+                    </div>
+                    <a href="#wspolswiadomosc">Współświadomość</a>
+                    <div class="third">
+                        <a href="#projekcja">Projekcja</a>
+                    </div>
+                    <a href="#bierny-wplyw">Bierny wpływ</a>
+                    <a href="#wywolywacze">Wywoływacze</a>
+                    <a href="#mieszanie">Mieszanie</a>
+                    <a href="#autopilot">Autopilot</a>
+                    <a href="#utkniecie-na-froncie">Utknięcie na froncie</a>
+                    <a href="#zablokowanie-na-froncie">Zablokowanie na froncie</a>
+                    <a href="#zablokowany-front">Zablokowany front</a>
+                    <a href="#zatloczony-front">Zatłoczony front</a>
+                    <a href="#dysforia-cielesna">Dysforia cielesna</a>
+                </div>
+            </fieldset>
+
+            <h2>
+                <div class="target" id="zamiana"></div>
+                Zamiana
+            </h2>
+
+            <p>
+                Zamiana następuje, kiedy jedna współosoba, dobrowolnie lub nie, przekazuje kontrolę nad ciałem innej współosobie. Może trwać od kilku sekund do kilku godzin i czasami przebiegać tak niezauważalnie, że nawet biorące w niej udział współosoby nie zdają sobie sprawy z jej zajścia. Mogą jej towarzyszyć różne objawy, takie jak patrzenie w przestrzeń pustym wzrokiem, ciężkie mruganie, uczucie spadania, dreszcze lub bóle głowy, a także dysocjacja, dwa ostatnie zwłaszcza w przypadku gwałtownych zamian lub walki o front pomiędzy dwiema osobami. Część systemów może kontrolować wszystkie swoje zamiany, inne mogą kontrolować tylko część, a w pozostałych dzieją się one niezależnie od woli osób członkowskich systemu – w sposób dostosowany do ich potrzeb w danym momencie lub zupełnie losowy. 
+            </p>
+
+            <h2>
+                <div class="target" id="maskowanie"></div>
+                Maskowanie
+            </h2>
+
+            <p>
+                Maskowanie to udawanie kogoś, kim się nie jest, aby ukryć przed potencjalnie niebezpiecznym środowiskiem swoje choroby psychiczne czy neurodywergencje. W przypadku mnogości polega to na podszywaniu się pod jedną, <a href="system#osoba-singletowa" class="internal">pojedynczą osobę</a> przez wszystkie osoby członkowskie <a href="system" class="internal">systemu</a>. Zdecydowana większość współosób naturalnie posiada tę zdolność, gdyż jej brak mógłby zwracać na systemy niepożądaną uwagę i prześladowania. Demaskowanie się w zaufanym otoczeniu czy nawet w samotności może być dla wielu trudne i wymagać aktywnej nauki, żeby współosoby mogły przestać chować swoje prawdziwe „ja” pod maską osoby sigletowej. Niektóre współosoby nie są aż tak dobre w ukrywaniu się i często zdarzają im się „wpadki”, a nieliczne zupełnie nie mają zdolności maskowania. Z kolei w niektórych systemach współosoby są do siebie tak podobne, że w ogóle nie muszą się maskować.
+            </p>
+
+            <h3>
+                <div class="target" id="singletsona"></div>
+                Singletsona
+            </h3>
+
+            <p>
+                Singletsona to osoba, którą współosoby udają w czasie frontowania. Jest to najczęściej <a href="wspolosoby#osoba-hostujaca" class="internal">osoba hostująca</a>, ale może być to także <a href="wspolosoby#rdzen" class="internal">rdzeń</a>, była hostująca, nieistniejąca osoba utworzona na podstawie wymagań danego otoczenia czy osoba powstała z pomieszania cech różnych osób członkowskich systemu. Mianem singletsony czasami określa się także wizerunek osoby (obrazek), który system używa do reprezentacji siebie w mediach społecznościowych.
+            </p>
+
+            <h2>
+                <div class="target" id="wspolswiadomosc"></div>
+                Współświadomość
+            </h2>
+
+            <p>
+                Jeżeli współosoba ma świadomość tego, co dzieje się wokół ciała, ale nie ma nad nim kontroli, mówimy, że jest współświadoma. Są różne poziomy współświadomości, które określamy jako będące bliżej lub dalej frontu (które mogą być reprezentowane fizycznie w <a href="wewnetrzny-swiat" class="internal">wewnętrznym świecie</a> poprzez odległość współosoby od <a href="wewnetrzny-swiat#pokoj-frontowy" class="internal">frontowego pokoju</a>). Współosoba może być na tyle blisko frontu, żeby nie zdawać sobie sprawy, że to nie ona ma w tym momencie kontrolę nad ciałem. Im dalej od frontu dana osoba się znajduje, tym mniej jej uwaga jest pochłonięta tym, co dzieje się na zewnątrz, i tym mniej będzie w stanie sobie z tych wydarzeń przypomnieć (w przypadku systemów amnezyjnych). Dla niektórych współosób współświadomość może łączyć się z doświadczeniami obserwowania ciała w trzeciej osobie.
+            </p>
+
+            <h3>
+                <div class="target" id="projekcja"></div>
+                Projekcja
+            </h3>
+
+            <p>
+                O projekcji mówimy wtedy, kiedy współświadoma osoba może być fizycznie widziana przez inne osoby członkowskie systemu w otoczeniu ciała. Nie występuje bardzo powszechnie, ale zdecydowanie zdarza się w <a href="index#mnogosc" class="internal">mnogiej</a> społeczności, najczęściej w przypadku <a href="powstawanie#tulpogeniczne" class="internal">tulpomancji</a> i <a href="powstawanie#wiez-dusz" class="internal">więzi dusz</a>. Niektóre mogą posiadać zdolność do projektowania siebie w dowolnym czasie, a inne są projektowane bez podjęcia o tym świadomej decyzji. Może być to porównywane do halucynacji, ale nie jest dokładnie tym samym zjawiskiem, gdyż najczęściej współosoby potrafią odróżnić projekcję od rzeczywistości.
+            </p>
+
+            <p>
+                Jak na razie tylko istnieje tylko jedno badanie poruszające temat projekcji „na życzenie”. Jego ograniczeniem jest obecność tylko jednej badanej, ale mimo to może rzucić trochę światła na ten fenomen. Skany mózgu wykazały, że w czasie astralnej projekcji u badanej aktywują się obszary związane z ruchem, a także te powiązane we wcześniejszych badaniach z pozacielesnymi doświadczeniami. Badające doszły do wniosku, że astralna projekcja jest nadzwyczajnym rodzajem wyobraźni ruchowej – aktywacja obszarów mózgu w jej czasie wyglądała inaczej, niż kiedy badana jedynie wyobrażała sobie siebie w czasie astralnej projekcji. Co ciekawe od obracania się wokół własnej osi w czasie „przebywania” poza swoim ciałem dostawała zawrotów głowy – naszym zdaniem pokazuje to, jak bardzo rzeczywiste takie doświadczenia mogą być dla mózgu.<sup><span class="target" id="s1"></span>[<a href="#1" class="internal">1</a>]</sup>
+            </p>
+
+            <h2>
+                <div class="target" id="bierny-wplyw"></div>
+                Bierny wpływ
+            </h2>
+
+            <p>
+                Bierny/pasywny wpływ to zjawisko, w którym inne współosoby, zwykle współświadome, wpływają na działania aktualnej osoby frontującej bez przejmowania kontroli nad ciałem. Na przykład nie przepadający za zwierzętami <a href="wspolosoby#osoba-hostujaca" class="internal">host</a> może schylić się po przechodzącego korytarzem kota, bo wyczuł, że takie jest pragnienie obecnej przy nim <a href="wspolosoby#osoba-mlodsza" class="internal">młodszej</a>. Osoba frontująca niekoniecznie musi być świadoma wpływu kogoś innego, ale – inaczej niż przy współfrontingu – to ona podejmuje decyzję o wykonaniu danej czynności. Jeżeli porównać kontrolowanie ciała do kierowania samochodem, to przy współfrontingu dwie osoby trzymają za kierownicę i w dowolnym momencie jedna z nich może skręcić w prawo bez pytania drugiej o zgodę. Przy biernym wpływie natomiast jedna osoba trzyma kierownicę, a druga mówi jej (albo ciągnie ją za rękaw), żeby przy najbliższym skrzyżowaniu skręciła w prawo.
+            </p>
+
+            <h2>
+                <div class="target" id="wywolywacze"></div>
+                Wywoływacze
+            </h2>
+
+            <p>
+                Wywoływacze to rzeczy dziejące się w zewnętrznym świecie, które przywołują konkretną współosobę na front. Analogicznie do nich rzeczy dziejące się w wewnątrzświecie mogą sprawić, że osoba frontującą zajrzy do środka. Do pozytywnych wywoływaczy może należeć usłyszenie swojej ulubionej piosenki, zobaczenie przyjaciela czy znalezienie się w ważnym dla danej osoby miejscu. Negatywne wywoływacze to najczęściej impulsy powiązane z traumą lub zagrożeniem, które wywołują na zewnątrz <a href="wspolosoby#osoba-broniaca" class="internal">osoby broniące</a> lub <a href="wspolosoby#osoba-trzymajaca-traume" class="internal">trzymające traumę</a>. Dla bardzo wielu współosób wywoływaczem jest usłyszenie swojego imienia (czy to wypowiedzianego na głos, czy pomyślanego przez osobę frontującą), za co odpowiedzialny jest <a href="https://olgarymkiewicz.pl/efekt-coctail-party/" target="_blank" rel="noopener noreferrer" class="external">efekt coctail-party</a>, czyli zdolność ludzkiej świadomości do odfiltrowywania bodźców, które jej bezpośrednio nie dotyczą. Wywoływacze są przydatne, kiedy system nie może kontrolować, kto i kiedy frontuje, a któraś współosoba jest potrzebna na zewnątrz. Osoby spoza systemu nigdy nie powinny używać wywoływaczy, jeżeli wcześniej nie uzyskały na to wyraźnej zgody.
+            </p>
+
+            <h2>
+                <div class="target" id="mieszanie"></div>
+                Mieszanie
+            </h2>
+
+            <p>
+                Mieszanie (zamazywanie) występuje, kiedy granice pomiędzy dwoma lub więcej osobami na froncie czasowo się zacierają i ciężko powiedzieć, gdzie kończy się jedna, a zaczyna druga, a nawet które w ogóle są w danym momencie obecne. Jest często związane z bardzo silną dysocjacją i może, ale nie musi, łączyć się z tymczasową <a href="wspolosoby#fuzja" class="internal">fuzją</a> współosób (którą nazywamy mieszaniną). Wyjaśnijmy to na przykładzie systemu, który przechodzi obok restauracji. Jedna współśmiertelniczka ma ochotę do niej wstąpić i zjeść pizzę na obiad, ale druga chce ominąć ją szerokim łukiem, bo niedawno przeszły na dietę. Kiedy ta dwójka się zamaże, każda z nich będzie czuła obydwa te pragnienia. Może to wywołać duży zamęt w ich umysłach, uniemożliwiając im stwierdzenie, czego tak naprawdę chcą, przez co mogą zacząć wątpić w to, czy w ogóle wiedzą, kim są. Jeżeli dojdzie do tego <a href="dysocjacyjne-zaburzenie-tozsamosci#dysocjacja" class="internal"></a>dysocjacja, mogą faktycznie nie wiedzieć, kim są – podczas silnego epizodu nie zawsze będą w stanie odpowiedzieć na pytanie o swoje własne imię. Dlatego też ktoś może powiedzieć, że jest zamazany, chociaż na froncie jest tylko jedna osoba – nie zawsze da się stwierdzić, czy to mieszanie i dysocjacja, czy sama dysocjacja.
+            </p>
+
+            <p>
+                W systemach, w których współosoby mają zewnętrzne cechy pozwalające łatwo je od siebie odróżnić, np. różne akcenty, kiedy dwie współosoby się zamazują, ciało może przyjmować cechy <a href="wspolosoby#osoba-hostujaca" class="internal">osoby hostującej</a>, nawet jeżeli nie jest ona wtedy w pobliżu frontu. Z mieszaniny można wyjść poprzez <a href="materialy/dla-systemow#zakotwiczanie" class="internal">zakotwiczanie</a> oparte na tożsamości, polegające na przykład na wyliczeniu rzeczy, które się lubi, których się nie lubi, swoich marzeń i lęków. W naszej ilustracji z restauracją jedna z współosób może przypomnieć sama sobie, że przecież nawet nie lubi fast-foodów, w związku z czym pragnienie zjedzenia pizzy na pewno nie należy do niej.
+            </p>
+
+            <h2>
+                <div class="target" id="autopilot"></div>
+                Autopilot
+            </h2>
+
+            <p>
+                Kiedy żadna współosoba nie ma kontroli nad ciałem, mówimy, że jest ono na autopilocie. Podświadomość może wtedy nim kierować w wykonywaniu prostych czynności, takich jak sprzątanie domu czy wracanie z pracy stałą trasą – to zjawisko występuje także u <a href="system#osoba-singletowa" class="internal">osób singletowych</a>. Autopilot może być rozwinięty w różnym stopniu i w niektórych przypadkach mieć możliwość nawet notować słowa profesora na uczelni, a w innych będzie w stanie jedynie oddychać i mrugać.
+            </p>
+
+            <h2>
+                <div class="target" id="utkniecie-na-froncie"></div>
+                Utknięcie na froncie
+            </h2>
+
+            <p>
+                Kiedy współosoba, która zazwyczaj posiada taką możliwość, nie może opuścić frontu, nie ważne jak bardzo próbuje, mówimy, że utknęła na froncie. Może to trwać od kilku godzin do nawet miesięcy i może, ale nie musi, być połączone z <a href="#zablokowany-front" class="internal">zablokowaniem frontu</a>.
+            </p>
+
+            <h2>
+                <div class="target" id="zablokowanie-na-froncie"></div>
+                Zablokowanie na froncie
+            </h2>
+
+            <p>
+                Jeżeli któraś współosoba nigdy lub prawie nigdy nie opuszcza frontu, mówimy, że jest zablokowana na froncie. Jej współosoby wchodzą w interakcje z zewnętrznym światem prawie wyłącznie poprzez <a href="#wspolswiadomosc" class="internal">współświadomość</a> i <a href="#bierny-wplyw" class="internal">bierny wpływ</a>, ewentualnie współfrontowanie. Istnieje możliwość, aby osoba zablokowana na froncie w końcu oddała kontrolę nad ciałem innej osobie członkowskiej systemu. Jako zablokowane na froncie mogą się identyfikować między innymi osoby hostujące systemów z <a href="dysocjacyjne-zaburzenie-tozsamosci#czesciowe-dysocjacyjne-zaburzenie-tozsamosci" class="internal">częściowym dysocjacyjnym zaburzeniem tożsamości</a>.
+            </p>
+
+            <h2>
+                <div class="target" id="zablokowany-front"></div>
+                Zablokowany front
+            </h2>
+
+            <p>
+                Z zablokowanym frontem mamy do czynienia wtedy, kiedy jedna lub więcej osób z systemu <a href="#utkniecie-na-froncie" class="internal">utknie na froncie</a>, a jakakolwiek komunikacja pomiędzy nimi a resztą systemu jest niemożliwa. Wszystkie te, które przebywają w tym momencie <a href="wewnetrzny-swiat" class="internal">wewnątrz</a> (o ile system ma jakieś wewnątrz), w żaden sposób nie mogą dowiedzieć się, co się właśnie dzieje z ciałem.
+            </p>
+
+            <h2>
+                <div class="target" id="zatloczony-front"></div>
+                Zatłoczony front
+            </h2>
+
+            <p>
+                O zatłoczonym froncie mówimy, kiedy w jednym momencie na zewnątrz jest spora liczba osób, które nie są ze sobą zmieszane. Dla różnych systemów „spora liczba” może oznaczać różne rzeczy – w systemie <a href="system#system-polifragmentowany" class="internal">polifragmentowanym</a>, w którym współfronting jest codziennością, trzy współistoty raczej nie będą uznawane za tłum, ale w systemie z bardzo słabo wykształconą <a href="#wspolswiadomosc" class="internal">współświadomością</a> już mogą być. Spotkałośmy się z nazwaniem tego zjawiska „sałatką frontową”, ale nie jest to określenie powszechnie znane w społeczności.
+            </p>
+
+            <h2>
+                <div class="target" id="dysforia-cielesna"></div>
+                Dysforia cielesna
+            </h2>
+
+            <p>
+                Wiele współosób podczas frontowania może doświadczać odczuwanej często przez osoby <a href="https://pl.wikipedia.org/wiki/Transp%C5%82ciowo%C5%9B%C4%87" target="_blank" rel="noopener noreferrer" class="external">transpłciowe</a> <a href="https://tranzycja.pl/krok-po-kroku/dysforia-plciowa/#dysforia-fizycznacielesna" target="_blank" rel="noopener noreferrer" class="external">dysforii cielesnej</a>, czyli silnego uczucia dyskomfortu spowodowanego niezgodnością fizycznego wyglądu ciała ze swoim wyglądem wewnętrznym, czyli tym, jak dana osoba postrzega siebie w swoim umyśle. Dotyczy to często współosób, których płeć nie zgadza się z płcią ciała, ale także tych będących w innym niż ciało wieku, innej rasy/gatunku lub posiadających inny wygląd. 
+            </p>
+
+
+            
+            <h2>
+                <div class="target" id="przypisy"></div>
+                Przypisy
+            </h2>
+
+            <ol class="links">
+
+            <li><div class="target" id="1"> </div>
+                <a href="#s1" class="internal">↑</a> <a href="https://www.frontiersin.org/articles/10.3389/fnhum.2014.00070/full" target="_blank" rel="noopener noreferrer" class="external">https://www.frontiersin.org/articles/10.3389/fnhum.2014.00070/full</a></li>
+
+            </ol>
+<!-- 
+            <button class="up" type="button" onclick="scrollUp()">↑</button> -->
+
+
+            <div class="footer">
+                <i>„Ależ oczywiście to dzieje się w twojej głowie, Harry, tylko skąd, u licha, wniosek, że wobec tego nie dzieje się to naprawdę?”</i>
+
+<p>Jesteśmy poligenicznym, zapełnionym introjektowymi, poliwielorakim, blurianowym, poliświadomym systemem funkcjonującym pod nazwą <span class="name">System Tęczowego Chaosu</span> . Chaos, bo cóż, nasza wewnętrzna organizacja pogrążona jest w chaosie. Tęczowy, jak by się można było domyślić, wziął się z naszego dużego powiązania ze społecznością LGBTQ+, a także reprezentuje naszą różnorodność – w sensie metaforycznym, a dla niektórych także dosłownym (kilkoro z nas ma synestezję) jesteśmy pełną gamą najróżniejszych kolorów. Niewiele można o nas powiedzieć, żeby odnosiło się to do wszystkich, poza tym, że bardzo się od siebie różnimy. Dlatego kiedy piszemy „my”, mamy na myśli tylko część z nas. Naszą misją jest walczyć o tolerancję i równouprawnienie dla osób mnogich i wszystkich innych marginalizowanych grup. Całym sercem podpisujemy się pod <a href="https://kinhost.org/Movement/ManifestoYouDontGetToDefineUsAnymore" class="external" target="_blank">manifestem The Crisses</a>. Nic o nas bez nas. Nie będziecie nas dłużej definiować.</p>
+
+
+<p>Kontakt:
+    <a href="mailto:systemteczowegochaosu@gmail.com" class="external">systemteczowegochaosu@gmail.com</a></p>
+    
+    <p><a href="https://www.youtube.com/channel/UCDGJCOfdfaO-rN-3vrzCY-g" target="_blank" rel="noopener noreferrer" class="external">Przewodnik po Mnogości na YouTube</a></p>
+    
+    <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external">System Tęczowego Chaosu na YouTube</a></p>
+    
+    <p><a href="https://discord.gg/SVRTZzkWQC" target="_blank" rel="noopener noreferrer" class="external">Mnoga Przestrzeń na discordzie</a></p>
+    
+    <p>Nie używamy ciasteczek, bo nawet nie wiemy, jak i po co.</p>
+    
+    <p>Będziemy niezwykle wdzięczne za każde udostępnienie strony, nawet jeżeli jedynie wyślecie link do osoby znajomej albo nawet siebie, a także podlinkowanie do nas na witrynach w jakikolwiek sposób nawiązujących do mnogości. Pomoże to Przewodnikowi po Mnogości wyświetlać się wyżej w wyszukiwaniach, niż medyczne strony o dysocjacyjnym zaburzeniu tożsamości zdawkowo wspominające o kilku "osobowościach" i ogólnych objawach.</p>
+    
+    <p>Chcemy uczynić nasze treści dostępnymi dla każdego. Jeżeli jest coś, co utrudnia ci korzystanie z witryny, napisz do nas. Postaramy się rozwiązać ten problem.</p>
+    
+    <p>Strona ma wyłącznie charakter informacyjny i nie powinna być używania w celu diagnozy ani leczenia. Nie bierzemy na siebie odpowiedzialności za żadne decyzje osób czytających podjęte pod wpływem znalezionych tutaj treści.</p>
+
+</div>
+
+
+
+        </main>
+    </body>
+</html>

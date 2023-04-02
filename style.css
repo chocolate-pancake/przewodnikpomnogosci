@@ -2,7 +2,7 @@
 :root {
     background-color: rgb(30, 30, 30);
 
-    --font-size: 20px;
+    --font-size: 16px;
     --font-color: rgb(200, 200, 200);
 
     --visibility: hidden;
@@ -294,7 +294,7 @@ header {
     font-size: 1.35rem;
     border: solid 2px rgb(110, 110, 110);
     border-radius: 20px;
-    transition: 0.5s;
+    transition: backgroud-color 0.5s, box-shadow 0.5s;
     background-color: var(--transparent);
     overflow: hidden;
 }
@@ -670,6 +670,10 @@ ol.links li {
     word-break: break-all;
 }
 
+ol.links img {
+    display: none;
+}
+
 i {
     font-style: italic;
 }
@@ -688,7 +692,7 @@ sup a.internal {
 
 .internal, .external {
     color: var(--light-blue);
-    transition: 0.5s;
+    transition: color 0.5s, text-shadow 0.5s;
     text-decoration: none;
 }
 
@@ -703,6 +707,13 @@ sup a.internal {
 
 .internal.underline:hover, .internal.underline:focus, .external.underline:hover, .external.underline:focus {
     text-decoration: underline rgb(0, 0, 0);
+}
+
+.external img {
+    display: inline;
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-right: 0.25rem;
 }
 
 .num {

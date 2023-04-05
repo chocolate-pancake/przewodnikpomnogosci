@@ -17,6 +17,7 @@
 
     --warning-bckg: rgb(30, 30, 30);
     --warning-border: rgb(0, 0, 0);
+    --warning-display: block;
 
     --footer-bckg: rgb(20, 20, 20);
     --footer-border: rgb(30, 30, 30);
@@ -28,6 +29,8 @@
     --masculine: none;
     --neutral: none;
     --postgender: none;
+
+    --neutral-language: block;
 
     --ex-polish: rgb(226, 140, 229);
     --ex-polish-hov: rgb(234, 167, 236);
@@ -141,8 +144,8 @@ body {
     display: var(--postgender);
 }
 
-#page {
-    visibility: hidden;
+#lan {
+    display: var(--neutral-language);
 }
 
 .to-main {
@@ -478,6 +481,7 @@ main {
 /* NAWODNIENIE JEST WAŻNE, KURDE - Kompsognat */
 
 .warning {
+    display: var(--warning-display);
     border: dashed;
     border-radius: 3px;
     border-width: 8px;

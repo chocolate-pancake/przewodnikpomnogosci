@@ -26,7 +26,7 @@ if(localStorage.getItem('underlineLinks') === 'true'){
     underlineLinks();
     let linksCheck = document.getElementById('underlineLinks');
     if(linksCheck){
-        linksCheck.checked;
+        linksCheck.checked = true;
     }
 }
 
@@ -48,6 +48,53 @@ function underlineLinks(){
     links = document.querySelectorAll(".external");
     for(let i  = 0; i < links.length; i ++){
         links[i].classList.toggle("underline");
+    }
+}
+
+
+if(!localStorage.getItem('showWarnings')){
+    localStorage.setItem('showWarnings', 'true');
+}
+if(localStorage.getItem('showWarnings') === 'true'){
+    let warningsCheck = document.getElementById('showWarnings');
+    if(warningsCheck){
+        warningsCheck.checked = true;
+    }
+}
+else{
+    document.documentElement.style.setProperty("--warning-display", "none");
+}
+
+function warnings(){
+    if(localStorage.getItem('showWarnings') === 'true'){
+        localStorage.setItem('showWarnings', 'false');
+        document.documentElement.style.setProperty("--warning-display", "none");
+    }
+    else{
+        localStorage.setItem('showWarnings', 'true');
+    }
+}
+
+if(!localStorage.getItem('showLanguage')){
+    localStorage.setItem('showLanguage', 'true');
+}
+if(localStorage.getItem('showLanguage') === 'true'){
+    let languageCheck = document.getElementById('showLanguage');
+    if(languageCheck){
+        languageCheck.checked = true;
+    }
+}
+else{
+    document.documentElement.style.setProperty("--warning-display", "none");
+}
+
+function lang(){
+    if(localStorage.getItem('showLanguage') === 'true'){
+        localStorage.setItem('showLanguage', 'false');
+        document.documentElement.style.setProperty("--neutral-language", "none");
+    }
+    else{
+        localStorage.setItem('showLanguage', 'true');
     }
 }
 

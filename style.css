@@ -175,6 +175,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: left;
+    overflow: hidden;
+}
+
+header::-webkit-scrollbar {
+    display: none;
 }
 
 .title {
@@ -186,7 +191,7 @@ header {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
     /* margin: 10px 1rem; */
-    font-size: min(1.5rem, 30px);
+    font-size: 6vw;
     text-decoration: none;
     font-weight: 600;
     transition: text-shadow 1s;
@@ -256,11 +261,11 @@ header {
     visibility: hidden;
     position: fixed;
     top: 0%;
-    left: -400px;
+    left: calc(-1 * min(400px, 100vw));
     z-index: 100;
     height: 100vh;
-    min-width: 400px;
-    max-width: 400px;
+    min-width: min(400px, 100vw);
+    max-width: min(400px, 100vw);
     background-color: var(--sidebar-bckg);
     border-right: solid 1px rgba(110, 110, 110, 0.982);
     /* box-shadow: 2px 0px rgba(45, 45, 45, 0.9), 5px 0px 5px rgba(76, 61, 209, 0.3); */
@@ -782,6 +787,7 @@ sup a.internal {
     }
 
     header{
+        height: 3.25rem;
         z-index: 20;
         justify-content: space-between;
     }

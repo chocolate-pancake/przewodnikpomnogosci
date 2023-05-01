@@ -343,9 +343,36 @@ header::-webkit-scrollbar {
     0.3rem 0.3rem 0.05rem rgba(5, 46, 168, 0.7), 0.35rem 0.35rem 0.05rem rgba(98, 2, 146, 0.7);
 }
 
+.imgcontainer {
+    margin: 4rem auto;
+    word-break: break-all;
+    padding: 1.5rem;
+    width: 90%;
+    border: solid 2px rgb(110, 110, 110);
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px var(--dark-blue);
+}
+
+.imgcontainer img {
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.imgcontainer p {
+    background-color: rgb(20, 20, 20);
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+
 img {
     background-color: var(--transparent);
     display: block;
+}
+
+#rings {
+    filter: invert(1);
 }
 
 button {
@@ -362,7 +389,9 @@ button {
     transition: 0.5s;
 }
 
-/* To trzeba przenieść do innego pliku - Jonatan */
+/* To trzeba przenieść do innego pliku - Jonatan 
+Ale czy nam się chce? - Tomek
+Wygląda na to, że nie - Jonatan */
 
 .chat-button:hover, .chat-button:active {
     background-color: rgb(55, 55, 55);
@@ -395,6 +424,8 @@ button {
     margin: 1.5rem;
     z-index: 0;
 }
+
+/* Co to jest i do czego to było DX - Jonatan */
 
 .setting {
     position: absolute;
@@ -810,6 +841,10 @@ sup a.internal {
         width: 60%;
     }
 
+    .imgcontainer {
+        width: 60%;
+    }
+
     h1 {
         font-size: 3rem;
     }
@@ -916,6 +951,22 @@ sup a.internal {
     .contents legend {
         color: rgb(19, 0, 189);
         text-shadow: 0.1rem 0.1rem 0.1rem rgb(0, 0, 0, 0.5);
+    }
+
+    .imgcontainer {
+        box-shadow: 7px 7px 10px rgba(20, 20, 20, 0.95), -7px 7px 10px rgba(20, 20, 20, 0.95);
+    }
+
+    .imgcontainer p {
+        background-color: rgb(230, 230, 230);
+    }
+
+    #rings {
+        filter: none;
+    }
+
+    .ex {
+        filter: hue-rotate(245deg) invert(1) brightness(1.25);
     }
 
     .chat-button {

@@ -345,7 +345,6 @@ header::-webkit-scrollbar {
 
 .imgcontainer {
     margin: 4rem auto;
-    word-break: break-all;
     padding: 1.5rem;
     width: 90%;
     border: solid 2px rgb(110, 110, 110);
@@ -353,8 +352,9 @@ header::-webkit-scrollbar {
     box-shadow: 0px 0px 5px 5px var(--dark-blue);
 }
 
-.imgcontainer img {
+.imgcontainer .img {
     margin: auto;
+    margin-bottom: 1rem;
     width: 250px;
     height: 250px;
     border-radius: 15px;
@@ -364,6 +364,10 @@ header::-webkit-scrollbar {
     background-color: rgb(20, 20, 20);
     padding: 0.5rem;
     border-radius: 15px;
+}
+
+.source {
+    word-break: break-all;
 }
 
 img {
@@ -852,6 +856,15 @@ sup a.internal {
     .imgcontainer {
         width: 60%;
     }
+
+    /* .imgcontainer.double {
+        width: 80%;
+    }
+
+    .imgcontainer.double .img {
+        display: inline-block;
+        margin-left: 5%;
+    } */
 
     h1 {
         font-size: 3rem;

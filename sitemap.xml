@@ -31,7 +31,7 @@
     <loc>https://przewodnikpomnogosci.pl/system</loc>
   </url>
   <url>
-    <loc>https://przewodnikpomnogosci.pl/wspolosoby/</loc>
+    <loc>https://przewodnikpomnogosci.pl/wspolosoby</loc>
   </url>
   <url>
     <loc>https://przewodnikpomnogosci.pl/wspolosoby/role</loc>
@@ -62,6 +62,15 @@
   </url>
   <url>
     <loc>https://przewodnikpomnogosci.pl/materialy/dla-bliskich</loc>
+  </url>
+  <url>
+    <loc>https://przewodnikpomnogosci.pl/wyjasnienia/</loc>
+  </url>
+  <url>
+    <loc>https://przewodnikpomnogosci.pl/wyjasnienia/neurobiologia</loc>
+  </url>
+  <url>
+    <loc>https://przewodnikpomnogosci.pl/wyjasnienia/alternatywne-wyjasnienia</loc>
   </url>
   <url>
     <loc>https://przewodnikpomnogosci.pl/zrodla</loc>

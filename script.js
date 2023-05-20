@@ -1,10 +1,10 @@
 let doc = document.getElementById('main');
 let sidebarShadow = document.getElementById("sidebar-shadow");
 
-let page = document.getElementById("page");
-if(page){
-    document.getElementById(page.textContent).classList.toggle("current");
-    document.getElementById(page.textContent).scrollIntoView();
+// let page = document.getElementById("page");
+// if(page){
+//     document.getElementById(page.textContent).classList.toggle("current");
+//     document.getElementById(page.textContent).scrollIntoView();
 
     // let sections = document.querySelectorAll("h2");
     // let anchors = [];
@@ -19,8 +19,8 @@ if(page){
     //     anchors[i].setAttribute("class", "option subsection");
     //     anchors[i].append(sections[i].textContent);
     //     document.getElementById(page.textContent).after(anchors[i]);
-    // }
-}
+   // }
+// }
 
 
 sidebarShadow.addEventListener('click', menu);
@@ -52,3 +52,8 @@ function menu() {
     sidebar.classList.toggle('open');
     sidebarShadow.classList.toggle('visible');
 }
+
+let current = document.querySelector(".current");
+current.scrollIntoView();
+
+console.log("Jeżeli chcesz zajrzeć do kodu źródłowego, znajdziesz go tu: https://github.com/chocolate-pancake/przewodnikpomnogosci")

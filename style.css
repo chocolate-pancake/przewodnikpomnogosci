@@ -299,7 +299,7 @@ header::-webkit-scrollbar {
     padding: 0.6rem;
     width: 90%;
     text-decoration: none;
-    font-size: 1.35rem;
+    font-size: 1.5rem;
     border: solid 2px rgb(110, 110, 110);
     border-radius: 20px;
     transition: backgroud-color 0.5s, box-shadow 0.5s;
@@ -318,9 +318,16 @@ header::-webkit-scrollbar {
 }
 
 .option.subsection {
-    width: 80%;
-    font-size: 1.1rem;
+    width: 85%;
+    font-size: 1.25rem;
     padding: 0.5rem;
+}
+
+.subsections {
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* MACIE PIĆ I TO NIE JEST ŻART - Kompsognat */
@@ -806,7 +813,7 @@ sup a.internal {
     }
 
     .option.subsection {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     
     .sidebar {

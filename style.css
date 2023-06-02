@@ -947,6 +947,10 @@ sup a.internal {
         box-shadow: 0px 0px 0px 5px rgb(0, 0, 0);
     }
 
+    .subsections {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
     .warning, .warning legend {
         color: rgb(255, 0, 0);
         text-shadow: none;

@@ -444,7 +444,8 @@ Wygląda na to, że nie - Jonatan */
     z-index: 0;
 }
 
-/* Co to jest i do czego to było DX - Jonatan */
+/* Co to jest i do czego to było DX - Jonatan
+To jest bardzo dobre pytanie - Natasza */
 
 .setting {
     position: absolute;
@@ -801,6 +802,16 @@ sup a.internal {
     
 }
 
+.cryterium {
+    border-radius: 20px;
+    border: solid 2px rgb(110, 110, 110);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    font-style: italic;
+    margin-bottom: 3rem;
+    box-shadow: 0px 0px 5px 5px var(--dark-blue);
+}
+
 
 @media (min-width: 1250px) and (orientation: landscape){
 
@@ -1067,6 +1078,11 @@ sup a.internal {
 
     .external:hover, .internal:hover, .external:focus, .internal:focus {
         color: rgb(23, 41, 158);
+    }
+
+    .cryterium {
+        background-color: inherit;
+        box-shadow: 7px 7px 10px rgba(20, 20, 20, 0.95), -7px 7px 10px rgba(20, 20, 20, 0.95);
     }
 }
 

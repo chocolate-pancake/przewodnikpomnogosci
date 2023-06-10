@@ -810,6 +810,7 @@ sup a.internal {
     font-style: italic;
     margin-bottom: 3rem;
     box-shadow: 0px 0px 5px 5px var(--dark-blue);
+    width: 80%;
 }
 
 

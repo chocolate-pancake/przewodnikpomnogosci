@@ -191,7 +191,7 @@ header::-webkit-scrollbar {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
     /* margin: 10px 1rem; */
-    font-size: 6vw;
+    font-size: min(6vw, 40px);
     text-decoration: none;
     font-weight: 600;
     transition: text-shadow 1s;

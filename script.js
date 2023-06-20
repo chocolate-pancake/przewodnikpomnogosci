@@ -54,6 +54,8 @@ function menu() {
 }
 
 let current = document.querySelector(".current");
-current.scrollIntoViewIfNeeded();
+if(current){
+    current.scrollIntoViewIfNeeded();
+}
 
 console.log("Jeżeli chcesz zajrzeć do kodu źródłowego, znajdziesz go tu: https://github.com/chocolate-pancake/przewodnikpomnogosci")

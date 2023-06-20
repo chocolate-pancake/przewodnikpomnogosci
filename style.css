@@ -183,7 +183,7 @@ header::-webkit-scrollbar {
 }
 
 .title {
-    color: inherit;
+    color: rgb(230, 230, 230);
     display: inline;
     /* float: inline-end; */
     background-color: var(--transparent);
@@ -491,6 +491,49 @@ To jest bardzo dobre pytanie - Natasza */
 
 .setting:checked ~ .radio {
     box-shadow: 0px 0px 0.2rem 0.2rem var(--purple-glow);
+}
+
+.box-setting {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+}
+
+.checkbox {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.4rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 5%;
+    background-color: rgb(45, 45, 45);
+    border: solid 0.1rem var(--font-color);
+    transition: 0.5s;
+}
+
+.box-setting:hover ~ .checkbox {
+    box-shadow: 0px 0px 0.2rem 0.2rem var(--pink-glow);
+    background-color: rgb(70, 70, 70);
+}
+
+.box-setting:checked ~ .checkbox::after{
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(0.125turn);
+    top: 40%;
+    left: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-bottom: solid 0.15rem;
+    border-right: solid 0.15rem;
+    border-radius: 5%;
+    background-color: rgba(220, 220, 220, 0);
+}
+
+.box-setting:checked ~ .checkbox {
+    box-shadow: 0px 0px 1.25rem 1.25rem inset var(--purple-glow);
 }
 
 main {
@@ -1070,6 +1113,25 @@ sup a.internal {
     }
     
     .setting:checked ~ .radio {
+        box-shadow: none;
+    }
+
+    .checkbox {
+        background-color: rgb(255, 255, 255);
+        border: solid 0.1rem rgb(100, 100, 100);
+    }
+
+    .box-setting:hover ~ .checkbox {
+        box-shadow: 0px 0px 0px 0.15rem rgb(50, 50, 50);
+        background-color: rgb(255, 255, 255);
+    }
+
+    .box-setting:checked ~ .checkbox::after{
+        border-color: rgb(100, 100, 100);
+    }
+    
+    .box-setting:checked ~ .checkbox {
+        background-color: rgb(220, 220, 220);
         box-shadow: none;
     }
 

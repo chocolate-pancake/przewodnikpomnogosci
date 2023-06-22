@@ -302,7 +302,7 @@ header::-webkit-scrollbar {
     font-size: 1.5rem;
     border: solid 2px rgb(110, 110, 110);
     border-radius: 20px;
-    transition: backgroud-color 0.5s, box-shadow 0.5s;
+    transition: backgroud-color 0.5s, box-shadow 0.5s, border-color 0.5s;
     background-color: var(--transparent);
     overflow: hidden;
 }
@@ -310,11 +310,13 @@ header::-webkit-scrollbar {
 .option:hover, .option:focus {
     background-color: rgb(25, 25, 25);
     box-shadow: 0px 0px 5px 5px var(--dark-blue);
+    border-color: var(--dark-blue);
 }
 
 .option.current {
     background-color: rgb(20, 20, 20);
     box-shadow: 0px 0px 5px 5px var(--light-blue);
+    border-color: var(--light-blue);
 }
 
 .option.subsection {
@@ -354,9 +356,10 @@ header::-webkit-scrollbar {
     margin: 4rem auto;
     padding: 1.5rem;
     width: 90%;
-    border: solid 2px rgb(110, 110, 110);
+    border: none;
+    /* border: solid 2px rgb(110, 110, 110); */
     border-radius: 20px;
-    box-shadow: 0px 0px 5px 5px var(--dark-blue);
+    box-shadow: 0px 0px 5px 5px var(--dark-blue), inset 0px 0px 20px 10px rgba(5, 5, 5, 1);
 }
 
 .imgcontainer .img {
@@ -630,12 +633,13 @@ main {
     margin-left: auto;
     margin-right: auto;
     padding: 0.25rem;
-    transition: 0.5s box-shadow, 0.5s background-color;
+    transition: 0.5s box-shadow, 0.5s background-color, 0.5s border-color;
 }
 
 .contents a:hover {
     background-color: rgb(20, 20, 20);
-    box-shadow: 0px 0px 5px 5px var(--dark-blue);
+    box-shadow: 0px 0px 3px 3px var(--dark-blue);
+    border-color: var(--dark-blue);
 }
 
 .contents div {
@@ -866,7 +870,7 @@ sup a.internal {
 
 .cryterium {
     border-radius: 20px;
-    border: solid 2px rgb(110, 110, 110);
+    /* border: solid 2px rgb(110, 110, 110); */
     background-color: rgba(0, 0, 0, 0.3);
     padding: 1rem;
     font-style: italic;
@@ -1013,12 +1017,14 @@ sup a.internal {
 
     .option:hover, .option:focus {
         box-shadow: 0px 0px 0px 5px rgb(50, 50, 50);
-        background-color: inherit;
+        background-color: rgba(0, 0, 0, 0);
+        border-color: rgb(110, 110, 110);
     }
 
     .option.current {
         background-color: var(--option-current);
         box-shadow: 0px 0px 0px 5px rgb(0, 0, 0);
+        border-color: rgb(110, 110, 110);
     }
 
     .subsections {
@@ -1046,8 +1052,9 @@ sup a.internal {
     }
 
     .contents a:hover {
-        box-shadow: 0px 0px 0px 5px rgb(50, 50, 50);
+        box-shadow: 0px 0px 0px 3px rgb(50, 50, 50);
         background-color: rgb(255, 255, 255);
+        border-color: rgb(110, 110, 110);
     }
 
     div.third, div.fourth {

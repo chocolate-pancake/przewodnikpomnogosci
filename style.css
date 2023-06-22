@@ -612,9 +612,11 @@ main {
     margin: 3rem auto;
     padding: 0.75rem;
     width: 90%;
-    border: solid 2px rgb(110, 110, 110);
+    border: none;
+    /* border: solid 2px rgb(110, 110, 110); */
     border-radius: 20px;
-    box-shadow: 0px 0px 5px 5px var(--dark-blue);
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 5px 5px var(--dark-blue), inset 0px 0px 20px 10px rgba(5, 5, 5, 1);
 }
 
 .contents a {
@@ -636,37 +638,54 @@ main {
     box-shadow: 0px 0px 5px 5px var(--dark-blue);
 }
 
+.contents div {
+    border-radius: 20px;
+}
+
+div.third a, div.fourth a {
+    width: 90%;
+}
+
 /* PIJCIE TĘ WODĘ - Kompsognat*/
 
 div.second {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 1rem;
-    border-left: solid 3px var(--pink-glow);
+    /* border: solid 3px var(--pink-glow); */
+    /* box-shadow: 0px 0px 10px 3px rgba(5, 5, 5, 1); */
 }
 
 div.third {
-    width: 90%;
-    border-left: solid 3px var(--green-glow);
+    width: 100%;
+    /* border: solid 3px var(--green-glow); */
+    /* background-color: rgba(5, 5, 10); */
     margin-left: auto;
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 1rem;    
-    margin-bottom: 0.75rem;
-    margin-top: 0.75rem;
+    margin-bottom: 1.75rem;
+    margin-top: 1.75rem;
+    /* box-shadow: 0px 0px 10px 3px rgba(5, 5, 5, 1); */
+    box-shadow: 0px 0px 3px 3px var(--dark-blue), inset 0px 0px 20px 10px rgba(5, 5, 5, 1);
+    /* border: solid 2px rgb(110, 110, 110); */
 }
 
 div.fourth {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 1rem;
-    width: 80%;
-    border-left: solid 3px var(--blue-glow);
+    width: 90%;
+    /* border: solid 3px var(--blue-glow); */
+    /* background-color: rgba(40, 40, 40); */
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0.75rem;
-    margin-top: 0.75rem;
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
+    /* box-shadow: 0px 0px 10px 3px rgba(5, 5, 5, 1); */
+    box-shadow: 0px 0px 2px 2px var(--dark-blue), inset 0px 0px 20px 10px rgba(5, 5, 5, 1);
+    /* border: solid 2px rgb(110, 110, 110); */
 }
 
 .contents legend {
@@ -1031,8 +1050,8 @@ sup a.internal {
         background-color: rgb(255, 255, 255);
     }
 
-    div.second, div.third, div.fourth {
-        border-left-width: 5px;
+    div.third, div.fourth {
+        box-shadow: 7px 7px 10px rgba(20, 20, 20, 0.95), -7px 7px 10px rgba(20, 20, 20, 0.95);
     }
 
     .contents legend {

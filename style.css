@@ -38,10 +38,10 @@
     --light-blue: rgb(139, 203, 213);
     --lighter-blue: rgb(188, 241, 249);
 
-    --purple-glow: rgba(128, 28, 175, 0.7);
-    --pink-glow: rgba(170, 28, 175, 0.7);
-    --green-glow: rgba(28, 175, 57, 0.7);
-    --blue-glow: rgba(30, 172, 191, 0.7);
+    --purple-glow: #6B3FBD;
+    --blue-glow: #347DDE;
+    --green-glow: #31C69E;
+    /* --blue-glow: rgba(30, 172, 191, 0.7); */
 
     --transparent: rgba(0, 0, 0, 0);
     --dark-blue: rgba(25, 0, 255, 0.6);
@@ -183,24 +183,42 @@ header::-webkit-scrollbar {
 }
 
 .title {
+    /* text-transform: uppercase; */
     color: rgb(230, 230, 230);
     display: inline;
     /* float: inline-end; */
     background-color: var(--transparent);
-    padding: 0.25rem;
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
+    /* padding: 0.25rem; */
+    /* margin-top: 0.25rem;
+    margin-bottom: 0.25rem; */
     /* margin: 10px 1rem; */
-    font-size: min(6vw, 40px);
+    margin: 0.5rem;
+    /* font-size: min(6vw, 40px); */
+    font-size: 2rem;
     text-decoration: none;
     font-weight: 600;
-    transition: text-shadow 1s;
+    transition: text-shadow 1s, color 1s;
+    /* transition: background-image 1s, -webkit-text-fill-color 1s; */
 }
 
 .title:hover {
-    text-shadow: 0.05rem 0.05rem 0.05rem rgba(175, 28, 160, 0.7), 0.1rem 0.1rem 0.1rem rgba(174, 15, 199, 0.7),
+    /* background-image: url(plural-journey-flag.png);
+    background-size: 20rem 1.25rem;
+    background-position: 0% -25%;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; */
+    /* text-shadow: 0.05rem 0.05rem 0.05rem rgba(175, 28, 160, 0.7), 0.1rem 0.1rem 0.1rem rgba(174, 15, 199, 0.7),
     0.15rem 0.15rem 0.15rem rgba(131, 20, 200, 0.7), 0.2rem 0.2rem 0.2rem rgba(29, 18, 114, 0.7),
-    0.25rem 0.25rem 0.25rem rgba(28, 160, 175, 0.7), 0.3rem 0.3rem 0.3rem rgba(28, 175, 114, 0.7);
+    0.25rem 0.25rem 0.25rem rgba(28, 160, 175, 0.7), 0.3rem 0.3rem 0.3rem rgba(28, 175, 114, 0.7); 
+    0px -0.5rem 0.05rem #6B3FBD, 0px -1rem 0.1rem #347ede,
+    0px -1.5rem 0.15rem #31c69e, 0px -2rem 0.2rem #000000,
+    0px -2.5rem 0.25rem #31c69e, 0px -3rem 0.3rem #347ede,
+    0px -3.5rem 0.35rem #6b3fbd;*/
+    color: var(--purple-glow);
+    text-shadow: 0.05rem 0.05rem 0.05rem #347ede, 0.1rem 0.1rem 0.05rem #31c69e,
+    0.15rem 0.15rem 0.05rem black, 0.2rem 0.2rem 0.05rem #31c69e,
+    0.25rem 0.25rem 0.05rem #347ede, 0.3rem 0.3rem 0.05rem #6B3FBD;
 }
 
 .settings.mobile{
@@ -339,9 +357,10 @@ header::-webkit-scrollbar {
     margin: 10rem max(-5rem, -5vw) 0px max(-5rem, -5vw);
     padding: 2rem min(5rem, 5vw) 2rem min(5rem, 5vw);
     background-color: var(--footer-bckg);
-    box-shadow: 0px -0.5rem 0.05rem rgb(98, 2, 146), 0px -1rem 0.1rem rgb(5, 46, 168),
-    0px -1.5rem 0.15rem rgb(14, 124, 4), 0px -2rem 0.2rem rgb(246, 239, 31),
-    0px -2.5rem 0.25rem rgb(250, 161, 6), 0px -3rem 0.3rem rgb(249, 13, 13);
+    box-shadow: 0px -0.5rem 0.05rem #6B3FBD, 0px -1rem 0.1rem #347edeed,
+    0px -1.5rem 0.15rem #31c69ee3, 0px -2rem 0.2rem #000000c0,
+    0px -2.5rem 0.25rem #31c69e9d, 0px -3rem 0.3rem #347ede71,
+    0px -3.5rem 0.35rem #6b3fbd5c;
 }
 
 .name {
@@ -395,6 +414,11 @@ img {
     height: auto;
     border: solid 3px rgb(120, 120, 120);
     border-radius: 0%;
+}
+
+#treblesand {
+    height: auto;
+    filter: invert(0.8);
 }
 
 button {
@@ -473,7 +497,8 @@ To jest bardzo dobre pytanie - Natasza */
 /* WODA WODA WODA WODA - Kompsognat */
 
 .setting:hover ~ .radio {
-    box-shadow: 0px 0px 0.2rem 0.2rem var(--pink-glow);
+    box-shadow: 0px 0px 0.2rem 0.2rem var(--blue-glow);
+    /* was pink-glow */
     background-color: rgb(70, 70, 70);
 }
 
@@ -489,11 +514,11 @@ To jest bardzo dobre pytanie - Natasza */
     height: 0.75rem;
     border-radius: 50%;
     background-color: rgb(220, 220, 220);
-    box-shadow: 0px 0px 0.5rem 0.2rem var(--purple-glow);
+    box-shadow: 0px 0px 0.5rem 0.2rem var(--dark-blue);
 }
 
 .setting:checked ~ .radio {
-    box-shadow: 0px 0px 0.2rem 0.2rem var(--purple-glow);
+    box-shadow: 0px 0px 0.2rem 0.2rem var(--dark-blue);
 }
 
 .box-setting {
@@ -517,7 +542,8 @@ To jest bardzo dobre pytanie - Natasza */
 }
 
 .box-setting:hover ~ .checkbox {
-    box-shadow: 0px 0px 0.2rem 0.2rem var(--pink-glow);
+    box-shadow: 0px 0px 0.2rem 0.2rem var(--blue-glow);
+    /* was pink glow */
     background-color: rgb(70, 70, 70);
 }
 
@@ -536,7 +562,7 @@ To jest bardzo dobre pytanie - Natasza */
 }
 
 .box-setting:checked ~ .checkbox {
-    box-shadow: 0px 0px 1.25rem 1.25rem inset var(--purple-glow);
+    box-shadow: 0px 0px 1.25rem 1.25rem inset var(--dark-blue);
 }
 
 main {
@@ -765,7 +791,8 @@ h1 {
 
 h2 {
     font-weight: 800;
-    text-shadow: 0.1em 0.1em 0.1em var(--pink-glow);
+    text-shadow: 0.1em 0.1em 0.1em var(--blue-glow);
+    /* was pink-glow */
 }
 
 h3 {
@@ -775,7 +802,8 @@ h3 {
 
 h4 {
     font-weight: 600;
-    text-shadow: 0.1em 0.1em 0.1em var(--blue-glow);
+    text-shadow: 0.1em 0.1em 0.1em var(--purple-glow);
+    /* was blue-glow */
 }
 
 p {
@@ -846,18 +874,23 @@ sup a.internal {
     text-decoration: none;
 }
 
-.forimage {
+/* .forimage {
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
     margin: 80px;
     padding: 80px;
     font-family: "Comic Sans";
     font-size: 40px;
-    font-weight: 800;
-    text-shadow: 0.05rem 0.05rem 0.05rem rgba(175, 28, 160, 0.7), 0.1rem 0.1rem 0.1rem rgba(174, 15, 199, 0.7),
+    font-weight: 800; */
+    /* text-shadow: 0.05rem 0.05rem 0.05rem rgba(175, 28, 160, 0.7), 0.1rem 0.1rem 0.1rem rgba(174, 15, 199, 0.7),
     0.15rem 0.15rem 0.15rem rgba(131, 20, 200, 0.7), 0.2rem 0.2rem 0.2rem rgba(29, 18, 114, 0.7),
-    0.25rem 0.25rem 0.25rem rgba(28, 160, 175, 0.7), 0.3rem 0.3rem 0.3rem rgba(28, 175, 114, 0.7);
-}
+    0.25rem 0.25rem 0.25rem rgba(28, 160, 175, 0.7), 0.3rem 0.3rem 0.3rem rgba(28, 175, 114, 0.7); */
+    
+    /* color: var(--purple-glow);
+    text-shadow: 0.05rem 0.05rem 0.05rem #347ede, 0.1rem 0.1rem 0.05rem #31c69e,
+    0.15rem 0.15rem 0.05rem black, 0.2rem 0.2rem 0.05rem #31c69e,
+    0.25rem 0.25rem 0.05rem #347ede, 0.3rem 0.3rem 0.05rem #6B3FBD;
+} */
 
 .up {
     margin: 2rem auto;
@@ -1006,14 +1039,15 @@ sup a.internal {
     }
 
     .title {
-        color: rgb(175, 28, 160);
+        /* color: rgb(175, 28, 160); */
+        color: var(--purple-glow);
     }
 
-    .title:hover {
+    /* .title:hover {
         text-shadow: 0.05rem 0.05rem 0.05rem rgb(0, 0, 0), 0.1rem 0.1rem 0.1rem rgb(174, 15, 199),
         0.15rem 0.15rem 0.15rem rgb(131, 20, 200), 0.2rem 0.2rem 0.2rem rgb(29, 18, 114),
         0.25rem 0.25rem 0.25rem rgb(28, 160, 175), 0.3rem 0.3rem 0.3rem rgb(28, 175, 114);
-    }
+    } */
 
     .option:hover, .option:focus {
         box-shadow: 0px 0px 0px 5px rgb(50, 50, 50);
@@ -1078,6 +1112,10 @@ sup a.internal {
         filter: none;
     }
 
+    #treblesand {
+        filter: none;
+    }
+
     .ex {
         filter: hue-rotate(245deg) invert(1) brightness(1.25);
     }
@@ -1094,21 +1132,24 @@ sup a.internal {
         text-shadow: 0.05em 0.05em 0.1em rgb(0, 0, 0);
     }
 
-    h1{
-        color: rgb(139, 32, 189);
+    h1, h4{
+        /* color: rgb(139, 32, 189); */
+        color: var(--purple-glow);
     }
 
     h2 {
-        color: rgb(175, 28, 160);
+        /* color: rgb(175, 28, 160); */
+        color: var(--blue-glow);
     }
 
     h3 {
-        color: rgb(60, 160, 78);
+        /* color: rgb(60, 160, 78); */
+        color: var(--green-glow);
     }
 
-    h4 {
+    /* h4 {
         color: rgb(76, 171, 183);
-    }
+    } */
 
     fieldset {
         box-shadow:  0px 0px 0px 5px rgb(180, 180, 180), 0px 0px 50px 20px var(--color);

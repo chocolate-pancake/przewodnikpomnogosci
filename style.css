@@ -874,6 +874,16 @@ sup a.internal {
     text-decoration: none;
 }
 
+.for-aria {
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+    margin: -1px;
+    border: 0px !important;
+    position: absolute;
+    overflow: hidden;
+}
+
 /* .forimage {
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);

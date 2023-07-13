@@ -194,7 +194,7 @@ header::-webkit-scrollbar {
     /* margin: 10px 1rem; */
     margin: 0.5rem;
     /* font-size: min(6vw, 40px); */
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     font-weight: 600;
     transition: text-shadow 1s, color 1s;
@@ -352,7 +352,7 @@ header::-webkit-scrollbar {
 
 /* MACIE PIĆ I TO NIE JEST ŻART - Kompsognat */
 
-.footer {
+footer {
     border-top: solid 10px var(--footer-border);
     margin: 10rem max(-5rem, -5vw) 0px max(-5rem, -5vw);
     padding: 2rem min(5rem, 5vw) 2rem min(5rem, 5vw);
@@ -363,12 +363,17 @@ header::-webkit-scrollbar {
     0px -3.5rem 0.35rem #6b3fbd5c;
 }
 
+address {
+    font-style: normal;
+    margin: 0;
+}
+
 .name {
     /* color: rgb(255, 137, 137); */
-    text-shadow: 0.05rem 0.05rem 0.05rem rgb(0, 0, 0), 
-    0.1rem 0.1rem 0.05rem rgba(249, 13, 13, 0.7), 0.15rem 0.15rem 0.05rem rgba(250, 161, 6, 0.7),
-    0.2rem 0.2rem 0.05rem rgba(246, 239, 31, 0.7), 0.25rem 0.25rem 0.05rem rgba(14, 124, 4, 0.7),
-    0.3rem 0.3rem 0.05rem rgba(5, 46, 168, 0.7), 0.35rem 0.35rem 0.05rem rgba(98, 2, 146, 0.7);
+    text-shadow: 0.05rem 0.05rem 0.15rem rgb(0, 0, 0), 
+    0.1rem 0.1rem 0.15rem rgba(249, 13, 13, 0.7), 0.15rem 0.15rem 0.15rem rgba(250, 161, 6, 0.7),
+    0.2rem 0.2rem 0.15rem rgba(246, 239, 31, 0.7), 0.25rem 0.25rem 0.15rem rgba(14, 124, 4, 0.7),
+    0.3rem 0.3rem 0.15rem rgba(5, 46, 168, 0.7), 0.35rem 0.35rem 0.15rem rgba(98, 2, 146, 0.7);
 }
 
 .imgcontainer {
@@ -964,7 +969,7 @@ sup a.internal {
     }
 
     .title {
-        font-size: 1.5rem;
+        font-size: 2rem;
         padding: 0.25rem 0.75rem;
     }
 

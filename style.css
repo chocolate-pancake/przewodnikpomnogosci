@@ -377,7 +377,7 @@ address {
     text-shadow: 0.05rem 0.05rem 0.15rem rgb(0, 0, 0),
     0.1rem 0.1rem 0.1rem #E50000, 0.15rem 0.15rem 0.1rem #FF8D00,
     0.2rem 0.2rem 0.1rem #FFEE00, 0.25rem 0.25rem 0.1rem #028121,
-    0.3rem 0.3rem 0.1rem #004CFF, 0.35rem 0.35rem 0.1rem #770088;
+    0.3rem 0.3rem 0.1rem #347DDE, 0.35rem 0.35rem 0.1rem #770088;
 }
 
 .imgcontainer {
@@ -931,6 +931,30 @@ sup a.internal {
     width: 80%;
 }
 
+#loading {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 5px dotted var(--blue-glow);
+    /* border-right: 5px solid var(--blue-glow); */
+    margin: auto;
+    display: none;
+}
+
+.animated {
+    animation: rotate 1s ease-in-out infinite;
+    display: block;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate3d(0);
+    }
+    to {
+        transform: rotate3d(0, 1, 1, 360deg);
+    }
+}
+
 
 @media (min-width: 1250px) and (orientation: landscape){
 
@@ -1073,7 +1097,7 @@ sup a.internal {
         color: #222222;
         text-shadow: 0.05rem 0.05rem 0.15rem #E50000,
         0.1rem 0.1rem 0.1rem #FF8D00, 0.15rem 0.15rem 0.1rem #FFEE00,
-        0.2rem 0.2rem 0.1rem #028121, 0.25rem 0.25rem 0.1rem #004CFF,
+        0.2rem 0.2rem 0.1rem #028121, 0.25rem 0.25rem 0.1rem #347DDE,
         0.3rem 0.3rem 0.1rem #770088;
     }
 

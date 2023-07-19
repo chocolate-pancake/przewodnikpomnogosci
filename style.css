@@ -939,11 +939,12 @@ sup a.internal {
     /* border-right: 5px solid var(--blue-glow); */
     margin: auto;
     display: none;
+    animation: none;
 }
 
 .animated {
-    animation: rotate 1s ease-in-out infinite;
-    display: block;
+    animation: rotate 1s ease-in-out infinite !important;
+    display: block !important;
 }
 
 @keyframes rotate {

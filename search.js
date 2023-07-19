@@ -18,9 +18,9 @@ async function search(){
     let promise, object, page, title, searchables, score;
     let parser = new DOMParser;
 
-    for(url in urls){
+    for(let i = 0; i < urls.length; i ++){
         try{
-            promise = await fetch(url);
+            promise = await fetch(urls[i]);
         }
         catch{
             results.append(document.createTextNode("Przepraszamy, coś poszło nie tak. Jeżeli błąd będzie się powtarzał, skontaktuj się z nami."));

@@ -31,15 +31,25 @@
             <button class="menu-icon" type="button" onclick="menu()">
                 <img src="../menu-icon.png" alt="Menu" title="Menu">
             </button>
-            <a href="../" class="title">Przewodnik po Mnogości</a>
+            <a href="../" class="title">
+                <div class="logo">
+                    <svg class="logo">
+                        <circle class="upper"></circle>
+                        <circle class="down"></circle>
+                        <circle class="left"></circle>
+                        <circle class="right"></circle>
+                    </svg>
+                </div>
+                <span id="title">Przewodnik po Mnogości</span>
+            </a>
             <a href="../ustawienia" class="settings desktop">
                 <img src="../settings.png" alt="ustawienia">
             </a>
         </header>
         
-        <a href="../ustawienia" class="settings mobile">
+        <!-- <a href="../ustawienia" class="settings mobile">
             <img src="../settings.png" alt="ustawienia">
-        </a>
+        </a> -->
         
             <aside class="sidebar" id="sidebar">
                 <button class="menu-icon" type="button" onclick="menu()">
@@ -69,6 +79,19 @@
 
         <main id="zawartosc">
             
+            
+            <svg preserveAspectRatio="none" class="hidden">
+                <symbol id="ex" class="ex">
+                    <line x1="10%" y1="20%" x2="30%" y2="20%"></line>
+                    <line x1="10%" y1="20%" x2="10%" y2="90%"></line>
+                    <line x1="10%" y1="90%" x2="80%" y2="90%"></line>
+                    <line x1="80%" y1="90%" x2="80%" y2="70%"></line>
+                    <line x1="30%" y1="70%" x2="90%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="50%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="90%" y2="50%"></line>
+                </symbol>
+            </svg>
+            
             <h1>Alternatywne wyjaśnienia</h1>
 
             <p>
@@ -94,8 +117,8 @@
                 </div>
             </fieldset>
 
+            <div class="target" id="fizyczne"></div>
             <h2>
-                <div class="target" id="fizyczne"></div>
                 Fizyczne
             </h2>
 
@@ -103,8 +126,8 @@
                 Chociaż na pierwszy rzut oka może wydawać się inaczej, wyjaśnienie oparte na neurobiologii nie jest jedynym wytłumaczeniem mnogości, które nie sięga do sfery duchowej. Rzeczywistość jest dużo bardziej dziwna, niż wiele z nas myśli – wystarczy zagłębić się w realia astrofizyki czy fizyki kwantowej, żeby się przekonać, jak bardzo dziwna. Wszechświat nawet nie jest lokalnie prawdziwy <sup><span class="target" id="p1"></span>[<a href="#1" class="internal">1</a>]</sup>, cokolwiek to znaczy. Być może więc w tym wszystkim jest i wyjaśnienie dla mnogości.
             </p>
 
+            <div class="target" id="hipoteza-symulacji"></div>
             <h2>
-                <div class="target" id="hipoteza-symulacji"></div>
                 Hipoteza symulacji
             </h2>
 
@@ -116,8 +139,8 @@
                 Istnieje także szansa, że żyjemy w symulacji nie komputerowej, a przeprowadzanej przez czyiś mózg. Jeżeli zastosować rozumowanie z hipotezy symulacji znanej naukowemu środowisku do tego, co wiemy o doświadczeniach osób mnogich, prawdopodobieństwo, że akurat my żyjemy w prawdziwym świecie, nie jest aż tak duże. Oczywiście zewnętrzny świat wydaje się nam zbyt spójny i logiczny, żeby móc być wytworem czyjegoś umysłu – ale to samo powie ci każde NPC z naszego wewnętrznego świata, zanim zacznie się nad tym na poważnie zastanawiać. A nie można powiedzieć, że żadne z nas nie doświadczyło nigdy niczego, co czysto teoretycznie mogłoby wskazywać na niestałą naturę naszej rzeczywistości – na przykład tajemnicze i nigdy niewyjaśnione zniknięcie pewnej rzeczy z naszego domu. Oczywiście w tej teorii wracamy do punktu wyjścia, czyli twierdzenia, że ludzki mózg nie byłby w stanie symulować tak złożonego świata, więc żeby to miało jakiś potencjał w kontekście wyjaśniania możliwości istnienia mnogości, musiałobyśmy założyć, że mózg przeprowadzający symulację nie należy do człowieka, a do istoty na znacznie wyższym poziomie ewolucji.
             </p> 
             
+            <div class="target" id="duchowe"></div>
             <h2>
-                <div class="target" id="duchowe"></div>
                 Duchowe
             </h2>
 
@@ -125,8 +148,8 @@
                 Duchowych wyjaśnień mnogości może istnieć tak wiele, jak wiele istnieje na świecie wierzeń i religii, więc nie sposób opisać je wszystkie. Mają one jednak ze sobą wiele wspólnego – zakładają istnienie dusz i/lub nadnaturalnych istot, których wiele może zamieszkiwać bądź odwiedzać jedno i to samo ciało. Nie są one w żaden sposób gorsze od spojrzeń naukowych tak długo, jak nie wyrządzają nikomu krzywdy.
             </p>
 
+            <div class="target" id="reinkarnacja"></div>
             <h3>
-                <div class="target" id="reinkarnacja"></div>
                 Reinkarnacja
             </h3>
 
@@ -135,8 +158,8 @@
             </p>
 
 
+            <div class="target" id="sceptycyzm"></div>
             <h2>
-                <div class="target" id="sceptycyzm"></div>
                 Sceptycyzm
             </h2>
 
@@ -160,40 +183,40 @@
             </p>
 
             <!-- <p>
-                Systemy międzywymiarowe tłumaczą swoje doświadczenia byciem połączonym z równoległymi rzeczywistościami. Istnienie innych rzeczywistości, nawet takich z odmiennymi od naszych prawami fizyki, da się jak najbardziej wytłumaczyć naukowo – możemy np. żyć w <a href="https://pl.wikipedia.org/wiki/Wielo%C5%9Bwiat" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" class="ex" alt="zewnętrzny">wieloświecie</a>, w którym tworzy się nieskończona liczba nieskończonych wszechświatów bąbelkowych<sup><span class="target" id="s8"></span>[<a href="#8" class="internal">8</a>]</sup>. Problemem jest tutaj odległość – nasz wszechświat bąbelkowy jest nieskończony, a więc żeby dostać się do innego, trzeba by było podróżować wzdłuż czwartego albo i wyższego wymiaru, który dla nas, jako dla istot trójwymiarowych, raczej nie jest dostępny (a nawet gdyby był, przemieszczenie się tam nie pozostałoby bez wpływu na nasze ciało tutaj). A więc tutaj także niezbędne będą dusze, które mogą przemieszczać się pomiędzy ciałami obecnymi w różnych z tych wszechświatów. 
+                Systemy międzywymiarowe tłumaczą swoje doświadczenia byciem połączonym z równoległymi rzeczywistościami. Istnienie innych rzeczywistości, nawet takich z odmiennymi od naszych prawami fizyki, da się jak najbardziej wytłumaczyć naukowo – możemy np. żyć w <a href="https://pl.wikipedia.org/wiki/Wielo%C5%9Bwiat" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>wieloświecie</a>, w którym tworzy się nieskończona liczba nieskończonych wszechświatów bąbelkowych<sup><span class="target" id="s8"></span>[<a href="#8" class="internal">8</a>]</sup>. Problemem jest tutaj odległość – nasz wszechświat bąbelkowy jest nieskończony, a więc żeby dostać się do innego, trzeba by było podróżować wzdłuż czwartego albo i wyższego wymiaru, który dla nas, jako dla istot trójwymiarowych, raczej nie jest dostępny (a nawet gdyby był, przemieszczenie się tam nie pozostałoby bez wpływu na nasze ciało tutaj). A więc tutaj także niezbędne będą dusze, które mogą przemieszczać się pomiędzy ciałami obecnymi w różnych z tych wszechświatów. 
             </p> -->
 
             <!-- <p>
                 Możecie się zastanawiać, dlaczego w ogóle o tym wszystkim piszemy, skoro staramy się utworzyć tutaj bezpieczną przestrzeń, w której żadna osoba nie będzie się czuła atakowana. Otóż uważamy, że jest to ważne ze względu na krzywdę, którą <em>niektóre</em> religie czy wierzenia mogą sprowadzić na posiadające je osoby lub osoby w ich otoczeniu. Nie ma nic złego w tym, że system postrzega swój wewnętrzny świat jako miejsce fizycznie istniejące w równoległej rzeczywistości, ale kiedy przez to jego osoby członkowskie przestaną dbać o swoje ciało na zewnątrz, bo utrata życia czy zdrowia tutaj nie ma dla nich znaczenia, skoro nadal będą żyć w tym drugim świecie, zaczyna się problem. Znamy osoby, które poddały się z szukaniem szczęścia na tej ziemi i czekają już tylko, aż zacznie się ich życie po śmierci, żeby móc w końcu spełnić swoje marzenia. Uważamy to za niezwykle smutne, jeżeli po śmierci nie ma zupełnie nic, a one spędzą to jedyne życie, jakie mają, na czekaniu na coś, co nigdy nie nadejdzie. Uważamy za smutne, że są osoby, które nie wezmą rozwodu ze swoją okrutną osobą partnerską, bo to niezgodne z ich religią. Osoby, które będą całe życie uważały siebie za skażone z powodu swojej orientacji seksualnej, bo ich religia nazywa ją grzechem. Osoby, którym ich religia nie daje szczęścia, ale boją się ją porzucić przez strach przed karą. Osoby, którym wmawia się, że ich cierpienie jest zasłużone za grzechy, które popełniły. Osoby, którym wmawia się, że uratowanie kogoś od wiecznych tortur, na które samemu się go skazało, pod warunkiem całkowitego poddania się tej osoby jej „wybawcy” jest przejawem bezwarunkowej miłości. Zgadza się, większość z tych rzeczy tyczy się chrześcijaństwa, bo jest to religia, którą dobrze znamy, a przy tym często bardzo toksyczna religia. Nie mówimy oczywiście, że sama wiara w Boga jest zła (także spora część naszego systemu nadal określa siebie osobami chrześcijańskimi), ale że nie powinna być przedkładana ponad dobro innych jednostek ludzkich ani naukę. Istnienia Boga nie da się ani udowodnić, ani obalić, ale fakt, że część modlitw pozostaje bez odpowiedzi, jest niezaprzeczalny. Można dyskutować, dlaczego tak się dzieje, ale nie można temu zaprzeczyć i polegać wyłącznie na modlitwie w naprawdę istotnych życiowych sprawach. Mamy nadzieję, że pokazując, jak mało prawdopodobna pod względem naukowym jest duchowość, przyniesiemy wolność tym z was, które czują się zniewolone przez swoją religię czy wierzenia. Tym, którym osoby krzywdzące wmówiły, że mogą czytać ich myśli albo wejść do ich <a href="wewnetrzny-swiat" class="internal">wewnętrznego świata</a>. Tym, które boją się, że w każdej chwili może nadejść koniec świata. Tym, które boją się sięgnąć po „demoniczny” „Zmierzch” czy „Harrego Pottera”. Religia powinna być czymś, co daje wam poczucie bezpieczeństwa, sensu, wolności i spełnienia. Jeżeli tak nie jest, macie pełne prawo ją dostosować do własnych potrzeb, porzucić i poszukać jakiejś innej, albo nawet wymyślić swoją własną.
             </p> -->
 
+            <div class="target" id="przypisy"></div>
             <h2>
-                <div class="target" id="przypisy"></div>
                 Przypisy
             </h2>
 
             <ol class="links">
 
                 <li><div class="target" id="1"> </div>
-                    <a href="#p1" class="internal">↑</a> <a href="https://www.scientificamerican.com/article/the-universe-is-not-locally-real-and-the-physics-nobel-prize-winners-proved-it/" target="_blank" rel="noopener noreferrer" lang="en" class="external"><img src="external.png" class="ex" alt="zewnętrzny">The universe is not locally real and the physics nobel prize winners proved it</a></li>
+                    <a href="#p1" class="internal">↑</a> <a href="https://www.scientificamerican.com/article/the-universe-is-not-locally-real-and-the-physics-nobel-prize-winners-proved-it/" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>The universe is not locally real and the physics nobel prize winners proved it</a></li>
 
 
                 <li><div class="target" id="2"> </div>
-                    <a href="#p2" class="internal">↑</a> <a href="https://www.scientificamerican.com/article/do-we-live-in-a-simulation-chances-are-about-50-50/" target="_blank" rel="noopener noreferrer" lang="en" class="external"><img src="external.png" class="ex" alt="zewnętrzny">Do we live in a simulation? Chances are about 50-50</a></li>
+                    <a href="#p2" class="internal">↑</a> <a href="https://www.scientificamerican.com/article/do-we-live-in-a-simulation-chances-are-about-50-50/" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Do we live in a simulation? Chances are about 50-50</a></li>
                 
                 <li><div class="target" id="3"> </div>
-                    <a href="#p3" class="internal">↑</a> <a href=" https://lubimyczytac.pl/ksiazka/4882752/mozg-opowiesc-o-nas" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" class="ex" alt="zewnętrzny">Mózg. Opowieść o nas</a></li>
+                    <a href="#p3" class="internal">↑</a> <a href=" https://lubimyczytac.pl/ksiazka/4882752/mozg-opowiesc-o-nas" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Mózg. Opowieść o nas</a></li>
 
 <!-- 
                 <li><div class="target" id="8"> </div>
-                    <a href="#s8" class="internal">↑</a> <a href="https://lubimyczytac.pl/ksiazka/4863013/witamy-we-wszechswiecie-podroz-astrofizyczna" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" class="ex" alt="zewnętrzny">https://lubimyczytac.pl/ksiazka/4863013/witamy-we-wszechswiecie-podroz-astrofizyczna</a></li>                -->
+                    <a href="#s8" class="internal">↑</a> <a href="https://lubimyczytac.pl/ksiazka/4863013/witamy-we-wszechswiecie-podroz-astrofizyczna" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>https://lubimyczytac.pl/ksiazka/4863013/witamy-we-wszechswiecie-podroz-astrofizyczna</a></li>                -->
 
 
             </ol>
 
 
             <footer>
-                <p><i aria-label="cytat">Ależ oczywiście to dzieje się w twojej głowie, Harry, tylko skąd, u licha, wniosek, że wobec tego nie dzieje się to naprawdę?</i><span lang="en"> ~ J. K. Rowling, </span><i>Harry Potter i Insygnia Śmierci</i><p>
+                <p><i aria-label="cytat">Ależ oczywiście to dzieje się w twojej głowie, Harry, tylko skąd, u licha, wniosek, że wobec tego nie dzieje się to naprawdę?</i><span lang="en"> ~ J. K. Rowling, </span><i>Harry Potter i Insygnia Śmierci</i></p>
 
 <p>Tworzone od serca przez <a href="../system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>.</p>
 
@@ -203,9 +226,9 @@
     
     <!-- 
     
-    <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" class="ex" alt="zewnętrzny">System Tęczowego Chaosu na YouTube</a></p> -->
+    <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>System Tęczowego Chaosu na YouTube</a></p> -->
     
-    <p><a href="https://discord.gg/SVRTZzkWQC" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" class="ex" alt="zewnętrzny">Mnoga Przestrzeń na discordzie</a></p></address>
+    <p><a href="https://discord.gg/SVRTZzkWQC" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Mnoga Przestrzeń na discordzie</a></p></address>
     
     <p>Nie używamy ciasteczek (przynajmniej na razie, dopóki nie nauczymy się, jak to wszystko działa).</p>
     
@@ -215,7 +238,7 @@
     
     <p>Strona ma wyłącznie charakter informacyjny i nie powinna być używania w celu diagnozy ani leczenia. Nie bierzemy na siebie odpowiedzialności za żadne decyzje osób czytających podjęte pod wpływem znalezionych tutaj treści.</p>
 
-    <p>Cała zawartość jest udostępniona na licencji <a href="https://oql.avris.it/license/v1.1" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">OQL</a></p>
+    <p>Cała zawartość jest udostępniona na licencji <a href="https://oql.avris.it/license/v1.1" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>OQL</a></p>
 
 </footer>
 

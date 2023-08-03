@@ -30,15 +30,25 @@
             <button class="menu-icon" type="button" onclick="menu()">
                 <img src="../menu-icon.png" alt="Menu" title="Menu">
             </button>
-            <a href="../" class="title">Przewodnik po Mnogości</a>
+            <a href="../" class="title">
+                <div class="logo">
+                    <svg class="logo">
+                        <circle class="upper"></circle>
+                        <circle class="down"></circle>
+                        <circle class="left"></circle>
+                        <circle class="right"></circle>
+                    </svg>
+                </div>
+                <span id="title">Przewodnik po Mnogości</span>
+            </a>
             <a href="../ustawienia" class="settings desktop">
                 <img src="../settings.png" alt="ustawienia">
             </a>
         </header>
         
-        <a href="../ustawienia" class="settings mobile">
+        <!-- <a href="../ustawienia" class="settings mobile">
             <img src="../settings.png" alt="ustawienia">
-        </a>
+        </a> -->
         
             <aside class="sidebar" id="sidebar">
                 <button class="menu-icon" type="button" onclick="menu()">
@@ -68,6 +78,19 @@
 
         <main id="zawartosc">
             
+            
+            <svg preserveAspectRatio="none" class="hidden">
+                <symbol id="ex" class="ex">
+                    <line x1="10%" y1="20%" x2="30%" y2="20%"></line>
+                    <line x1="10%" y1="20%" x2="10%" y2="90%"></line>
+                    <line x1="10%" y1="90%" x2="80%" y2="90%"></line>
+                    <line x1="80%" y1="90%" x2="80%" y2="70%"></line>
+                    <line x1="30%" y1="70%" x2="90%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="50%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="90%" y2="50%"></line>
+                </symbol>
+            </svg>
+            
             <h1>Neurobiologia</h1>
 
             <p>
@@ -79,11 +102,11 @@
             </p>
 
             <p>
-                Z kolei wszystkie pozostałe typy systemów przynajmniej czasowo posiadają co najmniej dwie oddzielne świadomości. Aby odpowiedzieć sobie na pytanie, jak na jeden mózg może przypadać wiele świadomości, trzeba najpierw zadać sobie pytanie, jak właściwie ta świadomość powstaje. Według teorii zintegrowanej informacji każdy system (na przykład ludzka kora mózgowa), który posiada odpowiednie właściwości, swoim działaniem powoduje powstanie świadomości<sup><span class="target" id="p4"></span>[<a href="#4" class="internal">4</a>]</sup>. Jedną z tych właściwości jest integracja – różne części kory komunikują się i ściśle ze sobą współpracują. U osób z <a href="https://nowestandardy.pl/nauka/info/zespol_rozdwojonego_mozgu.php" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">zespołem rozdwojonego mózgu</a>   komunikacja pomiędzy dwoma półkulami mózgu została uniemożliwiona poprzez usunięcie ciała modzelowatego (spoidła łączącego ze sobą półkule), co doprowadziło do rozdzielenia ich świadomości na dwie części. Czasowy podział trochę innego rodzaju może wystąpić także naturalnie, bez mechanicznej ingerencji w strukturę mózgu – na przykład kiedy zamyślisz się, prowadząc samochód, i dopiero przed domem zdasz sobie sprawę, że nie pamiętasz niczego z całej trasy. Prawdopodobnie przez krótki czas w twoim mózgu istnieją dwie świadomość – twoja, „wyższa” świadomość, która odpowiada za tworzenie wspomnień, dlatego pamiętasz to, co w trakcie jazdy zaprzątało twoje myśli, ale nie to, co działo się na drodze, oraz druga, „niższa” świadomość, która zajmuje się analizowaniem zewnętrznych bodźców, dzięki czemu udało ci się uniknąć wjechania na skrzyżowanie na czerwonym świetle. To wszystko prowadzi nas do wniosku, że wiele równorzędnych świadomości może istnieć w jednym mózgu na dwa sposoby – albo każdy obszar mózgu jest fizycznie podzielony na części, pomiędzy którymi nie ma lub istnieje bardzo niewiele połączeń, albo sygnały wędrują po mózgu takimi drogami, że czasowo nie ma komunikacji pomiędzy aktywnymi częściami różnych obszarów, więc świadomości powstaje kilka, chociaż korzystają one z tych samych zasobów mózgu (tylko nie w tym samym czasie). W przypadku pierwszego sposobu z każdą kolejną osobą, którą chciałoby się tam „zmieścić”, trzeba by było „odebrać” jakieś części mózgu pozostałym, więc już w przypadku kilku z nich nie byłyby one w stanie funkcjonować jak przeciętna osoba z całym mózgiem, a istnieją systemy liczące nawet kilkaset w pełni sprawnych osób członkowskich. Wobec tego skłaniamy się do twierdzenia, że jest to ten drugi sposób lub połączenie obu sposobów (np. fizycznie rozdzielone tylko obszary odpowiadające za tożsamość), być może w zależności od systemu.
+                Z kolei wszystkie pozostałe typy systemów przynajmniej czasowo posiadają co najmniej dwie oddzielne świadomości. Aby odpowiedzieć sobie na pytanie, jak na jeden mózg może przypadać wiele świadomości, trzeba najpierw zadać sobie pytanie, jak właściwie ta świadomość powstaje. Według teorii zintegrowanej informacji każdy system (na przykład ludzka kora mózgowa), który posiada odpowiednie właściwości, swoim działaniem powoduje powstanie świadomości<sup><span class="target" id="p4"></span>[<a href="#4" class="internal">4</a>]</sup>. Jedną z tych właściwości jest integracja – różne części kory komunikują się i ściśle ze sobą współpracują. U osób z <a href="https://nowestandardy.pl/nauka/info/zespol_rozdwojonego_mozgu.php" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>zespołem rozdwojonego mózgu</a>   komunikacja pomiędzy dwoma półkulami mózgu została uniemożliwiona poprzez usunięcie ciała modzelowatego (spoidła łączącego ze sobą półkule), co doprowadziło do rozdzielenia ich świadomości na dwie części. Czasowy podział trochę innego rodzaju może wystąpić także naturalnie, bez mechanicznej ingerencji w strukturę mózgu – na przykład kiedy zamyślisz się, prowadząc samochód, i dopiero przed domem zdasz sobie sprawę, że nie pamiętasz niczego z całej trasy. Prawdopodobnie przez krótki czas w twoim mózgu istnieją dwie świadomość – twoja, „wyższa” świadomość, która odpowiada za tworzenie wspomnień, dlatego pamiętasz to, co w trakcie jazdy zaprzątało twoje myśli, ale nie to, co działo się na drodze, oraz druga, „niższa” świadomość, która zajmuje się analizowaniem zewnętrznych bodźców, dzięki czemu udało ci się uniknąć wjechania na skrzyżowanie na czerwonym świetle. To wszystko prowadzi nas do wniosku, że wiele równorzędnych świadomości może istnieć w jednym mózgu na dwa sposoby – albo każdy obszar mózgu jest fizycznie podzielony na części, pomiędzy którymi nie ma lub istnieje bardzo niewiele połączeń, albo sygnały wędrują po mózgu takimi drogami, że czasowo nie ma komunikacji pomiędzy aktywnymi częściami różnych obszarów, więc świadomości powstaje kilka, chociaż korzystają one z tych samych zasobów mózgu (tylko nie w tym samym czasie). W przypadku pierwszego sposobu z każdą kolejną osobą, którą chciałoby się tam „zmieścić”, trzeba by było „odebrać” jakieś części mózgu pozostałym, więc już w przypadku kilku z nich nie byłyby one w stanie funkcjonować jak przeciętna osoba z całym mózgiem, a istnieją systemy liczące nawet kilkaset w pełni sprawnych osób członkowskich. Wobec tego skłaniamy się do twierdzenia, że jest to ten drugi sposób lub połączenie obu sposobów (np. fizycznie rozdzielone tylko obszary odpowiadające za tożsamość), być może w zależności od systemu.
             </p>
 
             <p>
-                Jeżeli chcecie dowiedzieć się o temacie czegoś więcej, polecamy „<a href="https://tulpa.pl/neurobiologiczne-podstawy-zjawiska-tulpy/ " target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" class="ex" alt="zewnętrzny">Neurony, które wyszły z siebie</a>” oraz „<a href="https://www.researchgate.net/publication/352488294_Podzielony_umysl_-_podzielony_mozg_Neurobiologiczne_podloze_dysocjacyjnego_zaburzenia_tozsamosci_z_perspektywy_teorii_ukladow_dynamicznych_Divided_mind_-_divided_brain_The_neurobiology_of_dissociative" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" class="ex" alt="zewnętrzny">Podzielony umysł – podzielony mózg. Neurobiologiczne podłoże dysocjacyjnego zaburzenia tożsamości z perspektywy teorii układów dynamicznych</a>”. Pierwszy artykuł ma trochę wad (nie podaje zbyt wielu źródeł, a dysocjacyjne zaburzenie tożsamości opisuje z tak wieloma błędami, ile tylko dało się zmieścić w tak krótki akapit), ale jest w miarę prosty do zrozumienia. Z kolei ten drugi jest pisany naukowym językiem, przez co może być trudniejszy do zrozumienia, i bierze pod uwagę jedynie dysocjacyjne zaburzenie tożsamości. Minusem obydwu jest fakt, że osoby, które je pisały, raczej nie miały zbyt obszernej wiedzy na temat mnogich doświadczeń (chociaż wciąż ich wiedza jest o niebo bardziej szczegółowa, niż przeciętnej osoby w społeczeństwie), dlatego opisywana przez nie neurobiologia jest trochę spłycona i dotyczy jedynie części mnogich doświadczeń.
+                Jeżeli chcecie dowiedzieć się o temacie czegoś więcej, polecamy „<a href="https://tulpa.pl/neurobiologiczne-podstawy-zjawiska-tulpy/ " target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Neurony, które wyszły z siebie</a>” oraz „<a href="https://www.researchgate.net/publication/352488294_Podzielony_umysl_-_podzielony_mozg_Neurobiologiczne_podloze_dysocjacyjnego_zaburzenia_tozsamosci_z_perspektywy_teorii_ukladow_dynamicznych_Divided_mind_-_divided_brain_The_neurobiology_of_dissociative" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Podzielony umysł – podzielony mózg. Neurobiologiczne podłoże dysocjacyjnego zaburzenia tożsamości z perspektywy teorii układów dynamicznych</a>”. Pierwszy artykuł ma trochę wad (nie podaje zbyt wielu źródeł, a dysocjacyjne zaburzenie tożsamości opisuje z tak wieloma błędami, ile tylko dało się zmieścić w tak krótki akapit), ale jest w miarę prosty do zrozumienia. Z kolei ten drugi jest pisany naukowym językiem, przez co może być trudniejszy do zrozumienia, i bierze pod uwagę jedynie dysocjacyjne zaburzenie tożsamości. Minusem obydwu jest fakt, że osoby, które je pisały, raczej nie miały zbyt obszernej wiedzy na temat mnogich doświadczeń (chociaż wciąż ich wiedza jest o niebo bardziej szczegółowa, niż przeciętnej osoby w społeczeństwie), dlatego opisywana przez nie neurobiologia jest trochę spłycona i dotyczy jedynie części mnogich doświadczeń.
             </p>
 
             <fieldset class="contents">
@@ -102,18 +125,18 @@
                 </div>
             </fieldset>
 
+            <div class="target" id="badania"></div>
             <h2>
-                <div class="target" id="badania"></div>
                 Badania
             </h2>
             
 
             <p>
-                Istnienie osób alterowych potwierdziły skany mózgów systemów z <a href="../zaburzenia/dysocjacyjne-zaburzenie-tozsamosci" class="internal">dysocjacyjnym zaburzeniem tożsamości</a> – <b><a href="../powstawanie#teoria-strukturalnej-dysocjacji" class="internal">EP</a> (współosoby po traumie) wykazywały inne wzory aktwyności neuronowej niż <a href="../powstawanie#teoria-strukturalnej-dysocjacji" class="internal">ANP</a> (współosoby bez traumy) w odpowiedzi na zdjęcia neutralnych i wściekłych twarzy, czego próby kontrolne (<a href="../mnogosc#osoba-pojedyncza" class="internal">osoby pojedyncze</a>) nie były w stanie naśladować</b><sup><span class="target" id="p1"></span>[<a href="#1" class="internal">1</a>]</sup>. Systemy z DID mają także większe od reszty populacji obszary mózgu odpowiadające za ruch, motywację, pamięć, podejmowanie decyzji i inne wyższe funkcje poznawcze (<a href="https://neuroexpert.org/wiki/jadra-podstawy/" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" class="ex" alt="zewnętrzny">jądra podstawy</a>), co tłumaczy się faktem, że musi się tam „zmieścić” więcej osób.
+                Istnienie osób alterowych potwierdziły skany mózgów systemów z <a href="../zaburzenia/dysocjacyjne-zaburzenie-tozsamosci" class="internal">dysocjacyjnym zaburzeniem tożsamości</a> – <b><a href="../powstawanie#teoria-strukturalnej-dysocjacji" class="internal">EP</a> (współosoby po traumie) wykazywały inne wzory aktwyności neuronowej niż <a href="../powstawanie#teoria-strukturalnej-dysocjacji" class="internal">ANP</a> (współosoby bez traumy) w odpowiedzi na zdjęcia neutralnych i wściekłych twarzy, czego próby kontrolne (<a href="../mnogosc#osoba-pojedyncza" class="internal">osoby pojedyncze</a>) nie były w stanie naśladować</b><sup><span class="target" id="p1"></span>[<a href="#1" class="internal">1</a>]</sup>. Systemy z DID mają także większe od reszty populacji obszary mózgu odpowiadające za ruch, motywację, pamięć, podejmowanie decyzji i inne wyższe funkcje poznawcze (<a href="https://neuroexpert.org/wiki/jadra-podstawy/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>jądra podstawy</a>), co tłumaczy się faktem, że musi się tam „zmieścić” więcej osób.
             </p>
 
+            <div class="target" id="projekcja"></div>
             <h3>
-                <div class="target" id="projekcja"></div>
                 Projekcja
             </h3>
 
@@ -121,17 +144,17 @@
                 Jak na razie jedynie badanie poruszające temat <a href="../frontowanie#projekcja" class="internal">projekcji</a> „na życzenie”, które udało nam się znaleźć, dotyczy osoby pojedynczej, ale jesteśmy przekonane, że w przypadku osób mnogich mechanizm nie będzie się wiele różnić. Skany mózgu wykazały, że w czasie astralnej projekcji u badanej aktywują się obszary związane z ruchem, a także te powiązane we wcześniejszych badaniach z pozacielesnymi doświadczeniami. Badające doszły do wniosku, że astralna projekcja jest nadzwyczajnym rodzajem wyobraźni ruchowej – aktywacja obszarów mózgu w jej czasie wyglądała inaczej, niż kiedy badana jedynie wyobrażała sobie siebie w czasie astralnej projekcji. Co ciekawe od obracania się wokół własnej osi w czasie „przebywania” poza swoim ciałem dostawała zawrotów głowy – naszym zdaniem pokazuje to, jak bardzo rzeczywiste takie doświadczenia mogą być dla mózgu.<sup><span class="target" id="p3"></span>[<a href="#3" class="internal">3</a>]</sup>
             </p>
 
+            <div class="target" id="osoby-niepelnosprawne"></div>
             <h3>
-                <div class="target" id="osoby-niepelnosprawne"></div>
                 Osoby niepełnosprawne
             </h3>
 
             <p>
-                Fizyczną niezdolność niektóych osób alterowych do fukcjonowania na sposoby, z którymi inne w ich systemie nie mają problemu, potwierdziła <a href="https://www.doz.pl/czytelnia/a15135-EEG__na_czym_polega_elektroencefalografia_Jakie_sa_wskazania_i_jak_przebiega_badanie_EEG" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">elektroencefalografia</a> mózgu systemu z dysocjacyjnym zaburzeniem tożsamości, którego część osób alterowych była niewidoma. Kiedy niewidome osoby kontrolowały ciało, zauważano brak obecności aktywności mózgowej zazwyczaj powiązanej z widzeniem, która była obecna przy frontowaniu osób widzących.<sup><span class="target" id="p5"></span>[<a href="#5" class="internal">5</a>]</sup>
+                Fizyczną niezdolność niektóych osób alterowych do fukcjonowania na sposoby, z którymi inne w ich systemie nie mają problemu, potwierdziła <a href="https://www.doz.pl/czytelnia/a15135-EEG__na_czym_polega_elektroencefalografia_Jakie_sa_wskazania_i_jak_przebiega_badanie_EEG" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>elektroencefalografia</a> mózgu systemu z dysocjacyjnym zaburzeniem tożsamości, którego część osób alterowych była niewidoma. Kiedy niewidome osoby kontrolowały ciało, zauważano brak obecności aktywności mózgowej zazwyczaj powiązanej z widzeniem, która była obecna przy frontowaniu osób widzących.<sup><span class="target" id="p5"></span>[<a href="#5" class="internal">5</a>]</sup>
             </p>
 
+            <div class="target" id="sugestie"></div>
             <h3>
-                <div class="target" id="sugestie"></div>
                 Nasze sugestie
             </h3>
 
@@ -146,8 +169,8 @@
             Trochę więcej optymizmu, kto wie, gdzie nas życie zaprowadzi - Jonatan 
             Ty to sobie możesz mówić - Władysław -->
 
+            <div class="target" id="egzowspomnienia"></div>
             <h2>
-                <div class="target" id="egzowspomnienia"></div>
                 Egzowspomnienia
             </h2>
 
@@ -171,8 +194,8 @@
                 Dlaczego to jest niezwykle, nieopisanie ważne? Fakt, że te wspomnienia są dla posiadających je osób bardzo rzeczywiste, jest bardzo istotny, chociaż tak samo rzeczywiste mogą wydawać się także sztuczne wspomnienia. Ale twierdzenie, że posiadanie sztucznych wspomnień tak wielu wydarzeń to dla systemów codzienność, jest bardzo szkodliwa, bo sugeruje, że osoby mnogie są o niebo bardziej podatne na ich tworzenie. Przez to osoby z zewnątrz mogą być bardziej podatne na uwierzenie osobom, które próbują wymusić na innych uznanie odzyskanych na terapii traumatycznych wspomnień za sztuczne wspomnienia, takim jak osoby odpowiedzialne za niesławną Fundację Syndromu Fałszywego Wspomnienia.
             </p> -->
 
+            <div class="target" id="nieludzie-introjektowe"></div>
             <h2>
-                <div class="target" id="nieludzie-introjektowe"></div>
                 Nieludzie i osoby introjektowe
             </h2>
 
@@ -180,8 +203,8 @@
                 Wbrew przekonaniom niektórych zjawisko <a href="../wspolosoby/role#nieludzie" class="internal">transgatunkowości</a> można także wyjaśnić w czysto neurobiologiczny sposób. Aby odpowiedzieć na pytanie: „dlaczego niektóre osoby nie czują się człowiekiem?”, należy najpierw zadać sobie pytanie: „dlaczego większość osób czuje się człowiekiem?”. Według nas najbardziej prawdopodobne wytłumaczenie brzmi: ponieważ obszar ich mózgu, odpowiadający za identyfikację „ja”, poczucie siebie, własnej tożsamości, jest silnie połączony z obszarem odpowiadającym za rozpoznawanie istot ludzkich. Dlatego większość z nas myśląc o sobie, myśli o gatunku ludzkim, a myśląc o gatunku ludzkim, myśli o sobie jako jego części. Ale u części osób obszar odpowiedzialny za identyfikację „ja” powiązany jest z obszarem rozpoznającym inny gatunek i stąd bierze się ich atypowa tożsamość. Analogicznie będzie z czymkolwiek – osobą, rzeczą, piosenką, miejscem – w przypadku <a href="../wspolosoby/role#osoba-introjektowa" class="internal">introjekcji</a>. U <a href="../mnogosc#osoba-pojedyncza" class="internal">osób pojedynczych</a> może to być w pewnym stopniu warunkowane genetycznie i/lub wykształcać się w najwcześniejszych latach życia (badań na razie brak; narzekałośmy, że mnogością mało osób się interesuje, ale tutaj jest jeszcze gorzej). U <a href="../system" class="internal">systemów</a> podświadomość może celowo łączyć tożsamość nowej współosoby z konkretnym gatunkiem, przedmiotem albo nawet ideą. 
             </p>
 
+            <div class="target" id="systemowe-przeskakiwanie"></div>
             <h2>
-                <div class="target" id="systemowe-przeskakiwanie"></div>
                 Systemowe przeskakiwanie
             </h2>
 
@@ -196,8 +219,8 @@
 
 
             
+            <div class="target" id="przypisy"></div>
             <h2>
-                <div class="target" id="przypisy"></div>
                 Przypisy
             </h2>
 
@@ -206,22 +229,22 @@
                 
 
                 <li><div class="target" id="1"> </div>
-                    <a href="#p1" class="internal">↑</a> <a href="https://www.sciencedirect.com/science/article/pii/S2213158213000892" target="_blank" rel="noopener noreferrer" lang="en" class="external"><img src="../external.png" class="ex" alt="zewnętrzny">Dissociative part-dependent biopsychosocial reactions to backward masked angry and neutral faces: An fMRI study of dissociative identity disorder</a></li>
+                    <a href="#p1" class="internal">↑</a> <a href="https://www.sciencedirect.com/science/article/pii/S2213158213000892" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Dissociative part-dependent biopsychosocial reactions to backward masked angry and neutral faces: An fMRI study of dissociative identity disorder</a></li>
 
                 <li><div class="target" id="2"> </div>
-                    <a href="#p2" class="internal">↑</a> <a href="https://pl.wikipedia.org/wiki/Jednop%C3%B3%C5%82kulowy_sen_wolnofalowy" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" class="ex" alt="zewnętrzny">Jednopółkulowy sen wolnofalowy</a></li>
+                    <a href="#p2" class="internal">↑</a> <a href="https://pl.wikipedia.org/wiki/Jednop%C3%B3%C5%82kulowy_sen_wolnofalowy" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Jednopółkulowy sen wolnofalowy</a></li>
 
                 <li><div class="target" id="3"> </div>
-                    <a href="#p3" class="internal">↑</a> <a href="https://www.frontiersin.org/articles/10.3389/fnhum.2014.00070/full" target="_blank" rel="noopener noreferrer" lang="en" class="external"><img src="../external.png" class="ex" alt="zewnętrzny">Voluntary out-of-body experience: an fMRI study</a></li>
+                    <a href="#p3" class="internal">↑</a> <a href="https://www.frontiersin.org/articles/10.3389/fnhum.2014.00070/full" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Voluntary out-of-body experience: an fMRI study</a></li>
     
                 <li><div class="target" id="4"> </div>
-                    <a href="#p4" class="internal">↑</a> <a href=" http://var.scholarpedia.org/article/Information_Integration_Theory" target="_blank" rel="noopener noreferrer" lang="en" class="external"><img src="../external.png" class="ex" alt="zewnętrzny">Integrated Information Theory</a></li>
+                    <a href="#p4" class="internal">↑</a> <a href=" http://var.scholarpedia.org/article/Information_Integration_Theory" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Integrated Information Theory</a></li>
 
                 <li><div class="target" id="5"> </div>
-                    <a href="#p5" class="internal">↑</a> <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/pchj.109" target="_blank" rel="noopener noreferrer" lang="en" class="external"><img src="../external.png" class="ex" alt="zewnętrzny">Sight and blindness in the same person: Gating in the visual system</a></li>
+                    <a href="#p5" class="internal">↑</a> <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/pchj.109" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Sight and blindness in the same person: Gating in the visual system</a></li>
 
                 <li><div class="target" id="6"> </div>
-                    <a href="#p6" class="internal">↑</a> <a href="https://haraldmerckelbach.nl/artikelen_engels/2006/Neuropsychology%20And%20Pseudo-Memories.pdf" target="_blank" rel="noopener noreferrer" lang="en" class="external"><img src="../external.png" class="ex" alt="zewnętrzny">Neuropsychology And Pseudo-Memories</a></li>
+                    <a href="#p6" class="internal">↑</a> <a href="https://haraldmerckelbach.nl/artikelen_engels/2006/Neuropsychology%20And%20Pseudo-Memories.pdf" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Neuropsychology And Pseudo-Memories</a></li>
 
             </ol>
 
@@ -229,7 +252,7 @@
 
 
             <footer>
-                <p><i aria-label="cytat">Ależ oczywiście to dzieje się w twojej głowie, Harry, tylko skąd, u licha, wniosek, że wobec tego nie dzieje się to naprawdę?</i><span lang="en"> ~ J. K. Rowling, </span><i>Harry Potter i Insygnia Śmierci</i><p>
+                <p><i aria-label="cytat">Ależ oczywiście to dzieje się w twojej głowie, Harry, tylko skąd, u licha, wniosek, że wobec tego nie dzieje się to naprawdę?</i><span lang="en"> ~ J. K. Rowling, </span><i>Harry Potter i Insygnia Śmierci</i></p>
 
 <p>Tworzone od serca przez <a href="../system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>.</p>
 
@@ -239,9 +262,9 @@
     
     <!-- 
     
-    <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" class="ex" alt="zewnętrzny">System Tęczowego Chaosu na YouTube</a></p> -->
+    <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>System Tęczowego Chaosu na YouTube</a></p> -->
     
-    <p><a href="https://discord.gg/SVRTZzkWQC" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" class="ex" alt="zewnętrzny">Mnoga Przestrzeń na discordzie</a></p></address>
+    <p><a href="https://discord.gg/SVRTZzkWQC" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Mnoga Przestrzeń na discordzie</a></p></address>
     
     <p>Nie używamy ciasteczek (przynajmniej na razie, dopóki nie nauczymy się, jak to wszystko działa).</p>
     
@@ -251,7 +274,7 @@
     
     <p>Strona ma wyłącznie charakter informacyjny i nie powinna być używania w celu diagnozy ani leczenia. Nie bierzemy na siebie odpowiedzialności za żadne decyzje osób czytających podjęte pod wpływem znalezionych tutaj treści.</p>
 
-    <p>Cała zawartość jest udostępniona na licencji <a href="https://oql.avris.it/license/v1.1" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">OQL</a></p>
+    <p>Cała zawartość jest udostępniona na licencji <a href="https://oql.avris.it/license/v1.1" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>OQL</a></p>
 
 </footer>
 

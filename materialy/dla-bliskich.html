@@ -32,15 +32,25 @@
             <button class="menu-icon" type="button" onclick="menu()">
                 <img src="../menu-icon.png" alt="Menu" title="Menu">
             </button>
-            <a href="../" class="title">Przewodnik po Mnogości</a>
+            <a href="../" class="title">
+                <div class="logo">
+                    <svg class="logo">
+                        <circle class="upper"></circle>
+                        <circle class="down"></circle>
+                        <circle class="left"></circle>
+                        <circle class="right"></circle>
+                    </svg>
+                </div>
+                <span id="title">Przewodnik po Mnogości</span>
+            </a>
             <a href="../ustawienia" class="settings desktop">
                 <img src="../settings.png" alt="ustawienia">
             </a>
         </header>
         
-        <a href="../ustawienia" class="settings mobile">
+        <!-- <a href="../ustawienia" class="settings mobile">
             <img src="../settings.png" alt="ustawienia">
-        </a>
+        </a> -->
         
             <aside class="sidebar" id="sidebar">
                 <button class="menu-icon" type="button" onclick="menu()">
@@ -72,6 +82,19 @@
         <main id="zawartosc">
 
 
+            
+            <svg preserveAspectRatio="none" class="hidden">
+                <symbol id="ex" class="ex">
+                    <line x1="10%" y1="20%" x2="30%" y2="20%"></line>
+                    <line x1="10%" y1="20%" x2="10%" y2="90%"></line>
+                    <line x1="10%" y1="90%" x2="80%" y2="90%"></line>
+                    <line x1="80%" y1="90%" x2="80%" y2="70%"></line>
+                    <line x1="30%" y1="70%" x2="90%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="50%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="90%" y2="50%"></line>
+                </symbol>
+            </svg>
+            
             <h1>Dla bliskich</h1>
 
             <p>
@@ -100,8 +123,8 @@
 
 
 
+            <div class="target" id="podstawy-mnogosci"></div>
             <h2>
-                <div class="target" id="podstawy-mnogosci"></div>
                 Podstawy mnogości
             </h2>
 
@@ -113,8 +136,8 @@
                 W stosunku do całego systemu zazwyczaj używamy mnogich zaimków (my, wy, oni/ona/one) oraz <a href="../system#nazwy" class="internal">systemowej nazwy</a> i/lub zbiorowego imienia (jak zawsze, w przypadku niepewności najlepiej jest pytać). W stosunku do pojedynczych współjednostek używamy ich indywidualnych imion i zaimków, o ile takie posiadają. Pytanie o „tę prawdziwą” osobę uznaje się za niekulturalne – <strong>każda współjednostka jest tak samo prawdziwa, jak wszystkie pozostałe</strong>. Kontrolowanie ciała przez konkretną współjednostkę nazywamy <a href="../frontowanie" class="internal">frontowaniem</a>, a przekazywanie kontroli nad ciałem określamy <a href="../frontowanie#zamiana" class="internal">zamianą</a>. <strong>Dla większości systemów zamiana nie jest odbierana jako stawanie się inną osobą</strong>, a bardziej jako przekazywanie sterów nad biologiczną maszyną komuś innemu, w związku z tym nie powinno się pytać „kim teraz jesteś?”, a „kto teraz jest na froncie?” albo „z kim teraz rozmawiam?” (jeżeli to sprawia ci problem, wyobraź sobie ciało systemu jako robota, w którego głowie znajduje się panel sterowania i wielki ekran, a współjednostki wymieniają się tym, która w danym momencie siedzi w fotelu za konsolą). Wiele sytemów posiada <a href="../wewnetrzny-swiat" class="internal">wewnętrzny świat</a>, czyli miejsce w umyśle, w którym mogą spędzać czas, kiedy nie przebywają na froncie. Jest on dla nich często bardzo rzeczywisty, dlatego <strong>na świat, w którym teraz jesteś, mówimy zewnętrzny świat albo dzielona rzeczywistość</strong>, a nie prawdziwy czy realny świat.
             </p>
 
+            <div class="target" id="jak-traktowac-system"></div>
             <h2>
-                <div class="target" id="jak-traktowac-system"></div>
                 Jak traktować system?
             </h2>
 
@@ -127,11 +150,11 @@
             </p>
 
             <p>
-                Naucz się przynajmniej podstawowych informacji o mnogości, żeby rozumieć, o czym do ciebie mówią, i uniknąć podstawowych błędów takich jak zapytanie systemu "kim teraz jesteś?" (<strong>każda współosoba jest zawsze tą samą osobą</strong>, jedynie zamieniają się kontrolą nad ciałem; takie pytanie mogłoby być odpowiednie jedynie w przypadku <a href="../mnogosc#system-monoswiadomy" class="internal">systemu dzielącego świadomość</a>). Spróbuj także dowiedzieć się czegoś więcej o ich systemie, jeżeli będą chciały ci o tym powiedzieć. Zupełnie inaczej będzie wyglądało poznawanie małego systemu, niż <a href="../system#system-polifragmentowany" class="internal">dużego systemu</a>, na ogół z większą ostrożnością i troską trzeba traktować osoby w <a href="../powstawanie#traumogeniczne" class="internal">systemach po traumie</a>, niż te w <a href="../powstawanie#endogeniczne" class="internal">systemach bez traumy</a>, system doświadczający jedynie <a href="../zaburzenia/dysocjacja#amnezja-emocjonalna" class="internal">częściowej amnezji</a> będzie zawsze mniej więcej pamiętał, co razem robiłoście, system doświadczający <a href="../zaburzenia/dysocjacja#dysocjacyjna-amnezja" class="internal">zupełnej amnezji</a> niekoniecznie.
+                Naucz się przynajmniej podstawowych informacji o mnogości, żeby rozumieć, o czym do ciebie mówią, i uniknąć podstawowych błędów takich jak zapytanie systemu "kim teraz jesteś?" (<strong>każda współosoba jest zawsze tą samą osobą</strong>, jedynie zamieniają się kontrolą nad ciałem; takie pytanie mogłoby być odpowiednie jedynie w przypadku <a href="../mnogosc#system-monoswiadomy" class="internal">systemu z jedną świadomością</a>). Spróbuj także dowiedzieć się czegoś więcej o ich systemie, jeżeli będą chciały ci o tym powiedzieć. Zupełnie inaczej będzie wyglądało poznawanie małego systemu, niż <a href="../system#system-polifragmentowany" class="internal">dużego systemu</a>, na ogół z większą ostrożnością i troską trzeba traktować osoby w systemach po traumie, niż te w systemach bez traumy, system doświadczający jedynie <a href="../zaburzenia/dysocjacja#amnezja-emocjonalna" class="internal">częściowej amnezji</a> będzie zawsze mniej więcej pamiętał, co razem robiłoście, system doświadczający <a href="../zaburzenia/dysocjacja#dysocjacyjna-amnezja" class="internal">zupełnej amnezji</a> niekoniecznie.
             </p>
             
+            <div class="target" id="osoby-fiktywne"></div>
             <h3>
-                <div class="target" id="osoby-fiktywne"></div>
                 Osoby fiktywne
             </h3>
 
@@ -147,8 +170,8 @@
                 Podsumowując, traktuj fiktywne jak osoby, a nie jak grę aktorską systemu ani niepowtarzalną okazję, żeby porozmawiać z twoją ulubioną fikcyjną postacią.
             </p>
 
+            <div class="target" id="trauma"></div>
             <h2>
-                <div class="target" id="trauma"></div>
                 Trauma
             </h2>
 
@@ -162,8 +185,8 @@
                 Trauma jest niezwykle częsta w mnogiej społeczności. Jeżeli wiesz, że masz do czynienia z systemem z <a href="../zaburzenia/dysocjacyjne-zaburzenie-tozsamosci" class="internal">dysocjacyjnym zaburzeniem tożsamości</a>, innym <a href="../powstawanie#traumogeniczne" class="internal">systemem traumogenicznym</a> albo nie masz pewności, czy dany system przeszedł przez traumę, <span class="unspecified">powinnxś</span><span class="masculine">powinieneś</span><span class="feminine">powinnaś</span><span class="neutral">powinnoś</span><span class="postgender">powinnuś</span> traktować je ze szczególną ostrożnością. Jeżeli wiesz, jakie są ich <a href="../zaburzenia/zespol-stresu-pourazowego#triggery" class="internal">triggery</a>, staraj się jak możesz, żeby nie robić tych rzeczy czy nie używać tych poszczególnych wyrażeń (i <strong>nigdy, przenigdy nie przekazuj dalej informacji o czyichś triggerach</strong>, jeżeli dana osoba cię o to nie poprosi; możesz ją tym wystawić na niebezpieczeństwo). W przeciwnym wypadku <strong>unikaj poruszania tematów dotyczących wszystkich <a href="../zaburzenia/zespol-stresu-pourazowego#ostrzezenia" class="internal">powszechnych triggerów</a></strong> (takich jak wykorzystywanie seksualne, przemoc psychiczna i fizyczna, próby samobójcze itd.), a także działań, które mogą się kojarzyć z tymi tematami, np. krzyczenie, gwałtowne podniesienie ręki czy udawanie w żartach, że się kogoś poddusza (takie coś może wydawać ci się śmieszne, kiedy wiesz, że nie robisz tego na poważnie, ale umysł osoby, która była kiedyś duszona, potraktuje to jako zagrożenie, nie ważne, jak bardzo ci ona ufa). Warto pamiętać, że <strong>współosoby mogą mieć różne triggery</strong>, a często część z nich nie będzie miała ich wcale. Jeżeli nie masz pewności, jak się zachowywać przy znajomym systemie, żeby nie zrobić im krzywdy – pytaj (ale miej na uwadze, że <strong>triggery są niezwykle prywatną informacją</strong> i każde ma prawo nie udostępnić ci o nich informacji).
             </p>
 
+            <div class="target" id="moja-wina"></div>
             <h3>
-                <div class="target" id="moja-wina"></div>
                 Moja wina
             </h3>
 
@@ -181,8 +204,8 @@
                 To, że jesteś na tej stronie, pewnie oznacza, że bliski ci system powiedział ci o swojej mnogości. Jest to prawdopodobnie wyraz dawania ci kredytu zaufania i chęci odbudowy waszej relacji. Doceń to. Nie są ci tego winne. Nie są ci winne przebaczenia ani dalszego utrzymywania kontaktu. Zrób wszystko, żeby ich nie zawieść. Nie możesz już zmienić przeszłości, ale możesz przyjąć na siebie konsekwencje swoich czynów i zmienić to, jak będzie wyglądała wasza przyszłość. Jeżeli nie zaczniesz pracować nad zachowaniami, które je straumatyzowały, mogą zdecydować się na zawsze zniknąć z twojego życia. Musisz więc odpowiedzieć sobie na pytanie, na czym zależy ci bardziej: na nich, czy na fałszywym, wyidealizowanym obrazie ciebie jako osoby, która nigdy nie popełnia błędów?
             </p>
 
+            <div class="target" id="flashback-pomoc"></div>
             <h3>
-                <div class="target" id="flashback-pomoc"></div>
                 Pomoc w przypadku flashbacku
             </h3>
 
@@ -193,7 +216,7 @@
             </fieldset>
 
             <p>
-                Na podstawie: <a href="https://www.youtube.com/watch?v=NMRyOUW6dss" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">How to help someone having a flashback | DissociaDID</a>  
+                Na podstawie: <a href="https://www.youtube.com/watch?v=NMRyOUW6dss" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>How to help someone having a flashback | DissociaDID</a>  
             </p>
 
             <p>
@@ -227,8 +250,8 @@
 
             <!-- DO DOKOŃCZENIA - Natasza -->
 
+            <div class="target" id="udawanie"></div>
             <h2>
-                <div class="target" id="udawanie"></div>
                 Udawanie
             </h2>
 
@@ -244,8 +267,8 @@
                 Musimy postawić sprawę jasno – niektórzy ludzie mogą udawać mnogość, najczęściej dla osiągnięcia korzyści lub zwrócenia na siebie uwagi<sup><span class="target" id="p2"></span>[<a href="#2" class="internal">2</a>]</sup>. Ale zamiast próbować podważyć prawdziwość doświadczeń bliskich ci lub innych osób, zalecamy, abyś <span class="uspecified">spróbowałx</span><span class="masculine">spróbował</span><span class="feminine">spróbowała</span><span class="neutral">spróbowało</span><span class="postgender">spróbowału</span> przyjrzeć się poniższym kwestiom. I nie podajemy tych informacji po to, żebyś <span class="unspecified">mogłx</span><span class="masculine">mół</span><span class="feminine">mogła</span><span class="neutral">mogło</span><span class="postgender">mogłu</span> stwierdzić: „acha! Udają!”, tylko ocenić, czy ktoś nie próbuje cię wykorzystać.
             </p>
 
+            <div class="target" id="przemoc-i-kontrola"></div>
             <h3>
-                <div class="target" id="przemoc-i-kontrola"></div>
                 Przemoc i kontrola
             </h3>
 
@@ -260,11 +283,11 @@
             </p>
 
             <p>
-                Podkreślamy – to wszystko niekoniecznie jest udawaniem mnogości czy zaburzenia. Osoba <a href="../wspolosoby/role#osoba-przesladujaca" class="internal">prześladująca</a> może wyładowywać na tobie swoją wściekłość, a jej współosoby nie potrafić jej powstrzymać. Ale nie znaczy to, że masz dawać się ranić – czasami czyjeś dobre chęci to za mało. Istnieje coś takiego jak <a href="dla-systemow#systemowa-odpowiedzialnosc" class="internal">systemowa odpowiedzialność</a> – <strong>osoby członkowskie systemu powinny brać na siebie konsekwencje czynów swoich współosób</strong>. Jeśli nie są w stanie zapewnić ci bezpieczeństwa, potrzebują pomocy, ale <strong>nie ty jesteś osobą, która jest odpowiedzialna za jej dostarczenie</strong>. Odeślij je do osoby psychologicznej i zdystansuj się od nich na tyle, żeby nie mogły cię zranić, dopóki nie rozwiążą swoich wewnętrznych problemów. A jeżeli doświadczasz z ich (albo kogokolwiek innego) strony przemocy w domu, zadzwoń na <a href="https://www.niebieskalinia.pl/" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">niebieską linię</a>, a w przypadku bezpośredniego zagrożenia życia lub zdrowia od razu na 112.
+                Podkreślamy – to wszystko niekoniecznie jest udawaniem mnogości czy zaburzenia. Osoba <a href="../wspolosoby/role#osoba-przesladujaca" class="internal">prześladująca</a> może wyładowywać na tobie swoją wściekłość, a jej współosoby nie potrafić jej powstrzymać. Ale nie znaczy to, że masz dawać się ranić – czasami czyjeś dobre chęci to za mało. Istnieje coś takiego jak <a href="dla-systemow#systemowa-odpowiedzialnosc" class="internal">systemowa odpowiedzialność</a> – <strong>osoby członkowskie systemu powinny brać na siebie konsekwencje czynów swoich współosób</strong>. Jeśli nie są w stanie zapewnić ci bezpieczeństwa, potrzebują pomocy, ale <strong>nie ty jesteś osobą, która jest odpowiedzialna za jej dostarczenie</strong>. Odeślij je do osoby psychologicznej i zdystansuj się od nich na tyle, żeby nie mogły cię zranić, dopóki nie rozwiążą swoich wewnętrznych problemów. A jeżeli doświadczasz z ich (albo kogokolwiek innego) strony przemocy w domu, zadzwoń na <a href="https://www.niebieskalinia.pl/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>niebieską linię</a>, a w przypadku bezpośredniego zagrożenia życia lub zdrowia od razu na 112.
             </p>
 
+            <div class="target" id="bledne-informacje"></div>
             <h3>
-                <div class="target" id="bledne-informacje"></div>
                 Błędne informacje
             </h3>
 
@@ -272,13 +295,13 @@
                 Jeżeli osoba, z którą rozmawiasz, mówi ci, że współosoby to tylko metaforyczne koncepty albo że tak naprawdę nie są świadome – to zły znak. Nie musi być to wcale celowe udawanie – całkiem prawdopodobne, że masz do czynienia z <a href="../mnogosc#osoba-pojedyncza" class="internal">osobą singletową</a>, która zdobyła jedynie powierzchowną wiedzę o temacie i zaczęła się identyfikować jako system. Możliwe także, że masz do czynienia z <a href="../wspolosoby/role#osoba-hostujaca" class="internal">osobą hostującą</a>, która <a href="../zaburzenia/dysocjacyjne-zaburzenie-tozsamosci#negacja" class="internal">neguje</a> lub jeszcze nie do końca rozumie swoją mnogość (jest to całkiem możliwe w przypadku, w którym dopiero niedawno otrzymała diagnozę DID/OSDD od osoby psychologicznej). W takiej sytuacji zalecamy z nimi o tym porozmawiać i wytłumaczyć im istotę mnogości – bo swoim zachowaniem mogą pogłębiać dezinformację na jej temat, która już bez tego wyrządza krzywdę wielu systemom (a także ranić inne osoby członkowskie swojego systemu, jeżeli go rzeczywiście posiadają). Ale najpierw upewnij się, że ty masz więcej niż podstawową wiedzę na ten temat – jeżeli powiesz do <a href="../mnogosc#system-monoswiadomy" class="internal">systemu monoświadomego</a>, że błędnie interpretuje swoje doświadczenia, bo system nie może mieć jednej świadomości, pokażesz im jedynie, że w ogóle ich nie rozumiesz.
             </p>
 
+            <div class="target" id="zwracanie-uwagi"></div>
             <h3>
-                <div class="target" id="zwracanie-uwagi"></div>
                 Zwracanie uwagi
             </h3>
 
             <p>
-                To, że mówią o swojej mnogości stosunkowo dużo, niekoniecznie oznacza desperacką potrzebę zwrócenia na siebie uwagi (jeżeli stopniowo zaczynają się przed tobą coraz więcej o niej otwierać, jest to raczej oznaka ogromnego zaufania do twojej osoby). Ich wewnętrzne sprawy są pewnie bardzo istotną częścią ich życia, a wiadomo, że wszystkie lubimy rozmawiać o tym, co nas najbardziej absorbuje. Pytanie brzmi: czy mówią tylko i wyłącznie o swojej mnogości? Czy opowiadają o niej każdej nowo poznanej osobie? Czy jeżeli temat zejdzie na cokolwiek innego, próbują wszelkimi siłami skierować go z powrotem na swoje doświadczenia i denerwują się, kiedy im się to nie udaje? Jeżeli tak, całkiem możliwe jest, że masz do czynienia z osobą z <a href="https://www.medme.pl/artykuly/osobowosc-histrioniczna-test-i-objawy,98078.html" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">osobowością histrioniczną</a>, czyli zaburzeniem, które charakteryzuje się między innymi ciągłą potrzebą pozostawania w centrum uwagi. Podkreślamy – <strong>taka osoba wciąż może być mnoga</strong>, dlatego nie należy jej oskarżać o udawanie. Z pewnością jednak należy zachęcić ją do udania się do osoby psychologicznej, jeżeli jeszcze nie uczęszcza na terapię, oraz dowiedzieć się, jak ją wspierać przy zachowaniu bezpiecznego dla siebie dystansu. <strong>Nie pomożesz jej, oddając jej każdą sekundę swojego czasu</strong>, a będzie to dla ciebie okropnie wyczerpujące.
+                To, że mówią o swojej mnogości stosunkowo dużo, niekoniecznie oznacza desperacką potrzebę zwrócenia na siebie uwagi (jeżeli stopniowo zaczynają się przed tobą coraz więcej o niej otwierać, jest to raczej oznaka ogromnego zaufania do twojej osoby). Ich wewnętrzne sprawy są pewnie bardzo istotną częścią ich życia, a wiadomo, że wszystkie lubimy rozmawiać o tym, co nas najbardziej absorbuje. Pytanie brzmi: czy mówią tylko i wyłącznie o swojej mnogości? Czy opowiadają o niej każdej nowo poznanej osobie? Czy jeżeli temat zejdzie na cokolwiek innego, próbują wszelkimi siłami skierować go z powrotem na swoje doświadczenia i denerwują się, kiedy im się to nie udaje? Jeżeli tak, całkiem możliwe jest, że masz do czynienia z osobą z <a href="https://www.medme.pl/artykuly/osobowosc-histrioniczna-test-i-objawy,98078.html" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>osobowością histrioniczną</a>, czyli zaburzeniem, które charakteryzuje się między innymi ciągłą potrzebą pozostawania w centrum uwagi. Podkreślamy – <strong>taka osoba wciąż może być mnoga</strong>, dlatego nie należy jej oskarżać o udawanie. Z pewnością jednak należy zachęcić ją do udania się do osoby psychologicznej, jeżeli jeszcze nie uczęszcza na terapię, oraz dowiedzieć się, jak ją wspierać przy zachowaniu bezpiecznego dla siebie dystansu. <strong>Nie pomożesz jej, oddając jej każdą sekundę swojego czasu</strong>, a będzie to dla ciebie okropnie wyczerpujące.
             </p>
 
 
@@ -292,10 +315,10 @@
             <ol class="links">
 
             <li><div class="target" id="1"> </div>
-                <a href="#p1" class="internal">↑</a> <a href="https://www.youthandpolicy.org/articles/young-people-with-multiplicity/" target="_blank" rel="noopener noreferrer" lang="en" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">Young people with multiplicity </a></li>
+                <a href="#p1" class="internal">↑</a> <a href="https://www.youthandpolicy.org/articles/young-people-with-multiplicity/" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Young people with multiplicity </a></li>
 
             <li><div class="target" id="2"> </div>
-                <a href="#p2" class="internal">↑</a> <a href="https://www.researchgate.net/publication/350871376_Revisiting_False-Positive_and_Imitated_Dissociative_Identity_Disorder" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">Revisiting False-Positive and Imitated Dissociative Identity Disorder</a></li>
+                <a href="#p2" class="internal">↑</a> <a href="https://www.researchgate.net/publication/350871376_Revisiting_False-Positive_and_Imitated_Dissociative_Identity_Disorder" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Revisiting False-Positive and Imitated Dissociative Identity Disorder</a></li>
 
             </ol>
 
@@ -303,7 +326,7 @@
 
 
             <footer>
-                <p><i aria-label="cytat">Ależ oczywiście to dzieje się w twojej głowie, Harry, tylko skąd, u licha, wniosek, że wobec tego nie dzieje się to naprawdę?</i><span lang="en"> ~ J. K. Rowling, </span><i>Harry Potter i Insygnia Śmierci</i><p>
+                <p><i aria-label="cytat">Ależ oczywiście to dzieje się w twojej głowie, Harry, tylko skąd, u licha, wniosek, że wobec tego nie dzieje się to naprawdę?</i><span lang="en"> ~ J. K. Rowling, </span><i>Harry Potter i Insygnia Śmierci</i></p>
 
 <p>Tworzone od serca przez <a href="../system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>.</p>
 
@@ -313,9 +336,9 @@
     
     <!-- 
     
-    <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" class="ex" alt="zewnętrzny">System Tęczowego Chaosu na YouTube</a></p> -->
+    <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>System Tęczowego Chaosu na YouTube</a></p> -->
     
-    <p><a href="https://discord.gg/SVRTZzkWQC" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" class="ex" alt="zewnętrzny">Mnoga Przestrzeń na discordzie</a></p></address>
+    <p><a href="https://discord.gg/SVRTZzkWQC" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Mnoga Przestrzeń na discordzie</a></p></address>
     
     <p>Nie używamy ciasteczek (przynajmniej na razie, dopóki nie nauczymy się, jak to wszystko działa).</p>
     
@@ -325,7 +348,7 @@
     
     <p>Strona ma wyłącznie charakter informacyjny i nie powinna być używania w celu diagnozy ani leczenia. Nie bierzemy na siebie odpowiedzialności za żadne decyzje osób czytających podjęte pod wpływem znalezionych tutaj treści.</p>
 
-    <p>Cała zawartość jest udostępniona na licencji <a href="https://oql.avris.it/license/v1.1" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">OQL</a></p>
+    <p>Cała zawartość jest udostępniona na licencji <a href="https://oql.avris.it/license/v1.1" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>OQL</a></p>
 
 </footer>
 

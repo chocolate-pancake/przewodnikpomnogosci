@@ -32,15 +32,25 @@
             <button class="menu-icon" type="button" onclick="menu()">
                 <img src="../menu-icon.png" alt="Menu" title="Menu">
             </button>
-            <a href="../" class="title">Przewodnik po Mnogości</a>
+            <a href="../" class="title">
+                <div class="logo">
+                    <svg class="logo">
+                        <circle class="upper"></circle>
+                        <circle class="down"></circle>
+                        <circle class="left"></circle>
+                        <circle class="right"></circle>
+                    </svg>
+                </div>
+                <span id="title">Przewodnik po Mnogości</span>
+            </a>
             <a href="../ustawienia" class="settings desktop">
                 <img src="../settings.png" alt="ustawienia">
             </a>
         </header>
         
-        <a href="../ustawienia" class="settings mobile">
+        <!-- <a href="../ustawienia" class="settings mobile">
             <img src="../settings.png" alt="ustawienia">
-        </a>
+        </a> -->
         
             <aside class="sidebar" id="sidebar">
                 <button class="menu-icon" type="button" onclick="menu()">
@@ -72,6 +82,19 @@
         <main id="zawartosc">
 
 
+            
+            <svg preserveAspectRatio="none" class="hidden">
+                <symbol id="ex" class="ex">
+                    <line x1="10%" y1="20%" x2="30%" y2="20%"></line>
+                    <line x1="10%" y1="20%" x2="10%" y2="90%"></line>
+                    <line x1="10%" y1="90%" x2="80%" y2="90%"></line>
+                    <line x1="80%" y1="90%" x2="80%" y2="70%"></line>
+                    <line x1="30%" y1="70%" x2="90%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="50%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="90%" y2="50%"></line>
+                </symbol>
+            </svg>
+            
             <h1>Dla systemów</h1>
 
             <p>
@@ -83,7 +106,7 @@
             </p>
 
             <p>
-                Jeżeli posługujecie się językiem angielskim, polecamy wam zajrzeć także na <a href="https://kinhost.org/Main/MultiplicityTMM" target="_blank" rel="noopener noreferrer" lang="en" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">Multiplicity: The Missing Manual</a>, tworzone przez <span lang="en">The Crisses</span> z pomocą społeczności. Znajdziecie tam zdecydowanie więcej praktycznych porad, które mogą wam się przydać.
+                Jeżeli posługujecie się językiem angielskim, polecamy wam zajrzeć także na <a href="https://kinhost.org/Main/MultiplicityTMM" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Multiplicity: The Missing Manual</a>, tworzone przez <span lang="en">The Crisses</span> z pomocą społeczności. Znajdziecie tam zdecydowanie więcej praktycznych porad, które mogą wam się przydać.
             </p>
 
             <fieldset class="contents">
@@ -130,8 +153,8 @@
                     <a href="#przypisy">Przypisy</a>
                 </div>
             </fieldset>
-
-            <h2><div class="target" id="zakotwiczanie"></div>
+            <div class="target" id="zakotwiczanie"></div>
+            <h2>
                 Zakotwiczanie
             </h2>
 
@@ -139,13 +162,13 @@
                 Zakotwiczanie (inaczej ugruntowywanie) jest metodą używaną do przezwyciężania dysocjacji, a także np. ataków paniki. Polega ono na całkowitym skierowaniu swojej uwagi na otoczenie i obecny moment, najczęściej poprzez zaangażowanie wszystkich pięciu zmysłów. Przykładowe ćwiczenie zakotwiczania może wyglądać tak: znajdź wokół siebie dziesięć rzeczy, które możesz zobaczyć, pięć, które możesz usłyszeć, pięć, które możesz dotknąć, dwie, które możesz powąchać i jedną, której możesz posmakować. Jeżeli często dysocjujecie, może wam pomóc noszenie przy sobie zakotwiczającego pudełka, z którego w razie potrzeby będziecie mogły skorzystać w każdym miejscu i czasie. Przykładowa zawartość takiego pudełka to intensywnie pachnąca świeczka, miętówki, puchowy breloczek i zabawka sensoryczna. Oczywiście nie wszystkie przedmioty będą się nadawać do każdych okoliczności (zostanie przyłapanym przez szefową na wąchaniu świeczki w trakcie pracy mogłoby być trochę niezręczne), dlatego warto też włożyć do swojej kieszeni jakąś drobną rzecz, którą będzie można się dyskretnie zakotwiczyć.
             </p>
 
+            <div class="target" id="na-zapominanie"></div>
             <h2>
-                <div class="target" id="na-zapominanie"></div>
                 Na zapominanie
             </h2>
 
             <p>
-                Jeżeli jesteście systemem amnezyjnym i/lub zaburzonym, nie poradzicie sobie z zapamiętywaniem codziennych rzeczy tak, jak reszta społeczeństwa. Nie warto słuchać „porad” innych, że musicie się starać bardziej czy więcej się skupiać na tym, co macie do zrobienia – jeżeli przeszłoście traumę, obszar waszego mózgu odpowiedzialny za pamięć długotrwałą (<a href="https://www.poradnikzdrowie.pl/zdrowie/psychiatria/hipokamp-jakie-ma-funkcje-i-jakie-sa-skutki-jego-uszkodzenia-aa-N8ga-xAXN-q6Fb.html" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">hipokamp</a>) uległ zmniejszeniu (co pocieszające, może on powiększyć się dzięki leczeniu traumy)<sup><span class="target" id="p1"></span>[<a href="#1" class="internal">1</a>]</sup> i dobre chęci nie wystarczą, żeby to zmienić. Ale nie trzeba się załamywać – istnieje wiele sposobów, na które możecie umożliwić sobie w miarę sprawne funkcjonowanie, przechowując istotne informacje na zewnętrznych nośnikach. Oczywiście powinnoście wspólnie ustalać, z jakich pomocy będziecie korzystać, bo jeżeli jedna współosoba zapisze w kalendarzu nadchodzące urodziny, nic to wam nie pomoże, kiedy pozostałe tego kalendarza nigdy nie otworzą. Niezwykle ważne dla efektywności poniższych metod jest także regularne zakotwiczanie się – nic wam nie pomoże zapisanie sobie na ręce przypomnienia, kiedy będziecie zbyt zdysocjowane, żeby w ogóle na tę rękę spojrzeć.
+                Jeżeli jesteście systemem amnezyjnym i/lub zaburzonym, nie poradzicie sobie z zapamiętywaniem codziennych rzeczy tak, jak reszta społeczeństwa. Nie warto słuchać „porad” innych, że musicie się starać bardziej czy więcej się skupiać na tym, co macie do zrobienia – jeżeli przeszłoście traumę, obszar waszego mózgu odpowiedzialny za pamięć długotrwałą (<a href="https://www.poradnikzdrowie.pl/zdrowie/psychiatria/hipokamp-jakie-ma-funkcje-i-jakie-sa-skutki-jego-uszkodzenia-aa-N8ga-xAXN-q6Fb.html" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>hipokamp</a>) uległ zmniejszeniu (co pocieszające, może on powiększyć się dzięki leczeniu traumy)<sup><span class="target" id="p1"></span>[<a href="#1" class="internal">1</a>]</sup> i dobre chęci nie wystarczą, żeby to zmienić. Ale nie trzeba się załamywać – istnieje wiele sposobów, na które możecie umożliwić sobie w miarę sprawne funkcjonowanie, przechowując istotne informacje na zewnętrznych nośnikach. Oczywiście powinnoście wspólnie ustalać, z jakich pomocy będziecie korzystać, bo jeżeli jedna współosoba zapisze w kalendarzu nadchodzące urodziny, nic to wam nie pomoże, kiedy pozostałe tego kalendarza nigdy nie otworzą. Niezwykle ważne dla efektywności poniższych metod jest także regularne zakotwiczanie się – nic wam nie pomoże zapisanie sobie na ręce przypomnienia, kiedy będziecie zbyt zdysocjowane, żeby w ogóle na tę rękę spojrzeć.
             </p>
 
             <p>
@@ -162,7 +185,7 @@
                 <li>przyklejanie karteczek samoprzylepnych z przypomnieniami w dobrze widocznych miejscach, najlepiej takich, w które często patrzycie, albo takich powiązanych z czynnością, o której zawsze zapominacie (np. „zabrać klucze” na drzwiach wyjściowych)</li>
                 <li>tworzenie listy rzeczy do zrobienia, którą nosicie zawsze ze sobą, i uzupełnianie jej tak szybko, jak to tylko możliwe, kiedy pomyślicie o kolejnej rzeczy, która powinna się na niej znaleźć</li>
                 <li>trzymanie leków w pojemniczkach podzielonych na dni tygodnia i pory dnia</li>
-                <li>pytanie <strong>zaufanych</strong> ludzi, czy jest coś, o czym powinnoście pamiętać</li>
+                <li>pytanie <strong>zaufanych</strong> osób, czy jest coś, o czym powinnoście pamiętać</li>
                 <li>zapisywanie w jednym miejscu ważnych informacji, np. dotyczących pracy</li>
                 <li>prowadzenie dziennika</li>
                 <li>zapisywanie godzin wszystkich zamian, żeby wiedzieć, kogo można zapytać o wydarzenie z konkretnego przedziału czasu</li>
@@ -174,8 +197,8 @@
                 <li>zostawianie przypomnień w wewnątrzświecie (powinna to być raczej metoda uzupełniająca, jako że wewnętrzny świat istnieje jednak w waszym umyśle i rzeczy tam istniejące nie są tak stabilne, jak te na zewnątrz; zawsze jednak jest większa szansa, że będziecie o czymś pamiętać, jeżeli zapiszecie to sobie na białej tablicy naprzeciwko pokoju frontowego)</li>
             </ul>
 
+            <div class="target" id="systemowa-wspolpraca"></div>
             <h2>
-                <div class="target" id="systemowa-wspolpraca"></div>
                 Systemowa współpraca
             </h2>
 
@@ -191,8 +214,8 @@
                 Budowanie współpracy będzie wymagało poświęceń. Czasami trzeba będzie zrezygnować z oglądania ulubionego serialu, żeby pozwolić innej osobie pójść na siłownię. Albo nie kupić kolejnej bluzki, żeby zaoszczędzić na czyjś wymarzony tablet graficzny. Albo pokonać lęk i wstyd, żeby umożliwić systemowej kotce <a href="../frontowanie#maskowanie" class="internal">odmaskowanie</a> się przy zaufanych zewnętrznych osobach. Czasami trudno będzie wam dojść do porozumienia, ale nie poddawajcie się. Szukajcie alternatywnych rozwiązań, poproście któreś niezaangażowane w konflikt, żeby zostało waszą osobą mediatorską, wypiszcie swoje argumenty na kartce. Z relacjami w systemie jest tak samo, jak z każdymi innymi – wymagają wiele pracy, ale są jej naprawdę warte.
             </p>
 
+            <div class="target" id="systemowe-spotkania"></div>
             <h3>
-                <div class="target" id="systemowe-spotkania"></div>
                 Systemowe spotkania
             </h3>
 
@@ -204,8 +227,8 @@
                 <b> Jeżeli macie taką możliwość, organizujcie spotkania codziennie o ustalonej porze</b>, np. rano albo wieczorem. Jeżeli wasz system jest bardzo duży i wiele współosób prowadzi swoje własne życia w środku, osiągnięcie czegoś takiego może być zbyt trudne, ale zalecamy przynajmniej jedno ogólnosystemowe spotkanie w tygodniu. Obecność na nich powinna być obowiązkowa (możecie wprowadzić <a href="#systemowe-zasady" class="internal">zasadę</a>, że każde, które chce mieć możliwość frontowania, musi się na nich pojawiać). <b> Powinnoście na nich informować o wszystkich istotnych rzeczach dziejących się na zewnątrz oraz wspólnie podejmować ważne decyzje dotyczące waszego życia. Każde ma prawo się na nich wypowiedzieć i zdanie każdego powinno zostać wysłuchane.</b> W przypadku dużych systemów mogłoby to się skończyć strasznym chaosem, dlatego zalecamy porozdzielać wszystkie do pięcio-, dziesięcioosobowych grup, dla każdej przydzielając przynajmniej jedną zaufaną, odpowiedzialną osobę liderską. Wtedy na głównej części spotkania informujecie o tym, co się dzieje i jakie decyzje trzeba podjąć, a potem rozchodzicie się, żeby dyskutować o nich w grupach. Potem spotykają się same osoby liderskie, przekazując reszcie, do jakich wniosków doszły ich grupy (jeżeli wasz system jest bardzo duży, możecie osoby liderskie także porozdzielać na grupy i powtórzyć ten proces). Na podstawie tego wasza władza (którą mogą być osoby liderskie grup, ale też jeszcze inne osoby, wszystko zależy od was) podejmuje decyzje. W czasie, w którym oczekujecie na ogłoszenie ostatecznych wyników (a także po zakończeniu oficjalnej części spotkania), reszta systemu może się ze sobą integrować w waszym miejscu spotkań – lepsze poznanie siebie nawzajem także jest ważne w nawiązywaniu współpracy. Umożliwcie chętnym robienie warsztatów, lekcji czy wykładów, w których będą mogły dzielić się z innymi przydatną (lub nieprzydatną) wiedzą czy umiejętnościami. Zachęcajcie do zakładania drużyn sportowych, klubów i kółek zainteresowań, organizowania wspólnych wyjść do kina, na basen, wycieczek krajoznawczych i biwaków (raczej w większych systemach). <b> Część współosób może czuć się samotna, ale nie umieć samodzielnie wyjść z inicjatywą do innych, zwłaszcza jeżeli istnieją już wśród was pewne zgrane ze sobą grupy znajomych.</b>
             </p>
 
+            <div class="target" id="nie-sa-toba"></div>
             <h4>
-                <div class="target" id="nie-sa-toba"></div>
                 Nie są tobą
             </h4>
 
@@ -213,8 +236,8 @@
                 Zrozumienie, że twoje współosoby nie są tobą, może być bardzo pomocne w wypracowywaniu współpracy. <b> Możesz czasami automatycznie zakładać, że skoro dzielą z tobą umysł, myślą podobnie do ciebie i chcą podobnych rzeczy od życia, a to wcale nie musi być prawda.</b> Dlatego zanim wyrzucisz tę okropnie brzydką figurkę krasnala, którą dostałoście kiedyś na mikołajki w szkole średniej, porusz ten temat na spotkaniu systemu. Pewnie będzie ci się wydawać niemożliwe, żeby <em>to coś</em> mogło się komukolwiek podobać, ale możesz się bardzo zaskoczyć. <b> Dlatego poczekaj na decyzję całego systemu, zanim kupisz nową kurtkę, odmówisz przyjścia na grilla do sąsiadki albo zgodzisz się zamieszkać z waszym kolegą w jednym pokoju w akademiku.</b> Często będziecie przez to potrzebowały więcej czasu na podjęcie decyzji niż przeciętna osoba singletowa, ale nie jest to powodem, dla którego miałobyście niektóre z was z tego procesu wykluczać. <b> Oczywiście nie w każdej decyzji musi uczestniczyć cały system, ale dobrze jest szybko przedyskutować pomniejesze kwestie chociaż z współosobami, których będą one bezpośrednio dotyczyć</b>, na przykład wspólnie z często frontującymi osobami wybierać, co danego dnia na siebie ubierzecie.
             </p>
 
+            <div class="target" id="systemowe-zasady"></div>
             <h3>
-                <div class="target" id="systemowe-zasady"></div>
                 Systemowe zasady
             </h3>
 
@@ -226,8 +249,8 @@
                 Warto pamiętać, że <b> nie da się całkowicie uniknąć sytuacji, w których ktoś złamie jakąś zasadę</b>. Kiedy to nastąpi, lepiej jest o tym porozmawiać, niż się kłócić. Może okaże się, że dana osoba nie potrafi sobie poradzić ze swoim uzależnieniem od gier komputerowych i potrzebuje waszej pomocy, żeby nie spędzać przed ekranem całych godzin, zamiast wykonywać wasze obowiązki. Albo całkiem zapomniała, że ustaliłoście, że nie będziecie jeść słodyczy. Albo zbyt bardzo się bała, żeby stanowczo odmówić waszemu toksycznemu znajomemu spotkania w wasze długo wyczekiwane wolne dni. <b> Wspierajcie się nawzajem w osiąganiu waszych wspólnych celów i zaopatrzcie się w cierpliwość, bo będzie to proces rozciągnięty w czasie.</b>
             </p>
 
+            <div class="target" id="systemowa-odpowiedzialnosc"></div>
             <h3>
-                <div class="target" id="systemowa-odpowiedzialnosc"></div>
                 Systemowa odpowiedzialność
             </h3>
 
@@ -245,8 +268,8 @@
                 Kiedy wasza prześladowczyni wyzywa waszego kolegę, a wy go przepraszacie w jej imieniu, pokazujecie mu, że jego krzywda nie jest wam obojętna. Kiedy wasz nastoletni alter po raz kolejny znacznie przekroczy dozwoloną prędkość, prawo jazdy powinno zostać odebrane wam wszystkim – nie dlatego, że pozostałe nie zasługują na to, żeby móc prowadzić, ale dlatego, że dopóki nie jesteście w stanie powstrzymać waszego współśmiertelnika przed szaloną jazdą, stanowicie zagrożenie na drodze. Tak samo w przypadku, kiedy któreś z was ciągle krzyczy na wasze dziecko – powinno ono zostać od was odizolowane nie po to, żeby was ukarać, ale żeby zapewnić mu bezpieczeństwo. 
             </p>
 
+            <div class="target" id="prywatnosc"></div>
             <h3>
-                <div class="target" id="prywatnosc"></div>
                 Prywatność
             </h3>
 
@@ -258,21 +281,21 @@
                 A w przypadku, kiedy to któreś z nich próbuje wyciągnąć prywatne informacje od ciebie, polecamy metodę „i prawda, i kłamstwo”: daj im kilka różnych odpowiedzi, nie mówiąc, która jest poprawna i czy któraś w ogóle jest. Działa prawie zawsze.
             </p>
 
+            <div class="target" id="coming-out-jako-system"></div>
             <h2>
-                <div class="target" id="coming-out-jako-system"></div>
                 Coming out jako system
             </h2>
 
             <p>
-                Ciągłe ukrywanie swojej tożsamości jest bardzo męczące, więc na pewno będziecie kiedyś chciały <a href="https://pl.wikipedia.org/wiki/Coming_out" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">wyjść z szafy </a> przed rodziną, osobami przyjacielskimi czy swoją osobą psychologiczną jako osoby mnogie. <b> Coming out jest trudny, zwłaszcza ten pierwszy, ale naprawdę warto mieć kogoś, kto postrzega was jako osoby, którymi jesteście, a nie osobę, którą udajecie.</b> Upewnijcie się tylko, że będziecie bezpieczne, bo w naszym nieidealnym świecie samo otwarte bycie sobą może was wystawić na zagrożenie. <b> Jeżeli obawiacie się wyjść przed osobami, które znacie, możecie chociaż być sobą w bezpiecznych przestrzeniach w internecie</b> (na chwilę obecną jedynym takim polskojęzycznym miejscem jest <a href="https://tulpa.pl" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">społeczność tulpiarska</a>, aczkolwiek nie wiemy, jak tam przyjmują nietulpogeniczne systemy, oraz nasza <a href="https://discord.gg/SVRTZzkWQC" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">Mnoga Przestrzeń na discordzie</a>).
+                Ciągłe ukrywanie swojej tożsamości jest bardzo męczące, więc na pewno będziecie kiedyś chciały <a href="https://pl.wikipedia.org/wiki/Coming_out" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>wyjść z szafy </a> przed rodziną, osobami przyjacielskimi czy swoją osobą psychologiczną jako osoby mnogie. <b> Coming out jest trudny, zwłaszcza ten pierwszy, ale naprawdę warto mieć kogoś, kto postrzega was jako osoby, którymi jesteście, a nie osobę, którą udajecie.</b> Upewnijcie się tylko, że będziecie bezpieczne, bo w naszym nieidealnym świecie samo otwarte bycie sobą może was wystawić na zagrożenie. <b> Jeżeli obawiacie się wyjść przed osobami, które znacie, możecie chociaż być sobą w bezpiecznych przestrzeniach w internecie</b> (na chwilę obecną jedynym takim polskojęzycznym miejscem jest <a href="https://tulpa.pl" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>społeczność tulpiarska</a>, aczkolwiek nie wiemy, jak tam przyjmują nietulpogeniczne systemy, oraz nasza <a href="https://discord.gg/SVRTZzkWQC" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Mnoga Przestrzeń na discordzie</a>).
             </p>
 
             <p>
                 <b> Jeżeli nie chcecie ujawniać swojej mnogości na terapii, nie musicie tego robić, aby otrzymać właściwe leczenie dysocjacji i traumy.</b> A jeżeli chcecie, zachowajcie ostrożność i najlepiej nie róbcie tego na pierwszym spotkaniu. <b> Istnieje niebezpieczeństwo, że spotkacie się z mnogofobią nawet w miejscu, które w teorii powinno być zawsze akceptujące.</b> Z drugiej strony czasami warto zaryzykować – możecie zyskać osobę, która będzie was traktować tak, jak na to zasługujecie, naprawdę was wysłucha i pomoże wam w osiągnięciu <a href="../zaburzenia/dysocjacyjne-zaburzenie-tozsamosci#faza-stabilizacji" class="internal">celu terapii</a>, który to wy wybierzecie. W każdym razie <b> jest to wasz wybór i nikt nie powinno was zmuszać do udania się na leczenie</b>. Osoba psychoterapeutyczna tak czy inaczej może tylko was wesprzeć, całą pracę musicie wykonać wy same.
             </p>
 
+            <div class="target" id="wlasciwa-osoba"></div>
             <h3>
-                <div class="target" id="wlasciwa-osoba"></div>
                 Właściwa osoba
             </h3>
 
@@ -283,7 +306,7 @@
             </fieldset>
 
             <p>
-                Wybranie właściwej osoby, zwłaszcza na swój pierwszy coming out, jest bardzo ważne, gdyż ktoś nieodpowiedni może was bardzo zranić, a także zniechęcić do otwierania się przed innymi, być może godnymi zaufania ludźmi w przyszłości. <b> Przede wszystkim upewnijcie się, że nie macie z tą osobą <a href="https://obudzsie.pl/relacje/jak-rozpoznac-toksyczna-relacje/" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">toksycznej relacji</a>.</b> Jeżeli macie, to nie tylko coming out przed nią może być nie najlepszym pomysłem, ale także samo dłuższe utrzymywanie z nią kontaktu. <strong>Nie jest zalecane także wychodzenie z szafy przed przełożonymi w pracy</strong> – nie ważne, jak bardzo tolerancyjnymi osobami są prywatnie, mogą was zwolnić, jeżeli uznają waszą mnogość za zagrażającą waszej produktywności. Z podobnego powodu powinnoście bardzo się zastanowić, jeżeli planujecie powiedzieć swoim rodzicom lub opiekunom, a nadal pozostajecie na ich utrzymaniu. Przedyskutujcie to najpierw z całym systemem i nie róbcie tego, jeżeli któreś będzie protestować. Weźcie też pod uwagę, że <strong>wiele systemów nie pamięta swojej traumy – jeżeli nie jesteście stuprocentowo pewne przyczyn swojego powstania i tego, że wasi rodzice/opiekunowie nie mieli z nim nic wspólnego, wstrzymajcie się do czasu wyprowadzenia się z rodzinnego domu.</strong> Należy zachować także ostrożność przy wychodzeniu przed osobami psychologicznymi – mogą wam nie uwierzyć albo postawić wam błędną diagnozę (np. schizofrenii), która utrudni wam wiele rzeczy w przyszłości. 
+                Wybranie właściwej osoby, zwłaszcza na swój pierwszy coming out, jest bardzo ważne, gdyż ktoś nieodpowiedni może was bardzo zranić, a także zniechęcić do otwierania się przed innymi, być może godnymi zaufania ludźmi w przyszłości. <b> Przede wszystkim upewnijcie się, że nie macie z tą osobą <a href="https://obudzsie.pl/relacje/jak-rozpoznac-toksyczna-relacje/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>toksycznej relacji</a>.</b> Jeżeli macie, to nie tylko coming out przed nią może być nie najlepszym pomysłem, ale także samo dłuższe utrzymywanie z nią kontaktu. <strong>Nie jest zalecane także wychodzenie z szafy przed przełożonymi w pracy</strong> – nie ważne, jak bardzo tolerancyjnymi osobami są prywatnie, mogą was zwolnić, jeżeli uznają waszą mnogość za zagrażającą waszej produktywności. Z podobnego powodu powinnoście bardzo się zastanowić, jeżeli planujecie powiedzieć swoim rodzicom lub opiekunom, a nadal pozostajecie na ich utrzymaniu. Przedyskutujcie to najpierw z całym systemem i nie róbcie tego, jeżeli któreś będzie protestować. Weźcie też pod uwagę, że <strong>wiele systemów nie pamięta swojej traumy – jeżeli nie jesteście stuprocentowo pewne przyczyn swojego powstania i tego, że wasi rodzice/opiekunowie nie mieli z nim nic wspólnego, wstrzymajcie się do czasu wyprowadzenia się z rodzinnego domu.</strong> Należy zachować także ostrożność przy wychodzeniu przed osobami psychologicznymi – mogą wam nie uwierzyć albo postawić wam błędną diagnozę (np. schizofrenii), która utrudni wam wiele rzeczy w przyszłości. 
             </p>
 
             <p>
@@ -298,8 +321,8 @@
                 Oczywiście nie wszystkie powyższe postawy oznaczają, że dana osoba nie będzie was akceptować. <b> Często ludzie mają określone poglądy, bo ślepo podążają za innymi, najczęściej swoimi rodzicami albo ogółem społeczeństwa. Odkrycie, że te „odległe” problemy dotyczą bliskiej im osoby, zmusza ich do głębszego zastanowienia się nad sprawą i przewartościowania swojego spojrzenia na świat.</b> Widać to chociażby po tym, że poparcie dla jednopłciowych małżeństw jest dużo większe wśród tych, które osobiście znają kogoś o orientacji homoseksualnej, w porównaniu do reszty społeczeństwa. Dlatego jeżeli wybrana przez was osoba ma otwarty umysł i naprawdę jej na was zależy, nie skreślajcie jej z listy. <b>Warto z nią porozmawiać, pokazać jej inny punkt widzenia, o którego istnieniu może nie miała wcześniej pojęcia. Najlepiej zróbcie to przed coming outem</b>, bo zmiana sposobu myślenia może jej trochę zająć, a może także zawieść wasze nadzieje i nie chcieć was wysłuchać. Chcemy bardzo mocno podkreślić – <b>niektórzy ludzie nigdy nie zmienią swoich poglądów</b>. Jeżeli ktoś uważa, że osoby niepełnosprawne powinny umrzeć, bo są tylko ciężarem dla społeczeństwa, a wszystkie osoby ateistyczne zasługują na wieczne tortury tylko dlatego, że nie chcą podążać za „jedyną właściwą” religią, nie opłaca się z niem dyskutować. Jeżeli ktoś nie ceni ludzkiego życia, nie przekonamy no, żeby zmieniło zdanie (możemy no jedynie odesłać do osoby psychologicznej, która będzie wiedziała, jak nu pomóc). <b>Nie zalecamy ujawniać swojej mnogości przed taką osobą</b>. No chyba że będziecie już wystarczająco silne i będziecie miały wystarczające wsparcie, żeby nie przejmować się odrzuceniem z jej strony. Ale to raczej nie przy pierwszych coming outach. I powinnoście się zastanowić, czy w ogóle warto.
             </p>
 
+            <div class="target" id="przygotowania"></div>
             <h3>
-                <div class="target" id="przygotowania"></div>
                 Przygotowania
             </h3>
 
@@ -313,11 +336,11 @@
 
             <ul>
 
-                <li><a href="https://www.filmweb.pl/serial/Moon+Knight-2022-843538 " target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">Moon Knight</a></li>
-                <li><a href="https://www.filmweb.pl/film/What+If+It+Works-2016-751532" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">What if it works?</a></li>
-                <li><a href="https://www.filmweb.pl/film/Frankie+i+Alice-2010-480606 " target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">Frankie i Alice</a></li>
-                <li><a href="https://www.filmweb.pl/film/Trzy+oblicza+Ewy-1957-93529" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">Trzy oblicza Ewy</a> – co prawda przedstawia <a href="../zaburzenia/dysocjacyjne-zaburzenie-tozsamosci#fuzja-ostateczna" class="internal">fuzję ostateczną</a> jako jedyną opcję leczenia, ale został nagrany ponad pół wieku temu, więc ciężko go za to winić</li>
-                <li><a href="https://lubimyczytac.pl/ksiazka/68874/pierwsza-osoba-liczby-mnogiej" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">Pierwsza osoba liczby mnogiej: historia moich wielu osobowości</a></li>
+                <li><a href="https://www.filmweb.pl/serial/Moon+Knight-2022-843538 " target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Moon Knight</a></li>
+                <li><a href="https://www.filmweb.pl/film/What+If+It+Works-2016-751532" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>What if it works?</a></li>
+                <li><a href="https://www.filmweb.pl/film/Frankie+i+Alice-2010-480606 " target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Frankie i Alice</a></li>
+                <li><a href="https://www.filmweb.pl/film/Trzy+oblicza+Ewy-1957-93529" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Trzy oblicza Ewy</a> – co prawda przedstawia <a href="../zaburzenia/dysocjacyjne-zaburzenie-tozsamosci#fuzja-ostateczna" class="internal">fuzję ostateczną</a> jako jedyną opcję leczenia, ale został nagrany ponad pół wieku temu, więc ciężko go za to winić</li>
+                <li><a href="https://lubimyczytac.pl/ksiazka/68874/pierwsza-osoba-liczby-mnogiej" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Pierwsza osoba liczby mnogiej: historia moich wielu osobowości</a></li>
 
             </ul>
 
@@ -326,11 +349,11 @@
             </p>
 
             <ul>
-                <li><a href="https://www.filmweb.pl/film/Split-2016-750258 " target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">Split/Podzielony</a></li>
-                <li><a href="https://www.filmweb.pl/film/Inkarnacja-2010-376048 " target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">Inkarnacja</a></li>
-                <li><a href="https://www.filmweb.pl/film/Sybil-2007-314739 " target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">Sybil</a></li>
-                <li><a href="https://www.filmweb.pl/film/Ja%2C+Irena+i+Ja-2000-967 " target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">Ja, Irena i ja</a></li>
-                <li><a href="https://www.filmweb.pl/film/To%C5%BCsamo%C5%9B%C4%87-2003-37511 " target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">Tożsamość</a></li>
+                <li><a href="https://www.filmweb.pl/film/Split-2016-750258 " target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Split/Podzielony</a></li>
+                <li><a href="https://www.filmweb.pl/film/Inkarnacja-2010-376048 " target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Inkarnacja</a></li>
+                <li><a href="https://www.filmweb.pl/film/Sybil-2007-314739 " target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Sybil</a></li>
+                <li><a href="https://www.filmweb.pl/film/Ja%2C+Irena+i+Ja-2000-967 " target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Ja, Irena i ja</a></li>
+                <li><a href="https://www.filmweb.pl/film/To%C5%BCsamo%C5%9B%C4%87-2003-37511 " target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Tożsamość</a></li>
                 <li>Władca Pierścieni (Gollum)</li>
             </ul>
 
@@ -338,8 +361,8 @@
                 Przy okazji, apelujemy do wszystkich osób piszących scenariusze/książki: <strong>przestańcie przedstawiać osoby z dysocjacyjnym zaburzeniem tożsamości jako niebezpiecznych morderców</strong>. Tak, wiemy, takie coś mogłoby się przydarzyć i pewnie kiedyś się zdarzyło, ale jest już naprawdę wystarczająco takiej reprezentacji, przez którą ludzie autentycznie się nas boją. Wymyślcie coś innego, jeżeli nie ze względu na nasze dobro, to chociaż dlatego, że ten motyw jest już wykorzystany jak stara kuchenna ścierka. Niech <a href="../wspolosoby/role#osoba-hostujaca" class="internal">hostessa</a> odkryje, że jej alter jest tajnym agentem służb specjalnych albo że chodzi z tą laską, do której ona od miesięcy bała się zagadać. Możliwości jest multum, od odrobiny kreatywności was głowa nie rozboli. I poświęćcie na research więcej niż pięć minut, <b><a href="../zaburzenia/dysocjacyjne-zaburzenie-tozsamosci#osobowosc-wieloraka" class="internal">osobowość mnoga</a> została przemianowana już prawie trzydzieści lat temu</b>!
             </p>
 
+            <div class="target" id="coming-out"></div>
             <h3>
-                <div class="target" id="coming-out"></div>
                 Coming out
             </h3>
 
@@ -355,8 +378,8 @@
                 Warto mieć na uwadze, że <b> większość osób singletowych będzie mieć skłonności do traktowania któregoś z was jako „tej prawdziwej” / „tej głównej” osoby, przynajmniej na samym początku</b>, zanim zaczną trochę więcej rozumieć. Jeżeli tylko jedno z was identyfikuje się z imieniem ciała, to z pewnością na nie padnie wybór i niewiele możecie z tym zrobić. Ale jeżeli nie macie żadnej takiej osoby albo macie takich osób kilka, <b> możecie trochę zrównoważyć tę niesprawiedliwość przy kolejnych coming outach, wybierając za każdym razem inną osobę, która przedstawi się jako pierwsza</b>. Wtedy chociaż kilkoro z was będzie mogło zobaczyć, jak to jest być „tą prawdziwą” osobą, a nie tylko czyimś „głosem w głowie” albo „osobowością”.
             </p>
 
+            <div class="target" id="plan-awaryjny"></div>
             <h3>
-                <div class="target" id="plan-awaryjny"></div>
                 Plan awaryjny
             </h3>
 
@@ -368,53 +391,53 @@
                 Czasami ani jedno, ani drugie nie zadziała i nie ma tutaj nic, co można jeszcze zrobić. To boli, ale <b> niektóre osoby po prostu nie będą was akceptować</b>. Jeżeli macie taką możliwość, warto przemyśleć zerwanie kontaktu – tej osobie nie zależy na was, jedynie na swoim wyobrażeniu o was lub na korzyściach, jakie ma z relacji z wami. <b> Spojrzenie prawdzie w oczy może być niezwykle trudne i raniące, ale zakończenie znajomości, która jedynie pochłania wasz czas i energię, długodystansowo będzie dla was lepsze.</b> Ludzie, od których będziecie chciały się odciąć, mogą próbować wywołać w was poczucie winy, żeby was przy sobie zatrzymać – ale nie poddawajcie się temu. <b>Macie prawo pójść swoją drogą, nawet jeśli są to wasi rodzice czy opiekunowie. Nie jesteście im nic winne</b> i to nie wasza odpowiedzialność, że oni nie wypełnili wobec was swojego obowiązku bezwarunkowego akceptowania was i wspierania.
             </p>
 
+            <div class="target" id="frontowe-wskazniki"></div>
             <h2>
-                <div class="target" id="frontowe-wskazniki"></div>
                 Frontowe wskaźniki
             </h2>
 
             <p>
-                <b> Frontowe wskaźniki/indykatory to rzeczy, które pozwolą waszym osobom przyjacielskim na szybkie stwierdzenie, kto jest na froncie, bez konieczności pytania o to przy każdym spotkaniu lub po każdej zamianie.</b> Są to zwykle drobne przedmioty, które będziecie mogły nosić zawsze przy sobie w torebce, plecaku lub kieszeni i które można szybko wymienić, np. różnokolorowe gumki do włosów, spinki, bransoletki czy breloczki. <b> Każda współosoba ma przyporządkowany do siebie konkretny kolor i kiedy przejmuje kontrolę nad ciałem, zmienia wskaźnik poprzedniej współosoby na swój własny.</b> Można także mieć w innym miejscu wskaźniki dla tych, które są w danym czasie współświadome, np. bransoletki założone na drugą rękę. Indykatorami mogą być także przypinki z imionami, ale te są bardziej problematyczne, bo nie w każdej sytuacji chcecie lub możecie być otwarte o swojej mnogości przy wszystkich spotykanych ludziach. Wskaźniki z użyciem kolorów są dużo bardziej dyskretne, ale z kolei jeżeli macie większą liczbę stałych osób frontujących, możecie nie znaleźć wystarczającej liczby łatwo odróżnialnych od siebie kolorów dla każdej współosoby. Rozwiązaniem tego problemu może być stosowanie wielokolorowych przedmiotów (lub kilku jednokolorowych na raz), konkretna kombinacja kolorów oznaczająca konkretną współosobę, albo skorzystanie z breloczków, do których można włożyć karteczkę z imieniem czy obrazkiem (możecie ich poszukać w sklepach z akcesoriami, my osobiście kiedyś znalazłośmy takie w <a href="https://firma.kik.pl/" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">Kiku</a>). Takie coś wciąż może być problematyczne, kiedy bardzo często się zmieniacie, dlatego czasami wygodniejsze może być korzystanie z aplikacji takiej jak <a href="#simply-plural" class="internal">Simply Plural</a> albo po prostu mówienie, że osoba frontująca się zmieniła.
+                <b> Frontowe wskaźniki/indykatory to rzeczy, które pozwolą waszym osobom przyjacielskim na szybkie stwierdzenie, kto jest na froncie, bez konieczności pytania o to przy każdym spotkaniu lub po każdej zamianie.</b> Są to zwykle drobne przedmioty, które będziecie mogły nosić zawsze przy sobie w torebce, plecaku lub kieszeni i które można szybko wymienić, np. różnokolorowe gumki do włosów, spinki, bransoletki czy breloczki. <b> Każda współosoba ma przyporządkowany do siebie konkretny kolor i kiedy przejmuje kontrolę nad ciałem, zmienia wskaźnik poprzedniej współosoby na swój własny.</b> Można także mieć w innym miejscu wskaźniki dla tych, które są w danym czasie współświadome, np. bransoletki założone na drugą rękę. Indykatorami mogą być także przypinki z imionami, ale te są bardziej problematyczne, bo nie w każdej sytuacji chcecie lub możecie być otwarte o swojej mnogości przy wszystkich spotykanych ludziach. Wskaźniki z użyciem kolorów są dużo bardziej dyskretne, ale z kolei jeżeli macie większą liczbę stałych osób frontujących, możecie nie znaleźć wystarczającej liczby łatwo odróżnialnych od siebie kolorów dla każdej współosoby. Rozwiązaniem tego problemu może być stosowanie wielokolorowych przedmiotów (lub kilku jednokolorowych na raz), konkretna kombinacja kolorów oznaczająca konkretną współosobę, albo skorzystanie z breloczków, do których można włożyć karteczkę z imieniem czy obrazkiem (możecie ich poszukać w sklepach z akcesoriami, my osobiście kiedyś znalazłośmy takie w <a href="https://firma.kik.pl/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Kiku</a>). Takie coś wciąż może być problematyczne, kiedy bardzo często się zmieniacie, dlatego czasami wygodniejsze może być korzystanie z aplikacji takiej jak <a href="#simply-plural" class="internal">Simply Plural</a> albo po prostu mówienie, że osoba frontująca się zmieniła.
             </p>
 
+            <div class="target" id="metoda-systemu-kolezenskiego"></div>
             <h2>
-                <div class="target" id="metoda-systemu-kolezenskiego"></div>
                 Metoda systemu koleżeńskiego
             </h2>
 
             <p>
-                Metoda <a href="https://lisiatko.pl/wiki/Buddy_system" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">systemu koleżeńskiego</a> to metoda wewnętrznej komunikacji dla systemów, w których nie wszystkie współosoby mogą się ze sobą nawzajem komunikować. <b> Polega na przyporządkowaniu każdej współosobie jej osoby lub osób koleżeńskich, czyli współosób, z którymi ma ona dobrą komunikację lub chociażby jakąkolwiek komunikację.</b> Przydatne może być stworzenie <a href="#mapowanie-systemu" class="internal">mapy systemu</a> i zaznaczenie na niej, kto jest czyją osobą koleżeńską. <b> Potem w sytuacji w której np. wasza osoba hostująca ma coś do powiedzenia jednej z odźwiernych, ale nie ma z nią bezpośredniej komunikacji, może poprosić o jej przekazanie kolegę tej współosoby lub swoją koleżankę, a wiadomość dotrze do odbiorczyni na zasadzie głuchego telefonu.</b> Trzeba jednak brać pod uwagę, że tak jak w głuchym telefonie przekazywana informacja może ulec pewnemu zniekształceniu, dlatego w bardzo ważnych sprawach najlepiej jest korzystać z bezpośredniej komunikacji, np. poprzez pisanie w jednym dzienniku.
+                Metoda <a href="https://lisiatko.pl/wiki/Buddy_system" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>systemu koleżeńskiego</a> to metoda wewnętrznej komunikacji dla systemów, w których nie wszystkie współosoby mogą się ze sobą nawzajem komunikować. <b> Polega na przyporządkowaniu każdej współosobie jej osoby lub osób koleżeńskich, czyli współosób, z którymi ma ona dobrą komunikację lub chociażby jakąkolwiek komunikację.</b> Przydatne może być stworzenie <a href="#mapowanie-systemu" class="internal">mapy systemu</a> i zaznaczenie na niej, kto jest czyją osobą koleżeńską. <b> Potem w sytuacji w której np. wasza osoba hostująca ma coś do powiedzenia jednej z odźwiernych, ale nie ma z nią bezpośredniej komunikacji, może poprosić o jej przekazanie kolegę tej współosoby lub swoją koleżankę, a wiadomość dotrze do odbiorczyni na zasadzie głuchego telefonu.</b> Trzeba jednak brać pod uwagę, że tak jak w głuchym telefonie przekazywana informacja może ulec pewnemu zniekształceniu, dlatego w bardzo ważnych sprawach najlepiej jest korzystać z bezpośredniej komunikacji, np. poprzez pisanie w jednym dzienniku.
             </p>
 
+            <div class="target" id="simply-plural"></div>
             <h2>
-                <div class="target" id="simply-plural"></div>
                 Simply Plural
             </h2>
 
             <p>
-                <a href="https://apparyllis.com/" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">Simply Plural</a>  to aplikacja, która pozwoli wam śledzić zamiany, ustawiać powiadomienia i tworzyć systemowe ankiety do głosowania, a także udostępniać informacje o osobach członkowskich waszego systemu i aktualnych osobach frontujących waszym znajomym. Jest darmowa i dostępna w polskiej wersji językowej (w nieperfekcyjnym tłumaczeniu, ale jest). Możecie ją wyszukać w Sklepie Play, App Store lub po prostu w internecie.
+                <a href="https://apparyllis.com/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Simply Plural</a>  to aplikacja, która pozwoli wam śledzić zamiany, ustawiać powiadomienia i tworzyć systemowe ankiety do głosowania, a także udostępniać informacje o osobach członkowskich waszego systemu i aktualnych osobach frontujących waszym znajomym. Jest darmowa i dostępna w polskiej wersji językowej (w nieperfekcyjnym tłumaczeniu, ale jest). Możecie ją wyszukać w Sklepie Play, App Store lub po prostu w internecie.
             </p>
 
+            <div class="target" id="pluralkit"></div>
             <h2>
-                <div class="target" id="pluralkit"></div>
                 Pluralkit
             </h2>
 
             <p>
-                <b> <a href="https://pluralkit.me/" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">Pluralkit</a>  to bot stworzony dla platformy <a href="https://discord.com/ " target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">discord</a>, który umożliwi każdej z was pisanie wiadomości pod swoim własnym imieniem bez zakładania dodatkowych kont.</b> Możecie go dodać do utworzonego przez siebie serwera za pomocą <a href="https://discord.com/oauth2/authorize?client_id=466378653216014359&scope=bot&permissions=536995904 " target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">linka autoryzacyjnego dla bota Pluralkit</a> lub poprosić o to osobę administrującą serwera, na którym jesteście. Przydatnym pomysłem jest utworzenie prywatnego serwera z Pluralkitem tylko dla was, żebyście mogły się ze sobą komunikować tak, jakbyście pisały na grupowym czacie. Bot działa tylko w języku angielskim. Niestety nie powstały jeszcze jego odpowiedniki dla innych, przynajmniej tych najpopularniejszych komunikatorów, więc korzystając z nich możecie jedynie podpisywać wiadomości swoimi imionami – na końcu, jak to robi większość osób w społeczności, lub na początku, żeby od razu było wiadomo, kto pisze.
+                <b> <a href="https://pluralkit.me/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Pluralkit</a>  to bot stworzony dla platformy <a href="https://discord.com/ " target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>discord</a>, który umożliwi każdej z was pisanie wiadomości pod swoim własnym imieniem bez zakładania dodatkowych kont.</b> Możecie go dodać do utworzonego przez siebie serwera za pomocą <a href="https://discord.com/oauth2/authorize?client_id=466378653216014359&scope=bot&permissions=536995904 " target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>linka autoryzacyjnego dla bota Pluralkit</a> lub poprosić o to osobę administrującą serwera, na którym jesteście. Przydatnym pomysłem jest utworzenie prywatnego serwera z Pluralkitem tylko dla was, żebyście mogły się ze sobą komunikować tak, jakbyście pisały na grupowym czacie. Bot działa tylko w języku angielskim. Niestety nie powstały jeszcze jego odpowiedniki dla innych, przynajmniej tych najpopularniejszych komunikatorów, więc korzystając z nich możecie jedynie podpisywać wiadomości swoimi imionami – na końcu, jak to robi większość osób w społeczności, lub na początku, żeby od razu było wiadomo, kto pisze.
             </p>
 
+            <div class="target" id="komendy"></div>
             <h3>
-                <div class="target" id="komendy"></div>
                 Podstawowe komendy
             </h3>
 
             <p>
-                Poniżej znajdziecie przetłumaczone przez nas podstawowe komendy i polecenia, które pozwolą wam korzystać z najważniejszych funkcji bota. Pozostałe komendy oraz więcej wskazówek (w języku angielskim) znajdziecie na stronie <a href="https://pluralkit.me/" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">Pluralkit</a>.
+                Poniżej znajdziecie przetłumaczone przez nas podstawowe komendy i polecenia, które pozwolą wam korzystać z najważniejszych funkcji bota. Pozostałe komendy oraz więcej wskazówek (w języku angielskim) znajdziecie na stronie <a href="https://pluralkit.me/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Pluralkit</a>.
             </p>
 
+            <div class="target" id="ogolne-komendy"></div>
             <h4>
-                <div class="target" id="ogolne-komendy"></div>
                 Ogólne
             </h4>
 
@@ -429,8 +452,8 @@
                 <li>pk;unlink @Lilie#1234 – rozłącza konto z systemem</li>
             </ul>
 
+            <div class="target" id="system-komendy"></div>
             <h4>
-                <div class="target" id="system-komendy"></div>
                 System
             </h4>
             
@@ -447,8 +470,8 @@
                 <li>pk;system delete – usuwa system; aby potwierdzić waszą decyzję, Pluralkit poprosi was o napisanie w wiadomości ID systemu</li>
             </ul>
 
+            <div class="target" id="wspolosoby-komendy"></div>
             <h4>
-                <div class="target" id="wspolosoby-komendy"></div>
                 Współosoby
             </h4>
 
@@ -465,15 +488,15 @@
                 <li>pk;member Ania serveravatar https://link_do_obrazka.jpg – ustawia awatar widoczny tylko na danym serwerze</li>
                 <li>pk;member Ania avatar clear – resetuje awatar</li>
                 <li>pk;member Ania description Opiekunka o złotym sercu – ustawia opis danej osoby członkowskiej</li>
-                <li>pk;member Ania color #f0f251 – ustawia kolor, który będzie widoczny na karcie z informacjami o danej osobie i przy odpowiadaniu przez nią na czyjeś wiadomości; w komendzie należy podać <a href="https://htmlcolorcodes.com/" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">szesnastkowy kod koloru</a></li>
+                <li>pk;member Ania color #f0f251 – ustawia kolor, który będzie widoczny na karcie z informacjami o danej osobie i przy odpowiadaniu przez nią na czyjeś wiadomości; w komendzie należy podać <a href="https://htmlcolorcodes.com/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>szesnastkowy kod koloru</a></li>
                 <li>pk;member Ania pronouns ona/jej – ustawia zaimki danej osoby, które będą widoczne na jej karcie z informacjami</li>
                 <li>pk;member Ania birthdate 2000-01-31 – ustawia datę urodzenia danej współosoby; datę należy podawać w formacie RRRR-MM-DD lub MM-DD</li>
                 <li>pk;member Ania rename Anna – zmienia nazwę danej współosoby</li>
                 <li>pk;member Ania delete – usuwa daną osobę członkowską; aby potwierdzić, Pluralkit poprosi was o wysłanie w wiadomości jej ID</li>
             </ul>
 
+            <div class="target" id="wiadomosci-komendy"></div>
             <h4>
-                <div class="target" id="wiadomosci-komendy"></div>
                 Wiadomości
             </h4>
 
@@ -485,8 +508,8 @@
                 <li>zareagowanie ❓ lub ❔ na wysłaną z pomocą bota wiadomość lub odpowiedzenie na nią komendą „pk;message” wyśle ci informacje o tej wiadomości (wysyłające konto, system, współosoba itd.)</li>
             </ul>
 
+            <div class="target" id="skroty-komend"></div>
             <h4>
-                <div class="target" id="skroty-komend"></div>
                 Skróty
             </h4>
 
@@ -505,13 +528,13 @@
                 <li>pk;autoproxy – pk;ap</li>
             </ul>
 
+            <div class="target" id="faceclaimy"></div>
             <h2>
-                <div class="target" id="faceclaimy"></div>
                 Faceclaimy
             </h2>
 
             <p>
-                Faceclaim (czyt. „fejsklajm”, w dosłownym tłumaczeniu: „roszczenie do twarzy”) lub po prostu – bardziej znajoma nazwa – awatar to nic innego jak <b> zdjęcia czy obrazki, mniej więcej przedstawiające wasze wewnętrzne wyglądy, które możecie ustawić jako swoje profilowe w Pluralkit czy Simply Plural</b>. <b> Możecie poszukać ich w internecie</b> – warto jedynie pamiętać, że niektóre osoby będą się czuć niekomfortowo, jeżeli wykorzystacie ich prywatne zdjęcie z mediów społecznościowych do zobrazowania siebie, zwłaszcza jeżeli udostępnicie je publicznie. Jeżeli macie kilka zdjęć, które prawie wam odpowiadają, ale czegoś im jednak brakuje, możecie spróbować dopasować je w różnych aplikacjach do edycji zdjęć. Jeśli macie zdolności artystyczne i czas, możecie zrezygnować z szukania zdjęć i samodzielnie narysować swoje portrety. A jeżeli nie możecie znaleźć nic odpowiedniego, ale talentu artystycznego wam brak, zostaje wam jeszcze opcja skorzystania z kreatorów postaci, takich jak <a href="https://picrew.me/en" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">picrew</a>, lub pobawienia się sztuczną inteligencją tworzącą obrazy, taką jak <a href="https://www.craiyon.com/" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">craiyon</a> (czasami utworzenie czegoś, co będzie wam odpowiadało, może zająć naprawdę dużo czasu, a obrazy zazwyczaj nie są idealne, ale zawsze to jakaś alternatywa).
+                Faceclaim (czyt. „fejsklajm”, w dosłownym tłumaczeniu: „roszczenie do twarzy”) lub po prostu – bardziej znajoma nazwa – awatar to nic innego jak <b> zdjęcia czy obrazki, mniej więcej przedstawiające wasze wewnętrzne wyglądy, które możecie ustawić jako swoje profilowe w Pluralkit czy Simply Plural</b>. <b> Możecie poszukać ich w internecie</b> – warto jedynie pamiętać, że niektóre osoby będą się czuć niekomfortowo, jeżeli wykorzystacie ich prywatne zdjęcie z mediów społecznościowych do zobrazowania siebie, zwłaszcza jeżeli udostępnicie je publicznie. Jeżeli macie kilka zdjęć, które prawie wam odpowiadają, ale czegoś im jednak brakuje, możecie spróbować dopasować je w różnych aplikacjach do edycji zdjęć. Jeśli macie zdolności artystyczne i czas, możecie zrezygnować z szukania zdjęć i samodzielnie narysować swoje portrety. A jeżeli nie możecie znaleźć nic odpowiedniego, ale talentu artystycznego wam brak, zostaje wam jeszcze opcja skorzystania z kreatorów postaci, takich jak <a href="https://picrew.me/en" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>picrew</a>, lub pobawienia się sztuczną inteligencją tworzącą obrazy, taką jak <a href="https://www.craiyon.com/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>craiyon</a> (czasami utworzenie czegoś, co będzie wam odpowiadało, może zająć naprawdę dużo czasu, a obrazy zazwyczaj nie są idealne, ale zawsze to jakaś alternatywa).
             </p>
 
             <div class="imgcontainer">
@@ -519,11 +542,11 @@
                 <img src="../winged-mermaid.png" alt="skrzydlata syrena wynurzająca się z wody" class="img">
                 <img src="../crystal-dog.png" alt="pies pokryty drobnymi kryształami" class="img">
                 <p>Sztuczna inteligencja może być szczególnie przydatna dla nietypowych nieludzi</p>
-                <p>Grafiki stworzone przez: <a href="https://www.craiyon.com/" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">craiyon</a></p>
+                <p>Grafiki stworzone przez: <a href="https://www.craiyon.com/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>craiyon</a></p>
             </div>
 
+            <div class="target" id="mapowanie-systemu"></div>
             <h2>
-                <div class="target" id="mapowanie-systemu"></div>
                 Mapowanie systemu
             </h2>
 
@@ -536,11 +559,11 @@
             </p>
 
             <p>
-                Mapować system możecie w sposób tradycyjny albo używając do tego dostępnych w internecie programów do tworzenia map myśli, takich jak <a href="https://creately.com/pl/lp/mapa-mysli-online/" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">Creately</a>. Jeżeli decydujecie się na kartkę, najlepiej dobierzcie arkusz o wielkości odpowiadającej rozmiarom waszego systemu i na początku rysujcie wszystko ołówkiem, bo może okazać się, że źle rozplanujecie miejsce albo w trakcie pojawią się nowe współosoby, a łatwiej jest trochę wymazać, niż zaczynać wszystko od początku.
+                Mapować system możecie w sposób tradycyjny albo używając do tego dostępnych w internecie programów do tworzenia map myśli, takich jak <a href="https://creately.com/pl/lp/mapa-mysli-online/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Creately</a>. Jeżeli decydujecie się na kartkę, najlepiej dobierzcie arkusz o wielkości odpowiadającej rozmiarom waszego systemu i na początku rysujcie wszystko ołówkiem, bo może okazać się, że źle rozplanujecie miejsce albo w trakcie pojawią się nowe współosoby, a łatwiej jest trochę wymazać, niż zaczynać wszystko od początku.
             </p>
 
+            <div class="target" id="tworzenie-wewnetrznego-swiata"></div>
             <h2>
-                <div class="target" id="tworzenie-wewnetrznego-swiata"></div>
                 Tworzenie wewnętrznego świata
             </h2>
 
@@ -557,11 +580,11 @@
             </p>
 
             <p>
-                Jeżeli macie <a href="https://wylecz.to/uklad-nerwowy-i-psychiatria/afantazja/" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">afantazję</a>, wypróbujcie inną metodę – opiszcie wasz wymarzony wewnętrzny świat na kartce, w komputerze czy telefonie w jak największych szczegółach. Napiszcie, że na środku pokoju stoi ciemnobrązowy stół na sześć osób, prostokątny, drewniany, pokryty lakierem, z zaokrąglonymi rogami, sięgający wam trochę powyżej pasa. Przy stole sześć krzeseł, z takiego samego materiału co stół, z oparciami w formie drabinki z najwyższym „szczeblem” dwa razy szerszym od pozostałych, a siedzeniami obitymi szkarłatnym zamszem. Im więcej detali, tym lepiej. Resztę zostawcie waszej podświadomości – powinna wykonać za was całą pracę. Możecie także próbować stworzyć wewnątrzświat poprzez autohipnozę, medytację albo świadome sny.
+                Jeżeli macie <a href="https://wylecz.to/uklad-nerwowy-i-psychiatria/afantazja/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>afantazję</a>, wypróbujcie inną metodę – opiszcie wasz wymarzony wewnętrzny świat na kartce, w komputerze czy telefonie w jak największych szczegółach. Napiszcie, że na środku pokoju stoi ciemnobrązowy stół na sześć osób, prostokątny, drewniany, pokryty lakierem, z zaokrąglonymi rogami, sięgający wam trochę powyżej pasa. Przy stole sześć krzeseł, z takiego samego materiału co stół, z oparciami w formie drabinki z najwyższym „szczeblem” dwa razy szerszym od pozostałych, a siedzeniami obitymi szkarłatnym zamszem. Im więcej detali, tym lepiej. Resztę zostawcie waszej podświadomości – powinna wykonać za was całą pracę. Możecie także próbować stworzyć wewnątrzświat poprzez autohipnozę, medytację albo świadome sny.
             </p>
 
+            <div class="target" id="wejscie-do-wewnetrznego-swiata"></div>
             <h2>
-                <div class="target" id="wejscie-do-wewnetrznego-swiata"></div>
                 Wejście do wewnętrznego świata
             </h2>
 
@@ -583,34 +606,34 @@
             </h2>
 
             <p>
-                Na podstawie: <a href="https://lb-lee.dreamwidth.org/1040083.html" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">Boddy Hopping Headmates</a>
+                Na podstawie: <a href="https://lb-lee.dreamwidth.org/1040083.html" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Boddy Hopping Headmates</a>
             </p> -->
 
 
 
 
+            <div class="target" id="przypisy"></div>
             <h2>
-                <div class="target" id="przypisy"></div>
                 Przypisy
             </h2>
 
             <ol class="links">
 
                 <li><div class="target" id="1"> </div>
-                    <a href="#p1" class="internal">↑</a> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3181836/" target="_blank" rel="noopener noreferrer" lang="en" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">Traumatic stress: effects on the brain</a></li>
+                    <a href="#p1" class="internal">↑</a> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3181836/" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Traumatic stress: effects on the brain</a></li>
 
                 <li><div class="target" id="2"> </div>
-                    <a href="#p2" class="internal">↑</a> <a href="https://www.healthline.com/health/ink-poisoning" target="_blank" rel="noopener noreferrer" lang="en" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">Ink poisoning</a></li>
+                    <a href="#p2" class="internal">↑</a> <a href="https://www.healthline.com/health/ink-poisoning" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Ink poisoning</a></li>
 
                 <li><div class="target" id="3"> </div>
-                    <a href="#p3" class="internal">↑</a> <a href="https://www.pluralpride.com/playbook" target="_blank" rel="noopener noreferrer" lang="en" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">The plurality playbook</a></li>
+                    <a href="#p3" class="internal">↑</a> <a href="https://www.pluralpride.com/playbook" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>The plurality playbook</a></li>
 
             </ol>
 
 
 
             <footer>
-                <p><i aria-label="cytat">Ależ oczywiście to dzieje się w twojej głowie, Harry, tylko skąd, u licha, wniosek, że wobec tego nie dzieje się to naprawdę?</i><span lang="en"> ~ J. K. Rowling, </span><i>Harry Potter i Insygnia Śmierci</i><p>
+                <p><i aria-label="cytat">Ależ oczywiście to dzieje się w twojej głowie, Harry, tylko skąd, u licha, wniosek, że wobec tego nie dzieje się to naprawdę?</i><span lang="en"> ~ J. K. Rowling, </span><i>Harry Potter i Insygnia Śmierci</i></p>
 
 <p>Tworzone od serca przez <a href="../system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>.</p>
 
@@ -620,9 +643,9 @@
     
     <!-- 
     
-    <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" class="ex" alt="zewnętrzny">System Tęczowego Chaosu na YouTube</a></p> -->
+    <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>System Tęczowego Chaosu na YouTube</a></p> -->
     
-    <p><a href="https://discord.gg/SVRTZzkWQC" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" class="ex" alt="zewnętrzny">Mnoga Przestrzeń na discordzie</a></p></address>
+    <p><a href="https://discord.gg/SVRTZzkWQC" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Mnoga Przestrzeń na discordzie</a></p></address>
     
     <p>Nie używamy ciasteczek (przynajmniej na razie, dopóki nie nauczymy się, jak to wszystko działa).</p>
     
@@ -632,7 +655,7 @@
     
     <p>Strona ma wyłącznie charakter informacyjny i nie powinna być używania w celu diagnozy ani leczenia. Nie bierzemy na siebie odpowiedzialności za żadne decyzje osób czytających podjęte pod wpływem znalezionych tutaj treści.</p>
 
-    <p>Cała zawartość jest udostępniona na licencji <a href="https://oql.avris.it/license/v1.1" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">OQL</a></p>
+    <p>Cała zawartość jest udostępniona na licencji <a href="https://oql.avris.it/license/v1.1" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>OQL</a></p>
 
 </footer>
 

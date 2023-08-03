@@ -31,15 +31,25 @@
             <button class="menu-icon" type="button" onclick="menu()">
                 <img src="../menu-icon.png" alt="Menu" title="Menu">
             </button>
-            <a href="../" class="title">Przewodnik po Mnogości</a>
+            <a href="../" class="title">
+                <div class="logo">
+                    <svg class="logo">
+                        <circle class="upper"></circle>
+                        <circle class="down"></circle>
+                        <circle class="left"></circle>
+                        <circle class="right"></circle>
+                    </svg>
+                </div>
+                <span id="title">Przewodnik po Mnogości</span>
+            </a>
             <a href="../ustawienia" class="settings desktop">
                 <img src="../settings.png" alt="ustawienia">
             </a>
         </header>
         
-        <a href="../ustawienia" class="settings mobile">
+        <!-- <a href="../ustawienia" class="settings mobile">
             <img src="../settings.png" alt="ustawienia">
-        </a>
+        </a> -->
         
             <aside class="sidebar" id="sidebar">
                 <button class="menu-icon" type="button" onclick="menu()">
@@ -71,6 +81,19 @@
 
         <main id="zawartosc">
 
+            
+            <svg preserveAspectRatio="none" class="hidden">
+                <symbol id="ex" class="ex">
+                    <line x1="10%" y1="20%" x2="30%" y2="20%"></line>
+                    <line x1="10%" y1="20%" x2="10%" y2="90%"></line>
+                    <line x1="10%" y1="90%" x2="80%" y2="90%"></line>
+                    <line x1="80%" y1="90%" x2="80%" y2="70%"></line>
+                    <line x1="30%" y1="70%" x2="90%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="50%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="90%" y2="50%"></line>
+                </symbol>
+            </svg>
+            
             <h1>Role</h1>           
 
             <p>
@@ -122,8 +145,8 @@
             </fieldset>
 
             
+            <div class="target" id="rdzen"></div>
             <h2>
-                <div class="target" id="rdzen"></div>
                 Rdzeń
             </h2>
 
@@ -135,8 +158,8 @@
                 W <a href="../mnogosc#system-medianowy" class="internal">systemach medianowych</a> rdzeń może także oznaczać centralną współjednostkę, wokół której zbudowane są tożsamości pozostałych. W tym przypadku nie zawsze jest to ta jednostka, która idenfyfikuje się z przeszłą pojedynczą wersją systemu.
             </p>
 
+            <div class="target" id="osoba-hostujaca"></div>
             <h2>
-                <div class="target" id="osoba-hostujaca"></div>
                 Osoba hostująca
             </h2>
 
@@ -144,8 +167,8 @@
                 Osoba hostująca bądź gospodarująca (host, hostessa, hoście) to osoba, która najczęściej frontuje. Bardzo często identyfikuje się z ciałem (jej wewnętrzny obraz siebie jest zgodny z wyglądem ciała i myśli o nim jako o swoim własnym), a zazwyczaj w przypadku systemów zaburzonych ma także utrudniony dostęp do wewnętrznego świata i dowiaduje się o istnieniu swoich współosób dopiero w późniejszych latach swojego życia. Niektóre systemy mają kilka osób hostujących (osób współhostujących/współgospodarujących), które spędzają mniej więcej tyle samo czasu na froncie, niektóre raz na jakiś czas zmieniają swoje osoby hostujące, a jeszcze inne nie mają żadnej. Nie należy traktować osoby hostującej jako „tej prawdziwej” osoby, ponieważ wszystkie inne osoby członkowskie systemu są tak samo rzeczywistymi ludźmi jak ona. 
             </p>
 
+            <div class="target" id="osoba-broniaca"></div>
             <h2>
-                <div class="target" id="osoba-broniaca"></div>
                 Osoba broniąca
             </h2>
 
@@ -153,8 +176,8 @@
                 Osoby broniące przyjmują na siebie zadanie ochrony systemu przed zagrożeniami z zewnątrz i/lub z wewnątrz. Mogą to realizować na dwa sposoby: próbując zniwelować zagrożenie lub przejmując kontrolę w trudnych lub traumatyzujących sytuacjach, żeby ich współosoby nie musiały cierpieć. Tym pierwszym typem będzie np. obrońca, który kłóci się z rodzicami systemu w obronie swoich praw, albo obrończyni, która zmusza współosoby, żeby nie ufały osobie, która może wyrządzić im krzywdę (jeżeli używa do tego celu przemocy i zastraszania, nazwiemy ją obrończynią-prześladowczynią). Osoba obrończa drugiego typu będzie obejmowała front (dobrowolnie lub nie) zawsze, gdy systemowi będzie coś groziło. U tych osób w systemach traumogenicznych stosunkowo częste są takie cechy jak masochizm, hiperseksualność, brak emocji czy zwiększona tolerancja na ból – wszystko, co mogło uczynić dla nich traumatyczne doświadczenia chociaż trochę bardziej znośnymi.
             </p>
 
+            <div class="target" id="osoba-opiekuncza"></div>
             <h2>
-                <div class="target" id="osoba-opiekuncza"></div>
                 Osoba opiekuńcza
             </h2>
 
@@ -162,8 +185,8 @@
                 Osoby opiekuńcze troszczą się o te współosoby, które wymagają więcej opieki, np. o osoby młodsze lub trzymające traumę, mogą także zajmować się ciałem. Zapewniają osobom członkowskim systemu poczucie bezpieczeństwa i upewniają się, że ich potrzeby są spełnione.
             </p>
 
+            <div class="target" id="osoba-odzwierna"></div>
             <h2>
-                <div class="target" id="osoba-odzwierna"></div>
                 Osoba odźwierna
             </h2>
 
@@ -171,8 +194,8 @@
                 Niektóre osoby odźwierne mogą decydować, kto i kiedy ma dostęp do frontu lub miejsc w wewnętrznym świecie, inne zarządzają wewnętrzną komunikacją czy wspomnieniami (te są nazywane także osobami śluzowymi). Mogą wykonywać te czynności instynktownie lub na symbolicznych przedmiotach w wewnętrznym świecie (np. płyty CD symbolizujące wspomnienia). Przez niektóre nazwa „osoba odźwierna” jest używana w stosunku do wszystkich współosób, które mogą kontrolować jakąkolwiek rzecz związaną z wewnętrznym działaniem systemu.
             </p>
 
+            <div class="target" id="osoba-trzymajaca-traume"></div>
             <h2>
-                <div class="target" id="osoba-trzymajaca-traume"></div>
                 Osoba trzymająca traumę
             </h2>
 
@@ -180,8 +203,8 @@
                 Do tych współosób należą wszystkie wspomnienia traumatycznych wydarzeń z życia systemu. Ich zadaniem jest nie dopuścić do tego, żeby pozostałe dowiedziały się o bądź poznały szczegóły traumy. Prawie zawsze mają objawy <a href="../zaburzenia/zespol-stresu-pourazowego" class="internal">zespołu stresu pourazowego</a>. Niektóre z nich są uwięzione w jednym traumatycznym wydarzeniu, przeżywając je wciąż od nowa gdzieś w wewnętrznym świecie i nie mając pojęcia, że to nie dzieje się już w czasie rzeczywistym. Czasami jedno traumatyczne wspomnienie jest podzielone pomiędzy kilka trzymających traumę, np. jedna z nich posiada wspomnienie samego wydarzenia, a druga wszystkich emocji, które mu towarzyszyły.
             </p>
 
+            <div class="target" id="osoba-przesladujaca"></div>
             <h2>
-                <div class="target" id="osoba-przesladujaca"></div>
                 Osoba prześladująca
             </h2>
 
@@ -189,8 +212,8 @@
                 Są to osoby, którzy krzywdzą swoje współosoby i/lub ciało. Ten opis może nasuwać na myśl skojarzenie z demonicznymi osobami alterowymi z niektórych filmów o DID, dlatego tak ważne jest podkreślenie, że ich przemoc jest prawie zawsze skierowana w stronę systemu i prawie nigdy w stronę osób z zewnątrz. Bardzo ważne jest także zrozumienie, jakie motywacje stoją za ich działaniami. Wiele osób prześladowczych to tak naprawdę osoby broniące, które nie znają innych sposobów na chronienie systemu niż np. zastraszanie współosób, żeby nie opowiadały o swoich problemach ludziom niegodnym zaufania. Często potrzebują jedynie, żeby ktoś pokazał im, jak w inny sposób mogą pomagać systemowi. Inne z kolei przechowują ogromną ilość traumy i wyładowują swój ból raniąc współosoby lub ciało, bo nie potrafią sobie z nim poradzić w inny sposób. Prześladowczymi mogą zostać także osoby, które czują się traktowane nie w porządku przez resztę systemu. Osoby prześladujące najczęściej są tak naprawdę tymi, które potrzebują pomocy najbardziej w całym systemie, a nie tymi, których trzeba się „pozbyć”, co jest często instynktowną pierwszą myślą w takich sytuacjach.
             </p>
 
+            <div class="target" id="osoba-introjektowa"></div>
             <h2>
-                <div class="target" id="osoba-introjektowa"></div>
                 Osoba introjektowa
             </h2>
 
@@ -210,8 +233,8 @@
                 Tak samo raniące może być mówienie o czymś źródle jako o tej prawdziwej osobie. Owszem, może często używają takiego samego imienia i nazwiska i trzeba je jakoś rozróżniać, ale pomyśl – czy gdyby w twojej grupie przyjacielskiej znalazły się dwie Anny Kowalskie, <span class="unspecified">mówiłxbyś</span><span class="feminine">mówiłabyś</span><span class="masculine">mówiłbyś</span><span class="neutral">mówiłobyś</span><span class="postgender">mówiłubyś</span> o jednej z nich „ta prawdziwa Ania”? Raczej wszystkie znalazłobyście coś, co je rozróżnia, i byłaby Ania brunetka i Ania blondynka, albo Ania fryzjerka i Ania weterynarka. Tak samo może być Ania z Czekoladowego Systemu i Ania singletka, albo Ania z zewnątrz i Ania z wewnątrz. 
             </p>
 
+            <div class="target" id="osoba-faktywna"></div>
             <h3>
-                <div class="target" id="osoba-faktywna"></div>
                 Osoba faktywna
             </h3>
 
@@ -226,11 +249,11 @@
             </p>
 
             <p>
-                W systemach traumogenicznych zdarzają się osoby introjektowe osób, które krzywdziły system. Ich obecność może wydawać się zastanawiająca, bo przecież każda osoba członkowska systemu powinna istnieć po to, żeby pomóc innym przeżyć. Ale chociaż brzmi to nieintuicyjnie, takie osoby w zamyśle także powstają dla dobra systemu. Jeżeli jedna z osób krzywdzących krzyczała na dziecko, żeby zmusić je do wykonywania obowiązków, podświadomość może utworzyć w systemie jej uosobienie, ponieważ nie zna innych sposobów na zmotywowanie współosób do działania. Czasami takie osoby faktywne istnieją w celu wyleczenia osób trzymających traumę na zasadzie <a href="https://www.incognito-ctpb.pl/blog/istota-terapii-ekspozycyjnej/" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">terapii ekspozycyjnej</a>, czyli długotrwałym wystawieniu danej osoby na bodziec wywołujący trudne emocje, co pomaga przezwyciężyć jej reakcje emocjonalne. Ich obecność może być często trudna dla systemu, ale należy pamiętać, że nie są ona odpowiedzialne za działania podjęte w przeszłości przez ich źródła i zasługują na akceptację tak jak każdy inny człowiek.
+                W systemach traumogenicznych zdarzają się osoby introjektowe osób, które krzywdziły system. Ich obecność może wydawać się zastanawiająca, bo przecież każda osoba członkowska systemu powinna istnieć po to, żeby pomóc innym przeżyć. Ale chociaż brzmi to nieintuicyjnie, takie osoby w zamyśle także powstają dla dobra systemu. Jeżeli jedna z osób krzywdzących krzyczała na dziecko, żeby zmusić je do wykonywania obowiązków, podświadomość może utworzyć w systemie jej uosobienie, ponieważ nie zna innych sposobów na zmotywowanie współosób do działania. Czasami takie osoby faktywne istnieją w celu wyleczenia osób trzymających traumę na zasadzie <a href="https://www.incognito-ctpb.pl/blog/istota-terapii-ekspozycyjnej/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>terapii ekspozycyjnej</a>, czyli długotrwałym wystawieniu danej osoby na bodziec wywołujący trudne emocje, co pomaga przezwyciężyć jej reakcje emocjonalne. Ich obecność może być często trudna dla systemu, ale należy pamiętać, że nie są ona odpowiedzialne za działania podjęte w przeszłości przez ich źródła i zasługują na akceptację tak jak każdy inny człowiek.
             </p>
 
+            <div class="target" id="osoba-fiktywna"></div>
             <h3>
-                <div class="target" id="osoba-fiktywna"></div>
                 Osoba fiktywna
             </h3>
 
@@ -238,8 +261,8 @@
                 Osoby fiktywne mają swoje źródło w postaciach fikcyjnych z książek, filmów, gier, snów bądź nawet wymyślonych przez inną osobę członkowską systemu. Najczęściej są to postacie podziwiane lub nawet uwielbiane przez którąś współosób. W ich przypadku źródłem często nazywa się także uniwersum, z którego pochodzi dana postać. Część osób fiktywnych to także <a href="role#osoba-walk-inowa" class="internal">osoby walk-inowe</a>. Te, które pochodzą z kreskówek, czasami mają dwuwymiarowy wewnętrzny świat lub miejsce w wewnętrznym świecie, w którym mogą obserwować siebie z trzeciej osoby (być może są takie, które widzą wszystko z pierwszej, ale nie potrafię sobie tego wyobrazić).
             </p>
 
+            <div class="target" id="osoba-faitywna"></div>
             <h3>
-                <div class="target" id="osoba-faitywna"></div>
                 Osoba faitywna
             </h3>
 
@@ -247,8 +270,8 @@
                 Osoby faitywne to wszystkie współosoby, które są gdzieś pomiędzy fiktywnymi a faktywnymi, albo nie są do końca ani jednym, ani drugim. Może być to na przykład introjekt fiktywnego z innego systemu, introjektko czyjegoś alter ego czy introjektka powstała jednocześnie z dwóch źródeł, z których jedno jest fikcyjną postacią, a drugie rzeczywistą osobą.
             </p>
 
+            <div class="target" id="osoba-walk-inowa"></div>
             <h2>
-                <div class="target" id="osoba-walk-inowa"></div>
                 Osoba walk-inowa
             </h2>
 
@@ -256,13 +279,13 @@
                 Osoba walk-inowa to osoba, która wierzy, że przybyła do systemu z rzeczywistości innej niż nasz świat lub z odległego miejsca w naszym wszechświecie (np. innego układu planetarnego). Osoby walk-inowe to często osoby fiktywne lub rzadziej faktywne, ale nie zawsze, na przykład walk-inką może być alterka, która posiada <a href="wewnetrzne-funkcjonowanie#egzowspomnienia" class="internal">egzowspomnienia</a> z życia w świecie, który nie został wymyślony przez żadnego innego człowieka (wliczając w to jej współosoby). Nie każda osoba fiktywna jest też osobą walk-inową – mogą one na przykład uznawać swoje egzowspomnienia za sztuczne wspomnienia albo świat ze swoich wspomnień jako dodatkowy wewnętrzny świat istniejący tylko w ich głowie. Wiele osób walk-inowych ma możliwość powracania do swojego świata i nawet prowadzenia w nim dalej swojego życia. Przez niektóre to określenie jest używane w odniesieniu do wszystkich współosób, które pojawiły się w systemie samoistnie jako w pełni ukształtowane osoby.
             </p>
 
+            <div class="target" id="nieludzie"></div>
             <h2>
-                <div class="target" id="nieludzie"></div>
                 Nieludzie
             </h2>
 
             <p>
-                Nie każda osoba jest także człowiekiem. Zjawisko bycia inną świadomą istotą w ludzkim ciele nazywa się czasami transgatunkowością, na wzór transpłciowości, z którą transgatunkowość ma trochę wspólnego – w obydwu przypadkach tożsamość danej osoby i jej wewnętrzny obraz siebie nie są zgodne z fizycznym wyglądem jej ciała. Występuje ono w wielu <a href="../system" class="internal">systemach</a>, ale także wśród <a href="../mnogosc#osoba-pojedyncza" class="internal">osób singletowych</a>. Osoby identyfikujące się jako postaci mitologiczne, takie jak elfy, smoki czy wampiry, nazywane są <a href="https://pl.wikipedia.org/wiki/Otherkin" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">otherkin</a> (jest to określenie używane przez niektóre także w stosunku do wszystkich istot transgatunkowych), a te identyfikujące się jako zwierzęta to <a href="http://pierwotnyinstynkt.org/terian.html" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">teriantropy</a> albo zwierzołaki. Nie jest to wybór ani udawanie stworzenia, które się lubi, ale szczere doświadczenie, na które osoby transgatunkowe nie mają wpływu.
+                Nie każda osoba jest także człowiekiem. Zjawisko bycia inną świadomą istotą w ludzkim ciele nazywa się czasami transgatunkowością, na wzór transpłciowości, z którą transgatunkowość ma trochę wspólnego – w obydwu przypadkach tożsamość danej osoby i jej wewnętrzny obraz siebie nie są zgodne z fizycznym wyglądem jej ciała. Występuje ono w wielu <a href="../system" class="internal">systemach</a>, ale także wśród <a href="../mnogosc#osoba-pojedyncza" class="internal">osób singletowych</a>. Osoby identyfikujące się jako postaci mitologiczne, takie jak elfy, smoki czy wampiry, nazywane są <a href="https://pl.wikipedia.org/wiki/Otherkin" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>otherkin</a> (jest to określenie używane przez niektóre także w stosunku do wszystkich istot transgatunkowych), a te identyfikujące się jako zwierzęta to <a href="http://pierwotnyinstynkt.org/terian.html" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>teriantropy</a> albo zwierzołaki. Nie jest to wybór ani udawanie stworzenia, które się lubi, ale szczere doświadczenie, na które osoby transgatunkowe nie mają wpływu.
             </p>
 
             <p>
@@ -270,17 +293,17 @@
             </p>
 
             <p>
-                Część nieludzi funkcjonuje w taki sam lub podobny sposób, co ludzie, ale inni (raczej ci w systemach) myślą i zachowują się w sposób bardziej typowy dla swojego gatunku, na przykład wilczyca, która podczas frontowania biega na czworaka, nie rozumie ludzkiej mowy i próbuje gryźć te, które uznaje za zagrożenie. Mogą także ulegać <a href="wewnetrzne-funkcjonowanie#regresja" class="internal">regresji</a> lub <a href="wewnetrzne-funkcjonowanie#progresja" class="internal">progresji</a> gatunkowej, w czasie których przechodzą z jednego stanu w drugi. Niektórzy z nich mogą także w czasie frontowania (lub ogólnie w przypadku osób pojedynczych) doświadczać <a href="http://www.biomedical.pl/zdrowie/fantomowa-konczyna-ktorej-nigdy-nie-bylo-a5493.html" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">fantomowych kończyn</a> (czasami zwanych egzokończynami), czyli fizycznie odczuwać części ciała, których ciało w rzeczywistości nie posiada, np. wróż, który czuje swoje skrzydła na plecach i może nimi poruszać.  Część z tych współosób, które nie mają humanoidalnego ciała w wewnętrznym świecie, może mieć problemy z kontrolowaniem ciała na zewnątrz, bo np. nie są przyzwyczajone do posiadania rąk.
+                Część nieludzi funkcjonuje w taki sam lub podobny sposób, co ludzie, ale inni (raczej ci w systemach) myślą i zachowują się w sposób bardziej typowy dla swojego gatunku, na przykład wilczyca, która podczas frontowania biega na czworaka, nie rozumie ludzkiej mowy i próbuje gryźć te, które uznaje za zagrożenie. Mogą także ulegać <a href="wewnetrzne-funkcjonowanie#regresja" class="internal">regresji</a> lub <a href="wewnetrzne-funkcjonowanie#progresja" class="internal">progresji</a> gatunkowej, w czasie których przechodzą z jednego stanu w drugi. Niektórzy z nich mogą także w czasie frontowania (lub ogólnie w przypadku osób pojedynczych) doświadczać <a href="http://www.biomedical.pl/zdrowie/fantomowa-konczyna-ktorej-nigdy-nie-bylo-a5493.html" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>fantomowych kończyn</a> (czasami zwanych egzokończynami), czyli fizycznie odczuwać części ciała, których ciało w rzeczywistości nie posiada, np. wróż, który czuje swoje skrzydła na plecach i może nimi poruszać.  Część z tych współosób, które nie mają humanoidalnego ciała w wewnętrznym świecie, może mieć problemy z kontrolowaniem ciała na zewnątrz, bo np. nie są przyzwyczajone do posiadania rąk.
             </p>
 
             <div class="imgcontainer">
                 <img src="../unicorn.png" alt="biały jednorożec z lekko różową grzywą na tle zamglonego lasu" class="img">
                 <p>Przykładowa współosoba niebędąca człowiekiem</p>
-                <p>Grafika stworzona przez <a href="https://www.craiyon.com/" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">craiyon</a></p>
+                <p>Grafika stworzona przez <a href="https://www.craiyon.com/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>craiyon</a></p>
             </div>
 
+            <div class="target" id="osoby-niepelnosprawne"></div>
             <h2>
-                <div class="target" id="osoby-niepelnosprawne"></div>
                 Osoby niepełnosprawne
             </h2>
 
@@ -296,8 +319,8 @@
                 Oprócz fizycznych niepełnosprawności współosoby mogą mieć także różne choroby psychiczne czy neurodywergencje, np. depresję, lęki społeczne czy autyzm, lub fizjologiczne zaburzenia, np. astmę czy cukrzycę. Dość często zdarza się, że dotyczą one całego systemu, a nie tylko jednej osoby. Wtedy różne współjednostki mogą na różniące się sposoby lub w różnym stopniu doświadczać symptomów danego zaburzenia.<sup><span class="target" id="p1"></span>[<a href="#1" class="internal">1</a>]</sup>
             </p>
 
+            <div class="target" id="fragment"></div>
             <h2>
-                <div class="target" id="fragment"></div>
                 Fragment
             </h2>
 
@@ -305,8 +328,8 @@
                 Fragment (przez niektóre zwany odłamkiem) to współjednostka, która nie ma w pełni wyrobionego poczucia własnej tożsamości. Jest istotą dwuwymiarową, której cała osobowość opiera się zwykle na jednej emocji, wspomnieniu czy idei. Nowo powstałe współosoby często zaczynają jako fragmenty, a później, w wyniku interakcji z zewnętrznym światem i innymi współosobami, mogą stopniowo lub nagle przekształcić się w trójwymiarową współosobę.
             </p>
 
+            <div class="target" id="demi-fragment"></div>
             <h2>
-                <div class="target" id="demi-fragment"></div>
                 Demi-fragment
             </h2>
 
@@ -314,8 +337,8 @@
                 Demi-fragment to istota, która jest gdzieś pomiędzy byciem płaskim, dwuwymiarowym fragmentem a w pełni wykształconą współosobą. Może być to także ktoś, kto oscyluje pomiędzy byciem jednym a drugim.
             </p>
 
+            <div class="target" id="osoba-czlonkowska"></div>
             <h2>
-                <div class="target" id="osoba-czlonkowska"></div>
                 Osoba członkowska
             </h2>
 
@@ -323,8 +346,8 @@
                 Osobami członkowskimi nazywamy wszystkie współjednostki, które nie są fragmentami.
             </p>
 
+            <div class="target" id="spoleczna-osoba"></div>
             <h2>
-                <div class="target" id="spoleczna-osoba"></div>
                 Społeczna osoba
             </h2>
 
@@ -332,8 +355,8 @@
                 Do zadań społecznej osoby należy socjalizowanie się z ludźmi, jeżeli inne mają z tym problemy. Może to obejmować utrzymywanie przyjaźni, chodzenie na imprezy i rodzinne wydarzenia, poznawanie nowych ludzi czy interakcje z nieznajomymi. 
             </p>
 
+            <div class="target" id="osoba-archiwistyczna"></div>
             <h2>
-                <div class="target" id="osoba-archiwistyczna"></div>
                 Osoba archiwistyczna
             </h2>
 
@@ -341,8 +364,8 @@
                 Osoba archiwistyczna to współosoba, która przechowuję wiedzę o wydarzeniach dziejących się w życiu systemu, zarówno tych w zewnętrznym, jak i w wewnętrznym świecie. Może prowadzić coś w rodzaju systemowej kroniki.
             </p>
 
+            <div class="target" id="wewnetrzna-osoba-samopomocnicza"></div>
             <h2>
-                <div class="target" id="wewnetrzna-osoba-samopomocnicza"></div>
                 Wewnętrzna osoba samopomocnicza
             </h2>
 
@@ -350,8 +373,8 @@
                 Wewnętrzna osoba samopomocnicza to współosoba, której zadaniem jest zbierać wiedzę o systemie, współosobach i/lub przeżytej traumie.
             </p>
 
+            <div class="target" id="osoba-wszechwiedzaca"></div>
             <h2>
-                <div class="target" id="osoba-wszechwiedzaca"></div>
                 Osoba wszechwiedząca
             </h2>
 
@@ -359,8 +382,8 @@
                 Wszechwiedząca współosoba ma dostęp do wspomnień całego systemu. Może mieć też możliwość patrzenia na cały wewnętrzny świat w jednym momencie.
             </p>
 
+            <div class="target" id="osoba-zarzadzajaca-emocjami"></div>
             <h2>
-                <div class="target" id="osoba-zarzadzajaca-emocjami"></div>
                 Osoba zarządzająca emocjami
             </h2>
 
@@ -368,8 +391,8 @@
                 Osoba zarządzająca emocjami mają kontrolę nad emocjami pozostałych osób członkowskich systemu. Może pomagać im uporać się z trudnymi emocjami lub je im odbierać i przekazywać tym współosobom, które lepiej sobie z nimi poradzą.
             </p>
 
+            <div class="target" id="osoba-rzemieslnicza"></div>
             <h2>
-                <div class="target" id="osoba-rzemieslnicza"></div>
                 Osoba rzemieślnicza
             </h2>
 
@@ -377,8 +400,8 @@
                 Osoba rzemieślnicza to współosoba, która może tworzyć nowe współosoby w systemie, najczęściej łącząc ze sobą istniejące fragmenty.
             </p>
 
+            <div class="target" id="osoba-rozdzielajaca"></div>
             <h2>
-                <div class="target" id="osoba-rozdzielajaca"></div>
                 Osoba rozdzielająca
             </h2>
 
@@ -392,8 +415,8 @@
                 Osoba rozdzielająca potrafi doprowadzać do podziału innych współosób w systemie, za ich zgodą lub nie. Niekoniecznie musi być świadoma swojej roli w ich podziałach.
             </p>
 
+            <div class="target" id="osoba-hibernujaca"></div>
             <h2>
-                <div class="target" id="osoba-hibernujaca"></div>
                 Osoba hibernująca
             </h2>
 
@@ -401,8 +424,8 @@
                 Osoba hibernująca to współosoba, który potrafi pomóc innym współosobom zapaść w śpiączkę bądź się z niej wybudzić.
             </p>
 
+            <div class="target" id="nocna-osoba-obserwujaca"></div>
             <h2>
-                <div class="target" id="nocna-osoba-obserwujaca"></div>
                 Nocna osoba obserwująca
             </h2>
 
@@ -410,8 +433,8 @@
                 Zadaniem nocnej osoby obserwującej jest bycie na froncie w nocy, kiedy cała reszta systemu śpi. Współosoby z taką rolą występują najczęściej w systemach, które doświadczyły traumy w czasie nocy. 
             </p>
 
+            <div class="target" id="osoba-poslancza"></div>
             <h2>
-                <div class="target" id="osoba-poslancza"></div>
                 Osoba posłańcza
             </h2>
 
@@ -419,8 +442,8 @@
                 Osoba posłańcza bądź kurierowa to współosoba, której zadaniem jest przenoszenie wiadomości pomiędzy innymi współosobami, najczęściej w większych systemach.
             </p>
 
+            <div class="target" id="osoba-zwiadowcza"></div>
             <h2>
-                <div class="target" id="osoba-zwiadowcza"></div>
                 Osoba zwiadowcza
             </h2>
 
@@ -428,8 +451,8 @@
                 Osoba zwiadowcza lub inaczej poszukująca wędruje po wewnętrznym świecie, aby odkrywać nowe miejsca i/lub współosoby, którzy nie są jeszcze znane dla ogółu systemu. Występuje raczej w systemach z dużym wewnętrznym światem.
             </p>
 
+            <div class="target" id="osoba-kartograficzna"></div>
             <h2>
-                <div class="target" id="osoba-kartograficzna"></div>
                 Osoba kartograficzna
             </h2>
 
@@ -437,8 +460,8 @@
                 Osoba kartograficzna to współosoba, która tworzy mapy wewnętrznego świata. Może je robić tylko w wewnątrzświecie lub także rysować je na zewnątrz. Może współpracować z osobami zwiadowczymi, żeby dowiedzieć się więcej o topografii świata, w którym żyją. Występuje raczej w systemach z dużym wewnętrznym światem.
             </p>
 
+            <div class="target" id="osoba-architektoniczna"></div>
             <h2>
-                <div class="target" id="osoba-architektoniczna"></div>
                 Osoba architektoniczna
             </h2>
 
@@ -446,8 +469,8 @@
                 Osoba architektoniczna to współosoba, która posiada umiejętność tworzenia, zmieniania i niszczenia miejsc w wewnętrznym świecie. Bardzo aktywne osoby architektoniczne są w stanie nawet od zera na przestrzeni lat utworzyć cały skomplikowany, kipiący życiem świat.
             </p>
 
+            <div class="target" id="osoba-wladcza-stworzen"></div>
             <h2>
-                <div class="target" id="osoba-wladcza-stworzen"></div>
                 Osoba władcza stworzeń
             </h2>
 
@@ -455,18 +478,18 @@
                 Osoby władcze stworzeń mogą tworzyć, usuwać i kontrolować wszystkie NPC w wewnętrznym świecie. Często są jednocześnie osobami architektonicznymi.
             </p>
 
+            <div class="target" id="przypisy"></div>
             <h2>
-                <div class="target" id="przypisy"></div>
                 Przypisy
             </h2>
 
             <ol class="links">
 
                 <li><div class="target" id="1"> </div>
-                    <a href="#p1" class="internal">↑</a> <a href="https://did-research.org/did/alters/" target="_blank" rel="noopener noreferrer" lang="en" class="external"><img src="external.png" class="ex" alt="zewnętrzny">Alters in Dissociative Identity Disorder</a></li>
+                    <a href="#p1" class="internal">↑</a> <a href="https://did-research.org/did/alters/" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Alters in Dissociative Identity Disorder</a></li>
 
                 <li><div class="target" id="2"> </div>
-                    <a href="#p2" class="internal">↑</a> <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/pchj.109" target="_blank" rel="noopener noreferrer" lang="en" class="external"><img src="external.png" class="ex" alt="zewnętrzny">Sight and blindness in the same person: Gating in the visual system</a></li>
+                    <a href="#p2" class="internal">↑</a> <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/pchj.109" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Sight and blindness in the same person: Gating in the visual system</a></li>
 
             </ol>
 
@@ -475,7 +498,7 @@
 
 
             <footer>
-                <p><i aria-label="cytat">Ależ oczywiście to dzieje się w twojej głowie, Harry, tylko skąd, u licha, wniosek, że wobec tego nie dzieje się to naprawdę?</i><span lang="en"> ~ J. K. Rowling, </span><i>Harry Potter i Insygnia Śmierci</i><p>
+                <p><i aria-label="cytat">Ależ oczywiście to dzieje się w twojej głowie, Harry, tylko skąd, u licha, wniosek, że wobec tego nie dzieje się to naprawdę?</i><span lang="en"> ~ J. K. Rowling, </span><i>Harry Potter i Insygnia Śmierci</i></p>
 
 <p>Tworzone od serca przez <a href="../system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>.</p>
 
@@ -485,9 +508,9 @@
     
     <!-- 
     
-    <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" class="ex" alt="zewnętrzny">System Tęczowego Chaosu na YouTube</a></p> -->
+    <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>System Tęczowego Chaosu na YouTube</a></p> -->
     
-    <p><a href="https://discord.gg/SVRTZzkWQC" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" class="ex" alt="zewnętrzny">Mnoga Przestrzeń na discordzie</a></p></address>
+    <p><a href="https://discord.gg/SVRTZzkWQC" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Mnoga Przestrzeń na discordzie</a></p></address>
     
     <p>Nie używamy ciasteczek (przynajmniej na razie, dopóki nie nauczymy się, jak to wszystko działa).</p>
     
@@ -497,7 +520,7 @@
     
     <p>Strona ma wyłącznie charakter informacyjny i nie powinna być używania w celu diagnozy ani leczenia. Nie bierzemy na siebie odpowiedzialności za żadne decyzje osób czytających podjęte pod wpływem znalezionych tutaj treści.</p>
 
-    <p>Cała zawartość jest udostępniona na licencji <a href="https://oql.avris.it/license/v1.1" target="_blank" rel="noopener noreferrer" class="external"><img src="../external.png" alt="zewnętrzny" class="ex">OQL</a></p>
+    <p>Cała zawartość jest udostępniona na licencji <a href="https://oql.avris.it/license/v1.1" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>OQL</a></p>
 
 </footer>
 

@@ -32,15 +32,25 @@
             <button class="menu-icon" type="button" onclick="menu()">
                 <img src="menu-icon.png" alt="Menu" title="Menu">
             </button>
-            <a href="/" class="title">Przewodnik po Mnogości</a>
+            <a href="/" class="title">
+                <div class="logo">
+                    <svg class="logo">
+                        <circle class="upper"></circle>
+                        <circle class="down"></circle>
+                        <circle class="left"></circle>
+                        <circle class="right"></circle>
+                    </svg>
+                </div>
+                <span id="title">Przewodnik po Mnogości</span>
+            </a>
             <a href="ustawienia" class="settings desktop">
                 <img src="settings.png" alt="ustawienia">
             </a>
         </header>
         
-        <a href="ustawienia" class="settings mobile">
+        <!-- <a href="ustawienia" class="settings mobile">
             <img src="settings.png" alt="ustawienia">
-        </a>
+        </a> -->
         
             <aside class="sidebar" id="sidebar">
                 <button class="menu-icon" type="button" onclick="menu()">
@@ -66,6 +76,19 @@
 
         <main id="zawartosc">
 
+            
+            <svg preserveAspectRatio="none" class="hidden">
+                <symbol id="ex" class="ex">
+                    <line x1="10%" y1="20%" x2="30%" y2="20%"></line>
+                    <line x1="10%" y1="20%" x2="10%" y2="90%"></line>
+                    <line x1="10%" y1="90%" x2="80%" y2="90%"></line>
+                    <line x1="80%" y1="90%" x2="80%" y2="70%"></line>
+                    <line x1="30%" y1="70%" x2="90%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="50%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="90%" y2="50%"></line>
+                </symbol>
+            </svg>
+            
             <h1>Frontowanie</h1>
 
             <p>
@@ -96,8 +119,8 @@
                 </div>
             </fieldset>
 
+            <div class="target" id="zamiana"></div>
             <h2>
-                <div class="target" id="zamiana"></div>
                 Zamiana
             </h2>
 
@@ -105,8 +128,8 @@
                 Zamiana następuje, kiedy jedna współosoba, dobrowolnie lub nie, przekazuje kontrolę nad ciałem innej współosobie. Może trwać od kilku sekund do kilku godzin i czasami przebiegać tak niezauważalnie, że nawet biorące w niej udział współosoby nie zdają sobie sprawy z jej zajścia. Mogą jej towarzyszyć różne objawy, takie jak patrzenie w przestrzeń pustym wzrokiem, ciężkie mruganie, uczucie spadania, dreszcze lub bóle głowy, a także dysocjacja, dwa ostatnie zwłaszcza w przypadku gwałtownych zamian lub walki o front pomiędzy dwiema osobami. Zdarzają się zamiany zachodzące w czasie snu. Część systemów może kontrolować wszystkie swoje zamiany, inne mogą kontrolować tylko część, a w pozostałych dzieją się one niezależnie od woli osób członkowskich systemu (przeczytaj, <a href="/#jezyk-neutralny-plciowo" class="internal">czym jest język neutralny płciowo</a>) – w sposób dostosowany do ich potrzeb w danym momencie (często poprzez <a href="#wywolywacze" class="internal">wywoływacze</a>) lub zupełnie losowy. 
             </p>
 
+            <div class="target" id="maskowanie"></div>
             <h2>
-                <div class="target" id="maskowanie"></div>
                 Maskowanie
             </h2>
 
@@ -114,8 +137,8 @@
                 Maskowanie to udawanie kogoś, kim się nie jest, aby ukryć przed potencjalnie niebezpiecznym środowiskiem swoje choroby psychiczne czy neurodywergencje. W przypadku mnogości polega to na podszywaniu się pod jedną, <a href="mnogosc#osoba-pojedyncza" class="internal">pojedynczą osobę</a> przez wszystkie osoby członkowskie <a href="system" class="internal">systemu</a>. Zdecydowana większość współosób naturalnie posiada tę zdolność, gdyż jej brak mógłby zwracać na systemy niepożądaną uwagę i prześladowania. Demaskowanie się w zaufanym otoczeniu czy nawet w samotności może być dla wielu trudne i wymagać aktywnej nauki, żeby współosoby mogły przestać chować swoje prawdziwe „ja” pod maską osoby sigletowej. Niektóre współosoby nie są aż tak dobre w ukrywaniu się i często zdarzają im się „wpadki”, a nieliczne zupełnie nie mają zdolności maskowania. Z kolei w niektórych systemach współosoby są do siebie tak podobne, że w ogóle nie muszą się maskować.
             </p>
 
+            <div class="target" id="singletsona"></div>
             <h3>
-                <div class="target" id="singletsona"></div>
                 Singletsona
             </h3>
 
@@ -123,8 +146,8 @@
                 Singletsona to osoba, którą współosoby udają w czasie frontowania. Jest to najczęściej <a href="wspolosoby/role#osoba-hostujaca" class="internal">osoba hostująca</a>, ale może być to także <a href="wspolosoby/role#rdzen" class="internal">rdzeń</a>, była hostująca, nieistniejąca osoba utworzona na podstawie wymagań danego otoczenia czy osoba powstała z pomieszania cech różnych osób członkowskich systemu. Mianem singletsony czasami określa się także wizerunek osoby (obrazek), który system używa do reprezentacji siebie w mediach społecznościowych.
             </p>
 
+            <div class="target" id="wspolswiadomosc"></div>
             <h2>
-                <div class="target" id="wspolswiadomosc"></div>
                 Współświadomość
             </h2>
 
@@ -132,17 +155,17 @@
                 Jeżeli współosoba ma świadomość tego, co dzieje się wokół ciała, ale nie ma nad nim kontroli, mówimy, że jest współświadoma. Są różne poziomy współświadomości, które określamy jako będące bliżej lub dalej frontu (które mogą być reprezentowane fizycznie w <a href="wewnetrzny-swiat" class="internal">wewnętrznym świecie</a> poprzez odległość współosoby od <a href="wewnetrzny-swiat#pokoj-frontowy" class="internal">frontowego pokoju</a>). Współosoba może być na tyle blisko frontu, żeby nie zdawać sobie sprawy, że to nie ona ma w tym momencie kontrolę nad ciałem. Im dalej od frontu dana osoba się znajduje, tym mniej jej uwaga jest pochłonięta tym, co dzieje się na zewnątrz, i tym mniej będzie w stanie sobie z tych wydarzeń przypomnieć (w przypadku systemów amnezyjnych). Współświadome osoby często (ale nie zawsze) przebywają w jednej <a href="wspolosoby/komunikacja#przestrzen-umyslowa" class="internal">przestrzni umysłowej</a> z osobami frontującymi. Dla niektórych współosób współświadomość może łączyć się też z doświadczeniami obserwowania ciała w trzeciej osobie.
             </p>
 
+            <div class="target" id="projekcja"></div>
             <h3>
-                <div class="target" id="projekcja"></div>
                 Projekcja
             </h3>
 
             <p>
-                O projekcji mówimy wtedy, kiedy współświadoma osoba może być fizycznie widziana przez inne osoby członkowskie systemu w otoczeniu ciała. Obraz może być tak rzeczywisty, że nie widać poprzez niego znajdujących się za nim przedmiotów, i zawierać szczegóły takie jak cień i oświetlenie. Dla projektowanej współosoby będzie się to najczęściej łączyło z doświadczeniem pozacielesnym. To zjawisko nie występuje bardzo powszechnie, ale zdecydowanie zdarza się w <a href="mnogosc" class="internal">mnogiej</a> społeczności, najczęściej w przypadku <a href="powstawanie#tulpogeniczne" class="internal">tulpomancji</a> i <a href="powstawanie#wiez-dusz" class="internal">więzi dusz</a> (osoby tulpiarskie nazywają ją <a href="https://tulpa.pl/poradnik-nakladania-jdbara/" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" class="ex" alt="zewnętrzny">nakładaniem</a> i często świadomie się jej uczą). Niektóre mogą posiadać zdolność do projektowania siebie w dowolnym czasie, a inne są projektowane bez podjęcia o tym świadomej decyzji. Może być to porównywane do halucynacji, ale nie jest dokładnie tym samym zjawiskiem, gdyż najczęściej współosoby potrafią odróżnić projekcję od rzeczywistości.
+                O projekcji mówimy wtedy, kiedy współświadoma osoba może być fizycznie widziana przez inne osoby członkowskie systemu w otoczeniu ciała. Obraz może być tak rzeczywisty, że nie widać poprzez niego znajdujących się za nim przedmiotów, i zawierać szczegóły takie jak cień i oświetlenie. Dla projektowanej współosoby będzie się to najczęściej łączyło z doświadczeniem pozacielesnym. To zjawisko nie występuje bardzo powszechnie, ale zdecydowanie zdarza się w <a href="mnogosc" class="internal">mnogiej</a> społeczności, najczęściej w przypadku <a href="powstawanie#tulpogeniczne" class="internal">tulpomancji</a> i <a href="powstawanie#wiez-dusz" class="internal">więzi dusz</a> (osoby tulpiarskie nazywają ją <a href="https://tulpa.pl/poradnik-nakladania-jdbara/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>nakładaniem</a> i często świadomie się jej uczą). Niektóre mogą posiadać zdolność do projektowania siebie w dowolnym czasie, a inne są projektowane bez podjęcia o tym świadomej decyzji. Może być to porównywane do halucynacji, ale nie jest dokładnie tym samym zjawiskiem, gdyż najczęściej współosoby potrafią odróżnić projekcję od rzeczywistości.
             </p>
 
+            <div class="target" id="bierny-wplyw"></div>
             <h2>
-                <div class="target" id="bierny-wplyw"></div>
                 Bierny wpływ
             </h2>
 
@@ -150,8 +173,8 @@
                 Bierny/pasywny wpływ to zjawisko, w którym inne współosoby, zwykle współświadome, wpływają na działania aktualnej osoby frontującej bez przejmowania kontroli nad ciałem. Na przykład nie przepadający za zwierzętami <a href="wspolosoby/role#osoba-hostujaca" class="internal">host</a> może schylić się po przechodzącego korytarzem kota, bo wyczuł, że takie jest pragnienie obecnej przy nim <a href="wspolosoby/role#osoba-mlodsza" class="internal">młodszej</a>. Osoba frontująca niekoniecznie musi być świadoma wpływu kogoś innego, ale – inaczej niż przy współfrontowaniu – to ona podejmuje decyzję o wykonaniu danej czynności. Jeżeli porównać kontrolowanie ciała do kierowania samochodem, to przy współfrontowaniu dwie osoby trzymają za kierownicę i w dowolnym momencie jedna z nich może skręcić w prawo bez pytania drugiej o zgodę. Przy biernym wpływie natomiast jedna osoba trzyma kierownicę, a druga mówi jej (albo ciągnie ją za rękaw), żeby przy najbliższym skrzyżowaniu skręciła w prawo.
             </p>
 
+            <div class="target" id="wywolywacze"></div>
             <h2>
-                <div class="target" id="wywolywacze"></div>
                 Wywoływacze
             </h2>
 
@@ -164,11 +187,11 @@
             </p>
 
             <p>
-                Za działanie wywołaczy najprawdopodobniej odpowiedzialny jest <a href="https://olgarymkiewicz.pl/efekt-coctail-party/" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" class="ex" alt="zewnętrzny">efekt coctail-party</a>, czyli zdolność ludzkiej świadomości do odfiltrowywania bodźców, które jej bezpośrednio nie dotyczą – kiedy na przyjęciu rozmawia ze sobą kilka różnych grup osób, twoja uwaga jest skupiona wyłącznie na konwersacji, w której bierzesz udział, ale pewnie usłysz, kiedy ktoś za tobą wspomni twoje imię albo zacznie mówić o twoim ukochanym zespole rockowym. Tak samo alterka może być pochłonięta wyprowadzaniem swojego psa na spacer w wewnętrznym świecie, ale kiedy osoby w <a href="wspolosoby/komunikacja#przestrzen-umyslowa" class="internal">przestrzeni frontowej</a> zaczną rozmawiać o wyczekiwanym przez nią turnieju sztuk walki, jej uwaga od razu zostanie skierowana w ich stronę.
+                Za działanie wywołaczy najprawdopodobniej odpowiedzialny jest <a href="https://olgarymkiewicz.pl/efekt-coctail-party/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>efekt coctail-party</a>, czyli zdolność ludzkiej świadomości do odfiltrowywania bodźców, które jej bezpośrednio nie dotyczą – kiedy na przyjęciu rozmawia ze sobą kilka różnych grup osób, twoja uwaga jest skupiona wyłącznie na konwersacji, w której bierzesz udział, ale pewnie usłysz, kiedy ktoś za tobą wspomni twoje imię albo zacznie mówić o twoim ukochanym zespole rockowym. Tak samo alterka może być pochłonięta wyprowadzaniem swojego psa na spacer w wewnętrznym świecie, ale kiedy osoby w <a href="wspolosoby/komunikacja#przestrzen-umyslowa" class="internal">przestrzeni frontowej</a> zaczną rozmawiać o wyczekiwanym przez nią turnieju sztuk walki, jej uwaga od razu zostanie skierowana w ich stronę.
             </p>
 
+            <div class="target" id="mieszanie"></div>
             <h2>
-                <div class="target" id="mieszanie"></div>
                 Mieszanie
             </h2>
 
@@ -180,8 +203,8 @@
                 W systemach, w których współosoby mają zewnętrzne cechy pozwalające łatwo je od siebie odróżnić, np. różne akcenty, kiedy dwie współosoby się zamazują, ciało może przyjmować cechy <a href="wspolosoby/role#osoba-hostujaca" class="internal">osoby hostującej</a>, nawet jeżeli nie jest ona wtedy w pobliżu frontu. Z mieszaniny można wyjść poprzez <a href="materialy/dla-systemow#zakotwiczanie" class="internal">zakotwiczanie</a> oparte na tożsamości, polegające na przykład na wyliczeniu rzeczy, które się lubi, których się nie lubi, swoich marzeń i lęków. W naszej ilustracji z restauracją jedna z współosób może przypomnieć sama sobie, że przecież nawet nie lubi fast-foodów, w związku z czym pragnienie zjedzenia pizzy na pewno nie należy do niej.
             </p>
 
+            <div class="target" id="autopilot"></div>
             <h2>
-                <div class="target" id="autopilot"></div>
                 Autopilot
             </h2>
 
@@ -189,8 +212,8 @@
                 Kiedy żadna osoba nie ma kontroli nad ciałem, mówimy, że jest ono na autopilocie. Podświadomość może wtedy nim kierować w wykonywaniu prostych czynności, takich jak sprzątanie domu czy wracanie z pracy stałą trasą, najczęściej działających na zasadzie odruchów warunkowych – to zjawisko występuje także u <a href="mnogosc#osoba-pojedyncza" class="internal">osób singletowych</a>. Autopilot może być rozwinięty w różnym stopniu i w niektórych przypadkach mieć możliwość nawet notować słowa profesora na uczelni, a w innych będzie w stanie jedynie oddychać i mrugać. 
             </p>
 
+            <div class="target" id="utkniecie-na-froncie"></div>
             <h2>
-                <div class="target" id="utkniecie-na-froncie"></div>
                 Utknięcie na froncie
             </h2>
 
@@ -198,8 +221,8 @@
                 Kiedy współosoba, która zazwyczaj posiada taką możliwość, nie może opuścić frontu, nie ważne jak bardzo próbuje, mówimy, że utknęła na froncie. Może to trwać od kilku godzin do nawet miesięcy i może, ale nie musi, być połączone z <a href="#zablokowany-front" class="internal">zablokowaniem frontu</a>.
             </p>
 
+            <div class="target" id="zablokowanie-na-froncie"></div>
             <h2>
-                <div class="target" id="zablokowanie-na-froncie"></div>
                 Zablokowanie na froncie
             </h2>
 
@@ -207,8 +230,8 @@
                 Jeżeli któraś współosoba nigdy lub prawie nigdy nie opuszcza frontu, mówimy, że jest zablokowana na froncie. Jej współosoby wchodzą w interakcje z zewnętrznym światem prawie wyłącznie poprzez <a href="#wspolswiadomosc" class="internal">współświadomość</a> i <a href="#bierny-wplyw" class="internal">bierny wpływ</a>, ewentualnie współfrontowanie. Istnieje możliwość, aby osoba zablokowana na froncie w końcu oddała kontrolę nad ciałem innej osobie członkowskiej systemu. Jako zablokowane na froncie mogą się identyfikować między innymi osoby hostujące systemów z <a href="zaburzenia/dysocjacyjne-zaburzenie-tozsamosci#czesciowe-dysocjacyjne-zaburzenie-tozsamosci" class="internal">częściowym dysocjacyjnym zaburzeniem tożsamości</a>.
             </p>
 
+            <div class="target" id="zablokowany-front"></div>
             <h2>
-                <div class="target" id="zablokowany-front"></div>
                 Zablokowany front
             </h2>
 
@@ -216,8 +239,8 @@
                 Z zablokowanym frontem mamy do czynienia wtedy, kiedy jedna lub więcej osób z systemu <a href="#utkniecie-na-froncie" class="internal">utknie na froncie</a>, a jakakolwiek komunikacja pomiędzy nimi a resztą systemu jest niemożliwa. Wszystkie te, które przebywają w tym momencie <a href="wewnetrzny-swiat" class="internal">wewnątrz</a> (o ile system ma jakieś wewnątrz), w żaden sposób nie mogą dowiedzieć się, co się właśnie dzieje z ciałem.
             </p>
 
+            <div class="target" id="zatloczony-front"></div>
             <h2>
-                <div class="target" id="zatloczony-front"></div>
                 Zatłoczony front
             </h2>
 
@@ -225,13 +248,13 @@
                 O zatłoczonym froncie mówimy, kiedy w jednym momencie na zewnątrz jest spora liczba osób, które nie są ze sobą zmieszane. Dla różnych systemów „spora liczba” może oznaczać różne rzeczy – w systemie <a href="system#system-polifragmentowany" class="internal">polifragmentowanym</a>, w którym współfronting jest codziennością, trzy współistoty raczej nie będą uznawane za tłum, ale w systemie z bardzo słabo wykształconą <a href="#wspolswiadomosc" class="internal">współświadomością</a> już mogą być. Spotkałośmy się z nazwaniem tego zjawiska „sałatką frontową”, ale nie jest to określenie powszechnie znane w społeczności.
             </p>
 
+            <div class="target" id="dysforia-cielesna"></div>
             <h2>
-                <div class="target" id="dysforia-cielesna"></div>
                 Dysforia cielesna
             </h2>
 
             <p>
-                Wiele współosób podczas frontowania może doświadczać odczuwanej często przez osoby <a href="https://pl.wikipedia.org/wiki/Transp%C5%82ciowo%C5%9B%C4%87" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" class="ex" alt="zewnętrzny">transpłciowe</a> <a href="https://tranzycja.pl/krok-po-kroku/dysforia-plciowa/#dysforia-fizycznacielesna" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" class="ex" alt="zewnętrzny">dysforii cielesnej</a>, czyli silnego uczucia dyskomfortu spowodowanego niezgodnością fizycznego wyglądu ciała ze swoim wyglądem wewnętrznym, czyli tym, jak dana osoba postrzega siebie w swoim umyśle. Dotyczy to często współosób, których płeć nie zgadza się z płcią ciała, ale także tych będących w innym niż ciało wieku, innej rasy/gatunku lub posiadających inny wygląd. 
+                Wiele współosób podczas frontowania może doświadczać odczuwanej często przez osoby <a href="https://pl.wikipedia.org/wiki/Transp%C5%82ciowo%C5%9B%C4%87" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>transpłciowe</a> <a href="https://tranzycja.pl/krok-po-kroku/dysforia-plciowa/#dysforia-fizycznacielesna" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>dysforii cielesnej</a>, czyli silnego uczucia dyskomfortu spowodowanego niezgodnością fizycznego wyglądu ciała ze swoim wyglądem wewnętrznym, czyli tym, jak dana osoba postrzega siebie w swoim umyśle. Dotyczy to często współosób, których płeć nie zgadza się z płcią ciała, ale także tych będących w innym niż ciało wieku, innej rasy/gatunku lub posiadających inny wygląd. 
             </p>
 
 
@@ -241,7 +264,7 @@
 
 
             <footer>
-                <p><i aria-label="cytat">Ależ oczywiście to dzieje się w twojej głowie, Harry, tylko skąd, u licha, wniosek, że wobec tego nie dzieje się to naprawdę?</i><span lang="en"> ~ J. K. Rowling, </span><i>Harry Potter i Insygnia Śmierci</i><p>
+                <p><i aria-label="cytat">Ależ oczywiście to dzieje się w twojej głowie, Harry, tylko skąd, u licha, wniosek, że wobec tego nie dzieje się to naprawdę?</i><span lang="en"> ~ J. K. Rowling, </span><i>Harry Potter i Insygnia Śmierci</i></p>
 
 <p>Tworzone od serca przez <a href="system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>.</p>
 
@@ -251,9 +274,9 @@
     
     <!-- 
     
-    <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" class="ex" alt="zewnętrzny">System Tęczowego Chaosu na YouTube</a></p> -->
+    <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>System Tęczowego Chaosu na YouTube</a></p> -->
     
-    <p><a href="https://discord.gg/SVRTZzkWQC" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" class="ex" alt="zewnętrzny">Mnoga Przestrzeń na discordzie</a></p></address>
+    <p><a href="https://discord.gg/SVRTZzkWQC" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Mnoga Przestrzeń na discordzie</a></p></address>
     
     <p>Nie używamy ciasteczek (przynajmniej na razie, dopóki nie nauczymy się, jak to wszystko działa).</p>
     
@@ -263,7 +286,7 @@
     
     <p>Strona ma wyłącznie charakter informacyjny i nie powinna być używania w celu diagnozy ani leczenia. Nie bierzemy na siebie odpowiedzialności za żadne decyzje osób czytających podjęte pod wpływem znalezionych tutaj treści.</p>
 
-    <p>Cała zawartość jest udostępniona na licencji <a href="https://oql.avris.it/license/v1.1" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" class="ex" alt="zewnętrzny">OQL</a></p>
+    <p>Cała zawartość jest udostępniona na licencji <a href="https://oql.avris.it/license/v1.1" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>OQL</a></p>
 
 </footer>
 

@@ -32,15 +32,25 @@
             <button class="menu-icon" type="button" onclick="menu()">
                 <img src="menu-icon.png" alt="Menu" title="Menu">
             </button>
-            <a href="/" class="title">Przewodnik po Mnogości</a>
+            <a href="/" class="title">
+                <div class="logo">
+                    <svg class="logo">
+                        <circle class="upper"></circle>
+                        <circle class="down"></circle>
+                        <circle class="left"></circle>
+                        <circle class="right"></circle>
+                    </svg>
+                </div>
+                <span id="title">Przewodnik po Mnogości</span>
+            </a>
             <a href="ustawienia" class="settings desktop">
                 <img src="settings.png" alt="ustawienia">
             </a>
         </header>
         
-        <a href="ustawienia" class="settings mobile">
+        <!-- <a href="ustawienia" class="settings mobile">
             <img src="settings.png" alt="ustawienia">
-        </a>
+        </a> -->
         
             <aside class="sidebar" id="sidebar">
                 <button class="menu-icon" type="button" onclick="menu()">
@@ -66,6 +76,19 @@
 
         <main id="zawartosc">
 
+            
+            <svg preserveAspectRatio="none" class="hidden">
+                <symbol id="ex" class="ex">
+                    <line x1="10%" y1="20%" x2="30%" y2="20%"></line>
+                    <line x1="10%" y1="20%" x2="10%" y2="90%"></line>
+                    <line x1="10%" y1="90%" x2="80%" y2="90%"></line>
+                    <line x1="80%" y1="90%" x2="80%" y2="70%"></line>
+                    <line x1="30%" y1="70%" x2="90%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="50%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="90%" y2="50%"></line>
+                </symbol>
+            </svg>
+            
             <h1>Wewnętrzny świat</h1>
 
             <p>
@@ -79,13 +102,13 @@
             <div class="imgcontainer">
                 <img src="innerworld.png" alt="zamek na klifie przy wodospadzie z tęczą" class="img">
                 <p>Niektóre wewnętrzne światy mogą mieć w sobie trochę magii</p>
-                <p>Grafika stworzona przez <a href="https://www.craiyon.com/" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" alt="zewnętrzny" class="ex">craiyon</a></p>
+                <p>Grafika stworzona przez <a href="https://www.craiyon.com/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>craiyon</a></p>
             </div>
 
             <div class="imgcontainer">
                 <img src="innerroom.png" alt="Przytulny pokój z kanapą i stolikiem kawowym" class="img">
                 <p>Mniejszym systemom wystarczy pojedynczy pokój</p>
-                <p>Grafika stworzona przez <a href="https://www.craiyon.com/" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" alt="zewnętrzny" class="ex">craiyon</a></p>
+                <p>Grafika stworzona przez <a href="https://www.craiyon.com/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>craiyon</a></p>
             </div>
 
             <fieldset class="contents">
@@ -104,8 +127,8 @@
                 </div>
             </fieldset>
 
-            <h2>
                 <div class="target" id="mechanika"></div>
+            <h2>
                 Mechanika
             </h2>
 
@@ -121,8 +144,8 @@
                 W czasie frontowania większość osób może zajrzeć do wewnętrznego świata. Często obserwują go wtedy z lotu ptaka albo patrzą na swoje ciało z trzecioosobowej perspektywy. Niektóre są w stanie nawet kierować swoim wewnętrznym ciałem, kiedy mają kontrolę nad tym zewnętrznym. Ćwiczenie konkretnych czynności w środku może się przekładać na umiejętność ich wykonywania na zewnątrz. Mówimy oczywiście o prostych czynnościach – można nauczyć się lepiej rysować, ale raczej nie pilotować helikopter. W bardziej złożonych światach mózg często wypełnia luki tam, gdzie brakuje mu wiedzy – współosoby mogą obejrzeć film całkiem podobny do Gwiezdnych Wojen, uczyć się języka przypominającego hiszpański czy studiować na kierunku zbliżonym do prawa.
             </p>
 
-            <h3>
                 <div class="target" id="nie-sztuczne-wspomnienia"></div>
+            <h3>
                 Nie „sztuczne wspomnienia”
             </h3>
 
@@ -134,8 +157,8 @@
                 Podsumowując, nie nazywaj niczyich wspomnień z wewnętrznego świata sztucznymi wspomnieniami, no chyba że dana osoba sama tak o nich mówi.
             </p>
 
-            <h3>
                 <div class="target" id="nie-miejsce-w-wyobrazni"></div>
+            <h3>
                 Nie „miejsce w wyobraźni”
             </h3>
 
@@ -144,11 +167,11 @@
             </p>
 
             <p>
-                <b> Część wewnętrznych światów posiadanych przez systemy wykracza jednak znacznie poza możliwości wyobraźni.</b> Duża część z nich nie jest nikogo tworzona, a powstaje samoistnie, jakby w odpowiedzi na potrzeby kolektywu. <b> Mogą być doświadczane wszystkimi zmysłami dokładnie tak samo, jak świat zewnętrzny</b>, także przez osoby z <a href="https://wylecz.to/uklad-nerwowy-i-psychiatria/afantazja/" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" alt="zewnętrzny" class="ex">afantazją</a> (brakiem możliwości widzenia obrazów w swoim umyśle). <b> Posiadają pewną niezależność od współosób</b> – żadna z nich nie podejmuje decyzji, że dzisiaj będzie padał deszcz, a w mieście rozpoczną się roboty drogowe. Mogą występować w nich różne <a href="#npc" class="internal">stworzenia</a>, z których część zyskuje własną świadomość, a zdarzają się nawet świadome światy. Niektóre współosoby mogą nie mieć dostępu do konkretnych miejsc albo nawet całych światów i mogą sobie wyobrażać przebywanie w nich, ale działania podjęte w ich wyobrażeniach nie mają wpływu na wygląd faktycznego miejsca. Nazywanie czegoś takiego po prostu „miejscem w wyobraźni” jest porządnym niedomówieniem.
+                <b> Część wewnętrznych światów posiadanych przez systemy wykracza jednak znacznie poza możliwości wyobraźni.</b> Duża część z nich nie jest nikogo tworzona, a powstaje samoistnie, jakby w odpowiedzi na potrzeby kolektywu. <b> Mogą być doświadczane wszystkimi zmysłami dokładnie tak samo, jak świat zewnętrzny</b>, także przez osoby z <a href="https://wylecz.to/uklad-nerwowy-i-psychiatria/afantazja/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>afantazją</a> (brakiem możliwości widzenia obrazów w swoim umyśle). <b> Posiadają pewną niezależność od współosób</b> – żadna z nich nie podejmuje decyzji, że dzisiaj będzie padał deszcz, a w mieście rozpoczną się roboty drogowe. Mogą występować w nich różne <a href="#npc" class="internal">stworzenia</a>, z których część zyskuje własną świadomość, a zdarzają się nawet świadome światy. Niektóre współosoby mogą nie mieć dostępu do konkretnych miejsc albo nawet całych światów i mogą sobie wyobrażać przebywanie w nich, ale działania podjęte w ich wyobrażeniach nie mają wpływu na wygląd faktycznego miejsca. Nazywanie czegoś takiego po prostu „miejscem w wyobraźni” jest porządnym niedomówieniem.
             </p>
 
-            <h3>
                 <div class="target" id="nie-fabula"></div>
+            <h3>
                 Nie „fabuła”
             </h3>
 
@@ -156,8 +179,8 @@
                 Często słyszy się od niektórych osób określenie, że wewnętrzne światy posiadają swoją fabułę. Chodzi oczywiście o dziejące się wewnątrz wydarzenia – ludzie wchodzą w związki, umierają, rodzą się, plemiona ze sobą walczą, zawierają sojusze. To wszystko rzeczywiście może przypominać fabułę jakiejś książki czy filmu, ale <strong> nie powinno nazywać się tego fabułą, jeżeli dany system sam tego nie robi</strong>. „Fabuła” może sugerować, że wszystkie wydarzenia są przez kogoś planowane, a biorące w nich udział osoby tylko odgrywają przydzielone im role. Pomija to zupełnie fakt, jak bardzo realne są dla systemu te wszystkie wydarzenia. Kiedy współosoba powie ci, że podróżuje po wewnętrznym świecie i walczy z nieprzyjaznymi stworzeniami, najprawdopodobniej nie jest to dla niej „zabawa w bohatera”, a prawdziwe życie, prawdziwa walka z zagrożeniami, które mogą zrobić jej lub komuś innemu prawdziwą krzywdę. Niektóre mogą nie mieć nic przeciwko nazywaniu tego fabułą, ale w razie niepewności należy pytać.
             </p>
 
-            <h3>
                 <div class="target" id="smierc"></div>
+            <h3>
                 Śmierć
             </h3>
 
@@ -175,8 +198,8 @@
                 W wielu światach <a href="#npc" class="internal">NPC</a> także mogą umrzeć. Mechanika może na to zezwalać nawet wtedy, kiedy współosoby nie mają takiej możliwości. Mogą być jednak przywrócone do życia, jeżeli system posiada <a href="wspolosoby/role#osoba-wladcza-stworzen" class="internal">osobę władczą stworzeń</a> z odpowiednimi umiejętnościami.
             </p>
 
-            <h2>
                 <div class="target" id="npc"></div>
+            <h2>
                 NPC
             </h2>
 
@@ -184,8 +207,8 @@
                 NPC (od ang. <i lang="en">Non-Player Characters</i>) są to ludzie, zwierzęta i inne istoty w wewnętrznym świecie, które nie są współosobami i występują w nim po to, żeby go bardziej urzeczywistnić i dotrzymywać towarzystwa współosobom. Nazwa została zaczerpnięta od postaci z gier komputerowych, które stanowią jedynie tło dla głównej fabuły (jeżeli wolałobyście polską nazwę, proponujemy BN – bohater niezależny, określenie używane w środowisku gier RPG). Większość z nich faktycznie jest tak płaska, jak postaci w grach, nie można z nimi porozmawiać albo sensowna rozmowa możliwa jest tylko na określone tematy. Jednak niektóre NPC, najczęściej ważne dla kogoś w systemie, stopniowo mogą stać się w pełni rozbudowanymi osobami. Nazywamy je świadomymi i jedyną rzeczą, która odróżnia je od współosób, jest brak możliwości przejęcia przez nie kontroli nad ciałem, bycia we <a href="frontowanie#wspolswiadomosc" class="internal">współświadomości</a> i posiadania dostępu do dzielonych wspomnień systemu. Wiele z takich NPC po jakimś czasie samemu staje się współosobami (a niektóre współosoby mogą dobrowolnie stać się NPC, rezygnując zupełnie z możliwości dostępu do frontu).
             </p>
 
-            <h2>
                 <div class="target" id="pokoj-frontowy"></div>
+            <h2>
                 Pokój frontowy
             </h2>
 
@@ -193,8 +216,8 @@
                 Pokój poświęcony frontowi często występuje w wewnętrznych światach. Może mieć na przykład panel kontroli i duży ekran, na którym widać wszystko, co dzieje się w zewnętrznym świecie. Współosoby mogą do niego pójść, kiedy chcą przejąć kontrolę nad ciałem albo sprawdzić, co w danym momencie dzieje się na zewnątrz. W niektórych światach każda <a href="frontowanie#zamiana" class="internal"></a>zamiana będzie skutkowała przeniesieniem nowej osoby frontującej do pokoju frontowego, niezależnie od tego, gdzie wcześniej była i czym się zajmowała.
             </p>
 
-            <h2>
                 <div class="target" id="warstwy"></div>
+            <h2>
                 Warstwy
             </h2>
 
@@ -206,7 +229,7 @@
 
 
             <footer>
-                <p><i aria-label="cytat">Ależ oczywiście to dzieje się w twojej głowie, Harry, tylko skąd, u licha, wniosek, że wobec tego nie dzieje się to naprawdę?</i><span lang="en"> ~ J. K. Rowling, </span><i>Harry Potter i Insygnia Śmierci</i><p>
+                <p><i aria-label="cytat">Ależ oczywiście to dzieje się w twojej głowie, Harry, tylko skąd, u licha, wniosek, że wobec tego nie dzieje się to naprawdę?</i><span lang="en"> ~ J. K. Rowling, </span><i>Harry Potter i Insygnia Śmierci</i></p>
 
 <p>Tworzone od serca przez <a href="system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>.</p>
 
@@ -216,9 +239,9 @@
     
     <!-- 
     
-    <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" class="ex" alt="zewnętrzny">System Tęczowego Chaosu na YouTube</a></p> -->
+    <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>System Tęczowego Chaosu na YouTube</a></p> -->
     
-    <p><a href="https://discord.gg/SVRTZzkWQC" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" class="ex" alt="zewnętrzny">Mnoga Przestrzeń na discordzie</a></p></address>
+    <p><a href="https://discord.gg/SVRTZzkWQC" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Mnoga Przestrzeń na discordzie</a></p></address>
     
     <p>Nie używamy ciasteczek (przynajmniej na razie, dopóki nie nauczymy się, jak to wszystko działa).</p>
     
@@ -228,7 +251,7 @@
     
     <p>Strona ma wyłącznie charakter informacyjny i nie powinna być używania w celu diagnozy ani leczenia. Nie bierzemy na siebie odpowiedzialności za żadne decyzje osób czytających podjęte pod wpływem znalezionych tutaj treści.</p>
 
-    <p>Cała zawartość jest udostępniona na licencji <a href="https://oql.avris.it/license/v1.1" target="_blank" rel="noopener noreferrer" class="external"><img src="external.png" class="ex" alt="zewnętrzny">OQL</a></p>
+    <p>Cała zawartość jest udostępniona na licencji <a href="https://oql.avris.it/license/v1.1" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>OQL</a></p>
 
 </footer>
 

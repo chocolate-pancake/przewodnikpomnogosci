@@ -321,6 +321,7 @@ div.logo::before{
     justify-content: center;
     align-items: center;
     background-color: var(--transparent);
+    cursor: pointer;
     transition: background-color 0.5s, box-shadow 0.5s;
 }
 
@@ -1030,12 +1031,19 @@ form.search {
     padding-left: 0.25rem;
     height: 2.25rem;
     padding-right: 0.25rem;
+    transition: background-color 0.5s, border-color 0.5s, box-shadow 0.5s;
+}
+
+form.search:has(input.search:hover)  {
+    background-color: rgb(30, 30, 30);
+    box-shadow: 0px 0px 3px 3px var(--dark-blue);
+    border-color: var(--dark-blue);
 }
 
 form.search:has(input.search:focus-visible)  {
     background-color: rgb(20, 20, 20);
-    box-shadow: 0px 0px 3px 3px var(--dark-blue);
-    border-color: var(--dark-blue);
+    box-shadow: 0px 0px 3px 3px var(--light-blue);
+    border-color: var(--light-blue);
 }
 
 input.search, button.search {
@@ -1046,23 +1054,33 @@ input.search, button.search {
 }
 
 button.search {
+    cursor: pointer;
     margin-bottom: 0;
     margin-top: 0;
     padding: 0.1rem;
     width: 1.5rem;
     overflow: visible;
+    border-radius: 50%;
+}
+
+button.search svg {
+    transition: filter 0.5s, stroke-width 0.5s;
+    stroke-width: 0.1rem;
+    stroke: var(--font-color);
 }
 
 button.search circle {
-    stroke: var(--font-color);
     fill: transparent;
-    stroke-width: 0.1rem;
 }
 
 button.search line {
-    stroke-width: 0.1rem;
-    stroke: var(--font-color);
     stroke-linecap: round;
+}
+
+button.search:hover svg {
+    /* background-color: rgb(70, 70, 70); */
+    filter: drop-shadow(var(--link-shadow));
+    stroke-width: 0.13rem;
 }
 
 input.search {
@@ -1276,6 +1294,10 @@ input.search:focus-visible {
 
     }
 
+    ::selection {
+        background-color: var(--blue-glow);
+    }
+
     body {
         background-image: url(background2.png);
     }
@@ -1477,6 +1499,20 @@ input.search:focus-visible {
     .cryterium {
         background-color: inherit;
         box-shadow: 7px 7px 10px rgba(20, 20, 20, 0.95), -7px 7px 10px rgba(20, 20, 20, 0.95);
+    }
+
+    form.search:has(input.search:hover) {
+        box-shadow: none;
+        /* 0px 0px 0px 5px rgb(50, 50, 50) */
+        background-color: transparent;
+        border-color: var(--blue-glow);
+    }
+
+    form.search:has(input.search:focus-within) {
+        background-color: transparent;
+        box-shadow: none;
+        /* 0px 0px 0px 5px rgb(0, 0, 0) */
+        border-color: var(--purple-glow);
     }
     
     .searchResult {

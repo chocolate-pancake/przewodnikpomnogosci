@@ -72,7 +72,7 @@ function sendFeedback(){
         headers: {
             "Content-type": "application/json"
         },
-        body: JSON.stringify(header)
+        body: JSON.stringify({title: header})
     });
     document.querySelector(".heart").setAttribute("disabled", "");
 }

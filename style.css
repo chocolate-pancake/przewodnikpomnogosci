@@ -1144,6 +1144,17 @@ input.search:focus-visible {
     margin-left: 0.25rem;
 }
 
+.heart {
+    width: 2rem;
+    height: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+
 @keyframes rotate {
     from {
         transform: rotate3d(0);

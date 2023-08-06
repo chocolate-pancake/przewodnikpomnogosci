@@ -65,4 +65,14 @@ catch {
     }
 }
 
+function sendFeedback(){
+    let header = document.querySelector("h1").textContent;
+    fetch("https://przewodnikpomnogosci.pl/test", {
+        method: "POST",
+        body: header
+    });
+    document.querySelector(".heart").setAttribute("disabled");
+}
+
+
 console.log("Jeżeli chcesz zajrzeć do kodu źródłowego, znajdziesz go tu: https://github.com/chocolate-pancake/przewodnikpomnogosci")

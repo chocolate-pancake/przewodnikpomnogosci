@@ -2,24 +2,26 @@
 <html lang="pl">
     <head>
         <meta charset="UTF-8">
-        <title>Wyszukiwanie: | Przewodnik po Mnogości</title>
-        <link rel="icon" href="https://przewodnikpomnogosci.pl/ampersand-icon.png">
+        <title>Przewodnik po Mnogości – wszystko o byciu wieloma w jednym ciele</title>
+        <meta name="robots" content="noindex">
+        <link rel="icon" href="ampersand-icon.png">
         <meta property="og:image" itemprop="image primaryImageOfPage" content="https://przewodnikpomnogosci.pl/plural-journey-rings.png">
-<meta property="og:image:alt" content="mnogie okręgi">
+        <meta property="og:image:alt" content="mnogie okręgi">
         <meta name="twitter:domain" content="przewodnikpomnogosci.pl">
         <meta name="color-scheme" content="dark light">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="System Tęczowego Chaosu">
         <meta property="og:type" content="website">
-        <meta property="og:site_name" content="Przewodnik po Mnogości">
-        <meta property="og:url" content="https://przewodnikpomnogosci.pl/wyszukaj">
-        <meta name="twitter:title" property="og:title" content="Wyszukiwarka">
-        <meta name="robots" content="noindex">
+        <!-- <meta property="og:site_name" content="Przewodnik po Mnogości"> -->
+        <meta property="og:url" content="https://przewodnikpomnogosci.pl/">
+        <meta name="twitter:title" property="og:title" content="Przewodnik po Mnogości">
+        <meta name="google-site-verification" content="EG42P3yVBO20KuBYByK7wo7eml-10mxfQ1CX9zaBalE" />
+        <meta name="description" content="Przewodnik po Mnogości to projekt mający szerzyć informacje i świadomość o mnogości - obecności kilku osób/osobowości w jednym ciele lub umyśle. Obejmuje to dysocjacyjne zaburzenie tożsamości, OSDD, tulpomancję, więź dusz oraz wiele innych rodzajów mnogości.">
+        <meta name="twitter:description" property="og:description" content="Przewodnik po Mnogości to projekt mający szerzyć informacje i świadomość o mnogości - obecności kilku osób/osobowości w jednym ciele lub umyśle. Obejmuje to dysocjacyjne zaburzenie tożsamości, OSDD, tulpomancję, więź dusz oraz wiele innych rodzajów mnogości.">
+        <!-- <meta name="keywords" content="mnogość, wielorakość, dysocjacyjne zaburzenie tożsamości, opętanie, przewodnik po mnogości, mnogość przewodnik, mnogość definicja, wielorakość definicja"> -->
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="https://przewodnikpomnogosci.pl/script.js" defer></script>
-        <script src="https://przewodnikpomnogosci.pl/settings.js" defer></script>
-        <script src="search.js" defer></script>
-        <!-- PAMIĘTAĆ O STYLE -->
+        <script src="script.js" defer></script>
+        <script src="settings.js" defer></script>
     </head>
     <body>
         <div id="shadow" class="shadow"></div>
@@ -31,7 +33,7 @@
             <button class="menu-icon" type="button" onclick="menu()">
                 <img src="menu-icon.png" alt="Menu" title="Menu">
             </button>
-            <a href="/" class="title"> 
+            <a href="/" class="title">
                 <div class="logo" aria-label="mnogie okręgi">
                     <svg class="logo">
                         <circle class="upper"></circle>
@@ -42,6 +44,18 @@
                 </div>
                 <span id="title">Przewodnik po Mnogości</span>
             </a>
+            
+            <!-- ZMIENIC ADRES KONIECZNIE -->
+            <!-- <form class="search" action="file:///C:/Users/Natalka/OneDrive/Pulpit/moje%20foldery/HTML/DID/wyszukaj.html" role="search">
+                  
+                <input type="search" class="search" name="q" minlength="1" placeholder="wyszukaj" required>
+                <button type="submit" class="search" aria-label="wyszukaj">
+                    <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" class="mag">
+                        <circle cx="35%" cy="35%" r="30%"/>
+                        <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                    </svg>
+                </button>
+            </form> -->
             <a href="ustawienia" class="settings desktop">
                 <img src="settings.png" alt="ustawienia">
             </a>
@@ -56,16 +70,16 @@
                     <img src="menu-icon.png" alt="Menu" title="Menu">
                 </button>
                 <nav class="menu-options">
-                    <a href="/" id="glowna" class="option">Strona główna</a>
-                    <a href="terminologia" id="terminologia" class="option">Terminologia</a>
-                    <a href="mnogosc" id="mnogosc" class="option">Mnogość</a>
-                    <a href="wyjasnienia" id="wyjasnienia" class="option">Wyjaśnienia</a>       
+                    <a href="/" id="glowna" class="option current">Strona główna</a>
+                    <a href="terminologia" id="terminologia" class="option">Terminologia</a> 
+                    <a href="mnogosc" id="mnogosc" class="option">Mnogość</a>  
+                    <a href="wyjasnienia" id="wyjasnienia" class="option">Wyjaśnienia</a>   
                     <a href="zaburzenia" id="zaburzenia" 
-                    class="option">Powiązane zaburzenia</a> 
+                    class="option">Powiązane zaburzenia</a>  
                     <a href="powstawanie" id="powstawanie" class="option">Powstawanie</a> 
-                    <a href="system" id="system" class="option">System</a>       
-                    <a href="wspolosoby" id="wspolosoby" class="option">Współosoby</a>   
-                    <a href="frontowanie" class="option" id="frontowanie">Frontowanie</a> 
+                    <a href="system" id="system" class="option">System</a>      
+                    <a href="wspolosoby" id="wspolosoby" class="option">Współosoby</a> 
+                    <a href="frontowanie" class="option" id="frontowanie">Frontowanie</a>   
                     <a href="wewnetrzny-swiat" id="wewnetrzny-swiat" class="option">Wewnętrzny świat</a> 
                     <a href="materialy" id="materialy" class="option">Materiały</a>
                     <a href="system-teczowego-chaosu" id="o-nas" class="option">O nas</a>
@@ -74,8 +88,6 @@
             </aside>
 
         <main id="zawartosc">
-
-            
             <svg preserveAspectRatio="none" class="hidden">
                 <symbol id="ex" class="ex">
                     <line x1="10%" y1="20%" x2="30%" y2="20%"></line>
@@ -88,22 +100,12 @@
                 </symbol>
             </svg>
             
-            <h1>Wyniki wyszukiwania dla:</h1>
-
-            <div id="results">
-                <p></p>
-            </div>
-
-            <div id="loading" class="animated"></div>
-
-            <button class="heart" onclick="sendFeedback()">💜</button>
-
-
+            <h1>Test</h1>
 
             <footer>
                 <p><i aria-label="cytat">Ależ oczywiście to dzieje się w twojej głowie, Harry, tylko skąd, u licha, wniosek, że wobec tego nie dzieje się to naprawdę?</i><span lang="en"> ~ J. K. Rowling, </span><i>Harry Potter i Insygnia Śmierci</i></p>
 
-<p>Tworzone od serca przez <a href="../system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>.</p>
+<p>Tworzone od serca przez <a href="system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>.</p>
 
 
 <address><p>Kontakt:</p>
@@ -123,7 +125,7 @@
     
     <p>Strona ma wyłącznie charakter informacyjny i nie powinna być używania w celu diagnozy ani leczenia. Nie bierzemy na siebie odpowiedzialności za żadne decyzje osób czytających podjęte pod wpływem znalezionych tutaj treści.</p>
 
-    <p>Cała zawartość jest udostępniona na licencji <a href="https://oql.avris.it/license/v1.1" target="_blank" rel="noopener noreferrer" class="external"><img src="https://przewodnikpomnogosci.pl/external.png" class="ex" alt="zewnętrzny">OQL</a></p>
+    <p>Cała zawartość jest udostępniona na licencji <a href="https://oql.avris.it/license/v1.1" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>OQL</a></p>
 
 </footer>
 

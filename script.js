@@ -67,7 +67,7 @@ catch {
 
 function sendFeedback(){
     let header = document.querySelector("h1").textContent;
-    fetch("https://przewodnikpomnogosci.pl/test/", {
+    fetch("https://przewodnikpomnogosci.pl/test", {
         method: "POST",
         headers: {
             "Content-type": "application/json"

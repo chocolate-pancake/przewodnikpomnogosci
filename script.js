@@ -66,13 +66,13 @@ catch {
 }
 
 function sendFeedback(){
-    let header = document.querySelector("h1").textContent;
+    // let header = document.querySelector("h1").textContent;
     fetch("https://przewodnikpomnogosci.pl/test", {
         method: "POST",
         headers: {
             "Content-type": "application/json"
         },
-        body: JSON.stringify({title: header})
+        body: JSON.stringify({title: "YES"})
     });
     document.querySelector(".heart").setAttribute("disabled", "");
 }

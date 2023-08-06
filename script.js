@@ -67,11 +67,14 @@ catch {
 
 function sendFeedback(){
     let header = document.querySelector("h1").textContent;
-    fetch("https://przewodnikpomnogosci.pl/test", {
+    fetch("https://przewodnikpomnogosci.pl/test.json", {
         method: "POST",
-        body: header
+        headers: {
+            "Content-type": "application/json"
+        },
+        body: JSON.stringify(header)
     });
-    document.querySelector(".heart").setAttribute("disabled");
+    document.querySelector(".heart").setAttribute("disabled", "");
 }
 
 

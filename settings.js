@@ -41,11 +41,7 @@ function link(){
 }
 
 function underlineLinks(){
-    let links = document.querySelectorAll(".internal");
-    for(let i  = 0; i < links.length; i ++){
-        links[i].classList.toggle("underline");
-    }
-    links = document.querySelectorAll(".external");
+    let links = document.querySelectorAll(".internal, .external, .titleLink");
     for(let i  = 0; i < links.length; i ++){
         links[i].classList.toggle("underline");
     }
@@ -103,34 +99,38 @@ function scrollbar(){
     }
 }
 
-// if(!localStorage.getItem('reducedMotion')){
-//     localStorage.setItem('reducedMotion', 'false');
-// }
-// if(window.matchMedia("(prefers-reduced-motion)").matches){
-//     localStorage.setItem('reducedMotion', 'true');
-// }
+if(!localStorage.getItem('reducedMotion')){
+    if(window.matchMedia("(prefers-reduced-motion)").matches){
+        localStorage.setItem('reducedMotion', 'true');
+    }
+    else{
+        localStorage.setItem('reducedMotion', 'false');
+    }
+}
 
-// if(localStorage.getItem('reducedMotion') === 'true'){
-//     reduceMotion();
-//     let motionCheck = document.getElementById('reducedMotion');
-//     if(motionCheck){
-//         motionCheck.checked;
-//     }
-// }
+if(localStorage.getItem('reducedMotion') === 'true'){
+    reduceMotion();
+}
+else if(localStorage.getItem('reducedMotion') === 'false'){
+    let motionCheck = document.getElementById('reducedMotion');
+    if(motionCheck){
+        motionCheck.checked = true;
+    }
+}
 
-// function reduceMotion(){ //NIE DZIAŁA XC
-//     let elements = document.querySelectorAll("*");
-//     for(let i = 0; i < elements.length; i ++){
-//         elements[i].classList.toggle('reduced-motion');
-//     }
-//     // document.documentElement.classList.toggle('reduced-motion');
-//     if(localStorage.getItem('reducedMotion') === 'true'){
-//         localStorage.setItem('reducedMotion', 'false');
-//     }
-//     else{
-//         localStorage.setItem('reducedMotion', 'true');
-//     }
-// }
+function reduceMotion(){ 
+    let elements = document.querySelectorAll("*");
+    console.log(elements);
+    for(let i = 0; i < elements.length; i ++){
+        elements[i].classList.toggle('reduced-motion');
+    }
+    if(localStorage.getItem('reducedMotion') === 'true'){
+        localStorage.setItem('reducedMotion', 'false');
+    }
+    else{
+        localStorage.setItem('reducedMotion', 'true');
+    }
+}
 
 
 

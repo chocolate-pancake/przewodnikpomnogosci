@@ -1028,6 +1028,8 @@ sup a.internal {
     color: var(--light-blue);
     transition: color 0.5s, text-shadow 0.5s;
     text-decoration: none;
+    stroke: var(--light-blue);
+    stroke-width: 0.08rem;
 }
 
 .internal.underline, .external.underline {
@@ -1038,6 +1040,11 @@ sup a.internal {
     color: var(--lighter-blue);
     text-shadow: var(--link-shadow);
     /* rgba(0, 0, 0, 0.4) */
+    stroke: var(--lighter-blue);
+}
+
+b .external {
+    stroke-width: 0.1rem;
 }
 
 /* .internal.underline:hover, .internal.underline:focus, .external.underline:hover, .external.underline:focus {
@@ -1058,14 +1065,11 @@ symbol {
     width: 0.75rem;
     height: 0.75rem;
     margin-right: 0.25rem;
-    stroke: var(--light-blue);
-    stroke-width: 0.08rem;
     stroke-linecap: round;
     transition: stroke 0.5s, filter 0.5s;
 }
 
 .external:hover .ex, .external:focus .ex {
-    stroke: var(--lighter-blue);
     filter: drop-shadow(var(--link-shadow));
 }
 

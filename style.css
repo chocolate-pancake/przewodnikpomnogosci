@@ -545,7 +545,7 @@ address {
     0.3rem 0.3rem 0.1rem #347DDE, 0.35rem 0.35rem 0.1rem #770088;
 }
 
-.imgcontainer {
+figure {
     margin: 4rem auto;
     padding: 1.5rem;
     width: 90%;
@@ -555,7 +555,7 @@ address {
     box-shadow: 0px 0px 0.25rem 0.25rem var(--dark-blue), inset 0px 0px 1.25rem 0.5rem rgba(5, 5, 5, 1);
 }
 
-.imgcontainer .img {
+figure .img {
     margin: auto;
     margin-bottom: 1rem;
     width: 250px;
@@ -563,7 +563,7 @@ address {
     border-radius: 1rem;
 }
 
-.imgcontainer p {
+figure p, figcaption {
     background-color: rgb(20, 20, 20);
     padding: 0.5rem;
     border-radius: 1rem;
@@ -752,34 +752,6 @@ main {
     box-shadow: 7px 0px 10px rgba(20, 20, 20, 0.95), -7px 0px 10px rgba(20, 20, 20, 0.95);
 }
 
-.chat {
-    min-height: 200px;
-    border: dashed;
-    border-radius: 3px;
-    border-width: 8px;
-    padding: 0.75rem;
-}
-
-.chat.in-flow {
-    width: 80%;
-    margin: 4rem auto;
-    background-color: rgb(30, 30, 30);
-}
-
-.chat.box {
-    visibility: var(--visibility);
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: min(700px, 90vw);
-    min-width: min(700px, 90vw);
-    z-index: 300;
-    border-color: var(--color);
-    box-shadow:  0px 0px 0px 5px rgb(80, 80, 80), 0px 0px 50px 20px var(--glowColor);
-    /* 50px 30px 10px 20px rgba(76, 61, 209, 0.3)*/
-}
-
 /* NAWODNIENIE JEST WAŻNE, KURDE - Kompsognat */
 
 .warning {
@@ -909,18 +881,6 @@ legend {
 }
 
 /* WODA DO CHOLERY JASNEJ - Kompsognat*/
-
-.chat.box.try {
-    visibility: hidden;
-    top:30%;
-    left:40%;
-    min-height: 0px;
-    max-height: 30px;
-    border-top: 0px;
-    border-bottom: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
 
 .shadow {
     position: fixed;
@@ -1235,7 +1195,7 @@ symbol {
         width: 60%;
     }
 
-    .imgcontainer {
+    figure {
         width: 60%;
     }
 
@@ -1318,11 +1278,11 @@ symbol {
         display: none;
     } */
 
-    /* .imgcontainer.double {
+    /* figure.double {
         width: 80%;
     }
 
-    .imgcontainer.double .img {
+    figure.double .img {
         display: inline-block;
         margin-left: 5%;
     } */
@@ -1450,11 +1410,11 @@ symbol {
         text-shadow: 0.1rem 0.1rem 0.1rem rgb(0, 0, 0, 0.5);
     }
 
-    .imgcontainer {
+    figure {
         box-shadow: 7px 7px 10px rgba(20, 20, 20, 0.95), -7px 7px 10px rgba(20, 20, 20, 0.95);
     }
 
-    .imgcontainer p {
+    figure p, figcaption {
         background-color: rgb(230, 230, 230);
     }
 

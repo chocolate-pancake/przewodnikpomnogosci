@@ -48,9 +48,19 @@ function checkKey(key){
 
 let sidebar = document.getElementById('sidebar');
 
+let menuI = 1;
+
 function menu() {
     sidebar.classList.toggle('open');
     sidebarShadow.classList.toggle('visible');
+    if(menuI){
+        setTimeout(function(){document.getElementById('menu2').focus();}, 250);
+        menuI = 0;
+    }
+    else {
+        setTimeout(function(){document.getElementById('menu1').focus();}, 250);
+        menuI = 1;
+    }
 }
 
 let current = document.querySelector(".current");
@@ -64,18 +74,5 @@ catch {
         current.scrollIntoView();
     }
 }
-
-function sendFeedback(){
-    // let header = document.querySelector("h1").textContent;
-    fetch("https://przewodnikpomnogosci.pl/test.json", {
-        method: "POST",
-        headers: {
-            "Content-type": "application/json"
-        },
-        body: JSON.stringify({title: "YES"})
-    });
-    document.querySelector(".heart").setAttribute("disabled", "");
-}
-
 
 console.log("Jeżeli chcesz zajrzeć do kodu źródłowego, znajdziesz go tu: https://github.com/chocolate-pancake/przewodnikpomnogosci")

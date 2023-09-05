@@ -528,9 +528,22 @@ footer {
     0px -3.5rem 0.35rem #6b3fbd5c;
 }
 
+footer p, footer a {
+    font-size: 0.9rem;
+}
+
 address {
     font-style: normal;
     margin: 0;
+}
+
+.flex {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .name {

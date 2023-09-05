@@ -27,7 +27,7 @@
         <a class="to-main" href="#zawartosc">Przejdź do zawartości</a>
         
         <header class="header">
-            <button class="menu-icon" type="button" onclick="menu()">
+            <button class="menu-icon" id="menu1" type="button" onclick="menu()">
                 <img src="menu-icon.png" alt="Menu" title="Menu">
             </button>
             <a href="/" class="title">
@@ -51,24 +51,24 @@
         </a> -->
         
             <aside class="sidebar" id="sidebar">
-                <button class="menu-icon" type="button" onclick="menu()">
+                <button class="menu-icon" id="menu2" type="button" onclick="menu()">
                     <img src="menu-icon.png" alt="Menu" title="Menu">
                 </button>
                 <nav class="menu-options">
                     <a href="/" id="glowna" class="option">Strona główna</a>
                     <a href="terminologia" id="terminologia" class="option">Terminologia</a>  
                     <a href="mnogosc" id="mnogosc" class="option current">Mnogość</a>  
-                    <a href="wyjasnienia" id="wyjasnienia" class="option">Wyjaśnienia</a> 
-                    <a href="zaburzenia" id="zaburzenia" 
+                    <a href="wyjasnienia/" id="wyjasnienia" class="option">Wyjaśnienia i teorie</a> 
+                    <a href="zaburzenia/" id="zaburzenia" 
                     class="option">Powiązane zaburzenia</a>  
-                    <a href="powstawanie" id="powstawanie" class="option">Powstawanie</a> 
+                    <a href="powstawanie" id="powstawanie" class="option">Przyczyny powstawania</a> 
                     <a href="system" id="system" class="option">System</a>      
-                    <a href="wspolosoby" id="wspolosoby" class="option">Współosoby</a> 
+                    <a href="wspolosoby/" id="wspolosoby" class="option">Współosoby</a> 
                     <a href="frontowanie" class="option" id="frontowanie">Frontowanie</a>   
                     <a href="wewnetrzny-swiat" id="wewnetrzny-swiat" class="option">Wewnętrzny świat</a> 
-                    <a href="materialy" id="materialy" class="option">Materiały</a>
+                    <a href="materialy/" id="materialy" class="option">Materiały</a>
                     <a href="system-teczowego-chaosu" id="o-nas" class="option">O nas</a>
-                    <a href="zrodla" id="zrodla" class="option">Źródła</a>
+                    <a href="blog/" id="blog" class="option">Blog</a>
                 </nav>
             </aside>
 
@@ -110,7 +110,7 @@
                     <a href="#symbole">Symbole</a>
                     <a href="#spolecznosc">Społeczność</a>
                     <a href="#spektrum">Spektrum mnogości</a>
-                    <div class="third">
+                    <!-- <div class="third">
                         <a href="#osoba-pojedyncza">Osoba pojedyncza</a>
                         <a href="#mnoga-osoba-pojedyncza">Mnoga osoba pojedyncza</a>
                         <a href="#demi-system">Demi-system</a>
@@ -134,7 +134,7 @@
                         </div>
                         <a href="#granice">Granice</a>
                         <a href="#zaimki">Zaimki</a>
-                    </div>
+                    </div> -->
                     <a href="#przypisy">Przypisy</a>
                     </div>
                 </fieldset>
@@ -420,7 +420,7 @@
 
 
 
-<address><p>Kontakt:</p>
+<div class="flex"><address><p>Kontakt:</p>
     <p><a href="mailto:systemteczowegochaosu@gmail.com" class="internal">systemteczowegochaosu@gmail.com</a></p>
     
     <!-- 
@@ -429,13 +429,19 @@
     
     <p><a href="https://discord.gg/SVRTZzkWQC" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Mnoga Przestrzeń na discordzie</a></p></address>
     
-    <p>Na chwilę obecną nie używamy ciasteczek ani żadnych innych technologii do śledzenia waszej aktywności na stronie.</p>
-    
-    
-    
-    <p>Chcemy uczynić nasze treści dostępnymi dla wszystkich. Jeżeli jest coś, co utrudnia wam korzystanie z witryny, napiszcie do nas. Postaramy się rozwiązać ten problem.</p>
-    
-    <p>Strona ma wyłącznie charakter informacyjny i nie powinna być używania w celu diagnozy ani leczenia. Nie bierzemy na siebie odpowiedzialności za żadne decyzje osób czytających podjęte pod wpływem znalezionych tutaj treści.</p>
+    <div>
+        <p><a href="/#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
+        <p><a href="/#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
+        <p><a href="zrodla" class="internal">Źródła</a></p>
+        <p><a href="blog/" class="internal">Blog</a></p>
+    </div>
+    <div>
+        <p><a href="zastrzezenia" class="internal">Zastrzeżenia</a></p>
+        <p><a href="deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
+        <p><a href="polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
+    </div>
+
+    </div>
 
     <p>©2023 <a href="system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Cała zawartość udostępniona na licencji <a href="https://oql.avris.it/license/v1.1" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>OQL</a></p>
 

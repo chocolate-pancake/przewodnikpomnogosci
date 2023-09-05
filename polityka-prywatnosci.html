@@ -2,8 +2,8 @@
 <html lang="pl">
     <head>
         <meta charset="UTF-8">
-        <title>Ustawienia | Przewodnik po Mnogości</title>
-        <link rel="icon" href="ampersand-icon.png">
+        <title>Polityka prywatności | Przewodnik po Mnogości</title>
+        <link rel="icon" href="https://przewodnikpomnogosci.pl/ampersand-icon.png">
         <meta property="og:image" itemprop="image primaryImageOfPage" content="https://przewodnikpomnogosci.pl/plural-journey-rings.png">
 <meta property="og:image:alt" content="mnogie okręgi">
         <meta name="twitter:domain" content="przewodnikpomnogosci.pl">
@@ -12,12 +12,12 @@
         <meta name="author" content="System Tęczowego Chaosu">
         <meta property="og:type" content="website">
         <meta property="og:site_name" content="Przewodnik po Mnogości">
-        <meta property="og:url" content="https://przewodnikpomnogosci.pl/ustawienia">
-        <meta name="twitter:title" property="og:title" content="Ustawienia">
+        <meta property="og:url" content="https://przewodnikpomnogosci.pl/error404">
+        <meta name="twitter:title" property="og:title" content="Polityka prywatności">
         <meta name="robots" content="noindex">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="script.js" defer></script>
-        <script src="settings.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="https://przewodnikpomnogosci.pl/style.css">
+        <script src="https://przewodnikpomnogosci.pl/script.js" defer></script>
+        <script src="https://przewodnikpomnogosci.pl/settings.js" defer></script>
     </head>
     <body>
         <div id="shadow" class="shadow"></div>
@@ -86,109 +86,19 @@
                 </symbol>
             </svg>
 
-            <!-- język nie trzeba było poprawiać, for-aria też nic -->
-            
-            <h1>Ustawienia</h1>
+            <h1>Polityka prywatności</h1>
 
             <p>
-                Wszystkie twoje wybory są przechowywane bezpośrednio w pamięci przeglądarki, której obecnie używasz.
-                Oznacza to, że zamknięcie okna ich nie zresetuje, ale jeżeli usuniesz pliki cookie
-                (ciasteczka) i inne dane witryn, zostaną one przywrócone do stanu początkowego.
+                Na chwilę obecną nie korzystamy z ciasteczek ani żadnych innych technologii służących do śledzenia waszej aktywności w witrynie. Wasze dane, takie jak adres IP, mogą być jednak zbierane przez GitHub, na którym hostujemy naszą stronę, i przetwarzane zgodznie z <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny angielski"><use xlink:href="#ex"></use></svg>polityką prywatności GitHuba</a>.
             </p>
 
-            <!-- Dajemy najpierw czcionkę czy zaimki? - Natasza
-            Po męczeniu się z Narratorem głosuję na zaimki - Jonatan
-            Noo, osoby ze słabym wzrokiem zawsze mogą sobie powiększyć ekran, a czytnik ekranowy to ból istnienia - Tomek
-            Dobra, to to taka przypominajka dla nas, żeby tego z powrotem nie przestawiać - Natasza -->
+            <p>
+                Zbieramy treści wysłanych do nas maili oraz adresy mailowe, z których zostały one wysłane. Nikomu ich nie przekazujemy. Jeżeli chcecie, aby po zakończeniu korespondencji z nami została ona usunięta, powiadomcie nas o tym przed lub po napisaniu do nas.
+            </p>
 
-            
-
-
-            <p>Twoje <a href="https://zaimki.pl/zaimki" target="_blank" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>zaimki</a>:</p>
-
-                <label class="description">
-                    <input type="radio" name="pronouns" class="setting" id="unspecified" onclick="pronouns('unspecified')">
-                    <span class="radio"> </span>
-                    dowolne (byłxś pewnx)
-                </label>
-                <label class="description">
-                    <input type="radio" name="pronouns" class="setting" id="masculine" onclick="pronouns('masculine')">
-                    <span class="radio"> </span>
-                    męskie (byłeś pewny)
-                </label>
-                <label class="description">
-                    <input type="radio" name="pronouns" class="setting" id="feminine" onclick="pronouns('feminine')">
-                    <span class="radio"> </span>
-                    żeńskie (byłaś pewna)
-                </label>
-                <label class="description">
-                    <input type="radio" name="pronouns" class="setting" id="neutral" onclick="pronouns('neutral')">
-                    <span class="radio"> </span>
-                    neutralne (byłoś pewne)
-                </label>
-                <label class="description">
-                    <input type="radio" name="pronouns" class="setting" id="postgender" onclick="pronouns('postgender')">
-                    <span class="radio"> </span>
-                    postpłciowe (byłuś pewnu)
-                </label>
-                
-                
-                <p>Czcionka:</p>
-
-                <label class="description">
-                    <input type="radio" name="font" class="setting" id="16px" onclick="font('16px')">
-                    <span class="radio"> </span>
-                    mała 
-                </label>
-                <label class="description">
-                    <input type="radio" name="font" class="setting" id="20px" onclick="font('20px')">
-                    <span class="radio"> </span>
-                    średnia
-                </label>
-                <label class="description">
-                    <input type="radio" name="font" class="setting" id="24px" onclick="font('24px')">
-                    <span class="radio"> </span>
-                    duża  
-                </label>
-                <label class="description">
-                    <input type="radio" name="font" class="setting" id="28px" onclick="font('28px')">
-                    <span class="radio"> </span>
-                    bardzo duża 
-                </label>
-                <label class="description">
-                    <input type="radio" name="font" class="setting" id="32px" onclick="font('32px')">
-                    <span class="radio"> </span>
-                    ogromna 
-                </label>
-
-                <br>
-                <!-- Koniecznie do usunięcia potem! - Jonatan -->
-                
-            <label class="description">
-                <input type="checkbox" class="box-setting" id="showWarnings" onclick="warnings()">
-                <span class="checkbox"> </span>
-                ostrzeżenia przed triggerami
-            </label>
-
-            <p class="for-aria">Pozostałe opcje dotyczą jedynie wizualnych aspektów strony</p>
-            
-            <label class="description">
-                <input type="checkbox" class="box-setting" id="underlineLinks" onclick="link()">
-                <span class="checkbox"> </span>
-                podkreślenia linków
-            </label>
-            
-            <label class="description">
-                <input type="checkbox" class="box-setting" id="showScrollbar" onclick="scrollbar()">
-                <span class="checkbox"> </span>
-                pasek przewijania
-            </label>
-
-            <label class="description">
-                <input type="checkbox" class="box-setting" id="reducedMotion" onclick="reduceMotion()" checked>
-                <span class="checkbox"> </span>
-                animacje
-            </label>
+            <p>
+                Ostatnia aktualizacja: 05.09.2023
+            </p>
 
 
 
@@ -224,7 +134,6 @@
     <p>©2023 <a href="system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Cała zawartość udostępniona na licencji <a href="https://oql.avris.it/license/v1.1" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>OQL</a></p>
 
 </footer>
-
 
         </main>
     </body>

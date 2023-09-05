@@ -29,7 +29,7 @@
         <a class="to-main" href="#zawartosc">Przejdź do zawartości</a>
         
         <header class="header">
-            <button class="menu-icon" type="button" onclick="menu()">
+            <button class="menu-icon" id="menu1" type="button" onclick="menu()">
                 <img src="../menu-icon.png" alt="Menu" title="Menu">
             </button>
             <a href="../" class="title">
@@ -53,29 +53,29 @@
         </a> -->
         
             <aside class="sidebar" id="sidebar">
-                <button class="menu-icon" type="button" onclick="menu()">
+                <button class="menu-icon" id="menu2" type="button" onclick="menu()">
                     <img src="../menu-icon.png" alt="Menu" title="Menu">
                 </button>
                 <nav class="menu-options">
                     <a href="../" id="glowna" class="option">Strona główna</a>
                     <a href="../terminologia" id="terminologia" class="option">Terminologia</a>
                     <a href="../mnogosc" id="mnogosc" class="option">Mnogość</a>
-                    <a href="../wyjasnienia" id="wyjasnienia" class="option">Wyjaśnienia</a>       
-                    <a href="../zaburzenia" id="zaburzenia" 
+                    <a href="../wyjasnienia/" id="wyjasnienia" class="option">Wyjaśnienia i teorie</a>       
+                    <a href="../zaburzenia/" id="zaburzenia" 
                     class="option">Powiązane zaburzenia</a> 
-                    <a href="../powstawanie" id="powstawanie" class="option">Powstawanie</a> 
+                    <a href="../powstawanie" id="powstawanie" class="option">Przyczyny powstawania</a> 
                     <a href="../system" id="system" class="option">System</a>       
-                    <a href="../wspolosoby" id="wspolosoby" class="option">Współosoby</a>   
+                    <a href="../wspolosoby/" id="wspolosoby" class="option">Współosoby</a>   
                     <a href="../frontowanie" class="option" id="frontowanie">Frontowanie</a> 
                     <a href="../wewnetrzny-swiat" id="wewnetrzny-swiat" class="option">Wewnętrzny świat</a> 
-                    <a href="../materialy" id="materialy" class="option">Materiały</a>
+                    <a href="../materialy/" id="materialy" class="option">Materiały</a>
                     <div class="subsections">
                         <a href="dla-zastanawiajacych-sie" class="option subsection" id="dla-zastanawiajacych-sie">Dla zastanawiających się</a>
                         <a href="dla-systemow" class="option subsection current" id="dla-systemow">Dla systemów</a>
                         <a href="dla-bliskich" class="option subsection" id="dla-bliskich">Dla bliskich</a>
                     </div>
                     <a href="../system-teczowego-chaosu" id="o-nas" class="option">O nas</a>
-                    <a href="../zrodla" id="zrodla" class="option">Źródła</a>
+                    <a href="../blog/" id="blog" class="option">Blog</a>
                 </nav>
             </aside>
 
@@ -117,7 +117,7 @@
                     <a href="#zakotwiczanie">Zakotwiczanie</a>
                     <a href="#na-zapominanie">Na zapominanie</a>
                     <a href="#systemowa-wspolpraca">Systemowa współpraca</a>
-                    <div class="third">
+                    <!-- <div class="third">
                         <a href="#systemowe-spotkania">Systemowe spotkania</a>
                         <div class="fourth">
                             <a href="#nie-sa-toba">Nie są tobą</a>
@@ -125,19 +125,19 @@
                         <a href="#systemowe-zasady">Systemowe zasady</a>
                         <a href="#systemowa-odpowiedzialność">Systemowa odpowiedzialność</a>
                         <a href="#prywatnosc">Prywatność</a>
-                    </div>
+                    </div> -->
                     <a href="#coming-out-jako-system">Coming out jako system</a>
-                    <div class="third">
+                    <!-- <div class="third">
                         <a href="#wlasciwa-osoba">Właściwa osoba</a>
                         <a href="#przygotowania">Przygotowania</a>
                         <a href="#coming-out">Coming out</a>
                         <a href="#plan-awaryjny">Plan awaryjny</a>
-                    </div>
+                    </div> -->
                     <a href="#frontowe-wskazniki">Frontowe wskaźniki</a>
                     <a href="#metoda-systemu-kolezenskiego">Metoda systemu koleżeńskiego</a>
                     <a href="#simply-plural">Simply Plural</a>
                     <a href="#pluralkit">Pluralkit</a>
-                    <div class="third">
+                    <!-- <div class="third">
                         <a href="#komendy">Podstawowe komendy</a>
                         <div class="fourth">
                             <a href="#ogolne-komendy">Ogólne</a>
@@ -146,7 +146,7 @@
                             <a href="#wiadomosci-komendy">Wiadomości</a>
                             <a href="#skroty-komend">Skróty</a>
                         </div>
-                    </div>
+                    </div> -->
                     <a href="#faceclaimy">Faceclaimy</a>
                     <a href="#mapowanie-systemu">Mapowanie systemu</a>
                     <a href="#tworzenie-wewnetrznego-swiata">Tworzenie wewnętrznego świata</a>
@@ -595,7 +595,7 @@
             </p>
 
             <p>
-                Najpopularniejszą techniką na dostanie się do wewnętrznego świata jest autohipnoza (do innych można zaliczyć medytację, pisanie i świadome sny). Nie jest to nic strasznego ani złego – hipnoza to stan, w którym umysł skupia się na jednej, konkretnej rzeczy, a podświadomość staje się bardziej podatna na sugestie. Żeby ją przeprowadzić, znajdź spokojne, bezpieczne miejsce, komfortową pozycję i trochę czasu. Możesz mówić <span class="unspecified">samx</span><span class="feminine">sama</span><span class="masculine">sam</span><span class="neutral">samo</span><span class="postgender">samu</span> do siebie w swoich myślach, poprosić o to którąś ze swoich współosób albo nagrać swój głos i puścić nagranie. Najlepiej mówić w drugiej osobie i wybierać stwierdzenia pozytywne zamiast negatywnych – zamiast „nie czujesz zdenerwowania” powiedz „czujesz ogarniający cię spokój”. Zacznij od stwierdzenia faktu – np. „czujesz twoje leżące ciało i spokojny oddech”. Potem wejdź w etap schodzenia w dół – możesz mówić (i wyobrażać sobie, jeśli potrafisz), że schodzisz po drabinie, zjeżdżasz windą, opuszczasz się w głąb siebie – co będzie ci najlepiej odpowiadać. Powiedz, że kiedy dojdziesz do zera, znajdziesz się w wewnętrznym świecie, i zacznij powoli liczyć od dziesięciu w dół. W trakcie powtarzaj, że jesteś <span class="unspecified">bezpiecznx,</span><span class="masculine">bezpieczny,</span><span class="feminine">bezpieczna,</span><span class="neutral">bezpieczne,</span><span class="postgender">bezpiecznu,</span> <span class="unspecified">spokojnx</span><span class="masculine">spokojny</span><span class="feminine">spokojna</span><span class="neutral">spokojne</span><span class="postgender">spokojnu</span> i że w każdej chwili będziesz <span class="unspecified">mogłx</span><span class="masculine">mół</span><span class="feminine">mogła</span><span class="neutral">mogło</span><span class="postgender">mogłu</span> wrócić. I to wszystko, czego potrzebujesz, żeby znaleźć się wewnątrz.
+                Najpopularniejszą techniką na dostanie się do wewnętrznego świata jest autohipnoza (do innych można zaliczyć medytację, pisanie i świadome sny). Nie jest to nic strasznego ani złego – hipnoza to stan, w którym umysł skupia się na jednej, konkretnej rzeczy, a podświadomość staje się bardziej podatna na sugestie. Żeby ją przeprowadzić, znajdź spokojne, bezpieczne miejsce, komfortową pozycję i trochę czasu. Możesz mówić <span class="unspecified">samx</span><span class="feminine">sama</span><span class="masculine">sam</span><span class="neutral">samo</span><span class="postgender">samu</span> do siebie w swoich myślach, poprosić o to którąś ze swoich współosób albo nagrać swój głos i puścić nagranie. Najlepiej mówić w drugiej osobie i wybierać stwierdzenia pozytywne zamiast negatywnych – zamiast „nie czujesz zdenerwowania” powiedz „czujesz ogarniający cię spokój”. Zacznij od stwierdzenia faktu – np. „czujesz twoje leżące ciało i spokojny oddech”. Potem wejdź w etap schodzenia w dół – możesz mówić (i wyobrażać sobie, jeśli potrafisz), że schodzisz po drabinie, zjeżdżasz windą, opuszczasz się w głąb siebie – co będzie ci najlepiej odpowiadać. Powiedz, że kiedy dojdziesz do zera, znajdziesz się w wewnętrznym świecie, i zacznij powoli liczyć od dziesięciu w dół. W trakcie powtarzaj, że jesteś <span class="unspecified">bezpiecznx,</span><span class="masculine">bezpieczny,</span><span class="feminine">bezpieczna,</span><span class="neutral">bezpieczne,</span><span class="postgender">bezpiecznu,</span> <span class="unspecified">spokojnx</span><span class="masculine">spokojny</span><span class="feminine">spokojna</span><span class="neutral">spokojne</span><span class="postgender">spokojnu</span> i że w każdej chwili będziesz <span class="unspecified">mogłx</span><span class="masculine">mógł</span><span class="feminine">mogła</span><span class="neutral">mogło</span><span class="postgender">mogłu</span> wrócić. I to wszystko, czego potrzebujesz, żeby znaleźć się wewnątrz.
             </p>
 
             <p>
@@ -640,7 +640,7 @@
 
 
 
-<address><p>Kontakt:</p>
+<div class="flex"><address><p>Kontakt:</p>
     <p><a href="mailto:systemteczowegochaosu@gmail.com" class="internal">systemteczowegochaosu@gmail.com</a></p>
     
     <!-- 
@@ -649,13 +649,19 @@
     
     <p><a href="https://discord.gg/SVRTZzkWQC" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Mnoga Przestrzeń na discordzie</a></p></address>
     
-    <p>Na chwilę obecną nie używamy ciasteczek ani żadnych innych technologii do śledzenia waszej aktywności na stronie.</p>
-    
-    
-    
-    <p>Chcemy uczynić nasze treści dostępnymi dla wszystkich. Jeżeli jest coś, co utrudnia wam korzystanie z witryny, napiszcie do nas. Postaramy się rozwiązać ten problem.</p>
-    
-    <p>Strona ma wyłącznie charakter informacyjny i nie powinna być używania w celu diagnozy ani leczenia. Nie bierzemy na siebie odpowiedzialności za żadne decyzje osób czytających podjęte pod wpływem znalezionych tutaj treści.</p>
+    <div>
+        <p><a href="../#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
+        <p><a href="../#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
+        <p><a href="../zrodla" class="internal">Źródła</a></p>
+        <p><a href="../blog/" class="internal">Blog</a></p>
+    </div>
+    <div>
+        <p><a href="../zastrzezenia" class="internal">Zastrzeżenia</a></p>
+        <p><a href="../deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
+        <p><a href="../polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
+    </div>
+
+    </div>
 
     <p>©2023 <a href="../system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Cała zawartość udostępniona na licencji <a href="https://oql.avris.it/license/v1.1" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>OQL</a></p>
 

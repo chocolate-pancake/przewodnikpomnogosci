@@ -132,7 +132,7 @@ async function search(){
         searchables = page.querySelectorAll("h2, h3, h4, p, li");
         fragments = [];
         for(let s = 0; s < searchables.length - 12; s ++){ //excluding paras from footer
-            if(searchables[s].className.includes("wykluczone")){
+            if(searchables[s].parentElement.className.includes("wykluczone")){
                 continue;
             }
             content = '';

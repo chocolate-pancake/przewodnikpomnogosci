@@ -28,23 +28,41 @@
         <a class="to-main" href="#zawartosc">Przejdź do zawartości</a>
         
         <header class="header">
-            <button class="menu-icon" id="menu1" type="button" onclick="menu()">
-                <img src="../menu-icon.png" alt="Menu" title="Menu">
-            </button>
-            <a href="../" class="title">
-                <div class="logo" aria-label="mnogie okręgi">
-                    <svg class="logo">
-                        <circle class="upper"></circle>
-                        <circle class="down"></circle>
-                        <circle class="left"></circle>
-                        <circle class="right"></circle>
+            <div class="divider">
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
                     </svg>
-                </div>
-                <span id="title">Przewodnik po Mnogości</span>
-            </a>
-            <a href="../ustawienia" class="settings desktop">
-                <img src="../settings.png" alt="ustawienia">
-            </a>
+                </button>
+                <a href="../" class="title">
+                    <div class="logo" aria-label="mnogie okręgi">
+                        <svg class="logo">
+                            <circle class="upper"></circle>
+                            <circle class="down"></circle>
+                            <circle class="left"></circle>
+                            <circle class="right"></circle>
+                        </svg>
+                    </div>
+                    <span id="title">Przewodnik po Mnogości</span>
+                </a>
+            </div>
+            <div class="divider">
+                <form class="search" action="https://przewodnikpomnogosci.pl/wyszukaj" role="search">
+                    <button type="submit" class="search" aria-label="wyszukaj">
+                        <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                            <circle cx="35%" cy="35%" r="30%"/>
+                            <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                        </svg>
+                    </button>
+                    <input type="search" class="search" name="q" minlength="1" placeholder="wyszukaj" required>
+                    
+                </form>
+                <a href="../ustawienia" class="settings desktop">
+                    <img src="../settings.png" alt="ustawienia">
+                </a>
+            </div>
         </header>
         
         <!-- <a href="../ustawienia" class="settings mobile">
@@ -52,14 +70,18 @@
         </a> -->
         
             <aside class="sidebar" id="sidebar">
-                <button class="menu-icon" id="menu2" type="button" onclick="menu()">
-                    <img src="../menu-icon.png" alt="Menu" title="Menu">
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
                 </button>
                 <nav class="menu-options">
                     <a href="../" id="glowna" class="option">Strona główna</a>
                     <a href="../terminologia" id="terminologia" class="option">Terminologia</a>
                     <a href="../mnogosc" id="mnogosc" class="option">Mnogość</a>
-                    <a href="../wyjasnienia/" id="wyjasnienia" class="option">Wyjaśnienia i teorie</a>       
+                    <a href="../wyjasnienia/" id="wyjasnienia" class="option">Nauka i teorie</a>       
                     <a href="../zaburzenia/" id="zaburzenia" 
                     class="option">Powiązane zaburzenia</a> 
                     <a href="../powstawanie" id="powstawanie" class="option">Przyczyny powstawania</a> 
@@ -67,7 +89,7 @@
                     <a href="../wspolosoby/" id="wspolosoby" class="option">Współosoby</a>   
                     <a href="../frontowanie" class="option" id="frontowanie">Frontowanie</a> 
                     <a href="../wewnetrzny-swiat" id="wewnetrzny-swiat" class="option">Wewnętrzny świat</a> 
-                    <a href="../materialy/" id="materialy" class="option">Materiały</a>
+                    <a href="../materialy/" id="materialy" class="option">Materiały i pomoce</a>
                     <a href="../system-teczowego-chaosu" id="o-nas" class="option">O nas</a>
                     <a href="../blog/" id="blog" class="option current">Blog</a>
                 </nav>

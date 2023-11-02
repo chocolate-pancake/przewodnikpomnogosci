@@ -1,6 +1,7 @@
 
 :root {
     background-color: rgb(30, 30, 30);
+    font-size: var(--font-size);
 
     --font-size: 16px;
     --font-color: rgb(200, 200, 200);
@@ -47,11 +48,13 @@
     --green-alfa: #31C69Eac;
     /* --blue-glow: rgba(30, 172, 191, 0.7); */
 
-    --transparent: rgba(0, 0, 0, 0);
     --dark-blue: rgba(25, 0, 255, 0.6);
     /* rgba(76, 61, 209, 0.6) */
     --option-current: rgba(183, 235, 250, 0.085);
     --temporary: rgb(101, 253, 218);
+
+    --low: none;
+    --high: none;
 }
 
 .reduced-motion {
@@ -78,7 +81,7 @@
     color: var(--font-color); 
     line-height: 1.5em;
     background-color: inherit;
-    font-size: var(--font-size);
+    font-size: inherit;
     font-family: 'Futura', 'Helvetica', 'Arial', sans-serif;
     box-sizing: border-box;
     margin: 0px;
@@ -131,22 +134,27 @@ body {
 
 .unspecified {
     display: var(--unspecified);
+    font-size: inherit;
 }
 
 .feminine {
     display: var(--feminine);
+    font-size: inherit;
 }
 
 .masculine {
     display: var(--masculine);
+    font-size: inherit;
 }
 
 .neutral {
     display: var(--neutral);
+    font-size: inherit;
 }
 
 .postgender {
     display: var(--postgender);
+    font-size: inherit;
 }
 
 #lan {
@@ -198,7 +206,7 @@ header::-webkit-scrollbar {
     text-decoration: none;
     display: inline;
     /* float: inline-end; */
-    background-color: var(--transparent);
+    background-color: transparent;
     /* padding: 0.25rem; */
     /* margin-top: 0.25rem;
     margin-bottom: 0.25rem; */
@@ -395,7 +403,7 @@ input.search:focus-visible {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--transparent);
+    background-color: transparent;
     cursor: pointer;
     transition: background-color 0.5s, box-shadow 0.5s;
 }
@@ -473,7 +481,7 @@ input.search:focus-visible {
     display: flex;
     flex-wrap: wrap;
     justify-content: stretch;
-    background-color: var(--transparent);
+    background-color: transparent;
 }
 
 .option {
@@ -486,7 +494,7 @@ input.search:focus-visible {
     border: solid 2px rgb(110, 110, 110);
     border-radius: 1.25rem;
     transition: backgroud-color 0.5s, box-shadow 0.5s, border-color 0.5s;
-    background-color: var(--transparent);
+    background-color: transparent;
     overflow: hidden;
 }
 
@@ -587,7 +595,7 @@ figure p, figcaption {
 } */
 
 img {
-    background-color: var(--transparent);
+    background-color: transparent;
     display: block;
 }
 
@@ -609,16 +617,18 @@ img {
 }
 
 button {
-    background-color: var(--transparent);
+    background-color: transparent;
 } 
 
-.chat-button {
+.glowingButton {
     background-color: rgb(45, 45, 45);
-    /* padding: 0px 0px; what does it do there??? */
     display: block;
-    margin: 30px auto;
-    padding: 2px 4px;
-    border-radius: 10px;
+    margin: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
     transition: 0.5s;
 }
 
@@ -626,28 +636,98 @@ button {
 Ale czy nam się chce? - Tomek
 Wygląda na to, że nie - Jonatan */
 
-.chat-button:hover, .chat-button:active {
+.glowingButton:hover, .glowingButton:active {
     background-color: rgb(55, 55, 55);
-    box-shadow: 0px 0px 5px 5px var(--purple-glow);
-}
-
-.chat-button img {
-    max-width: 100px;
-    max-height: 60px;
-    object-fit: scale-down;
+    box-shadow: 0px 0px 0.25rem 0.25rem var(--purple-glow);
 }
 
 /* PIJCIE BO SIĘ ZDENERWUJĘ - Kompsognat */
 
-.chat-button.hidden {
+.swipedLeft {
     display: none;
 }
 
-/* .pronouns {
+.swipedRight {
+    display: none;
+}
+
+.arrow {
+    position: absolute;
+    /* top: -8rem; */
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border-left: solid 0.75rem var(--font-color);
+    border-bottom: solid 0.75rem var(--font-color);
+    border-right: none;
+    border-top: none;
+    border-radius: 0.25rem;
+}
+
+#arrowLeft {
+    transform: rotate(45deg);
+}
+
+#arrowRight {
+    margin-left: 55%;
+    transform: rotate(225deg);
+}
+
+div[id^="question"]{
+    width: 90%;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+    /* margin-top: 6rem; */
+    /* When arrows functional should be 6 */
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+div[id^="question"] p:first-of-type{
+    font-size: 1.25rem;
+}
+
+div[id^="question"] p:last-of-type{
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.scores {
+    width: 100%;
     display: flex;
-    justify-content: stretch;
     flex-wrap: wrap;
-} */
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.score {
+    cursor: pointer;
+    position: relative;
+    padding: 0.4rem 0.4rem 0.4rem 2.25rem;
+    z-index: 0;
+}
+
+p.results {
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
+
+#low {
+    display: var(--low);
+}
+
+#high {
+    display: var(--high);
+}
+/* paragraphs with information depending on wheter test score is low or high */
 
 .description {
     display: block;
@@ -657,9 +737,6 @@ Wygląda na to, że nie - Jonatan */
     margin: 1.5rem;
     z-index: 0;
 }
-
-/* Co to jest i do czego to było DX - Jonatan
-To jest bardzo dobre pytanie - Natasza */
 
 .setting {
     position: absolute;
@@ -884,7 +961,7 @@ div.fourth {
 }
 
 legend {
-    background-color: var(--transparent);
+    background-color: transparent;
     font-size: 1.2rem;
     max-height: 1.8rem;
     max-width: 90%;
@@ -1391,14 +1468,14 @@ symbol {
     }
 
     .option:hover, .option:focus {
-        box-shadow: 0px 0px 0px 5px rgb(50, 50, 50);
+        box-shadow: 0px 0px 0px 0.25rem rgb(50, 50, 50);
         background-color: rgba(0, 0, 0, 0);
         border-color: rgb(110, 110, 110);
     }
 
     .option.current {
         background-color: var(--option-current);
-        box-shadow: 0px 0px 0px 5px rgb(0, 0, 0);
+        box-shadow: 0px 0px 0px 0.25rem rgb(0, 0, 0);
         border-color: rgb(110, 110, 110);
     }
 
@@ -1413,7 +1490,7 @@ symbol {
 
     .warning {
         border-style: solid;
-        box-shadow: 0px 0px 0px 5px var(--warning-border), 9px 9px 10px rgba(20, 20, 20, 0.95), 
+        box-shadow: 0px 0px 0px 0.25rem var(--warning-border), 9px 9px 10px rgba(20, 20, 20, 0.95), 
         -9px 9px 10px rgba(20, 20, 20, 0.95);
     }
 
@@ -1461,12 +1538,20 @@ symbol {
         filter: hue-rotate(245deg) invert(1) brightness(1.25);
     } */
 
-    .chat-button {
-        background-color: var(--light-blue);
+    .glowingButton {
+        /* background-color: var(--light-blue); */
+        background-color: transparent;
     }
 
-    .chat-button:hover, .chat-button:focus {
-        background-color: rgb(223, 222, 222);
+    .glowingButton:hover, .glowingButton:focus {
+        background-color: transparent;
+        /* background-color: rgb(223, 222, 222); */
+        box-shadow: 0px 0px 0px 0.25rem rgb(50, 50, 50);
+    }
+
+    div[id^="question"]{
+        background-color: inherit;
+        box-shadow: 0.25rem 0.25rem 0.5rem rgba(20, 20, 20, 0.95), -0.25rem 0.25rem 0.5rem rgba(20, 20, 20, 0.95);
     }
 
     h1, h2, h3, h4 {

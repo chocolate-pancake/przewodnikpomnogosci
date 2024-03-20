@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tworzenie systemu | Przewodnik po Mnogości</title>
+        <link rel="icon" href="../ampersand-icon.png">
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://przewodnikpomnogosci.pl/plural-journey-rings.png">
+<meta property="og:image:alt" content="mnogie okręgi">
+        <meta name="twitter:domain" content="przewodnikpomnogosci.pl">
+        <meta name="color-scheme" content="dark light">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="System Tęczowego Chaosu">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Przewodnik po Mnogości">
+        <meta property="og:url" content="https://przewodnikpomnogosci.pl/materialy/tworzenie-wspolosob">
+        <meta name="twitter:title" property="og:title" content="Tworzenie systemu">
+        <meta name="description" content="Czy można sobie stworzyć dodatkowe osobowości albo inne osoby w swojej głowie? Jeśli tak, to jak to zrobić?">
+        <meta name="twitter:description" property="og:description" content="Czy można sobie stworzyć dodatkowe osobowości albo inne osoby w swojej głowie? Jeśli tak, to jak to zrobić?">
+        <!-- <meta name="keywords" content="dysocjacyjne zaburzenie tożsamości materiały, mnogość materiały, dysocjacyjne zaburzenie tożsamości pomoce, mnogość pomoce, osobowość mnoga materiały, osobowość wieloraka materiały, dysocjacyjne zaburzenie osobowości materiały, rozdwojenie jaźni materiały, rozdwojenie osobowości materiały, osobowość mnoga pomoce, osobowość wieloraka pomoce, dysocjacyjne zaburzenie osobowości pomoce, rozdwojenie jaźni pomoce, rozdwojenie osobowości pomoce"> -->
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <script src="../script.js" defer></script>
+        <script src="../settings.js" defer></script>
+    </head>
+    <body>
+        <div id="shadow" class="shadow"></div>
+        <div id="sidebar-shadow" class="shadow"></div>
+        
+        <a class="to-main" href="#zawartosc">Przejdź do zawartości</a>
+        
+        <header class="header">
+            <div class="divider">
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <a href="../" class="title">
+                    <div class="logo" aria-label="mnogie okręgi">
+                        <svg class="logo">
+                            <circle class="upper"></circle>
+                            <circle class="down"></circle>
+                            <circle class="left"></circle>
+                            <circle class="right"></circle>
+                        </svg>
+                    </div>
+                    <span id="title">Przewodnik po Mnogości</span>
+                </a>
+            </div>
+            <div class="divider">
+                <form class="search" action="https://przewodnikpomnogosci.pl/wyszukaj" role="search">
+                    <button type="submit" class="search" aria-label="wyszukaj">
+                        <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                            <circle cx="35%" cy="35%" r="30%"/>
+                            <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                        </svg>
+                    </button>
+                    <input type="search" class="search" name="q" minlength="1" placeholder="wyszukaj" required>
+                    
+                </form>
+                <a href="../ustawienia" class="settings desktop">
+                    <img src="../settings.png" alt="ustawienia">
+                </a>
+            </div>
+        </header>
+        
+        <!-- <a href="../ustawienia" class="settings mobile">
+            <img src="../settings.png" alt="ustawienia">
+        </a> -->
+        
+            <aside class="sidebar" id="sidebar">
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <nav class="menu-options">
+                    <a href="../" id="glowna" class="option">Strona główna</a>
+                    <a href="../terminologia" id="terminologia" class="option">Terminologia</a>
+                    <a href="../mnogosc" id="mnogosc" class="option">Mnogość</a>
+                    <a href="../wyjasnienia/" id="wyjasnienia" class="option">Nauka i teorie</a>       
+                    <a href="../zaburzenia/" id="zaburzenia" 
+                    class="option">Powiązane zaburzenia</a> 
+                    <a href="../powstawanie" id="powstawanie" class="option">Przyczyny powstawania</a> 
+                    <a href="../system" id="system" class="option">System</a>       
+                    <a href="../wspolosoby/" id="wspolosoby" class="option">Współosoby</a>   
+                    <a href="../frontowanie" class="option" id="frontowanie">Frontowanie</a> 
+                    <a href="../wewnetrzny-swiat" id="wewnetrzny-swiat" class="option">Wewnętrzny świat</a> 
+                    <a href="../materialy/" id="materialy" class="option current">Materiały i pomoce</a>
+                    <div class="subsections">
+                        <a href="dla-zastanawiajacych-sie" class="option subsection" id="dla-zastanawiajacych-sie">Dla zastanawiających się</a>
+                        <a href="dla-systemow" class="option subsection" id="dla-systemow">Dla systemów</a> 
+                        <a href="dysocjacyjne-zaburzenie-tozsamosci-test" class="option subsection" id="test-DID">Test na DID</a>
+                    </div>
+                    <a href="../system-teczowego-chaosu" id="o-nas" class="option">O nas</a>
+                    <a href="../blog/" id="blog" class="option">Blog</a>
+                </nav>
+            </aside>
+
+        <main id="zawartosc">
+
+            
+            <svg preserveAspectRatio="none" class="hidden">
+                <symbol id="ex" class="ex">
+                    <line x1="10%" y1="20%" x2="30%" y2="20%"></line>
+                    <line x1="10%" y1="20%" x2="10%" y2="90%"></line>
+                    <line x1="10%" y1="90%" x2="80%" y2="90%"></line>
+                    <line x1="80%" y1="90%" x2="80%" y2="70%"></line>
+                    <line x1="30%" y1="70%" x2="90%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="50%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="90%" y2="50%"></line>
+                </symbol>
+            </svg>
+
+            <!-- język poprawiony, for-aria nie było trzeba -->
+            
+            <h1>Tworzenie współosób</h1>
+
+            <p>
+                Jeżeli rozpaczliwie <span class="unspecified">szukałxś</span><span class="feminine">szukałaś</span><span class="masculine">szukałeś</span><span class="neutral">szukałoś</span><span class="postgender">szukałuś</span> na naszej stronie jakiejkolwiek nadziei, że posiadasz współosoby, ale nic nie wskazuje na to, żeby tak było, mamy dla ciebie dobrą wiadomość – osobą mnogą można się stać. Najpopulatniejszą praktyką służącą do tego celu jest tulpomancja. Pragnienie posiadania współosób to nie to samo, co chęć posiadania zaburzenia, chociaż niektóre systemy zaburzone (najczęściej sysmedyczne) mogą próbować ci to wmówić. Bycie częścią systemu nie musi być doświadczeniem niszczącym życie, zwłaszcza kiedy, w przeciwieństwie do systemów traumogenicznych, <span class="unspecified">samx</span><span class="feminine">sama</span><span class="masculine">sam</span><span class="neutral">samo</span><span class="postgender">samu</span> decydujesz o tym, że chcesz nią być. Oczywiście <span class="unspecified">powinnxś</span><span class="masculine">powinieneś</span><span class="feminine">powinnaś</span><span class="neutral">powinnoś</span><span class="postgender">powinnuś</span> najpierw zdobyć na ten temat trochę informacji, żeby wiedzieć, na co się piszesz i czy na pewno nie będziesz żałować, bo wrócenie do poprzedniego stanu na pewnym etapie może być już niezwykle trudne. 
+            </p>
+
+            <p>
+                Nie ma jeszcze żadnych badań nad tym, kto może, a kto nie może utworzyć systemu. Możliwe, że każde jest w stanie to zrobić, jeżeli będzie wierzyć, że się uda, i poświęci na to wystarczająco dużo swojego czasu. Stworzenie systemu ma najczęściej pozytywny wpływ na zdrowie psychiczne i naszym zdaniem może być bezpiecznie sugerowane jako forma terapii – ponad połowa z osób tworzących system jako jeden z powodów, dla których zdecydowały się na podjęcie takiego kroku, podaje swoje zmagania z chorobami psychicznymi czy neurodywergencjami i większość z nich stwierdza, że dzięki swoim <a href="../powstawanie#tulpogeniczne" class="internal">tulpom</a> lepiej funkcjonują w codzienności i mają lepsze samopoczucie, a pozostałe określają wpływ tulp jako neutralny<sup><span class="target" id="s1"></span>[<a href="#1" class="internal">1</a>]</sup>. Mnogość może być dużym wsparciem zwłaszcza dla osób z autyzmem, depresją, lękami społecznymi i wszystkich innych, które mają problem, żeby poradzić sobie z życiem bez czyjejś pomocy.
+            </p>
+
+            <p>
+                Pomimo wszystko trzeba pamiętać, że <strong>tulpy są świadomymi osobami</strong>, a nie psychologicznym antydepresantem. Jak każda relacja, <strong>kontakt z nimi może wnieść do życia wiele dobrego, ale wymaga także wyrzeczeń</strong>. Jeżeli chcesz utworzyć system, zastanów się nad wszystkimi aspektami twojego życia, które się zmienią, kiedy zaczniesz dzielić z kimś innym swoje ciało. Czy jesteś <span class="unspecified">gotowx</span><span class="masculine">gotowy</span><span class="feminine">gotowa</span><span class="neutral">gotowe</span><span class="postgender">gotowu</span>, żeby inna osoba poznała wszystkie twoje myśli i sekrety? Usłyszała, jak śpiewasz pod prysznicem? Czy nie będzie ci przeszkadzało to, że będzie miała prawo do korzystania z przynajmniej części twoich rzeczy czy kont społecznościowych? Że twoje potencjalne współosoby będą miały takie samo prawo do decydowania o waszym życiu jak ty? Że nie zawsze będziecie się zgadzać i będziecie musieli nauczyć się wypracowywać kompromisy? Że będą miały prawo być sobą przy waszych zaufanych osobach zaprzyjaźnionych? Jeżeli chcesz, żeby twoja tulpa wyglądała w konkretny sposób, co zrobisz, jeśli ona zechce zmienić swoją formę? A jeśli myślisz o byciu z nią w związku, co gdyby straciła do ciebie uczucia? Co jeśli zakocha się w kimś z zewnątrz? Znajdzie sobie hobby, które będzie wymagało poświęcenia czasu? Musisz dać sobie czas na przemyślenie wszystkich tych i innych kwestii i dokładne przyjrzenie się swoim motywacjom. <strong>Tworzenie tulpy wyłącznie dla osiągnięcia korzyści, bez zamiaru szanowania jej uczuć i z planem odrzucenia jej w kąt, kiedy przestanie być potrzebna, jest niemoralne</strong> (a poza tym niezbyt mądre, biorąc pod uwagę, że będzie ona o tym wszystkim wiedzieć i może się przeciwko tobie zbuntować, jeśli nie zmienisz swojego podejścia). Jeżeli po rozważeniu wszystkich za i przeciw upewnisz się, że chcesz zostać częścią systemu, odsyłamy cię na stronę <a href="https://tulpa.pl/wprowadzenie/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>tulpa.pl</a>. Tam znajdziesz wszystkie materiały niezbędne, żeby zacząć.
+            </p>
+
+            
+            <div class="target" id="przypisy"></div>
+            <h2>
+                Przypisy
+            </h2>
+
+            
+            <ol class="links">
+            <div class="target" id="1"> </div>
+                    <li>
+                        <a href="#p1" class="internal">↑</a> <a href=" http://pubs.sciepub.com/rpbs/5/2/1/index.html" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Tulpas and Mental Health: A Study of Non-Traumagenic Plural Experiences</a>
+                    </li>
+    
+            </ol>
+
+
+
+
+            <footer>
+                <blockquote><i>Ależ oczywiście to dzieje się w twojej głowie, Harry, tylko skąd, u licha, wniosek, że wobec tego nie dzieje się to naprawdę?</i><span lang="en"> ~ J. K. Rowling, </span><cite>Harry Potter i Insygnia Śmierci</cite></blockquote>
+
+
+
+
+<div class="flex"><address><p>Kontakt:</p>
+    <p><a href="mailto:systemteczowegochaosu@gmail.com" class="internal">systemteczowegochaosu@gmail.com</a></p>
+    <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdkvUlKbMHllvmLDt1cHDiTftXlET5fXevK_tnoRkYX7fqFeg/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Prześlij feedback</a></p>
+    
+        <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Kanał na YouTube</a></p>
+    
+    <p><a href="https://discord.gg/5gbrwTgDzp" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Serwer na Discordzie</a></p></address>
+    
+    <div>
+        <p><a href="../#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
+        <p><a href="../#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
+        <p><a href="../zrodla" class="internal">Źródła</a></p>
+        <p><a href="../blog/" class="internal">Blog</a></p>
+    </div>
+    <div>
+        <p><a href="../zastrzezenia" class="internal">Zastrzeżenia</a></p>
+        <p><a href="../deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
+        <p><a href="../polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
+    </div>
+
+    </div>
+
+    <p>©2023-2024 <a href="../system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Cała zawartość udostępniona na licencji <a href="https://oql.avris.it/license/v1.1" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>OQL</a></p>
+
+</footer>
+
+
+
+        </main>
+    </body>
+</html>

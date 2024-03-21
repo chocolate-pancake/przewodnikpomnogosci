@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jak stworzyć wewnętrzny świat? | Przewodnik po Mnogości</title>
+        <link rel="icon" href="../ampersand-icon.png">
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://przewodnikpomnogosci.pl/plural-journey-rings.png">
+<meta property="og:image:alt" content="mnogie okręgi">
+        <meta name="twitter:domain" content="przewodnikpomnogosci.pl">
+        <meta name="color-scheme" content="dark light">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="System Tęczowego Chaosu">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Przewodnik po Mnogości">
+        <meta property="og:url" content="https://przewodnikpomnogosci.pl/materialy/tworzenie-wewnetrznego-swiata">
+        <meta name="twitter:title" property="og:title" content="Jak stworzyć wewnętrzny świat?">
+        <meta name="description" content="Opis jednej z technik tworzenia wewnętrznego świata.">
+        <meta name="twitter:description" property="og:description" content="Opis jednej z technik tworzenia wewnętrznego świata.">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <script src="../script.js" defer></script>
+        <script src="../settings.js" defer></script>
+    </head>
+    <body>
+        <div id="shadow" class="shadow"></div>
+        <div id="sidebar-shadow" class="shadow"></div>
+        
+        <a class="to-main" href="#zawartosc">Przejdź do zawartości</a>
+        
+        <header class="header">
+            <div class="divider">
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <a href="../" class="title">
+                    <div class="logo" aria-label="mnogie okręgi">
+                        <svg class="logo">
+                            <circle class="upper"></circle>
+                            <circle class="down"></circle>
+                            <circle class="left"></circle>
+                            <circle class="right"></circle>
+                        </svg>
+                    </div>
+                    <span id="title">Przewodnik po Mnogości</span>
+                </a>
+            </div>
+            <div class="divider">
+                <form class="search" action="https://przewodnikpomnogosci.pl/wyszukaj" role="search">
+                    <button type="submit" class="search" aria-label="wyszukaj">
+                        <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                            <circle cx="35%" cy="35%" r="30%"/>
+                            <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                        </svg>
+                    </button>
+                    <input type="search" class="search" name="q" minlength="1" placeholder="wyszukaj" required>
+                    
+                </form>
+                <a href="../ustawienia" class="settings desktop">
+                    <img src="../settings.png" alt="ustawienia">
+                </a>
+            </div>
+        </header>
+        
+        <!-- <a href="../ustawienia" class="settings mobile">
+            <img src="../settings.png" alt="ustawienia">
+        </a> -->
+        
+            <aside class="sidebar" id="sidebar">
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <nav class="menu-options">
+                    <a href="../" id="glowna" class="option">Strona główna</a>
+                    <a href="../terminologia" id="terminologia" class="option">Terminologia</a>
+                    <a href="../mnogosc" id="mnogosc" class="option">Mnogość</a>
+                    <a href="../wyjasnienia/" id="wyjasnienia" class="option">Nauka i teorie</a>       
+                    <a href="../zaburzenia/" id="zaburzenia" 
+                    class="option">Powiązane zaburzenia</a> 
+                    <a href="../powstawanie" id="powstawanie" class="option">Przyczyny powstawania</a> 
+                    <a href="../system" id="system" class="option">System</a>       
+                    <a href="../wspolosoby/" id="wspolosoby" class="option">Współosoby</a>   
+                    <a href="../frontowanie" class="option" id="frontowanie">Frontowanie</a> 
+                    <a href="../wewnetrzny-swiat" id="wewnetrzny-swiat" class="option">Wewnętrzny świat</a> 
+                    <a href="../materialy/" id="materialy" class="option current">Materiały i pomoce</a>
+                    <div class="subsections">
+                        <a href="dla-zastanawiajacych-sie" class="option subsection" id="dla-zastanawiajacych-sie">Dla zastanawiających się</a>
+                        <a href="dla-systemow" class="option subsection" id="dla-systemow">Dla systemów</a> 
+                        <a href="dysocjacyjne-zaburzenie-tozsamosci-test" class="option subsection" id="test-DID">Test na DID</a>
+                    </div>
+                    <a href="../system-teczowego-chaosu" id="o-nas" class="option">O nas</a>
+                    <a href="../blog/" id="blog" class="option">Blog</a>
+                </nav>
+            </aside>
+
+        <main id="zawartosc">
+
+            
+            <svg preserveAspectRatio="none" class="hidden">
+                <symbol id="ex" class="ex">
+                    <line x1="10%" y1="20%" x2="30%" y2="20%"></line>
+                    <line x1="10%" y1="20%" x2="10%" y2="90%"></line>
+                    <line x1="10%" y1="90%" x2="80%" y2="90%"></line>
+                    <line x1="80%" y1="90%" x2="80%" y2="70%"></line>
+                    <line x1="30%" y1="70%" x2="90%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="50%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="90%" y2="50%"></line>
+                </symbol>
+            </svg>
+
+            
+            <h1>Tworzenie wewnętrznego świata</h1>
+
+          
+            <p>
+                Wewnętrzny świat może przysłużyć się każdemu systemowi, dlatego warto poświęcić czas, żeby go utworzyć. Pierwszym pytaniem, które powinniście sobie zadać, jest: czy przypadkiem już go nie macie? Jeżeli jesteś osobą hostującą, możesz nie zdawać sobie sprawy z jego istnienia, bo nawet jeśli go macie, raczej nie będziesz do niego automatycznie trafiać. Warto zapytać o to swoje współosoby, bo oczywiście można utworzyć dodatkowe miejsce, ale po co marnować czas, jeżeli żadne z was nie będzie z niego potem korzystało?
+            </p>
+
+            <p>
+                Drugą opcją jest posiadanie przez was wewnętrznego świata, który nie do końca jest światem, a bardziej... niczym. Wiele systemów zaczyna z pustą, czarną przestrzenią, w której mogą siebie nawzajem widzieć, kiedy nie frontują. Jeżeli macie coś takiego, możecie spróbować przekształcić to miejsce w coś odpowiadającego waszym potrzebom.
+            </p>
+
+            <p>
+                Jeżeli nie macie wewnętrznego świata, jego budowę zacznijcie od czegoś prostego. Może być to stół, kanapa, dywan czy nawet ogromna poduszka. Jeśli potraficie, wyobrażajcie sobie wybraną przez was rzecz w jak największych szczegółach – słoje drewna na stole, nitki materiału obicia kanapy, wzorki wyszyte na poduszce. Spędźcie trochę czasu, przeprowadzając z przedmiotem różne interakcje – obejdźcie go dookoła, dotykajcie jego powierzchni, wejdźcie na niego, pod niego, usiądźcie na nim. Kiedy już się z nim oswoicie, zostawcie go na jakiś czas i zajmijcie się czymś innym. Potem powtórzcie cały proces. Zależy wam na tym, żebyście mogli w dowolnym momencie dostać się do tego przedmiotu na swoje życzenie i żebyście nie musieli za każdym razem poświęcać czasu na wyobrażanie sobie coraz dokładniejszych szczegółów, żeby był on niezwykle realistyczny. Kiedy to osiągniecie, możecie zacząć powoli dodawać kolejne rzeczy – postawcie przy stole krzesła, stolik kawowy przy kanapie, podłogę, ściany, sufit – po jakimś czasie będziecie mieć w pełni umeblowany pokój, w którym możecie się spotykać. Dobrym pomysłem będzie przy wyobrażaniu sobie każdej nowej rzeczy nadawanie temu miejscu właściwej atmosfery – myślcie o tym, że jest ono bezpieczne, przytulne, spokojne, że nic wam w nim nie grozi. Jako że istnieje ono w waszym umyśle, to, w jaki sposób je postrzegacie, będzie miało wpływ na to, jakie ono faktycznie będzie.
+            </p>
+
+            <p>
+                Jeżeli macie <a href="https://wylecz.to/uklad-nerwowy-i-psychiatria/afantazja/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>afantazję</a>, wypróbujcie inną metodę – opiszcie wasz wymarzony wewnętrzny świat na kartce, w komputerze czy telefonie w jak największych szczegółach. Napiszcie, że na środku pokoju stoi ciemnobrązowy stół na sześć osób, prostokątny, drewniany, pokryty lakierem, z zaokrąglonymi rogami, sięgający wam trochę powyżej pasa. Przy stole sześć krzeseł, z takiego samego materiału co stół, z oparciami w formie drabinki z najwyższym „szczeblem” dwa razy szerszym od pozostałych, a siedzeniami obitymi szkarłatnym zamszem. Im więcej detali, tym lepiej. Resztę zostawcie waszej podświadomości – powinna wykonać za was całą pracę. Możecie także próbować stworzyć wewnątrzświat poprzez autohipnozę, medytację albo świadome sny.
+            </p>
+
+
+
+            <footer>
+                <blockquote><i>Ależ oczywiście to dzieje się w twojej głowie, Harry, tylko skąd, u licha, wniosek, że wobec tego nie dzieje się to naprawdę?</i><span lang="en"> ~ J. K. Rowling, </span><cite>Harry Potter i Insygnia Śmierci</cite></blockquote>
+
+
+
+
+<div class="flex"><address><p>Kontakt:</p>
+    <p><a href="mailto:systemteczowegochaosu@gmail.com" class="internal">systemteczowegochaosu@gmail.com</a></p>
+    <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdkvUlKbMHllvmLDt1cHDiTftXlET5fXevK_tnoRkYX7fqFeg/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Prześlij feedback</a></p>
+    
+        <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Kanał na YouTube</a></p>
+    
+    <p><a href="https://discord.gg/5gbrwTgDzp" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Serwer na Discordzie</a></p></address>
+    
+    <div>
+        <p><a href="../#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
+        <p><a href="../#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
+        <p><a href="../zrodla" class="internal">Źródła</a></p>
+        <p><a href="../blog/" class="internal">Blog</a></p>
+    </div>
+    <div>
+        <p><a href="../zastrzezenia" class="internal">Zastrzeżenia</a></p>
+        <p><a href="../deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
+        <p><a href="../polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
+    </div>
+
+    </div>
+
+    <p>©2023-2024 <a href="../system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Cała zawartość udostępniona na licencji <a href="https://oql.avris.it/license/v1.1" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>OQL</a></p>
+
+</footer>
+
+
+
+        </main>
+    </body>
+</html>

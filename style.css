@@ -215,6 +215,7 @@ header::-webkit-scrollbar {
     /* font-size: min(6vw, 40px); */
     /* transition: text-shadow 1s, color 1s; */
     /* transition: background-image 1s, -webkit-text-fill-color 1s; */
+    scrollbar-width: none;
 }
 
 /* .title:hover { */
@@ -243,6 +244,7 @@ header::-webkit-scrollbar {
     display: inline-block;
     vertical-align: middle;
     position: relative;
+    scrollbar-width: none;
 }
 
 .upper, .down, .left, .right {
@@ -327,6 +329,7 @@ form.search {
     margin-left: 0.5rem;
     height: 2.25rem;
     transition: background-color 0.5s, border-color 0.5s, box-shadow 0.5s;
+    scrollbar-width: none;
 }
 
 form.search:has(input.search:hover), form.search:has(button.search:hover)  {
@@ -574,6 +577,7 @@ figure {
     /* border: solid 2px rgb(110, 110, 110); */
     border-radius: 1.25rem;
     box-shadow: 0px 0px 0.25rem 0.25rem var(--dark-blue), inset 0px 0px 1.25rem 0.5rem rgba(5, 5, 5, 1);
+    scrollbar-width: none;
 }
 
 figure .img {
@@ -1000,6 +1004,7 @@ h1, h2, h3, h4 {
     font-size: min(2rem, 40px);
     background-color: transparent;
     border-radius: 10px;
+    scrollbar-width: none;
 }
 
 h1 p {
@@ -1046,6 +1051,7 @@ p {
     justify-content: center;
     margin: 1rem auto;
     text-align: left;
+    scrollbar-width: none;
 }
 
 dfn {
@@ -1091,6 +1097,7 @@ sup a.internal {
     text-decoration: none;
     stroke: var(--light-blue);
     stroke-width: 0.08rem;
+    scrollbar-width: none;
 }
 
 .internal.underline, .external.underline {

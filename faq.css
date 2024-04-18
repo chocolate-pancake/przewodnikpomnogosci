@@ -1,0 +1,22 @@
+details {
+    width: 100%;
+    border-radius: 1.25rem;
+    /* border: solid 2px rgb(110, 110, 110); */
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    transition: box-shadow 0.5s;
+}
+
+details:hover {
+    box-shadow: 0px 0px 0.25rem 0.25rem var(--dark-blue);
+}
+
+/* details[open]{ */
+
+summary {
+    cursor: pointer;
+}

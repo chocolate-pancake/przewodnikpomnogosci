@@ -594,6 +594,10 @@ figure p, figcaption {
     border-radius: 1rem;
 }
 
+summary {
+    cursor: pointer;
+}
+
 /* .source {
     word-break: break-all;
 } */

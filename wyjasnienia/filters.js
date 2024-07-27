@@ -92,3 +92,34 @@ function treatment(){
     }
     notTreatmentHidden = !notTreatmentHidden
 }
+
+let notFunctionaltHidden = false
+
+function functional(){
+    let elements = document.querySelectorAll(".not-functional");
+    for(let i = 0; i < elements.length; i ++){
+        if(!notFunctionaltHidden){
+            elements[i].style.display = "none";
+        }
+        else{
+            elements[i].style.display = "list-item";
+        }
+    }
+    notFunctionaltHidden = !notFunctionaltHidden
+}
+
+
+let notNeurotHidden = false
+
+function neuro(){
+    let elements = document.querySelectorAll(".not-neuro");
+    for(let i = 0; i < elements.length; i ++){
+        if(!notNeurotHidden){
+            elements[i].style.display = "none";
+        }
+        else{
+            elements[i].style.display = "list-item";
+        }
+    }
+    notNeurotHidden = !notNeurotHidden
+}

@@ -135,7 +135,7 @@ function reduceMotion(){
 
 
 if(!localStorage.getItem("fontSize")){
-    localStorage.setItem("fontSize", "16px");
+    localStorage.setItem("fontSize", "unset");
 }
 let currentSize = localStorage.getItem("fontSize");
 font(currentSize);

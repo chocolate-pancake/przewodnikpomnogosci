@@ -109,14 +109,11 @@
                 </symbol>
             </svg>
 
-            <!-- język nie trzeba było poprawiać, for-aria też nic -->
             
             <h1>Ustawienia</h1>
 
             <p>
-                Wszystkie twoje wybory są przechowywane bezpośrednio w pamięci przeglądarki, której obecnie używasz.
-                Oznacza to, że zamknięcie okna ich nie zresetuje, ale jeżeli usuniesz pliki cookie
-                (ciasteczka) i inne dane witryn, zostaną one przywrócone do stanu początkowego.
+                Wszystkie twoje wybory są przechowywane bezpośrednio w pamięci przeglądarki, której obecnie używasz. Oznacza to, że zamknięcie okna ich nie zresetuje (no chyba że używasz trybu incognito), ale jeżeli usuniesz pliki cookie (ciasteczka) i inne dane witryn, zostaną one przywrócone do stanu początkowego.
             </p>
 
             <!-- Dajemy najpierw czcionkę czy zaimki? - Natasza
@@ -127,7 +124,7 @@
             
 
 
-            <p>Twoje <a href="https://zaimki.pl/zaimki" target="_blank" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>zaimki</a>:</p>
+            <p><b>Twoje <a href="https://zaimki.pl/zaimki" target="_blank" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>zaimki</a>:</b></p>
 
                 <label class="description">
                     <input type="radio" name="pronouns" class="setting" id="unspecified" onclick="pronouns('unspecified')">
@@ -156,7 +153,13 @@
                 </label>
                 
                 
-                <p>Czcionka:</p>
+                <p><b>Czcionka:</b></p>
+
+                <label class="description">
+                    <input type="radio" name="font" class="setting" id="unset" onclick="font('unset')">
+                    <span class="radio"> </span>
+                    automatycznie 
+                </label>
 
                 <label class="description">
                     <input type="radio" name="font" class="setting" id="16px" onclick="font('16px')">

@@ -3,7 +3,7 @@
     background-color: rgb(30, 30, 30);
     font-size: var(--font-size);
 
-    --font-size: 16px;
+    --font-size: unset;
     --font-color: rgb(200, 200, 200);
 
     --visibility: hidden;
@@ -251,7 +251,7 @@ header::-webkit-scrollbar {
     stroke: var(--font-color);
     fill: transparent;
     stroke-width: 0.08em;
-    r: 30%;
+    r: 0.6em;
 }
 
 .upper {

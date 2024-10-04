@@ -1014,13 +1014,15 @@ h1, h2, h3, h4 {
     background-color: transparent;
     border-radius: 10px;
     scrollbar-width: none;
+    width: max-content;
 }
 
 h1 p {
-    font-size: var(--font-size);
+    font-size: 1.25rem;
     font-weight: normal;
     text-shadow: none;
-    text-align: center;
+    margin-left: inherit;
+    /* text-align: center; */
 }
 
 .target {

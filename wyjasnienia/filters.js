@@ -123,3 +123,33 @@ function neuro(){
     }
     notNeurotHidden = !notNeurotHidden
 }
+
+let notNewestHidden = false
+
+function newest(){
+    let elements = document.querySelectorAll(".older");
+    for(let i = 0; i < elements.length; i ++){
+        if(!notNewestHidden){
+            elements[i].style.display = "none";
+        }
+        else{
+            elements[i].style.display = "list-item";
+        }
+    }
+    notNewestHidden = !notNewestHidden
+}
+
+let notPopularHidden = false
+
+function popular(){
+    let elements = document.querySelectorAll(".less-known");
+    for(let i = 0; i < elements.length; i ++){
+        if(!notPopularHidden){
+            elements[i].style.display = "none";
+        }
+        else{
+            elements[i].style.display = "list-item";
+        }
+    }
+    notPopularHidden = !notPopularHidden
+}

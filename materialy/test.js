@@ -1,4 +1,9 @@
+
+// import { jsPDF } from "https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js";
+
 let questionNumber = 28;
+let scores = [];
+// let firstPDF = true;
 
 // if(!sessionStorage.getItem('currentQuestion')){
 //     sessionStorage.setItem('currentQuestion', '1');
@@ -33,6 +38,7 @@ function calculateScore(){
     let inputs = document.querySelectorAll('.setting');
     for(let i = 0; i < inputs.length; i ++){
         if(inputs[i].checked === true){
+            scores.push(parseInt(inputs[i].labels[0].textContent));
             score += parseInt(inputs[i].labels[0].textContent);
         }
     }
@@ -42,12 +48,33 @@ function calculateScore(){
         score = score.toFixed(2);
     }
     document.getElementById('testResult').textContent = score;
-    if(score < 30){
+    if(score < 10){
         document.documentElement.style.setProperty('--low', 'block');
+        document.documentElement.style.setProperty('--medium', 'none');
+        document.documentElement.style.setProperty('--high', 'none');
+    }
+    else if(score < 30){
+        document.documentElement.style.setProperty('--low', 'none');
+        document.documentElement.style.setProperty('--medium', 'block');
         document.documentElement.style.setProperty('--high', 'none');
     }
     else {
         document.documentElement.style.setProperty('--low', 'none');
+        document.documentElement.style.setProperty('--medium', 'none');
         document.documentElement.style.setProperty('--high', 'block');
     }
 }
+
+// function generatePDF(){
+//     if(firstPDF){
+//         const jsPDF  = require("https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js");
+//         firstPDF = false;
+//     }
+//     const doc = new jsPDF();
+//     const unit = 10;
+//     for(let i = 0; i < questionNumber; i ++){
+//         doc.text(document.getElementById("question" + (i + 1)).firstChild.textContent, unit, unit * i);
+//     }
+//     doc.save("skala_doswiadczen_dysocjacyjnych_wyniki.pdf");
+
+// }

@@ -60,16 +60,16 @@
                     
                 </form>
                 <a href="../ustawienia" class="settings desktop">
-                    <img src="../settings.png" alt="ustawienia">
+                    <img src="../settings.png" alt="ustawienia i dostępność">
                 </a>
             </div>
         </header>
         
         <!-- <a href="../ustawienia" class="settings mobile">
-            <img src="../settings.png" alt="ustawienia">
+            <img src="../settings.png" alt="ustawienia i dostępność">
         </a> -->
         
-            <aside class="sidebar" id="sidebar">
+            <aside class="sidebar" id="sidebar" data-nosnippet>
                 <button class="menu-icon" id="menu1" type="button" onclick="menu()">
                     <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
                         <line x1="25%" y1="35%" x2="75%" y2="35%"/>
@@ -117,7 +117,7 @@
             <h1>Test na rozdwojenie jaźni</h1>
 
             <p>
-                Skala doświadczeń dysocjacyjnych to test, który pozwala ocenić stopień dysocjacyjności u danej osoby. <b>Jest niezwykle pomocny przy ocenianiu ryzyka, że cierpi się na <a href="../zaburzenia/dysocjacyjne-zaburzenie-tozsamosci" class="internal">dysocjacyjne zaburzenie tożsamości</a> (dawniej znane jako rozdwojenie jaźni i osobowosć wieloraka), bo to zaburzenie najczęściej charakteryzuje się częstym i poważnym <a href="../zaburzenia/dysocjacja" class="internal">dysocjowaniem</a>. </b> Wysoki wynik może świadczyć także o występowaniu innego zaburzenia dysocjacyjnego albo zespołu stresu pourazowego, dlatego to narzędzie nie służy do diagnozy konkretnego zaburzenia, a jedynie do oceny, czy obecne objawy mogą wymagać leczenia.
+                Skala doświadczeń dysocjacyjnych to test, który pozwala ocenić stopień dysocjacyjności u danej osoby. <b>Jest niezwykle pomocny przy ocenianiu ryzyka, że cierpi się na <a href="../zaburzenia/dysocjacyjne-zaburzenie-tozsamosci" class="internal">dysocjacyjne zaburzenie tożsamości</a> (dawniej znane jako rozdwojenie jaźni i osobowość wieloraka), bo to zaburzenie najczęściej charakteryzuje się częstym i poważnym <a href="../zaburzenia/dysocjacja" class="internal">dysocjowaniem</a>. </b> Wysoki wynik może świadczyć także o występowaniu innego zaburzenia dysocjacyjnego albo zespołu stresu pourazowego, dlatego to narzędzie nie służy do diagnozy konkretnego zaburzenia, a jedynie do oceny, czy obecne objawy mogą wymagać leczenia.
             </p>
 
             <p>
@@ -281,18 +281,95 @@
             <p class="results">Twój wynik: <span id="testResult">0</span>/100</p>
 
             <p id="low">
-                Twój wynik jest niski. Tylko 1% osób z rozdwojeniem jaźni uzyskuje poniżej 30 punktów na skali doświadczeń dysocjacyjnych, więc nie ma dużego ryzyka, że cierpisz na to zaburzenie. Ale jeżeli twoje objawy cię niepokoją, nie wahaj się mimo wszystko zasięgnąć pomocy psychologicznej.
+                Twój wynik jest niski. Tylko około 1% osób z rozdwojeniem jaźni uzyskuje poniżej 30 punktów na skali doświadczeń dysocjacyjnych, więc ryzyko, że cierpisz na to zaburzenie, jest znikome. Ale jeżeli twoje objawy cię niepokoją, nie wahaj się mimo wszystko zasięgnąć pomocy psychologicznej.
+            </p>
+
+            <p id="medium">
+                Twój wynik jest średni. Tylko około 1% osób z rozdwojeniem jaźni uzyskuje poniżej 30 punktów na skali doświadczeń dysocjacyjnych, więc nie ma dużego ryzyka, że cierpisz na to zaburzenie, ale jeżeli okres wczesnej dorosłości masz już za sobą, twój wynik może świadczyć o obecności innego zaburzenia, na przykład osobowości borderline lub zaburzenia odżywiania. Rozważ udanie się na konsultację psychologiczną, aby dowiedzieć się, jakie przyczyny stoją za twoimi objawami.
             </p>
 
             <p id="high">
-                Twój wynik jest wysoki. Niekoniecznie oznacza to obecność zaburzenia, ale ryzyko, że występuje u ciebie <a href="../zaburzenia/zespol-stresu-pourazowego" class="internal">zespół stresu pourazowego</a>, <a href="../zaburzenia/dysocjacyjne-zaburzenie-tozsamosci" class="internal">rozdwojenie jaźni</a> albo inne zaburzenie dysocjacyjne jest wysokie. Rozważ udanie się do osoby specjalizującej się w leczeniu dysocjacji, żeby dowiedzieć się więcej na temat natury swoich objawów i w razie konieczności otrzymać odpowiednią pomoc. Rozdwojenie jaźni to dużo więcej, niż posiadanie kilku jaźni w jednej głowie – to poważna choroba, która znacząco wpływa na pogorszenie jakości życia. Bez leczenia skutków traumy i uzyskaniu współpracy pomiędzy wszystkimi jaźniami może stanowić niebezpieczeństwo dla cierpiącej na nie osoby.
+                Twój wynik jest wysoki. Niekoniecznie oznacza to obecność zaburzenia, ale ryzyko, że występuje u ciebie <a href="../zaburzenia/zespol-stresu-pourazowego" class="internal">zespół stresu pourazowego</a>, <a href="../zaburzenia/dysocjacyjne-zaburzenie-tozsamosci" class="internal">rozdwojenie jaźni</a> albo inne zaburzenie dysocjacyjne jest wysokie. Rozważ udanie się do osoby specjalizującej się w leczeniu traumy i dysocjacji, żeby dowiedzieć się więcej na temat natury swoich objawów i w razie konieczności otrzymać odpowiednią pomoc. Rozdwojenie jaźni to dużo więcej, niż posiadanie kilku jaźni w jednej głowie – to poważna choroba, która znacząco wpływa na pogorszenie jakości życia. Bez leczenia skutków traumy i uzyskaniu współpracy pomiędzy wszystkimi jaźniami może stanowić niebezpieczeństwo dla cierpiącej na nie osoby.
+            </p>
+
+            <p>
+                Średnie wyniki na skali doświadczeń dysocjacyjnych wśród różnych grup według różnych badań<sup><span class="target" id="p1"></span>[<a href="#1" class="internal">1</a>]</sup> (zakresy obejmują najniższe i najwyższe średnie wyniki z różnych badań, a nie wyniki poszczególnych osób):
+            </p>
+
+            <ul>
+
+                <li>
+                    ogólna (dorosła) populacja: 3,7-7,8
+                </li>
+
+                <li>
+                    zaburzenia lękowe: 3,9-10,4
+                </li>
+
+                <li>
+                    zaburzenia afektywne: 6-12,7
+                </li>
+
+                <li>
+                    zaburzenia odżywiania: 12,7-17,8
+                </li>
+
+                <li>
+                    wczesna dorosłość (18-24 lat): 11,8-23,8
+                </li>
+
+                <li>
+                    schizofrenia: 10,5-20,6
+                </li>
+
+                <li>
+                    osobowość borderline: 18,2-20,1
+                </li>
+
+                <li>
+                    w szpitalu psychiatrycznym/po przemocy w dzieciństwie: 19,9
+                </li>
+
+                <li>
+                    <a href="../zaburzenia/zespol-stresu-pourazowego" class="internal">zespół stresu pourazowego</a> (PTSD): 26,1-41,1
+                </li>
+
+                <li>
+                    <a href="../zaburzenia/osdd" class="internal">inne określone zaburzenie dysocjacyjne</a> (OSDD): 29,8-40,8
+                </li>
+
+                <li>
+                    <a href="../zaburzenia/dysocjacyjne-zaburzenie-tozsamosci" class="internal">rozdwojenie jaźni</a>: 40,7-57,1
+                </li>
+
+            </ul>
+
+            <div class="target" id="przypisy"></div>
+            <h2>
+                Przypisy
+            </h2>
+
+            
+            <ol class="links">
+
+                                
+                <div class="target" id="1"> </div>
+                <li>
+                    <a href="#p1" class="internal">↑</a> <a href="https://scholarsbank.uoregon.edu/items/a6a8d8ff-57ee-413a-9f6a-5116211d2bfe" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>An update on the Dissociative Experience Scale</a>
+                </li>
+    
+            </ol>
+
+
+            <br>
+            <br>
+            <p>
+                <i>Ostatnia aktualizacja: 12.11.2024</i>
             </p>
 
 
 
-
-
-            <footer>
+            <footer data-nosnippet>
                 <blockquote><i>Musimy obierać strony. Neutralność pomaga oprawcy, nigdy ofierze. Cisza zachęca dręczyciela, nigdy dręczonego.</i> ~ Elie Wiesel (on/jego)</blockquote>
 
 

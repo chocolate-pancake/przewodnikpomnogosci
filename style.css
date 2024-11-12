@@ -54,6 +54,7 @@
     --temporary: rgb(101, 253, 218);
 
     --low: none;
+    --medium: none;
     --high: none;
 }
 
@@ -730,6 +731,10 @@ p.results {
 
 #low {
     display: var(--low);
+}
+
+#medium {
+    display: var(--medium);
 }
 
 #high {

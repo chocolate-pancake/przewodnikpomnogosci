@@ -153,3 +153,33 @@ function popular(){
     }
     notPopularHidden = !notPopularHidden
 }
+
+let notTulpasHidden = false
+
+function tulpas(){
+    let elements = document.querySelectorAll(".not-tulpas");
+    for(let i = 0; i < elements.length; i ++){
+        if(!notTulpasHidden){
+            elements[i].style.display = "none";
+        }
+        else{
+            elements[i].style.display = "list-item";
+        }
+    }
+    notTulpasHidden = !notTulpasHidden
+}
+
+let notPeopleHidden = false
+
+function persons(){
+    let elements = document.querySelectorAll(".not-people");
+    for(let i = 0; i < elements.length; i ++){
+        if(!notPeopleHidden){
+            elements[i].style.display = "none";
+        }
+        else{
+            elements[i].style.display = "list-item";
+        }
+    }
+    notPeopleHidden = !notPeopleHidden
+}

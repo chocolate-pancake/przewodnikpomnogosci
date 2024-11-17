@@ -193,26 +193,38 @@
                 </label>
                     
                 <label class="filter">
+                    <input type="checkbox" class="box-setting" id="models-filter" onclick="models()">
+                    <span class="checkbox"> </span>
+                    modele
+                </label>
+                    
+                <label class="filter">
                     <input type="checkbox" class="box-setting" id="functional-filter" onclick="functional()">
                     <span class="checkbox"> </span>
                     funkcjonalna wielorakość
                 </label>
+                    
+                <label class="filter">
+                    <input type="checkbox" class="box-setting" id="persons-filter" onclick="persons()">
+                    <span class="checkbox"> </span>
+                    współjednostki jako osoby
+                </label>
 
             </details>
             
-<!-- template: li.notpublic.not-treatment.nonnatural.notplural.notdid.less-important.not-functional.not-neuro.older.less-known.not-tulpas -->
+<!-- template: li.notpublic.not-treatment.nonnatural.notplural.notdid.less-important.not-functional.not-neuro.older.less-known.not-tulpas.not-people.not-model -->
 
             <ul>
 
-                <li class="not-tulpas not-neuro not-functional not-treatment public nonnatural less-known">
+                <li class="not-model not-people not-tulpas not-neuro not-functional not-treatment public nonnatural less-known">
                     <b><a href="https://www.psychiatriapolska.pl/pdf-146969-88956?filename=Dissociative%20identity.pdf" lang="en" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Dysocjacyjne zaburzenie tożsamości jako problem interdyscyplinarny. Część I - aspekty psychiatryczne i psychologiczne.</a></b>  Elżbieta Burdzik, Marcin Burdzik, 2023 – zawiera trochę błędów (np. że w każdym momencie kontrolę sprawuje tylko jedna osoba alterska), ale to do tej pory chyba najlepsze podsumowanie najważniejszych informacji o dysocjacyjnym zaburzeniu tożsamości w języku polskim. <b>Ostrzeżenie: podaje fuzję ostateczną jako jedyną opcję leczenia, poświęca kilka akapitów argumentacji, dlaczego według nich nie powinno się mówić „osobowości”, tylko „części osobowości”.</b>
                 </li>
 
-                <li class="not-tulpas not-neuro not-functional not-treatment public nonnatural older less-known">
+                <li class="not-model not-people not-tulpas not-neuro not-functional not-treatment public nonnatural older less-known">
                     <b><a href="https://www.researchgate.net/publication/334589971_Dissociative_identity_disorder_as_a_wide_range_of_defense_mechanisms_in_children_with_a_history_of_early_childhood_trauma" lang="en" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Dysocjacyjne zaburzenie osobowości jako szeroki zakres mechanizmów obronnych u dzieci z przebytą traumą we wczesnym dzieciństwie</a></b>, Marta Cudzik, Ewelina Anna Sroka, Marcin Olajossy, 2019 – wytłumaczenie DID jako mechanizmu obronnego wobec traumatycznych wydarzeń. Polski tekst jest dostępny poniżej angielskiego. <b>Ostrzeżenie: porusza temat przemocy, w tym przemocy seksualnej i szczególnie okrutnej przemocy.</b>
                 </li>
 
-                <li class="not-tulpas not-neuro not-functional not-treatment public nonnatural less-important older less-known">
+                <li class="not-model not-people not-tulpas not-neuro not-functional not-treatment public nonnatural less-important older less-known">
                     <b><a href="https://journals.viamedica.pl/psychiatria/article/view/59802" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Dysocjacyjne zaburzenie tożsamości (osobowość mnoga) — powszechniejsze niż wcześniej sądzono</a></b>, Wiktor Orlof, Karolina Maria Wilczyńska, Napoleon Waszkiewicz, 2018 – względnie krótkie podsumowanie podstawowych informacji na temat DID i opis trzech przypadków tego zaburzenia. <b>Ostrzeżenie: podaje fuzję ostateczną jako jedyną opcję leczenia.</b>
                     <details>
                         <summary>Streszczenie</summary>
@@ -222,7 +234,7 @@
                     </details>
                 </li>
 
-                <li class="not-tulpas not-functional not-treatment public nonnatural less-known">
+                <li class="not-model not-people not-tulpas not-functional not-treatment public nonnatural less-known">
                     <b><a href="https://www.researchgate.net/publication/352488294_Podzielony_umysl_-_podzielony_mozg_Neurobiologiczne_podloze_dysocjacyjnego_zaburzenia_tozsamosci_z_perspektywy_teorii_ukladow_dynamicznych_Divided_mind_-_divided_brain_The_neurobiology_of_dissociative" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Podzielony umysł – podzielony mózg. Neurobiologiczne podłoże dysocjacyjnego zaburzenia tożsamości z perspektywy teorii układów dynamicznych</a></b>, Jakub Skałbania, Karolina Polewik, Igor Pietkiewicz, Radoslaw Tomalski, 2021 – wyjaśnienie istnienia wielu świadomości w jednym mózgu z neurobiologicznej perspektywy. Bardzo wartościowy, ale może być trudny do zrozumienia dla osoby nie posiadającej dużej wiedzy w tej dziedzinie.
                     <details>
                         <summary>Streszczenie</summary>
@@ -232,7 +244,7 @@
                     </details>
                 </li>
 
-                <li class="not-tulpas not-neuro not-functional not-treatment public nonnatural less-important older less-known">
+                <li class="not-model not-people not-tulpas not-neuro not-functional not-treatment public nonnatural less-important older less-known">
                     <b><a href="https://www.ppn.ipin.edu.pl/archiwum/2000-suplement-2/osobowosc-mnogax-diagnostykax-orzecznictwo-sadowo-psychiatryczne.html" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Osobowość mnoga: diagnostyka, orzecznictwo sądowo-psychiatryczne</a></b>, Jerzy Pobocha, 2000. <b>Ostrzeżenie: opisuje stanowisko osób uznających DID za tworzone na terapii i sugerujących ignorowanie dysocjacyjnych objawów jako właściwe leczenie, wspomina o morderstwach, przemocy rytualnej i innych typach traumy.</b>
                     <details>
                         <summary>Streszczenie</summary>
@@ -242,7 +254,7 @@
                     </details>
                 </li>
                 
-                <li class="not-tulpas not-neuro not-functional not-treatment public nonnatural less-important less-known">
+                <li class="not-model not-people not-tulpas not-neuro not-functional not-treatment public nonnatural less-important less-known">
                     <b><a href="https://iusnovum.lazarski.pl/iusnovum/article/view/1363" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Odpowiedzialność karna sprawcy z naprzemiennym rozszczepieniem osobowości</a></b>, Anna Golonka, 2023. <b>Ostrzeżenie: porusza temat gwałtów i sadystycznych morderstw.</b>
                     <details>
                         <summary>Streszczenie</summary>
@@ -252,7 +264,7 @@
                     </details>
                 </li>
 
-                <li class="not-tulpas not-neuro not-functional not-treatment public nonnatural notplural older less-known">
+                <li class="not-model not-people not-tulpas not-neuro not-functional not-treatment public nonnatural notplural older less-known">
                     <b><a href="http://www.czasopismopsychologiczne.pl/artykul/rozpoznawanie-i-rnicowanie-zaburze-dysocjacyjnych-wyzwania-w-praktyce-klinicznej,550" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Rozpoznawanie i różnicowanie zaburzeń dysocjacyjnych – wyzwania w praktyce klinicznej</a></b>, Radosław Tomalski, Igor J. Pietkiewicz, 2019 – naprawdę dobry artykuł, naszym zdaniem powinien się znaleźć na liście rzeczy do przeczytania każdej osoby studiującej psychologię. <b>Ostrzeżenie: porusza temat przemocy rytualnej i wykorzystywania seksualnego.</b>
                     <details>
                         <summary>Streszczenie</summary>
@@ -262,7 +274,7 @@
                     </details>
                 </li>
 
-                <li class="not-tulpas not-neuro not-functional public nonnatural notplural less-important older less-known">
+                <li class="not-model not-people not-tulpas not-neuro not-functional public nonnatural notplural less-important older less-known">
                     <b><a href="https://ruj.uj.edu.pl/server/api/core/bitstreams/35f01e61-5d03-4aaa-9eb5-a5d1c92e31ba/content" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Spojrzenie na psychoterapię w zaburzeniach dysocjacyjnych - opis przypadku</a></b>, Anna Wardęga-Adamczyk, Jan Banach, 2019. <b>Ostrzeżenie: wspomina o zaniedbaniu emocjonalnym i uprowadzeniu.</b>
                     <details>
                         <summary>Streszczenie</summary>
@@ -272,11 +284,11 @@
                     </details>
                 </li>
 
-                <li class="not-tulpas not-neuro not-functional not-treatment public less-important older less-known">
+                <li class="not-model not-people not-tulpas not-neuro not-functional not-treatment public less-important older less-known">
                     <b><a href="https://ejournals.eu/czasopismo/studia-religiologica/artykul/opetanie-i-egzorcyzm-w-swietle-badan-antropologicznych-i-neurologicznych" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Opętanie i egzorcyzm w świetle badań antropologicznych i neurologicznych</a></b>, Stanisław Radoń, 2014 – zawiera rozróżnienie opętania od DID i wspomina o niezaburzonej mnogości (kanałowanie i mediumizm). <b>Ostrzeżenie: porusza temat niedobrowolnych, krzywdzących egzorcyzmów.</b>
                 </li>
                 
-                <li class="not-tulpas not-neuro not-functional not-treatment notpublic nonnatural less-important older less-known">
+                <li class="not-model not-people not-tulpas not-neuro not-functional not-treatment notpublic nonnatural less-important older less-known">
                     <b><a href="http://www.psychiatriapsychoterapia.pl/index.php?a=articles_show&id=378" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Spór o osobowość mnogą: zagadnienie teoretyczne, czy praktyczne?</a></b>, Maria Golczyńska, Sylwia Stankiewicz, 2006. (Brak publicznego dostępu)
                     <details>
                         <summary>Streszczenie</summary>
@@ -286,7 +298,7 @@
                     </details>
                 </li>
 
-                <li class="not-tulpas not-neuro not-functional not-treatment notpublic nonnatural less-important less-known">
+                <li class="not-model not-people not-tulpas not-neuro not-functional not-treatment notpublic nonnatural less-important less-known">
                     <b><a href="https://ruj.uj.edu.pl//handle/item/280250" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Trauma jako czynnik sprawczy dysocjacyjnego zaburzenia tożsamości</a></b>, Aleksandra Leja, 2021.  (Brak publicznego dostępu)
                     <details>
                         <summary>Streszczenie</summary>
@@ -296,11 +308,11 @@
                     </details>
                 </li>
 
-                <li class="not-tulpas not-neuro not-functional not-treatment public nonnatural older">
+                <li class="not-people not-tulpas not-neuro not-functional not-treatment public nonnatural older">
                     <b><a href="http://www.trauma-pages.com/a/nijenhuis-2004.php" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Trauma-related Structural Dissociation of the Personality</a></b>, Ellert Nijenhuis, Onno van der Hart, Kathy Steele, 2004 – dość kontrowersyjna <a href="teoria-strukturalnej-dysocjacji" class="internal">teoria strukturalnej dysocjacji</a>. Niezbyt lubiana w naszej części społeczności, głównie ze względu na częste (chociaż bezpodstawne) używanie jej jako argumentu przeciwko istnieniu między innymi systemów endogenicznych. Tak jak większość modelów wyjaśniających mnogość, jest użyteczna dla tych systemów, których doświadczenia do niej pasują, ale dla pozostałych próba dopasowania się do niej może być krzywdząca. <b>Ostrzeżenie: traktuje fuzję ostateczną jako jedyną opcję leczenia.</b>
                 </li>
 
-                <li class="not-tulpas not-functional not-treatment public nonnatural older">
+                <li class="not-model not-people not-tulpas not-functional not-treatment public nonnatural older">
                     <b><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0039279" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Fact or Factitious? A Psychobiological Study of Authentic and Simulated Dissociative Identity States</a></b>, A. A. T. Simone Reinders, Antoon T. M. Willemsen, Herry P. J. Vos, Johan A. den Boer, Ellert R. S. Nijenhuis, 2012. <b>Ostrzeżenie: opisuje w szczegółach pozycję osób, które utrzymują, że DID nie jest prawdziwym zaburzeniem.</b> 
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -318,7 +330,7 @@
                     </details>
                 </li>
 
-                <li class="not-tulpas not-functional not-treatment public nonnatural less-known">
+                <li class="not-model not-people not-tulpas not-functional not-treatment public nonnatural less-known">
                     <b><a href="https://www.sciencedirect.com/science/article/pii/S246874992030017X" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>A systematic review of the neuroanatomy of dissociative identity disorder</a></b>, David Blihar, Elliott Delgado, Marina Buryak, Michael Gonzalez, Randall Waechter, 2020. <b>Ostrzeżenie: opisuje poglądy osób, które utrzymują, że DID nie jest prawdziwym zaburzeniem.</b>
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -328,7 +340,7 @@
                     </details>
                 </li>
                 
-                <li class="not-tulpas not-functional not-treatment public nonnatural less-important older less-known">
+                <li class="not-model not-people not-tulpas not-functional not-treatment public nonnatural less-important older less-known">
                     <b><a href="https://www.sciencedirect.com/science/article/pii/S2213158213000892" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Dissociative part-dependent biopsychosocial reactions to backward masked angry and neutral faces: An fMRI study of dissociative identity disorder</a></b>, Yolanda R. Schlumpf, Ellert R.S. Nijenhuis, Sima Chalavi, Ekaterina V. Weder, Eva Zimmermann, Roger Luechinger, Roberto La Marca, A.A.T. Simone Reinders, Lutz Jäncke, 2013.
                     <details> 
                     <summary>Tłumaczenie streszczenia</summary>
@@ -350,11 +362,11 @@
                     </details>
                 </li>
 
-                <li class="not-tulpas not-functional not-treatment public nonnatural less-known">
+                <li class="not-model not-people not-tulpas not-functional not-treatment public nonnatural less-known">
                     <b><a href="https://www.cambridge.org/core/journals/psychological-medicine/article/elusive-search-for-a-biomarker-of-dissociative-amnesia-an-overstated-response-to-understated-findings/77C07709850E388BDC370515878EB599" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>The elusive search for a biomarker of dissociative amnesia: an overstated response to understated findings?</a></b>, Antje A.T.S. Reinders, Lora I. Dimitrova, Yolanda R. Schlumpf, Eline M. Vissia, Sophie L. Dean, Lutz Jäncke, Sima Chalavi, Dick J. Veltman, Ellert R.S. Nijenhuis, 2022 – odpowiedź na odpowiedź na artykuł o neurobiologii dysocjacyjnej amnezji, zawierająca tabelkę z podsumowaniami wyników dotychczasowych badań na temat amnezji u osób z DID. Cenimy ją szczególnie za akapit, w którym osoby autorskie argumentują, że brak „obiektywnych dowodów” na dysocjacyjną amnezję wcale nie znaczy, że w jakiś sposób przestaje ona powodować stres i dysfunkcję, a definicja obiektywności w tym przypadku jest niejasna. Będzie dobrym źródłem emocjonalnego wsparcia, jeśli zamierzacie przejść przez te wszystkie wymienione w tabeli badania, które wydają się interpretować subiektywne doświadczenia jako „mniej prawdziwe”.
                 </li>
 
-                <li class="not-tulpas not-neuro not-treatment public nonnatural older less-known">
+                <li class="not-model not-people not-tulpas not-neuro not-treatment public nonnatural older less-known">
                     <b><a href="https://www.researchgate.net/publication/228978385_Critiquing_the_Requirement_of_Oneness_over_Multiplicity_An_Examination_of_Dissociative_Identity_Disorder_in_Five_Clinical_Texts" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Critiquing the Requirement of Oneness over Multiplicity: An Examination of Dissociative Identity (Disorder) in Five Clinical Texts</a></b>, Kymbra Clayton, 2005 – krytyka poglądów, że mnogość jest koniecznie zaburzeniem, a fuzja jest niezbędna w procesie leczenia. Warto do niego wracać, kiedy ciągła dehumanizacja i umniejszanie wartości doświadczeń osób alterskich w innych artykułach będzie zbyt przytłaczająca. <b>Ostrzeżenie: porusza temat zmuszania do fuzji i przemocowej terapii.</b>
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -364,8 +376,8 @@
                     </details>
                 </li>
                 
-                <li class="not-tulpas not-functional not-treatment public nonnatural less-known">
-                    <b><a href="https://www.researchgate.net/publication/366818673_The_Role_of_Dynamic_Core_and_Mirror_Neuron_System_in_Dissociative_Disorder" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>The Role of Dynamic Core and Mirror Neuron System in Dissociative Disorder</a></b>, Kenichiro Okano, 2022. <b>Ostrzeżenie: porusza temat przemocy fizycznej.</b>
+                <li class="not-model not-tulpas not-functional not-treatment public nonnatural less-known">
+                    <b><a href="https://www.researchgate.net/publication/366818673_The_Role_of_Dynamic_Core_and_Mirror_Neuron_System_in_Dissociative_Disorder" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>The Role of Dynamic Core and Mirror Neuron System in Dissociative Disorder</a></b>, Kenichiro Okano, 2022. <b>Ostrzeżenie: porusza temat przemocy fizycznej, cytuje teksty przeciwne postrzeganiu systemu jako wielu osób.</b>
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
                         <p>
@@ -374,7 +386,7 @@
                     </details>
                 </li>
                 
-                <li class="not-tulpas not-neuro not-functional public nonnatural older less-known">
+                <li class="not-model not-people not-tulpas not-neuro not-functional public nonnatural older less-known">
                     <b><a href="https://www.researchgate.net/publication/316317706_Therapeutic_Alliance_with_Abuser_Alters_in_Dissociative_Identity_Disorder" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Therapeutic Alliance with Abuser Alters in Dissociative Identity Disorder: The Paradox of Attachment to the Abuser</a></b>, Ruth A. Blizard, Ph.D. 1995. <b>Ostrzeżenie: porusza temat przemocy, w tym przemocy seksualnej, i samookaleczania, traktuje fuzję ostateczną jako jedyną opcję leczenia, sugeruje, że niektórym osobom nie da się pomóc, wspomina o morderstwie.</b>
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -384,7 +396,7 @@
                     </details>
                 </li>
                 
-                <li class="not-tulpas not-neuro not-functional not-treatment public nonnatural older">
+                <li class="not-model not-people not-tulpas not-neuro not-functional not-treatment public nonnatural older">
                     <b><a href="https://www.sciencedirect.com/science/article/pii/S0193953X18302910" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Clinical Presentations of Multiple Personality Disorder</a></b>, Richard P. Kluft, M.D., 1991. <span class="for-aria">Dostępny wyłącznie w formie zdjęć oryginalnego wydania, z tekstem niedostępnym dla czytników ekranowych.</span> <b>Ostrzeżenie: porusza temat wykorzystywania seksualnego, przemocy wewnątrz sytemu, uzależnienia od alkoholu, zostawienia przez bliską osobę, traktuje fuzję ostateczną jako jedyną opcję leczenia, cytuje tekst nazywający zainwestowanie w swój system narcystycznym, podkreśla, że „osobowości nie są osobami”.</b>
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -395,7 +407,7 @@
                 </li>
                 <!-- Quote: Ironically, the patient has become so multiple that the multiplicity disguises itself and rarely takes a classic form. -->
 
-                <li class="not-tulpas not-functional not-treatment public nonnatural less-important older less-known">
+                <li class="not-model not-people not-tulpas not-functional not-treatment public nonnatural less-important older less-known">
                     <b><a href="https://core.ac.uk/works/125164891" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Psychophysiologic Aspects of Multiple Personality Disorder</a></b>, Philip M. Coons, 1988. <b>Ostrzeżenie: porusza tematy przemocy fizycznej i samookaleczania.</b>
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -405,11 +417,11 @@
                     </details>
                 </li>
     
-                <li class="not-tulpas not-neuro not-functional public nonnatural older">
+                <li class="not-model not-people not-tulpas not-neuro not-functional public nonnatural older">
                     <b><a href="https://www.isst-d.org/resources/adult-treatment-guidelines/" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Dissociative Identity Disorder Adult Treatment Guidelines Third Revision</a></b>, International Society for the Study of Trauma and Dissociation, 2011 – najczęściej używane wytyczne leczenia DID. Niestety chociaż można z nich wyciągnąć wiele dobrego, zawierają trochę szkodliwych instrukcji, których stosowanie może wyrządzić krzywdę systemom na teapii. <b>Ostrzeżenie: kilkukrotnie określają zainwestowanie w wewnętrzne funkcjonowanie swojego systemu „narcystycznym”, traktują fuzję ostateczną jako pożądany rezultat leczenia, którego czasami nie da się ze względu na okoliczności osiągnąć.</b>
                 </li>
 
-                <li class="not-tulpas nonnatural less-important not-functional not-neuro older less-known">
+                <li class="not-model not-people not-tulpas nonnatural less-important not-functional not-neuro older less-known">
                     <b><a href="https://www.tandfonline.com/doi/full/10.3402/ejpt.v5.22250" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Measuring fragmentation in dissociative identity disorder: the integration measure and relationship to switching and time in therapy</a></b>, M. Rose Barlow, James A. Chu, 2014. <b>Ostrzeżenie: traktuje fuzję ostateczną jako jedyną opcję leczenia.</b>
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -435,7 +447,7 @@
                     </details>
                 </li>
                 
-                <li class="not-tulpas not-neuro not-functional not-treatment public nonnatural less-important older less-known">
+                <li class="not-people not-tulpas not-neuro not-functional not-treatment public nonnatural less-important older less-known">
                     <b><a href="https://www.researchgate.net/publication/237390832_The_dream_character_as_prototype_for_the_multiple_personality_alter" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>The dream character as prototype for the multiple personality alter</a></b>, Deirdre Barrett, 1995. <b>Ostrzeżenie: porusza temat koszmarów sennych i prób samobójczych.</b>
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -445,11 +457,11 @@
                     </details>
                 </li>
 
-                <li class="not-tulpas not-neuro not-functional not-treatment public nonnatural less-important older less-known">
+                <li class="not-model not-people not-tulpas not-neuro not-functional not-treatment public nonnatural less-important older less-known">
                     <b><a href="https://www.researchgate.net/publication/265126428_Dreams_in_Multiple_Personality" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Dreams in Multiple Personality</a></b>, Deirdre Barrett, 1996. <span class="for-aria">Dostępny wyłącznie w formie zdjęć oryginalnego wydania, z tekstem niedostępnym dla czytników ekranowych.</span> <b>Ostrzeżenie: porusza temat wykorzystywania seksualnego, przemocy, w tym przemocy wobec zwierząt, myśli samobójczych i różnego rodzaju koszmarów sennych.</b>
                 </li>
 
-                <li class="not-tulpas not-neuro not-functional public nonnatural older">
+                <li class="not-model not-people not-tulpas not-neuro not-functional public nonnatural older">
                     <b><a href="https://scholarsbank.uoregon.edu/xmlui/bitstream/handle/1794/1396/Diss_1_4_8_OCR_rev.pdf" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>The Phenomenology and Treatment of Extremely Complex Multiple Personality Disorder</a></b>, Richard P. Kluft, M.D., 1988 – opisuje bardzo duże systemy, w tym największy potwierdzony w literaturze naukowej przypadek liczący ponad 4500 osób alterskich. <b>Ostrzeżenie: wspomina o przemocy, w tym seksualnej i rytualnej (bez większych szczegółów), traktuje fuzję ostateczną jako jedyną opcję leczenia i opisuje przypadek leczenia systemu, który wydaje się tej fuzji nie chcieć.</b>
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -459,7 +471,7 @@
                     </details>
                 </li>
 
-                <li class="not-tulpas not-neuro not-functional not-treatment public less-known">
+                <li class="not-model not-tulpas not-neuro not-functional not-treatment public less-known">
                     <b><a href="http://jcn.cognethic.org/jcnv9i2_Schechter.pdf" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Introducing Plurals</a></b>, Elizabeth Schechter, 2024 – przyjmuje własne definicje niektórych używanych w społeczności określeń, ale pomijając ten fakt zawiera jedno z najlepszych wytłumaczeń mnogich doświadczeń w naukowej literaturze. <b>Ostrzeżenie: rozważa argumenty za i przeciw możliwości istnienia wielu osób w jednym ciele i innych doświadczeń, w tym samej możliwości posiadania przez kogokolwiek jakiegoś „ja”.</b>
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -469,7 +481,7 @@
                     </details>
                 </li>
 
-                <li class="not-tulpas not-treatment less-important not-functional not-neuro less-known">
+                <li class="not-model not-people not-tulpas not-treatment less-important not-functional not-neuro less-known">
                     <b><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/cpp.2910" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Conceptualizing multiplicity spectrum experiences: A systematic review and thematic synthesis</a></b>,  Zarah Eve, Kim Heyes, Sarah Parry, 2023 – przyjmuje definicję wielorakości jako wyłącznie niepatologicznego doświadczenia, chociaż także zaburzone systemy często identyfikują się jako wielorakie, ale poza tym zawiera niezwykle trafne podsumowanie różnych trudności, z którymi nasza społeczność zmaga się w społeczeństwie. <b>Ostrzeżenie: porusza temat stygmatyzacji i medykalizacji mnogich doświadczeń i bagatelizowania perspektywy systemów.</b>
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -491,7 +503,7 @@
                     </details>
                 </li>
                 
-                <li class="not-tulpas not-neuro less-important not-functional not-treatment public less-known">
+                <li class="not-model not-people not-tulpas not-neuro less-important not-functional not-treatment public less-known">
                     <b><a href="https://link.springer.com/article/10.1007/s40653-021-00377-7" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Exploring the Utility and Personal Relevance of Co-Produced Multiplicity Resources with Young People</a></b>, Sarah Parry, Zarah Eve, Gemma Myers, 2021. <b>Ostrzeżenie: endofobia w odpowiedziach niektórych osób uczestniczących.</b>
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -501,7 +513,7 @@
                     </details>
                 </li>
 
-                <li class="not-tulpas not-neuro not-functional not-treatment public less-important older">
+                <li class="not-model not-people not-tulpas not-neuro not-functional not-treatment public less-important older">
                     <b><a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2017.00938/full" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Multiplicity: An Explorative Interview Study on Personal Experiences of People with Multiple Selves</a></b>, Gergő Ribáry, László Lajtai, Zsolt Demetrovics, Aniko Maraz, 2017. <b>Ostrzeżenie: transfobia.</b>
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -523,7 +535,7 @@
                     </details>
                 </li>
                 
-                <li class="not-neuro not-functional not-treatment public notdid less-known">
+                <li class="not-model not-people not-neuro not-functional not-treatment public notdid less-known">
                     <b><a href="https://www.researchgate.net/publication/368815645_Learning_to_Discern_the_Voices_of_Gods_Spirits_Tulpas_and_the_Dead" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Learning to Discern the Voices of Gods, Spirits, Tulpas, and the Dead</a></b>, T. M. Luhrmann, Ben Alderson-Day, Ann Chen, Philip Corlett, Quinton Deeley, David Dupuis, Michael Lifshitz, Peter Moseley, Emmanuelle Peters, Adam Powell, Albert Powers, 2023. 
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -533,7 +545,17 @@
                     </details>
                 </li>
                 
-                <li class="not-neuro not-functional not-treatment public notdid older">
+                <li class="not-model not-treatment notdid less-important not-functional not-neuro older">
+                    <b><a href="https://www.researchgate.net/publication/278671032_Varieties_of_Tulpa_Experiences_The_Hypnotic_Nature_of_Human_Sociality_Personhood_and_Interphenomenality" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Varieties of Tulpa Experiences: The Hypnotic Nature of Human Sociality, Personhood, and Interphenomenality</a></b>, Samuel Veissiere, 2016.
+                    <details>
+                        <summary>Tłumaczenie streszczenia</summary>
+                        <p>
+                            Ten rozdział szkicuje zarysy kulturowej neurofenomenologii socjalności – tendencji do tworzenia kooperacyjnych grup i doświadczania wspólnych sposobów istnienia i przedstawiania doświadczeń. Wprowadzam pojęcie interfenomenalności, żeby opisać zmysłowe, odpowiadające na pytanie „jakie to uczucie?” aspekty życiowego doświadczenia ludzi którzy wypracowują sobie podobne sposoby odczuwania i narracji swoich Jaźni. Robiąc to, argumentuję, że bycie osobą jest kształtowane, wywoływane i automatyzowane w ontogenezie poprzez wybiórcze procesy wspólnej uwagi, które najtrafniej opisane są jako hipnotyczne. Omawiam wyłaniającą się kulturę tulpomancji jako przykładowy przypadek do teoretyzowania tych mechanizmów. Tulpy, termin pożyczony z tybetańskiego Buddyzmu, są świadomymi wymyślonymi osobami towarzyskimi wyczarowanymi przez „myśloformową” praktykę medytacyjną. Tulpomancja, argumentuję, rzuca światło na fundamentalnie ludzkie kulturowo-neurofenomenalne mechanizmy poprzez które przelotne, hipnotyczne, asymetrycznie zbiorowe, ale somatycznie zakotwiczone doświadczenia bycia osobą niewzruszenie powstają – i mogą być zmienione!
+                        </p>
+                    </details>
+                </li>
+                
+                <li class="not-model not-people not-neuro not-functional not-treatment public notdid older">
                     <b><a href="http://pubs.sciepub.com/rpbs/5/2/1/index.html" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Tulpas and Mental Health: A Study of Non-Traumagenic Plural Experiences</a></b>, Jacob J. Isler, 2017.
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -542,8 +564,18 @@
                         </p>
                     </details> 
                 </li>
+                
+                <li class="not-treatment notdid less-important not-functional not-neuro less-known not-people not-model">
+                    <b><a href="https://osf.io/preprints/psyarxiv/5t3xk" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Personality Characteristics of Tulpamancers and Their Tulpas</a></b>, Anna N. Martin, Bailey A. Thompson, Steven L. Lancaster, PhD, 2020.
+                    <details>
+                        <summary>Tłumaczenie streszczenia</summary>
+                        <p>
+                            Tulpomancja to praktyka polegająca na tworzeniu wyobrażonych, świadomych istot towarzyskich, tulp, które mieszkają wewnątrz umysłu swojego ludzkiego hosta. Głównym celem tego badania jest przyjrzenie się cechom osobowości tulp i ich osób gospodarujących. Następnie zbadaliśmy rolę podobieństwa osobowości w przewidywaniu satysfakcji z relacji. Osoby z tulpami wypełniły internetową ankietę osobowości osoby gospodarującej i tulpy oraz skalę satysfakcji z relacji osoby gospodarującej. Nasze wcześniej zarejestrowane analizy (https://aspredicted.org/blind.php?x= bi484h) wykazały, że osoby gospodarujące zgłaszały pozytywne doświadczenia ze swoimi tulpami. Chociaż przewidywaliśmy, że osobowości osoby gospodarującej i tulpy będą komplementarne, nasze wyniki wskazały na to, że są bardziej zgodne z perspektywą podobieństwa. Na koniec nasza hipoteza, że osobowości osób gospodarujących i tulp będą powiązane z postrzeganą satysfakcją z relacji, okazała się wspierana danymi dla konkretnych cech osobowości. Nasze wyniki zapewniają dowody na to, że relacja tulpa-host może funkcjonować jako korzystny mechanizm w życiu osoby gospodarującej.
+                        </p>
+                    </details>
+                </li>
 
-                <li class="not-neuro not-functional not-treatment public notdid less-important older less-known">
+                <li class="not-model not-people not-neuro not-functional not-treatment public notdid less-important older less-known">
                     <b><a href="https://escholarship.org/uc/item/9qh54616" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Imaginary Friends: Helpful or Harmful?</a></b>, Laura D Klivans, 2016. <b>Ostrzeżenie: porusza temat rozstania z bliską osobą.</b>
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -581,7 +613,7 @@
                     </details>
                 </li>
                 
-                <li class="not-tulpas not-neuro not-functional not-treatment public notdid less-important less-known">
+                <li class="not-model not-people not-tulpas not-neuro not-functional not-treatment public notdid less-important less-known">
                     <b><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7068700/" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>‘I’ve learned I need to treat my characters like people’: Varieties of agency and interaction in Writers’ experiences of their Characters’ Voices</a></b>, John Foxwell, Ben Alderson-Day, Charles Fernyhough, Angela Woods, 2020.
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -591,7 +623,7 @@
                     </details>
                 </li>
 
-                <li class="not-tulpas not-neuro not-functional less-important not-treatment public older less-known">
+                <li class="not-model not-people not-tulpas not-neuro not-functional less-important not-treatment public older less-known">
                     <b><a href="https://jdc.jefferson.edu/jeffjpsychiatry/vol9/iss1/3/" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Multiple Personality and Channeling</a></b>, Rayna L. Rogers, D.O., 1991. <b>Ostrzeżenie: opisuje pozycję osób, które uznawały MPD za udawane.</b>
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -601,7 +633,7 @@
                     </details>
                 </li>
                 
-                <li class="not-tulpas not-neuro not-functional not-treatment public nonnatural less-important less-known">
+                <li class="not-model not-people not-tulpas not-neuro not-functional not-treatment public nonnatural less-important less-known">
                     <b><a href="https://scholarship.claremont.edu/scripps_theses/1768/" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Altered Speech: A case-study of identity-driven speech in a Dissociative Identity Disorder system</a></b>, Sarah Domin, 2020.
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -611,7 +643,7 @@
                     </details>
                 </li>
 
-                <li class="not-tulpas not-neuro not-functional not-treatment public notplural less-important less-known">
+                <li class="not-model not-people not-tulpas not-neuro not-functional not-treatment public notplural less-important less-known">
                     <b><a href="https://www.mdpi.com/2073-4425/13/5/843" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>The Molecular Genetics of Dissociative Symptomatology: A Transdiagnostic Literature Review</a></b>, Ravi Philip Rajkumar, 2022.
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -621,7 +653,7 @@
                     </details>
                 </li>
 
-                <li class="not-tulpas not-functional notplural not-treatment less-important older less-known">
+                <li class="not-model not-people not-tulpas not-functional notplural not-treatment less-important older less-known">
                     <b><a href="https://www.frontiersin.org/articles/10.3389/fnhum.2014.00070/full" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Voluntary out-of-body experience: an fMRI study</a></b>, Andra M. Smith, Claude Messier, 2014 – badanie co prawda przeprowadzone na singletce, ale całkiem możliwe, że mechanizm <a href="../frontowanie#projekcja" class="internal">projekcji</a> na życzenie, doświadczanej przez niektóre systemy, nie będzie się mocno od tego różnił.
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -631,7 +663,7 @@
                     </details>
                 </li>
                 
-                <li class="not-tulpas not-functional not-treatment notpublic nonnatural less-important less-known">
+                <li class="not-model not-tulpas not-functional not-treatment notpublic nonnatural less-important less-known">
                     <b><a href="https://www.sciencedirect.com/science/article/abs/pii/S2468749919300699" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Problem of “otherness” in dissociative disorder</a></b>, Kenichiro Okano, 2021. (Brak publicznego dostępu)
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -657,7 +689,7 @@
                     </details>
                 </li>
                 
-                <li class="not-tulpas notpublic not-treatment nonnatural older less-known">
+                <li class="not-model not-people not-tulpas notpublic not-treatment not-functional nonnatural older less-known">
                     <b><a href="https://www.tandfonline.com/doi/full/10.1080/17588928.2012.669750" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Voluntary switching between identities in dissociative identity disorder: A functional MRI case study</a></b>, R. L. Savoy, B. B. Frederick, A. S. Keuroghlian, P. C. Wolk, 2012. (Brak publicznego dostępu)
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -667,7 +699,7 @@
                     </details>
                 </li>
                 
-                <li class="not-tulpas not-functional not-treatment notpublic nonnatural older">
+                <li class="not-model not-people not-tulpas not-functional not-treatment notpublic nonnatural older">
                     <b><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/pchj.109" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Sight and blindness in the same person: Gating in the visual system</a></b>, Hans Strasburger, Bruno Waldvogel, 2015. (Brak publicznego dostępu)
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -677,7 +709,7 @@
                     </details>
                 </li>
                 
-                <li class="notpublic nonnatural less-important not-functional not-neuro older less-known not-tulpas">
+                <li class="not-model not-people notpublic nonnatural less-important not-functional not-neuro older less-known not-tulpas">
                     <b><a href="https://www.tandfonline.com/doi/abs/10.1300/J229v02n04_02" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Contextual Treatment of Dissociative Identity Disorder</a></b>, Steven N. Gold, PhD, Jon D. Elhai, PhD, Bayard D. Rea, MS, Donna Weiss, PsyD, Theodore Masino, MS, Staci Leon Morris, PsyD, Jessica McIninch, MS, 2008. (Brak publicznego dostępu)
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -687,11 +719,11 @@
                     </details>
                 </li>
 
-                <li class="not-tulpas notpublic nonnatural not-functional not-neuro older less-known">
+                <li class="not-model not-people not-tulpas notpublic nonnatural not-functional not-neuro older less-known">
                     <b>Dissociative children: bridging the inner and outer worlds</b>, Lynda Shirar, 1996. (Książka)
                 </li>
                 
-                <li class="not-tulpas notpublic nonnatural less-important not-functional not-neuro older less-known">
+                <li class="not-model not-people not-tulpas notpublic nonnatural less-important not-functional not-neuro older less-known">
                     <b><a href="https://www.sciencedirect.com/science/article/abs/pii/S0193953X18307858?via%3Dihub" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Multiple Personality in Childhood</a></b>, Richard P. Kluft M.D, 1984. (Brak publicznego dostępu)
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -701,7 +733,7 @@
                     </details>
                 </li>
                 
-                <li class="not-tulpas notpublic not-treatment nonnatural notplural notdid not-functional not-neuro less-known">
+                <li class="not-model not-people not-tulpas notpublic not-treatment nonnatural notplural notdid not-functional not-neuro less-known">
                     <b><a href="https://www.tandfonline.com/doi/abs/10.1080/15299732.2020.1719260" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Demystifying ritual abuse – insights by self-identified victims and health care professionals</a></b>, Johanna Schröder, PhD, Susanne Nick, Psych, Hertha Richter-Appelt, PhD Prof, Peer Briken, MD Prof, 2020. (Brak publicznego dostępu)
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -723,7 +755,7 @@
                     </details>
                 </li>
 
-                <li class="not-tulpas not-functional not-treatment notpublic nonnatural less-important older less-known">
+                <li class="not-model not-people not-tulpas not-functional not-treatment notpublic nonnatural less-important older less-known">
                     <b><a href="https://www.sciencedirect.com/science/article/abs/pii/S000632230600388X" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Psychobiological Characteristics of Dissociative Identity Disorder: A Symptom Provocation Study</a></b>, A.A.T. Simone Reinders, Ellert R.S. Nijenhuis, Jacqueline Quak, Jakob Korf, Jaap Haaksma, Anne M.J. Paans, Antoon T.M. Willemsen, Johan A. den Boer, 2006. (Brak publicznego dostępu)
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -745,7 +777,7 @@
                     </details>
                 </li>
                 
-                <li class="not-tulpas not-neuro not-functional not-treatment notpublic less-important older">
+                <li class="not-model not-people not-tulpas not-neuro not-functional not-treatment notpublic less-important older">
                     <b><a href="https://pubmed.ncbi.nlm.nih.gov/18477886/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Comparision of brazilian spiritist mediumship and dissociative identity disorder</a></b>, Alexander Moreira-Almeida, Francisco Lotufo Neto, Etzel Cardeña, 2008. (Brak publicznego dostępu)
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -755,7 +787,7 @@
                     </details>
                 </li>
                 
-                <li class="notpublic not-neuro not-functional not-treatment notdid less-important older">
+                <li class="not-model not-people notpublic not-neuro not-functional not-treatment notdid less-important older">
                     <b><a href="https://online.ucpress.edu/nr/article-abstract/19/1/87/70982/Tracking-the-TulpaExploring-the-Tibetan-Origins-of" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Tracking the Tulpa: Exploring the “Tibetan” Origins of a Contemporary Paranormal Idea</a></b>, Natasha L. Mikles, Joseph P. Laycock, 2015. (Brak publicznego dostępu)
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -765,7 +797,7 @@
                     </details>
                 </li>
                 
-                <li class="notpublic not-neuro not-treatment notdid less-important older less-known">
+                <li class="not-model not-people notpublic not-neuro not-treatment not-functional notdid less-important older less-known">
                     <b><a href="https://academic.oup.com/book/35192/chapter-abstract/299571358" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Plurality Through Imagination: The Emergence of Online Tulpa Communities in the Making of New Identities</a></b>, Christopher Laursen, 2019. (Brak publicznego dostępu)
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -775,7 +807,7 @@
                     </details>
                 </li>
                 
-                <li class="not-tulpas not-neuro not-functional not-treatment notpublic notdid older">
+                <li class="not-model not-people not-tulpas not-neuro not-functional not-treatment notpublic notdid older">
                     <b><a href="https://journals.sagepub.com/doi/abs/10.2190/FTG3-Q9T0-7U26-5Q5X" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>The Illusion of Independent Agency: Do Adult Fiction Writers Experience Their Characters as Having Minds of Their Own?</a></b>, Marjorie Taylor, Sara D. Hodges, Adèle Kohányi, 2003. (Brak publicznego dostępu)
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -785,7 +817,7 @@
                     </details>
                 </li>
                 
-                <li class="not-tulpas not-neuro not-functional not-treatment notpublic notdid less-important less-known">
+                <li class="not-people not-tulpas not-neuro not-functional not-treatment notpublic notdid less-important less-known">
                     <b><a href="https://www.tandfonline.com/doi/abs/10.1080/09515089.2022.2043265" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Explaining the illusion of independent agency in imagined persons with a theory of practice</a></b>, Jim Davies, 2021. (Brak publicznego dostępu)
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -795,7 +827,7 @@
                     </details>
                 </li>
                 
-                <li class="not-tulpas not-neuro not-functional not-treatment notpublic less-known">
+                <li class="not-model not-people not-tulpas not-neuro not-functional not-treatment notpublic less-known">
                     <b><a href="https://www.sciencedirect.com/science/article/abs/pii/S246874992300042X" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>It's just a body: A community-based participatory exploration of the experiences and health care needs for transgender plural people</a></b>, Susan C. Turell, Christopher Wolf-Gould, Sana Flynn, Silver Mckie, Matthew A. Adan, The Redwoods, 2023. (Brak publicznego dostępu)
                     <details>
                         <summary>Tłumaczenie streszczenia</summary>
@@ -812,7 +844,7 @@
             </p>
 
             <p>
-                <i>Ostatnia aktualizacja: 16.11.2024</i>
+                <i>Ostatnia aktualizacja: 17.11.2024</i>
             </p>
 
             <!-- 
@@ -829,7 +861,7 @@ https://www.researchgate.net/publication/359815494_Dissociation_in_Autism_Spectr
 
             https://e-space.mmu.ac.uk/628170/ young people with multiplicity
 
-            https://www.tandfonline.com/doi/abs/10.1300/J229v02n04_02 contextual treatment (focusing on feeling and functioning in the present)
+            https://journals.colorado.edu/index.php/next/article/view/2685 The Inner Vehicle Prayer, Tulpamancy, and the Magic of the Mind
 
             https://www.tandfonline.com/doi/full/10.1080/15299732.2011.570592 Dissociation in Trauma: A New Definition and Comparison with Previous Formulations - authors of ToSD on non-pathological plurality (last section)
 

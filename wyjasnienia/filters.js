@@ -183,3 +183,18 @@ function persons(){
     }
     notPeopleHidden = !notPeopleHidden
 }
+
+let notModelsHidden = false
+
+function models(){
+    let elements = document.querySelectorAll(".not-model");
+    for(let i = 0; i < elements.length; i ++){
+        if(!notModelsHidden){
+            elements[i].style.display = "none";
+        }
+        else{
+            elements[i].style.display = "list-item";
+        }
+    }
+    notModelsHidden = !notModelsHidden
+}

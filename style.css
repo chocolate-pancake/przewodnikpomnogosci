@@ -1035,7 +1035,7 @@ h1 p {
     top: -20vh;
 }
 
-.target:target + h2, .target:target + h3, .target:target + h4, .target:target + dfn, .target:target + li {
+.target:target + h2, .target:target + h3, .target:target + h4, .target:target + dfn, .target:target + li, .target:target + a {
     animation: highlight 1s ease-in-out 1;
 }
 

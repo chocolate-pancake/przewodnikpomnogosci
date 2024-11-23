@@ -773,7 +773,7 @@ p.results {
 
 /* WODA WODA WODA WODA - Kompsognat */
 
-.setting:hover ~ .radio {
+.setting:hover ~ .radio, .setting:focus ~ .radio {
     box-shadow: 0px 0px 0.2rem 0.2rem var(--blue-glow);
     /* was pink-glow */
     background-color: rgb(70, 70, 70);
@@ -798,6 +798,10 @@ p.results {
     box-shadow: 0px 0px 0.2rem 0.2rem var(--dark-blue);
 }
 
+.setting:checked:hover ~ .radio, .setting:checked:focus ~ .radio {
+    box-shadow: 0px 0px 0.2rem 0.2rem var(--blue-glow);
+}
+
 .box-setting {
     position: absolute;
     opacity: 0;
@@ -818,7 +822,7 @@ p.results {
     transition: 0.5s;
 }
 
-.box-setting:hover ~ .checkbox {
+.box-setting:hover ~ .checkbox, .box-setting:focus ~ .checkbox {
     box-shadow: 0px 0px 0.2rem 0.2rem var(--blue-glow);
     /* was pink glow */
     background-color: rgb(70, 70, 70);
@@ -840,6 +844,10 @@ p.results {
 
 .box-setting:checked ~ .checkbox {
     box-shadow: 0px 0px 1.25rem 1.25rem inset var(--dark-blue);
+}
+
+.box-setting:checked:hover ~ .checkbox, .box-setting:checked:focus ~ .checkbox {
+    box-shadow: 0px 0px 1.25rem 1.25rem inset var(--dark-blue), 0px 0px 0.2rem 0.2rem var(--blue-glow);
 }
 
 main {

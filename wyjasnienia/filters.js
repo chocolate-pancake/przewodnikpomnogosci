@@ -198,3 +198,18 @@ function models(){
     }
     notModelsHidden = !notModelsHidden
 }
+
+let notSwitchingHidden = false
+
+function switching(){
+    let elements = document.querySelectorAll(".not-switching");
+    for(let i = 0; i < elements.length; i ++){
+        if(!notSwitchingHidden){
+            elements[i].style.display = "none";
+        }
+        else{
+            elements[i].style.display = "list-item";
+        }
+    }
+    notSwitchingHidden = !notSwitchingHidden
+}

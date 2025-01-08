@@ -213,3 +213,30 @@ function switching(){
     }
     notSwitchingHidden = !notSwitchingHidden
 }
+
+
+
+
+
+
+function compare(p1, p2){
+    let nr1 = parseInt(p1.dataset.order);
+    let nr2 = parseInt(p2.dataset.order);
+    if(nr1>nr2){
+        return -1;
+    }
+    if(nr1<nr2){
+        return 1;
+    }
+    return 0;
+}
+
+function sortList(){
+    let list = document.getElementById("main-list");
+    let papers = document.querySelectorAll("#main-list>li");
+    papers = Array.prototype.slice.call(papers, 0);
+    papers.sort(compare);
+    for(let i = 0; i < papers.length; i++){
+        list.append(papers[i]);
+    }
+}

@@ -16,3 +16,18 @@
 li {
     margin-bottom: 1rem;
 }
+
+#sort {
+    display: block;
+    padding: 0.25rem;
+    margin: 1rem;
+    margin-left: 1.5rem;
+    border-radius: 0.1rem;
+    transition: box-shadow 0.5s, border-color 0.5s;
+    cursor: pointer;
+}
+
+#sort:hover, #sort:focus {
+    box-shadow: 0px 0px 0.25rem 0.25rem var(--dark-blue);
+    border-color: var(--dark-blue);
+}

@@ -214,6 +214,21 @@ function switching(){
     notSwitchingHidden = !notSwitchingHidden
 }
 
+let notPolishHidden = false
+
+function polish(){
+    let elements = document.querySelectorAll(".not-polish");
+    for(let i = 0; i < elements.length; i ++){
+        if(!notPolishHidden){
+            elements[i].style.display = "none";
+        }
+        else{
+            elements[i].style.display = "list-item";
+        }
+    }
+    notPolishHidden = !notPolishHidden
+}
+
 
 
 

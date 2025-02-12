@@ -47,7 +47,13 @@
                     <span id="title">Przewodnik po Mnogości</span>
                 </a>
             </div>
-            <div class="divider">
+            <div class="divider rdiv">
+                <button class="search mobile" aria-label="wyszukaj" onclick="showSearchInput()">
+                    <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                        <circle cx="35%" cy="35%" r="30%"/>
+                        <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                    </svg>
+                </button>
                 <form class="search" action="https://przewodnikpomnogosci.pl/wyszukaj" role="search">
                     <button type="submit" class="search" aria-label="wyszukaj">
                         <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
@@ -58,6 +64,15 @@
                     <input type="search" class="search" name="q" minlength="1" placeholder="wyszukaj" required>
                     
                 </form>
+                <details class="language-select">
+                    <summary><span class="for-aria">Wybierz język</span>&#127477&#127473</summary>
+                    <div class="language-options">
+                        <div  class="language-option active">&#127477&#127473</div>
+                        <!-- <a href="https://przewodnikpomnogosci.pl/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
+                        <a href="https://przewodnikpomnogosci.pl/en/" class="language-option">&#127482&#127480</a>
+                        <!-- <a href="https://przewodnikpomnogosci.pl/ru/" class="language-option">&#127479&#127482</a> -->
+                    </div>
+                </details>
                 <a href="ustawienia" class="settings desktop">
                     <img src="settings.png" alt="ustawienia i dostępność">
                 </a>
@@ -127,25 +142,9 @@
                 Obejrzyj <a href="https://youtu.be/FcxoP3DSlMA" target="_blank" rel="noopener noreferrer" class="external">omówienie podstawowej terminologii na YouTube</a>.
             </p>
 
-            <!-- 
-                Zastanawiam się, czy wciskanie tutaj tych wszystkich określeń nie było błędem - Natasza
-                Być może - Jonatan
-                Nie oszukujmy się, i tak tego już nie usuniesz, więc po co się zastanawiać? - Tomek
-                Może można by było zebrać w jakimś miejscu najczęściej używane określenia, dla większej przejrzystości - Nilda
-                Albo oznaczyć tutaj, jak często są używane - Romeo
-                To jest w sumie dobry pomysł i tak chyba zrobimy. I być może nadmienić o tym na głównej - Natasza
-                Uwaga, wchodzicie na obszar nerda, zamęt w głowie gwarantowany XD - Jonatan
-                Dobrze będzie, żeby ludzie się nie przerażali, że muszą się tego wszystkiego nauczyć, żeby wspierać znajome systemy - Sticky
-             -->
-
             <p>
                 Jako że w innych miejscach witryny używamy <a href="https://zaimki.pl/osobatywy" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>osobatywów</a>, zdecydowałośmy się korzystać z nich także tutaj. Jeżeli szukasz znaczenia słowa „introjekt”, znajdziesz je pod „osobą introjektową”, „władczyni stworzeń” – pod „osobą władczą stworzeń” i tak dalej.
             </p>
-
-            <!-- 
-                Wiem, zrobimy tutaj dwa podrozdziały, w jednym będą tylko podstawowe określenia, a w drugim wszystkie - Natasza
-                Już mnie boli, ile to pracy będzie - Tomek
-             -->
 
             <fieldset class="contents">
                 <legend>Spis treści</legend>

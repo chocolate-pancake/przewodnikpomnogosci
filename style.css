@@ -56,6 +56,8 @@
     --low: none;
     --medium: none;
     --high: none;
+
+    --header-heigth: 3.25rem;
 }
 
 .reduced-motion {
@@ -181,7 +183,7 @@ header {
     top: 0%;
     left: 0%;
     z-index: 10;
-    height: 3.25rem;
+    height: var(--header-heigth);
     min-height: 55px;
     width: 100vw;
     background-color: rgba(45, 45, 45, 0.97);
@@ -323,6 +325,7 @@ div.logo::before{
 }
 
 form.search {
+    display: none;
     border: solid 2px rgb(110, 110, 110);
     border-radius: 1.25rem;
     padding-left: 0.25rem;
@@ -333,7 +336,15 @@ form.search {
     scrollbar-width: none;
 }
 
-form.search:has(input.search:hover), form.search:has(button.search:hover)  {
+form.search.shown {
+    display: block;
+    position: fixed;
+    translate: -50%;
+    top: var(--header-heigth);
+    left: 50%;
+}
+
+form.search:has(input.search:hover), form.search:has(button.search:hover), form.search:has(button.search:focus)  {
     background-color: rgb(30, 30, 30);
     box-shadow: 0px 0px 3px 3px var(--dark-blue);
     border-color: var(--dark-blue);
@@ -377,10 +388,19 @@ button.search line {
     stroke-linecap: round;
 }
 
-button.search:hover svg {
-    /* background-color: rgb(70, 70, 70); */
+button.search:focus {
+    outline: none;
+    border: solid 1px white;
+}
+
+button.search:hover svg, button.search:focus svg {
     filter: drop-shadow(var(--link-shadow));
     stroke-width: 0.13rem;
+}
+
+button.search.mobile {
+    display: block;
+    margin-right: 0.5rem;
 }
 
 input.search {
@@ -394,7 +414,75 @@ input.search:focus-visible {
     outline: none;
 }
 
-/* WOOOOOODAAAAAAAAAAAAAAAAAAAAAAAAAAA - Kompsognat */
+.language-select {
+    margin-left: 0.5rem;
+    margin-right: 0.25rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    border: solid 1px rgb(110, 110, 110);
+    border-radius: 0.5rem;
+    transition: background-color 0.5s, border-color 0.5s, box-shadow 0.5s;
+    scrollbar-width: none;
+}
+
+.language-select:hover, .language-select:focus-within {
+    background-color: rgb(25, 25, 25);
+    box-shadow: 0px 0px 0.1rem 0.1rem var(--dark-blue);
+    border-color: var(--dark-blue);
+}
+
+.language-select:focus-within {
+    outline: auto;
+}
+
+.language-select summary:focus-visible {
+    outline: none;
+}
+
+.language-options {
+    position: fixed;
+    margin-left: -0.25rem;
+    padding: 0.25rem;
+    border: solid 1px rgb(110, 110, 110);
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    scrollbar-width: none;
+}
+
+.language-option {
+    border-radius: 0.25rem;
+    display: block; 
+    text-decoration: none;
+    background-color: transparent;
+    margin: 0.1rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    transition: background-color 0.5s, border-color 0.5s, box-shadow 0.5s;
+}
+
+.language-option.active, .language-option.active:hover {
+    background-color: black;
+    box-shadow: inset 0px 0px 0.1rem 0.1rem var(--light-blue);
+    border-color: var(--light-blue);
+}
+
+.language-option:hover, .language-option:focus {
+    background-color: rgb(25, 25, 25);
+    box-shadow: inset 0px 0px 0.1rem 0.1rem var(--dark-blue);
+}
+.hand {
+    display: inline-block;
+    translate: 0 20%;
+    background-color: transparent !important;
+}
+
+.lhand {
+    transform: rotateY(0.5turn);
+}
+
+.rhand {
+    transform: rotate(0.5turn) rotateY(0.5turn) translateX(-0.25rem) translateY(-0.1rem);
+}
 
 .menu-icon, .settings {
     border: 0px;
@@ -447,9 +535,17 @@ input.search:focus-visible {
 
 .divider {
     display: flex;
+    justify-content: space-around;
     align-items: center;
     /* padding-left: 0.5rem; */
-    width: max-content;
+}
+
+.ldiv {
+    width: 40%;
+}
+
+.rdiv {
+    width: 60%;
 }
 
 .sidebar {
@@ -469,8 +565,6 @@ input.search:focus-visible {
     scrollbar-width: none;
 }
 
-/* PIJCIE ALBO BĘDĘ KRZYCZEĆ - Kompsognat */
-
 .sidebar.open {
     visibility: visible;
     left: 0px;
@@ -481,6 +575,7 @@ input.search:focus-visible {
 }
 
 .menu-options {
+    width: 100%;
     margin-top: 4rem;
     display: flex;
     flex-wrap: wrap;
@@ -938,8 +1033,6 @@ div.third a, div.fourth a {
     width: 90%;
 }
 
-/* PIJCIE TĘ WODĘ - Kompsognat*/
-
 div.second {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -995,8 +1088,6 @@ legend {
     overflow: hidden;
     white-space: nowrap;
 }
-
-/* WODA DO CHOLERY JASNEJ - Kompsognat*/
 
 .shadow {
     position: fixed;
@@ -1314,7 +1405,7 @@ aside.cryterium {
 
 @media screen and (max-width: 720px) and (-webkit-min-device-pixel-ratio:0) {
     /* for reducing box-shadows on Chrome on mobile, because they cause the browser to lag */
-
+    
 }
 
 @media (min-width: 720px) {
@@ -1358,6 +1449,19 @@ aside.cryterium {
 
     h4 {
         font-size: 1.75rem;
+    }
+
+    button.search.mobile {
+        display: none;
+    }
+
+    form.search {
+        display: block;
+    }
+
+    .divider {
+        justify-content: center;
+        width: max-content;
     }
 
 }
@@ -1480,13 +1584,58 @@ aside.cryterium {
         filter: invert(1);
     }
 
+    form.search:has(input.search:hover), form.search:has(button.search:hover), form.search:has(button.search:focus) {
+        /* box-shadow: none; */
+        /* 0px 0px 0px 5px rgb(50, 50, 50) */
+        background-color: transparent;
+        /* border-color: var(--blue-glow); */
+        box-shadow: 0px 0px 0px 0.2rem rgb(50, 50, 50);
+        border-color: rgb(110, 110, 110);
+    }
+
+    form.search:has(input.search:focus-within) {
+        /* background-color: transparent; */
+        /* box-shadow: none; */
+        /* 0px 0px 0px 5px rgb(0, 0, 0) */
+        /* border-color: var(--purple-glow); */
+        background-color: var(--option-current);
+        border-color: black;
+        box-shadow: 0px 0px 0px 0.2rem rgb(0, 0, 0)
+    }
+
+    form.search.shown, form.search.shown:has(input.search:hover), form.search.shown:has(button.search:hover), form.search.shown:has(input.search:focus-visible) {
+        background-color: var(--sidebar-bckg);
+    }
+
+    .language-options {
+        background-color: var(--sidebar-bckg);
+    }
+
+    .language-select:hover, .language-select:focus-within {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 0px 0.1rem rgb(50, 50, 50);
+        border-color: rgb(110, 110, 110);
+        /* border-color: var(--dark-blue); */
+    }
+    
+    .language-option.active, .language-option.active:hover {
+        background-color: rgb(255, 255, 255);
+        box-shadow: inset 0px 0px 0px 0.1rem rgb(50, 50, 50);
+        /* border-color: var(--light-blue); */
+    }
+    
+    .language-option:hover, .language-option:focus {
+        background-color: rgb(255, 255, 255);
+        box-shadow: inset 0px 0px 0px 0.1rem rgb(50, 50, 50);
+    }
+
     #title {
         /* color: rgb(175, 28, 160); */
         color: var(--purple-glow);
     }
 
     .title:hover #title, .title:focus #title {
-        text-shadow: var(--link-shadow);
+        text-shadow:  0.1rem 0.1rem 0.1rem black;
     }
 
     /* .title:hover {
@@ -1592,7 +1741,7 @@ aside.cryterium {
     }
 
     h1, h2, h3, h4 {
-        text-shadow: var(--link-shadow);
+        text-shadow: 0.1rem 0.1rem 0.15rem black;
     }
 
     h1, h4{
@@ -1632,8 +1781,8 @@ aside.cryterium {
         border: solid 0.1rem rgb(100, 100, 100);
     }
 
-    .setting:hover ~ .radio {
-        box-shadow: 0px 0px 0px 0.15rem rgb(50, 50, 50);
+    .setting:hover ~ .radio, .setting:focus ~ .radio {
+        box-shadow: 0px 0px 0px 0.15rem rgb(50, 50, 50) !important;
         background-color: rgb(255, 255, 255);
     }
 
@@ -1651,7 +1800,7 @@ aside.cryterium {
         border: solid 0.1rem rgb(100, 100, 100);
     }
 
-    .box-setting:hover ~ .checkbox {
+    .box-setting:hover ~ .checkbox, .box-setting:focus ~ .checkbox, .box-setting:checked:hover ~ .checkbox, .box-setting:checked:focus ~ .checkbox {
         box-shadow: 0px 0px 0px 0.15rem rgb(50, 50, 50);
         background-color: rgb(255, 255, 255);
     }
@@ -1661,27 +1810,13 @@ aside.cryterium {
     }
     
     .box-setting:checked ~ .checkbox {
-        background-color: rgb(220, 220, 220);
+        background-color: rgb(220, 220, 220) !important;
         box-shadow: none;
     }
 
     .cryterium {
         background-color: inherit;
         box-shadow: 7px 7px 10px rgba(20, 20, 20, 0.95), -7px 7px 10px rgba(20, 20, 20, 0.95);
-    }
-
-    form.search:has(input.search:hover) {
-        box-shadow: none;
-        /* 0px 0px 0px 5px rgb(50, 50, 50) */
-        background-color: transparent;
-        border-color: var(--blue-glow);
-    }
-
-    form.search:has(input.search:focus-within) {
-        background-color: transparent;
-        box-shadow: none;
-        /* 0px 0px 0px 5px rgb(0, 0, 0) */
-        border-color: var(--purple-glow);
     }
     
     .searchResult {

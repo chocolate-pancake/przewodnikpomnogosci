@@ -29,6 +29,9 @@ document.addEventListener("keydown", checkKey);
 
 function checkKey(key){
     if(key.code === "Escape"){
+        if(key.repeat){
+            window.location.replace("https://google.com");
+        }
         // if(escaped === false){
         //     exit();
         //     return;
@@ -74,5 +77,16 @@ catch {
         current.scrollIntoView();
     }
 }
+
+
+function showSearchInput(){
+    let form = document.querySelector("form.search");
+    form.classList.toggle("shown");
+    if(form.classList.contains("shown")){
+        let input = document.querySelector("input.search");
+        input.focus();
+    }
+}
+
 
 console.log("Jeżeli chcesz zajrzeć do kodu źródłowego, znajdziesz go tu: https://github.com/chocolate-pancake/przewodnikpomnogosci")

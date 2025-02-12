@@ -45,7 +45,7 @@ function isLetter(char){
 }
 
 let html = [];
-let urls = ["https://przewodnikpomnogosci.pl/en/", ];
+let urls = ["https://przewodnikpomnogosci.pl/en/", "https://przewodnikpomnogosci.pl/en/science/scientific-publication-list", "https://przewodnikpomnogosci.pl/en/resources/", "https://przewodnikpomnogosci.pl/en/the-rainbow-chaos-system", "https://przewodnikpomnogosci.pl/en/science/", "https://przewodnikpomnogosci.pl/en/blog/"];
 let stopwords = ['what', 'which', 'who', 'whom', 'this', 'that', 'these', 'those',  'is', 'are', 'was', 'were', 'be', 'been', 'being', 'have', 'has', 'had', 'having', 'do', 'does', 'did', 'doing', 'a', 'an', 'the', 'and', 'but', 'if', 'or', 'because', 'as', 'until', 'while', 'of', 'at', 'by', 'for', 'with', 'about', 'against', 'between', 'into', 'through', 'during', 'before', 'after', 'above', 'below', 'to', 'from', 'up', 'down', 'in', 'out', 'on', 'off', 'over', 'under', 'again', 'further', 'then', 'once', 'here', 'there', 'when', 'where', 'why', 'how', 'all', 'any', 'both', 'each', 'few', 'more', 'most', 'other', 'some', 'such', 'no', 'nor', 'not', 'only', 'own', 'same', 'so', 'than', 'too', 'very', 'can', 'will', 'just', 'should', 'now', 'system', 'systems', 'headmate', 'headmates']
 
 async function search(){

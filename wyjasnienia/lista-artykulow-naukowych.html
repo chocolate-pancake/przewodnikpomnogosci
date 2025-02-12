@@ -29,7 +29,7 @@
         <a class="to-main" href="#zawartosc">Przejdź do zawartości</a>
         
         <header class="header">
-            <div class="divider">
+            <div class="divider ldiv">
                 <button class="menu-icon" id="menu1" type="button" onclick="menu()">
                     <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
                         <line x1="25%" y1="35%" x2="75%" y2="35%"/>
@@ -49,7 +49,13 @@
                     <span id="title">Przewodnik po Mnogości</span>
                 </a>
             </div>
-            <div class="divider">
+            <div class="divider rdiv">
+                <button class="search mobile" aria-label="wyszukaj" onclick="showSearchInput()">
+                    <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                        <circle cx="35%" cy="35%" r="30%"/>
+                        <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                    </svg>
+                </button>
                 <form class="search" action="https://przewodnikpomnogosci.pl/wyszukaj" role="search">
                     <button type="submit" class="search" aria-label="wyszukaj">
                         <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
@@ -60,6 +66,15 @@
                     <input type="search" class="search" name="q" minlength="1" placeholder="wyszukaj" required>
                     
                 </form>
+                <details class="language-select">
+                    <summary><span class="for-aria">Wybierz język</span>&#127477&#127473</summary>
+                    <div class="language-options">
+                        <div  class="language-option active">&#127477&#127473</div>
+                        <!-- <a href="https://przewodnikpomnogosci.pl/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
+                        <a href="https://przewodnikpomnogosci.pl/en/science/scientific-publication-list" class="language-option">&#127482&#127480</a>
+                        <!-- <a href="https://przewodnikpomnogosci.pl/ru/" class="language-option">&#127479&#127482</a> -->
+                    </div>
+                </details>
                 <a href="../ustawienia" class="settings desktop">
                     <img src="../settings.png" alt="ustawienia i dostępność">
                 </a>
@@ -120,7 +135,7 @@
 
             
             <h1>Lista artykułów naukowych</h1>
-
+            
             <p>
                 Chociaż po polsku można znaleźć ich tylko kilka, <b>w zagranicznej literaturze istnieją tysiące badań i artykułów naukowych na temat <a href="../zaburzenia/dysocjacyjne-zaburzenie-tozsamosci" class="internal">dysocjacyjnego zaburzenia tożsamości</a> (DID)</b>. Inne określone zaburzenie dysocjacyjne (OSDD) doczekało się ich mniej, praktycznie zawsze w towarzystwie innych zaburzeń dysocjacyjnych, a niezaburzona <a href="../materialy/podstawy-mnogosci" class="internal">mnogość</a> (np. mediumizm, tulpomancja i część przypadków iluzji niezależnego działania) jeszcze rzadziej cieszy się zainteresowaniem środowiska naukowego. Do poniższej listy artykułów i badań będziemy dodawać tylko te polskie oraz te najbardziej znane albo według naszej subiektywnej oceny najciekawsze lub najważniejsze dla naszej społeczności. Opieramy się na wielu z nich w najróżniejszych miejscach naszej strony. Bardziej konkretne, pisane (mamy nadzieję) prostszym językiem podsumowania wyników kilku z nich znajdziecie w  <a href="../materialy/naukowe-dowody-mnogosci" class="internal">naukowych dowodach mnogości</a> i <a href="neurobiologia" class="internal">neurobiologii</a>.
             </p>

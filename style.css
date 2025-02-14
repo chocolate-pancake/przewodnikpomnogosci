@@ -431,7 +431,7 @@ input.search:focus-visible {
     border-color: var(--dark-blue);
 }
 
-.language-select:focus-within {
+.language-select:has(summary:focus-visible) {
     outline: auto;
 }
 

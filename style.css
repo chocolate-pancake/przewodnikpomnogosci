@@ -622,8 +622,6 @@ input.search:focus-visible {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* MACIE PIĆ I TO NIE JEST ŻART - Kompsognat */
-
 footer {
     border-top: solid 10px var(--footer-border);
     margin: 10rem max(-5rem, -5vw) 0px max(-5rem, -5vw);
@@ -736,16 +734,10 @@ button {
     transition: 0.5s;
 }
 
-/* To trzeba przenieść do innego pliku - Jonatan 
-Ale czy nam się chce? - Tomek
-Wygląda na to, że nie - Jonatan */
-
 .glowingButton:hover, .glowingButton:active {
     background-color: rgb(55, 55, 55);
     box-shadow: 0px 0px 0.25rem 0.25rem var(--purple-glow);
 }
-
-/* PIJCIE BO SIĘ ZDENERWUJĘ - Kompsognat */
 
 .swipedLeft {
     display: none;
@@ -958,19 +950,17 @@ main {
     box-shadow: 7px 0px 10px rgba(20, 20, 20, 0.95), -7px 0px 10px rgba(20, 20, 20, 0.95);
 }
 
-/* NAWODNIENIE JEST WAŻNE, KURDE - Kompsognat */
-
 .warning {
     display: var(--warning-display);
     border: dashed;
     border-radius: 0.2rem;
-    border-width: 8px;
+    border-width: 0.5rem;
     padding: 0.75rem;
     width: 80%;
     margin: 4rem auto;
     background-color: var(--warning-bckg);
     border-color: rgb(255, 0, 0);
-    box-shadow:  0px 0px 0px 5px var(--warning-border), 0px 0px 50px 20px rgba(255, 0, 0, 0.8);
+    box-shadow:  0px 0px 0px 0.25rem var(--warning-border), 0px 0px 2rem 0.75rem rgba(255, 0, 0, 0.8);
     font-weight: 900;
     text-shadow: 0.1rem 0.1rem 0px rgb(0, 0, 0);
 }

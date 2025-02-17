@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Host | System Tęczowego Chaosu</title>
+        <link rel="icon" href="../ampersand-icon.png">
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://przewodnikpomnogosci.pl/plural-journey-rings.png">
+<meta property="og:image:alt" content="mnogie okręgi">
+        <meta name="twitter:domain" content="przewodnikpomnogosci.pl">
+        <meta name="color-scheme" content="dark light">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="System Tęczowego Chaosu">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Przewodnik po Mnogości">
+        <meta property="og:url" content="https://przewodnikpomnogosci.pl/system-teczowego-chaosu/host">
+        <meta name="twitter:title" property="og:title" content="Host | System Tęczowego Chaosu">
+        <meta name="description" content="Host Systemu Tęczowego Chaosu posiada wiele różnych osobowości.">
+        <meta name="twitter:description" property="og:description" content="Host Systemu Tęczowego Chaosu posiada wiele różnych osobowości.">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <script src="../script.js" defer></script>
+        <script src="../settings.js" defer></script>
+    </head>
+    <body>
+        <div id="shadow" class="shadow"></div>
+        <div id="sidebar-shadow" class="shadow"></div>
+        
+        <a class="to-main" href="#zawartosc">Przejdź do zawartości</a>
+        
+        <header class="header">
+            <div class="divider">
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <a href="../" class="title">
+                    <div class="logo" aria-label="mnogie okręgi">
+                        <svg class="logo">
+                            <circle class="upper"></circle>
+                            <circle class="down"></circle>
+                            <circle class="left"></circle>
+                            <circle class="right"></circle>
+                        </svg>
+                    </div>
+                    <span id="title">Przewodnik po Mnogości</span>
+                </a>
+            </div>
+            <div class="divider rdiv">
+                <button class="search mobile" aria-label="wyszukaj" onclick="showSearchInput()">
+                    <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                        <circle cx="35%" cy="35%" r="30%"/>
+                        <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                    </svg>
+                </button>
+                <form class="search" action="https://przewodnikpomnogosci.pl/wyszukaj" role="search">
+                    <button type="submit" class="search" aria-label="wyszukaj">
+                        <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                            <circle cx="35%" cy="35%" r="30%"/>
+                            <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                        </svg>
+                    </button>
+                    <input type="search" class="search" name="q" minlength="1" placeholder="wyszukaj" required>
+                    
+                </form>
+                <details class="language-select">
+                    <summary><span class="for-aria">Wybierz język</span>&#127477&#127473</summary>
+                    <div class="language-options">
+                        <div  class="language-option active">&#127477&#127473</div>
+                        <!-- <a href="https://przewodnikpomnogosci.pl/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
+                        <a href="https://przewodnikpomnogosci.pl/en/" class="language-option">&#127482&#127480</a>
+                        <!-- <a href="https://przewodnikpomnogosci.pl/ru/" class="language-option">&#127479&#127482</a> -->
+                    </div>
+                </details>
+                <a href="../ustawienia" class="settings desktop">
+                    <img src="../settings.png" alt="ustawienia i dostępność">
+                </a>
+            </div>
+        </header>
+        
+        <!-- <a href="ustawienia" class="settings mobile">
+            <img src="settings.png" alt="ustawienia i dostępność">
+        </a> -->
+        
+            <aside class="sidebar" id="sidebar" data-nosnippet>
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <nav class="menu-options">
+                    <a href="../" id="glowna" class="option">Strona główna</a>
+                    <a href="../czeste-pytania" class="option" id="czeste-pytania">Częste pytania</a>
+                    <a href="../terminologia" id="terminologia" class="option">Terminologia</a>  
+                    <a href="../mnogosc" id="mnogosc" class="option">Mnogość</a>  
+                    <a href="../wyjasnienia/" id="wyjasnienia" class="option">Nauka i wierzenia</a> 
+                    <a href="../zaburzenia/" id="zaburzenia" 
+                    class="option">Powiązane zaburzenia</a>  
+                    <a href="../powstawanie" id="powstawanie" class="option">Przyczyny powstawania</a> 
+                    <a href="../system" id="system" class="option">System</a>      
+                    <a href="../wspolosoby/" id="wspolosoby" class="option">Współosoby</a> 
+                    <a href="../frontowanie" class="option" id="frontowanie">Frontowanie</a>   
+                    <a href="../wewnetrzny-swiat" id="wewnetrzny-swiat" class="option">Wewnętrzny świat</a> 
+                    <a href="../materialy/" id="materialy" class="option">Materiały i pomoce</a>
+                    <a href="../system-teczowego-chaosu/" id="o-nas" class="option current">O nas</a>
+                    <a href="../blog/" id="blog" class="option">Blog</a>
+                </nav>
+            </aside>
+
+
+        <main id="zawartosc">
+            
+            
+            <svg preserveAspectRatio="none" class="hidden">
+                <symbol id="ex" class="ex">
+                    <line x1="10%" y1="20%" x2="30%" y2="20%"></line>
+                    <line x1="10%" y1="20%" x2="10%" y2="90%"></line>
+                    <line x1="10%" y1="90%" x2="80%" y2="90%"></line>
+                    <line x1="80%" y1="90%" x2="80%" y2="70%"></line>
+                    <line x1="30%" y1="70%" x2="90%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="50%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="90%" y2="50%"></line>
+                </symbol>
+            </svg>
+
+            
+            <h1>Host</h1>
+
+            <p>
+                Medioraki, monoświadomy, bezamnezyjny podsystem. Na razie nie mogę się zdecydować na podsystemową nazwę, więc określam się po prostu jako host, bo to pasuje w praktycznie każdej sytuacji. Odszedłem od używania zbiorowego imienia Natasza, bo sporo osobowości go nie lubi, ale nie mam nic przeciwko, kiedy jestem tak nazywany przez swój system. Tego imienia nadal używa jedna z osobowości tworzących treści na Przewodniku. W zależności od osobowości używam zaimków on/jego albo ona/jej (w osobowościach aktywnych na stronie raczej on/jego), rzadko mówię o sobie „my”. Używam określenia osobowości i rzadziej tożsamości, na ogół nie przepadam za częściami, a wobec osób zwykle nie mam nic przeciwko, chociaż w praktyce funkcjonuję jako jedna osoba w naszym systemie.
+            </p>
+
+            <p>
+                Jestem na spektrum autyzmu i w długotrwałym epizodzie autystycznego wypalenia, neguję możliwość posiadania do tego ADHD, chociaż utożsamiam się z wieloma objawami. Mam synestezję i częściową afantazję. Zmagam się z depresją, lękami, dysocjacją, zaburzeniem parafilnym, unikająco-ograniczającym zaburzeniem odżywiania (ARFID) i zaburzeniem obsesyjno-kompulsyjnym (OCD), niewykluczone, że także zaburzeniem osobowości.
+            </p>
+            
+            <p>
+                Jestem zablokowanym na froncie hostem naszego systemu. W zależności od okoliczności jestem też obrońcą, prześladowcą i opiekunem. Staram się bardzo, żeby wszystkie moje współosoby czuły się ważne i obecne w naszym codziennym życiu, ale nie potrafię zadbać nawet o samego siebie, więc niezbyt dobrze mi to wychodzi.
+            </p>
+
+            <p>
+                Dobro marginalizowanych grup szczególnie leży mi na sercu, zwłaszcza że sam należę do wielu z nich. Może nie jestem najlepiej przystosowany do aktywnej walki o równe prawa, ale wierzę, że warto. Sama mnogość to obecnie moje główne specjalne zainteresowanie, a Przewodnik po Mnogości stał się dla mnie mechanizmem radzenia sobie z tą przytłaczającą świadomością ilości cierpienia na całym świecie. Chcę przekazać dalej tę wiedzę, która nam pomaga we wszystkich aspektach naszego życia. Niestety przez to, że lubię robić wszystko sam, nie dopuszczam swoich współosób do tego projektu tyle, ile powinienem.
+            </p>
+
+            <p>
+                Poniższa lista osobowości w żadnym razie nie jest kompletna – sam nawet nie mam pojęcia, ile ich wszystkich jest, też nie o wszystkich chcę publicznie opowiadać. Będę tu głównie opisywać te, które możecie spotkać w internetowych przestrzeniach. Te bez podanej orientacji nie są na tyle zainteresowane kwestiami związków, żeby się w ogóle w tej kwestii określać.
+            </p>
+
+            <fieldset class="contents">
+                <legend>Moje osobowości</legend>
+                <div class="second">
+                    <a href="#natasza">Natasza</a>
+                    <a href="#morgan">Morgan</a>
+                    <a href="#chase">Chase</a>
+                    <a href="#antyteista">Antyteista</a>
+                    <a href="#wiktor">Wiktor</a>
+                    <a href="#zenskie-osobowosci">Żeńskie osobowości</a>
+                </div>
+            </fieldset>
+
+            <div class="target" id="natasza"></div>
+            <h2>
+                Natasza (on/jego)
+            </h2>
+
+            <p>
+                Niebinarny i aseksualny. Bez konkretnego wieku, wygląda na coś pomiędzy nastolatkiem a młodym dorosłym. Interesuje się mnogością, biologią i ekologią. Stara się zawsze być optymistą i pewnie z tego powodu ostatnio jest aktywny dość rzadko. Był główną społeczną osobowością w naszej tolerancyjnej grupie znajomych w ostatnim roku średniej szkoły.
+            </p>
+
+            <div class="target" id="morgan"></div>
+            <h2>
+                Morgan (on/jego)
+            </h2>
+
+            <p>
+                Dwudziestoparoletni (na ogół) gej. Główny holder zaburzenia parafilicznego i części traumy z tym związanej, w tym religijnej, oprócz tego bardziej dotknięty przez objawy OCD i dysforię cielesną (oraz, w konsekwecji wszystkiego, depresję). Przez to podzielony na wiele podosobowości, z których w internetowych przestrzeniach spotkacie tylko społeczną lub aktywistyczną. Woli być traktowany jako osoba, postrzega inne osobowości jako bardziej oddzielne od niego, niż one postrzegają jego, i tak właściwie czasem chciałby nie mieć wielu osobowości i prowadzić swoje własne życie w alternatywnym wszechświecie. Jak na perfekcjonistę przystało, ma najładniejsze pismo ze wszystkich osobowości.
+            </p>
+
+            <figure>
+                <img src="Morgan.png" alt="rysunek poważnej osoby o niebieskich oczach i czarnych, prostych włosach do ramion" class="img">
+                <!-- <figcaption>Morgan (on/jego)</figcaption> -->
+            </figure>
+
+            <p>
+                Ciekawostka: wbrew pozorom nie udziela się na YouTubie. Tamten awatar wzorowałem na podobnych do niego osobowościach, ale żadna z nich nawet nie zamierzała się udzielać na kanale (wtedy zupełnie o tym nie pomyślałem) i rysunek w końcu nie oddawał do końca żadnej z nich. Społeczny aspekt Morgana ustawił sobie go na profilowym na Discordzie wyłącznie z braku innej opcji, ale po jakimś czasie go zintrojektował. Wtedy też odnalazł dla siebie własne imię, bo dość szybko zrozumiał, że nienawidzi być nazywany Nataszą.
+            </p>
+
+            <div class="target" id="chase"></div>
+            <h2>
+                Chase (on/jego)
+            </h2>
+
+            <p>
+                Dopiero niedawno nazwany, ale obecny chyba od początków Przewodnika. Zwolennik bardziej agresywnego aktywizmu (który przez moje moralne obsesje już i tak trochę cenzuruję). Nastoletni chłopak, ale nie taki, który potrzebuje, żeby ktokolwiek się nim zajmował. Wybrałem go do zrobienia serii reagowania na reprezentacje systemów w mediach, bo uznałem, że najlepiej się do tego nadaje.
+            </p>
+
+            <div class="target" id="antyteista"></div>
+            <h2>
+                Antyteista (on/jego)
+            </h2>
+
+            <p>
+                W nienawiści do religii może z nim konkurować chyba jedynie Morgan. Największym specjalnym zainteresowaniem tej osobowości są różne religie i ich odłamy (w szczególności ewangeliczne Chrześcijaństwo i katolicyzm) – żeby znać swojego wroga i wiedzieć, przeciwko czemu jeszcze się powinno walczyć, a co można akceptować. Zna Biblię lepiej od wielu osób wierzących. Uważa, że jeśli coś wyrządza niepotrzebną krzywdę, jest złe – nie ważne, czy jest świętością dla większości społeczeństwa. Sam jest po religijnej traumie i chce, żeby jak najmniej osób musiało w przyszłości czegoś takiego doświadczyć. Podobnie jak Chase wykazuje bardziej agresywne podejście do aktywizmu, dlatego do dyskusji z osobami religijnymi lepszym wyborem jest Morgan, który chociaż próbuje wziąć ich odczucia w tej kwestii pod uwagę.
+            </p>
+
+            <div class="target" id="wiktor"></div>
+            <h2>
+                Wiktor (on/jego)
+            </h2>
+
+            <p>
+                Stosunkowo nowa osobowość, powstała do trzymania nowo wyćwiczonej umiejętności mówienia nisko, bo żadna z moich osobowości nie czuła się swobodnie z takim głosem (może za wyjątkiem Morgana, ale on przecież nie będzie czytał losowych tekstów na głos w pustym pokoju). Jest jeszcze mało ukształtowany, ale na pewno jest dorosłym mężczyzną o ciemnych włosach, raczej trochę niższym od Morgana. Mam nadzieję, że zostanie główną osobowością prezentującą treści na YouTubie.
+            </p>
+
+            <div class="target" id="zenskie-osobowosci"></div>
+            <h2>
+                Żeńskie osobowości (one/ich)
+            </h2>
+
+            <p>
+                Wszystkie tak podobne z wyglądu (długie, proste, jasne włosy), że nadal nie potrafię ich za bardzo rozróżnić. Doszedłem do tego, że to w ogóle są różne osobowości zamiast jednej, po różnicach w piśmie i przelotnym zauroczeniu jednym chłopakiem przez osobowość od angielskiego, które nie było podzielane przez inne żeńskie osobowości. Odpowiedzialne za większą część mojego społecznego, akademickiego i kreatywnego życia. Większość jest mniej więcej w naszym cielesnym wieku, część identyfikuje się z naszym legalnym imieniem, nawet jeśli je nieszczególnie lubi. Wszystkie są heteroromantyczne, o ile w ogóle (o tej jednej, która chciałaby mieć dziewczynę, żeby wkurzyć ludzi, nie mówimy). Część jest bardziej delikatna i stereotypowo kobieca, inne czerpią euforię z robienia takich rzeczy jak pomalowanie ganku czy naprawienie czegoś elektrycznego.
+            </p>
+
+<!-- 
+            <figure>
+                <img src="host.png" alt="rysunek nastoletniej osoby o krótkich, kręconych blond włosach" class="img">
+                <figcaption>bezimienna osobowość (on/jego)</figcaption>
+            </figure> -->
+
+
+            
+            <br>
+
+            <p>
+                <i>
+                    Utworzono: 07.04.2024 <br>
+                    Ostatnia aktualizacja: 17.02.2025
+                </i>
+            </p>
+
+
+
+            <footer data-nosnippet>
+                <blockquote><i>Musimy obierać strony. Neutralność pomaga oprawcy, nigdy ofierze. Cisza zachęca dręczyciela, nigdy dręczonego.</i> ~ Elie Wiesel (on/jego)</blockquote>
+
+
+
+<div class="flex"><address><p>Kontakt:</p>
+    <p><a href="mailto:systemteczowegochaosu@gmail.com" class="internal">systemteczowegochaosu@gmail.com</a></p>
+    
+    
+        <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Kanał na YouTube</a></p>
+    
+    <p><a href="https://discord.gg/5gbrwTgDzp" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Serwer na Discordzie</a></p></address>
+    
+    <div>
+        <p><a href="../#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
+        <p><a href="../#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
+        <p><a href="../wyjasnienia/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
+        <p><a href="../poprawki-bledow" class="internal">Poprawki błędów</a></p>
+    </div>
+    <div>
+        <p><a href="../zastrzezenia" class="internal">Zastrzeżenia</a></p>
+        <p><a href="../deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
+        <p><a href="../polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
+    </div>
+
+    </div>
+
+    <p>©2023-2025 <a href="../system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
+
+</footer>
+
+        </main>
+    </body>
+</html>

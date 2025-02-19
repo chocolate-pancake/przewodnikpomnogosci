@@ -89,4 +89,12 @@ function showSearchInput(){
 }
 
 
+if(window.location.href != "https://przewodnikpomnogosci.pl/404"){
+    let lang = document.querySelector("html").getAttribute("lang");
+    localStorage.setItem("lang", lang);
+}
+
+
+
+
 console.log("Jeżeli chcesz zajrzeć do kodu źródłowego, znajdziesz go tu: https://github.com/chocolate-pancake/przewodnikpomnogosci")

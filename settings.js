@@ -109,7 +109,11 @@ if(!localStorage.getItem('reducedMotion')){
 }
 
 if(localStorage.getItem('reducedMotion') === 'true'){
-    reduceMotion();
+    unanimate();
+    let motionCheck = document.getElementById('reducedMotion');
+    if(motionCheck){
+        motionCheck.checked = false;
+    }
 }
 else if(localStorage.getItem('reducedMotion') === 'false'){
     let motionCheck = document.getElementById('reducedMotion');
@@ -119,16 +123,19 @@ else if(localStorage.getItem('reducedMotion') === 'false'){
 }
 
 function reduceMotion(){ 
-    let elements = document.querySelectorAll("*");
-    console.log(elements);
-    for(let i = 0; i < elements.length; i ++){
-        elements[i].classList.toggle('reduced-motion');
-    }
+    unanimate();
     if(localStorage.getItem('reducedMotion') === 'true'){
         localStorage.setItem('reducedMotion', 'false');
     }
     else{
         localStorage.setItem('reducedMotion', 'true');
+    }
+}
+
+function unanimate(){ 
+    let elements = document.querySelectorAll("*");
+    for(let i = 0; i < elements.length; i ++){
+        elements[i].classList.toggle('reduced-motion');
     }
 }
 

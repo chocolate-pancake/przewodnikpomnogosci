@@ -1,0 +1,351 @@
+.animation-container {
+    margin: auto;
+    margin-bottom: 1rem;
+    aspect-ratio: 1/1;
+    width: min(300px, 95%);
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.animation-container span {
+    position: absolute;
+    transform:translateX(-50%)
+}
+
+.for-animationless {
+    display: none;
+}
+
+.for-animationless.reduced-motion {
+    display: inline;
+}
+
+.crc {
+    border-radius: 50%;
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    z-index: 2;
+    transform:translate(-50%,-50%);
+}
+
+#mono {
+    top: 25%;
+    left: 25%;
+    background-color: yellow;
+    animation: mono 10s ease-in-out infinite;
+}
+
+
+@keyframes mono {
+    0% {
+        background-color: yellow;
+    }
+
+    25% {
+        background-color: blue;
+    }
+
+    50% {
+        background-color: red;
+    }
+
+    75% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: yellow;
+    }
+}
+
+#monotxt {
+    top: 40%;
+    left: 25%;
+}
+
+#poly1 {
+    top: 25%;
+    left: 75%;
+    background-color: yellow;
+    animation: poly1 10s ease-in-out infinite;
+}
+
+#poly2 {
+    top: 10%;
+    left: 75%;
+    background-color: blue;
+    animation: poly2 10s ease-in-out infinite;
+}
+
+#poly3 {
+    top: 10%;
+    left: 90%;
+    background-color: red;
+    animation: poly3 10s ease-in-out infinite;
+}
+
+@keyframes poly1 {
+
+    0%, 20% {
+        top: 25%;
+        left: 75%;
+    }
+
+    25%, 70% {
+        top: 10%;
+        left: 60%;
+    }
+
+    75%, 95% {
+        top: 25%;
+        left: 70%;
+    }
+
+}
+
+@keyframes poly2 {
+
+    0%, 20% {
+        top: 10%;
+        left: 75%;
+    }
+
+    25%, 45% {
+        top: 25%;
+        left: 75%;
+    }
+
+    50%, 70% {
+        top: 10%;
+        left: 75%;
+    }
+
+    75%, 95% {
+        top: 25%;
+        left: 80%;
+    }
+
+}
+
+@keyframes poly3 {
+
+    0%, 45% {
+        top: 10%;
+        left: 90%;
+    }
+
+    50%, 70% {
+        top: 25%;
+        left: 75%;
+    }
+
+    75% {
+        top: 10%;
+        left: 90%;
+    }
+
+}
+
+#polytxt {
+    top: 40%;
+    left: 75%;
+}
+
+#cepha1 {
+    top: 60%;
+    left: 10%;
+    background-color: yellow;
+    animation: cepha1 10s ease-in-out infinite;
+}
+
+#cepha2 {
+    top: 60%;
+    left: 25%;
+    background-color: blue;
+    animation: cepha2 10s ease-in-out infinite;
+}
+
+#cepha3 {
+    top: 60%;
+    left: 40%;
+    background-color: red;
+    animation: cepha3 10s ease-in-out infinite;
+}
+
+#cepha4 {
+    top: 75%;
+    left: 25%;
+    background-color: yellow;
+    animation: mono 10s ease-in-out infinite;
+}
+
+@keyframes cepha1 {
+
+    0% {
+        opacity: 0%;
+    }
+
+    25%, 50% {
+        opacity: 100%;
+    }
+
+    75%, 100% {
+        opacity: 0%;
+    }
+
+}
+
+@keyframes cepha2 {
+
+    0% {
+        opacity: 100%;
+    }
+
+    25% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    75% {
+        opacity: 0%;
+    }
+
+}
+
+@keyframes cepha3 {
+
+    0%, 25% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    75% {
+        opacity: 100%;
+    }
+
+}
+
+#cephatxt {
+    top: 85%;
+    left: 25%;
+}
+
+#fluid1 {
+    top: 75%;
+    left: 75%;
+    background-color: yellow;
+    z-index: 2;
+    animation: fluid1 10s ease-in-out infinite;
+}
+
+#fluid2 {
+    top: 75%;
+    left: 75%;
+    background-color: blue;
+    z-index: 1;
+    animation: fluid2 10s ease-in-out infinite;
+}
+
+#fluid3 {
+    top: 75%;
+    left: 75%;
+    background-color: red;
+    z-index: 1;
+    animation: fluid3 10s ease-in-out infinite;
+}
+
+@keyframes fluid1 {
+    0%, 45% {
+        top: 75%;
+        left: 75%;
+    }
+
+    0% {
+        background-color: yellow;
+    }
+
+    25% {
+        background-color: blue;
+    }
+
+    31% {
+        z-index: 1;
+        background-color: yellow;
+    }
+
+    50%, 70% {
+        top: 60%;
+        left: 60%;
+    }
+
+    75%, 95% {
+        top: 75%;
+        left: 70%;
+    }
+
+    100% {
+        left: 75%;
+    }
+}
+
+@keyframes fluid2 {
+    0%, 45% {
+        top: 75%;
+        left: 75%;
+    }
+
+    31% {
+        z-index: 2;
+    }
+
+    50%, 70% {
+        top: 60%;
+        left: 75%;
+    }
+
+    75%, 95% {
+        top: 75%;
+        left: 80%;
+    }
+}
+
+@keyframes fluid3 {
+    0%, 70% {
+        top: 75%;
+        left: 75%;
+    }
+
+    75%, 95% {
+        top: 60%;
+        left: 90%;
+    }
+
+    100% {
+        top: 75%;
+        left: 75%;
+    }
+}
+
+#fluidtxt {
+    position: absolute;
+    top: 85%;
+    left: 75%;
+}
+
+
+
+@media screen and (max-width: 720px) {
+    
+    .animation-container {
+        font-size: 0.8rem;
+    }
+
+}

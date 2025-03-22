@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Czy mnogość to urojenia? | Przewodnik po Mnogości</title>
+        <link rel="icon" href="../ampersand-icon.png">
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://przewodnikpomnogosci.pl/plural-journey-rings.png">
+<meta property="og:image:alt" content="mnogie okręgi">
+        <meta name="twitter:domain" content="przewodnikpomnogosci.pl">
+        <meta name="color-scheme" content="dark light">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="System Tęczowego Chaosu">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Przewodnik po Mnogości">
+        <meta property="og:url" content="https://przewodnikpomnogosci.pl/blog/czy-mnogosc-to-urojenia">
+        <meta name="twitter:title" property="og:title" content="Czy mnogość to urojenia?">
+        <meta name="description" content="Mnoga tożsamość często jest sprowadzana do urojeń. Ale czy faktycznie pasuje do klinicznej definicji urojenia?">
+        <meta name="twitter:description" property="og:description" content="Mnoga tożsamość często jest sprowadzana do urojeń. Ale czy faktycznie pasuje do klinicznej definicji urojenia?">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <script src="../script.js" defer></script>
+        <script src="../settings.js" defer></script>
+    </head>
+    <body>
+        <div id="shadow" class="shadow"></div>
+        <div id="sidebar-shadow" class="shadow"></div>
+        
+        <a class="to-main" href="#zawartosc">Przejdź do zawartości</a>
+        
+        <header class="header">
+            <div class="divider">
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <a href="../" class="title">
+                    <div class="logo" aria-label="mnogie okręgi">
+                        <svg class="logo">
+                            <circle class="upper"></circle>
+                            <circle class="down"></circle>
+                            <circle class="left"></circle>
+                            <circle class="right"></circle>
+                        </svg>
+                    </div>
+                    <span id="title">Przewodnik po Mnogości</span>
+                </a>
+            </div>
+            <div class="divider rdiv">
+                <button class="search mobile" aria-label="wyszukaj" onclick="showSearchInput()">
+                    <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                        <circle cx="35%" cy="35%" r="30%"/>
+                        <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                    </svg>
+                </button>
+                <form class="search" action="https://przewodnikpomnogosci.pl/wyszukaj" role="search">
+                    <button type="submit" class="search" aria-label="wyszukaj">
+                        <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                            <circle cx="35%" cy="35%" r="30%"/>
+                            <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                        </svg>
+                    </button>
+                    <input type="search" class="search" name="q" minlength="1" placeholder="wyszukaj" required>
+                    
+                </form>
+                <details class="language-select">
+                    <summary><span class="for-aria">Wybierz język</span>&#127477&#127473</summary>
+                    <div class="language-options">
+                        <div  class="language-option active">&#127477&#127473</div>
+                        <!-- <a href="https://przewodnikpomnogosci.pl/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
+                        <a href="https://przewodnikpomnogosci.pl/en/" class="language-option">&#127482&#127480</a>
+                        <!-- <a href="https://przewodnikpomnogosci.pl/ru/" class="language-option">&#127479&#127482</a> -->
+                    </div>
+                </details>
+                <a href="../ustawienia" class="settings desktop">
+                    <img src="../settings.png" alt="ustawienia i dostępność">
+                </a>
+            </div>
+        </header>
+        
+            <aside class="sidebar" id="sidebar" data-nosnippet>
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <nav class="menu-options">
+                    <a href="../" id="glowna" class="option">Strona główna</a>
+                    <a href="../czeste-pytania" class="option" id="czeste-pytania">Częste pytania</a>
+                    <a href="../terminologia" id="terminologia" class="option">Terminologia</a>
+                    <a href="../mnogosc" id="mnogosc" class="option">Mnogość</a>
+                    <a href="../wyjasnienia/" id="wyjasnienia" class="option">Nauka i wierzenia</a>       
+                    <a href="../zaburzenia/" id="zaburzenia" 
+                    class="option">Powiązane zaburzenia</a> 
+                    <a href="../powstawanie" id="powstawanie" class="option">Przyczyny powstawania</a> 
+                    <a href="../system" id="system" class="option">System</a>       
+                    <a href="../wspolosoby/" id="wspolosoby" class="option">Współosoby</a>   
+                    <a href="../frontowanie" class="option" id="frontowanie">Frontowanie</a> 
+                    <a href="../wewnetrzny-swiat" id="wewnetrzny-swiat" class="option">Wewnętrzny świat</a> 
+                    <a href="../materialy/" id="materialy" class="option">Materiały i pomoce</a>
+                    <a href="../system-teczowego-chaosu/" id="o-nas" class="option">O nas</a>
+                    <a href="../blog/" id="blog" class="option current">Blog</a>
+                </nav>
+            </aside>
+
+        <main id="zawartosc">
+
+            
+            <svg preserveAspectRatio="none" class="hidden">
+                <symbol id="ex" class="ex">
+                    <line x1="10%" y1="20%" x2="30%" y2="20%"></line>
+                    <line x1="10%" y1="20%" x2="10%" y2="90%"></line>
+                    <line x1="10%" y1="90%" x2="80%" y2="90%"></line>
+                    <line x1="80%" y1="90%" x2="80%" y2="70%"></line>
+                    <line x1="30%" y1="70%" x2="90%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="50%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="90%" y2="50%"></line>
+                </symbol>
+            </svg>
+            
+            <h1>Czy mnogość to urojenia?
+                <p>Morgan/sourcer/antyteista? (<a href="../system-teczowego-chaosu/host" class="internal">host</a>) (on/jego) | 22.03.2025</p>
+            </h1>
+
+            <p>
+                <b>Wiele przekonań naszej społeczności bywa uznawane za urojenia</b> – nie tylko przez osoby, które nie znają się ani na temacie mnogości, ani urojeń, i po prostu sądzą, że coś jest z nami nie tak. Środowisko specjalistyczne w większości postrzega jako urojenia nasze twierdzenia o obecności innych świadomości/osób w tym samym ciele, a także takie jak bycie innej płci czy gatunku od ciała. Uznają, że są to wierzenia, których wytworzenie było nam niezbędne do przeżycia traumy, ale które są obiektywnie i jednoznacznie nieprawdziwe. <b>Uważam, że takie podejście jest w dużej mierze nieuzasadnione.</b> Ale zanim przedstawię swoją argumentację, warto byłoby wyjaśnić, czym dokładnie jest urojenie.
+            </p>
+
+            <p>
+                <b>Można spotkać wiele definicji urojenia w psychologicznej literaturze.</b> Różnią się one pewnymi szczegółami i w zależności od wybranej mogłaby się różnić też nasza ocena konkretnego przekonania jako urojeniowego, ale według mnie niewystarczająco istotnie, żeby je tutaj porównywać. Moje rozważania zdecydowałem się oprzeć na tej z ICD-11, bo ta klasyfikacja na ogół będzie używana do stawiania rozpoznania urojenia w Polsce. Oto ona:
+            </p>
+
+            <p>
+                <i>Przeświadczenie, które jest ewidentnie nieprawdziwe lub niepotwierdzane przez inne osoby, zazwyczaj oparte na błędnych wnioskach dotyczących rzeczywistości świata zewnętrznego. Przeświadczenie jest mocno podtrzymywane z przekonaniem i nie jest lub jest tylko na krótko podatne na modyfikację przez zaprzeczające mu doświadczenie lub dowody. Przeświadczenie nie jest zwyczajowo akceptowane przez innych członków, bądź kręgi kulturowe lub podkulturowe osoby (tj. nie jest przedmiotem wierzenia religijnego).</i><sup><span class="target" id="p1"></span>[<a href="#1" class="internal">1</a>]</sup><span class="for-aria"> [koniec definicji]</span>
+            </p>
+
+            <p>
+                <b>To dodanie „tj. nie jest przedmiotem wierzenia religijnego” na koniec uważam za dezorientujące.</b> Może zgłębienie się bardziej w temat urojeń, co mam zamiar zrobić w przygotowaniu do pisania na temat różnicowania DID/OSDD-1 od zaburzeń psychotycznych, trochę rozjaśni mi tę kwestię. <b>W każdym razie nie oznacza ono, że każde wierzenie religijne jest chronione przed stygmatyzującą łatką urojenia</b> – są to wyłącznie wierzenia podzielane przez grupę religijną danej osoby, pozostałe zaliczane są do urojeń religijnych<sup><span class="target" id="p2"></span>[<a href="#2" class="internal">2</a>]</sup>. Czyli jeśli uważasz, że Bóg wybrał ciebie do pewnych szczególnych czynów (jeden z najczęstszych przykładów religijnego urojenia) – raczej będzie to urojenie, jeśli chodzisz do kościoła katolickiego, ale nie będzie, jeśli należysz do wspólnoty ewangelicznej, która z radością wesprze cię w twojej misji modlitwą (pozostaje pytanie, co z osobami nieuczęszczającymi do żadnego kościoła). Po drugie, <b>nie sądzę, że wszystkie nieurojeniowe wierzenia są koniecznie religijne z natury</b> – u dzieci w naszej kulturze wiara w Świętego Mikołaja i wróżkę zębuszkę jest zupełnie normalna i nikt im nie postawi z tego powodu diagnozy urojenia, chociaż te koncepty nie są religijne. No chyba że posiadam inną definicję religii od osób tworzących te kryteria.
+            </p>
+
+            <p>
+                Urojenia są często utożsamiane ze schizofrenią, ale chociaż faktycznie są charakterystyczne dla zaburzeń psychotycznych, <b>mogą występować też w innych kontekstach, na przykład przy depresji, zaburzeniu obsesyjno-kompulsyjnym, anoreksji lub demencji. Posiadanie pewnych urojeniowych wierzeń jest także powszechne w ogólnej populacji</b>, zwłaszcza dla osób żyjących w trudniejszych warunkach. Różnica pomiędzy tym a zaburzeniem urojeniowym polega na stopniu psychicznego cierpienia, zaabsorbowania w wierzenie i przekonania o jego prawdziwości.<sup><span class="target" id="p3"></span>[<a href="#3" class="internal">3</a>]</sup> A więc – jak w wielu innych przypadkach – to, czy otrzyma się stygmatyzującą łatkę, zależy w pewnej mierze od tego, do jakiej osoby psychologicznej się akurat trafi.
+            </p>
+
+            <p>
+                A więc, kiedy już sobie wytłumaczyliśmy, czym urojenie jest, i – mam nadzieję – dlaczego nie różni się wcale tak bardzo od zjawisk postrzeganych w społeczeństwie za normalne, możemy przejść do analizowania, jak się ono ma do sprawy mnogości. Na wszelki wypadek zaznaczę, że <b>sugerowanie, że osoby mnogie w ogóle nie mogą mieć urojeń, nie należy do moich intencji</b>. Jestem przekonany, że większość z nas ma pewne urojeniowe przekonania – tak samo jak cała reszta społeczeństwa. 
+            </p>
+
+            <p>
+                Od razu na wstępie możemy wykluczyć z naszych rozważań wiele systemów duchowych. <b>Przy mediumizmie czy ewangelicznym Chrześcijaństwie mnogość jest rozumiana przez pryzmat religii, w sposób nie tylko po prostu akceptowany, ale fundamentalny w tych kulturowych kręgach.</b> Zostają nam więc systemy, które uznają mnogość za czysto neurobiologiczny fenomen, oraz te, które posiadają na temat swoich doświadczeń mniej powszechne wierzenia (o których za chwilę).
+            </p>
+
+            <p>
+                <b>Jasny jest fakt, że sporo osób mnogich mocno trzyma się naszych przekonań, ale stopień tego podtrzymywania zależy od konkretnego przekonania oraz współosoby i wydaje mi się, że w wielu przypadkach wcale nie jest urojeniowy.</b> Wątpliwości są bardzo powszechne w społeczności i dużo rzadziej spotyka się osoby stuprocentowo pewne, że ich współosoby są świadome i faktycznie są oddzielnymi osobami, niż że jakaś myśl lub ruch ciała nie wyszły od nich (do czego nie jest przecież wymagana druga świadoma istota – patrz natrętne myśli i zespół Tourette'a). Z zewnątrz może tego tak po mnie nie widać, ale ja też dużo wątpiłem i czasem nadal wątpię, czy mam w tym wszystkim rację. Oprócz tego część osób mnogich, także przecież wychowanych w singlecko-normatywnym społeczeństwie, sama z siebie zgadza się z wmuszaną nam narracją. Także zostaje nam tylko ułamek społeczności, który spełnia część „wierzenie jest mocno podtrzymywane z przekonaniem”. <b>Nie wiem jednak, jak duży to ma wpływ na spełnianie kryteriów, bo pomimo wątpliwości generalnie większość z nas trwa przy swoim, więc ciężko mówić o podatności na modyfikacje.</b>
+            </p>
+
+            <p>
+                Teraz przechodzimy do części: „przeświadczenie jest ewidentnie nieprawdziwe”. Rzecz jasna większości osób się wydaje, że ta kwestia jest oczywista. Ale ich przekonania opierają się na niepotwierdzonych założeniach. To, że kiedyś większości osób wydawało się oczywiste, że słońce krąży wokół ziemi, nie oznacza, że była to prawda. Jeśli chodzi o świadomość – <b>istnienie wielu świadomości w jednym mózgu jest jak najbardziej możliwe, kiedy każda współosoba posiadałaby swój własny dynamiczny rdzeń</b><sup><span class="target" id="p4"></span>[<a href="#4" class="internal">4</a>]</sup>. Wygląda nawet na to, że nie jest to zjawisko ograniczone do mnogości, ale w pewnym stopniu występujące u każdej osoby w trakcie snu – jak wykazują badania na sennych postaciach z udziałem osób śniących świadomie (aczkolwiek są to świadomości trochę odmienne od naszych)<sup><span class="target" id="p5"></span>[<a href="#5" class="internal">5</a>]</sup>. Oczywiście świadomości nie da się w żaden sposób udowodnić, ale jeśli ktoś zachowuje się jak świadoma istota, logicznym jest założyć, że tę świadomość posiada. A nawet jeśli tutaj się ze mną nie zgodzicie – ta kwestia wciąż stoi pod znakiem potencjalnie możliwej, a nie ewidentnie nieprawdziwej. <b>Być może technologia w przyszłości pozwoli w jakiś sposób udowodnić lub obalić, że możemy z tego samego ciała doświadczać świat na różne sposoby lub mieć różne myśli w tym samym czasie, ale na razie nie można zaklasyfikować tego przekonania jako urojenia na podstawie jego rzekomej nieprawdziwości.</b> Chociaż warto tutaj wspomnieć, że twierdzenie o wielu świadomościach nie oznacza twierdzenia, że współosoby mogą być całkowicie ponad ograniczeniami mózgu czy ciała. To drugie dotyczy rzeczy fizycznie niemożliwej i może już mieć naturę urojeniową.
+            </p>
+
+            <p>
+                Teraz drugi aspekt, czyli obecność wielu osób w jednym ciele – bo sama świadomość nie jest wystarczająca do uzyskania statusu osoby, co widać chociażby po tym, że na ogół nie włączamy do tej definicji innych zwierząt. I w tej kwestii także rzadko dostajemy cokolwiek poza „to niemożliwe”, co ciężko w ogóle nazwać argumentem. <b>Osoby filozoficzne zwróciły uwagę, że debata na temat tego, czym jest osoba, nie została jeszcze rozstrzygnięta, więc nie można wydać sądu w tej kwestii.</b><sup><span class="target" id="p6"></span>[<a href="#6" class="internal">6</a>]</sup><sup><span class="target" id="p7"></span>[<a href="#7" class="internal">7</a>]</sup> Osobiście uważam, że nie isnieje prawda absolutna na ten temat, tak samo jak w przypadku płci, rasy i gatunku. <b>Słowa mają tylko takie znaczenie, jakie im nadajemy</b>, i zmienia się ono na przestrzeni czasu (wiedzieliście, że kilka wieków temu „kobieta” było obelgą?) oraz w zależności od kontekstu (według biologicznej definicji ogórek, pomidor i cukinia to nie tylko owoce, ale także jagody, ale żadna osoba zawodowa zajmująca się tą dziedziną nie spodziewa się ich w sałatce owocowej), a nawet osoby (osobiście zaliczam pragnienie całowania się z kimś do pociągu seksualnego, więc byłem bardzo zaskoczony, że większość osób uznaje ten akt za czysto romantyczny). <b>Możemy jedynie próbować pokazać innym, że ich definicje nie opierają się na tym, na czym argumentują, że się opierają</b>: „czy bliźnięta syjamskie są dla ciebie jedną osobą, bo mają wspólne ciało? Czy Gandalf, Sherlock Holmes, Katniss Everdeen i Percy Jackson są dla ciebie osobami? <span class="unspecified">Powinnxś</span><span class="masculine">Powinieneś</span><span class="feminine">Powinnaś</span><span class="neutral">Powinnoś</span><span class="postgender">Powinnuś</span> odpowiedzieć nie, bo są fikcyjne, nie mają w ogóle ciała, nie mówiąc już o ciele na wyłączność. Och, ale przecież w uniwersach tych historii mają swoje własne ciała! My też mamy, w naszych wewnętrznych światach, dlaczego więc w tym wypadku bierzesz pod uwagę tylko nasze fizyczne ciało?”, „Czy Barbie i Ken, Zygzak MacQueen i Sally, WALL-E i EWA to pary jednopłciowe? <span class="unspecified">Powinnxś</span><span class="masculine">Powinieneś</span><span class="feminine">Powinnaś</span><span class="neutral">Powinnoś</span><span class="postgender">Powinnuś</span> odpowiedzieć tak, bo żadne z nich nie ma ani genitaliów, ani chromosomów, więc wszyscy są bezpłciowi”. I część osób możemy tak przekonać do zrewidowania swojej definicji, ale koniec końców wymaga to dokonania pewnych zmian w swoim światopoglądzie, których pewna część społeczeństwa nigdy nie dokona. <b>Ale mimo wszystko nie można stwierdzić, że zdanie dowolnej ze stron jest tutaj ewidentnie nieprawdziwe.</b> Możemy się kłócić, czy materiał z pogranicza dwóch kolorów jest zielony czy niebieski, ale żadne z nas nie posiada prawdy absolutnej – obiektywnie istnieje tylko długość fali światła odbijanego od tego materiału.
+            </p>
+
+            <p>
+                Także nie można stwierdzić, że „przeświadczenie jest ewidentnie nieprawdziwe”. Ale pierwsze kryterium posiada jeszcze alternatywny warunek, który nasze mnogie przekonania niezaprzeczalnie spełniają. <b>Nie ważne, czy mamy rację, czy nie, społeczeństwo jak na razie zdecydowanie nie podziela naszego punktu widzenia.</b> I Z tym nic nie możemy zrobić (chociaż warto zauważyć, że kryteria z DSM nie zawierają tego warunku). <b>Ale tutaj przychodzi nam z pomocą wykluczenie z urojeń wierzeń akceptowanych w danych kręgach kulturowych.</b> Tak samo jak transpłciowe przekonania mogą nie być uznawane w ogólnym społeczeństwie, ale są powszechnie akceptowane jako fakty w lewicowych społecznościach, tak mnogie przekonania są uznawane w systemowych społecznościach i części przestrzeni LGBT+. W ten sam sposób wiele systemów o nietypowych nadprzyrodzonych wierzeniach może uniknąć sklasyfikowania ich jako urojenia, bo chociaż są rzadziej spotykane w szerszym społeczeństwie, niektóre z nich są bardzo popularne w mnogiej społeczności (głównie alternatywne wszechświaty, reinkarnacja i nieszkodliwe opętania). <b>Ale co z systemami, które nie należą do żadnej mnogiej społeczności podzielającej ich poglądy? Cóż, według kryteriów (o ile są wystarczająco intensywne) ich przekonania będą wtedy urojeniami.</b> Ale remedium na to jest bardzo proste – wystarczy dołączyć do grupy osób o podobnym światopoglądzie (lub znaleźć trochę osób, które uznają nasz za warty przyjęcia – tak przecież powstało wiele dzisiaj normatywnych religii). To tak sarkastycznie, w praktyce myślę, że stwierdzenie urojenia w nietypowych wierzeniach, które nie robią nikomu krzywdy, zależy w dużym stopniu od ogólnej tolerancyjności religijnej osoby psychiatrycznej. <b>Przeprowadziłem tu dość dosłowną interpretację kryteriów, ale urojenia opisywane w literaturze wydają się stosować do dodatkowych zasad</b>, których mój autystyczny umysł nie potrafi zrozumieć – widziałem wiele razy opisywane jako urojenie przekonanie, że rząd cię śledzi albo że jesteś ważną postacią historyczną, ale nigdy przekonanie, że ziemia jest płaska czy że kosmici zbudowali piramidy. Ale być może to wynika z mojej na razie ograniczonej wiedzy o temacie.
+            </p>
+
+            <p>
+                <b>Część z was mogła wyczuć moje krytyczne podejście do uzależnienia kryteriów od społecznej akceptowalności zamiast wyrządzanej krzywdy.</b> Z jednej strony trochę rozumiem takie podejście, bo psychologia zajmuje się leczeniem jednostek, a nie całych grup społecznych. <b>Ale jako osoba po religijnej traumie uważam, że nie powinno się liczyć, jak wpływowa jest dana religia, kiedy próbuje się komuś pomóc uwolnić od toksycznych wierzeń.</b> Nawet jeśli prawie cały kraj ze względu na swoją religię żyje w ciągłym lęku przed nadchodzącym końcem świata, uważam całe społeczeństwo za chore i w potrzebie pomocy, a nie ten niewielki ułamek, który się z tymi przekonaniami nie zgadza. Podejrzewam, że na kształt tych kryteriów miała wpływ niechęć do urażenia osób religijnych, często nie zdających sobie sprawy z wpływu, jaki nauka o piekle czy grzechu wrodzonym ma na ich zdrowie psychiczne (zwłaszcza jeśli część z osób tworzących sama była w toksycznej religii). Smuci mnie w tym fakt, że urażeniem uczuć osób psychotycznych nikt się już tutaj nie przejmuje. Pokazuje to społeczną stygmatyzację i uprzedzenia wobec tych zaburzeń. <b>Być może zauważyliście w trakcie czytania, jak bardzo chcecie uzyskać potwierdzenie, że wasze przekonania nie są urojeniami – takie uczucia z pewnością dotyczą też większości osób, które mają zdiagnozowane urojenia.</b> Wierzenie jest neutralne, nieszkodliwe lub pozytywne, urojenie to <em>objaw</em>, coś negatywnego, czego trzeba się pozbyć, nie przejmując się zdaniem posiadającej je osoby. W praktyce głębokie przekonania mogą być niezwykle istotne dla każdej osoby, nie ważne, czego dotyczą, czy są prawdziwe, jak wiele osób je podziela i czy spełniają ustalone przez ludzi kryteria do wrzucenia ich do stworzonej przez ludzi stygmatyzującej kategorii. Tak samo jak w przypadku religii, część urojeń może pełnić funkcję adaptacyjną, nawet jeśli oprócz tego wyrządzają osobie krzywdę, oraz staje się tak ważnym elementem tożsamości, że próba (nawet w dobrej myśli) wyciągnięcia z nich tej osoby na pewno będzie dla niej bolesna<sup><span class="target" id="p8"></span>[<a href="#8" class="internal">8</a>]</sup><sup><span class="target" id="p9"></span>[<a href="#9" class="internal">9</a>]</sup>. Osobiście miałem w przeszłości kilka urojeniowych przekonań na temat naszej mnogości (chociażby że nasz mózg jest w stanie symulować złożone życia dla kilkuset osób jednocześnie czy że moje współosoby nie są dotknięte przez moje autystyczne objawy), których bardzo potrzebowałem, dopóki nie byłem gotowy poradzić sobie z rzeczywistością bez ich pomocy. Kiedy ktoś im zaprzeczał, bolało chyba nawet bardziej, niż kiedy ktoś zaprzeczał istnieniu Boga, gdy jeszcze byłem wierzący. I rozumiem podejście, bo sam na stronie zawsze priorytetyzuję naukę, ale frustruje mnie bardzo, kiedy ktoś nieproszenie podaje innym argumenty przeciw takim przekonaniom, ale nigdy nie robi tego samego w stosunku do wierzeń religijnych.
+            </p>
+
+            <p>
+                A więc, nawet jeśli mielibyście zapomnieć całą resztę tego artykułu, mam nadzieję, że wyniesiecie z niego chociaż to, że <b>posiadanie urojeń nie czyni nikogo gorszą czy mniej inteligentną osobą, i że wierzenia religijne i urojeniowe zasługują na traktowanie z takim samym szacunkiem i na taką samą delikatność w próbach ewentualnego wyciągnięcia osoby ze szkodliwych dla niej przekonań</b>, bo każde uderzenie w coś fundamentalnego dla tożsamości danej osoby nie może nie uderzyć także w nią samą.
+            </p>
+
+            
+            <div class="target" id="przypisy"></div>
+            <h2>
+                Przypisy
+            </h2>
+
+            
+            <ol class="links">
+
+                <div class="target" id="1"> </div>
+                <li>
+                    <a href="#p1" class="internal">↑</a> <a href="https://rsk3.ezdrowie.gov.pl/resource/structure/icd11/99ICD1/2023-01/mms/element/932028588" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Urojenie | Międzynarodowa Statystyczna Klasyfikacja Chorób i Problemów Zdrowotnych</a>, Światowa Organizacja Zdrowia, 2018
+                </li>
+                <div class="target" id="2"> </div>
+                <li>
+                    <a href="#p2" class="internal">↑</a> <a href="https://rsk3.ezdrowie.gov.pl/resource/structure/icd11/99ICD1/2023-01/mms/element/1284844079" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Urojenie religijne | Międzynarodowa Statystyczna Klasyfikacja Chorób i Problemów Zdrowotnych</a>, Światowa Organizacja Zdrowia, 2018
+                </li>
+
+                <div class="target" id="3"> </div>
+                <li>
+                    <a href="#p3" class="internal">↑</a> <a href="https://icd.who.int/browse/2024-01/mms/en#1974996783" lang="en" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Delusional Disorder | ICD-11 for Mortality and Morbidity Statistics</a>, World Health Organisation, 2018
+                </li>
+
+                <div class="target" id="4"> </div>
+                <li>
+                    <a href="#p4" class="internal">↑</a> <a href="https://www.researchgate.net/publication/366818673_The_Role_of_Dynamic_Core_and_Mirror_Neuron_System_in_Dissociative_Disorder" lang="en" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>The Role of Dynamic Core and Mirror Neuron System in Dissociative Disorder</a>, Kenichiro Okano, 2022
+                </li>
+
+                <div class="target" id="5"> </div>
+                <li>
+                    <a href="#p5" class="internal">↑</a> <a href="https://journals.sagepub.com/doi/abs/10.2466/pms.1989.68.2.567" lang="en" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Consciousness and Abilities of Dream Characters Observed during Lucid Dreaming</a>, Paul Tholey, 1989
+                </li>
+
+                <div class="target" id="6"> </div>
+                <li>
+                    <a href="#p6" class="internal">↑</a> <a href="http://jcn.cognethic.org/jcnv9i2_Schechter.pdf" lang="en" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Introducing Plurals</a>, Elizabeth Schechter, 2024
+                </li>
+
+                <div class="target" id="7"> </div>
+                <li>
+                    <a href="#p7" class="internal">↑</a> <a href="https://www.proquest.com/openview/c0ccfd0d2e5080821ce67311b4f90198/1" lang="en" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Multiplying models: Personal identity, dissociation and the possibility of healthy multiplicity</a>, Rhett Lindsey Gayle, 2003
+                </li>
+
+                <div class="target" id="8"> </div>
+                <li>
+                    <a href="#p8" class="internal">↑</a> <a href="https://philosophymindscience.org/index.php/phimisci/article/download/11474/11658" lang="en" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Is it me or my delusion? Harnessing authenticity for an agential view of delusionality</a>, Cristiano Bacchi, 2024
+                </li>
+
+                <div class="target" id="9"> </div>
+                <li>
+                    <a href="#p9" class="internal">↑</a> <a href="https://wires.onlinelibrary.wiley.com/doi/full/10.1002/wcs.1502" lang="en" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Are clinical delusions adaptive?</a>, Eugenia Lancellotta i Lisa Bortolotti, 2019
+                </li>
+    
+            </ol>
+
+
+
+
+            <footer data-nosnippet>
+                <blockquote><i>Musimy obierać strony. Neutralność pomaga oprawcy, nigdy ofierze. Cisza zachęca dręczyciela, nigdy dręczonego.</i> ~ Elie Wiesel (on/jego)</blockquote>
+
+
+
+
+<div class="flex"><address><p>Kontakt:</p>
+    <p><a href="mailto:systemteczowegochaosu@gmail.com" class="internal">systemteczowegochaosu@gmail.com</a></p>
+    
+    
+        <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Kanał na YouTube</a></p>
+    
+    <p><a href="https://discord.gg/5gbrwTgDzp" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Serwer na Discordzie</a></p></address>
+    
+    <div>
+        <p><a href="../#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
+        <p><a href="../#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
+        <p><a href="../wyjasnienia/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
+        <p><a href="../poprawki-bledow" class="internal">Poprawki błędów</a></p>
+    </div>
+    <div>
+        <p><a href="../zastrzezenia" class="internal">Zastrzeżenia</a></p>
+        <p><a href="../deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
+        <p><a href="../polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
+    </div>
+
+    </div>
+
+    <p>©2023-2025 <a href="../system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
+
+</footer>
+
+
+
+        </main>
+    </body>
+</html>

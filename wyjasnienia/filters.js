@@ -229,6 +229,112 @@ function polish(){
     notPolishHidden = !notPolishHidden
 }
 
+let notStigmaHidden = false
+
+function stigma(){
+    let elements = document.querySelectorAll(".not-stigma");
+    for(let i = 0; i < elements.length; i ++){
+        if(!notStigmaHidden){
+            elements[i].style.display = "none";
+        }
+        else{
+            elements[i].style.display = "list-item";
+        }
+    }
+    notStigmaHidden = !notStigmaHidden
+}
+
+let notMythsHidden = false
+
+function myths(){
+    let elements = document.querySelectorAll(".not-myths");
+    for(let i = 0; i < elements.length; i ++){
+        if(!notMythsHidden){
+            elements[i].style.display = "none";
+        }
+        else{
+            elements[i].style.display = "list-item";
+        }
+    }
+    notMythsHidden = !notMythsHidden
+}
+
+let notLawHidden = false
+
+function law(){
+    let elements = document.querySelectorAll(".not-law");
+    for(let i = 0; i < elements.length; i ++){
+        if(!notLawHidden){
+            elements[i].style.display = "none";
+        }
+        else{
+            elements[i].style.display = "list-item";
+        }
+    }
+    notLawHidden = !notLawHidden
+}
+
+let notComorbiditiesHidden = false
+
+function comorbidities(){
+    let elements = document.querySelectorAll(".not-comorbidities");
+    for(let i = 0; i < elements.length; i ++){
+        if(!notComorbiditiesHidden){
+            elements[i].style.display = "none";
+        }
+        else{
+            elements[i].style.display = "list-item";
+        }
+    }
+    notComorbiditiesHidden = !notComorbiditiesHidden
+}
+
+let notIIAHidden = false
+
+function iia(){
+    let elements = document.querySelectorAll(".not-iia");
+    for(let i = 0; i < elements.length; i ++){
+        if(!notIIAHidden){
+            elements[i].style.display = "none";
+        }
+        else{
+            elements[i].style.display = "list-item";
+        }
+    }
+    notIIAHidden = !notIIAHidden
+}
+
+let notMediumsHidden = false
+
+function mediums(){
+    let elements = document.querySelectorAll(".not-mediums");
+    for(let i = 0; i < elements.length; i ++){
+        if(!notMediumsHidden){
+            elements[i].style.display = "none";
+        }
+        else{
+            elements[i].style.display = "list-item";
+        }
+    }
+    notMediumsHidden = !notMediumsHidden
+}
+
+let notReviewedHidden = false
+
+function reviewed(){
+    let elements = document.querySelectorAll(".not-reviewed");
+    for(let i = 0; i < elements.length; i ++){
+        if(!notReviewedHidden){
+            elements[i].style.display = "none";
+        }
+        else{
+            elements[i].style.display = "list-item";
+        }
+    }
+    notReviewedHidden = !notReviewedHidden
+}
+
+
 
 
 

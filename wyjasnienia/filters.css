@@ -17,7 +17,7 @@ li {
     margin-bottom: 1rem;
 }
 
-#sort {
+.sort {
     display: block;
     padding: 0.25rem;
     margin: 1rem;
@@ -27,14 +27,14 @@ li {
     cursor: pointer;
 }
 
-#sort:hover, #sort:focus {
+.sort:hover, .sort:focus {
     box-shadow: 0px 0px 0.25rem 0.25rem var(--dark-blue);
     border-color: var(--dark-blue);
 }
 
 @media (prefers-color-scheme: light){
 
-    #sort:hover, #sort:focus {
+    .sort:hover, .sort:focus {
         box-shadow: 0px 0px 0px 0.2rem rgb(50, 50, 50);
         border-color: rgb(110, 110, 110);
     }

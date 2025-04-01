@@ -361,3 +361,26 @@ function sortList(){
         list.append(papers[i]);
     }
 }
+
+
+function compareYear(p1, p2){
+    let yr1 = parseInt(p1.dataset.year);
+    let yr2 = parseInt(p2.dataset.year);
+    if(yr1>yr2){
+        return -1;
+    }
+    if(yr1<yr2){
+        return 1;
+    }
+    return 0;
+}
+
+function sortYear(){
+    let list = document.getElementById("main-list");
+    let papers = document.querySelectorAll("#main-list>li");
+    papers = Array.prototype.slice.call(papers, 0);
+    papers.sort(compareYear);
+    for(let i = 0; i < papers.length; i++){
+        list.append(papers[i]);
+    }
+}

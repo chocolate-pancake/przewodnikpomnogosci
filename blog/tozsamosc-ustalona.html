@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tożsamość zbiorowa... Tożsamość ustalona? | Przewodnik po Mnogości</title>
+        <link rel="icon" href="../ampersand-icon.png">
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://przewodnikpomnogosci.pl/plural-journey-rings.png">
+        <meta property="og:image:alt" content="mnogie okręgi">
+        <meta name="twitter:domain" content="przewodnikpomnogosci.pl">
+        <meta name="color-scheme" content="dark light">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="System Tęczowego Chaosu">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Przewodnik po Mnogości">
+        <meta property="og:url" content="https://przewodnikpomnogosci.pl/blog/tozsamosc-ustalona">
+        <meta name="twitter:title" property="og:title" content="Tożsamość zbiorowa... Tożsamość ustalona?">
+        <meta name="description" content="Tożsamość zbiorowa często pojawia się u mnogich osób, ale zauważyłem u siebie inne zjawisko, które nazywałem tożsamością ustaloną.">
+        <meta name="twitter:description" property="og:description" content="Tożsamość zbiorowa często pojawia się u mnogich osób, ale zauważyłem u siebie inne zjawisko, które nazywałem tożsamością ustaloną.">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <script src="../script.js" defer></script>
+        <script src="../settings.js" defer></script>
+    </head>
+    <body>
+        <div id="shadow" class="shadow"></div>
+        <div id="sidebar-shadow" class="shadow"></div>
+        
+        <a class="to-main" href="#zawartosc">Przejdź do zawartości</a>
+        
+        <header class="header">
+            <div class="divider">
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <a href="../" class="title">
+                    <div class="logo" aria-label="mnogie okręgi">
+                        <svg class="logo">
+                            <circle class="upper"></circle>
+                            <circle class="down"></circle>
+                            <circle class="left"></circle>
+                            <circle class="right"></circle>
+                        </svg>
+                    </div>
+                    <span id="title">Przewodnik po Mnogości</span>
+                </a>
+            </div>
+            <div class="divider rdiv">
+                <button class="search mobile" aria-label="wyszukaj" onclick="showSearchInput()">
+                    <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                        <circle cx="35%" cy="35%" r="30%"/>
+                        <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                    </svg>
+                </button>
+                <form class="search" action="https://przewodnikpomnogosci.pl/wyszukaj" role="search">
+                    <button type="submit" class="search" aria-label="wyszukaj">
+                        <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                            <circle cx="35%" cy="35%" r="30%"/>
+                            <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                        </svg>
+                    </button>
+                    <input type="search" class="search" name="q" minlength="1" placeholder="wyszukaj" required>
+                    
+                </form>
+                <details class="language-select">
+                    <summary><span class="for-aria">Wybierz język</span>&#127477&#127473</summary>
+                    <div class="language-options">
+                        <div  class="language-option active">&#127477&#127473</div>
+                        <!-- <a href="https://przewodnikpomnogosci.pl/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
+                        <a href="https://przewodnikpomnogosci.pl/en/" class="language-option">&#127482&#127480</a>
+                        <!-- <a href="https://przewodnikpomnogosci.pl/ru/" class="language-option">&#127479&#127482</a> -->
+                    </div>
+                </details>
+                <a href="../ustawienia" class="settings desktop">
+                    <img src="../settings.png" alt="ustawienia i dostępność">
+                </a>
+            </div>
+        </header>
+        
+            <aside class="sidebar" id="sidebar" data-nosnippet>
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <nav class="menu-options">
+                    <a href="../" id="glowna" class="option">Strona główna</a>
+                    <a href="../czeste-pytania" class="option" id="czeste-pytania">Częste pytania</a>
+                    <a href="../terminologia" id="terminologia" class="option">Terminologia</a>
+                    <a href="../mnogosc" id="mnogosc" class="option">Mnogość</a>
+                    <a href="../wyjasnienia/" id="wyjasnienia" class="option">Nauka i wierzenia</a>       
+                    <a href="../zaburzenia/" id="zaburzenia" 
+                    class="option">Powiązane zaburzenia</a> 
+                    <a href="../powstawanie" id="powstawanie" class="option">Przyczyny powstawania</a> 
+                    <a href="../system" id="system" class="option">System</a>       
+                    <a href="../wspolosoby/" id="wspolosoby" class="option">Współosoby</a>   
+                    <a href="../frontowanie" class="option" id="frontowanie">Frontowanie</a> 
+                    <a href="../wewnetrzny-swiat" id="wewnetrzny-swiat" class="option">Wewnętrzny świat</a> 
+                    <a href="../materialy/" id="materialy" class="option">Materiały i pomoce</a>
+                    <a href="../system-teczowego-chaosu/" id="o-nas" class="option">O nas</a>
+                    <a href="../blog/" id="blog" class="option current">Blog</a>
+                </nav>
+            </aside>
+
+        <main id="zawartosc">
+
+            
+            <svg preserveAspectRatio="none" class="hidden">
+                <symbol id="ex" class="ex">
+                    <line x1="10%" y1="20%" x2="30%" y2="20%"></line>
+                    <line x1="10%" y1="20%" x2="10%" y2="90%"></line>
+                    <line x1="10%" y1="90%" x2="80%" y2="90%"></line>
+                    <line x1="80%" y1="90%" x2="80%" y2="70%"></line>
+                    <line x1="30%" y1="70%" x2="90%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="50%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="90%" y2="50%"></line>
+                </symbol>
+            </svg>
+            
+            <h1>Tożsamość zbiorowa... Tożsamość ustalona?
+                <p>bezimienny/Morgan (<a href="../system-teczowego-chaosu/host" class="internal">host</a>) (on/jego) | 27.05.2025</p>
+            </h1>
+            
+            <p>
+                Wiele systemów będących bliżej pojedynczego końca spektrum mnogości posiada coś nazywanego tożsamością zbiorową. Polega to na tym, że chociaż poszczególne współosoby lub części mają różne indywidualne cechy, wszystkie identyfikują się ze wspólną tożsamością systemu. Dla przykładu nie mają nic przeciwko byciu nazywanym jednym imieniem, nawet jeśli posiadają też swoje własne, albo wszystkie uznają partnerkę systemu za swoją żonę, nawet jeśli dla niektórych z nich w praktyce pełni ona rolę wyłącznie przyjaciółki lub opiekunki. Ja osobiście w obrębie swojego podsystemu posiadam zbiorową tożsamość tylko w konkretnych sferach. Na przykład niezależnie od osobowości powiem, że mam zaburzenie parafilne, bo chociaż tylko część osobowości doświadcza jakichkolwiek seksualnych uczuć, jest to coś, co mocno wpłynęło na całego mnie i na to, jak społeczeństwo mnie postrzega. Tak samo zawsze uznaję Przewodnik jako swój projekt, nawet jeśli aktualna osobowość nie jest zaangażowana w pracę nad nim, i wszystkie moje rzeczy jako moje rzeczy, nawet jeśli tylko część osobowości ich kiedykolwiek używa (jak biżuteria, zabawki). 
+            </p>
+
+            <p>
+                W innych sferach, takich jak chociażby imię, nie mam niczego, co można by uniwersalnie zastosować do wszystkich osobowości. Już od dawna nie mogę się zdecydować nawet na podsystemową nazwę, dlatego zawsze podpisuję się jako host. I zauważyłem tutaj u siebie ciekawe zjawisko (nasilone szczególnie, zanim zacząłem lepiej rozumieć funkcjonowanie swojego podsystemu), które nazywam roboczo tożsamością ustaloną. Polega ono na posiadaniu pewnego zestawu cech, preferencji i tak dalej, który z pozoru naśladuje zbiorową tożsamość. Różnicą jest taka, że przy zbiorowej tożsamości faktycznie czujesz się komfortowo z mówieniem o zbiorowych cechach jak o swoich własnych, przy tożsamości ustalonej nie. Z kolei od przymusowego podszywania się pod osobę gospodarującą lub nieistniejącą singletsonę różni się ona tym, że w tym przypadku każda współosoba wierzy, że te cechy faktycznie odnoszą się do niej. Można powiedzieć, że tożsamość ustalona to podkategoria maskowania, w którym oszukujesz nie tylko społeczeństwo, ale też i siebie, ignorując lub negując różne sygnały albo dysocjując od swoich emocji. Pewnie sporo osób singleckich też doświadcza czasem czegoś podobnego, ale mnogie doświadczenie wyróżnia się tym, że poszczególne aspekty ustalonej tożsamości są prawdziwe dla co najmniej jednej współosoby. Wydaje mi się, że takie doświadczenie może być nawet częste wśród systemów przed lub w trakcie odkrywania swojej mnogości.
+            </p>
+
+            <p>
+                Pierwsze moje wspomnienia dotyczące tego tematu sięgają późniejszych lat podstawówki, kiedy moje osobowości nie były jeszcze zbyt zróżnicowane i doszedłem do wniosku, że już wtedy były obecne, jedynie po takich wskazówkach jak zmiany w charakterze pisma. Chyba miałem ustaloną tożsamość w obrębie moich uczuć odnośnie kilku przedmiotów, ale najwyraźniej pamiętam wychowanie fizyczne. Uważałem się za osobę, która nienawidzi wf-u, i chociaż część osobowości trzymająca tę nienawiść mogła powstać dla nieodstawania od pozostałych dziewczyn, moje częste narzekanie razem z nimi w szatni było jak najbardziej szczere. Przebieranie się, zwłaszcza w zimny dzień, a potem wysiłek fizyczny czy granie w pozbawione sensu gry zespołowe na ciasnej sali nie znajdowało się na liście rzeczy, które z własnej woli bym zrobił. Ale kiedy na lekcji przychodziło co do czego, dawałem z siebie wszystko. Skoki przez kozła czy bieganie wokół boiska, zawsze starałem się osiągnąć jak najlepszy wynik, próbowałem jak mogłem przydać się swojej drużynie, chociaż w gry zespołowe byłem generalnie beznadziejny. Lubiłem aktywność fizyczną, zależało mi na wygranej. Ale jeśli ktoś zapytałby mnie o to, kiedy byłem w tej sportowej osobowości, i tak bym zaprzeczył. Taka sytuacja utrzymywała się prawie do końca średniej szkoły. Raz koleżanka zwróciła mi uwagę, że zupełnie nie zachowuję się jak osoba, która nie lubi wf-u. Wtedy byłem już po odkryciu systemu, ale jeszcze w fazie zwalania wszystkiego, co nie pasowało do mojej tożsamości ustalonej, na bierny wpływ od moich współosób. Zrozumiałem już, że ten duch rywalizacji i ta satysfakcja z pokonywania swoich fizycznych ograniczeń to szczere emocje, ale nadal nie potrafiłem przyjąć, że mogą być niczyje inne, jak moje własne.
+            </p>
+
+            <p>
+                Tak samo miałem z tożsamością płciową. Przez krótki czas identyfikowałem się jako płynnopłciowy (chociaż to określenie do końca mi nie pasowało), ale potem o tym zapomniałem i w jednej z męskich osobowości stwierdziłem, że jestem w stu procentach trans chłopakiem. Moje doświadczenie wyglądało inaczej, niż przykład, który opisałem w artykule o <a href="../materialy/plynnoplciowosc-a-mnogosc" class="internal">odróżnianiu płynnopłciowości od mnogości</a>, bo w żeńskich osobowościach starałem się ignorować i nie zastanawiać się nad wszelkim czuciem się kobieco (nie mówiąc już o tym, że całkowicie ignorowałem, że nie wykazywałem żadnych oznak czucia się niekomfortowo w roli dziewczynki przez całe moje dzieciństwo). Jeśli już musiałem przyznać, że to uczucie faktycznie jest obecne, znowu zwalałem je na bierny wpływ. Natalka, Scarlet i pewnie jeszcze kilka współosób, których teraz nie pamiętam, powstały, żebym mógł znaleźć osobę odpowiedzialną ze te uczucia, ale okazały się nie mieć z nimi za dużo wspólnego.  Jakoś pod koniec średniej szkoły udało mi się zrozumieć, że mam wiele osobowości i te „obce” uczucia są moje własne, tylko zdysocjowane. Chociaż kiedy Aleks zaczął być dużo więcej aktywny, trochę się cofnąłem w swoim zrozumieniu i od nowa musiałem zaakceptować, że mam też osobowości płci żeńskiej i muszę brać je pod uwagę w swoich planach odnośnie tranzycji.
+            </p>
+
+            <p>
+                Z innych takich rzeczy to na przykład imię, o którym już wspomniałem. Trochę mi zajęło przyznanie przed sobą, że większość moich osobowości nienawidzi imienia Natasza, a dopiero niewiele ponad pół roku temu przestałem siebie zmuszać do używania go jako zbiorowego imienia mojego podsystemu. Inne: mentalny wiek. W młodszej osobowości doszedłem do wniosku, że jestem mentalnie dzieckiem, i reszta osobowości powtarzała ten wniosek miesiącami, dopóki nie zdałem sobie sprawy, że w większości z nich wolę być postrzegany jako dorosły lub nastolatek. Preferencje smakowe. Jedzenie wielu rzeczy generalnie sprawia mi trudność ze względu na moje zaburzenie odżywiania i mój odbiór smaku raczej się zbytnio nie różni pomiędzy osobowościami, ale niektóre osobowości uznają różne rzeczy za bardziej warte tego cierpienia (np. Aleks zdrowe jedzenie, najmłodsza osobowość słodycze) i to czasem nawet wpływa na poziom mdłości, z którymi się później zmagam. Orientacja. Byłem przekonany, że posiadam zbiorową orientację, ale okazuje się, że nie tylko część osobowości nie mogłaby chodzić z osobą konkretnej płci, ale też czasem różnią się konkretnym typem (jakby nie miał już wystarczająco przeszkód w znalezieniu potencjalnej osoby partnerskiej). Z seksualnością podobnie, bo chociaż zdawałem sobie sprawę, że większość osobowości w praktyce jest aseksualna, byłem przekonany, że osobowości dedykowane do radzenia sobie z takimi sprawami mają do czynienia z jedną i tą samą seksualnością. Okazuje się, że nie tylko trochę się ona zmieniła na przestrzeni lat wraz ze zmianą trzymających ją osobowości (w końcu przestałem sobie wmawiać, że jako dziecko po prostu nie odkryłem jeszcze, co tak naprawdę lubię), ale też aktualna osobowość odpowiedzialna za jej trzymanie jest tak naprawdę podzielona na co najmniej kilkanaście podosobowości, z których każda posiada bardzo wąski zakres fantazji, niektóre wykraczające poza to, co wydawało mi się w mojej sytuacji możliwe (byłoby miło, gdybym potrafił je jeszcze rozróżniać, ale sama świadomość ich istnienia trochę mi pomogła przestać się ciągle krzywdzić rzeczami, które nie działają dla aktualnej osobowości).
+            </p>
+
+            <p>
+                Widzę sporo potencjalnych powodów, dla których mam tendencje do robienia czegoś takiego, nawet teraz, kiedy już wiem, na czym ten mechanizm polega. Kiedyś pewnie głównie była to kombinacja braku wiedzy o mnogości i próby dostosowania się do oczekiwań otoczenia. Bo przecież nie można czasem lubić jednej rzeczy, a czasem jej nie lubić. I nie można lubić wszystkiego, musiałem wybrać, które przedmioty są moje ulubione, a które znienawidzone, więc kończyłem z tożsamością ustaloną na podstawie preferencji tej osobowości, która doszła do wniosku w tej kwestii jako pierwsza. Nadal mam dość silne poczucie bycia jedną osoba, więc ciężko mi to czasem pogodzić z zakresem, w którym różne moje cechy zmieniają się w zależności od osobowości. Być może trochę przez to nie wyrobiłem sobie jeszcze do końca nawyku sprawdzania, czy to, czego chcę i jak się czuję w danym momencie, faktycznie się zgadza z tym, co myślę, że chcę i co czuję. W niektórych sferach już mi się to udało, ale kiedy zupełnie się nie spodziewam, że w jakiejś kwestii różnice w ogóle mogą się pojawić, nie będę ich tam szukać. Tak było z seksualnością na przykład, dopiero około pół roku temu w pełni zrozumiałem zakres tych różnic, a mogły być one obecne nawet dwa lata wcześniej, w trakcie których niejednokrotnie frustrowałem się i nie potrafiłem zrozumieć, dlaczego coś, co działało wczoraj, dzisiaj już nie działa. Ale pewnie dochodzi tu też kwestia, że czasem nie chcę, żeby te różnice istniały. Nie chcę dążyć do całkowitej fuzji, ale nie mogę zaprzeczyć, że byłoby o wiele wygodniej, gdybym mógł po prostu podjąć decyzję i nie zastanawiać się, czy nie będę jej żałować, kiedy się przełączę na inną osobowość. Gdybym nie musiał jakoś pogodzić sprzecznych ze sobą pragnień. Przejdę tranzycję, żeńskie osobowości będą nieszczęśliwe, nie przejdę, męskie będą, przejdę tylko niektóre jej aspekty, wszystkie będą po trochu. Lubię być mnogi, ale niektóre aspekty są trudne.
+            </p>
+
+            <p>
+                Mam nadzieję, że ten post, oprócz zaspokojenia ciekawości, pomoże wam też zrozumieć, że tożsamość ustalona jest z natury krzywdząca. Niezależnie od przyczyn, negowanie i ignorowanie własnych uczuć nie przyniesie wam nic dobrego w dłuższej perspektywie. Nawet jeśli chcecie dążyć do fuzji ostatecznej – nie możecie tak po prostu pominąć wszystkich etapów wypracowywania systemowej współpracy i zadbania o potrzeby was wszystkich, które są niezbędne do jej osiągnięcia. Ustalona tożsamość z zewnątrz może wyglądać jak dobra współpraca, bo nie macie żadnych konfliktów, ale tak naprawdę hamuje postęp w tej kwestii, bo służy potrzebom tylko wybranych współosób, a nie szukaniu kompromisów i traktowaniu wszystkich na równi. Jak mój przykład pokazuje, pozbycie się takiego zakorzenionego w podświadomości podejścia nie jest takie łatwe, ale zauważenie istnienia problemu to pierwszy krok na tej drodze. Jeśli utożsamiacie się z moim doświadczeniem, mam nadzieję, że uda się wam zaakceptować wszystkie wasze emocje i aspekty tożsamości. Nawet te niewygodne dla otoczenia lub dla was samych.
+            </p>
+
+
+            <footer data-nosnippet>
+                <blockquote><i>Musimy obierać strony. Neutralność pomaga oprawcy, nigdy ofierze. Cisza zachęca dręczyciela, nigdy dręczonego.</i> ~ Elie Wiesel (on/jego)</blockquote>
+
+
+
+
+<div class="flex"><address><p>Kontakt:</p>
+    <p><a href="mailto:systemteczowegochaosu@gmail.com" class="internal">systemteczowegochaosu@gmail.com</a></p>
+    
+    
+        <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Kanał na YouTube</a></p>
+    
+    <p><a href="https://discord.gg/5gbrwTgDzp" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Serwer na Discordzie</a></p></address>
+    
+    <div>
+        <p><a href="../#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
+        <p><a href="../#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
+        <p><a href="../wyjasnienia/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
+        <p><a href="../poprawki-bledow" class="internal">Poprawki błędów</a></p>
+    </div>
+    <div>
+        <p><a href="../zastrzezenia" class="internal">Zastrzeżenia</a></p>
+        <p><a href="../deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
+        <p><a href="../polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
+    </div>
+
+    </div>
+
+    <p>©2023-2025 <a href="../system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
+
+</footer>
+
+
+
+        </main>
+    </body>
+</html>

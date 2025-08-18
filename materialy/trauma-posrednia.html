@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Trauma pośrednia – czym jest i jak sobie z nią radzić? | Przewodnik po Mnogości</title>
+        <link rel="icon" href="../ampersand-icon.png">
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://przewodnikpomnogosci.pl/plural-journey-rings.png">
+<meta property="og:image:alt" content="mnogie okręgi">
+        <meta name="twitter:domain" content="przewodnikpomnogosci.pl">
+        <meta name="color-scheme" content="dark light">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="System Tęczowego Chaosu">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Przewodnik po Mnogości">
+        <meta property="og:url" content="https://przewodnikpomnogosci.pl/materialy/trauma-posrednia">
+        <meta name="twitter:title" property="og:title" content="Trauma pośrednia – czym jest i jak sobie z nią radzić?">
+        <meta name="description" content="Trauma pośrednia (zastępcza) lub wtórna to reakcje emocjonalne w odpowiedzi na traumę innej osoby, najczęściej występująca u bliskich ofiar i osób zawodowo zajmujących się pracą z ofiarami traumatycznych wydarzeń.">
+        <meta name="twitter:description" property="og:description" content="Trauma pośrednia (zastępcza) lub wtórna to reakcje emocjonalne w odpowiedzi na traumę innej osoby, najczęściej występująca u bliskich ofiar i osób zawodowo zajmujących się pracą z ofiarami traumatycznych wydarzeń.">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <script src="../script.js" defer></script>
+        <script src="../settings.js" defer></script>
+    </head>
+    <body>
+        <div id="shadow" class="shadow"></div>
+        <div id="sidebar-shadow" class="shadow"></div>
+        
+        <a class="to-main" href="#zawartosc">Przejdź do zawartości</a>
+        
+        <header class="header">
+            <div class="divider">
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <a href="../" class="title">
+                    <div class="logo" aria-label="mnogie okręgi">
+                        <svg class="logo">
+                            <circle class="upper"></circle>
+                            <circle class="down"></circle>
+                            <circle class="left"></circle>
+                            <circle class="right"></circle>
+                        </svg>
+                    </div>
+                    <span id="title">Przewodnik po Mnogości</span>
+                </a>
+            </div>
+            <div class="divider rdiv">
+                <button class="search mobile" aria-label="wyszukaj" onclick="showSearchInput()">
+                    <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                        <circle cx="35%" cy="35%" r="30%"/>
+                        <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                    </svg>
+                </button>
+                <form class="search" action="https://przewodnikpomnogosci.pl/wyszukaj" role="search">
+                    <button type="submit" class="search" aria-label="wyszukaj">
+                        <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                            <circle cx="35%" cy="35%" r="30%"/>
+                            <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                        </svg>
+                    </button>
+                    <input type="search" class="search" name="q" minlength="1" placeholder="wyszukaj" required>
+                    
+                </form>
+                <details class="language-select">
+                    <summary><span class="for-aria">Wybierz język</span>&#127477&#127473</summary>
+                    <div class="language-options">
+                        <div  class="language-option active">&#127477&#127473</div>
+                        <!-- <a href="https://przewodnikpomnogosci.pl/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
+                        <a href="https://przewodnikpomnogosci.pl/en/" class="language-option">&#127482&#127480</a>
+                        <!-- <a href="https://przewodnikpomnogosci.pl/ru/" class="language-option">&#127479&#127482</a> -->
+                    </div>
+                </details>
+                <a href="../ustawienia" class="settings desktop">
+                    <img src="../settings.png" alt="ustawienia i dostępność">
+                </a>
+            </div>
+        </header>
+        
+            <aside class="sidebar" id="sidebar" data-nosnippet>
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <nav class="menu-options">
+                    <a href="../" id="glowna" class="option">Strona główna</a>
+                    <a href="../czeste-pytania" class="option" id="czeste-pytania">Częste pytania</a>
+                    <a href="../terminologia" id="terminologia" class="option">Terminologia</a>
+                    <a href="../mnogosc" id="mnogosc" class="option">Mnogość</a>
+                    <a href="../nauka/" id="nauka" class="option">Nauka i wierzenia</a>       
+                    <a href="../zaburzenia/" id="zaburzenia" 
+                    class="option">Powiązane zaburzenia</a> 
+                    <a href="../powstawanie" id="powstawanie" class="option">Przyczyny powstawania</a> 
+                    <a href="../system" id="system" class="option">System</a>       
+                    <a href="../wspolosoby/" id="wspolosoby" class="option">Współosoby</a>   
+                    <a href="../frontowanie" class="option" id="frontowanie">Frontowanie</a> 
+                    <a href="../wewnetrzny-swiat" id="wewnetrzny-swiat" class="option">Wewnętrzny świat</a> 
+                    <a href="../materialy/" id="materialy" class="option current">Materiały i pomoce</a>
+                     
+                    <a href="../system-teczowego-chaosu/" id="o-nas" class="option">O nas</a>
+                    <a href="../blog/" id="blog" class="option">Blog</a>
+                </nav>
+            </aside>
+
+        <main id="zawartosc">
+
+            
+            <svg preserveAspectRatio="none" class="hidden">
+                <symbol id="ex" class="ex">
+                    <line x1="10%" y1="20%" x2="30%" y2="20%"></line>
+                    <line x1="10%" y1="20%" x2="10%" y2="90%"></line>
+                    <line x1="10%" y1="90%" x2="80%" y2="90%"></line>
+                    <line x1="80%" y1="90%" x2="80%" y2="70%"></line>
+                    <line x1="30%" y1="70%" x2="90%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="50%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="90%" y2="50%"></line>
+                </symbol>
+            </svg>
+            
+            <h1>Trauma pośrednia</h1>
+
+            <p>
+                <b>Trauma pośrednia<span class="target" id="p0"></span><a href="#0" class="internal">*</a> lub trauma wtórna to negatywne reakcje emocjonalne doświadczone w odpowiedzi na obserwowanie lub słuchanie o traumatycznych wydarzeniach, które przydarzyły się innej osobie lub stworzeniu. Jej pojawienie się zależy od częstotliwości i rodzaju ekspozycji, drastyczności bezpośredniej traumy oraz poziomu empatycznego zaangażowania w trudną historię.</b> Dlatego też najbardziej na nią narażone są bliskie osoby ofiar oraz te pomagające im w ramach swojego zawodu (na przykład służby ratownicze, służba zdrowia, ochrony dzieci, psychoterapeutyczna, weterynaryjna). Bardziej profesjonalne i dogłębne omówienia tematu w sferze zawodowej znajdziecie w artykułach: <a href="https://www.niebieskalinia.pl/aktualnosci/aktualnosci/by-nie-zaniedbac-siebie-zastepcza-traumatyzacja-i-rezyliencja-u-profesjonalistow-pracujacych-z-trauma" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>„By nie zaniedbać siebie… Zastępcza traumatyzacja i rezyliencja u profesjonalistów pracujących z traumą”</a> (sfera psychologiczna) oraz <a href="https://kwartalnik.csp.edu.pl/kp/archiwum-1/2024/kwartalnik-policyjny-nr-12024/5744,Wtorna-traumatyzacja-Charakterystyka-zjawiska.html" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>„Wtórna traumatyzacja. Charakterystyka zjawiska”</a> (sfera policji). Ja napiszę krótsze wprowadzenie skierowane do ogółu społeczeństwa, osób po traumie bezpośredniej oraz osób narażonych na traumę pośrednią.
+            </p>
+
+            <p>
+                Wiele osób intuicyjnie rozumie wpływ, jaki wiedza o okrutnych aspektach rzeczywistości może mieć na wrażliwszą osobę, więc stara się chronić dzieci przed treściami o wojnie, zabójstwach czy wykorzystywaniu seksualnym. To bardzo dobra praktyka – <b>dzieci muszą prędzej czy później dowiedzieć się o niektórych rzeczach, zwłaszcza kiedy same mogą być ich ofiarą, ale ta wiedza powinna być im przekazana w dostosowany do wieku sposób i ze wsparciem w dopasowaniu jej do swojego obrazu świata, a nie przez zobaczenie drastycznej sceny na ekranie telewizora.</b> Dorosłe osoby wysoko empatyczne też mogą dostać traumy pośredniej nawet od samego słuchania o takich historiach. <b>Mając to, a także możliwość striggerowania osoby po traumie na uwadze, nie <span class="unspecified">powinnxś</span><span class="masculine">powinieneś</span><span class="feminine">powinnaś</span><span class="neutral">powinnoś</span><span class="postgender">powinnuś</span> opowiadać o tragediach zasłyszanych w telewizji czy rzucać ciekawostkami o seryjnych mordercach bez upewnienia się, czy wszystkie obecne osoby mają wystarczającą odporność oraz są w nastroju na słuchanie o trudnych tematach.</b>
+            </p>
+
+            <p>
+                Ten temat jest jeszcze istotniejszy, kiedy samemu jesteś po traumie bezpośredniej. <b>Zarzucanie traumą (ang. <i lang="en">trauma dumping</i>) to opowiadanie o swoich traumatycznych przeżyciach bez wzięcia pod uwagę wpływu, jaki może to mieć na osoby słuchające.</b> Pewnie większość z nas się go kiedyś nieświadomie dopuściła, próbując spełnić naturalną potrzebę społecznego wsparcia, ale może być to bardzo krzywdzące zachowanie i należy dążyć do jego wyeliminowania. <b>Bliskie ci osoby są szczególnie narażone na traumę pośrednią, bo zależy im na tobie i będą bardziej przejęte twoim cierpieniem.</b> Dlatego szukając wsparcia w swoim otoczeniu, <span class="unspecified">powinnxś</span><span class="masculine">powinieneś</span><span class="feminine">powinnaś</span><span class="neutral">powinnoś</span><span class="postgender">powinnuś</span> najpierw uprzedzić wybrane osoby, że mogą się tym narazić na traumę pośrednią, i zapytać, czy mają przestrzeń, żeby sobie z tym poradzić. Możesz je odesłać do poniższych wskazówek lub innych materiałów przedstawiających metody na zapobieganie przekształceniu się jej we wtórny zespół stresu urazowego. Zapytanie o to może być dużym wyzwaniem, bo trzeba się liczyć z możliwością, że usłyszymy „nie”, ale nasze zmagania nie usprawiedliwiają narzucania innej osobie ryzyka potencjalnej traumy. Jeśli nie znajdziemy bliskiej osoby, która chce i może podjąć się wspierania nas w tej kwestii, zawsze zostaje nam opcja skorzystania z terapii, profesjonalnych linii wsparcia czy internetowych grup dla ofiar, które zostały stworzone właśnie jako przestrzeń na dzielenie się swoimi trudnymi przejściami. W cięższych przypadkach najlepiej w pierwszej kolejności zwrócić się do profesjonalnych służb, jeśli tylko istnieje taka możliwość, bo bliskie ci osoby pomimo najlepszych chęci mogą nie wiedzieć, jak ci pomóc, a bezsilność może być dodatkowo traumatyzująca.
+            </p>
+
+            <p>
+                Świadomość o traumie wtórnej jest też niezwykle ważna dla osób wysoko wrażliwych, tych z bliską osobą po traumie oraz tych chcących pomagać osobom lub zwierzętom w trudnych okolicznościach (niekoniecznie w ramach pracy zawodowej). <b>Potrzeba ci chociaż podstawowej wiedzy, żeby umieć rozpoznać u siebie objawy i odpowiednio o siebie zadbać, kiedy je zauważysz. Tak jak w przypadku każdej traumy, liczą się twoje emocjonalne reakcje, a nie, czy <span class="unspecified">„powinnxś”</span><span class="masculine">„powinieneś”</span><span class="feminine">„powinnaś”</span><span class="neutral">„powinnoś”</span><span class="postgender">„powinnuś”</span> się tak czuć.</b> Nie ważne, czy znasz te osoby, czy cierpienie dotyczyło człowieka, czy ekspozycja była bezpośrednia i w ramach zawodu, a nawet czy osoba biorąca udział w wydarzeniu sama odebrała je jako traumatyczne i czy historia nie dotyczy fikcyjnej postaci (wielu z nas odbiera takie postaci jako prawdziwe, nawet jeśli wiemy, że takie nie są – ile osób wciąż płacze przez zupełnie zmyśloną tragedię Jacka i Rose na Titanicu). Jeśli masz pewne objawy <a href="../zaburzenia/zespol-stresu-pourazowego" class="internal">zespołu stresu pourazowego</a>, na przykład poczucie bezsilności, koszmary, natrętne myśli, pogardę wobec codziennych ludzkich problemów czy wzrost lęku o swoją rodzinę, w odpowiedzi na usłyszaną lub obserwowaną traumę innej istoty, świadczy to o traumie pośredniej. <b>Objawy utrzymujące się krócej niż miesiąc są normalną reakcją na stresujące wydarzenie. Kiedy utrzymują się dłużej niż pół roku, oznacza to już obecność zaburzenia,</b> zwanego czasem wtórnym zespołem stresu urazowego (ang. <i lang="en">Secondary Traumatic Stress Disorder</i>, STSD), dla odróżnienia od PTSD wywołanego traumą bezpośrednią.<sup><span class="target" id="p1"></span>[<a href="#1" class="internal">1</a>]</sup> Ponieważ klasyfikacje diagnostyczne stosują <span class="for-aria">(w cudzysłowie)</span> „obiektywne” (wykluczające) wymagania traumy, diagnoza zespołu stresu pourazowego może zostać postawiona tylko wtedy, gdy: trauma bezpośrednia dotyczyła zagrożenia lub faktycznego okaleczenia, śmierci lub (tylko DSM-V, no chyba że uznamy to jako rodzaj okaleczenia) wykorzystania seksualnego oraz osobiście obserwowało się to wydarzenie lub przytrafiło się ono bliskiej osobie (w ICD-11 wyłącznie w przypadku nagłej lub okrutnej śmierci) lub (tylko w DSM-V) doświadcza się powtarzającego się wystawienia na szczegóły takich wydarzeń (ekspozycja przez media liczy się tylko w przypadku, gdy jest powiązana z pracą).<sup><span class="target" id="p2"></span>[<a href="#2" class="internal">2</a>]</sup><sup><span class="target" id="p3"></span>[<a href="#3" class="internal">3</a>]</sup> Niezależnie od możliwości postawienia formalnej diagnozy, wtórny zespół stresu urazowego jest syndromem tak samo wymagającym leczenia i pozostawiony sam sobie niesie ryzyko samobójstwa. <b>Jeśli zauważasz u siebie jego objawy, nie wahaj się zasięgnąć profesjonalnej pomocy.</b> 
+            </p>
+
+            <p>
+                Wtórny zespół stresu urazowego leczy się tak samo, jak zespół stresu pourazowego wywołany traumą bezpośrednią. Ale najlepiej odpowiednio o siebie zadbać, zanim trauma pośrednia przekształci się w niszczące życie zaburzenie. O ile nie pracuje się w zawodzie, który tego wymaga, <b>najłatwiejszym sposobem jest ograniczenie ilości ekspozycji na traumatyczne historie, zwłaszcza w swoje gorsze dni.</b> Jeśli czujesz, że nie dajesz rady, postaw granice odnośnie narzekania w swoich relacjach, zrób sobie przerwę od mediów społecznościowych, wstrzymaj się z zagłębianiem się w artykuły naukowe o przemocy domowej czy oglądaniem filmów wojennych. Może ci się przydać (angielska) baza <a href="https://www.doesthedogdie.com/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Does the Dog Die?</a> – zawiera listy potencjalnie triggerujących i innych tematów występujących w wielu filmach, książkach i grach, więc możesz unikać historii, które zawierają motywy szczególnie dla ciebie przytłaczające. Nie da się jednak uciekać od wszystkiego, zwłaszcza jeśli chcesz wesprzeć osoby lub zwierzęta po traumie. Wtedy ważne jest zauważenie swoich naturalnych reakcji emocjonalnych, zaakceptowanie ich i skorzystanie technik zdrowego radzenia sobie. Musisz samemu odkryć, jakie ich rodzaje najbardziej ci odpowiadają – ogólna zasada jest taka, że <b>zdrowy mechanizm pomaga ci długodystansowo, a niezdrowy (np. alkohol, ignorowanie emocji, zajadanie stresu słodyczami) tylko na chwilę, a w dłuższej perspektywie szkodzi.</b> Do najbardziej uniwersalnych zdrowych mechanizmów radzenia sobie można zaliczyć szukanie wsparcia społecznego lub profesjonalnego, dążenie do rozwiązania problemu (na przykład poprzez uczenie się, jak wesprzeć bliską ci osobę na jej drodze leczenia traumy), pisanie o swoich trudnych emocjach i przeżyciach w dzienniku, dbanie o swoje fizyczne potrzeby, spędzanie czasu z bliskimi osobami lub na swoich zainteresowaniach, wyrażanie się w kreatywny sposób, uprawianie sportu, joga, medytacja oraz niektóre praktyki religijne lub duchowe. W tym przypadku najtrudniejsze może być oddanie się rzeczom, które sprawiają ci przyjemność, bo „jak mogę się z czegoś cieszyć, kiedy w tym samym momencie tyle osób i zwierząt cierpi?”. <b>Ale nie ponosisz winy za ilość krzywdy na tym świecie i dołożenie do tego kolejnej cierpiącej osoby (ciebie) niczego nie rozwiązuje.</b> Zasługujesz na czerpanie radości z życia pomimo wszystko, a utracenie stabilności psychicznej znacznie ci utrudni zapewnienie wartościowej pomocy dla potrzebujących. Uważaj też na pułapkę skupiania się cały czas na negatywach – kiedy przytłacza cię, że twoje wysiłki to tylko niewielka kropla w morzu w obliczu cierpienia wszystkich żywych istot, pamiętaj o powiedzeniu: „pomagając jednej osobie nie zmienisz całego świata, ale możesz zmienić cały świat tej jednej osoby”. 
+            </p>
+
+            <div class="target" id="0"> </div>
+            <p>
+                <a href="#p0" class="internal">*</a>W języku polskim używane jest sformułowanie „trauma zastępcza” jako odpowiednik ang. <i lang="en">vicarious trauma</i>. <i lang="en">Vicarious</i> może oznaczać coś lub kogoś, co pełni zastępczą rolę w czyjeś miejsce, ale najczęściej używane znaczenie brzmi: „doświadczane w rezultacie obserwowania, słuchania lub czytania o działaniach innych ludzi, a nie wykonywania tych czynności samemu”.<sup><span class="target" id="p4"></span>[<a href="#4" class="internal">4</a>]</sup> Jestem przekonany, że w oryginale chodziło właśnie o to znaczenie, bo nikt tutaj niczego nie zastępuje, osoba terapeutyczna nie cierpi traumy <i>zamiast</i> osoby poszkodowanej. Nie mamy u nas słowa o dokładnie takim znaczeniu, ale moim zdaniem „pośrednia” oddaje je dużo trafniej.
+            </p>
+
+
+            <div class="target" id="przypisy"></div>
+            <h2>
+                Przypisy
+            </h2>
+            
+            <ol class="links">
+
+                <div class="target" id="1"> </div>
+                <li>
+                    <a href="#p1" class="internal">↑</a> <a href="https://www.tandfonline.com/doi/abs/10.1300/J497v75n02_06" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Secondary Traumatization, Burnout, and Vicarious Traumatization. A Review of the Literature as It Relates to Therapists Who Treat Trauma</a>, Julie Canfield, <i>Studies in Clinical Social Work</i>, 2005
+                </li>
+
+                <div class="target" id="2"> </div>
+                <li>
+                    <a href="#p2" class="internal">↑</a> <a href="https://icd.who.int/browse11/l-m/en#http%3A%2F%2Fid.who.int%2Ficd%2Fentity%2F2070699808" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Post traumatic stress disorder | ICD-11</a>
+                </li>
+
+                <div class="target" id="3"> </div>
+                <li>
+                    <a href="#p3" class="internal">↑</a> <a href="https://www.ncbi.nlm.nih.gov/books/NBK207191/box/part1_ch3.box16/" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>DSM-V diagnostic criteria for PTSD</a>
+                </li>
+
+                <div class="target" id="4"> </div>
+                <li>
+                    <a href="#p4" class="internal">↑</a> <a href="https://dictionary.cambridge.org/pl/dictionary/english/vicarious" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Vicarious | Cambridge Dictionary</a>
+                </li>
+
+            </ol>
+
+            <br><br>
+
+            <p>
+                <i>
+                    Utworzono: 18.08.2025 <br>
+                    <!-- Ostatnia aktualizacja: 06.01.2025 -->
+                </i>
+            </p>
+
+
+
+            <footer data-nosnippet>
+                <blockquote><i>Musimy obierać strony. Neutralność pomaga oprawcy, nigdy ofierze. Cisza zachęca dręczyciela, nigdy dręczonego.</i> ~ Elie Wiesel (on/jego)</blockquote>
+
+
+
+
+<div class="flex"><address><p>Kontakt:</p>
+    <p><a href="mailto:systemteczowegochaosu@gmail.com" class="internal">systemteczowegochaosu@gmail.com</a></p>
+    
+    
+        <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Kanał na YouTube</a></p>
+    
+    <p><a href="https://discord.gg/5gbrwTgDzp" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Serwer na Discordzie</a></p></address>
+    
+    <div>
+        <p><a href="../#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
+        <p><a href="../#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
+        <p><a href="../wyjasnienia/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
+        <p><a href="../poprawki-bledow" class="internal">Poprawki błędów</a></p>
+    </div>
+    <div>
+        <p><a href="../zastrzezenia" class="internal">Zastrzeżenia</a></p>
+        <p><a href="../deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
+        <p><a href="../polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
+    </div>
+
+    </div>
+
+    <p>©2023-2025 <a href="../system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
+
+</footer>
+
+
+
+        </main>
+    </body>
+</html>

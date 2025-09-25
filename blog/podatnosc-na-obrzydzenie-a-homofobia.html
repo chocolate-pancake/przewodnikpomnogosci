@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Podatność na obrzydzenie a homofobia | Przewodnik po Mnogości</title>
+        <link rel="icon" href="../ampersand-icon.png">
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://przewodnikpomnogosci.pl/plural-journey-rings.png">
+        <meta property="og:image:alt" content="mnogie okręgi">
+        <meta name="twitter:domain" content="przewodnikpomnogosci.pl">
+        <meta name="color-scheme" content="dark light">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="System Tęczowego Chaosu">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Przewodnik po Mnogości">
+        <meta property="og:url" content="https://przewodnikpomnogosci.pl/blog/podatnosc-na-obrzydzenie-a-homofobia">
+        <meta name="twitter:title" property="og:title" content="Podatność na obrzydzenie a homofobia">
+        <meta name="description" content="Jaki jest związek między podatnością na odczuwanie obrzydzenia a negatywnym nastawieniem do osób homoseksualnych?">
+        <meta name="twitter:description" property="og:description" content="Jaki jest związek między podatnością na odczuwanie obrzydzenia a negatywnym nastawieniem do osób homoseksualnych?">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <script src="../script.js" defer></script>
+        <script src="../settings.js" defer></script>
+    </head>
+    <body>
+        <div id="shadow" class="shadow"></div>
+        <div id="sidebar-shadow" class="shadow"></div>
+        
+        <a class="to-main" href="#zawartosc">Przejdź do zawartości</a>
+        
+        <header class="header">
+            <div class="divider">
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <a href="../" class="title">
+                    <div class="logo" aria-label="mnogie okręgi">
+                        <svg class="logo">
+                            <circle class="upper"></circle>
+                            <circle class="down"></circle>
+                            <circle class="left"></circle>
+                            <circle class="right"></circle>
+                        </svg>
+                    </div>
+                    <span id="title">Przewodnik po Mnogości</span>
+                </a>
+            </div>
+            <div class="divider rdiv">
+                <button class="search mobile" aria-label="wyszukaj" onclick="showSearchInput()">
+                    <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                        <circle cx="35%" cy="35%" r="30%"/>
+                        <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                    </svg>
+                </button>
+                <form class="search" action="https://przewodnikpomnogosci.pl/wyszukaj" role="search">
+                    <button type="submit" class="search" aria-label="wyszukaj">
+                        <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                            <circle cx="35%" cy="35%" r="30%"/>
+                            <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                        </svg>
+                    </button>
+                    <input type="search" class="search" name="q" minlength="1" placeholder="wyszukaj" required>
+                    
+                </form>
+                <details class="language-select">
+                    <summary><span class="for-aria">Wybierz język</span>&#127477&#127473</summary>
+                    <div class="language-options">
+                        <div  class="language-option active">&#127477&#127473</div>
+                        <!-- <a href="https://przewodnikpomnogosci.pl/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
+                        <a href="https://przewodnikpomnogosci.pl/en/" class="language-option">&#127482&#127480</a>
+                        <!-- <a href="https://przewodnikpomnogosci.pl/ru/" class="language-option">&#127479&#127482</a> -->
+                    </div>
+                </details>
+                <a href="../ustawienia" class="settings desktop">
+                    <img src="../settings.png" alt="ustawienia i dostępność">
+                </a>
+            </div>
+        </header>
+        
+            <aside class="sidebar" id="sidebar" data-nosnippet>
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <nav class="menu-options">
+                    <a href="../" id="glowna" class="option">Strona główna</a>
+                    <a href="../czeste-pytania" class="option" id="czeste-pytania">Częste pytania</a>
+                    <a href="../terminologia" id="terminologia" class="option">Terminologia</a>
+                    <a href="../mnogosc" id="mnogosc" class="option">Mnogość</a>
+                    <a href="../nauka/" id="nauka" class="option">Nauka i wierzenia</a>       
+                    <a href="../zaburzenia/" id="zaburzenia" 
+                    class="option">Powiązane zaburzenia</a> 
+                    <a href="../powstawanie" id="powstawanie" class="option">Przyczyny powstawania</a> 
+                    <a href="../system" id="system" class="option">System</a>       
+                    <a href="../wspolosoby/" id="wspolosoby" class="option">Współosoby</a>   
+                    <a href="../frontowanie" class="option" id="frontowanie">Frontowanie</a> 
+                    <a href="../wewnetrzny-swiat" id="wewnetrzny-swiat" class="option">Wewnętrzny świat</a> 
+                    <a href="../materialy/" id="materialy" class="option">Materiały i pomoce</a>
+                    <a href="../system-teczowego-chaosu/" id="o-nas" class="option">O nas</a>
+                    <a href="../blog/" id="blog" class="option current">Blog</a>
+                </nav>
+            </aside>
+
+        <main id="zawartosc">
+
+            
+            <svg preserveAspectRatio="none" class="hidden">
+                <symbol id="ex" class="ex">
+                    <line x1="10%" y1="20%" x2="30%" y2="20%"></line>
+                    <line x1="10%" y1="20%" x2="10%" y2="90%"></line>
+                    <line x1="10%" y1="90%" x2="80%" y2="90%"></line>
+                    <line x1="80%" y1="90%" x2="80%" y2="70%"></line>
+                    <line x1="30%" y1="70%" x2="90%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="50%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="90%" y2="50%"></line>
+                </symbol>
+            </svg>
+            
+            <h1>Podatność na obrzydzenie a homofobia
+                <p>sourcer/Morgan (<a href="../system-teczowego-chaosu/host" class="internal">host</a>) (on/jego) | 25.09.2025</p>
+            </h1>
+            
+            <fieldset class="warning" data-nosnippet>
+                <legend>Ostrzeżenie!</legend>
+                Wpis porusza tematy skrajnej homofobii i uprzedzeń wobec pozostałych mniejszości seksualnych, wspomina o uprzedzeniach wobec innych grup. Oprócz tego zawiera przykłady powszechnie obrzydzających bodźców, czytanie przy jedzeniu jest niezalecane.
+                <a href="../zaburzenia/zespol-stresu-pourazowego#ostrzezenia" class="internal">Dlaczego to ostrzeżenie jest ważne?</a>
+            </fieldset>
+
+            <p>
+                Dość często moralne sądy wydajemy emocjonalnie, a potem szukamy argumentów na usprawiedliwienie już podjętej decyzji. Jeśli ten koncept jest ci obcy, polecam przeczytać najpierw artykuł <a href="https://postprawdastop.wordpress.com/2018/06/28/intuicja-i-kody-moralne-czy-prawica-z-lewica-moga-sie-dogadac/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>„Intuicja i kody moralne. Czy prawica z lewicą mogą się dogadać?”</a> od Postprawda Stop, zwłaszcza że będę odnosić się tutaj do wyjaśnionych tam pięciu fundamentów moralnych.
+            </p>
+
+            <p>
+                Obrzydzenie, wstręt czy odraza to różne określenia emocji, dzięki której na ogół unikamy kontaktu z potencjalnymi źródłami zakażeń lub toksyn, takich jak odchody, spleśniałe jedzenie lub czyjaś krew. Jest częścią behawioralnego układu odpornościowego, który powstał jako pierwsza linia naszej ochrony przed chorobami, pasożytami i toksynami – jego obecność ogranicza ilość patogenów, które dostają się do naszego ciała i z które fizyczny układ odpornościowy musi zwalczyć.<sup><span class="target" id="p1"></span>[<a href="#1" class="internal">1</a>]</sup> Wszystko wskazuje na to, że w procesie ewolucji obrzydzenie zyskało też dodatkową funkcję w przynajmniej części sfer naszej moralności.<sup><span class="target" id="p2"></span>[<a href="#2" class="internal">2</a>]</sup> Kiedykolwiek zrobiło ci się niedobrze na myśl o okrucieństwach, które ktoś dokonał na innej świadomej istocie? <span class="unspecified">Czułxbyś</span><span class="masculine">Czułbyś</span><span class="feminine">Czułabyś</span><span class="neutral">Czułobyś</span><span class="postgender">Czułubyś</span> potrzebę umycia rąk, gdybyś <span class="unspecified">zostałx zmuszonx</span><span class="masculine">został zmuszony</span><span class="feminine">została zmuszona</span><span class="neutral">zostało zmuszone</span><span class="postgender">zostału zmuszonu</span> do podania dłoni osobie odpowiedzialnej za takie czyny? To jest właśnie moralne obrzydzenie.
+            </p>
+
+            <p>
+                Różne modele dzielą obrzydzenie na najróżniejsze domeny, ale dla mnie najistotniejszy w tym temacie będzie Model Tybura i wsp. Oprócz wymiaru patogennego i moralnego wyróżnia on także odrębny wymiar obrzydzenia seksualnego, które ma pełnić funkcję w unikaniu zachowań seksualnych dających mniejsze szanse na przeżycie potomstwa (na przykład seks z nieatrakcyjną lub blisko spokrewnioną osobą). Różne osoby mają różną podatność na obrzydzenie w tych trzech wymiarach. Kobiety średnio wykazują większą wrażliwość niż mężczyźni, w największym stopniu w wymiarze seksualnym, co może mieć przyczynę w ponoszeniu przez nie większych kosztów przy niekorzystnych decyzjach reprodukcyjnych (ciąża nie tylko długo trwa, ale także może być śmiertelna). Osoby antyspołeczne wykazują mniejszą podatność na seksualne obrzydzenie i jeszcze mniejszą podatność na obrzydzenie moralne, a osoby, które postrzegają siebie jako bardziej podatne na choroby, wykazują większe obrzydzenie patogenne i seksualne. <sup><span class="target" id="p3a"></span>[<a href="#3" class="internal">3</a>]</sup> Ja osobiście mam dość wysoką podatność na obrzydzenie patogenne i seksualne i znacznie mniejszą na moralne, przy czym zauważam trochę różnic w jej intensywności w zależności od osobowości.
+            </p>
+
+            <p>
+                Poziom skłonności do odczuwania różnych rodzajów obrzydzenia jest w około 50% warunkowany genetycznie.<sup><span class="target" id="p4"></span>[<a href="#4" class="internal">4</a>]</sup><sup><span class="target" id="p5"></span>[<a href="#5" class="internal">5</a>]</sup> Ogólna podatność na obrzydzenie wpływa na intensywność naszych moralnych sądów, a także poglądy polityczne – osoby o większej podatności częściej są konserwatywne.<sup><span class="target" id="p6"></span>[<a href="#6" class="internal">6</a>]</sup><sup><span class="target" id="p7"></span>[<a href="#7" class="internal">7</a>]</sup> Podatność w poszczególnych wymiarach jest powiązana z konkretnymi fundamentami naszego poczucia moralności niezależnie od przynależności politycznej – obrzydzenie moralne w największym stopniu ze sprawiedliwością/wzajemnością, a seksualne ze świętością/czystością.<sup><span class="target" id="p8"></span>[<a href="#8" class="internal">8</a>]</sup><sup><span class="target" id="p9"></span>[<a href="#9" class="internal">9</a>]</sup> Nawet tymczasowe obrzydzenie wywołane przez niepowiązane bodźce, w szczególności smakowe i zapachowe, może mieć nieznaczny wpływ na to, jak surowo osądzamy czyjeś nieetyczne zachowanie.<sup><span class="target" id="p10"></span>[<a href="#10" class="internal">10</a>]</sup>
+            </p>
+
+            <p>
+                Podatność na obrzydzenie jest też powiązana z uprzedzeniami wobec najróżniejszych grup. Dla przykładu większy poziom podatności na obrzydzenie przewiduje wspieranie zakazów żebrania czy spania w miejscach publicznych raniących osoby w kryzysie bezdomności<sup><span class="target" id="p11"></span>[<a href="#11" class="internal">11</a>]</sup>, sprzeciwianie się imigracji (tu w szczególności obrzydzenie interpersonalne),<sup><span class="target" id="p12a"></span>[<a href="#12" class="internal">12</a>]</sup><sup><span class="target" id="p13"></span>[<a href="#13" class="internal">13</a>]</sup> negatywne postrzeganie owłosienia na ciele kobiet,<sup><span class="target" id="p14"></span>[<a href="#14" class="internal">14</a>]</sup> i stygmatyzację osób po kolostomii.<sup><span class="target" id="p15"></span>[<a href="#15" class="internal">15</a>]</sup> Z kolei wyższe obrzydzenie patogenne przewiduje stygmatyzację osób z zaburzeniem związanym ze skubaniem skóry i zaburzeniem związanym z seksualnym sadyzmem, ale nie schizofrenii,<sup><span class="target" id="p16"></span>[<a href="#16" class="internal">16</a>]</sup> oraz stygmę wobec osób otyłych, ale tylko u kobiet.<sup><span class="target" id="p17"></span>[<a href="#17" class="internal">17</a>]</sup> 
+            </p>
+            
+            <p>
+                Związek pomiędzy wysoką podatnością na obrzydzenie a stygmatyzacją homoseksualnych mężczyzn jest dobrze udokumentowany<sup><span class="target" id="p18a"></span>[<a href="#18" class="internal">18</a>]</sup> i obecny w różnych kręgach kulturowych.<sup><span class="target" id="p19a"></span>[<a href="#19" class="internal">19</a>]</sup> Badań z udziałem lesbijek wykonano znacznie mniej, ale ich wyniki wyglądają podobnie, aczkolwiek związek jest mniejszy niż w przypadku gejów.<sup><span class="target" id="p20a"></span>[<a href="#20" class="internal">20</a>]</sup> Obrzydzenie patogenne zdecydowanie bierze udział w tym związku, ale seksualne na ogół wykazuje większy wpływ w badaniach, które mierzą ten wymiar.<sup><span class="target" id="p19b"></span>[<a href="#19" class="internal">19</a>]</sup><sup><span class="target" id="p21a"></span>[<a href="#21" class="internal">21</a>]</sup><sup><span class="target" id="p22a"></span>[<a href="#22" class="internal">22</a>]</sup> Czyli im bardziej dana osoba brzydzi się rzeczami takimi jak publiczne toalety, krew czy zepsute jedzenie, a jeszcze bardziej w przypadku rzeczy takich jak pornografia, seks analny, oralny czy z dopiero co poznaną osobą, tym większe prawdopodobieństwo, że będzie uprzedzona do osób homoseksualnych. Obrzydzenie ma zarówno bezpośredni, jak i pośredni związek z homofobią: wyższa podatność na obrzydzenie przewiduje m. in. prawicowy autorytaryzm,<sup><span class="target" id="p22b"></span>[<a href="#22" class="internal">22</a>]</sup> uznawanie świętości za ważny fundament moralności<sup><span class="target" id="p23"></span>[<a href="#23" class="internal">23</a>]</sup> oraz religijność, która z kolei przewiduje konserwatywne poglądy na temat seksu,<sup><span class="target" id="p24"></span>[<a href="#24" class="internal">24</a>]</sup> a każda z tych trzech cech wiąże się z uprzedzeniami wobec osób homoseksualnych. Czyli osoba łatwo ulegająca obrzydzeniu może zostać homofobiczna dlatego, że obrzydza ją myśl o seksie dwóch mężczyzn, albo dlatego, że przez to np. była zawsze przeciwna aborcji i imigracji, a czerpie poglądy na temat związków jednopłciowych ze swojego środowiska politycznego.
+            </p>
+
+            <p>
+                W sferze około seksualności opisywane przeze mnie zjawisko nie odnosi się tylko do osób homo- i biseksualnych: podatność na obrzydzenie, w szczególności interpersonalne patogenne (na przykład odnośnie napicia się soku z czyjejś szklanki), przewiduje negatywne postrzeganie także innych grup, które zagrażają tradycyjnej moralności związanej z płcią i seksualnością, takich jak osoby uprawiające seks przed małżeństwem, osoby popierające aborcję i feministki,<sup><span class="target" id="p25b"></span>[<a href="#25" class="internal">25</a>]</sup> a wyższe obrzydzenie seksualne lub patogenne – transfobię.<sup><span class="target" id="p22c"></span>[<a href="#22" class="internal">22</a>]</sup><sup><span class="target" id="p26"></span>[<a href="#26" class="internal">26</a>]</sup><sup><span class="target" id="p27"></span>[<a href="#27" class="internal">27</a>]</sup> Z kolejnego badania wynika, że wyższa podatność na obrzydzenie wiąże się też ze stygmatyzacją osób w etycznych związkach niemonogamicznych.<sup><span class="target" id="p28"></span>[<a href="#28" class="internal">28</a>]</sup> Nie udało mi się znaleźć nic o związku tej cechy ze stygmatyzacją parafilii, poza już wymienionym badaniem z udziałem seksualnego sadyzmu. Ale uważam za bardzo prawdopodobne, że gra ono rolę też w innych przypadkach: na przykład sporo osób odczuwa obrzydzenie wobec mężczyzny pragnącego zrealizować lub realizującego nekrofilną fantazję, z taką samą intensywnością także wtedy, kiedy zmarła osoba wcześniej się na to zgodziła,<sup><span class="target" id="p29a"></span>[<a href="#29" class="internal">29</a>]</sup> oraz więcej osób odczuwa obrzydzenie do niekrzywdzącego pedofila niż teleiofila (osoby odczuwającej pociąg do młodych dorosłych), który powstrzymuje się od zrealizowania nieetycznego pragnienia seksualnego, i to uczucie obrzydzenia wywołuje chęć utrzymania społecznego dystansu.<sup><span class="target" id="p30"></span>[<a href="#30" class="internal">30</a>]</sup> Najbardziej mnie w tej kwestii interesuje, czy podatność na obrzydzenie tłumaczyłaby stygmatyzację osób niemonogamicznych i parafilicznych wciąż istniejącą w bardziej progresywnych środowiskach. Homoseksualność i binarna transpłciowość są bez wątpienia najbardziej znormalizowane w szerszym lewicowym gronie, ale miałem nieszczęście przekonać się, jak spory odsetek osób o lewicowych poglądach, także tych LGBT+, posiada zaciekłe uprzedzenia do osób z parafiliami, zoofilią i pedofilią w szczególności. Wydaje mi się prawdopodobne, że normalizacja niweluje wpływ wysokiej skłonności do odczuwania odrazy na stygmatyzację, ale tylko i wyłącznie w stosunku do normalizowanych pragnień i zachowań. 
+            </p>
+            
+            <p>
+                Skoro obrzydzenie ewolucyjnie ma pełnić dla nas ważne funkcje, nasuwa się pytanie o to, dlaczego seks jednopłciowy i inne nienormatywne seksualne czynności są tak silnymi aktywatorami tej emocji. Stworzono kilka wyjaśnień dla tego powiązania, z których każde ma pewnie w sobie trochę prawdy. Jednym z nich jest mechanizm unikania chorób, mogący tłumaczyć wpływ patogennego obrzydzenia na homofobię i fakt, że obrzydzenie w stosunku do gejów jest intensywniejsze, niż do lesbijek. Geje silnie kojarzą się z seksem analnym, chociaż nie wszyscy go uprawiają i nie tylko oni. Ten rodzaj stosunku wiąże się z ryzykiem kontaktu z odchodami, które są potencjalnym źródłem zakażeń. Oprócz tego w związku z epidemią HIV/AIDS wiele osób może postrzegać gejów jako nośników tej choroby, bo należą do jednej z najczęściej zapadających na nią grup – w czasie kryzysu HIV/AIDS w Stanach Zjednoczonych homofobia znacznie wzrosła.<sup><span class="target" id="p18b"></span>[<a href="#18" class="internal">18</a>]</sup> Ale ten czynnik pewnie ma dużo mniejsze znaczenie w Polsce, bo HIV nigdy się tutaj do takiego stopnia nie rozprzestrzenił (ale nadal jest obecny – testujcie się i używajcie prezerwatyw). Jeśli patogenne wyjaśnienie jest prawidłowe, powinniśmy widzieć także uprzedzenia w stosunku do heteroseksualnych osób uprawiających seks analny lub z grup większego ryzyka zachorowania na AIDS. I faktycznie są one obecne – w niektórych krajach seks analny i oralny z osobą przeciwnej płci także były nielegalne,<sup><span class="target" id="p18c"></span>[<a href="#18" class="internal">18</a>]</sup> ludzie wykazują tak samo negatywne nastawienie do seksu analnego niezależnie od płci uprawiających go osób,<sup><span class="target" id="p31"></span>[<a href="#31" class="internal">31</a>]</sup> a heteroseksualny mężczyzna z AIDS jest stygmatyzowany bardziej niż taki z białaczką, chociaż mniej, niż homoseksualny cierpiący na tę samą chorobę.<sup><span class="target" id="p32"></span>[<a href="#32" class="internal">32</a>]</sup> Pozostaje jednak możliwość, że te uprzedzenia nie mają tej samej przyczyny, co homofobia, a raczej powstają w wyniku kojarzenia tych konceptów z seksem dwóch mężczyzn.
+            </p>
+            
+            <p>
+                Inny model proponuje, że przyczyna leży nie w lęku przed zarażeniem się chorobami od osób LGB, a samą ich orientacją lub ideologią. Popiera go fakt, że sporo osób homofobicznych uważa, że kontakt z osobami homoseksualnymi czy nawet sama świadomość ich istnienia zwiększa prawdopodobieństwo zaangażowania się w seks z osobami tej samej płci. Akurat te obawy nie mają solidnych podstaw w rzeczywistości, ale te dotyczące lewicowych poglądów już tak, bo kontakt z osobami LGBT i wspierającymi zwiększa prawdopodobieństwo ich przyjęcia. W tym świetle zachowania takie jak unikanie, wykluczanie, próby „wyleczenia” i w skrajnych przypadkach morderstwa gejów i lesbijek mają na celu ograniczenie rozprzestrzeniania się „choroby” w społeczeństwie, a zwłaszcza wśród dzieci, które są postrzegane jako najbardziej na nią podatne. Osoby autorskie modelu zauważają, że przemoc zwykle nie jest postawą przyjmowaną wobec chorych grup, ale sugerują, że w tym przypadku może być inaczej, ponieważ osoby homoseksualne są postrzegane jako celowo starające się „zarazić” jak największą liczbę osób, czyli aktywnie zranić społeczność.<sup><span class="target" id="p33"></span>[<a href="#33" class="internal">33</a>]</sup> Ta hipoteza wydaje się jeszcze bardziej prawdopodobna w świetle badania, które wykazuje, że to niski poziom dostosowania się do kulturowych norm, a nie częsty fizyczny kontakt (powodujący ryzyko zarażenia obcymi patogenami), tłumaczy związek pomiędzy wysoką podatnością na obrzydzenie a uprzedzeniami wobec osób imigranckich. Istotne w tym zakresie są jedynie normy dotyczące higieny, przygotowywania jedzenia, seksualności czy religii, a nie takie dotyczące języka czy systemu politycznego. Te normy znajdują się w obszarze czystości/świętości, która jest często uznawana za powstałą w celu unikania zarażenia przez stosowanie się do konkretnych zachowań, a więc próby ochrony ich przed obcym wpływam nadal mogą mieć korzenie w behawioralnym układzie odpornościowym.<sup><span class="target" id="p12b"></span>[<a href="#12" class="internal">12</a>]</sup>
+            </p>
+
+            <p>
+                Powyższe modele nie biorą pod uwagę, że to obrzydzenie seksualne ma największy wpływ na homofobię. Już wspominałem, że trzywymiarowy model obrzydzenia postuluje, że ten jego rodzaj ma odwodzić ludzi od ponoszenia kosztów (czas, energia, ryzyko chorób przenoszonych drogą płciową) na zachowania, które mają niskie prawdopodobieństwo zapewnienia zdrowego potomstwa. Mogłoby to tłumaczyć obrzydzenie myślą o uprawianiu seksu z osobą tej samej płci (zerowa szansa rozrodu, no chyba że jedna osoba jest trans), ale ten model zakłada, że obrzydzenie seksualne motywuje do unikania jedynie seksualnego kontaktu z wybranymi osobami (na przykład rodzicami, rodzeństwem).<sup><span class="target" id="p3b"></span>[<a href="#3" class="internal">3</a>]</sup> Jako że obrzydzenie i chęć utrzymania dystansu od osób homoseksualnych nie ogranicza się jedynie do sytuacji, w których heteroseksualna osoba czuje się obiektem niechcianego pożądania z ich strony, ten model wydaje się nie oddawać natury seksualnego obrzydzenia w tym zakresie. Z drugiej strony uprzedzenia wobec osób posiadających nienormatywne pragnienia mogą być jedynie skutkiem ubocznym emocji, która ma powstrzymywać od angażowania się w takie czynności osobiście – tak wiele osób nie potrafi zrozumieć, że preferencje nie są obiektywne i ktoś może lubić coś, co je odrzuca (chociażby ananas na pizzy). Brak umiejętności zobaczenia sytuacji z czyjejś perspektywy hamuje odczuwanie empatii, a stąd już prosta droga do dehumanizacji i w konsekwencji uprzedzeń.
+            </p>
+
+            <p>
+                Ostatni znaleziony przeze mnie model stawia hipotezę, że obrzydzenie seksualne jest mechanizmem mającym chronić pozycję uprzywilejowanej grupy w hierarchii społecznej. Wyróżnia dwa potencjalne zagrożenia dostrzegane przez heteroseksualnych mężczyzn w gejach – jednym jest utrata uprzywilejowanej pozycji heteroseksualnych związków w społeczeństwie (na przykład wyłączne prawo do małżeństwa). Drugi to lęk przed byciem postrzeganym za geja, co oznaczałoby utratę własnego statusu społecznego – czyli paradoksalnie jednym z czynników napędzających homofobię jest lęk przed zostaniem ofiarą homofobii. Rola obrzydzenia w tej kwestii może się wydawać nieintuicyjna, ale osoby autorskie modelu odkryły, że heteronormatywność ma pośredni wpływ na homofobię właśnie poprzez obrzydzenie seksualne, chociaż jest on mniejszy, niż jej bezpośredni wpływ.<sup><span class="target" id="p21b"></span>[<a href="#21" class="internal">21</a>]</sup> 
+            </p>
+
+            <p>
+                Wszystko powyższe najprawdopodobniej dotyczy tylko tradycyjnej homofobii, czyli tej ugruntowanej w przekonaniach, że seks między osobami tej płci to coś złego, grzesznego, sprzecznego z wartościami religijnymi. Przy współczesnej homofobii, polegającej na przekonaniach, że osoby homoseksualne żądają za dużo praw albo używają swojej orientacji, żeby uzyskać specjalne przywileje, odraza nie gra znaczącej roli.<sup><span class="target" id="p20b"></span>[<a href="#20" class="internal">20</a>]</sup> I oczywiście jest to tylko jeden z wielu czynników, który ma potencjał do warunkowania homofobicznych postaw, w dodatku wcale nie najbardziej wpływowy. Nie można zapominać o dehumanizacji, skłonności do dzielenia ludzi na „my” i „oni”, braku pozytywnego kontaktu międzygrupowego, wpływie znajomych, autorytetów i społeczeństwa, religijności, poczuciu niespełniania standardów męskości, braku otwartości na zmianę poglądów, braku świadomości na temat faktycznych doświadczeń osób LGBT, niskiej empatii, skłonności do agresji i potencjalnie wielu innych. Jak większość rzeczy w naturze, jest to bardzo złożony problem i nie da się go sprowadzić do tylko jednej przyczyny.
+            </p>
+
+            <p>
+                Dlaczego ten temat jest istotny? Po pierwsze świadomość, że homofobia jest w sporej części oparta na emocjach, pozwala uniknąć marnowania czasu na próby walki z nią argumentami, które my uznajemy za logiczne. Nie przekonamy większości osób udowadnianiem, że osoby homoseksualne nikogo nie ranią, bo mamy inne definicje zła i dobra i dla wielu z nich czyjaś krzywda nie stanowi warunku koniecznego ani wystarczającego do uznania czynu za niemoralny. Po drugie pozwala nam na podejście do drugiej strony z trochę większym zrozumieniem, bo niestety uprzedzenia i działanie pod wpływem emocji są całkiem naturalne dla ludzkiego gatunku. To nie jest łatwe, kiedy my przez to cierpimy, ale demonizowanie i atakowanie kogoś ma bardzo niską skuteczność w przekonywaniu go do naszego punktu widzenia, a często ma wręcz przeciwny skutek (nadal uważam, że ofiary nigdy nie powinny mieć obowiązku humanizowania osób, które je krzywdzą, ale to niestety najlepszy sposób na dołożenie się do realnej przemiany społecznej). I po trzecie pozwala nam zauważyć podobne mechanizmy u siebie i nie pozwolić im wpływać na nasze zachowanie. Raczej nie spodziewam się tutaj świadomie homofobicznych osób, ale w sporym ułamku progresywnych grup nadal występują negatywne reakcje emocjonalne w odpowiedzi na pocałunek dwóch mężczyzn, co może powodować podświadome, niewerbalne okazywanie uprzedzenia, na przykład przez trzymanie większego fizycznego dystansu.<sup><span class="target" id="p34"></span>[<a href="#34" class="internal">34</a>]</sup><sup><span class="target" id="p35"></span>[<a href="#35" class="internal">35</a>]</sup> I pewnie co najmniej część z was posiada jawne uprzedzenia do innych mniejszości seksualnych, a więc to dobra okazja, żeby je zrewidować, a także dostrzec, że może homofobiczne grupy wcale się tak bardzo od nas nie różnią, niekoniecznie są bezdusznymi potworami i także mają potencjał do zmiany na lepsze.
+            </p>
+
+            <p>
+                Jak możemy wykorzystać tę wiedzę w praktyce? Jedno potencjalne rozwiązanie polega na uświadamianiu innym, jaką role obrzydzenie odgrywa w formowaniu ich uprzedzeń wobec mniejszości seksualnych. Ja mam bardzo wysoką podatność na obrzydzenie i to paradoksalnie trochę mi pomogło w pozbyciu się homofobicznych poglądów. W którymś momencie zdałem sobie sprawę, że idea seksu odrzuca mnie tak samo mocno niezależnie od płci uprawiających go osób, więc nie mogę tutaj używać argumentu: „po prostu czuję, że to jest złe”, skoro nie robię tego w stosunku do heteronormatywnych par. Potem mogłem zastosować to samo podejście do wszystkich innych nienormatywnych fantazji seksualnych. Niestety sama świadomość może nie być skuteczna u osób, dla których świętość jest ważniejsza w podejmowaniu decyzji moralnych niż krzywda lub sprawiedliwość. Tutaj wchodzi do gry drugie potencjalne rozwiązanie, czyli próba obniżenia poziomu obrzydzenia, jaki nienormatywne seksualne czynności wywołują w wielu osobach – a przy okazji część metod, które możemy do tego wykorzystać, wpływa także na inne czynniki warunkujące homofobię.
+            </p>
+
+            <p>
+                Badania wskazują na to, że postrzegane naruszenie praw (osoby zaangażowanej lub osób trzecich) przez czyn seksualny jest związane z gniewem, a z kolei postrzegana nienormalność, nienaturalność czynu wiąże się z intensywnością odczuwanego obrzydzenia.<sup><span class="target" id="p29b"></span>[<a href="#29" class="internal">29</a>]</sup><sup><span class="target" id="p36"></span>[<a href="#36" class="internal">36</a>]</sup> To oznacza, że normalizacja potencjalnie może zniwelować wpływ podatności na obrzydzenie na stygmatyzację konkretnych mniejszości seksualnych, co wydaje się być potwierdzone podejściem lewicowych środowisk do nieznormalizowanych parafilii, o czym pisałem wcześniej. Z tego płyną dość intuicyjne rozwiązania, jak reprezentacja w mediach, pomocne szczególnie w przypadku nowego pokolenia, które nie ma jeszcze utartej opinii o tym, co jest „normalne”, a co nie. Może przydać się także edukacja o genetycznych podstawach orientacji, nieheteronormatywnych osobach w historii i zwierzętach wchodzących w związki i/lub odbywających stosunki jednopłciowe, takich jak pingwiny, szympansy karłowate czy nietoperze. Mam jednak wątpliwości co do skuteczności tego podejścia wobec osób, które nie definiują „naturalności” na podstawie faktycznej natury, a raczej swojej wizji ludzkości „przed grzechem” lub innego abstrakcyjnego, wyidealizowanego konceptu.
+            </p>
+
+            <p>
+                Lewica różni się od prawicy nie tylko mniejszą podatnością na obrzydzenie, ale także stosowaniem emocjonalnej regulacji poprzez zmianę swojego myślenia o odrzucającym bodźcu. Czyli część osób nie tylko nie pozwala obrzydzeniu wpłynąć na podejmowaną moralną decyzję, ale zaczyna myśleć o problemie w sposób, który zmniejsza odczuwane przez nich obrzydzenie. Skłonienie kogoś do używania tej metody przy powiązanych lub niepowiązanych obrazach wykazuje potencjał w zmniejszeniu jego homofobicznego nastawienia.<sup><span class="target" id="p37"></span>[<a href="#37" class="internal">37</a>]</sup><sup><span class="target" id="p38"></span>[<a href="#38" class="internal">38</a>]</sup> To może być szczególnie pomocne w pozbywaniu się podświadomych uprzedzeń, które wynikają z emocjonalnych reakcji. Jaki dokładnie sposób myślenia będzie działać, pewnie zależy od osoby. Ja na przykład mówię sobie, że moja własna ślina jest w porządku, więc dwoje ludzi wymieniających się śliną też może być, albo że resztki na talerzach w zlewie to przecież dokładnie to samo jedzenie, które miałem na obiad. Oprócz tego przypominam sobie, że obrzydzenie istnieje głównie w celu ochrony przed zakażeniami i nie potrzebuję go, kiedy wiem, że sytuacja nie niesie ze sobą takiego ryzyka. Zadziałało bardzo skutecznie w przypadku Aleksa, ale u niektórych osobowości prawie wcale. Być może trzeba szczerze chcieć przestać czuć się czymś obrzydzonym.
+            </p>
+
+            <p>
+                Uważam też za warte uwagi trzy mechanizmy wyróżnione przez Rozina i Fallon, które mogą minimalizować intensywność obrzydzenia: pozytywne podejście do obrzydzającego obiektu ze strony innych, odkrycie, że obiekt nie jest obrzydliwą rzeczą, którą się nam wydawał, oraz powtarzalna ekspozycja na nieprzyjemne bodźce. Aktywatory obrzydzenia są kształtowane w sporym stopniu kulturowo, dlatego podejście bez tej emocji do konkretnej rzeczy przez ważne dla kogoś osoby może pomóc w pozbyciu się jej, aczkolwiek osoby autorskie wątpią w skuteczność tej metody w przypadku mocno ugruntowanego obrzydzenia.<sup><span class="target" id="p39"></span>[<a href="#39" class="internal">39</a>]</sup> Nieproszona ekspozycja na seksualne bodźce może mieć skutek odwrotny do zamierzonego – w badaniu Goldberga grupa wystawiona na filmy pokazujące seksualne czynności między osobami tej samej płci tymczasowo wykazywała mniejszą tolerancyjność w porównaniu do grup, które obejrzały film o uprzedzeniach lub różnorodności seksualnej, oraz grupy kontrolnej.<sup><span class="target" id="p40"></span>[<a href="#40" class="internal">40</a>]</sup> Ale społeczny kontakt z osobami homoseksualnymi już zmniejsza uprzedzenia, szczególnie wobec lesbijek.<sup><span class="target" id="p41"></span>[<a href="#41" class="internal">41</a>]</sup> Niestety wchodzenie w interakcje może być z drugiej strony szkodliwe dla zdrowia psychicznego stygmatyzowanych osób, ale dobra wiadomość jest taka, że samo wyobrażanie sobie pozytywnej interakcji z osobą reprezentującą pewną grupę zmniejsza negatywne nastawienie do tej grupy, zarówno na świadomym, jak i podświadomym poziomie,<sup><span class="target" id="p42"></span>[<a href="#42" class="internal">42</a>]</sup> a bardziej szczegółowe wyobrażanie sobie interakcji z udziałem fizycznego dotyku obniża także poziom nieufności.<sup><span class="target" id="p43"></span>[<a href="#43" class="internal">43</a>]</sup> Przychodzi mi na myśl, że być może dawałoby to jeszcze lepsze wyniki przy zastosowaniu odgrywanego kontaktu, na przykład w kampaniach RPG, bo osoby grające często mocno wcielają się w swoje postaci, a brak kontroli nad zachowaniem drugiej strony może uczynić to doświadczenie bardziej realnym i przez to bardziej wpływowym.
+            </p>
+
+            <p>
+                Ostatni z trzech mechanizmów jest z pewnością skuteczny, ale może mieć krzywdzące skutki uboczne. Rozin i Fallon podają jako przykład jego działania sytuację, w której osoba odkrywa, że substancja uznana przez nią za zepsute mleko to tak naprawdę jogurt. De Jong i wsp. wysuwają hipotezę, że taki mechanizm działa w ekspozycyjnej terapii arachnofobii (w której obrzydzenie gra sporą rolę) – bliska interakcja z pająkiem pomaga wyzbyć się ich obrazu jako niekontrolowanych potworów, chcących zaatakować człowieka z każdej chwili, i zastąpić go zrozumieniem, że są to bardzo delikatne i strachliwe stworzenia.<sup><span class="target" id="p44"></span>[<a href="#44" class="internal">44</a>]</sup> Wiele osób może mieć podobnie wykrzywiony obraz mniejszości seksualnych – Morrison i wsp. wspominają, jak prawicowa propaganda wykorzystuje retorykę obrzydzenia, żeby uzyskać poparcie dla opresji osób homoseksualnych. Jako przykład cytują fragment tekstu Instytutu Badań Rodziny: „Typowe seksualne praktyki homoseksualistów to medyczny horror – wyobraźcie sobie wymienianie się śliną, odchodami, spermą i/lub krwią z tuzinami różnych mężczyzn każdego roku. Wyobraźcie sobie regularne picie moczu, połykanie odchodów i doznawanie uszkodzeń odbytu.”. Podczas gdy w rzeczywistości mniej niż połowa gejów regularnie uprawia chociażby seks analny<sup><span class="target" id="p45"></span>[<a href="#45" class="internal">45</a>]</sup> i nawet trzy czwarte jest monogamiczne.<sup><span class="target" id="p46"></span>[<a href="#46" class="internal">46</a>]</sup><sup><span class="target" id="p47"></span>[<a href="#47" class="internal">47</a>]</sup> Obalenie nawet mniej skrajnych koncepcji może się przyczynić do zmniejszonej stygmatyzacji – osoby poddane interwencjom anty-homofobicznym często wyrażały zaskoczenie, że osoby homoseksualne są „normalne”, na przykład że są prawdziwymi osobami z prawdziwymi doświadczeniami, nie da się ich rozpoznać po wyglądzie, czy że geje mogą wyglądać jak faceci, a lesbijki być atrakcyjne.<sup><span class="target" id="p48"></span>[<a href="#48" class="internal">48</a>]</sup> Podkreślanie występowania normatywnych cech u przeciętnych osób LGBT może minimalizować obrzydzenie do nich, ale z drugiej strony przy okazji przyczyniać się do utrwalania uprzedzeń wobec grup, które nie wpasowują się w te normy, jak osoby nonkonformistyczne płciowo, niemonogamiczne czy z urofilią lub koprofilią. Ale z drugiej strony być może samo pokazywanie faktów nie pogłębia i tak już istniejących uprzedzeń, a marginalizacja tylko części mniejszości seksualnych i płciowych to zawsze krok do przodu w porównaniu do marginalizacji wszystkich. Dla wielu osób tak drastyczna zmiana postrzegania rzeczywistości w krótkim czasie będzie pewnie stanowić duży problem, ale możemy mieć nadzieję, że po pełnym zaakceptowaniu normatywnych osób homoseksualnych chociaż część z nich będzie gotowa na dalsze rewidowanie swoich uprzedzeń.
+            </p>
+            
+            <p>
+                Wyszła mi o wiele bardziej szczegółowa analiza, niż się na początku spodziewałem, a z pewnością jest jeszcze dużo więcej rzeczy do zgłębienia w tej kwestii, niektórych póki co nawet niezbadanych. Ale myślę, że tyle tutaj wystarczy. Jeszcze tylko ostatnia ważna rzecz dla osób angażujących się w aktywizm – zdolność do wywoływania obrzydzenia może przenosić się na neutralne obiekty poprzez fizyczny kontakt (prawo zakażenia),<sup><span class="target" id="p49"></span>[<a href="#49" class="internal">49</a>]</sup> co najprawdopodobniej ma zastosowanie także do osób, przynajmniej w przypadku obrzydzenia moralnego.<sup><span class="target" id="p50"></span>[<a href="#50" class="internal">50</a>]</sup> Podatność na obrzydzenie przewiduje negatywne podejście także wobec osób feministycznych oraz wspierających osoby homoseksualne,<sup><span class="target" id="p25c"></span>[<a href="#25" class="internal">25</a>]</sup> a Neuberg i wsp. wykazali, że heteroseksualni mężczyźni zaczynają być stygmatyzowani, kiedy przebywają z homoseksualnymi przyjaciółmi, bez względu na poziom podobieństwa do osoby oceniającej czy wysoki status społeczny.<sup><span class="target" id="p51"></span>[<a href="#51" class="internal">51</a>]</sup> Przez to okazywanie wsparcia osobom z marginalizowanych grup niesie ze sobą ryzyko zostania ofiarą uprzedzeń, a potencjalnie także przemocy powodowanej nienawiścią. Dlatego w pierwszej kolejności zadbajcie o swoje bezpieczeństwo i odpowiednie wsparcie społeczne.
+            </p>
+
+            <div class="target" id="przypisy"></div>
+            <h2>
+                Przypisy
+            </h2>
+
+            
+            <ol class="links">
+
+                <div class="target" id="1"> </div>
+                <li>
+                    <a href="#p1" class="internal">↑</a> <a href="https://doi.org/10.1098/rstb.2011.0029" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>The behavioural immune system and the psychology of human sociality</a>, Mark Schaller, <i>Philosophical Transactions of the Royal Society B</i>, 2011
+                </li>
+
+                <div class="target" id="2"> </div>
+                <li>
+                    <a href="#p2" class="internal">↑</a> <a href="https://doi.org/10.1126/science.1170492" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>From Oral to Moral. Is moral disgust an elaboration of a food rejection system?</a>, Paul Rozin i wsp., <i>Science</i>, 2009
+                </li>
+
+                <div class="target" id="3"> </div>
+                <li>
+                    ↑ <sup><a href="#p3a" class="internal">a</a></sup> <sup><a href="#p3b" class="internal">b</a></sup> <a href="https://doi.org/10.1037/a0015474" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Microbes, mating, and morality: Individual differences in three functional domains of disgust</a>, J. M. Tybur i wsp., <i>Journal of Personality and Social Psychology</i>, 2009
+                </li>
+
+                <div class="target" id="4"> </div>
+                <li>
+                    <a href="#p4" class="internal">↑</a> <a href="https://doi.org/10.1037/emo0000101" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>The quantitative genetics of disgust sensitivity.</a>, J. M. Sherlock i wsp., <i>Emotion</i>, 2016
+                </li>
+
+                <div class="target" id="5"> </div>
+                <li>
+                    <a href="#p5" class="internal">↑</a> <a href="https://doi.org/10.1177/2167702620951510" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Genetic and Environmental Influences on Disgust Proneness, Contamination Sensitivity, and Their Covariance</a>, Joshua M. Tybur i wsp., <i>Clinical Psychological Science</i>, 2020
+                </li>
+
+                <div class="target" id="6"> </div>
+                <li>
+                    <a href="#p6" class="internal">↑</a> <a href="https://doi.org/10.1080/02699930802110007" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Conservatives are more easily disgusted than liberals</a>, Yoel Inbar i wsp., <i>Cognition and Emotion</i>, 2009
+                </li>
+
+                <div class="target" id="7"> </div>
+                <li>
+                    <a href="#p7" class="internal">↑</a> <a href="https://doi.org/10.1371/journal.pone.0025552" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Disgust Sensitivity and the Neurophysiology of Left-Right Political Orientations</a>, Kevin B. Smith i wsp., <i>PLoS ONE</i>, 2011
+                </li>
+
+                <div class="target" id="8"> </div>
+                <li>
+                    <a href="#p8" class="internal">↑</a> <a href="https://doi.org/10.1037/ebs0000075" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Disgust sensitivity relates to moral foundations independent of political ideology</a>, F. van Leeuwen i wsp., <i>Evolutionary Behavioral Sciences</i>, 2016
+                </li>
+
+                <div class="target" id="9"> </div>
+                <li>
+                    <a href="#p9" class="internal">↑</a> <a href="https://doi.org/10.1177/17540739221114643" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Specificity Versus Generality: A Meta-Analytic Review of the Association Between Trait Disgust Sensitivity and Moral Judgment</a>, Michael R. Donner i wsp., <i>Emotion Review</i>, 2022
+                </li>
+
+                <div class="target" id="10"> </div>
+                <li>
+                    <a href="#p10" class="internal">↑</a> <a href="https://doi.org/10.1177/1745691615583128" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Does Incidental Disgust Amplify Moral Judgment? A Meta-Analytic Review of Experimental Evidence</a>, Justin F. Landy i Geoffrey P. Goodwin, <i>Perspectives on Psychological Science</i>, 2015
+                </li>
+
+                <div class="target" id="11"> </div>
+                <li>
+                    <a href="#p11" class="internal">↑</a> <a href="https://doi.org/10.1007/s11109-016-9366-4" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Explaining Public Support for Counterproductive Homelessness Policy: The Role of Disgust</a>, Scott Clifford i Spencer Piston, <i>Political Behavior</i>, 2016
+                </li>
+
+                <div class="target" id="12"> </div>
+                <li>
+                    ↑ <sup><a href="#p12a" class="internal">a</a></sup> <sup><a href="#p12b" class="internal">b</a></sup> <a href="https://doi.org/10.1016/j.jesp.2019.103817" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Disgust sensitivity and opposition to immigration: Does contact avoidance or resistance to foreign norms explain the relationship?</a>, Annika K. Karinen i wsp., <i>Journal of Experimental Social Psychology</i>, 2019
+                </li>
+
+                <div class="target" id="13"> </div>
+                <li>
+                    <a href="#p13" class="internal">↑</a> <a href="https://doi.org/10.1111/j.1467-9280.2007.01962.x" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Interpersonal Disgust, Ideological Orientations, and Dehumanization as Predictors of Intergroup Attitudes</a>, Gordon Hodson i Kimberly Costello, <i>Psychological Science</i>, 2007
+                </li>
+
+                <div class="target" id="14"> </div>
+                <li>
+                    <a href="#p14" class="internal">↑</a> <a href="https://doi.org/10.1111/j.1471-6402.2004.00155.x" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Attitudes Toward Women's Body Hair: Relationship with Disgust Sensitivity</a>, Marika Tiggemann i Christine Lewis, <i>Psychology of Women Quarterly</i>, 2004
+                </li>
+
+                <div class="target" id="15"> </div>
+                <li>
+                    <a href="#p15" class="internal">↑</a> <a href="https://doi.org/10.1016/j.jrp.2006.09.006" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Sensitivity to disgust, stigma, and adjustment to life with a colostomy</a>, Dylan M. Smith i wsp., <i>Journal of Research in Personality</i>, 2007
+                </li>
+
+                <div class="target" id="16"> </div>
+                <li>
+                    <a href="#p16" class="internal">↑</a> <a href="https://doi.org/10.1007/s40806-019-00208-x" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Pathogen Disgust Predicts Stigmatization of Individuals with Mental Health Conditions</a>, Eugene J. Dawydiak i wsp., <i>Evolutionary Psychological Science</i>, 2019
+                </li>
+
+                <div class="target" id="17"> </div>
+                <li>
+                    <a href="#p17" class="internal">↑</a> <a href="https://doi.org/10.1038/oby.2011.247" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Disgust Sensitivity, Obesity Stigma, and Gender: Contamination Psychology Predicts Weight Bias for Women, Not Men</a>, Debra L. Lieberman i wsp., <i>Obesity</i>, 2012
+                </li>
+
+                <div class="target" id="18"> </div>
+                <li>
+                    ↑ <sup><a href="#p18a" class="internal">a</a></sup> <sup><a href="#p18b" class="internal">b</a></sup> <sup><a href="#p18c" class="internal">c</a></sup> <a href="https://doi.org/10.1080/00918369.2018.1553349" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>A Meta-Analytic Review of the Association Between Disgust and Prejudice Toward Gay Men</a>, dr Mark J. Kiss i wsp., <i>Journal of Homosexuality</i>, 2018
+                </li>
+
+                <div class="target" id="19"> </div>
+                <li>
+                    ↑ <sup><a href="#p19a" class="internal">a</a></sup> <sup><a href="#p19b" class="internal">b</a></sup> <a href="https://doi.org/10.1177/13684302211067151" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Disgust sensitivity relates to attitudes toward gay men and lesbian women across 31 nations</a>, Florian van Leeuwen i wsp., <i>Group Processes & Intergroup Relations</i>, 2022
+                </li>
+
+                <div class="target" id="20"> </div>
+                <li>
+                    ↑ <sup><a href="#p20a" class="internal">a</a></sup> <sup><a href="#p20b" class="internal">b</a></sup>  <a href="https://doi.org/10.1080/19419899.2022.2090270" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Associations between subcategories of disgust sensitivity and homonegativity: examining intergroup contact as a moderator</a>, Ana Carolina de Barros i wsp., <i>Psychology & Sexuality</i>, 2023
+                </li>
+
+                <div class="target" id="21"> </div>
+                <li>
+                    ↑ <sup><a href="#p21a" class="internal">a</a></sup> <sup><a href="#p21b" class="internal">b</a></sup>  <a href="https://doi.org/10.1007/s11199-020-01146-w" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Heteronormativity, Disgust Sensitivity, and Hostile Attitudes toward Gay Men: Potential Mechanisms to Maintain Social Hierarchies</a>, Travis N. Ray i Michele R. Parkhill, <i>Sex Roles</i>, 2020
+                </li>
+
+                <div class="target" id="22"> </div>
+                <li>
+                    ↑ <sup><a href="#p22a" class="internal">a</a></sup> <sup><a href="#p22b" class="internal">b</a></sup> <sup><a href="#p22c" class="internal">c</a></sup> <a href="https://doi.org/10.1080/19419899.2022.2100270" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Sexual-specific disgust sensitivity mechanisms in homonegativity and transnegativity; the mediating role of right-wing authoritarianism (RWA)</a>, Ana Maria Chamorro Coneo i wsp., <i>Psychology & Sexuality</i>, 2023
+                </li>
+
+                <div class="target" id="23"> </div>
+                <li>
+                    <a href="#p23" class="internal">↑</a> <a href="https://doi.org/10.3389/fpsyg.2019.01229" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>The Association Between Disgust Sensitivity and Negative Attitudes Toward Homosexuality: The Mediating Role of Moral Foundations</a>, Ruile Wang i wsp., <i>Frontiers in Psychology</i>, 2019
+                </li>
+
+                <div class="target" id="24"> </div>
+                <li>
+                    <a href="#p24" class="internal">↑</a> <a href="https://doi.org/10.1016/j.jrp.2008.04.001" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Disgust, scrupulosity and conservative attitudes about sex: Evidence for a mediational model of homophobia</a>, Bunmi O. Olatunji, <i>Journal of Research in Personality</i>, 2008
+                </li>
+
+                <div class="target" id="25"> </div>
+                <li>
+                    ↑ <sup><a href="#p25a" class="internal">a</a></sup> <sup><a href="#p25b" class="internal">b</a></sup> <sup><a href="#p25c" class="internal">c</a></sup> <a href="https://doi.org/10.1016/j.paid.2014.07.001" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Disgust sensitivity selectively predicts attitudes toward groups that threaten (or uphold) traditional sexual morality</a>, Jarret T. Crawford i wsp., <i>Personality and Individual Differences</i>, 2014
+                </li>
+
+                <div class="target" id="26"> </div>
+                <li>
+                    <a href="#p26" class="internal">↑</a> <a href="https://doi.org/10.1080/21565503.2016.1260482" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Transgender politics as body politics: effects of disgust sensitivity and authoritarianism on transgender rights attitudes</a>, Patrick R. Miller i wsp., <i>Politics, Groups, and Identities</i>, 2017
+                </li>
+
+                <div class="target" id="27"> </div>
+                <li>
+                    <a href="#p27" class="internal">↑</a> <a href="https://doi.org/10.1017/pls.2020.20" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Disgust and disgust-driven moral concerns predict support for restrictions on transgender bathroom access</a>, Matthew E. Vanaman i Hanah A. Chapman, <i>Politics and the Life Sciences</i>, 2020
+                </li>
+
+                <div class="target" id="28"> </div>
+                <li>
+                    <a href="#p28" class="internal">↑</a> <a href="https://doi.org/10.1007/s10508-025-03178-3" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Moral Judgment Toward Individuals in Consensually Non-Monogamous Relationships As A Function of Moral Foundations And Disgust Sensitivity</a>, Dylan Selterman i wsp., <i>Archives of Sexual Behavior</i>, 2025
+                </li>
+
+                <div class="target" id="29"> </div>
+                <li>
+                    ↑ <sup><a href="#p29a" class="internal">a</a></sup> <sup><a href="#p29b" class="internal">b</a></sup> <a href="https://doi.org/10.1080/02699931.2014.930420" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Consenting to counter-normative sexual acts: Differential effects of consent on anger and disgust as a function of transgressor or consenter</a>, Pascale Sophie Russell i Jared Piazza, <i>Cognition and Emotion</i>, 2015
+                </li> 
+                <!-- acts - necrophilic act, same-sex siblings, woman and trans man -->
+                <!-- necrophilic desire without commiting the act elicits similar disgust as commiting it -->
+
+                <div class="target" id="30"> </div>
+                <li>
+                    <a href="#p30" class="internal">↑</a> <a href="https://doi.org/10.1007/s10508-017-1073-7" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Emotions and Cognitions Associated with the Stigma of Non-Offending Pedophilia: A Vignette Experiment</a>, Sara Jahnke, <i>Archives of Sexual Behavior</i>, 2017
+                </li> 
+
+                <div class="target" id="31"> </div>
+                <li>
+                    <a href="#p31" class="internal">↑</a> <a href="https://doi.org/10.1080/19317611.2016.1223251" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Sexual Restrictions Beyond Anti-Gay Prejudice: Anal Sex, Oral Sex, Masculinity and Sexual Prejudice in Jamaica</a>, Keon West, <i>International Journal of Sexual Health</i>, 2016
+                </li> 
+
+                <div class="target" id="32"> </div>
+                <li>
+                    <a href="#p32" class="internal">↑</a> <a href="https://doi.org/10.1300/J082v19n03_05" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>The Stigma of AIDS: Fear of Disease and Prejudice Toward Gay Men</a>, Janet S. St. Lawrence i wsp., <i>Journal of Homosexuality</i>, 1990
+                </li> 
+
+                <div class="target" id="33"> </div>
+                <li>
+                    <a href="#p33" class="internal">↑</a> <a href="https://doi.org/10.1177/1088868315601613" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Homosexuality and Pro-Gay Ideology as Pathogens? Implications of a Disease-Spread Lay Model for Understanding Anti-Gay Behaviors</a>, Gabrielle Filip-Crawford i  Steven L. Neuberg, <i>Personality and Social Psychology Review</i>, 2015
+                </li>
+
+                <div class="target" id="34"> </div>
+                <li>
+                    <a href="#p34" class="internal">↑</a> <a href="https://doi.org/10.1080/00224545.2016.1184127" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Disgusted but not afraid: Feelings toward same-sex kissing reveal subtle homonegativity</a>, Elizabeth M. Kiebel i wsp., <i>The Journal of Social Psychology</i>, 2016
+                </li> 
+
+                <div class="target" id="35"> </div>
+                <li>
+                    <a href="#p35" class="internal">↑</a> <a href="https://doi.org/10.1080/19419899.2017.1328459" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>What do two men kissing and a bucket of maggots have in common? Heterosexual men’s indistinguishable salivary α-amylase responses to photos of two men kissing and disgusting images</a>, Breanna Maureen O’Handley i wsp., <i>Psychology & Sexuality</i>, 2017
+                </li> 
+
+                <div class="target" id="36"> </div>
+                <li>
+                    <a href="#p36" class="internal">↑</a> <a href="https://doi.org/10.1080/02699931.2011.645278" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Emotions in sexual morality: Testing the separate elicitors of anger and disgust</a>, Roger Giner-Sorolla i wsp., <i>Cognition and Emotion</i>, 2012
+                </li> 
+<!-- acts - homosexual, man and a trans woman, siblings, boss and employee, man and prostitute and others -->
+
+                <div class="target" id="37"> </div>
+                <li>
+                    <a href="#p37" class="internal">↑</a> <a href="https://doi.org/10.1037/a0033727" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Gut check: Reappraisal of disgust helps explain liberal–conservative differences on issues of purity.</a>, Matthew Feinberg i wsp., <i>Emotion</i>, 2014
+                </li> 
+
+                <div class="target" id="38"> </div>
+                <li>
+                    <a href="#p38" class="internal">↑</a> <a href="https://doi.org/10.1371/journal.pone.0083143" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Emotion Regulation as the Foundation of Political Attitudes: Does Reappraisal Decrease Support for Conservative Policies?</a>, Jooa Julia Lee i wsp., <i>PLoS ONE</i>, 2013
+                </li> 
+
+                <div class="target" id="39"> </div>
+                <li>
+                    <a href="#p39" class="internal">↑</a> <a href="https://doi.org/10.1037/0033-295X.94.1.23" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>A perspective on disgust</a>, P. Rozin i A. Fallon, <i>Psychological Review</i>, 1987
+                </li> 
+
+                <div class="target" id="40"> </div>
+                <li>
+                    <a href="#p40" class="internal">↑</a> <a href="https://doi.org/10.1080/07448481.1982.9938905" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Attitude Change among College Students toward Homosexuality</a>, Raymond Goldberg, <i>Journal of American College Health Association</i>, 2011
+                </li> 
+
+                <div class="target" id="41"> </div>
+                <li>
+                    <a href="#p41" class="internal">↑</a> <a href="https://doi.org/10.1080/07448481.1982.9938905" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>The Effects of Contact on Sexual Prejudice: A Meta-Analysis</a>, Sara J. Smith i wsp., <i>Sex Roles</i>, 2009
+                </li> 
+
+                <div class="target" id="42"> </div>
+                <li>
+                    <a href="#p42" class="internal">↑</a> <a href="https://doi.org/10.1348/014466609X419901" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Imagining intergroup contact reduces implicit prejudice</a>, Rhiannon N. Turner i Richard J. Crisp, <i>British Journal of Social Psychology</i>, 2010
+                </li> 
+
+                <div class="target" id="43"> </div>
+                <li>
+                    <a href="#p43" class="internal">↑</a> <a href="https://doi.org/10.1111/jasp.12281" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Can (elaborated) imagined contact interventions reduce prejudice among those higher in intergroup disgust sensitivity (ITG-DS)?</a>, Gordon Hodson i wsp., <i>Journal of Applied Social Psychology</i>, 2014
+                </li> 
+
+                <div class="target" id="44"> </div>
+                <li>
+                    <a href="#p44" class="internal">↑</a> <a href="https://doi.org/10.1016/S0005-7967(99)00135-7" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Counterconditioning in the treatment of spider phobia: effects on disgust, fear and valence</a>, Peter J. de Jong i wsp., <i>Behaviour Research and Therapy</i>, 2000
+                </li> 
+
+                <div class="target" id="45"> </div>
+                <li>
+                    <a href="#p45" class="internal">↑</a> <a href="https://doi.org/10.1080/00918369.2018.1490576" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>“We’re Disgusted With Queers, not Fearful of Them”: The Interrelationships Among Disgust, Gay Men’s Sexual Behavior, and Homonegativity</a>, Todd G. Morrison i wsp., <i>Journal of Homosexuality</i>, 2019
+                </li> 
+
+                <div class="target" id="46"> </div>
+                <li>
+                    <a href="#p46" class="internal">↑</a> <a href="https://doi.org/10.1300/J398v06n04_02" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Gay Men in Long-Term Relationships. The Impact of Monogamy and Non-Monogamy on Relational Health</a>, Michael E. Bricker i Sharon G. Horne, <i>Journal of Couple & Relationship Therapy</i>, 2007
+                </li> 
+
+                <div class="target" id="47"> </div>
+                <li>
+                    <a href="#p47" class="internal">↑</a> <a href="https://doi.org/10.1007/s11199-015-0566-x" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Gay Men’s (Non)Monogamy Ideals and Lived Experience</a>, Brad van Eeden-Moorefield i wsp., <i>Sex Roles</i>, 2015
+                </li> 
+
+                <div class="target" id="48"> </div>
+                <li>
+                    <a href="#p48" class="internal">↑</a> <a href="https://doi.org/10.1080/00918369.2018.1500780" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Negotiating Theory When Doing Practice: A Systematic Review of Qualitative Research on Interventions to Reduce Homophobia</a>, Sebastian E. Bartoș i Peter Hegarty, <i>Journal of Homosexuality</i>, 2018
+                </li> 
+
+                <div class="target" id="49"> </div>
+                <li>
+                    <a href="#p49" class="internal">↑</a> <a href="https://doi.org/10.1037/0022-3514.50.4.703" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Operation of the laws of sympathetic magic in disgust and other domains</a>, P. Rozin i wsp., <i>Journal of Personality and Social Psychology</i>, 1986
+                </li> 
+
+                <div class="target" id="50"> </div>
+                <li>
+                    <a href="#p50" class="internal">↑</a> <a href="https://doi.org/10.5178/lebs.2024.119" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Human-to-Human Contagion of Moral Disgust Based on Physical Contact</a>, Ayumi Ikeda i wsp., <i>Letters on Evolutionary Behavioral Science</i>, 2024
+                </li> 
+
+                <div class="target" id="51"> </div>
+                <li>
+                    <a href="#p51" class="internal">↑</a> <a href="https://doi.org/10.1177/0146167294202007" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>When We Observe Stigmatized and "Normal" Individuals Interacting: Stigma by Association</a>, Steven L. Neuberg i wsp., <i>Personality and Social Psychology Bulletin</i>, 1994
+                </li>
+
+            </ol>
+
+
+
+            <footer data-nosnippet>
+                <blockquote><i>Musimy obierać strony. Neutralność pomaga oprawcy, nigdy ofierze. Cisza zachęca dręczyciela, nigdy dręczonego.</i> ~ Elie Wiesel (on/jego)</blockquote>
+
+
+
+
+<div class="flex"><address><p>Kontakt:</p>
+    <p><a href="mailto:systemteczowegochaosu@gmail.com" class="internal">systemteczowegochaosu@gmail.com</a></p>
+    
+    
+        <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Kanał na YouTube</a></p>
+    
+    <p><a href="https://discord.gg/5gbrwTgDzp" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Serwer na Discordzie</a></p></address>
+    
+    <div>
+        <p><a href="../#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
+        <p><a href="../#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
+        <p><a href="../nauka/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
+        <p><a href="../poprawki-bledow" class="internal">Poprawki błędów</a></p>
+    </div>
+    <div>
+        <p><a href="../zastrzezenia" class="internal">Zastrzeżenia</a></p>
+        <p><a href="../deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
+        <p><a href="../polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
+    </div>
+
+    </div>
+
+    <p>©2023-2025 <a href="../system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
+
+</footer>
+
+
+
+        </main>
+    </body>
+</html>

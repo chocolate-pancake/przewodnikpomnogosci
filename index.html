@@ -2,25 +2,25 @@
 <html lang="pl">
     <head>
         <meta charset="UTF-8">
-        <title>Przewodnik po Mnogości – wszystko o byciu wieloma w jednym ciele</title>
-        <link rel="icon" href="ampersand-icon.png">
+        <title>Blog | Przewodnik po Mnogości</title>
+        <link rel="icon" href="../ampersand-icon.png">
         <meta property="og:image" itemprop="image primaryImageOfPage" content="https://przewodnikpomnogosci.pl/plural-journey-rings.png">
-        <meta property="og:image:alt" content="mnogie okręgi">
+<meta property="og:image:alt" content="mnogie okręgi">
         <meta name="twitter:domain" content="przewodnikpomnogosci.pl">
         <meta name="color-scheme" content="dark light">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="System Tęczowego Chaosu">
         <meta property="og:type" content="website">
-        <!-- <meta property="og:site_name" content="Przewodnik po Mnogości"> -->
-        <meta property="og:url" content="https://przewodnikpomnogosci.pl/">
-        <meta name="twitter:title" property="og:title" content="Przewodnik po Mnogości">
-        <meta name="google-site-verification" content="EG42P3yVBO20KuBYByK7wo7eml-10mxfQ1CX9zaBalE" />
-        <meta name="description" content="Przewodnik po Mnogości to projekt mający szerzyć informacje i świadomość o mnogości – obecności kilku osób/osobowości w jednym ciele lub umyśle. Obejmuje to dysocjacyjne zaburzenie tożsamości, OSDD, tulpomancję, więź dusz oraz wiele innych rodzajów mnogości.">
-        <meta name="twitter:description" property="og:description" content="Przewodnik po Mnogości to projekt mający szerzyć informacje i świadomość o mnogości – obecności kilku osób/osobowości w jednym ciele lub umyśle. Obejmuje to dysocjacyjne zaburzenie tożsamości, OSDD, tulpomancję, więź dusz oraz wiele innych rodzajów mnogości.">
-        <!-- <meta name="keywords" content="mnogość, wielorakość, dysocjacyjne zaburzenie tożsamości, opętanie, przewodnik po mnogości, mnogość przewodnik, mnogość definicja, wielorakość definicja"> -->
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="script.js" defer></script>
-        <script src="settings.js" defer></script>
+        <meta property="og:site_name" content="Przewodnik po Mnogości">
+        <meta property="og:url" content="https://przewodnikpomnogosci.pl/blog/">
+        <meta name="twitter:title" property="og:title" content="Blog">
+        <meta name="description" content="Blog Systemu Tęczowego Chaosu, na którym opisują swoje doświadczenia i przemyślenia dotyczące życia w wiele osób w jednym ciele i wielu innych tematów.">
+        <meta name="twitter:description" property="og:description" content="Blog Systemu Tęczowego Chaosu, na którym opisują swoje doświadczenia i przemyślenia dotyczące życia w wiele osób w jednym ciele i wielu innych tematów.">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="stylesheet" type="text/css" href="../nauka/filters.css">
+        <script src="../script.js" defer></script>
+        <script src="../settings.js" defer></script>
+        <script src="topics.js" defer></script>
     </head>
     <body>
         <div id="shadow" class="shadow"></div>
@@ -28,7 +28,6 @@
         
         <a class="to-main" href="#zawartosc">Przejdź do zawartości</a>
         
-        <!-- <img src="menu-icon.png" alt="Menu" title="Menu"> -->
         <header class="header">
             <div class="divider">
                 <button class="menu-icon" id="menu1" type="button" onclick="menu()">
@@ -38,7 +37,7 @@
                         <line x1="25%" y1="65%" x2="75%" y2="65%"/>
                     </svg>
                 </button>
-                <a href="/" class="title">
+                <a href="../" class="title">
                     <div class="logo" aria-label="mnogie okręgi">
                         <svg class="logo">
                             <circle class="upper"></circle>
@@ -72,18 +71,18 @@
                     <div class="language-options">
                         <div  class="language-option active">&#127477&#127473</div>
                         <!-- <a href="https://przewodnikpomnogosci.pl/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
-                        <a href="https://przewodnikpomnogosci.pl/en/" class="language-option">&#127482&#127480</a>
+                        <a href="https://przewodnikpomnogosci.pl/en/blog/" class="language-option">&#127482&#127480</a>
                         <!-- <a href="https://przewodnikpomnogosci.pl/ru/" class="language-option">&#127479&#127482</a> -->
                     </div>
                 </details>
-                <a href="ustawienia" class="settings desktop">
-                    <img src="settings.png" alt="ustawienia i dostępność">
+                <a href="../ustawienia" class="settings desktop">
+                    <img src="../settings.png" alt="ustawienia i dostępność">
                 </a>
             </div>
         </header>
         
-        <!-- <a href="ustawienia" class="settings mobile">
-            <img src="settings.png" alt="ustawienia i dostępność">
+        <!-- <a href="../ustawienia" class="settings mobile">
+            <img src="../settings.png" alt="ustawienia i dostępność">
         </a> -->
         
             <aside class="sidebar" id="sidebar" data-nosnippet>
@@ -95,25 +94,27 @@
                     </svg>
                 </button>
                 <nav class="menu-options">
-                    <a href="/" id="glowna" class="option current">Strona główna</a>
-                    <a href="czeste-pytania" class="option" id="czeste-pytania">Częste pytania</a>
-                    <a href="terminologia" id="terminologia" class="option">Terminologia</a> 
-                    <a href="mnogosc" id="mnogosc" class="option">Mnogość</a>  
-                    <a href="wyjasnienia/" id="wyjasnienia" class="option">Nauka i wierzenia</a>   
-                    <a href="zaburzenia/" id="zaburzenia" 
-                    class="option">Powiązane zaburzenia</a>  
-                    <a href="powstawanie" id="powstawanie" class="option">Przyczyny powstawania</a> 
-                    <a href="system" id="system" class="option">System</a>      
-                    <a href="wspolosoby/" id="wspolosoby" class="option">Współosoby</a> 
-                    <a href="frontowanie" class="option" id="frontowanie">Frontowanie</a>   
-                    <a href="wewnetrzny-swiat" id="wewnetrzny-swiat" class="option">Wewnętrzny świat</a> 
-                    <a href="materialy/" id="materialy" class="option">Materiały i pomoce</a>
-                    <a href="system-teczowego-chaosu/" id="o-nas" class="option">O nas</a>
-                    <a href="blog/" id="blog" class="option">Blog</a>
+                    <a href="../" id="glowna" class="option">Strona główna</a>
+                    <a href="../czeste-pytania" class="option" id="czeste-pytania">Częste pytania</a>
+                    <a href="../terminologia" id="terminologia" class="option">Terminologia</a>
+                    <a href="../mnogosc" id="mnogosc" class="option">Mnogość</a>
+                    <a href="../nauka/" id="nauka" class="option">Nauka i wierzenia</a>       
+                    <a href="../zaburzenia/" id="zaburzenia" 
+                    class="option">Powiązane zaburzenia</a> 
+                    <a href="../powstawanie" id="powstawanie" class="option">Przyczyny powstawania</a> 
+                    <a href="../system" id="system" class="option">System</a>       
+                    <a href="../wspolosoby/" id="wspolosoby" class="option">Współosoby</a>   
+                    <a href="../frontowanie" class="option" id="frontowanie">Frontowanie</a> 
+                    <a href="../wewnetrzny-swiat" id="wewnetrzny-swiat" class="option">Wewnętrzny świat</a> 
+                    <a href="../materialy/" id="materialy" class="option">Materiały i pomoce</a>
+                    <a href="../system-teczowego-chaosu/" id="o-nas" class="option">O nas</a>
+                    <a href="../blog/" id="blog" class="option current">Blog</a>
                 </nav>
             </aside>
 
         <main id="zawartosc">
+
+            
             <svg preserveAspectRatio="none" class="hidden">
                 <symbol id="ex" class="ex">
                     <line x1="10%" y1="20%" x2="30%" y2="20%"></line>
@@ -126,125 +127,107 @@
                 </symbol>
             </svg>
 
-
             
-            <h1>Przewodnik po Mnogości <br>
-                Strona Główna</h1>
-
-            <!-- <p>
-                <i>Jesteśmy obecnie w trakcie rewizji starszych tekstów na stronie. Część treści (zwłaszcza tych bez podanej daty ostatniej aktualizacji) może być nieaktualna lub nie oddawać naszych teraźniejszych poglądów. Najważniejsze zmiany znajdziecie w <a href="poprawki-bledow" class="internal">poprawkach błędów</a>.</i>
-            </p> -->
+            <h1>Blog</h1>
 
             <p>
-                Witamy w naszym Przewodniku po Mnogości! <b> Jest to projekt, który ma na celu szerzyć informację i świadomość na temat mnogości (obecności więcej niż jednej osobowości lub osoby w jednym ciele) oraz ubiegać się o równe prawa dla naszej społeczności.</b> Jest to bardzo obszerny temat, więc na naszej stronie znalazło się dość dużo treści i ich ilość wciąż rośnie. <b> Jeżeli nie masz czasu, ochoty lub zdolności skupienia uwagi, żeby to wszystko przeczytać, <a href="materialy/podstawy-mnogosci" class="internal">podstawy mnogości</a> oraz <a href="czeste-pytania" class="internal">częste pytania</a> pozwolą ci zapoznać się z najważniejszymi konceptami. Oprócz tego w <a href="terminologia" class="internal">terminologii</a> możesz znaleźć znaczenia (chyba) wszystkich używanych przez nas na stronie określeń.</b> Staramy się także wytłuszczać najistotniejsze informacje w akapitach, żeby osobom widzącym łatwiej było je wydobyć z długiej ściany tekstu<span class="for-aria"> oraz pod częścią podrozdziałów te same informacje zamieszczamy w dostępnych dla czytników ekranowych akapitach zaczynających się od słów podsumowując lub podsumowanie</span>.
+                Witajcie na naszym blogu! Piszemy tutaj o naszych osobistych doświadczeniach i przemyśleniach związanych z mnogością, zdrowiem psychicznym i innymi, mniej lub bardziej powiązanymi tematami. Oprócz tego to dla nas miejsce na aktywizm na rzecz innych grup mniejszościowych i spraw, które są dla nas równie istotne, co mnogość. Wrzucamy tu też rzeczy, które w pełnej wersji nie za bardzo nam pasują w inne miejsca strony lub są pisane głównie w nadziei dotarcia do większej ilości osób poprzez wyszukiwarki internetowe, a czasem także ogłoszenia na temat naszej strony lub działań.
             </p>
 
-            <p>
-                Zanim zdąży cię przerazić, co naprawdę rozumiemy pod „dużo treści”, uspokajamy – <b> wiele osób mnogich nie będzie używało ani nawet znało większej części określeń, których znaczenia tłumaczymy.</b> Podajemy je wyłącznie dla tych, którzy czują potrzebę bardziej szczegółowego opisywania swoich doświadczeń. W żadnym wypadku zapamiętanie ich wszystkich nie jest niezbędne do wspierania naszej społeczności ani bycia jej częścią. <b>Ale jeżeli tyle czytania was przerasta, założyłośmy <a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>kanał na YouTubie</a>, który będziemy się starać uczynić bardziej przyjaznym dla osób nowych w temacie</b>.
-            </p>
-<!-- Jeżeli podoba się wam nasza strona, zachęcamy do wypełnienia krótkiego <a href="https://docs.google.com/forms/d/e/1FAIpQLSdkvUlKbMHllvmLDt1cHDiTftXlET5fXevK_tnoRkYX7fqFeg/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>formularza z feedbackiem</a>. Każda odpowiedź jest dla nas niezwykle ważna, pomoże nam zrozumieć, jakie osoby korzystają z naszej strony, i bardziej dostosować nasze treści do waszych potrzeb. -->
-            <p>
-                Jeżeli macie do nas jakieś uwagi, opinie, sugestie czy pytania, zapraszamy do kontaktu przez maila albo na Discordzie. Tylko prosimy, żeby przekazywać nam krytykę w delikatny sposób, bo jesteśmy dość wrażliwi na tym punkcie.
-            </p>
+            <details id="filters">
+                <summary>Tematy</summary>
+                    
+                <label class="filter">
+                    <input type="checkbox" class="box-setting" onclick="plurality()">
+                    <span class="checkbox"> </span>
+                    mnogość
+                </label>
+                    
+                <label class="filter">
+                    <input type="checkbox" class="box-setting" onclick="dissociation()">
+                    <span class="checkbox"> </span>
+                    zaburzenia dysocjacyjne
+                </label>
+                    
+                <label class="filter">
+                    <input type="checkbox" class="box-setting" onclick="trauma()">
+                    <span class="checkbox"> </span>
+                    trauma
+                </label>
+                    
+                <label class="filter">
+                    <input type="checkbox" class="box-setting" onclick="lgbt()">
+                    <span class="checkbox"> </span>
+                    LGBTQ+
+                </label>
+                    
+                <label class="filter">
+                    <input type="checkbox" class="box-setting" onclick="religion()">
+                    <span class="checkbox"> </span>
+                    religia
+                </label>
+                    
+                <label class="filter">
+                    <input type="checkbox" class="box-setting" onclick="education()">
+                    <span class="checkbox"> </span>
+                    edukacja
+                </label>
+                    
+                <label class="filter">
+                    <input type="checkbox" class="box-setting" onclick="activism()">
+                    <span class="checkbox"> </span>
+                    aktywizm
+                </label>
+                    
+                <label class="filter">
+                    <input type="checkbox" class="box-setting" onclick="reflections()">
+                    <span class="checkbox"> </span>
+                    przemyślenia
+                </label>
+                    
+                <label class="filter">
+                    <input type="checkbox" class="box-setting" onclick="experiences()">
+                    <span class="checkbox"> </span>
+                    nasze doświadczenia
+                </label>
+                    
+                <label class="filter">
+                    <input type="checkbox" class="box-setting" onclick="announcements()">
+                    <span class="checkbox"> </span>
+                    ogłoszenia
+                </label>
 
-            <p class="for-aria summary">
-                Podsumowanie: przewodnik po mnogości to projekt, który ma na celu szerzyć informację i świadomość na temat mnogości oraz ubiegać się o równe prawa dla naszej społeczności. Jeżeli ilość treści na stronie cię przerasta, wszystkie najważniejsze informacje znajdziesz w podstawach mnogości (w materiałach dla bliskich), częstych pytaniach oraz terminologii. Wiele osób mnogich nie będzie używało ani nawet znało większej części określeń, których znaczenia tłumaczymy. Możecie znaleźć nas także na YouTubie pod nazwą System Tęczowego Chaosu.
-            </p>
+            </details>
 
-                <fieldset class="contents">
-                    <legend>Spis treści</legend>
-                    <div class="second">
-                    <a href="#przewodnik-po-przewodniku">Przewodnik po Przewodniku</a>
-                    <a href="#jezyk-neutralny-plciowo">Język neutralny płciowo</a>
-                    <!-- <a href="#wierzenia">Kilka słów o religii i wierzeniach</a> -->
-                    </div>
-                </fieldset>
+<!-- a.option.not-plurality.not-trauma.not-dissociation.not-lgbt.not-religion.not-education.not-activism.not-reflections.not-experiences.not-announcements -->
+            
 
-            <div class="target" id="przewodnik-po-przewodniku"></div>
-            <h2>
-                Przewodnik po Przewodniku
-            </h2>
+            <fieldset class="contents">
+                <a href="srodki-menstruacyjne-wielokrotnego-uzytku" class="option not-plurality not-trauma not-dissociation not-lgbt not-religion not-activism not-reflections not-experiences not-announcements"><b>Środki menstruacyjne wielokrotnego użytku</b> | Natasza/sourcer (host) (on/jego) | 26.10.2025</a>
+                <a href="podatnosc-na-obrzydzenie-a-homofobia" class="option not-plurality not-trauma not-dissociation not-religion not-education not-reflections not-experiences not-announcements"><b>Podatność na obrzydzenie a homofobia</b> | sourcer/Morgan (host) (on/jego) | 25.09.2025</a>
+                <a href="teoria-strukturalnej-dysocjacji-prawda-absolutna" class="option not-trauma not-lgbt not-religion not-activism not-reflections not-experiences not-announcements"><b>Teoria strukturalnej dysocjacji – prawda absolutna?</b> | host (on/jego) | 20.08.2025</a>
+                <a href="zlozone-zaburzenia-dysocjacyjne" class="option not-trauma not-lgbt not-religion not-activism not-reflections not-experiences not-announcements"><b>Złożone zaburzenia dysocjacyjne</b> | Chivo (host) (on/jego) | 12.06.2025</a>
+                <a href="tozsamosc-ustalona" class="option not-trauma not-dissociation not-lgbt not-religion not-education not-activism not-reflections not-announcements"><b>Tożsamość zbiorowa... Tożsamość ustalona?</b> | bezimienny/Morgan (host) (on/jego) | 27.05.2025</a>
+                <a href="czy-mnogosc-to-urojenia" class="option not-trauma not-dissociation not-lgbt not-religion not-activism not-reflections not-experiences not-announcements"><b>Czy mnogość to urojenia?</b> | Morgan/sourcer/antyteista? (host) (on/jego) | 22.03.2025</a>
+                <a href="zmiana-licencji" class="option not-plurality not-trauma not-dissociation not-lgbt not-religion not-education not-activism not-reflections not-experiences"><b>Zmiana licencji</b> | host (on/jego) | 17.02.2025</a>
+                <a href="papiez-nie-jest-sojusznikiem-lgbt" class="option not-plurality not-trauma not-dissociation not-education not-reflections not-experiences not-announcements"><b>Nie, papież nie jest sojusznikiem LGBT</b> | Morgan/antyteista (host) (on/jego) | 14.02.2025</a>
+                <a href="jesli-natura-usprawiedliwia-oprawce" class="option not-plurality not-dissociation not-lgbt not-religion not-education not-reflections not-experiences not-announcements"><b>Jeśli natura usprawiedliwia oprawcę...</b> | Chase (host) (on/jego) | 18.01.2025</a>
+                <a href="zaphod-beeblebrox-a-mnogofobia" class="option not-trauma not-dissociation not-lgbt not-religion not-education not-activism not-experiences not-announcements"><b>Zaphod Beeblebrox a mnogofobia</b> | Morgan (host) (on/jego) | 30.12.2024</a>
+                <a href="teoria-strukturalnej-dysocjacji-nie-wspiera-enofobii" class="option not-trauma not-dissociation not-lgbt not-religion not-education not-reflections not-experiences not-announcements"><b>Teoria strukturalnej dysocjacji nie wspiera endofobii</b> | Chase (host) (on/jego) | 30.12.2024</a>
+                <a href="kto-pisze-teksty-na-stronie" class="option not-trauma not-dissociation not-lgbt not-religion not-education not-activism not-reflections not-announcements"><b>Kto pisze teksty na stronie?</b> | Natasza/bezimienny (host) (on/jego) | 04.10.2024</a>
+                <a href="baza-osob-psychologicznych" class="option not-plurality not-trauma not-dissociation not-lgbt not-religion not-education not-reflections not-experiences"><b>Tworzymy bazę polskich osób psychologicznych</b> | Natasza (host) (on/jego) | 11.05.2024</a>
+                <a href="dlaczego-nie-osobowosc-wieloraka" class="option not-trauma not-lgbt not-religion not-reflections not-experiences not-announcements"><b>Dlaczego naprawdę przemianowano osobowość wieloraką?</b> | Natasza (host) (on/jego) | 13.01.2024</a>
+                <a href="terapia-konwersacyjna" class="option not-plurality not-trauma not-dissociation not-religion not-education not-activism not-experiences not-announcements"><b>Terapia konwers(ac)yjna</b> | Natasza (host) (on/jego) | 04.01.2024</a>
+                <a href="dysocjacyjne-zaburzenie-tozsamosci-przypadki" class="option not-trauma not-lgbt not-religion not-activism not-reflections not-experiences not-announcements"><b>Dysocjacyjne zaburzenie tożsamości – przypadki, które warto znać, cz. 1</b> | Blend | 22.09.2023</a>
+            </fieldset>
 
-            <p>
-                Ten projekt rozrósł się dużo bardziej, niż się spodziewałośmy, kiedy zaczynałośmy spisywać naszą wiedzę na temat <a href="zaburzenia/dysocjacyjne-zaburzenie-tozsamosci" class="internal">dysocjacyjnego zaburzenia tożsamości</a> z zamiarem utworzenia strony internetowej. Jeżeli ilość treści jest dla ciebie dezorientująca i właściwie nie wiesz, od czego zacząć, przychodzimy do ciebie z opisem, co i gdzie możesz znaleźć, żebyś <span class="unspecified">mogłx</span><span class="masculine">mógł</span><span class="feminine">mogła</span><span class="neutral">mogło</span><span class="postgender">mogłu</span> od razu przejść do tego, co cię naprawdę interesuje.
-            </p>
-
-            <p>
-                Zanim wybierzesz jakiś link i opuścisz stronę główną, zalecamy zjechanie niżej i zapoznanie się z informacją o <a href="#jezyk-neutralny-plciowo" class="internal">języku neutralnym płciowo</a>, aby nie zdezorientowały cię niektóre zwroty, którymi się posługujemy. Dla tych, którzy trafili tutaj poprzez strony o zaburzonej mnogości, dezorientująca może być też nagła zmiana z osób alterskich na współosoby, dlatego wyjaśniamy – <b>osoby alterskie są medycznym określeniem, którego szersza mnoga społeczność często wobec siebie nie używa, stąd na stronach dotyczących całej mnogiej społeczności stosujemy niemedyczne terminy</b>.
-            </p>
-
-            <p>
-                <b>Jeżeli stykasz się z tematem mnogości po raz pierwszy, <a href="czeste-pytania" class="internal">częste pytania</a> pozwolą ci szybko dowiedzieć się konkretnych rzeczy, które cię interesują. Jeśli masz trochę więcej czasu, idealnym miejscem, aby zacząć, jest <a href="materialy/#abc-mnogosci" class="internal">ABC mnogości</a> w <a href="materialy/" class="internal">materiałach</a>.</b> Tłumaczymy tam podstawowe koncepty związane z mnogością w (mamy nadzieję) jak najprostszych słowach. Reszta materiałów zawiera przydatne treści związane ze wspieraniem systemów, odkrywaniem swojej własnej mnogości, leczeniem traumy i zaburzeń dysocjacyjnych oraz codziennym funkcjonowaniem jako system, a także linki do innych wartościowych stron, polskich i w innych językach. Innym dobrym punktem startowym oraz twoją najlepszą przyjaciółką w trakcie używania tej strony będzie <a href="terminologia" class="internal">terminologia</a>, gdzie podajemy krótkie i zwięzłe definicje wszystkich określeń w kolejności alfabetycznej, z podziałem na te podstawowe, te powszechne i te używane tylko przez część społeczności, a także ich tłumaczenia z angielskiego na polski i odwrotnie. 
-            </p>
-
-            <p>
-                <a href="mnogosc" class="internal">Mnogość</a> wyjaśni ci, czym tak właściwie mnogość jest i czym różni się od wielorakości. Dowiesz się z niej także trochę na temat naszej społeczności i używanych przez nas symboli, oraz jak wygląda pełne spektrum mnogich doświadczeń.
-            </p>
-
-            <p>
-                <b>Mnogość sama w sobie nie jest zaburzeniem, ale niektóre zaburzenia charakteryzują się mnogością.</b> Dlatego w <a href="zaburzenia/" class="internal">powiązanych zaburzeniach</a> znajdziesz podstawowe informacje na temat dysocjacyjnego zaburzenia tożsamości, innego określonego zaburzenia dysocjacyjnego oraz współwystępujących z nimi dysocjacji i zespołu stresu pourazowego. 
-            </p>
-
-            <p>
-                <a href="system" class="internal">System</a> pokrótce wyjaśni ci, czym jest system, systemowa nazwa i zbiorowe zaimki. Znajdziesz tam także używane w społeczności określenia na różne typy systemów. Z kolei w <a href="powstawanie" class="internal">przyczynach powstawania</a> poznasz niektóre z powodów, dla których systemy powstają.
-            </p>
-
-            <p>
-                <b><a href="wspolosoby/" class="internal">Współosoby</a> powiedzą ci wszystko o osobach członkowskich systemów</b> – kim są, czym mogą się pomiędzy sobą różnić, jakie role mogą pełnić w systemie, jak się między sobą komunikują i inne. Dowiesz się także, dlaczego mówienie „osobowość” często jest odbierane jako niekulturalne, skąd wzięło się „współosoba” i jakie inne zwroty można używać jako alternatywę.
-            </p>
-
-            <p>
-                <a href="frontowanie" class="internal">Frontowanie</a> dostarczy ci informacji na temat tego, jak wygląda kontrolowanie ciała przez różne współosoby, a <a href="wewnetrzny-swiat" class="internal">wewnętrzny świat</a> na temat miejsc, w których spędzają swój czas, kiedy nie są zajęte tą aktywnością.
-            </p>
-
-            <p>
-                Podchodzisz do tematu ze sceptycyzmem? To bardzo dobrze! Nie powinno się od razu wierzyć każdej rzeczy, którą przeczyta się w internecie. <b>Dlatego na <a href="wyjasnienia/lista-artykulow-naukowych" class="internal">liście artykułów naukowych</a> w <a href="wyjasnienia/" class="internal">nauce i wierzeniach</a> znajdziesz najważniejsze badania naukowe w tej dziedzinie wraz z ich streszczeniami, a w <a href="wyjasnienia/neurobiologia" class="internal">neurobiologii</a> znajdziesz podsumowania tych poświęconych funkcjonowaniu mnogiego mózgu oraz nasze hipotezy dotyczące kwestii, którymi środowisko naukowe nie poświęca na razie zbyt dużo uwagi.</b> Do tej kategorii będziemy dodawać też opisy różnych modeli powstawania mnogości (jak na razie mamy jedynie <a href="wyjasnienia/teoria-strukturalnej-dysocjacji" class="internal">teorię strukturalnej dysocjacji</a>). A jeżeli próbujesz dopasować mnogość do modelu świata utworzonego przez twoją religię albo dowiedzieć się więcej na temat różnorodności światopoglądów w społeczności, w <a href="wyjasnienia/alternatywne-wyjasnienia" class="internal">alternatywnych wyjaśnieniach</a> przeczytasz, jak na swoją mnogość patrzą osoby posiadające różne nadnaturalne wierzenia. 
-            </p>
-<!-- <b>Z pewnością zainteresują cię także <a href="zrodla" class="internal">źródła</a>, gdzie podajemy odnośniki do stron, z których najbardziej korzystałośmy w trakcie naszego researchu.</b> -->
-
-            <p>
-                Strona <a href="system-teczowego-chaosu" class="internal">„o nas”</a> pozwoli ci się dowiedzieć czegoś więcej o osobach, które stoją za tworzeniem tego projektu. A <a href="blog/" class="internal">blog</a> to, cóż, blog, na którym będziemy umieszczać swoje różne przemyślenia, mniej oficjalne i na tematy niekoniecznie związane z mnogością (i wychodzi na to, że także wykorzystywać go do wrzucania nienaturalnie napakowanych słowami kluczowymi artykułów wątpliwej jakości, ale zadowalających algorytmy wyszukiwania). A także wszystko, dla czego nie potrafimy znaleźć innego miejsca na stronie. I okazjonalnie coś pisanego, żeby zadowolić algorytmy wyszukiwarek i poszerzyć grono odbierające nasze treści.
-            </p>
-
-            <p>
-                Chociaż staramy się tego uniknąć, zdarza nam się podać na stronie błędne informacje. Wykaz tych istotnych, które udało nam się wyłapać i poprawić, możecie znaleźć w <a href="poprawki-bledow" class="internal">poprawkach błędów</a>.
-            </p>
-                
-            <div class="target" id="jezyk-neutralny-plciowo"></div>
-            <h2>
-                Język neutralny płciowo
-            </h2>
-
-            <p>
-                Na stronie staramy się korzystać z języka neutralnego płciowo według wskazówek opracowanych przez autorza strony <a class="external" href="https://zaimki.pl/" target="_blank"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>zaimki.pl</a> (jeżeli koncept jest dla ciebie nowy, zachęcamy cię do zapoznania się z nim na ich stronie). <b> Powszechnie używa się w języku polskim rodzaju męskiego w odniesieniu do grup osób lub osób o nieznanej płci, co wpływa na sposób, w jaki postrzegamy rzeczywistość.</b> Nic nie uświadomiło nam tego tak dobrze, jak praca nad Przewodnikiem po Mnogości – kiedy słyszymy „prześladowca”, w głowie pojawia nam się obraz mężczyzny, kiedy słyszymy „młodszy” – widzimy chłopca, „alterzy” – grupę osób płci męskiej. Zauważyłośmy, że pisząc w ten sposób, we wszystkich przykładach dla ilustracji automatycznie umieszczałośmy mężczyzn. A że nie chciałośmy wykluczać żadnej osoby ze względu na jej płeć i zaimki (w końcu społeczeństwo nie składa się wyłącznie z mężczyzn!), poprawiłośmy nasz sposób wypowiedzi. <b> Na stronie używamy <a href="https://zaimki.pl/ona/ich" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>mnogiego rodzaju neutralnego</a> (byłośmy, chciałobyście, widziały) w odniesieniu do nas, <a href="https://zaimki.pl/onx" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>form z iksem</a> (byłxś, widziałxś, pięknx) w odniesieniu do ciebie i <a href="https://zaimki.pl/osobatywy" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>osobatywów</a> w odniesieniu do osób lub grup osób wykonujących konkretną czynność lub powiązanych z konkretną rzeczą (osoba psychologiczna to osoba dowolnej płci posiadająca wykształcenie psychologiczne, np. psycholog, psycholożka / pani psycholog, psycholoże, psycholożku, osoba współlokatorska – dowolna osoba, która z tobą mieszka, np. współlokator, współlokatorka, współlokatorze, współlokatorku).</b> Początkowo używałośmy mnogiego rodzaju neutralnego do wszystkich grup osób o dowolnej płci, ale zrezygnowałośmy z niego, na początku zasłaniając się troską o dostępność, co było z naszej strony nie w porządku. Tak naprawdę główną przyczyną był lęk połączony z uczuciem, że te formy mają mniejszy potencjał na przyjęcie się w języku – osobatywy są już używane przez całkiem sporo lewicowych stron, ale mnogi rodzaj neutralny nawet w <a href="https://zaimki.pl/blog/spis-2023" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>niebinarnym spisie powszechnym</a> przez większą część osób nie jest wybierany jako preferowany sposób zwracania się do grup. Po zobaczeniu wyników tego spisu poczułośmy się usprawiedliwione, żeby powrócić do bardziej bezpiecznych form. Zostałośmy przy mnogim rodzaju neutralnym jako naszych <a href="system#zbiorowe-zaimki" class="internal">zbiorowych zaimkach</a> oraz neutralnych zaimkach i liczebnikach (któreś, jedno, żadne z was), które są powszechnie używane w języku, chociaż zwykle niekoniecznie w stosunku do osób o dowolnej płci. Na początku te wszystkie nowe formy (i te stare w nowych użyciach) mogą brzmieć dziwnie i nieprzyjemnie, ale z doświadczenia zapewniamy, że po jakimś czasie da się przyzwyczaić. <b> W <a class="internal" href="ustawienia">ustawieniach</a> znajdziesz możliwość wyboru form, którymi mamy zwracać się do ciebie.</b>
-            </p>
-
-            <p>
-                <b> Język neutralny płciowo to nie to samo, co język niebinarny, którego osoby posiadające płeć inną niż kobieta lub mężczyzna używają do wyrażania swojej tożsamości płciowej.</b> Jego także używamy w niektórych miejscach na stronie, w szczególności <a href="https://zaimki.pl/neutratywy" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>neutratywów</a> (alterze, opiekuńcze, partnerze) oraz <a href="https://zaimki.pl/ono/jeno" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>rodzaju neutralnego z elementami postpłciowego</a> (powiedziało, smutne, jeno współosoby). Osoby niebinarne zasługują na reprezentację, nawet jeżeli będzie to tylko jedno zdanie o niebinarnem alterku w przykładzie dla ilustracji mnogich doświadczeń.
-            </p>
-
-            <p class="for-aria summary">
-                Podsumowanie: język neutralny płciowo to język mający na celu uniknąć sugerowania, że każda osoba, o której mówimy, to mężczyzna. Możesz przeczytać o nim więcej na stronie zaimki kropka pl. Na stronie używamy mnogiego rodzaju neutralnego (byłośmy, chciałobyście, widziały) w odniesieniu do nas, form z iksem (byłxś, widziałxś, pięknx) w odniesieniu do ciebie i osobatywów w odniesieniu do osób lub grup osób wykonujących konkretną czynność lub powiązanych z konkretną rzeczą (osoba psychologiczna to osoba dowolnej płci posiadająca wykształcenie psychologiczne, np. psycholog, psycholożka / pani psycholog, psycholoże, psycholożku, osoba współlokatorska – dowolna osoba, która z tobą mieszka, np. współlokator, współlokatorka, współlokatorze, współlokatorku). W ustawieniach znajdziesz możliwość wyboru form, którymi mamy zwracać się do ciebie. W niektórych miejscach strony używamy także języka niebinarnego, czyli języka, którego osoby posiadające płeć inną niż kobieta lub mężczyzna używają do wyrażania swojej tożsamości płciowej.
-            </p>
-
-<!-- 
-            <div class="target" id="wierzenia"> </div>
-            <h2>
-                Kilka słów o religii i wierzeniach
-            </h2>
-
-            <p>
-                <b> Na potrzeby tej strony przyjmujemy czysto naukowe wyjaśnienia omawianych przez nas zjawisk. Nie chcemy tym obrażać niczyich wierzeń na temat istoty mnogości, doświadczeń pozacielesnych, <a href="wewnetrzny-swiat" class="internal">wewnętrznych światów</a>, <a href="wspolosoby/wewnetrzne-funkcjonowanie#egzowspomnienia" class="internal">egzowspomnień</a> i wszystkiego innego, ani sugerować, że są w jakikolwiek sposób gorsze od przedstawionego przez nas punktu widzenia.</b> Prywatnie część osób z naszego systemu także szuka wytłumaczenia w nadprzyrodzonych sferach. Ale, chociaż chcemy tutaj utworzyć jak najbardziej tolerancyjną przestrzeń, dochodzimy do wniosku, że zaprzeczanie rzeczywistości jest bardziej szkodliwe, niż wystawianie wierzeń danej osoby na próbę. <b>Nauka różni się od religii tym, że używa metod opartych na obserwacji i dokumentacji, aby potwierdzić lub obalić swoje założenia.</b> Dla przykładu, osoba religijna może powiedzieć, że modlitwa zawsze działa, i na potwierdzenie wymienić dziesięć sytuacji z jej życia, w których jej modlitwy zostały spełnione. Stwierdzenie to można bardzo łatwo obalić w naukowy sposób, na przykład modląc się każdego dnia przez miesiąc o to, żeby (w naszej strefie klimatycznej) spadł deszcz, i zapisując, ile razy modlitwa została spełniona, a ile nie. Wynik będzie podobny niezależnie od tego, czy modliła się osoba wierząca, czy też nie. Można dyskutować na temat, czy bierze się on z tego, że Bóg nie istnieje, czy raczej z tego, że nie może spełniać wszystkich modlitw (bo co, jeśli inna osoba w tym samym czasie modliła się o to, żeby nie padało?). Żadnej z tych rzeczy nie da się jednak jednoznacznie udowodnić, dlatego zawsze powinno się zakładać, że możemy się w tej kwestii mylić, nawet jeżeli naszym zdaniem prawdopodobieństwo takiej sytuacji jest bardzo niewielkie. <b> Nie ma nic złego w posiadaniu własnych wierzeń tak długo, jak długo nie skłaniają one wyznającej je osoby do wyrządzania innym krzywdy ani nie wystawiają jej i jej bliskich na niebezpieczeństwo poprzez zmuszanie jej do negowania faktów.</b>  
-            </p>
-
-            <p>
-                <b> Nie szanując czyichś wierzeń, nie ważne jak głupie i naiwne by ci się one wydawały i jak bardzo nie zgadzałyby się z twoją własną religią (o ile taką posiadasz), okazujesz swój brak szacunku także do tej osoby.</b> Wyśmiewając je czy podważając, ranisz ją. Nie rób tego. Jeżeli widzisz, że próbuje leczyć raka modlitwą czy rytualnym zapalaniem świeczek chce pozbyć się depresji, zareaguj. Porozmawiaj (ale nie kłóć się), wykaż się cierpliwością, spróbuj przekonać ją, że nawet jeśli jej metody pomagają, warto mimo wszystko dodatkowo udać się po profesjonalne leczenie. Ale jeśli nosi przy sobie kryształ na dodanie pewności siebie albo manifestuje, że jej rozmowa o pracę pójdzie jak najlepiej – zaakceptuj to. Nikomu nie szkodzi to, że nie patrzy na świat w taki sam sposób jak ty, a jej wierzenia mogą mieć pozytywny wpływ na jej samopoczucie.
-            </p> -->
 <br><br>
 
             <p>
-                <i>Utworzono: 28.03.2023 <br>
-                Ostatnia aktualizacja: 16.03.2025</i>
+                <i>
+                    Utworzono: 05.09.2023 <br>
+                    Ostatnia aktualizacja: 26.10.2025
+                </i>
             </p>
 
 
@@ -252,6 +235,7 @@
 
             <footer data-nosnippet>
                 <blockquote><i>Musimy obierać strony. Neutralność pomaga oprawcy, nigdy ofierze. Cisza zachęca dręczyciela, nigdy dręczonego.</i> ~ Elie Wiesel (on/jego)</blockquote>
+
 
 
 
@@ -264,20 +248,20 @@
     <p><a href="https://discord.gg/5gbrwTgDzp" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Serwer na Discordzie</a></p></address>
     
     <div>
-        <p><a href="/#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
-        <p><a href="/#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
-        <p><a href="/wyjasnienia/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
-        <p><a href="poprawki-bledow" class="internal">Poprawki błędów</a></p>
+        <p><a href="../#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
+        <p><a href="../#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
+        <p><a href="../nauka/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
+        <p><a href="../poprawki-bledow" class="internal">Poprawki błędów</a></p>
     </div>
     <div>
-        <p><a href="zastrzezenia" class="internal">Zastrzeżenia</a></p>
-        <p><a href="deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
-        <p><a href="polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
+        <p><a href="../zastrzezenia" class="internal">Zastrzeżenia</a></p>
+        <p><a href="../deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
+        <p><a href="../polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
     </div>
 
     </div>
 
-    <p>©2023-2025 <a href="system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
+    <p>©2023-2025 <a href="../system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
 
 </footer>
 

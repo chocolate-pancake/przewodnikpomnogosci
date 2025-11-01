@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Różne zaburzenia u współosób | Przewodnik po Mnogości</title>
+        <link rel="icon" href="../ampersand-icon.png">
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://przewodnikpomnogosci.pl/plural-journey-rings.png">
+        <meta property="og:image:alt" content="mnogie okręgi">
+        <meta name="twitter:domain" content="przewodnikpomnogosci.pl">
+        <meta name="color-scheme" content="dark light">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="System Tęczowego Chaosu">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Przewodnik po Mnogości">
+        <meta property="og:url" content="https://przewodnikpomnogosci.pl/nauka/rozne-zaburzenia-u-wspolosob">
+        <meta name="twitter:title" property="og:title" content="Różne zaburzenia u współosób">
+        <meta name="description" content="Co mówi literatura naukowa na temat możliwości posiadania różnych zaburzeń przez różne osoby z tego samego ciała?">
+        <meta name="twitter:description" property="og:description" content="Co mówi literatura naukowa na temat możliwości posiadania różnych zaburzeń przez różne osoby z tego samego ciała?">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <script src="../script.js" defer></script>
+        <script src="../settings.js" defer></script>
+    </head>
+    <body>
+        <div id="shadow" class="shadow"></div>
+        <div id="sidebar-shadow" class="shadow"></div>
+        
+        <a class="to-main" href="#zawartosc">Przejdź do zawartości</a>
+        
+        <header class="header">
+            <div class="divider">
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <a href="../" class="title">
+                    <div class="logo" aria-label="mnogie okręgi">
+                        <svg class="logo">
+                            <circle class="upper"></circle>
+                            <circle class="down"></circle>
+                            <circle class="left"></circle>
+                            <circle class="right"></circle>
+                        </svg>
+                    </div>
+                    <span id="title">Przewodnik po Mnogości</span>
+                </a>
+            </div>
+            <div class="divider rdiv">
+                <button class="search mobile" aria-label="wyszukaj" onclick="showSearchInput()">
+                    <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                        <circle cx="35%" cy="35%" r="30%"/>
+                        <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                    </svg>
+                </button>
+                <form class="search" action="https://przewodnikpomnogosci.pl/wyszukaj" role="search">
+                    <button type="submit" class="search" aria-label="wyszukaj">
+                        <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                            <circle cx="35%" cy="35%" r="30%"/>
+                            <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                        </svg>
+                    </button>
+                    <input type="search" class="search" name="q" minlength="1" placeholder="wyszukaj" required>
+                    
+                </form>
+                <details class="language-select">
+                    <summary><span class="for-aria">Wybierz język</span>&#127477&#127473</summary>
+                    <div class="language-options">
+                        <div  class="language-option active">&#127477&#127473</div>
+                        <!-- <a href="https://przewodnikpomnogosci.pl/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
+                        <a href="https://przewodnikpomnogosci.pl/en/" class="language-option">&#127482&#127480</a>
+                        <!-- <a href="https://przewodnikpomnogosci.pl/ru/" class="language-option">&#127479&#127482</a> -->
+                    </div>
+                </details>
+                <a href="../ustawienia" class="settings desktop">
+                    <img src="../settings.png" alt="ustawienia i dostępność">
+                </a>
+            </div>
+        </header>
+        
+            <aside class="sidebar" id="sidebar" data-nosnippet>
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <nav class="menu-options">
+                    <a href="../" id="glowna" class="option">Strona główna</a>
+                    <a href="../czeste-pytania" class="option" id="czeste-pytania">Częste pytania</a>
+                    <a href="../terminologia" id="terminologia" class="option">Terminologia</a>
+                    <a href="../mnogosc" id="mnogosc" class="option">Mnogość</a>
+                    <a href="../nauka/" id="nauka" class="option current">Nauka i wierzenia</a>  
+                    <div class="subsections">
+                        <a href="lista-artykulow-naukowych" class="option subsection">Badania i artykuły</a>
+                        <a href="neurobiologia" class="option subsection">Neurobiologia</a>
+                        <a href="teoria-czterech-czynnikow" class="option subsection">Teoria czterech czynników</a>
+                        <a href="teoria-strukturalnej-dysocjacji" class="option subsection">Teoria strukturalnej dysocjacji</a>
+                        <a href="alternatywne-wyjasnienia" class="option subsection">Alternatywne wyjaśnienia</a>
+                    </div>     
+                    <a href="../zaburzenia/" id="zaburzenia" 
+                    class="option">Powiązane zaburzenia</a> 
+                    <a href="../powstawanie" id="powstawanie" class="option">Przyczyny powstawania</a> 
+                    <a href="../system" id="system" class="option">System</a>       
+                    <a href="../wspolosoby/" id="wspolosoby" class="option">Współosoby</a>   
+                    <a href="../frontowanie" class="option" id="frontowanie">Frontowanie</a> 
+                    <a href="../wewnetrzny-swiat" id="wewnetrzny-swiat" class="option">Wewnętrzny świat</a> 
+                    <a href="../materialy/" id="materialy" class="option">Materiały i pomoce</a>
+                    <a href="../system-teczowego-chaosu/" id="o-nas" class="option">O nas</a>
+                    <a href="../blog/" id="blog" class="option">Blog</a>
+                </nav>
+            </aside>
+
+        <main id="zawartosc">
+            
+            
+            <svg preserveAspectRatio="none" class="hidden">
+                <symbol id="ex" class="ex">
+                    <line x1="10%" y1="20%" x2="30%" y2="20%"></line>
+                    <line x1="10%" y1="20%" x2="10%" y2="90%"></line>
+                    <line x1="10%" y1="90%" x2="80%" y2="90%"></line>
+                    <line x1="80%" y1="90%" x2="80%" y2="70%"></line>
+                    <line x1="30%" y1="70%" x2="90%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="50%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="90%" y2="50%"></line>
+                </symbol>
+            </svg>
+
+            
+            <h1>Różne zaburzenia u współosób</h1>
+
+            <fieldset class="warning" data-nosnippet>
+                <legend>Ostrzeżenie!</legend>
+                    Artykuł porusza temat mnogofobii.
+                <a href="zaburzenia/zespol-stresu-pourazowego#ostrzezenia" class="internal">Dlaczego to ostrzeżenie jest ważne?</a>
+            </fieldset>
+
+            <p>
+                Możliwość posiadania przez różne współosoby z jednego systemu różnych zaburzeń, a nawet niepełnosprawności, to bardzo kontrowersyjny temat w systemowej społeczności. Postanowiłem więc zacząć zbierać przypadki z literatury naukowej, żeby pokazać, że wśród osób profesjonalnie zajmujących się badaniem dysocjacyjnego zaburzenia tożsamości wcale taki nie jest. Należy jednak pamiętać, że z legalnego, a najczęściej także medycznego punktu widzenia system traktowany jest jako jedna osoba. A jedna osoba może zaburzenie mieć albo go nie mieć, nie ma nic pomiędzy. Z tego powodu w literaturze naukowej zawsze przeczytacie, że objawy niektórych zaburzeń mogą być wykazywane tylko przez lub „zamknięte w” jednym lub kilku „stanach osobowości”. Badania poświęconemu wyłącznie temu tematowi jeszcze nie udało mi się znaleźć, ale wspominany jest często przy farmakoterapii DID – osoby eksperckie zalecają, aby w takiej sytuacji dobierać leki tylko pod objawy wykazywane przez większą część systemu.<sup><span class="target" id="p1a"></span>[<a href="#1" class="internal">1</a>]</sup> Poza tym mamy wiele konkretnych przypadków systemów, gdzie niektóre współosoby posiadały zaburzenia niewykazywane przez całą resztę – szukanie ich nie jest takie proste, bo często pojawiają się w badaniach poświęconych zupełnie innemu tematowi. Jeśli kojarzycie jakieś, które się tutaj nie pojawiły, byłbym bardzo wdzięczny, gdybyście mogli podesłać mi na maila albo przez discorda.
+            </p>
+
+            <p>
+                Postanowiłem pominąć tutaj badania osób zajmujących się tulpomancją, które poruszają ten temat, ponieważ zbierały one informacje przez ankiety do samodzielnego wypełnienia i przez to wątpię, żeby były skutecznym argumentem dla osób, które uważają, że takie systemy w tej kwestii po prostu kłamią. Nie skupiam się też na przypadkach systemów, w których współosoby na różne sposoby doświadczają objawów tego samego zaburzenia, bo wydaje mi się, że wokół tego zjawiska praktycznie nie ma kontrowersji.
+            </p>
+
+            <fieldset class="contents">
+                <legend>Spis treści</legend>
+                <div class="second">
+                    <a href="#zaburzenia-konwersyjne">Zaburzenia konwersyjne</a>
+                    <a href="#depresja">Depresja</a>
+                    <a href="#zaburzenia-odzywania">Zaburzenia odżywiania</a>
+                    <a href="#alergie">Alergie</a>
+                    <a href="#inne">Inne</a>
+                    <a href="#przypisy">Przypisy</a>
+                </div>
+            </fieldset>
+
+            <div class="target" id="zaburzenia-konwersyjne"></div>
+            <h2>
+                Zaburzenia konwersyjne
+            </h2>
+            
+            <p>
+                W literaturze chyba najczęściej dokumentowane są różne dysocjacyjne zespoły objawów neurologicznych (kiedyś znane jako zaburzenia konwersyjne), które polegają na utracie prawidłowego funkcjonowania w sferze ruchowej, zmysłowej lub poznawczej, które nie ma przyczyny w neurologicznych lub fizycznych schorzeniach ani innych zaburzeniach psychicznych<sup><span class="target" id="p2"></span>[<a href="#2" class="internal">2</a>]</sup> – na przykład osoba widzi podwójnie, chociaż jej oczy nie są fizycznie uszkodzone w żaden sposób, który mógłby to powodować. Przypadki opisywane były już w XIX wieku – osoba alterska Mary Reynolds (jednej z pierwszych pacjentek z MPD w Stanach Zjednoczonych) była głuchoniewidoma, a pewnej kobiety z francuskiej literatury – sparaliżowana. <sup><span class="target" id="p3"></span>[<a href="#3" class="internal">3</a>]</sup> Bristol opisuje system, w którym tylko jedna alterka była słabo słysząca i potrzebowała nosić aparat słuchowy (i problem ten przeniósł się na osobę powstałą w wyniku fuzji ostatecznej, której było ciężko się do niego przyzwyczaić).<sup><span class="target" id="p4"></span>[<a href="#4" class="internal">4</a>]</sup> Bhuvaneswar i Spiegel opisują system, w którym tylko młodsza alterka nie miała oczopląsu i do tego widziała znacznie lepiej, niż legalnie niewidoma gospodyni.<sup><span class="target" id="p5"></span>[<a href="#5" class="internal">5</a>]</sup> Oraz moje ulubione: Strasburger i Waldvogel opisują przypadek systemu, który całościowo stracił zdolność widzenia po wypadku i po trzynastu latach zaczął ją stopniowo odzyskiwać w trakcie terapii, tak że przez pewien czas część systemu widziała, a reszta pozostawała niewidoma.<sup><span class="target" id="p6"></span>[<a href="#6" class="internal">6</a>]</sup> Badacze obiektywnie potwierdzili ich doświadczenia poprzez zmierzenie potencjałów wywoływanych wzrokowo, czyli sygnałów elektrycznych, które pojawiają się w mózgu widzących osób w odpowiedzi na bodźce wzrokowe – były one obecne u widzących osób alterskich, ale nieobecne u tych niewidomych. Autorzy stawiają hipotezę, że prawdopodobnie wykorzystywane są tutaj już istniejące w mózgu mechanizmy służące do blokowania bodźców wzrokowych, działające przy różniących się obrazach z obu oczu oraz przy wybiórczym skupianiu uwagi na konkretnej części obrazu. 
+            </p>
+<!-- Add VEPs from Ludwig et al. -->
+
+            <div class="target" id="depresja"></div>
+            <h2>
+                Depresja
+            </h2>
+
+            <p>
+                Loewenstein opisuje system, w którym tylko gospodyni spełniała kryteria diagnostyczne dużej depresji. Przepisane lekarstwo pomogło jej z niej wyjść, za to inna alterka doświadczała od niego wielu skutków ubocznych, chociaż system tak naprawdę nie przyjął ani jednej dawki, bo nastoletnia osoba alterska zabierała tabletkę za każdym razem, kiedy gospodyni podnosiła ją do ust.<sup><span class="target" id="p1b"></span>[<a href="#1" class="internal">1</a>]</sup>
+            </p>
+
+            <div class="target" id="zaburzenia-odzywiania"></div>
+            <h2>
+                Zaburzenia odżywiania
+            </h2>
+
+            <fieldset class="warning" data-nosnippet>
+                <legend>Ostrzeżenie!</legend>
+                    Podrozdział porusza temat przemocy wobec dziecka.
+                <a href="zaburzenia/zespol-stresu-pourazowego#ostrzezenia" class="internal">Dlaczego to ostrzeżenie jest ważne?</a>
+            </fieldset>
+
+            <p>
+                Dwa przypadki opisane przez Torema co prawda nie zostały zdiagnozowane ze złożonym zaburzeniem dysocjacyjnym, chociaż autor mówi o dysocjacyjnych „stanach ego” i nie różnią się one od tych z przypadków ze stwierdzonym DID/OSDD-1.<sup><span class="target" id="p7"></span>[<a href="#7" class="internal">7</a>]</sup> W pierwszym przypadku trzymająca traumę osoba alterska, oddzielona w wieku siedmiu lat, odpowiadała za epizody objadania się i wywoływania wymiotów, co było jej sposobem na karanie gospodyni – epizody nasilały się po sukcesach w kierunku uzyskania większej niezależności. Jej odkrycie zostało umożliwione przez fakt, że gospodyni zawsze czuła się zdysocjowana w trakcie tych epizodów, a praca nad akceptacją między nimi zmniejszyła częstotliwość epizodów zaburzenia odżywiania. W drugim przypadku gospodyni nie potrafiła sobie przypomnieć takich szczegółów jak jakim jedzeniem się objadała czy jak nauczyła się samodzielnie wywoływać wymioty. Okazało się, że za te mechanizmy odpowiadały dwie różne osoby alterskie, które zaczęły powtarzać zachowania ze swojego dzieciństwa, kiedy córka systemu osiągnęła wiek, w którym one zaczęły doświadczać przemocy. Dla pierwszej było to szybkie jedzenie w dużych ilościach po byciu głodzoną przez matkę w ramach kary, a drugiej – wywoływanie wymiotów po tym, jak była zmuszana do jedzenia zepsutego jedzenia. Pacjentka była wcześniej poddana terapii i leczeniu farmakologicznemu przez kilka osób specjalistycznych, ale dopiero praca nad traumą trzymaną przez te dwie pozostałe współosoby pozwoliła wyeliminować epizody objadania się i wymiotowania.
+            </p>
+
+            <div class="target" id="alergie"></div>
+            <h2>
+                Alergie
+            </h2>
+
+            <p>
+                Nie wiem, czy alergie można uznać za zaburzenie, ale z pewnością jest to istotna fizjologiczna różnica, którą warto tutaj zawrzeć. Są wspominane w literaturze bardzo często, ale dopiero niedawno w końcu udało mi się znaleźć artykuł z konkretnymi przypadkami. Braun opisuje łącznie trzy systemy, w których jedne osoby alterskie wykazywały alergie nieobecne u innych.<sup><span class="target" id="p8"></span>[<a href="#8" class="internal">8</a>]</sup> W pierwszym cały system za wyjątkiem jednej osoby alterskiej miał alergię na pomarańcze. Kiedy ta osoba pozostawał na froncie przez cały proces przetwarzania owocu przez organizm, nie mieli żadnych objawów, ale kiedy opuściła front zbyt wcześnie, od razu pojawiała się swędząca wysypka. W innym systemie jedna osoba alterska była „śmiertelnie uczulona” na koty – w ich obecności dostawała kataru, problemów z oddychaniem i swędzącej wysypki. Z kolei inna osoba alterska mogła przez długi czas bawić się z kotem, włączając w to bycie drapaną i lizaną, bez żadnych zauważalnych objawów. W dwóch innych systemach występowały objawy alergiczne prawdopodobnie wywołane skojarzeniami z traumą – w pierwszym jedna osoba alterska była uczulona na dym papierosowy, a drugi dostawał wysypki od używania konkretnego rodzaju mydła używanego w trakcie przemocy wobec nich (nie mam tutaj pewności, czy wysypka dotyczyła jedynie współosoby, która trzymała tę traumę). Braun przywołuje przykłady osób singleckich, których objawy alergiczne różniły się intensywnością w różnych okresach życia lub zostały skutecznie wyleczone przez hipnozę, aby pokazać, że takie zmiany są możliwe także poza kontekstem dysocjacyjnego zaburzenia tożsamości. Sugeruje, że być może to zjawisko ma miejsce na poziomie zauważalnych objawów alergicznych, a nie odpowiedzi przeciwciał na antygeny. 
+            </p>
+
+            <div class="target" id="inne"></div>
+            <h2>
+                Inne
+            </h2>
+
+            <fieldset class="warning" data-nosnippet>
+                <legend>Ostrzeżenie!</legend>
+                    Podrozdział porusza temat wykorzystywania seksualnego.
+                <a href="zaburzenia/zespol-stresu-pourazowego#ostrzezenia" class="internal">Dlaczego to ostrzeżenie jest ważne?</a>
+            </fieldset>
+
+            <p>
+                Postanowiłem się tutaj skupić na konkretnych przypadkach systemów, ale co do wielu zaburzeń nie udało mi się takich znaleźć lub akurat nie mam dostępu do artykułów, w których mogłyby być. Dodaję więc tutaj badania, w których jest ogólnie wspomniane, że takie się zdarzają, ale bez podania konkretnych przykładów systemów, oraz takie, w którym opisany przypadek pozwala podejrzewać, że jedna współosoba posiada konkretne zaburzenie, aczkolwiek nie zostało ono wprost stwierdzone przez osobę psychologiczną.
+            </p>
+            
+            <p>
+                Şar i Öztürk stwierdzają, że zdarza się, że pewna osoba alterska ma objawy psychotyczne (urojenia i halucynacje), chociaż osoba gospodarująca ich nie ma.<sup><span class="target" id="p9"></span>[<a href="#9" class="internal">9</a>]</sup> Wspominają też, że w rzadkich przypadkach psychoza może być zamknięta w osobie gospodarującej, podczas gdy inne osoby alterskie nie mają jej objawów – w takich przypadkach psychoza może pozostawać po fuzji ostatecznej. Przywołują tutaj teorię Katana, który ponad pół wieku temu doszedł do wniosku, że osoby ze schizofrenią posiadają część osobowości, która pozostaje w przedpsychotycznym stanie. 
+            </p>
+
+            <p>
+                Hall opisuje przypadek systemu z alterem określonym przez nią jako antyspołeczny,<sup><span class="target" id="p10a"></span>[<a href="#10" class="internal">10</a>]</sup> ale nie jest jasne, czy faktycznie posiadał zaburzenie osobowości, czy jej dobór słownictwa wynika jedynie z popełnionej przez niego zbrodni.
+            </p>
+
+            <p>
+                W opisywanym przez Blizzard przypadku prawdopodobnie możemy mieć do czynienia z alterem z zaburzeniem pedofilnym. Wypowiedzi Satana na temat krzywdzonej przez niego Becci: „Pokazuję jej w ten sposób, że jej pragnę. Wszyscy zawsze ją odpychali, więc czuła się, jakby nie była człowiekiem, ale kiedy jej ojciec chciał ją do seksu, wtedy czuła, że jest kimś”, „Muszę to robić, żeby ją utrzymać blisko przy sobie. Nie chcę, żeby wychodziła. Mężczyźni chcą ją tylko do jednego i potem ją ranią. Nie potrzebuje nikogo innego poza mną.”<sup><span class="target" id="p10b"></span>[<a href="#10" class="internal">10</a>]</sup> wydają się przemawiać za czymś więcej niż platoniczną (toksycznie wyrażaną) troską, ale nie da się tego jednoznacznie stwierdzić. Blizzard, jak większość osób psychologicznych, zakłada, że wewnątrzsystemowa przemoc to jedynie sposób na ponowne przeżywanie traumy, więc pytanie o takie sprawy jak pociąg seksualny pewnie nawet nie przyszło jej do głowy. Drugim problemem jest fakt, że nie ma powiedziane wprost, czy Becca także pozostała w wieku dziecka, tak samo jak alterka trzymająca pozytywne aspekty relacji z ich ojcem. Mam wrażenie, że tak było, ze względu na nacisk kładziony tutaj na ponowne „odgrywanie” przemocy oraz ponieważ współosoby trzymające traumę często mentalnie zatrzymują się w wieku, w którym się ona wydarzyła, ale pewności co do tego nie ma.
+            </p>
+            
+            <div class="target" id="przypisy"></div>
+            <h2>
+                Przypisy
+            </h2>
+
+            
+            <ol class="links">
+
+                <div class="target" id="1"> </div>
+                <li>
+                    ↑ <sup><a href="#p1a" class="internal">a</a></sup> <sup><a href="#p1b" class="internal">b</a></sup> <a href="https://www.psych.theclinics.com/article/S0193-953X(18)30297-1/abstract" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Rational Psychopharmacology in the Treatment of Multiple Personality Disorder</a>, dr Richard J. Loewenstein, <i>The Psychiatric Clinics of North America</i>, 1991
+                </li>
+
+                <div class="target" id="2"> </div>
+                <li>
+                    <a href="#p2" class="internal">↑</a> <a href="https://rsk3.ezdrowie.gov.pl/resource/structure/icd11/99ICD1/2023-01/mms/element/1069443471" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Dysocjacyjny zespół objawów neurologicznych | Międzynarodowa Statystyczna Klasyfikacja Chorób i Problemów Zdrowotnych</a>, Światowa Organizacja Zdrowia, 2018
+                </li>
+
+                <div class="target" id="3"> </div>
+                <li>
+                    <a href="#p3" class="internal">↑</a> <a href="https://core.ac.uk/works/125164891" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Psychophysiologic Aspects of Multiple Personality Disorder</a>, Philip M. Coons, <i>Dissociation</i>, 1988
+                </li>
+
+                <div class="target" id="4"> </div>
+                <li>
+                    <a href="#p4" class="internal">↑</a> <a href="https://scholarworks.smith.edu/theses/628/" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>The ambiguous loss of post-integration : a theoretical analysis of the effects of integration on clients with dissociative identity disorder</a></b>, Elise A. Manning, <i>praca magisterska</i>, 2013
+                </li>
+
+                <div class="target" id="5"> </div>
+                <li>
+                    <a href="#p5" class="internal">↑</a> <a href="https://www.tandfonline.com/doi/abs/10.1080/00207144.2013.784115" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>An Eye for an I: A 35-Year-Old Woman With Fluctuating Oculomotor Deficits and Dissociative Identity Disorder</a>, Chaya Bhuvaneswar i David Spiegel, <i>International Journal of Clinical and Experimental Hypnosis</i>, 2013
+                </li>
+
+                <div class="target" id="6"> </div>
+                <li>
+                    <a href="#p6" class="internal">↑</a> <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/pchj.109" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Sight and blindness in the same person: Gating in the visual system</a>, Hans Strasburger i Bruno Waldvogel, <i>PsyCh Journal</i>, 2015
+                </li>
+
+                <div class="target" id="7"> </div>
+                <li>
+                    <a href="#p7" class="internal">↑</a> <a href="https://doi.org/10.1080/00029157.1983.10404152" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Dissociative States Presenting as an Eating Disorder</a>, dr Moshe S. Torem, <i>American Journal of Clinical Hypnosis</i>, 2011
+                </li>
+
+                <div class="target" id="8"> </div>
+                <li>
+                    <a href="#p8" class="internal">↑</a> <a href="https://doi.org/10.1080/00029157.1983.10404152" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Psychophysiologic Phenomena in Multiple Personality and Hypnosis</a>, dr Bennett G. Braun, <i>American Journal of Clinical Hypnosis</i>, 1983 
+                </li>
+
+                <div class="target" id="9"> </div>
+                <li>
+                    <a href="#p9" class="internal">↑</a> <a href="https://www.researchgate.net/publication/284938128_Psychotic_presentations_of_dissociative_identity_disorder" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Psychotic Presentations of Dissociative Identity Disorder</a>, dr Vedat Şar i prof. Erdinç Öztürk, w: <i>Psychosis, Trauma and Dissociation: Emerging Perspectives on Severe Psychopathology</i>, str. 170, 2008
+                </li>
+
+                <div class="target" id="10"> </div>
+                <li>
+                    ↑ <sup><a href="#p10a" class="internal">a</a></sup> <sup><a href="#p10b" class="internal">b</a></sup> <a href="https://psycnet.apa.org/record/1999-10418-007" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Therapeutic alliance with abuser alters in DID: The paradox of attachment to the abuser</a>, dr Ruth Blizzard, w: <i>Dissociation: Progress in the Dissociative Disorders</i>, 1997
+                </li>
+    
+            </ol>
+
+            <br><br>
+
+            <p>
+                <i>
+                    Utworzono: 01.11.2025
+                </i>
+            </p>
+
+
+            <footer data-nosnippet>
+                <blockquote><i>Musimy obierać strony. Neutralność pomaga oprawcy, nigdy ofierze. Cisza zachęca dręczyciela, nigdy dręczonego.</i> ~ Elie Wiesel (on/jego)</blockquote>
+
+
+
+
+<div class="flex"><address><p>Kontakt:</p>
+    <p><a href="mailto:systemteczowegochaosu@gmail.com" class="internal">systemteczowegochaosu@gmail.com</a></p>
+    
+    
+        <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Kanał na YouTube</a></p>
+    
+    <p><a href="https://discord.gg/5gbrwTgDzp" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Serwer na Discordzie</a></p></address>
+    
+    <div>
+        <p><a href="../#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
+        <p><a href="../#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
+        <p><a href="../nauka/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
+        <p><a href="../poprawki-bledow" class="internal">Poprawki błędów</a></p>
+    </div>
+    <div>
+        <p><a href="../zastrzezenia" class="internal">Zastrzeżenia</a></p>
+        <p><a href="../deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
+        <p><a href="../polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
+    </div>
+
+    </div>
+
+    <p>©2023-2025 <a href="../system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
+
+</footer>
+
+
+
+        </main>
+    </body>
+</html>

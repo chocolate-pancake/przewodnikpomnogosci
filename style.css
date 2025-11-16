@@ -611,7 +611,7 @@ input.search:focus-visible {
 }
 
 .option.subsection {
-    width: 85%;
+    /* width: 85%; */
     font-size: 1.25rem;
     padding: 0.5rem;
 }
@@ -621,6 +621,21 @@ input.search:focus-visible {
     width: 90%;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+.in-summary {
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+a.option, a.option.subsection {
+    padding-left: 1.5rem;
+}
+
+details.option:open {
+    background-color: transparent;
+    box-shadow: none;
+    border: solid 2px rgb(110, 110, 110);
 }
 
 footer {
@@ -1490,6 +1505,17 @@ aside.cryterium {
 
     .option.subsection {
         font-size: 0.9rem;
+    }
+
+    .in-summary {
+        margin-left: 0.1rem;
+    }
+
+    a.option {
+        padding-left: 0.6rem;
+    } 
+    a.option.subsection {
+        padding-left: 0.5rem;
     }
     
     .sidebar {

@@ -1,4 +1,4 @@
-if(localStorage.getItem('oldMenu') === 'false'){
+if(!localStorage.getItem('oldMenu') || localStorage.getItem('oldMenu') === 'false'){
 
     let template;
     let parser = new DOMParser;

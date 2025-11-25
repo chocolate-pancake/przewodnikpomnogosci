@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Symbole mnogości | Przewodnik po Mnogości</title>
+        <link rel="icon" href="ampersand-icon.png">
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://przewodnikpomnogosci.pl/plural-journey-rings.png">
+        <meta property="og:image:alt" content="mnogie okręgi">
+        <meta name="twitter:domain" content="przewodnikpomnogosci.pl">
+        <meta name="color-scheme" content="dark light">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="System Tęczowego Chaosu">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Przewodnik po Mnogości">
+        <meta property="og:url" content="https://przewodnikpomnogosci.pl/mnogosc/symbole">
+        <meta name="twitter:title" property="og:title" content="Symbole mnogości">
+        <meta name="description" content="Najbardziej rozpoznawalnym symbolem mnogości jest ampersand, ale można się spotkać także z czterema zazębiającymi się okręgami, treblesandem i różnymi flagami.">
+        <meta name="twitter:description" property="og:description" content="Najbardziej rozpoznawalnym symbolem mnogości jest ampersand, ale można się spotkać także z czterema zazębiającymi się okręgami, treblesandem i różnymi flagami.">
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <script src="/template.js"></script>
+        <script src="/script.js" defer></script>
+        <script src="/settings.js" defer></script>
+    </head>
+    <body>
+        <div id="shadow" class="shadow"></div>
+        <div id="sidebar-shadow" class="shadow"></div>
+        
+        <a class="to-main" href="#zawartosc">Przejdź do zawartości</a>
+        
+        <header class="header">
+            <div class="divider">
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <a href="/" class="title">
+                    <div class="logo" aria-label="mnogie okręgi">
+                        <svg class="logo">
+                            <circle class="upper"></circle>
+                            <circle class="down"></circle>
+                            <circle class="left"></circle>
+                            <circle class="right"></circle>
+                        </svg>
+                    </div>
+                    <span id="title">Przewodnik po Mnogości</span>
+                </a>
+            </div>
+            <div class="divider rdiv">
+                <button class="search mobile" aria-label="wyszukaj" onclick="showSearchInput()">
+                    <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                        <circle cx="35%" cy="35%" r="30%"/>
+                        <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                    </svg>
+                </button>
+                <form class="search" action="/wyszukaj" role="search">
+                    <button type="submit" class="search" aria-label="wyszukaj">
+                        <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                            <circle cx="35%" cy="35%" r="30%"/>
+                            <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                        </svg>
+                    </button>
+                    <input type="search" class="search" name="q" minlength="1" placeholder="wyszukaj" required>
+                    
+                </form>
+                <details class="language-select">
+                    <summary><span class="for-aria">Wybierz język</span>&#127477&#127473</summary>
+                    <div class="language-options">
+                        <div  class="language-option active">&#127477&#127473</div>
+                        <!-- <a href="/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
+                        <a href="/en/" class="language-option">&#127482&#127480</a>
+                        <!-- <a href="/ru/" class="language-option">&#127479&#127482</a> -->
+                    </div>
+                </details>
+                <a href="ustawienia" class="settings desktop">
+                    <img src="settings.png" alt="ustawienia i dostępność">
+                </a>
+            </div>
+        </header>
+        
+            <aside class="sidebar" id="sidebar" data-nosnippet>
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <nav class="menu-options" id="symbole">
+                    <a href="/" id="glowna" class="option">Strona główna</a>
+                    <a href="czeste-pytania" class="option" id="czeste-pytania">Częste pytania</a>
+                    <a href="terminologia" id="terminologia" class="option">Terminologia</a>  
+                    <a href="mnogosc" id="mnogosc" class="option current">Mnogość</a>  
+                    <a href="nauka/" id="nauka" class="option">Nauka i wierzenia</a> 
+                    <a href="zaburzenia/" id="zaburzenia" 
+                    class="option">Powiązane zaburzenia</a>  
+                    <a href="powstawanie" id="powstawanie" class="option">Przyczyny powstawania</a> 
+                    <a href="system" id="system" class="option">System</a>      
+                    <a href="wspolosoby/" id="wspolosoby" class="option">Współosoby</a> 
+                    <a href="frontowanie" class="option" id="frontowanie">Frontowanie</a>   
+                    <a href="wewnetrzny-swiat" id="wewnetrzny-swiat" class="option">Wewnętrzny świat</a> 
+                    <a href="materialy/" id="materialy" class="option">Materiały i pomoce</a>
+                    <a href="system-teczowego-chaosu/" id="o-nas" class="option">O nas</a>
+                    <a href="blog/" id="blog" class="option">Blog</a>
+                </nav>
+            </aside>
+
+        <main id="zawartosc">
+            
+            
+            <svg preserveAspectRatio="none" class="hidden">
+                <symbol id="ex" class="ex">
+                    <line x1="10%" y1="20%" x2="30%" y2="20%"></line>
+                    <line x1="10%" y1="20%" x2="10%" y2="90%"></line>
+                    <line x1="10%" y1="90%" x2="80%" y2="90%"></line>
+                    <line x1="80%" y1="90%" x2="80%" y2="70%"></line>
+                    <line x1="30%" y1="70%" x2="90%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="50%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="90%" y2="50%"></line>
+                </symbol>
+            </svg>
+            
+            <h1>Symbole mnogości</h1>
+
+                <!-- <fieldset class="contents">
+                    <legend>Spis treści</legend>
+                    <div class="second">
+                    <a href="#wielorakosc">Wielorakość</a>
+                    <a href="#symbole">Symbole</a>
+                    <a href="#spolecznosc">Społeczność</a>
+                    <a href="#spektrum">Spektrum mnogości</a>
+                    <a href="#przypisy">Przypisy</a>
+                    </div>
+                </fieldset> -->
+
+            <p>
+                Najbardziej rozprzestrzenionym i znanym w społeczności symbolem mnogości jest znak „&” (ampersand). Można go kolorować wedle uznania, a także umieszczać na różnych flagach, ważny jest znak sam w sobie. Jeżeli spotkacie osoby mnogie, które spędziły w społeczności trochę czasu, na pewno go rozpoznają. Symbolizuje on bycie wieloma, a także inkluzywność, dlatego może być używany przez każdy system.<sup><span class="target" id="p1"></span>[<a href="#1" class="internal">1</a>]</sup>
+            </p>
+
+            <p>
+                Trochę mniej rozpowszechnionym symbolem są Mnogie Okręgi – cztery okręgi zazębiające się na kształt zbliżony do diagramu Venna<sup><span class="target" id="p2"></span>[<a href="#2" class="internal">2</a>]</sup>. Je także można kolorować w dowolny sposób. Najpopularniejszą wersją kolorystyczną są Mnogie Okręgi Emmengard, z każdym kolorem symbolizującym przyczynę powstania. Żółty oznacza systemy o nieznanych przyczynach powstania i znajduje się na górze, ponieważ większość społeczności zaczyna w tym miejscu. Zielony to systemy adaptacyjne (w tym traumogeniczne), niebieski – spontaniczne, a czerwony – stworzone. Miejsca nakładania się kolorów to systemy o mieszanych przyczynach powstania.<sup><span class="target" id="p3"></span>[<a href="#3" class="internal">3</a>]</sup> Z mnogich symboli istnieje także wiolisand – kombinacja ampersandu i klucza wiolinowego, symbolizująca jednocześnie wielość i harmonię. Tak samo jak ampersand może być używany przez każdy system, niezależnie od jego przyczyn powstania i posiadanych lub nie posiadanych diagnoz.<sup><span class="target" id="p4"></span>[<a href="#4" class="internal">4</a>]</sup> Nie on jest jednak aż tak dobrze znany.
+            </p>
+
+            <figure>
+                <a href="mnogie-okregi.jpg" class="internal"><img class="img" src="mnogie-okregi.jpg" alt="cztery zazębiające się okręgi, po jednym na górze, dole, po prawej i po lewej stronie, na samym środku przestrzeń należąca do każdego z nich" id="rings"></a>
+                <figcaption>
+                    Mnogie Okręgi
+                </figcaption>
+                <p class="source">
+                    Źródło grafiki: <a href="https://pluralpedia.org/w/Plural_Rings" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Plural Rings</a>
+                </p>
+            </figure>
+
+            <figure>
+                <a href="mnogie-okregi-emmengard.jpg" class="internal"><img src="mnogie-okregi-emmengard.jpg" alt="mnogie okręgi pokolorowane akwarelą" class="img"></a>
+                <figcaption>
+                    Mnogie Okręgi Emmengard
+                </figcaption>
+                <p class="source">
+                    Źródło grafiki: <a href="https://emmengard.dreamwidth.org/7949.html" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Plural Positivity</a>
+                </p>
+            </figure>
+
+            <figure>
+                <a href="wiolisand.png" class="internal"><img src="wiolisand.png" alt="Znak będący połączeniem ampersandu i klucza wiolinowego" class="img" id="treblesand"></a>
+                <figcaption>
+                    Wiolisand
+                </figcaption>
+            </figure>
+
+            <p>
+                Oprócz tego powstało także wiele flag dla mnogości. Systemowa flaga dumy jest najszerzej rozpoznawalna. Składa się z trzech pasów: kolor biały symbolizuje systemy po fuzji ostatecznej, pomarańczowy – systemy żyjące w funkcjonalnej wielorakością, a czarny – systemy, które jeszcze nie wiedzą o swojej wielorakości lub mają problemy z wzajemną komunikacją. Niestety powstała ona z myślą wyłącznie dla traumogenicznych systemów z DID/OSDD<sup><span class="target" id="p5"></span>[<a href="#5" class="internal">5</a>]</sup> i noszenie jej może być odbierane jako zgadzanie się z endofobicznymi i sysmedycznymi poglądami jej osób tworzących. Dlatego jeżeli nie chcecie wywoływać u części systemów wątpliwości, czy jesteście tolerancyjni, lepiej zdecydować się na przykład na Flagę Mnogiej Podróży, która nie cieszy się taką popularnością, ale jest za to inkluzywna (i naszym zdaniem ma śliczne kolory). Fioletowy oznacza odkrywanie swojej mnogości, niebieski – zaufanie pomiędzy współjednostkami, zielony – wewnętrzną harmonię, a czarny – różnorodność w mnogiej społeczności. <sup><span class="target" id="p6"></span>[<a href="#6" class="internal">6</a>]</sup>
+            </p>
+
+            <figure>
+                <a href="systemowa-flaga-dumy.png" class="internal"><img class="img" src="systemowa-flaga-dumy.png" alt="flaga złożona z trzech pasów kolorów jednakowej szerokości, od góry: białego, jasnego pomarańczowego i czarnego" id="flag"></a>
+                <figcaption>
+                    Systemowa Flaga Dumy
+                </figcaption>
+                <p class="source">
+                    Źródło grafiki: <a href="https://theentropysystemdi.wixsite.com/systemprideday" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>System Pride Day</a>
+                </p>
+            </figure>
+
+            <figure>
+                <a href="flaga-mnogiej-podrozy.png" class="internal"><img src="mnoga-podroz-wektor.svg" alt="flaga złożona z siedmiu pasów kolorów, na samym środku czarny, od środka symetrycznie po jasnozielonym, niebieskim i fioletowym pasie" class="img"></a>
+                <figcaption>
+                    Flaga Mnogiej Podróży
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="mnoga-podroz-ampersand-wektor.svg" class="internal"><img src="mnoga-podroz-ampersand-wektor.svg" alt="flaga mnogiej podróży z dużym, czarnym ampersandem na środku" class="img"></a>
+                <figcaption>
+                    Flaga Mnogiej Podróży – wersja z ampersandem
+                </figcaption>
+            </figure>
+
+                
+
+            <div class="target" id="przypisy"></div>
+            <h2>
+                Przypisy
+            </h2>
+
+            <ol class="links">
+            
+            <div class="target" id="1"> </div>
+            <li>
+                <a href="#p1" class="internal">↑</a> <a href="https://kinhost.org/Movement/PluralPrideMovement" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Plural Pride Movement</a>
+            </li>
+            
+            <div class="target" id="2"> </div>
+            <li>
+                <a href="#p2" class="internal">↑</a> <a href="https://pluralpedia.org/w/Plural_Rings" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Plural Rings</a>
+            </li>
+
+            <div class="target" id="3"> </div>
+            <li>
+                <a href="#p3" class="internal">↑</a> <a href="https://emmengard.dreamwidth.org/7949.html" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Plural Positivity</a>
+            </li>
+            
+            <div class="target" id="4"> </div>
+            <li>
+                <a href="#p4" class="internal">↑</a> <a href="https://treblesand.dreamwidth.org/554.html" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>The Treble Ampersand – A Plural Pride Symbol</a>
+            </li>
+            
+            <div class="target" id="5"> </div>
+            <li>
+                <a href="#p5" class="internal">↑</a> <a href="https://theentropysystemdi.wixsite.com/systemprideday" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>System Pride Day</a>
+            </li>
+
+            <div class="target" id="6"> </div>
+            <li>
+                <a href="#p6" class="internal">↑</a> <a href="https://treblesand.dreamwidth.org/1177.html" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>The Plural Journey Flag</a>
+            </li>
+
+            </ol>
+<br><br>
+
+            <p>
+                <i>
+                    Utworzono: 02.04.2023 <br>
+                    Ostatnia aktualizacja: 12.03.2025
+                </i>
+            </p>
+
+
+            <footer data-nosnippet>
+                <blockquote><i>Musimy obierać strony. Neutralność pomaga oprawcy, nigdy ofierze. Cisza zachęca dręczyciela, nigdy dręczonego.</i> ~ Elie Wiesel (on/jego)</blockquote>
+
+
+
+
+<div class="flex"><address><p>Kontakt:</p>
+    <p><a href="mailto:systemteczowegochaosu@gmail.com" class="internal">systemteczowegochaosu@gmail.com</a></p>
+    
+    
+        <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Kanał na YouTube</a></p>
+    
+    <p><a href="https://discord.gg/5gbrwTgDzp" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Serwer na Discordzie</a></p></address>
+    
+    <div>
+        <p><a href="/#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
+        <p><a href="/#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
+        <p><a href="/nauka/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
+        <p><a href="/poprawki-bledow" class="internal">Poprawki błędów</a></p>
+    </div>
+    <div>
+        <p><a href="/zastrzezenia" class="internal">Zastrzeżenia</a></p>
+        <p><a href="/deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
+        <p><a href="/deklaracja-tolerancyjnosci" class="internal">Deklaracja tolerancyjności</a></p>
+        <p><a href="/polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
+    </div>
+
+    </div>
+
+    <p>©2023-2025 <a href="/system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
+
+</footer>
+
+
+        </main>
+    </body>
+</html>

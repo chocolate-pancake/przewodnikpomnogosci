@@ -2,8 +2,8 @@
 <html lang="pl">
     <head>
         <meta charset="UTF-8">
-        <title>Alternatywne wyjaśnienia mnogości | Przewodnik po Mnogości</title>
-        <link rel="icon" href="../ampersand-icon.png">
+        <title>Mnogie wierzenia | Przewodnik po Mnogości</title>
+        <link rel="icon" href="/ampersand-icon.png">
         <meta property="og:image" itemprop="image primaryImageOfPage" content="https://przewodnikpomnogosci.pl/plural-journey-rings.png">
 <meta property="og:image:alt" content="mnogie okręgi">
         <meta name="twitter:domain" content="przewodnikpomnogosci.pl">
@@ -12,14 +12,14 @@
         <meta name="author" content="System Tęczowego Chaosu">
         <meta property="og:type" content="website">
         <meta property="og:site_name" content="Przewodnik po Mnogości">
-        <meta property="og:url" content="https://przewodnikpomnogosci.pl/nauka/alternatywne-wyjasnienia">
-        <meta name="twitter:title" property="og:title" content="Alternatywne wyjaśnienia mnogości">
-        <meta name="description" content="Isnieje wiele różnych wyjaśnień możliwości istnienia kilku osób w jednym ciele, od naukowych, takich jak hipoteza symulacji, do czysto metafizycznych, takich jak reinkarnacja.">
-        <meta name="twitter:description" content="Isnieje wiele różnych wyjaśnień możliwości istnienia kilku osób w jednym ciele, od naukowych, takich jak hipoteza symulacji, do czysto metafizycznych, takich jak reinkarnacja.">
-        <meta property="og:description" content="Isnieje wiele różnych wyjaśnień możliwości istnienia kilku osób w jednym ciele, od naukowych, takich jak hipoteza symulacji, do czysto metafizycznych, takich jak reinkarnacja.">
-        <link rel="stylesheet" type="text/css" href="../style.css">
-        <script src="../script.js" defer></script>
-        <script src="../settings.js" defer></script>
+        <meta property="og:url" content="https://przewodnikpomnogosci.pl/mnogosc/wierzenia">
+        <meta name="twitter:title" property="og:title" content="Mnogie wierzenia">
+        <meta name="description" content="Mnogie osoby posiadają różne wierzenia odnośnie natury mnogości. Do szczególnie popularnych należą reinkarnacja i wrzechświaty równoległe.">
+        <meta name="twitter:description" property="og:description" content="Mnogie osoby posiadają różne wierzenia odnośnie natury mnogości. Do szczególnie popularnych należą reinkarnacja i wrzechświaty równoległe.">
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <script src="/template.js"></script>
+        <script src="/script.js" defer></script>
+        <script src="/settings.js" defer></script>
     </head>
     <body>
         <div id="shadow" class="shadow"></div>
@@ -55,7 +55,7 @@
                         <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
                     </svg>
                 </button>
-                <form class="search" action="https://przewodnikpomnogosci.pl/wyszukaj" role="search">
+                <form class="search" action="/wyszukaj" role="search">
                     <button type="submit" class="search" aria-label="wyszukaj">
                         <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
                             <circle cx="35%" cy="35%" r="30%"/>
@@ -69,9 +69,9 @@
                     <summary><span class="for-aria">Wybierz język</span>&#127477&#127473</summary>
                     <div class="language-options">
                         <div  class="language-option active">&#127477&#127473</div>
-                        <!-- <a href="https://przewodnikpomnogosci.pl/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
-                        <a href="https://przewodnikpomnogosci.pl/en/" class="language-option">&#127482&#127480</a>
-                        <!-- <a href="https://przewodnikpomnogosci.pl/ru/" class="language-option">&#127479&#127482</a> -->
+                        <!-- <a href="/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
+                        <a href="/en/" class="language-option">&#127482&#127480</a>
+                        <!-- <a href="/ru/" class="language-option">&#127479&#127482</a> -->
                     </div>
                 </details>
                 <a href="../ustawienia" class="settings desktop">
@@ -79,10 +79,6 @@
                 </a>
             </div>
         </header>
-        
-        <!-- <a href="../ustawienia" class="settings mobile">
-            <img src="../settings.png" alt="ustawienia i dostępność">
-        </a> -->
         
             <aside class="sidebar" id="sidebar" data-nosnippet>
                 <button class="menu-icon" id="menu1" type="button" onclick="menu()">
@@ -92,7 +88,7 @@
                         <line x1="25%" y1="65%" x2="75%" y2="65%"/>
                     </svg>
                 </button>
-                <nav class="menu-options">
+                <nav class="menu-options" id="wierzenia">
                     <a href="../" id="glowna" class="option">Strona główna</a>
                     <a href="../czeste-pytania" class="option" id="czeste-pytania">Częste pytania</a>
                     <a href="../terminologia" id="terminologia" class="option">Terminologia</a>
@@ -135,10 +131,14 @@
             </svg>
 
             
-            <h1>Alternatywne wyjaśnienia</h1>
+            <h1>Mnogie wierzenia</h1>
 
             <p>
-                <b>Pomimo postępu nauki wciąż większa część społeczeństwa posiada różne nadnaturalne wierzenia o niektórych lub wszystkich aspektach funkcjonowania wszechświata, w tym także mnogości.</b> Nawet w jednym systemie zdania na temat tego, co odpowiada za możliwość współistnienia wielu osób w jednym ciele, mogą być bardzo podzielone. Przedstawiamy tutaj kilka powszechnych w społeczności oraz parę wyznawanych przez osoby z naszego systemu.
+                <i>Ta strona oczekuje na rewizję. Tekst może zawierać niesprawdzone informacje lub wyrażać poglądy, z którymi się już dłużej nie zgadzamy.</i>
+            </p>
+
+            <p>
+                <b>Pomimo postępu nauki wciąż większa część społeczeństwa posiada różne nadnaturalne wierzenia o niektórych lub wszystkich aspektach funkcjonowania wszechświata, w tym także mnogości.</b> Nawet w jednym systemie zdania na temat tego, co odpowiada za możliwość współistnienia wielu osób w jednym ciele, mogą być bardzo podzielone. Niektóre religie lub ich odłamy, takie jak mediumizm, ewangeliczne Chrześcijaństwo i Buddyzm, prowadzą do powstania spirygenicznych systemów, które najczęściej będą rozumieć mnogość w świetle doktryn swojej wiary. Z kolei w szerszej systemowej społeczności według naszych obserwacji bardzo powszechne są wyjaśnienia mnogości niepowiązane z popularnymi religiami, często związane z reinkarnacją i wszechświatami równoległymi. To zjawisko może być związane z traumą religijną, bardziej dotykającą zachodnią mnogą populację ze względu na częste powiązanie ze społecznością LGBT+, doświadczenie przemocy w dzieciństwie oraz samą mnogofobię motywowaną religijnymi przekonaniami. Opisujemy tutaj te najpopularniejsze i kilka wierzeń wyznawanych swego czasu przez osoby z naszego systemu, tj. wyjaśnienie w świetle Chrześcijaństwa oraz hipotezy symulacji, ale najróżniejszych duchowych wytłumaczeń mnogości może istnieć tyle, ile tylko istnieje na świecie różnych religii i nadnaturalnych wierzeń.
             </p>
 
             <fieldset class="contents">
@@ -149,15 +149,10 @@
                     <a href="#przypisy">Przypisy</a>
                 </div>
             </fieldset>
-            
-            <div class="target" id="duchowe"></div>
-            <h2>
-                Duchowe
-            </h2>
 
-            <p>
+            <!-- <p>
                 Duchowych wyjaśnień mnogości może istnieć tak wiele, jak wiele istnieje na świecie wierzeń i religii, więc nie sposób opisać je wszystkie. Mają one jednak ze sobą wiele wspólnego – zakładają istnienie dusz i/lub nadnaturalnych istot, których wiele może zamieszkiwać bądź odwiedzać jedno i to samo ciało. Nie ma w nich nic złego tak długo, jak długo nie wyrządzają nikomu krzywdy. Należy jednak zachować zdrowy rozsądek i <strong>nigdy nie polegać na duchowości przy podejmowaniu ważnych decyzji, leczeniu poważniejszych chorób, także tych psychicznych, oraz zapewnianiu sobie bezpieczeństwa</strong>. Uznawanie swojego wewnętrznego świata jako miejsca istniejącego w innej rzeczywistości jest w porządku, ale jeżeli przestaje się dbać o swoje ciało, bo wierzy się, że jego stan nie ma wpływu na to, co się z wewnętrznym światem dzieje, to bardzo zły znak.
-            </p>
+            </p> -->
 
             <div class="target" id="reinkarnacja"></div>
             <h3>
@@ -259,20 +254,21 @@
     <p><a href="https://discord.gg/5gbrwTgDzp" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Serwer na Discordzie</a></p></address>
     
     <div>
-        <p><a href="../#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
-        <p><a href="../#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
-        <p><a href="../wyjasnienia/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
-        <p><a href="../poprawki-bledow" class="internal">Poprawki błędów</a></p>
+        <p><a href="/#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
+        <p><a href="/#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
+        <p><a href="/nauka/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
+        <p><a href="/poprawki-bledow" class="internal">Poprawki błędów</a></p>
     </div>
     <div>
-        <p><a href="../zastrzezenia" class="internal">Zastrzeżenia</a></p>
-        <p><a href="../deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
-        <p><a href="../polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
+        <p><a href="/zastrzezenia" class="internal">Zastrzeżenia</a></p>
+        <p><a href="/deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
+        <p><a href="/deklaracja-tolerancyjnosci" class="internal">Deklaracja tolerancyjności</a></p>
+        <p><a href="/polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
     </div>
 
     </div>
 
-    <p>©2023-2025 <a href="../system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
+    <p>©2023-2025 <a href="/system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
 
 </footer>
 
@@ -280,5 +276,4 @@
 
         </main>
     </body>
-
 </html>

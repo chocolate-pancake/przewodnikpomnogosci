@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Lista badań i artykułów naukowych o mnogości | Przewodnik po Mnogości</title>
-        <link rel="icon" href="../ampersand-icon.png">
+        <link rel="icon" href="/ampersand-icon.png">
         <meta property="og:image" itemprop="image primaryImageOfPage" content="https://przewodnikpomnogosci.pl/plural-journey-rings.png">
 <meta property="og:image:alt" content="mnogie okręgi">
         <meta name="twitter:domain" content="przewodnikpomnogosci.pl">
@@ -16,11 +16,12 @@
         <meta name="twitter:title" property="og:title" content="Lista badań i artykułów naukowych o mnogości">
         <meta name="description" content="Lista istotnych badań i artykułów naukowych na temat dysocjacyjnego zaburzenia tożsamości i innych rodzajów mnogości, m.in. mediumizmu, tulpomancji i iluzji niezależnego działania.">
         <meta name="twitter:description" property="og:description" content="Lista istotnych badań i artykułów naukowych na temat dysocjacyjnego zaburzenia tożsamości i innych rodzajów mnogości, m.in. mediumizmu, tulpomancji i iluzji niezależnego działania.">
-        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="stylesheet" type="text/css" href="/style.css">
         <link rel="stylesheet" type="text/css" href="filters.css">
+        <script src="/template.js"></script>
         <script src="filters.js" defer></script>
-        <script src="../script.js" defer></script>
-        <script src="../settings.js" defer></script>
+        <script src="/script.js" defer></script>
+        <script src="/settings.js" defer></script>
     </head>
     <body>
         <div id="shadow" class="shadow"></div>
@@ -56,7 +57,7 @@
                         <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
                     </svg>
                 </button>
-                <form class="search" action="https://przewodnikpomnogosci.pl/wyszukaj" role="search">
+                <form class="search" action="/wyszukaj" role="search">
                     <button type="submit" class="search" aria-label="wyszukaj">
                         <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
                             <circle cx="35%" cy="35%" r="30%"/>
@@ -70,9 +71,9 @@
                     <summary><span class="for-aria">Wybierz język</span>&#127477&#127473</summary>
                     <div class="language-options">
                         <div  class="language-option active">&#127477&#127473</div>
-                        <!-- <a href="https://przewodnikpomnogosci.pl/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
-                        <a href="https://przewodnikpomnogosci.pl/en/science/scientific-publication-list" class="language-option">&#127482&#127480</a>
-                        <!-- <a href="https://przewodnikpomnogosci.pl/ru/" class="language-option">&#127479&#127482</a> -->
+                        <!-- <a href="/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
+                        <a href="/en/science/scientific-publication-list" class="language-option">&#127482&#127480</a>
+                        <!-- <a href="/ru/" class="language-option">&#127479&#127482</a> -->
                     </div>
                 </details>
                 <a href="../ustawienia" class="settings desktop">
@@ -89,7 +90,7 @@
                         <line x1="25%" y1="65%" x2="75%" y2="65%"/>
                     </svg>
                 </button>
-                <nav class="menu-options">
+                <nav class="menu-options" id="lista-artykulow-naukowych">
                     <a href="../" id="glowna" class="option">Strona główna</a>
                     <a href="../czeste-pytania" class="option" id="czeste-pytania">Częste pytania</a>
                     <a href="../terminologia" id="terminologia" class="option">Terminologia</a>
@@ -101,7 +102,6 @@
                         
                         <a href="teoria-czterech-czynnikow" class="option subsection">Teoria czterech czynników</a>
                         <a href="teoria-strukturalnej-dysocjacji" class="option subsection">Teoria strukturalnej dysocjacji</a>
-                        <a href="alternatywne-wyjasnienia" class="option subsection">Alternatywne wyjaśnienia</a>
                     </div>           
                     <a href="../zaburzenia/" id="zaburzenia" 
                     class="option">Powiązane zaburzenia</a> 
@@ -135,7 +135,7 @@
             <h1>Lista artykułów naukowych</h1>
             
             <p>
-                Chociaż po polsku można znaleźć ich tylko kilka, <b>w zagranicznej literaturze istnieją tysiące badań i artykułów naukowych na temat <a href="../zaburzenia/dysocjacyjne-zaburzenie-tozsamosci" class="internal">dysocjacyjnego zaburzenia tożsamości</a> (DID)</b>. Inne określone zaburzenie dysocjacyjne (OSDD) doczekało się ich mniej, praktycznie zawsze w towarzystwie innych zaburzeń dysocjacyjnych, a niezaburzona <a href="../materialy/podstawy-mnogosci" class="internal">mnogość</a> (np. mediumizm, tulpomancja i część przypadków iluzji niezależnego działania) jeszcze rzadziej cieszy się zainteresowaniem środowiska naukowego. Do poniższej listy artykułów i badań będziemy dodawać tylko te polskie oraz te najbardziej znane albo według naszej subiektywnej oceny najciekawsze lub najważniejsze dla naszej społeczności. Opieramy się na wielu z nich w najróżniejszych miejscach naszej strony. Bardziej konkretne, pisane (mamy nadzieję) prostszym językiem podsumowania wyników kilku z nich znajdziecie w  <a href="../materialy/naukowe-dowody-mnogosci" class="internal">naukowych dowodach mnogości</a> i <a href="neurobiologia" class="internal">neurobiologii</a>.
+                Chociaż po polsku można znaleźć ich tylko kilka, <b>w zagranicznej literaturze istnieją tysiące badań i artykułów naukowych na temat <a href="../zaburzenia/dysocjacyjne-zaburzenie-tozsamosci" class="internal">dysocjacyjnego zaburzenia tożsamości</a> (DID)</b>. Inne określone zaburzenie dysocjacyjne (OSDD) doczekało się ich mniej, praktycznie zawsze w towarzystwie innych zaburzeń dysocjacyjnych, a niezaburzona <a href="../mnogosc/podstawy-mnogosci" class="internal">mnogość</a> (np. mediumizm, tulpomancja i część przypadków iluzji niezależnego działania) jeszcze rzadziej cieszy się zainteresowaniem środowiska naukowego. Do poniższej listy artykułów i badań będziemy dodawać tylko te polskie oraz te najbardziej znane albo według naszej subiektywnej oceny najciekawsze lub najważniejsze dla naszej społeczności. Opieramy się na wielu z nich w najróżniejszych miejscach naszej strony. Bardziej konkretne, pisane (mamy nadzieję) prostszym językiem podsumowania wyników kilku z nich znajdziecie w  <a href="../materialy/naukowe-dowody-mnogosci" class="internal">naukowych dowodach mnogości</a> i <a href="neurobiologia" class="internal">neurobiologii</a>.
             </p>
 
             <p>
@@ -619,7 +619,7 @@
                 </li>
                 
                 <li class="not-iia not-mediums not-law not-comorbidities not-stigma not-myths not-polish not-switching not-model not-people not-tulpas not-neuro not-functional not-treatment public nonnatural older" data-order="12" data-year="1991">
-                    <b><a href="https://www.sciencedirect.com/science/article/pii/S0193953X18302910" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Clinical Presentations of Multiple Personality Disorder</a></b>, Richard P. Kluft, M.D., 1991. <span class="for-aria">Dostępny wyłącznie w formie zdjęć oryginalnego wydania, z tekstem niedostępnym dla czytników ekranowych.</span>
+                    <b><a href="https://doi.org/10.1016/S0193-953X(18)30291-0" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Clinical Presentations of Multiple Personality Disorder</a></b>, Richard P. Kluft, M.D., 1991. <span class="for-aria">Dostępny wyłącznie w formie zdjęć oryginalnego wydania, z tekstem niedostępnym dla czytników ekranowych.</span>
                     <details>
                         <summary><b>Ostrzeżenia</b></summary>
                         <p>
@@ -1784,7 +1784,32 @@ them almost seamlessly."-->
                 Ostrzeżenia: porusza temat ignorowania punktu widzenia osób z zaburzeniami (cała praca), opisuje hipotetyczne scenariusze utraty części ciała i wyciągnięcia mózgu z ciała, w tym rozważania, czy można przeżyć taki scenariusz, operacje usuwające części mózgu, teletransportację polegającą na zniszczeniu oryginalnego ciała (3.1 Body or Brain Criteria), wspomina o karze śmierci (3.1 Body or Brain Criteria)-->
 
                 <li>
-                    <a href="https://psycnet.apa.org/record/1991-31084-001" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Animal alters: Case reports.</a>
+                    <a href="https://psycnet.apa.org/record/1991-31084-001" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Animal alters: Case reports</a>
+                </li>
+
+                <li>
+                    <a href="https://doi.org/10.1080/00207148808409323" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Misuse of Forensic Hypnosis: A Hypnotically Elicited False Confession with the Apparent Creation of A Multiple Personality</a>
+                    <!-- Ostrzeżenia: porusza temat postrzelenia, zaniedbania sprawy ze strony policji, niesłusznych skazania, utraty pracy i prawa do opieki nad dziećmi, wspomina o przemocy fizycznej, samobójczości i porwaniu-->
+                </li>
+
+                <li>
+                    <a href="https://doi.org/10.1038/s41386-022-01468-1" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Deconstructing dissociation: a triple network model of trauma-related dissociation and its subtypes</a>
+                </li>
+
+                <li>
+                    <a href="https://doi.org/10.1016/j.ejtd.2025.100595" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Between stigma and gaps in care: The impact of media discourses on the treatment situation of individuals with DID in Switzerland</a>
+                </li>
+
+                <li>
+                    <a href="https://doi.org/10.1371/journal.pone.0335714" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Reaching internal consensus: Decision-making by transgender and plural people</a>
+                </li>
+
+                <li>
+                    <a href="https://doi.org/10.1080/26895269.2025.2573832" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Dissociative identity disorder and dissociative symptoms in people with gender incongruence: a critical review of literature and a case series</a>
+                </li>
+
+                <li>
+                    <a href="https://doi.org/10.1016/j.jaac.2023.03.021" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>#DID: The Role of Social Media in the Presentation of Dissociative Symptoms in Adolescents</a>
                 </li>
 
                 <!-- template: li.notpublic.not-treatment.nonnatural.notplural.notdid.less-important.not-functional.not-neuro.older.less-known.not-tulpas.not-people.not-model.not-switching.not-polish.not-stigma.not-myths.not-law.not-comorbidities.not-iia.not-mediums.not-reviewed[data-order="47" data-year="2000"] -->
@@ -1792,6 +1817,17 @@ them almost seamlessly."-->
                 <!-- REMEMBER ABOUT UNCHECKED WARNING AND MISSING TRANSLATION -->
             </ul>
             
+<!-- Colin Ross, Multiple personality disorder : diagnosis, clinical features, and treatment
+"The goal of the treatment of MPD is not to produce someone who never
+dissociates. That would be like giving people a lifetime prescription for an
+antidepressant to prevent them from feeling sad when loved ones die. Such
+a prescription would be a clinical error for two reasons: It is a misconceived
+goal of treatment; and the antidepressants don’t have that effect anyway." 
+
+"The point is that there are probably millions of people in North America
+who hear dissociative voices and have a highly dissociated experience of self. Many of these people probably have no history of childhood trauma." 
+ -->
+
 <!-- https://higherlogicdownload.s3.amazonaws.com/ISSTD/2982dbc1-b56c-421c-a2b6-aa7b3283bec0/UploadedImages/2022_Frontiers_Final_Articles_with_DOI/Ross_Daydreaming.pdf  not reviewed, proposes therapeutic neutrality - neither believing nor disbelieving in the ritual abuse, triggers in the therapist-clients talk: ofiary z dzieci, śmierć rodzica, zaprogramowany powrót do sekty  -->
 <!-- https://www.taylorfrancis.com/chapters/edit/10.4324/9780203775134-11/multiple-personality-order-william-henkin good piece on non-disordered plurality and common plural-like experiences, not only in trans people (a bit misoginistic, uses she for example MDP patient, but switches to he for example of a healthy multiple) -->
 <!-- 
@@ -1805,7 +1841,7 @@ https://www.sciencedirect.com/science/article/abs/pii/S0145213414002282 Childhoo
             <p>
                 <i>
                     Utworzono: 08.04.2024 <br>
-                    Ostatnia aktualizacja: 01.11.2025
+                    Ostatnia aktualizacja: 16.11.2025
                 </i>
             </p>
 
@@ -1853,20 +1889,21 @@ https://www.sciencedirect.com/science/article/abs/pii/S0145213414002282 Childhoo
     <p><a href="https://discord.gg/5gbrwTgDzp" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Serwer na Discordzie</a></p></address>
     
     <div>
-        <p><a href="../#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
-        <p><a href="../#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
-        <p><a href="../nauka/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
-        <p><a href="../poprawki-bledow" class="internal">Poprawki błędów</a></p>
+        <p><a href="/#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
+        <p><a href="/#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
+        <p><a href="/nauka/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
+        <p><a href="/poprawki-bledow" class="internal">Poprawki błędów</a></p>
     </div>
     <div>
-        <p><a href="../zastrzezenia" class="internal">Zastrzeżenia</a></p>
-        <p><a href="../deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
-        <p><a href="../polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
+        <p><a href="/zastrzezenia" class="internal">Zastrzeżenia</a></p>
+        <p><a href="/deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
+        <p><a href="/deklaracja-tolerancyjnosci" class="internal">Deklaracja tolerancyjności</a></p>
+        <p><a href="/polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
     </div>
 
     </div>
 
-    <p>©2023-2025 <a href="../system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
+    <p>©2023-2025 <a href="/system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
 
 </footer>
 

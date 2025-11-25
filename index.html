@@ -11,16 +11,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="System Tęczowego Chaosu">
         <meta property="og:type" content="website">
-        <!-- <meta property="og:site_name" content="Przewodnik po Mnogości"> -->
         <meta property="og:url" content="https://przewodnikpomnogosci.pl/">
         <meta name="twitter:title" property="og:title" content="Przewodnik po Mnogości">
         <meta name="google-site-verification" content="EG42P3yVBO20KuBYByK7wo7eml-10mxfQ1CX9zaBalE" />
         <meta name="description" content="Przewodnik po Mnogości to projekt mający szerzyć informacje i świadomość o mnogości – obecności kilku osób/osobowości w jednym ciele lub umyśle. Obejmuje to dysocjacyjne zaburzenie tożsamości, OSDD, tulpomancję, więź dusz oraz wiele innych rodzajów mnogości.">
         <meta name="twitter:description" property="og:description" content="Przewodnik po Mnogości to projekt mający szerzyć informacje i świadomość o mnogości – obecności kilku osób/osobowości w jednym ciele lub umyśle. Obejmuje to dysocjacyjne zaburzenie tożsamości, OSDD, tulpomancję, więź dusz oraz wiele innych rodzajów mnogości.">
-        <!-- <meta name="keywords" content="mnogość, wielorakość, dysocjacyjne zaburzenie tożsamości, opętanie, przewodnik po mnogości, mnogość przewodnik, mnogość definicja, wielorakość definicja"> -->
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="script.js" defer></script>
-        <script src="settings.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <script src="/template.js"></script>
+        <script src="/script.js" defer></script>
+        <script src="/settings.js" defer></script>
     </head>
     <body>
         <div id="shadow" class="shadow"></div>
@@ -28,7 +27,7 @@
         
         <a class="to-main" href="#zawartosc">Przejdź do zawartości</a>
         
-        <!-- <img src="menu-icon.png" alt="Menu" title="Menu"> -->
+         
         <header class="header">
             <div class="divider">
                 <button class="menu-icon" id="menu1" type="button" onclick="menu()">
@@ -57,7 +56,7 @@
                         <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
                     </svg>
                 </button>
-                <form class="search" action="https://przewodnikpomnogosci.pl/wyszukaj" role="search">
+                <form class="search" action="/wyszukaj" role="search">
                     <button type="submit" class="search" aria-label="wyszukaj">
                         <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
                             <circle cx="35%" cy="35%" r="30%"/>
@@ -71,9 +70,9 @@
                     <summary><span class="for-aria">Wybierz język</span>&#127477&#127473</summary>
                     <div class="language-options">
                         <div  class="language-option active">&#127477&#127473</div>
-                        <!-- <a href="https://przewodnikpomnogosci.pl/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
-                        <a href="https://przewodnikpomnogosci.pl/en/" class="language-option">&#127482&#127480</a>
-                        <!-- <a href="https://przewodnikpomnogosci.pl/ru/" class="language-option">&#127479&#127482</a> -->
+                        <!-- <a href="/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
+                        <a href="/en/" class="language-option">&#127482&#127480</a>
+                        <!-- <a href="/ru/" class="language-option">&#127479&#127482</a> -->
                     </div>
                 </details>
                 <a href="ustawienia" class="settings desktop">
@@ -82,9 +81,7 @@
             </div>
         </header>
         
-        <!-- <a href="ustawienia" class="settings mobile">
-            <img src="settings.png" alt="ustawienia i dostępność">
-        </a> -->
+        
         
             <aside class="sidebar" id="sidebar" data-nosnippet>
                 <button class="menu-icon" id="menu1" type="button" onclick="menu()">
@@ -94,7 +91,7 @@
                         <line x1="25%" y1="65%" x2="75%" y2="65%"/>
                     </svg>
                 </button>
-                <nav class="menu-options">
+                <nav class="menu-options" id="glowna">
                     <a href="/" id="glowna" class="option current">Strona główna</a>
                     <a href="czeste-pytania" class="option" id="czeste-pytania">Częste pytania</a>
                     <a href="terminologia" id="terminologia" class="option">Terminologia</a> 
@@ -136,7 +133,7 @@
             </p> -->
 
             <p>
-                Witamy w naszym Przewodniku po Mnogości! <b> Jest to projekt, który ma na celu szerzyć informację i świadomość na temat mnogości (obecności więcej niż jednej osobowości lub osoby w jednym ciele) oraz ubiegać się o równe prawa dla naszej społeczności.</b> Jest to bardzo obszerny temat, więc na naszej stronie znalazło się dość dużo treści i ich ilość wciąż rośnie. <b> Jeżeli nie masz czasu, ochoty lub zdolności skupienia uwagi, żeby to wszystko przeczytać, <a href="materialy/podstawy-mnogosci" class="internal">podstawy mnogości</a> oraz <a href="czeste-pytania" class="internal">częste pytania</a> pozwolą ci zapoznać się z najważniejszymi konceptami. Oprócz tego w <a href="terminologia" class="internal">terminologii</a> możesz znaleźć znaczenia (chyba) wszystkich używanych przez nas na stronie określeń.</b> Staramy się także wytłuszczać najistotniejsze informacje w akapitach, żeby osobom widzącym łatwiej było je wydobyć z długiej ściany tekstu<span class="for-aria"> oraz pod częścią podrozdziałów te same informacje zamieszczamy w dostępnych dla czytników ekranowych akapitach zaczynających się od słów podsumowując lub podsumowanie</span>.
+                Witamy w naszym Przewodniku po Mnogości! <b> Jest to projekt, który ma na celu szerzyć informację i świadomość na temat mnogości (obecności więcej niż jednej osobowości lub osoby w jednym ciele) oraz ubiegać się o równe prawa dla naszej społeczności.</b> Jest to bardzo obszerny temat, więc na naszej stronie znalazło się dość dużo treści i ich ilość wciąż rośnie. <b> Jeżeli nie masz czasu, ochoty lub zdolności skupienia uwagi, żeby to wszystko przeczytać, <a href="mnogosc/podstawy-mnogosci" class="internal">podstawy mnogości</a> oraz <a href="czeste-pytania" class="internal">częste pytania</a> pozwolą ci zapoznać się z najważniejszymi konceptami. Oprócz tego w <a href="terminologia" class="internal">terminologii</a> możesz znaleźć znaczenia (chyba) wszystkich używanych przez nas na stronie określeń.</b> Staramy się także wytłuszczać najistotniejsze informacje w akapitach, żeby osobom widzącym łatwiej było je wydobyć z długiej ściany tekstu<span class="for-aria"> oraz pod częścią podrozdziałów te same informacje zamieszczamy w dostępnych dla czytników ekranowych akapitach zaczynających się od słów podsumowując lub podsumowanie</span>.
             </p>
 
             <p>
@@ -198,7 +195,7 @@
             </p>
 
             <p>
-                Podchodzisz do tematu ze sceptycyzmem? To bardzo dobrze! Nie powinno się od razu wierzyć każdej rzeczy, którą przeczyta się w internecie. <b>Dlatego na <a href="nauka/lista-artykulow-naukowych" class="internal">liście artykułów naukowych</a> w <a href="nauka/" class="internal">nauce i wierzeniach</a> znajdziesz najważniejsze badania naukowe w tej dziedzinie wraz z ich streszczeniami, a w <a href="nauka/neurobiologia" class="internal">neurobiologii</a> znajdziesz podsumowania tych poświęconych funkcjonowaniu mnogiego mózgu oraz nasze hipotezy dotyczące kwestii, którymi środowisko naukowe nie poświęca na razie zbyt dużo uwagi.</b> Do tej kategorii będziemy dodawać też opisy różnych modeli powstawania mnogości (jak na razie mamy jedynie <a href="nauka/teoria-strukturalnej-dysocjacji" class="internal">teorię strukturalnej dysocjacji</a>). A jeżeli próbujesz dopasować mnogość do modelu świata utworzonego przez twoją religię albo dowiedzieć się więcej na temat różnorodności światopoglądów w społeczności, w <a href="nauka/alternatywne-wyjasnienia" class="internal">alternatywnych wyjaśnieniach</a> przeczytasz, jak na swoją mnogość patrzą osoby posiadające różne nadnaturalne wierzenia. 
+                Podchodzisz do tematu ze sceptycyzmem? To bardzo dobrze! Nie powinno się od razu wierzyć każdej rzeczy, którą przeczyta się w internecie. <b>Dlatego na <a href="nauka/lista-artykulow-naukowych" class="internal">liście artykułów naukowych</a> w <a href="nauka/" class="internal">nauce i wierzeniach</a> znajdziesz najważniejsze badania naukowe w tej dziedzinie wraz z ich streszczeniami, a w <a href="nauka/neurobiologia" class="internal">neurobiologii</a> znajdziesz podsumowania tych poświęconych funkcjonowaniu mnogiego mózgu oraz nasze hipotezy dotyczące kwestii, którymi środowisko naukowe nie poświęca na razie zbyt dużo uwagi.</b> Do tej kategorii będziemy dodawać też opisy różnych modeli powstawania mnogości (jak na razie mamy jedynie <a href="nauka/teoria-strukturalnej-dysocjacji" class="internal">teorię strukturalnej dysocjacji</a>). A jeżeli próbujesz dopasować mnogość do modelu świata utworzonego przez twoją religię albo dowiedzieć się więcej na temat różnorodności światopoglądów w społeczności, w <a href="mnogosc/wierzenia" class="internal">alternatywnych wyjaśnieniach</a> przeczytasz, jak na swoją mnogość patrzą osoby posiadające różne nadnaturalne wierzenia. 
             </p>
 <!-- <b>Z pewnością zainteresują cię także <a href="zrodla" class="internal">źródła</a>, gdzie podajemy odnośniki do stron, z których najbardziej korzystałośmy w trakcie naszego researchu.</b> -->
 
@@ -267,17 +264,18 @@
         <p><a href="/#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
         <p><a href="/#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
         <p><a href="/nauka/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
-        <p><a href="poprawki-bledow" class="internal">Poprawki błędów</a></p>
+        <p><a href="/poprawki-bledow" class="internal">Poprawki błędów</a></p>
     </div>
     <div>
-        <p><a href="zastrzezenia" class="internal">Zastrzeżenia</a></p>
-        <p><a href="deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
-        <p><a href="polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
+        <p><a href="/zastrzezenia" class="internal">Zastrzeżenia</a></p>
+        <p><a href="/deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
+        <p><a href="/deklaracja-tolerancyjnosci" class="internal">Deklaracja tolerancyjności</a></p>
+        <p><a href="/polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
     </div>
 
     </div>
 
-    <p>©2023-2025 <a href="system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
+    <p>©2023-2025 <a href="/system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
 
 </footer>
 

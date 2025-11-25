@@ -17,10 +17,11 @@
         <meta name="description" content="Frontowanie to inaczej kontrolowanie ciała przez jedną z osób należących do systemu. Ciało może kontrolować jedna osoba, kilka osób na raz (współfrontowanie), albo żadna z nich (autopilot). Inne osoby mogą być współświadome i biernie wpływać na działania osoby frontującej.">
         <meta name="twitter:description" content="Frontowanie to inaczej kontrolowanie ciała przez jedną z osób należących do systemu. Ciało może kontrolować jedna osoba, kilka osób na raz (współfrontowanie), albo żadna z nich (autopilot). Inne osoby mogą być współświadome i biernie wpływać na działania osoby frontującej.">
         <meta property="og:description" content="Frontowanie to inaczej kontrolowanie ciała przez jedną z osób należących do systemu. Ciało może kontrolować jedna osoba, kilka osób na raz (współfrontowanie), albo żadna z nich (autopilot). Inne osoby mogą być współświadome i biernie wpływać na działania osoby frontującej.">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="plurality.css">
-        <script src="script.js" defer></script>
-        <script src="settings.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <link rel="stylesheet" type="text/css" href="/plurality.css">
+        <script src="/template.js"></script>
+        <script src="/script.js" defer></script>
+        <script src="/settings.js" defer></script>
     </head>
     <body>
         <div id="shadow" class="shadow"></div>
@@ -56,7 +57,7 @@
                         <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
                     </svg>
                 </button>
-                <form class="search" action="https://przewodnikpomnogosci.pl/wyszukaj" role="search">
+                <form class="search" action="/wyszukaj" role="search">
                     <button type="submit" class="search" aria-label="wyszukaj">
                         <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
                             <circle cx="35%" cy="35%" r="30%"/>
@@ -70,9 +71,9 @@
                     <summary><span class="for-aria">Wybierz język</span>&#127477&#127473</summary>
                     <div class="language-options">
                         <div  class="language-option active">&#127477&#127473</div>
-                        <!-- <a href="https://przewodnikpomnogosci.pl/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
-                        <a href="https://przewodnikpomnogosci.pl/en/" class="language-option">&#127482&#127480</a>
-                        <!-- <a href="https://przewodnikpomnogosci.pl/ru/" class="language-option">&#127479&#127482</a> -->
+                        <!-- <a href="/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
+                        <a href="/en/" class="language-option">&#127482&#127480</a>
+                        <!-- <a href="/ru/" class="language-option">&#127479&#127482</a> -->
                     </div>
                 </details>
                 <a href="ustawienia" class="settings desktop">
@@ -81,9 +82,7 @@
             </div>
         </header>
         
-        <!-- <a href="ustawienia" class="settings mobile">
-            <img src="settings.png" alt="ustawienia i dostępność">
-        </a> -->
+        
         
             <aside class="sidebar" id="sidebar" data-nosnippet>
                 <button class="menu-icon" id="menu1" type="button" onclick="menu()">
@@ -93,12 +92,12 @@
                         <line x1="25%" y1="65%" x2="75%" y2="65%"/>
                     </svg>
                 </button>
-                <nav class="menu-options">
+                <nav class="menu-options" id="frontowanie">
                     <a href="/" id="glowna" class="option">Strona główna</a>
                     <a href="czeste-pytania" class="option" id="czeste-pytania">Częste pytania</a>
                     <a href="terminologia" id="terminologia" class="option">Terminologia</a>
                     <a href="mnogosc" id="mnogosc" class="option">Mnogość</a>
-                    <a href="wyjasnienia/" id="wyjasnienia" class="option">Nauka i wierzenia</a>       
+                    <a href="nauka/" id="nauka" class="option">Nauka i wierzenia</a>       
                     <a href="zaburzenia/" id="zaburzenia" 
                     class="option">Powiązane zaburzenia</a> 
                     <a href="powstawanie" id="powstawanie" class="option">Przyczyny powstawania</a> 
@@ -384,18 +383,19 @@
     <div>
         <p><a href="/#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
         <p><a href="/#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
-        <p><a href="/wyjasnienia/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
-        <p><a href="poprawki-bledow" class="internal">Poprawki błędów</a></p>
+        <p><a href="/nauka/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
+        <p><a href="/poprawki-bledow" class="internal">Poprawki błędów</a></p>
     </div>
     <div>
-        <p><a href="zastrzezenia" class="internal">Zastrzeżenia</a></p>
-        <p><a href="deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
-        <p><a href="polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
+        <p><a href="/zastrzezenia" class="internal">Zastrzeżenia</a></p>
+        <p><a href="/deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
+        <p><a href="/deklaracja-tolerancyjnosci" class="internal">Deklaracja tolerancyjności</a></p>
+        <p><a href="/polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
     </div>
 
     </div>
 
-    <p>©2023-2025 <a href="system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
+    <p>©2023-2025 <a href="/system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
 
 </footer>
 

@@ -16,10 +16,10 @@
         <meta name="twitter:title" property="og:title" content="Wewnętrzny świat – miejsce istniejące w umyśle">
         <meta name="description" content="Wewnętrzny świat to miejsce wykreowane przez umysł, częste u osób z dysocjacyjnym zaburzeniem tożsamości, które może być tak samo realistyczne, jak świat zewnętrzny. W przypadku marzycielstwa dezadaptacyjnego nazywa się go parakosmem. Istoty żyjące w wewnętrznym świecie nazywane są NPC.">
         <meta name="twitter:description" property="og:description" content="Wewnętrzny świat to miejsce wykreowane przez umysł, częste u osób z dysocjacyjnym zaburzeniem tożsamości, które może być tak samo realistyczne, jak świat zewnętrzny. W przypadku marzycielstwa dezadaptacyjnego nazywa się go parakosmem. Istoty żyjące w wewnętrznym świecie nazywane są NPC.">
-        <!-- <meta name="keywords" content="wewnętrzny świat, wewnątrzświat, wewnętrzny świat dysocjacyjne zaburzenie tożsamości, parakosm marzycielstwo dezadaptacyjne, wewnętrzny świat systemy, wewnętrzny świat mnogość, wewnętrzny świat wielorakość"> -->
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="script.js" defer></script>
-        <script src="settings.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <script src="/template.js"></script>
+        <script src="/script.js" defer></script>
+        <script src="/settings.js" defer></script>
     </head>
     <body>
         <div id="shadow" class="shadow"></div>
@@ -55,7 +55,7 @@
                         <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
                     </svg>
                 </button>
-                <form class="search" action="https://przewodnikpomnogosci.pl/wyszukaj" role="search">
+                <form class="search" action="/wyszukaj" role="search">
                     <button type="submit" class="search" aria-label="wyszukaj">
                         <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
                             <circle cx="35%" cy="35%" r="30%"/>
@@ -69,9 +69,9 @@
                     <summary><span class="for-aria">Wybierz język</span>&#127477&#127473</summary>
                     <div class="language-options">
                         <div  class="language-option active">&#127477&#127473</div>
-                        <!-- <a href="https://przewodnikpomnogosci.pl/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
-                        <a href="https://przewodnikpomnogosci.pl/en/" class="language-option">&#127482&#127480</a>
-                        <!-- <a href="https://przewodnikpomnogosci.pl/ru/" class="language-option">&#127479&#127482</a> -->
+                        <!-- <a href="/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
+                        <a href="/en/" class="language-option">&#127482&#127480</a>
+                        <!-- <a href="/ru/" class="language-option">&#127479&#127482</a> -->
                     </div>
                 </details>
                 <a href="ustawienia" class="settings desktop">
@@ -80,9 +80,7 @@
             </div>
         </header>
         
-        <!-- <a href="ustawienia" class="settings mobile">
-            <img src="settings.png" alt="ustawienia i dostępność">
-        </a> -->
+        
         
             <aside class="sidebar" id="sidebar" data-nosnippet>
                 <button class="menu-icon" id="menu1" type="button" onclick="menu()">
@@ -92,12 +90,12 @@
                         <line x1="25%" y1="65%" x2="75%" y2="65%"/>
                     </svg>
                 </button>
-                <nav class="menu-options">
+                <nav class="menu-options" id="wewnetrzny-swiat">
                     <a href="/" id="glowna" class="option">Strona główna</a>
                     <a href="czeste-pytania" class="option" id="czeste-pytania">Częste pytania</a>
                     <a href="terminologia" id="terminologia" class="option">Terminologia</a>
                     <a href="mnogosc" id="mnogosc" class="option">Mnogość</a>
-                    <a href="wyjasnienia/" id="wyjasnienia" class="option">Nauka i wierzenia</a>       
+                    <a href="nauka/" id="nauka" class="option">Nauka i wierzenia</a>       
                     <a href="zaburzenia/" id="zaburzenia" 
                     class="option">Powiązane zaburzenia</a> 
                     <a href="powstawanie" id="powstawanie" class="option">Przyczyny powstawania</a> 
@@ -130,7 +128,7 @@
             <h1>Wewnętrzny świat</h1>
 
             <p>
-                W psychologii <b>wewnętrzny świat</b> (ang. <i lang="en">innerworld</i> ) najczęściej oznacza wszystko, co składa się na wewnętrzne przeżycia danej osoby, wliczając w to emocje, myśli czy jej własną tożsamość, a także faktyczne światy (miejsca) w umyśle. Te ostatnie nie mają ogólnej psychologicznej nazwy, ale te przyjazne z nich, przynoszące poczucie komfortu, określane są jako <b>wewnętrzne bezpieczne miejsca</b>.<sup><span class="target" id="p1"></span>[<a href="#1" class="internal">1</a>]</sup> <b>W ogólnej <a href="materialy/podstawy-mnogosci" class="internal">mnogiej</a> społeczności natomiast takie miejsca, także te niekoniecznie bezpieczne, nazywane są właśnie wewnętrznymi światami (lub w skróconej wersji, według naszej propozycji – <b>wewnątrzświatami</b>), trochę rzadziej można się spotkać z <b>przestrzenią w głowie</b> (<i lang="en">headspace</i>).</b> Poszczególne mnogie społeczności używają swojej własnej terminologii do określania miejsca w umyśle. W społeczności tulpiarskiej jest to <b>wonderland</b> (<b>kraina czarów</b>) lub <b>myśloświat</b><sup><span class="target" id="p2"></span>[<a href="#2" class="internal">2</a>]</sup>. W społeczności poświęconej więzi dusz były to <b>umysłowy krajobraz</b> (<i lang="en">mindscape</i>) lub <b>krajobraz duszy</b> (<i lang="en">soulscape</i>)<sup><span class="target" id="p3"></span>[<a href="#3" class="internal">3</a>]</sup>. Nie tylko mnogie osoby mają swoje nazwy na wewnętrzne światy – w społeczności osób z marzycielstwem dezadaptacyjnym najbardziej znane są one jako <b>parakosmy</b>, a żyjące w nich <a href="#npc" class="internal">NPC</a> jako <b>para</b><sup><span class="target" id="p4"></span>[<a href="#4" class="internal">4</a>]</sup>. Nie ma przeciwwskazań, żeby wybrać któreś z tych określeń dla siebie, nie należąc do żadnej z tych grup. Niektóre osoby nawet używają kilku i definiują je trochę odmiennie, na przykład osoba z DID i MD, posiadająca zarówno wewnętrzny świat, który jest doświadczany tak samo jak świat zewnętrzny, jak i dużo mniej realistyczny parakosm<sup><span class="target" id="p5"></span>[<a href="#5" class="internal">5</a>]</sup>.
+                W psychologii <b>wewnętrzny świat</b> (ang. <i lang="en">innerworld</i> ) najczęściej oznacza wszystko, co składa się na wewnętrzne przeżycia danej osoby, wliczając w to emocje, myśli czy jej własną tożsamość, a także faktyczne światy (miejsca) w umyśle. Te ostatnie nie mają ogólnej psychologicznej nazwy, ale te przyjazne z nich, przynoszące poczucie komfortu, określane są jako <b>wewnętrzne bezpieczne miejsca</b>.<sup><span class="target" id="p1"></span>[<a href="#1" class="internal">1</a>]</sup> <b>W ogólnej <a href="mnogosc/podstawy-mnogosci" class="internal">mnogiej</a> społeczności natomiast takie miejsca, także te niekoniecznie bezpieczne, nazywane są właśnie wewnętrznymi światami (lub w skróconej wersji, według naszej propozycji – <b>wewnątrzświatami</b>), trochę rzadziej można się spotkać z <b>przestrzenią w głowie</b> (<i lang="en">headspace</i>).</b> Poszczególne mnogie społeczności używają swojej własnej terminologii do określania miejsca w umyśle. W społeczności tulpiarskiej jest to <b>wonderland</b> (<b>kraina czarów</b>) lub <b>myśloświat</b><sup><span class="target" id="p2"></span>[<a href="#2" class="internal">2</a>]</sup>. W społeczności poświęconej więzi dusz były to <b>umysłowy krajobraz</b> (<i lang="en">mindscape</i>) lub <b>krajobraz duszy</b> (<i lang="en">soulscape</i>)<sup><span class="target" id="p3"></span>[<a href="#3" class="internal">3</a>]</sup>. Nie tylko mnogie osoby mają swoje nazwy na wewnętrzne światy – w społeczności osób z marzycielstwem dezadaptacyjnym najbardziej znane są one jako <b>parakosmy</b>, a żyjące w nich <a href="#npc" class="internal">NPC</a> jako <b>para</b><sup><span class="target" id="p4"></span>[<a href="#4" class="internal">4</a>]</sup>. Nie ma przeciwwskazań, żeby wybrać któreś z tych określeń dla siebie, nie należąc do żadnej z tych grup. Niektóre osoby nawet używają kilku i definiują je trochę odmiennie, na przykład osoba z DID i MD, posiadająca zarówno wewnętrzny świat, który jest doświadczany tak samo jak świat zewnętrzny, jak i dużo mniej realistyczny parakosm<sup><span class="target" id="p5"></span>[<a href="#5" class="internal">5</a>]</sup>.
             </p>
 <!-- 
             <p>
@@ -193,7 +191,7 @@
             </h3>
 
             <p>
-                Wśród części osób specjalistycznych można się spotkać z przekonaniem, że wewnętrzny świat to wyłącznie zbiorowe sztuczne wspomnienia, dostępne dla współosób w trakcie frontowania. <b>Ignoruje to fakt, że do stworzenia sztucznego wspomnienia potrzebne są konkretne warunki, których wiele wspomnień ze środka nie spełnia</b> (po bardziej szczegółowe wyjaśnienie zobacz <a href="wyjasnienia/neurobiologia#egzowspomnienia">egzowspomnienia w neurobiologii</a>). <b>Być może częściowo wynika to też ze zdefiniowania jako sztuczne każdego wspomnienia rzeczy, która fizycznie nie przydarzyła się ciału, ale według takiej logiki musielibyśmy tak nazywać także wszystkie wspomnienia snów, marzeń dziennych czy halucynacji, a tego nie robimy.</b> Różnica pomiędzy egzowspomnieniem a sztucznym wspomnieniem jest taka, że <b>przy egzowspomnieniu dana osoba faktycznie doświadczyła jakiejś rzeczy wewnątrz swojego umysłu, a przy sztucznym wspomnieniu zaczyna wierzyć, że w przeszłości wydarzyła się sytuacja, która faktycznie nie miała miejsca.</b> Pierwsze czasami może przekształcić się w drugie – kiedy wyobrażam sobie, jak w alternatywnym wszechświecie kupuję sukienkę, którą ostatnio widziałem w witrynie sklepu, będę miał z tego egzowspomnienie, ale kiedy po jakimś czasie pomiesza mi się to z moim zewnętrznym życiem i będę się spodziewał znaleźć tę sukienkę w swojej szafie, będę miał już sztuczne wspomnienie.
+                Wśród części osób specjalistycznych można się spotkać z przekonaniem, że wewnętrzny świat to wyłącznie zbiorowe sztuczne wspomnienia, dostępne dla współosób w trakcie frontowania. <b>Ignoruje to fakt, że do stworzenia sztucznego wspomnienia potrzebne są konkretne warunki, których wiele wspomnień ze środka nie spełnia</b> (po bardziej szczegółowe wyjaśnienie zobacz <a href="nauka/neurobiologia#egzowspomnienia">egzowspomnienia w neurobiologii</a>). <b>Być może częściowo wynika to też ze zdefiniowania jako sztuczne każdego wspomnienia rzeczy, która fizycznie nie przydarzyła się ciału, ale według takiej logiki musielibyśmy tak nazywać także wszystkie wspomnienia snów, marzeń dziennych czy halucynacji, a tego nie robimy.</b> Różnica pomiędzy egzowspomnieniem a sztucznym wspomnieniem jest taka, że <b>przy egzowspomnieniu dana osoba faktycznie doświadczyła jakiejś rzeczy wewnątrz swojego umysłu, a przy sztucznym wspomnieniu zaczyna wierzyć, że w przeszłości wydarzyła się sytuacja, która faktycznie nie miała miejsca.</b> Pierwsze czasami może przekształcić się w drugie – kiedy wyobrażam sobie, jak w alternatywnym wszechświecie kupuję sukienkę, którą ostatnio widziałem w witrynie sklepu, będę miał z tego egzowspomnienie, ale kiedy po jakimś czasie pomiesza mi się to z moim zewnętrznym życiem i będę się spodziewał znaleźć tę sukienkę w swojej szafie, będę miał już sztuczne wspomnienie.
             </p>
 
             <p>
@@ -201,7 +199,7 @@
             </p>
 <!-- 
             <p>
-                Wśród części osób specjalistycznych można się spotkać z przekonaniem, że wewnętrzny świat to wyłącznie zbiorowe sztuczne wspomnienia, dostępne dla współosób w trakcie <a href="frontowanie" class="internal">frontowania</a>. Głównym argumentem na poparcie tego stwierdzenia jest, że „ludzki mózg nie byłby w stanie symulować całej rzeczywistości jednocześnie dla tylu osób alterskich”. Chciałobyśmy zauważyć, że obydwa przyjęte tutaj założenia – że symulacja musi odbywać się przez cały czas i że musi być przeprowadzana dla wszystkich jednocześnie, żeby . <b> Nie istnieją żadne badania na temat natury wewnętrznych światów, wobec czego nie wiemy, ile energii kosztuje aktywność w środku jednej współosoby</b>, a faktem jest, że przynajmniej <a href="wyjasnienia/neurobiologia#egzowspomnienia" class="internal">część wspomnień z wewnętrznych światów nie jest sztuczna</a>. Pewnie część z nich jest, może mniejsza, może większa, ale to nie ma znaczenia. Sama nazwa „sztuczne wspomnienie” sugeruje jego fałszywość, a dla większości osób posiadających wspomnienia z wewnątrzświatów ich doświadczenia w środku są tak samo prawdziwe, jak dla ciebie jest fakt, że czytasz teraz treści na naszej stronie. <strong> Nigdy nie powinno się nazywać czyichś wspomnień z wewnętrznego świata sztucznymi wspomnieniami, jeżeli dana osoba sama tego nie robi.</strong> Zamiast tego powinno się mówić o <a href="wspolosoby/wewnetrzne-funkcjonowanie#egzowspomnienia" class="internal">egzowspomnieniach</a>. Jeżeli nie rozumiesz, dlaczego to ma znaczenie, wyobraź sobie, że ktoś mówi, że twój wczorajszy sen to tak naprawdę sztuczne wspomnienie i nigdy się nie wydarzył. Irytujące, prawda? Ale jakie masz dowody na to, że tak nie było?
+                Wśród części osób specjalistycznych można się spotkać z przekonaniem, że wewnętrzny świat to wyłącznie zbiorowe sztuczne wspomnienia, dostępne dla współosób w trakcie <a href="frontowanie" class="internal">frontowania</a>. Głównym argumentem na poparcie tego stwierdzenia jest, że „ludzki mózg nie byłby w stanie symulować całej rzeczywistości jednocześnie dla tylu osób alterskich”. Chciałobyśmy zauważyć, że obydwa przyjęte tutaj założenia – że symulacja musi odbywać się przez cały czas i że musi być przeprowadzana dla wszystkich jednocześnie, żeby . <b> Nie istnieją żadne badania na temat natury wewnętrznych światów, wobec czego nie wiemy, ile energii kosztuje aktywność w środku jednej współosoby</b>, a faktem jest, że przynajmniej <a href="nauka/neurobiologia#egzowspomnienia" class="internal">część wspomnień z wewnętrznych światów nie jest sztuczna</a>. Pewnie część z nich jest, może mniejsza, może większa, ale to nie ma znaczenia. Sama nazwa „sztuczne wspomnienie” sugeruje jego fałszywość, a dla większości osób posiadających wspomnienia z wewnątrzświatów ich doświadczenia w środku są tak samo prawdziwe, jak dla ciebie jest fakt, że czytasz teraz treści na naszej stronie. <strong> Nigdy nie powinno się nazywać czyichś wspomnień z wewnętrznego świata sztucznymi wspomnieniami, jeżeli dana osoba sama tego nie robi.</strong> Zamiast tego powinno się mówić o <a href="wspolosoby/wewnetrzne-funkcjonowanie#egzowspomnienia" class="internal">egzowspomnieniach</a>. Jeżeli nie rozumiesz, dlaczego to ma znaczenie, wyobraź sobie, że ktoś mówi, że twój wczorajszy sen to tak naprawdę sztuczne wspomnienie i nigdy się nie wydarzył. Irytujące, prawda? Ale jakie masz dowody na to, że tak nie było?
             </p> -->
 
             <p class="for-aria">
@@ -259,7 +257,7 @@
             </p>
 
             <p>
-                Biorąc pod uwagę <a href="wyjasnienia/neurobiologia" class="internal">neurobiologię świadomości</a>, wszystko w naszych umysłach, czego nie możemy kontrolować, posiada przynajmniej niewielki poziom świadomości. Ciężko jest określić, od jakiego momentu jest to poziom świadomości wystarczający do odczuwania emocji, ale część byłych NPC posiada bardzo rzeczywiste wspomnienia z czasu, w którym nie były jeszcze w pełni „wykształcone”. To, a także fakt, że istnieje ryzyko pomylenia np. niewerbalnej współosoby z NPC nie posiadającym zdolności myślenia, jest powodem, dla którego <strong>nigdy nie powinno się wyrządzać krzywdy żadnemu NPC, które wykazuje się jakimkolwiek poziomem wolnej woli</strong> (wliczając w to zwierzęce NPC). No chyba że jest to krzywda, na którą wyrazi dobrowolną, niewymuszoną zgodę oraz zapewnicie mu sposób, na który może zakomunikować, że konkretna rzecz, którą robicie, nie jest w porządku.
+                Biorąc pod uwagę <a href="nauka/neurobiologia" class="internal">neurobiologię świadomości</a>, wszystko w naszych umysłach, czego nie możemy kontrolować, posiada przynajmniej niewielki poziom świadomości. Ciężko jest określić, od jakiego momentu jest to poziom świadomości wystarczający do odczuwania emocji, ale część byłych NPC posiada bardzo rzeczywiste wspomnienia z czasu, w którym nie były jeszcze w pełni „wykształcone”. To, a także fakt, że istnieje ryzyko pomylenia np. niewerbalnej współosoby z NPC nie posiadającym zdolności myślenia, jest powodem, dla którego <strong>nigdy nie powinno się wyrządzać krzywdy żadnemu NPC, które wykazuje się jakimkolwiek poziomem wolnej woli</strong> (wliczając w to zwierzęce NPC). No chyba że jest to krzywda, na którą wyrazi dobrowolną, niewymuszoną zgodę oraz zapewnicie mu sposób, na który może zakomunikować, że konkretna rzecz, którą robicie, nie jest w porządku.
             </p>
 
                 <div class="target" id="pokoj-frontowy"></div>
@@ -343,18 +341,19 @@
     <div>
         <p><a href="/#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
         <p><a href="/#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
-        <p><a href="/wyjasnienia/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
-        <p><a href="poprawki-bledow" class="internal">Poprawki błędów</a></p>
+        <p><a href="/nauka/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
+        <p><a href="/poprawki-bledow" class="internal">Poprawki błędów</a></p>
     </div>
     <div>
-        <p><a href="zastrzezenia" class="internal">Zastrzeżenia</a></p>
-        <p><a href="deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
-        <p><a href="polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
+        <p><a href="/zastrzezenia" class="internal">Zastrzeżenia</a></p>
+        <p><a href="/deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
+        <p><a href="/deklaracja-tolerancyjnosci" class="internal">Deklaracja tolerancyjności</a></p>
+        <p><a href="/polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
     </div>
 
     </div>
 
-    <p>©2023-2025 <a href="system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
+    <p>©2023-2025 <a href="/system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
 
 </footer>
 

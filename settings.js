@@ -156,3 +156,25 @@ function font(size){
     document.documentElement.style.setProperty("--font-size", size);
     localStorage.setItem("fontSize", size);
 }
+
+
+
+if(!localStorage.getItem('oldMenu')){
+    localStorage.setItem('oldMenu', 'false');
+}
+
+if(localStorage.getItem('oldMenu') === 'true'){
+    let menuCheck = document.getElementById('oldMenu');
+    if(menuCheck){
+        menuCheck.checked = true;
+    }
+}
+
+function menu(){
+    if(localStorage.getItem('oldMenu') === 'true'){
+        localStorage.setItem('oldMenu', 'false');
+    }
+    else{
+        localStorage.setItem('oldMenu', 'true');
+    }
+}

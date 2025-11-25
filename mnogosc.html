@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mnogość – bycie wieloma | Przewodnik po Mnogości</title>
+        <link rel="icon" href="ampersand-icon.png">
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://przewodnikpomnogosci.pl/plural-journey-rings.png">
+<meta property="og:image:alt" content="mnogie okręgi">
+        <meta name="twitter:domain" content="przewodnikpomnogosci.pl">
+        <meta name="color-scheme" content="dark light">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="System Tęczowego Chaosu">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Przewodnik po Mnogości">
+        <meta property="og:url" content="https://przewodnikpomnogosci.pl/mnogosc">
+        <meta name="twitter:title" property="og:title" content="Mnogość – bycie wieloma">
+        <meta name="description" content="Mnogość to bycie wieloma (osobami, osobowościami) w jednym ciele. Nazywana też wielorakością, jest kojarzona najczęściej z dysocjacyjnym zaburzeniem tożsamości, ale może występować także przy innych zaburzeniach lub bez powiązania z zaburzeniami. Często myli się ją ze schizofrenią lub opętaniem, zazwyczaj jednak nie ma z tymi dwoma zbyt wiele wspólnego. Jej najbardziej rozpoznawalnym symbolem jest ampersand">
+        <meta name="twitter:description" property="og:description" content="Mnogość to bycie wieloma (osobami, osobowościami) w jednym ciele. Nazywana też wielorakością, jest kojarzona najczęściej z dysocjacyjnym zaburzeniem tożsamości, ale może występować także przy innych zaburzeniach lub bez powiązania z zaburzeniami. Często myli się ją ze schizofrenią lub opętaniem, zazwyczaj jednak nie ma z tymi dwoma zbyt wiele wspólnego. Jej najbardziej rozpoznawalnym symbolem jest ampersand">
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <link rel="stylesheet" type="text/css" href="/plurality.css">
+        <script src="/template.js"></script>
+        <script src="/script.js" defer></script>
+        <script src="/settings.js" defer></script>
+    </head>
+    <body>
+        <div id="shadow" class="shadow"></div>
+        <div id="sidebar-shadow" class="shadow"></div>
+        
+        <a class="to-main" href="#zawartosc">Przejdź do zawartości</a>
+        
+        <header class="header">
+            <div class="divider">
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <a href="/" class="title">
+                    <div class="logo" aria-label="mnogie okręgi">
+                        <svg class="logo">
+                            <circle class="upper"></circle>
+                            <circle class="down"></circle>
+                            <circle class="left"></circle>
+                            <circle class="right"></circle>
+                        </svg>
+                    </div>
+                    <span id="title">Przewodnik po Mnogości</span>
+                </a>
+            </div>
+            <div class="divider rdiv">
+                <button class="search mobile" aria-label="wyszukaj" onclick="showSearchInput()">
+                    <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                        <circle cx="35%" cy="35%" r="30%"/>
+                        <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                    </svg>
+                </button>
+                <form class="search" action="/wyszukaj" role="search">
+                    <button type="submit" class="search" aria-label="wyszukaj">
+                        <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                            <circle cx="35%" cy="35%" r="30%"/>
+                            <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                        </svg>
+                    </button>
+                    <input type="search" class="search" name="q" minlength="1" placeholder="wyszukaj" required>
+                    
+                </form>
+                <details class="language-select">
+                    <summary><span class="for-aria">Wybierz język</span>&#127477&#127473</summary>
+                    <div class="language-options">
+                        <div  class="language-option active">&#127477&#127473</div>
+                        <!-- <a href="/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
+                        <a href="/en/" class="language-option">&#127482&#127480</a>
+                        <!-- <a href="/ru/" class="language-option">&#127479&#127482</a> -->
+                    </div>
+                </details>
+                <a href="ustawienia" class="settings desktop">
+                    <img src="settings.png" alt="ustawienia i dostępność">
+                </a>
+            </div>
+        </header>
+        
+        
+        
+            <aside class="sidebar" id="sidebar" data-nosnippet>
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <nav class="menu-options">
+                    <a href="/" id="glowna" class="option">Strona główna</a>
+                    <a href="czeste-pytania" class="option" id="czeste-pytania">Częste pytania</a>
+                    <a href="terminologia" id="terminologia" class="option">Terminologia</a>  
+                    <a href="mnogosc" id="mnogosc" class="option current">Mnogość</a>  
+                    <a href="nauka/" id="nauka" class="option">Nauka i wierzenia</a> 
+                    <a href="zaburzenia/" id="zaburzenia" 
+                    class="option">Powiązane zaburzenia</a>  
+                    <a href="powstawanie" id="powstawanie" class="option">Przyczyny powstawania</a> 
+                    <a href="system" id="system" class="option">System</a>      
+                    <a href="wspolosoby/" id="wspolosoby" class="option">Współosoby</a> 
+                    <a href="frontowanie" class="option" id="frontowanie">Frontowanie</a>   
+                    <a href="wewnetrzny-swiat" id="wewnetrzny-swiat" class="option">Wewnętrzny świat</a> 
+                    <a href="materialy/" id="materialy" class="option">Materiały i pomoce</a>
+                    <a href="system-teczowego-chaosu/" id="o-nas" class="option">O nas</a>
+                    <a href="blog/" id="blog" class="option">Blog</a>
+                </nav>
+            </aside>
+
+        <main id="zawartosc">
+            
+            
+            <svg preserveAspectRatio="none" class="hidden">
+                <symbol id="ex" class="ex">
+                    <line x1="10%" y1="20%" x2="30%" y2="20%"></line>
+                    <line x1="10%" y1="20%" x2="10%" y2="90%"></line>
+                    <line x1="10%" y1="90%" x2="80%" y2="90%"></line>
+                    <line x1="80%" y1="90%" x2="80%" y2="70%"></line>
+                    <line x1="30%" y1="70%" x2="90%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="50%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="90%" y2="50%"></line>
+                </symbol>
+            </svg>
+            
+            <h1>Mnogość</h1>
+            
+            <p>
+                <i>Ta strona oczekuje na rewizję. Tekst może zawierać niesprawdzone informacje lub wyrażać poglądy, z którymi się już dłużej nie zgadzamy.</i>
+            </p>
+
+            <p>
+                Mnogość to stan bycia wieloma w jednym ciele i/lub umyśle. Dla różnych mnogich może to oznaczać co innego – wiele osób, istnień, dusz, osobowości, aspektów czy fasetek, lista jest dosyć długa. Są to bardzo subiektywne doświadczenia, dlatego nigdy nie powinno wmawiać się innym, że są lub nie są mnodzy – każde może ocenić to wyłącznie samo. Niektóre osoby, które pasowałyby do wielu opisywanych przez nas rzeczy, nie będą identyfikować się jako mnogie i mają do tego pełne prawo. To określenie dość często kojarzy się z postrzeganiem siebie jako wielu osób w jednym ciele i inkluzywnością dla wszystkich typów systemów, jakich to skojarzeń niektóre systemy mogą chcieć unikać.
+            </p>
+
+            <p>
+                Mnogość teoretycznie można zaliczyć do neurodywergencji, bo posiadanie układu nerwowego funkcjonującego w trybie wielości nie jest normą w naszym społeczeństwie – teoretycznie, bo większość osób poprzez neuroatypowość rozumie autyzm i ADHD. Osobą mnogą możemy nazwać <a href="wspolosoby" class="internal">osobę członkowską</a> systemu lub <a href="#mnoga-osoba-pojedyncza" class="internal">mnogą osobę singlecką</a>, ale zazwyczaj nie cały system – o nich powiemy, że są osobami mnogimi, no chyba że dany kolektyw woli o sobie mówić w liczbie pojedynczej (w razie wątpliwości najlepiej jest pytać).
+            </p>
+
+            <p>
+                Niektórym to wszystko może kojarzyć się z horrorami, schizofrenią, szaleństwem lub opętaniem. Między innymi dlatego utworzyłośmy tę stronę. Mamy nadzieję pokazać wam, że jest to zjawisko jak najbardziej normalne, wytłumaczalne naukowo i że nie trzeba się go obawiać (co właściwie tyczy się także schizofrenii, ale wbrew powszechnemu przekonaniu schizofrenia to zupełnie oddzielne pojęcie).
+            </p>
+
+                <fieldset class="contents">
+                    <legend>Spis treści</legend>
+                    <div class="second">
+                    <a href="#wielorakosc">Wielorakość</a>
+                    <a href="#symbole">Symbole</a>
+                    <a href="#spolecznosc">Społeczność</a>
+                    <a href="#spektrum">Spektrum mnogości</a>
+                    <a href="#przypisy">Przypisy</a>
+                    </div>
+                </fieldset>
+
+                <div class="target" id="wielorakosc"></div>
+            <h2>
+                Wielorakość
+            </h2>
+
+            <p>
+                Wielorakość według swojej pierwotnej definicji oznaczała taki rodzaj mnogości, który został lub mógłby zostać zdiagnozowany jako <a href="zaburzenia/dysocjacyjne-zaburzenie-tozsamosci" class="internal">dysocjacyjne zaburzenie tożsamości</a> (wcześniej znane jako rozdwojenie jaźni, a także osobowość mnoga lub wieloraka) lub inne zbliżone zaburzenie<sup><span class="target" id="p1"></span>[<a href="#1" class="internal">1</a>]</sup>. Obecnie jest używana raczej jako określenie dotyczące wyłącznie systemów wielorakich (tych, których osoby członkowskie są oddzielne w kwestii tożsamości), podczas gdy mnogość stosowana jest jako szerszy termin, obejmujący wszystko poza pojedynczością na <a href="#spektrum" class="internal">spektrum mnogości</a> (aczkolwiek nie mogłośmy nigdzie jej znaleźć bezpośrednio zdefiniowanej w taki sposób). W większości przypadków rozumie się ją jednak wyłącznie jako synonim mnogości. 
+            </p>
+
+<div class="target" id="symbole"></div>
+            <h2>
+                Symbole
+            </h2>
+
+            <p>
+                Najbardziej rozprzestrzenionym i znanym w społeczności symbolem mnogości jest znak „&” (ampersand). Można go kolorować wedle uznania, a także umieszczać na różnych flagach, ważny jest znak sam w sobie. Jeżeli spotkacie osoby mnogie, które spędziły w społeczności trochę czasu, na pewno go rozpoznają. Symbolizuje on bycie wieloma, a także inkluzywność, dlatego może być używany przez każdy system.<sup><span class="target" id="p2"></span>[<a href="#2" class="internal">2</a>]</sup>
+            </p>
+
+            <p>
+                Trochę mniej rozpowszechnionym symbolem są Mnogie Okręgi – cztery okręgi zazębiające się na kształt zbliżony do diagramu Venna<sup><span class="target" id="p3"></span>[<a href="#3" class="internal">3</a>]</sup>. Je także można kolorować w dowolny sposób. Najpopularniejszą wersją kolorystyczną są Mnogie Okręgi Emmengard, z każdym kolorem symbolizującym przyczynę powstania. Żółty oznacza systemy o nieznanych przyczynach powstania i znajduje się na górze, ponieważ większość społeczności zaczyna w tym miejscu. Zielony to systemy adaptacyjne (w tym traumogeniczne), niebieski – spontaniczne, a czerwony – stworzone. Miejsca nakładania się kolorów to systemy o mieszanych przyczynach powstania.<sup><span class="target" id="p7"></span>[<a href="#7" class="internal">7</a>]</sup> Z mnogich symboli istnieje także wiolisand – kombinacja ampersandu i klucza wiolinowego, symbolizująca jednocześnie wielość i harmonię. Tak samo jak ampersand może być używany przez każdy system, niezależnie od jego przyczyn powstania i posiadanych lub nie posiadanych diagnoz.<sup><span class="target" id="p5"></span>[<a href="#5" class="internal">5</a>]</sup> Nie on jest jednak aż tak dobrze znany.
+            </p>
+
+            <figure>
+                <a href="mnogie-okregi.jpg" class="internal"><img class="img" src="mnogie-okregi.jpg" alt="cztery zazębiające się okręgi, po jednym na górze, dole, po prawej i po lewej stronie, na samym środku przestrzeń należąca do każdego z nich" id="rings"></a>
+                <figcaption>
+                    Mnogie Okręgi
+                </figcaption>
+                <p class="source">
+                    Źródło grafiki: <a href="https://pluralpedia.org/w/Plural_Rings" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Plural Rings</a>
+                </p>
+            </figure>
+
+            <figure>
+                <a href="mnogie-okregi-emmengard.jpg" class="internal"><img src="mnogie-okregi-emmengard.jpg" alt="mnogie okręgi pokolorowane akwarelą" class="img"></a>
+                <figcaption>
+                    Mnogie Okręgi Emmengard
+                </figcaption>
+                <p class="source">
+                    Źródło grafiki: <a href="https://emmengard.dreamwidth.org/7949.html" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Plural Positivity</a>
+                </p>
+            </figure>
+
+            <figure>
+                <a href="wiolisand.png" class="internal"><img src="wiolisand.png" alt="Znak będący połączeniem ampersandu i klucza wiolinowego" class="img" id="treblesand"></a>
+                <figcaption>
+                    Wiolisand
+                </figcaption>
+            </figure>
+
+            <p>
+                Oprócz tego powstało także wiele flag dla mnogości. Systemowa flaga dumy jest najszerzej rozpoznawalna. Składa się z trzech pasów: kolor biały symbolizuje systemy po fuzji ostatecznej, pomarańczowy – systemy żyjące w funkcjonalnej wielorakością, a czarny – systemy, które jeszcze nie wiedzą o swojej wielorakości lub mają problemy z wzajemną komunikacją. Niestety powstała ona z myślą wyłącznie dla traumogenicznych systemów z DID/OSDD<sup><span class="target" id="p4"></span>[<a href="#4" class="internal">4</a>]</sup> i noszenie jej może być odbierane jako zgadzanie się z endofobicznymi i sysmedycznymi poglądami jej osób tworzących. Dlatego jeżeli nie chcecie wywoływać u części systemów wątpliwości, czy jesteście tolerancyjni, lepiej zdecydować się na przykład na Flagę Mnogiej Podróży, która nie cieszy się taką popularnością, ale jest za to inkluzywna (i naszym zdaniem ma śliczne kolory). Fioletowy oznacza odkrywanie swojej mnogości, niebieski – zaufanie pomiędzy współjednostkami, zielony – wewnętrzną harmonię, a czarny – różnorodność w mnogiej społeczności. <sup><span class="target" id="p6"></span>[<a href="#6" class="internal">6</a>]</sup>
+            </p>
+
+            <figure>
+                <a href="systemowa-flaga-dumy.png" class="internal"><img class="img" src="systemowa-flaga-dumy.png" alt="flaga złożona z trzech pasów kolorów jednakowej szerokości, od góry: białego, jasnego pomarańczowego i czarnego" id="flag"></a>
+                <figcaption>
+                    Systemowa Flaga Dumy
+                </figcaption>
+                <p class="source">
+                    Źródło grafiki: <a href="https://theentropysystemdi.wixsite.com/systemprideday" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>System Pride Day</a>
+                </p>
+            </figure>
+
+            <figure>
+                <a href="flaga-mnogiej-podrozy.png" class="internal"><img src="mnoga-podroz-wektor.svg" alt="flaga złożona z siedmiu pasów kolorów, na samym środku czarny, od środka symetrycznie po jasnozielonym, niebieskim i fioletowym pasie" class="img"></a>
+                <figcaption>
+                    Flaga Mnogiej Podróży
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="mnoga-podroz-ampersand-wektor.svg" class="internal"><img src="mnoga-podroz-ampersand-wektor.svg" alt="flaga mnogiej podróży z dużym, czarnym ampersandem na środku" class="img"></a>
+                <figcaption>
+                    Flaga Mnogiej Podróży – wersja z ampersandem
+                </figcaption>
+            </figure>
+
+            <div class="target" id="spolecznosc"></div>
+            <h2>
+                Społeczność
+            </h2>
+
+            <p>
+                W Polsce mnogie społeczności mogą być jak na razie trudne do odnalezienia, ale jakieś z pewnością istnieją. W internecie największą z nich była już praktycznie nieaktywna <a href="https://tulpa.pl/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>społeczność tulpiarska</a>, która powstała w 2007 roku (forum zostało wyłączone na początku 2025). Znacznie mniejsza i młodsza (w dużej części endofobiczna i sysmedyczna) społeczność systemów traumogenicznych zdążyła się zgromadzić wokół bloga <a href="https://zycie-z-alterami.tumblr.com/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Życie z alterami</a>, założonego przez <a href="https://www.tumblr.com/zycie-z-alterami/695017888479920128/o-nas?source=share" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Slytherin System</a>, oraz bloga <a href="https://systemy-systemom.tumblr.com/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Systemy Systemom</a>. Widziałośmy gdzieś też niedużą polską grupę poświęconą zaburzonym systemom na Facebooku, ale nie możemy jej teraz odszukać. Od niedawna istnieje także nasza nieduża i umiarkowanie aktywna <a href="https://discord.gg/5gbrwTgDzp" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Mnoga Przestrzeń na Discordzie</a>. W polskim internecie systemowy aktywizm prowadzi też <a href="https://www.youtube.com/@didsociety" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>DID Society na YouTubie</a>, ale nie widziałośmy, żeby osoba stojąca za tym kanałem wprost powiedziała, czy ma dysocjacyjne zaburzenie tożsamości.
+            </p>
+
+            <p>
+                Jeżeli chodzi o społeczności, które spotykają się fizycznie – być może w większych miastach istnieją psychologiczne grupy wsparcia dla osób z DID/OSDD, ale jak na razie nie znalazłośmy informacji o żadnej z nich. Część <a href="powstawanie#spirygeniczne" class="internal">spirygenicznych</a> mnogich z pewnością posiada także swoje społeczności związane z ich religią, gdzie konkretne rodzaje mnogości są nie tylko akceptowane, ale nawet pożądane, np. w wielu kościołach zielonoświątkowych i ewangelicznych. Są to z reguły społeczności, które nie będą wiedzieć o mnogości ogólnie ani uznawać jej naukowego wytłumaczenia, a mnogość inną niż ten jedyny pożądany rodzaj, np. rozmawianie z Bogiem, postrzegać będą jako opętanie (mówimy tu wyłącznie o grupach, które nie są nam obce, nie mamy zbyt dużej wiedzy na temat innych religii i duchowych praktyk). Posiadają często mniej lub więcej cech charakterystycznych dla sekt, np. nacisk na rekrutowanie nowych osób i poświęcanie wierze jak najwięcej swojego czasu, oraz propagują niebezpieczne wierzenia, np. że Bóg może wyleczyć wszystkie choroby. Jeżeli wy lub bliskie wam osoby znajdują się w takich społecznościach, warto dowiedzieć się o wszystkich technikach manipulacji, które są w nich wykorzystywane (niekoniecznie ze złymi intencjami), np. wmawianie, że jesteście tak grzeszni, że tylko Bóg może was pokochać, albo czytanie wersetów pochwalających szczodrość, kiedy przychodzi moment dawania ofiary pieniężnej. Każde ma prawo do posiadania własnych wierzeń, ale każde ma także prawo do odrzucenia wierzeń, które niszczą jego zdrowie psychiczne.
+            </p>
+
+            <p>
+                Społeczność angielska jest dużo bardziej rozwinięta i aktywna już od wielu lat. Stron internetowych, blogów, kanałów na YouTube, serwerów czy grup wsparcia na Facebooku istnieje tyle, że nie sposób byłoby je wszystkie wymienić. Jeżeli szukacie miejsca bezpiecznego dla wszystkich rodzajów systemów i osób pojedynczych chcących dowiedzieć się więcej, a posługujecie się sprawnie językiem angielskim, polecamy <a href="https://discord.gg/2tFRMBw" target="_blank" rel="noopener noreferrer" class="external" lang="en"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Plural Hub na Discordzie</a>, znajdziecie tam listy serwerów o różnej tematyce.
+            </p>
+
+            <div class="target" id="spektrum"></div>
+            <h2>
+                Spektrum mnogości
+            </h2>
+
+            <p>
+                Mnogość istnieje na spektrum. Oznacza to, że pomiędzy pojedynczością (obecnością tylko jednej osoby w jednym ciele; <a href="#osoba-pojedyncza" class="internal">osoby pojedyncze</a>) a wielorakością (<a href="#system-wieloraki" class="internal">systemy wielorakie</a>, <a href="#system-przegrodowy" class="internal">przegrodowe</a> i <a href="#system-poliswiadomy" class="internal">poliświadome</a>) istnieje jeszcze pełen gradient zjawisk pośrednich, które nie są do końca ani jednym, ani drugim. Najłatwiej wytłumaczyć to na przykładzie spektrum koloru. Wszyscy zgodzimy się co do tego, że istnieje w naturze kolor czarny, szary i biały. Potrafimy wskazać każdy z tych kolorów i funkcjonują one w naszych umysłach jako zupełnie rozdzielne pojęcia, ale kiedy popatrzymy na gradient składający się z wszystkich możliwych natężeń szarości, od białego do czarnego, zobaczymy, że przejścia pomiędzy nimi są płynne. Nie będziemy w stanie postawić jednoznacznej granicy pomiędzy białym i szarym ani szarym i czarnym, bo najbliższe odcienie kolorów po dwóch stronach tej granicy będą prawie identyczne. Możemy jedynie wyróżnić te fragmenty, które są z pewnością białe, szare i czarne, pozostawiając pomiędzy nimi obszary nieoznaczoności. To samo możemy zrobić w przypadku tego niezwykłego zjawiska, jakim jest bycie jednostką, przy czym tutaj sprawa jest bardziej skomplikowana, bo spektrum mnogości ma kilka wymiarów, z których wyróżnić można tożsamość, dzielenie wspomnień i świadomość.
+            </p>
+
+            <p>
+                Oczywiście współosoby także mogą znajdować się na różnym miejscu na spektrum. System, w którego większość osób członkowskich jest wieloraka, wciąż może mieć kilka <a href="#mnoga-osoba-pojedyncza" class="internal">mnogich osób pojedynczych</a> i <a href="#system-medianowy" class="internal">medianowy</a> <a href="system#podsystem" class="internal">podsystem</a>.
+            </p>
+
+            <div class="target" id="osoba-pojedyncza"></div>
+            <h3>
+                Osoba pojedyncza
+            </h3>
+
+            <p>
+                Osoba pojedyncza lub singlecka (czyt. s-inglecka, od ang. <i lang="en">single</i>, czyli pojedynczy) to określenie na osobę, która nie jest częścią systemu, czyli innymi słowy jest jedyną świadomą istotą w swoim ciele i jej jedyna osobowość jest w znacznym stopniu zintegrowana. Wciąż może posiadać różne aspekty/tryby/stany – zdecydowana większość społeczeństwa zachowuje się trochę inny sposób w zależności od tego, w jakim jest nastroju, miejscu czy sytuacji. Raczej inaczej odpowiesz na prośbę szefowej, a inaczej na przyjaciela, inaczej zareagujesz na krzyczące dziecko w swój wyjątkowo dobry dzień, a inaczej po nieprzespanej nocy. Są to w pewnym sensie mnogie doświadczenia, ale na tyle niewielkie, że na ogół posiadające je osoby wciąż identyfikują się jako jedna, integralna całość.
+            </p>
+
+            <p>
+                Jako że język neutralny płciowo nie jest jeszcze powszechnie używany w naszym społeczeństwie, póki co zamiast „osoby singleckie” w wielu sytuacjach używana będzie liczba mnoga słowa „singlet”. <b> Poprawna forma to „singleci”, nie „singlety”</b>, jak zdarzyło nam się usłyszeć. Ta pierwsza odmiana jest charakterystyczna dla rzeczowników określających osoby – powiemy „bruneci” i „kadeci”, nie „brunety” i „kadety”. To drugie kojarzy nam się przedmiotowo, bo mówimy na przykład „taborety” czy „młoty”. <b> Dlatego „singlety” może być odebrane jako pogardliwe i niekulturalne, nawet jeżeli osoba mówiąca nie miała zamiaru wywołania takich skojarzeń.</b>
+            </p>
+
+            <div class="target" id="mnoga-osoba-pojedyncza"></div>
+            <h3>
+                Mnoga osoba pojedyncza
+            </h3>
+
+            <p>
+                Określenie mnoga osoba pojedyncza/singlecka, lub rzadziej mnogi niesystem, powstało dla tych, którzy czują się w jakiś sposób mnodzy, ale z różnych przyczyn nie identyfikują się jako system. Ich przeżycia mogą przejawiać się np. doświadczaniem tak nagłych zmian nastroju, że mają wrażenie, że nagle są kimś zupełnie innym, lub posiadaniem współosób w swoim wewnętrznym świecie, ale byciem jedyną osobą mającą dostęp do frontu. Z tym określeniem może się identyfikować np. osoba z osobowością borderline, po terapii <a href="https://ifsp.pl/glowne-zalozenia/" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Systemu Wewnętrznej Rodziny</a> lub fuzja kilku współosób. Może to być doświadczenie zbliżone do posiadania alter ego, z tym że u mnogich osób pojedynczych zwykle nie może być ono świadomie kontrolowane.
+            </p>
+
+            <div class="target" id="demi-system"></div>
+            <h3>
+                Demi-system
+            </h3>
+
+            <p>
+                Określenie demi-system powstało dla tych, którzy oscylują pomiędzy dwoma końcami spektrum mnogości, np. co jakiś czas rozdzielając się na kilka współosób, żeby potem znowu połączyć się w jedno. Jako demi-systemy mogą się identyfikować także ci, w których ciele inne istoty przebywają tylko czasowo w ramach praktyk religijnych, np. takich jak kanałowanie.
+            </p>
+
+            <div class="target" id="tozsamosc"></div>
+            <h3>
+                Tożsamość
+            </h3>
+
+            <p><div class="target" id="system-medianowy"></div>
+                Pośrodku spektrum mnogości, jeżeli chodzi o tożsamość, znajdują się <dfn>systemy medianowe</dfn> (inaczej <b>midkontinuum</b> lub <b>połowiczne</b>), czyli systemy, których współosoby, często nazywane w tym przypadku <b>aspektami</b> lub <b>fasetkami</b>, są ze sobą połączone mentalnie i/lub tożsamościowo (przez niektórcyh termin ten jest używany także do określania systemów z niskimi dysocjacyjnymi barierami). Mogą na przykład być zależne od jednej współjednostki (nazywanej wtedy rdzeniem ) / siebie nawzajem, mieć wspólną tożsamość czy ciągle być ze sobą w pewnym stopniu <a href="frontowanie#blendowanie" class="internal">zblendowane</a>. Pomimo ich połączenia współosoby w systemach medianowych wciąż mogą postrzegać siebie jako oddzielne istoty, chociaż często na zewnątrz funkcjonują jak jedna osoba. Systemy medianowe bliżej pojedynczego końca spektrum są nazywane <b>parazjanowymi/uniceanowymi</b>, te pośrodku spektrum – <b>mezozjanowymi/medullanowymi</b>, a te bliżej wielorakiego końca – <b>dywerzjanowymi/multanowymi</b>. Te posiadające rdzeń określane są jako <b>orbitowe/orbitalne</b>, a te bez rdzenia – <b>pajęczynowe</b>. Systemy z OSDD-1a/OSDD-1 często identyfikują się z tą definicją.
+            </p>
+
+            <p><div class="target" id="system-wieloraki"></div>
+                Z kolei <dfn>system wieloraki</dfn> to system, w którym współosoby są odrębne w kwestiach swojej tożsamości. Czasami jest używany jako synonim <a href="#system-przegrodowy" class="internal">systemu przegrodowego</a>, ale raczej odnosi się bardziej do tożsamości, nie innych doświadczeń. Przy systemie medianowym współjednostki często funkcjonują jako części jednej osoby, tutaj natomiast mamy zwykle do czynienia z osobami, które znacznie się od siebie różnią. Określenie to słyszy się zdecydowanie rzadziej, bo systemy wielorakie uznawane są za normę w wielu częściach społeczności.
+            </p>
+
+            <div class="target" id="system-medioraki"></div>
+            <div class="target" id="system-hybrydowy"></div>
+            <p>
+                Niektóre systemy mogą składać się z jednocześnie wielorakich i medianowych jednostek, te czasami określane są <dfn>hybrydowymi</dfn>, <b>mieszanymi</b> lub <b>chimerowymi</b>. Jeszcze inne systemy czują, że są czymś pomiędzy medianowymi a wielorakimi – dla nich powstało sformułowanie <dfn>mediorakie</dfn>. Mogą być to na przykład systemy, których współosoby są do siebie bardzo podobne pod względem zachowania i zainteresowań, ale mimo to chcą być postrzegane jako oddzielne osoby, albo systemy, których części bardzo się od siebie pod tymi względami różnią, ale mimo to chcą być postrzegane jako jedna osoba.
+            </p>
+
+            <figure>
+                <a href="systemy-medianowe.png" class="internal"><img src="systemy-medianowe.png" alt="osoba singlecka przedstawiona jako koło kolorów, system wieloraki – kilka nachodzących na siebie kół, system medianowy – oddzielone wycinki koła" class="img"></a>
+                <figcaption>
+                    Graficzna reprezentacja spektrum tożsamości
+                </figcaption>
+            </figure>
+
+            <div class="target" id="dysocjacyjne-bariery"></div>
+            <h3>
+                Dysocjacyjne bariery
+            </h3>
+<!-- 
+            <h4>
+                System przegrodowy
+            </h4> -->
+            <div class="target" id="system-amnezyjny"></div>
+            <div class="target" id="system-bezamnezyjny"></div>
+            <p>
+                Dysocjacyjne bariery właściwie można byłoby podzielić na kilka osobnych wymiarów spektrum, bo chociaż wewnętrzna komunikacja, współświadomość oraz dzielenie wspomnień i umiejętności często idą ze sobą w parze, niektóre systemy mogą mieć te rzeczy rozwinięte na różnych poziomach, na przykład mieć wzajemny dostęp do wszystkich swoich wspomnień, ale zupełny brak wewnętrznej komunikacji. Jak na razie nazwane zostały tylko typy <b>zarządzania pamięcią</b>. W uproszczonym podziale, który przyjmujemy na stronie, ale jest rzadko stosowany w angielskiej społeczności, możemy wyróżnić <dfn>systemy amnezyjne</dfn> i <dfn>systemy bezamnezyjne</dfn>. Te pierwsze doświadczają kompletnej dysocjacyjnej amnezji, te drugie nie, ale wciąż mogą doświadczać amnezji częściowej i emocjonalnej. W większych szczegółach możemy wyróżnić systemy ze wspólną pamięcią, oddzielną pamięcią i pamięcią atrialną oraz mieszanym typem zarządzania wspomnieniami, będącym połączeniem którychś z pozostałych. Systemy ze <b>wspólną pamięcią</b> mają wzajemny dostęp do wszystkich swoich wspomnień, wliczając w to wspomnienia z wewnętrznego świata, a współjednostki w systemach z <b>oddzielną pamięcią</b> pamiętają tylko rzeczy, których osobiście doświadczyły. Z kolei <b>pamięć atrialna</b> charakteryzuje się posiadaniem przez kolektyw odrębnego zbioru pamięci frontowej – współosoby pamiętają to, co działo się na zewnątrz, ale zwykle nie mają dostępu do wspomnień innych współosób z wewnętrznego świata. Wspomnienia utworzone na froncie przez inne współosoby mogą być mniej szczegółowe i być pamiętane z trzecioosobowej perspektywy, ale może także nie być zauważalnej różnicy pomiędzy własnymi wspomnieniami, a wspomnieniami kogoś innego. 
+            </p>
+            
+            
+            <div class="target" id="system-przegrodowy"></div>
+            <div class="target" id="system-blurianowy"></div>
+            <p>
+                Jeżeli chodzi o ogólny koncept dysocjacyjnych barier, możemy tutaj wyróżnić dwa typy systemów. <dfn>System przegrodowy</dfn> to system, który posiada wysokie dysocjacyjne bariery, a system o niskich barierach to <dfn>system blurianowy</dfn> (alternatywnie <b>mieszaninowy</b>, <b>blendowy</b>). Określenia te są używane dużo rzadziej od systemu wielorakiego i medianowego.
+            </p>
+
+            <div class="target" id="swiadomosc"></div>
+            <h3>
+                Świadomość
+            </h3>
+
+<div class="target" id="system-poliswiadomy"></div>
+            <p>
+                W społeczności często za normę uznawanę są <dfn>systemy poliświadome</dfn>, czyli takie, w których każda osoba członkowska ma swoją własną świadomość. Oznacza to, że mogą doświadczać tę samą sytuację na różne sposoby, mieć myśli, których pozostali nie słyszą, a także skupiać się na różnych rzeczach w tym samym momencie, na przykład jedna współosoba czyta książkę na zewnątrz, a druga gotuje obiad w wewnętrznym świecie, i nie zdają sobie sprawy z tego, co dzieje się z tą drugą osobą. 
+            </p>
+
+            
+<div class="target" id="system-monoswiadomy"></div>
+            <p>
+                Z kolei <dfn>systemy monoświadome</dfn> (niektóre z nich określają się także jako <b>zmiennotożsamościowe</b>) to systemy, które dzielą ze swoimi współosobami nie tylko ciało, ale także świadomość. Na spektrum świadomości są w podobnym miejscu, co osoby pojedyncze. Takie systemy doświadczają zamian bardziej jako stawania się inną osobą niż oddawania frontu i wycofywania się do tyłu, podobnie jak osoba pojedyncza może doświadczać przejścia z trybu pracy w tryb rodzinny. Monoświadomość jest często opisywana jako oglądanie świata przez różne soczewki – zmienia się to, kim w danym momecie są, ale wewnętrzne „ja” wciąż pozostaje to samo. Współosoby nie istnieją poza dzieloną świadomością – nie ma tutaj prywatnych myśli ani przebywania w wewnętrznym świecie, kiedy kto inny jest na froncie (ale wciąż mogą mieć wewnętrzny świat, tak samo jak niektóre osoby singleckie). Współświadomość z reguły nie wygląda jak kontaktowanie się z inną osobą, a jak bycie kilkoma osobami na raz. Niektóre systemy z OSDD-1b lub pDID mogą identyfikować się z tą definicją.
+            </p>
+<!-- spotkałośmy się z porównaniem tego do wykresu kołowego, ale w odniesieniu do samego siebie -->
+
+            <p>
+                Do systemów, które są gdzieś pomiędzy dwoma końcami spektrum świadomości, możemy zaliczyć między innymi: 
+            </p>
+
+            <ul>
+                <li>
+                    <b>systemy hydroświadome</b> – każda jednostka posiada w nich swoją własną świadomość, ale jednocześnie jest zawsze świadoma wszystkiego, co dzieje się wokół innych osób w systemie
+                </li>
+                <li>
+                    <b>systemy cefaświadome</b> (od ang. <i lang="en">cephalofod</i>, oznaczającego głowonoga) – mają jedną świadomość na froncie i doświadczają zamian jak systemy monoświadome, ale współosoby mają własne świadomości w wewnątrzświecie
+                </li>
+                <li>
+                    <b>systemy multipleksoświadome</b> – hydroświadome na froncie, poliświadome w wewnątrzświecie
+                </li>
+                <li>
+                    <b>systemy płynnoświadome</b> – ich doświadczenia ze świadomością zmieniają się w czasie, na przykład jednego dnia są monoświadomi, a drugiego poliświadomi
+                </li>
+            </ul>
+
+            <figure>
+                <div class="animation-container">
+                    <div class="crc" id="mono"></div>
+                    <span id="monotxt">monoświadomość</span>
+                    <div class="crc" id="poly1"></div>
+                    <div class="crc" id="poly2"></div>
+                    <div class="crc" id="poly3"></div>
+                    <span id="polytxt">poliświadomość</span>
+                    <div class="crc" id="cepha1"></div>
+                    <div class="crc" id="cepha2"></div>
+                    <div class="crc" id="cepha3"></div>
+                    <div class="crc" id="cepha4"></div>
+                    <span id="cephatxt">cefaświadomość</span>
+                    <div class="crc" id="fluid1"></div>
+                    <div class="crc" id="fluid2"></div>
+                    <div class="crc" id="fluid3"></div>
+                    <div class="crc" id="fluid4"></div>
+                    <span id="fluidtxt">płynnoświadomość</span>
+                </div>
+                <figcaption>
+                    Wizualizacja różnych typów świadomości <span class="for-animationless">(włącz animacje, żeby zobaczyć)</span>
+                </figcaption>
+            </figure>
+
+            <div class="target" id="granice"></div>
+            <h3>
+                Granice
+            </h3>
+
+            <p>
+                Niektórzy mogą czuć pokusę, aby teraz, kiedy znają już więcej określeń, postawić pomiędzy nimi wyraźne linie i powiedzieć, że są one od siebie zupełnie oddzielne. Niestety przeczyłoby to całej istocie spektrum, która polega na tym, że <b>granice są umowne i płynne</b>. Jak bardzo rozbudowane muszą być alter ego mnogiej osoby singleckiej, żeby zaczęły być one raczej współosobami w systemie monoświadomym? Jak bardzo oddzielne muszą być współosoby, żeby móc nazywać swoją zbiorowość systemem wielorakim, a nie medianowym? Na te pytania nie ma jednoznacznej odpowiedzi i <b>to, jak dane osoby będą się identyfikować, często zależy od tego, jaka definicja ich zdaniem najlepiej opisuje ich doświadczenia. Miejsca na spektrum nie są także stałe i z biegiem czasu mogą się zmienić</b> – osoba pojedyncza może stać się medianowym systemem, a system monoświadomy przekształcić się w poliświadomy. To wszystko nie oznacza oczywiście, że każde może siebie nazywać, jak tylko mu się podoba. <strong>Osoba singlecka nigdy nie powininna podawać się za system</strong>, gdyż może to wyrządzić krzywdę mnogiej społeczności – utwierdzając osoby trzecie w przekonaniu, że posiadanie współosób jest tylko personifikowaniem własnych wewnętrznych konfliktów czy modnym i popularnym trendem. 
+            </p>
+
+            <p class="for-aria">
+                Podsumowując, nie da się postawić na spektrum jasno określonych granic, ale nie upoważnia to osób singleckich do mówienia o sobie jako o systemie, którym nie są.
+            </p>
+
+
+            <div class="target" id="zaimki"></div>
+            <h3>
+                Zaimki
+            </h3>
+
+            <p>
+                Może się wydawać, że pojedyncze zaimki i formy gramatyczne powinny być przyporządkowane do osób pojedynczych, a mnogie do osób mnogich. Ale wcale nie musi tak być – niektóre systemy wielorakie mogą preferować mówienie o swoim kolektywie „ja”, a część osób singleckich woli mówić o sobie „my” (nie mówiąc już o osobach/systemach ze środka spektrum, z których wiele będzie używało wymiennie obu tych form). Chcemy podkreślić, że <b>każde ma prawo do używania takich form, jakie mu się podobają</b>. Singlet czasami mówiący o sobie „my” i używający kilku różnych imion zależnie od nastroju to nie to samo, co udawanie mnogości – jeżeli od początku zaznaczają, że są jedną osobą, ale po prostu czują się lepiej z takimi formami, nie ma mowy o żadnym podszywaniu się pod system. Należy to respektować i dać ludziom więcej wolności, żeby mogli swobodnie wyrażać siebie (musimy jednak zaznaczyć, że jeżeli chcesz używać w stosunku do siebie mnogich form, musisz upewnić się, że twoje środowisko jest bezpieczne – niektórzy mogą cię za to wyśmiać albo uznać cię za osobę, która ma nie po kolei w głowie).
+            </p>
+
+            <p class="for-aria">
+                Podsumowując, zaimki nie są na stałe przyporzadkowane do konkretnych miejsc na spektrum, a używanie „my” jako osoba pojedyncza nie jest udawaniem mnogości.
+            </p>
+
+
+                
+
+            <div class="target" id="przypisy"></div>
+            <h2>
+                Przypisy
+            </h2>
+
+            <ol class="links">
+            
+            <div class="target" id="1"> </div>
+            <li>
+                <a href="#p1" class="internal">↑</a> <a href="https://kinhost.org/Main/ExplainingMultiplicity" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Explaining Multiplicity</a>
+            </li>
+            
+            <div class="target" id="2"> </div>
+            <li>
+                <a href="#p2" class="internal">↑</a> <a href="https://kinhost.org/Movement/PluralPrideMovement" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Plural Pride Movement</a>
+            </li>
+            
+            <div class="target" id="3"> </div>
+            <li>
+                <a href="#p3" class="internal">↑</a> <a href="https://pluralpedia.org/w/Plural_Rings" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Plural Rings</a>
+            </li>
+            
+            <div class="target" id="4"> </div>
+            <li>
+                <a href="#p4" class="internal">↑</a> <a href="https://theentropysystemdi.wixsite.com/systemprideday" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>System Pride Day</a>
+            </li>
+            
+            <div class="target" id="5"> </div>
+            <li>
+                <a href="#p5" class="internal">↑</a> <a href="https://treblesand.dreamwidth.org/554.html" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>The Treble Ampersand – A Plural Pride Symbol</a>
+            </li>
+
+            <div class="target" id="6"> </div>
+            <li>
+                <a href="#p6" class="internal">↑</a> <a href="https://treblesand.dreamwidth.org/1177.html" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>The Plural Journey Flag</a>
+            </li>
+
+            <div class="target" id="7"> </div>
+            <li>
+                <a href="#p7" class="internal">↑</a> <a href="https://emmengard.dreamwidth.org/7949.html" target="_blank" rel="noopener noreferrer" lang="en" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Plural Positivity</a>
+            </li>
+
+            </ol>
+<br><br>
+
+            <p>
+                <i>
+                    Utworzono: 02.04.2023 <br>
+                    Ostatnia aktualizacja: 12.03.2025
+                </i>
+            </p>
+
+
+            <footer data-nosnippet>
+                <blockquote><i>Musimy obierać strony. Neutralność pomaga oprawcy, nigdy ofierze. Cisza zachęca dręczyciela, nigdy dręczonego.</i> ~ Elie Wiesel (on/jego)</blockquote>
+
+
+
+
+<div class="flex"><address><p>Kontakt:</p>
+    <p><a href="mailto:systemteczowegochaosu@gmail.com" class="internal">systemteczowegochaosu@gmail.com</a></p>
+    
+    
+        <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Kanał na YouTube</a></p>
+    
+    <p><a href="https://discord.gg/5gbrwTgDzp" target="_blank" rel="noopener noreferrer" class="external"><svg class="ex" aria-label="zewnętrzny"><use xlink:href="#ex"></use></svg>Serwer na Discordzie</a></p></address>
+    
+    <div>
+        <p><a href="/#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
+        <p><a href="/#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
+        <p><a href="/nauka/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
+        <p><a href="/poprawki-bledow" class="internal">Poprawki błędów</a></p>
+    </div>
+    <div>
+        <p><a href="/zastrzezenia" class="internal">Zastrzeżenia</a></p>
+        <p><a href="/deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
+        <p><a href="/deklaracja-tolerancyjnosci" class="internal">Deklaracja tolerancyjności</a></p>
+        <p><a href="/polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
+    </div>
+
+    </div>
+
+    <p>©2023-2025 <a href="/system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
+
+</footer>
+
+
+        </main>
+    </body>
+</html>

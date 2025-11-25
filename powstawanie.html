@@ -16,10 +16,10 @@
         <meta name="twitter:title" property="og:title" content="Powstawanie systemów – przyczyny istnienia mnogości">
         <meta name="description" content="Dysocjacyjne zaburzenie tożsamości powstaje z powodu długotrwałej traumy doświadczanej w dzieciństwie (systemy traumogeniczne). Mnogość endogeniczna ma inne przyczyny, np. więź dusz, tulpomancja, neurodywergencje.">
         <meta name="twitter:description" property="og:description" content="Dysocjacyjne zaburzenie tożsamości powstaje z powodu długotrwałej traumy doświadczanej w dzieciństwie (systemy traumogeniczne). Mnogość endogeniczna ma inne przyczyny, np. więź dusz, tulpomancja, neurodywergencje.">
-        <!-- <meta name="keywords" content="mnogość powstawanie, dysocjacyjne zaburzenie tożsamości powstawanie, dysocjacyjne zaburzenie osobowości powstawanie, osobowość mnoga powstawanie, osobowość wieloraka powstawanie, rozdwojenie jaźni powstawanie, mnogość przyczyny, dysocjacyjne zaburzenie tożsamości przyczyny, dysocjacyjne zaburzenie osobowości przyczyny, osobowość mnoga przyczyny, osobowość wieloraka przyczyny, rozdwojenie jaźni przyczyny, mnogość neurobiologia, system powstawanie, system traumogeniczny, system endogeniczny, system stworzony, system tulpogeniczny, tulpa, tulpomancja, więź dusz, soulbonding, soulbond, system neurogeniczny, system adaptacyjny, teoria strukturalnej dysocjacji, stany ego, stan ego, emocjonalna część, pozornie normalna część"> -->
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="script.js" defer></script>
-        <script src="settings.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <script src="/template.js"></script>
+        <script src="/script.js" defer></script>
+        <script src="/settings.js" defer></script>
     </head>
     <body>
         <div id="shadow" class="shadow"></div>
@@ -55,7 +55,7 @@
                         <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
                     </svg>
                 </button>
-                <form class="search" action="https://przewodnikpomnogosci.pl/wyszukaj" role="search">
+                <form class="search" action="/wyszukaj" role="search">
                     <button type="submit" class="search" aria-label="wyszukaj">
                         <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
                             <circle cx="35%" cy="35%" r="30%"/>
@@ -69,9 +69,9 @@
                     <summary><span class="for-aria">Wybierz język</span>&#127477&#127473</summary>
                     <div class="language-options">
                         <div  class="language-option active">&#127477&#127473</div>
-                        <!-- <a href="https://przewodnikpomnogosci.pl/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
-                        <a href="https://przewodnikpomnogosci.pl/en/" class="language-option">&#127482&#127480</a>
-                        <!-- <a href="https://przewodnikpomnogosci.pl/ru/" class="language-option">&#127479&#127482</a> -->
+                        <!-- <a href="/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
+                        <a href="/en/" class="language-option">&#127482&#127480</a>
+                        <!-- <a href="/ru/" class="language-option">&#127479&#127482</a> -->
                     </div>
                 </details>
                 <a href="ustawienia" class="settings desktop">
@@ -88,7 +88,7 @@
                         <line x1="25%" y1="65%" x2="75%" y2="65%"/>
                     </svg>
                 </button>
-                <nav class="menu-options">
+                <nav class="menu-options" id="powstawanie">
                     <a href="/" id="glowna" class="option">Strona główna</a>    
                     <a href="czeste-pytania" class="option" id="czeste-pytania">Częste pytania</a>
                     <a href="terminologia" id="terminologia" class="option">Terminologia</a>
@@ -170,7 +170,7 @@
             </h2>
 
             <p>
-                Systemy traumogeniczne są to, jak nazwa wskazuje, systemy powstałe poprzez traumę. Jeden z modeli wyjaśniających ich powstawanie to <a href="wyjasnienia/teoria-strukturalnej-dysocjacji" class="internal">model strukturalnej dysocjacji</a>. Prawie każdy kolektyw z DID/OSDD doświadczył <a href="zaburzenia/dysocjacyjne-zaburzenie-tozsamosci#przyczyny" class="internal">traumy w dzieciństwie</a>, jednak nie wszystkie systemy po traumie identyfikują się jako traumogeniczne, jeżeli były mnogie przed tymi wydarzeniami (badania potwierdziły traumę u przeważającej większości osób z DID, zdarzają się jednak zaburzone systemy, które nie mają jej wspomnień ani objawów PTSD; wmawianie im, że musiały przejść traumę, jest szkodliwe, bo chociaż powracające we flashbackach wspomnienia traumy są szczere, nie zmienia to faktu, że istnieje ryzyko wytworzenia sobie sztucznych wspomnień, jeżeli dana osoba zaczyna doszukiwać się w swojej przeszłości traumy, której nie było). Także nie wszystkie systemy traumogeniczne będą zaburzone – na przykład jeżeli świadomość podzieli się po traumatycznym wydarzeniu w dzieciństwie, ale system zostanie szybko zabrany z niebezpiecznego środowiska i otrzyma od bliskich wsparcie w przepracowaniu trudnych emocji, wszystkie problemy z codziennym funkcjonowaniem, wymagane do diagnozy DID/OSDD, nie zdążą się wytworzyć.
+                Systemy traumogeniczne są to, jak nazwa wskazuje, systemy powstałe poprzez traumę. Jeden z modeli wyjaśniających ich powstawanie to <a href="nauka/teoria-strukturalnej-dysocjacji" class="internal">model strukturalnej dysocjacji</a>. Prawie każdy kolektyw z DID/OSDD doświadczył <a href="zaburzenia/dysocjacyjne-zaburzenie-tozsamosci#przyczyny" class="internal">traumy w dzieciństwie</a>, jednak nie wszystkie systemy po traumie identyfikują się jako traumogeniczne, jeżeli były mnogie przed tymi wydarzeniami (badania potwierdziły traumę u przeważającej większości osób z DID, zdarzają się jednak zaburzone systemy, które nie mają jej wspomnień ani objawów PTSD; wmawianie im, że musiały przejść traumę, jest szkodliwe, bo chociaż powracające we flashbackach wspomnienia traumy są szczere, nie zmienia to faktu, że istnieje ryzyko wytworzenia sobie sztucznych wspomnień, jeżeli dana osoba zaczyna doszukiwać się w swojej przeszłości traumy, której nie było). Także nie wszystkie systemy traumogeniczne będą zaburzone – na przykład jeżeli świadomość podzieli się po traumatycznym wydarzeniu w dzieciństwie, ale system zostanie szybko zabrany z niebezpiecznego środowiska i otrzyma od bliskich wsparcie w przepracowaniu trudnych emocji, wszystkie problemy z codziennym funkcjonowaniem, wymagane do diagnozy DID/OSDD, nie zdążą się wytworzyć.
             </p>
 
            
@@ -203,7 +203,7 @@
             </p>
 
             <p>
-                Większość osób jako uzasadnieniem swoich endofobicznych przekonań posługuje się <a href="wyjasnienia/teoria-strukturalnej-dysocjacji" class="internal">teorią strukturalnej dysocjacji</a>. Chciałobyśmy zauważyć, że <b>takie podejście jest nie tylko raniące, ale także nienaukowe</b>. Teoria strukturalnej dysocjacji nie może wyjaśniać powstawania systemów niezaburzonych, ponieważ została stworzona na postawie obserwacji systemów z DID/OSDD. To tak, jakby wykonać badanie o przyczynach picia alkoholu, zapraszając do udziału w nim wyłącznie osoby będące na terapii z powodu uzależnienia od alkoholu, i dojść do wniosku, że ludzie sięgają po alkohol wyłącznie z powodu problemów emocjonalnych i psychicznych, a potem na podstawie tego badania każdą osobę, która pije od czasu do czasu dla łatwiejszego nawiązywania relacji na imprezach, oskarżać o kłamstwo albo wmawiać jej, że jest tak naprawdę uzależniona, ale o tym nie wie. Jest to po prostu nielogiczne. Założenie, że w normalnej sytuacji tworzy się tylko jedna świadoma część mózgu czy jedna osobowość, jest jedynie założeniem i wymagałoby dalszego doświadczalnego potwierdzenia, które jak na razie nie istnieje (i raczej nigdy istnieć nie będzie). Jest także założeniem bezpodstawnym, gdyż skoro na początku każdy umysł funkcjonuje w trybie wielości, coś musi odpowiadać za jego przejście w tryb pojedynczości. Pewnie są to po trochu czynniki społeczne i genetyczne, a brak dowolnego z nich (na przykład społeczeństwa oczekującego od dziecka zachowywania się jak pojedyncza osoba) może uniemożliwić ten proces bez potrzeby traumatycznych wydarzeń.
+                Większość osób jako uzasadnieniem swoich endofobicznych przekonań posługuje się <a href="nauka/teoria-strukturalnej-dysocjacji" class="internal">teorią strukturalnej dysocjacji</a>. Chciałobyśmy zauważyć, że <b>takie podejście jest nie tylko raniące, ale także nienaukowe</b>. Teoria strukturalnej dysocjacji nie może wyjaśniać powstawania systemów niezaburzonych, ponieważ została stworzona na postawie obserwacji systemów z DID/OSDD. To tak, jakby wykonać badanie o przyczynach picia alkoholu, zapraszając do udziału w nim wyłącznie osoby będące na terapii z powodu uzależnienia od alkoholu, i dojść do wniosku, że ludzie sięgają po alkohol wyłącznie z powodu problemów emocjonalnych i psychicznych, a potem na podstawie tego badania każdą osobę, która pije od czasu do czasu dla łatwiejszego nawiązywania relacji na imprezach, oskarżać o kłamstwo albo wmawiać jej, że jest tak naprawdę uzależniona, ale o tym nie wie. Jest to po prostu nielogiczne. Założenie, że w normalnej sytuacji tworzy się tylko jedna świadoma część mózgu czy jedna osobowość, jest jedynie założeniem i wymagałoby dalszego doświadczalnego potwierdzenia, które jak na razie nie istnieje (i raczej nigdy istnieć nie będzie). Jest także założeniem bezpodstawnym, gdyż skoro na początku każdy umysł funkcjonuje w trybie wielości, coś musi odpowiadać za jego przejście w tryb pojedynczości. Pewnie są to po trochu czynniki społeczne i genetyczne, a brak dowolnego z nich (na przykład społeczeństwa oczekującego od dziecka zachowywania się jak pojedyncza osoba) może uniemożliwić ten proces bez potrzeby traumatycznych wydarzeń.
             </p>
 
             <p>
@@ -401,18 +401,19 @@
     <div>
         <p><a href="/#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
         <p><a href="/#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
-        <p><a href="/wyjasnienia/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
-        <p><a href="poprawki-bledow" class="internal">Poprawki błędów</a></p>
+        <p><a href="/nauka/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
+        <p><a href="/poprawki-bledow" class="internal">Poprawki błędów</a></p>
     </div>
     <div>
-        <p><a href="zastrzezenia" class="internal">Zastrzeżenia</a></p>
-        <p><a href="deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
-        <p><a href="polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
+        <p><a href="/zastrzezenia" class="internal">Zastrzeżenia</a></p>
+        <p><a href="/deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
+        <p><a href="/deklaracja-tolerancyjnosci" class="internal">Deklaracja tolerancyjności</a></p>
+        <p><a href="/polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
     </div>
 
     </div>
 
-    <p>©2023-2025 <a href="system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
+    <p>©2023-2025 <a href="/system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
 
 </footer>
 

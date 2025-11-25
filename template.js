@@ -9,11 +9,11 @@ if(!localStorage.getItem('oldMenu') || localStorage.getItem('oldMenu') === 'fals
         if (document.readyState == "complete" && !inserted && ready) {
             let menu = document.getElementById("sidebar");
             let oldNav = document.querySelector(".menu-options");
+            let optionID = oldNav.dataset.id;
             let nav = template.querySelector(".menu-options");
             menu.append(nav);
             inserted = true;
             menu.removeChild(oldNav);
-            let optionID = oldNav.dataset.id;
             let option = document.getElementById(optionID);
             let subsection;
             if(option.classList.contains("in-summary")){

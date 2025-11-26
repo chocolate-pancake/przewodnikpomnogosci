@@ -1,4 +1,4 @@
-details {
+details.question {
     width: 100%;
     border-radius: 1.25rem;
     /* border: solid 2px rgb(110, 110, 110); */
@@ -11,7 +11,7 @@ details {
     transition: box-shadow 0.5s;
 }
 
-details:hover {
+details.question:hover {
     box-shadow: 0px 0px 0.25rem 0.25rem var(--dark-blue);
 }
 

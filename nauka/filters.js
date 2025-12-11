@@ -32,7 +32,7 @@ function natural(){
 let nondidHidden = false
 
 function did(){
-    let elements = document.querySelectorAll(".notdid, .notplural");
+    let elements = document.querySelectorAll(".notdid");
     for(let i = 0; i < elements.length; i ++){
         if(!nondidHidden){
             elements[i].style.display = "none";

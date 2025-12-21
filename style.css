@@ -1,10 +1,11 @@
 
 :root {
-    background-color: rgb(30, 30, 30);
-    font-size: var(--font-size);
-
+    --background-color: rgb(30, 30, 30);
     --font-size: unset;
     --font-color: rgb(200, 200, 200);
+
+    background-color: var(--background-color);
+    font-size: var(--font-size);
 
     --visibility: hidden;
     --color: rgb(51, 113, 238);
@@ -1035,6 +1036,53 @@ main {
     border-radius: 20px;
 }
 
+#blog-container {
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.blog-post {
+    margin: 1rem;
+    padding: 1.5rem;
+    width: min(80%, 15rem);
+    max-height: 17rem;
+    text-decoration: none;
+    border: solid 0.1rem rgb(110, 110, 110);
+    border-radius: 1.25rem;
+    box-shadow: none;
+    scrollbar-width: none;
+    transition: 0.5s;
+    overflow: hidden;
+    position: relative;
+}
+
+.blog-post:hover, .blog-post:focus {
+    box-shadow: 0px 0px 0.25rem 0.25rem var(--dark-blue), inset 0px 0px 1.25rem 0.5rem rgba(5, 5, 5, 1);
+    border-color: var(--dark-blue);
+}
+/* 
+.blog-post::after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 3rem;
+  background: linear-gradient(rgba(255, 255, 255, 0) 5%, var(--background-color) 10%);
+} */
+
+/* .post-intro { */
+    /* overflow: hidden; */
+    /* max-height: 3rem;
+    white-space: nowrap;
+    text-overflow: ellipsis; */
+/* } */
+
+.post-title {
+    font-size: 1.25rem;
+}
+
 div.third a, div.fourth a {
     width: 90%;
 }
@@ -1735,6 +1783,15 @@ aside.cryterium {
         text-shadow: 0.1rem 0.1rem 0.1rem rgb(0, 0, 0, 0.5);
     }
 
+    .blog-post {
+        border: solid 0.05rem black;
+    }
+
+    .blog-post:hover, .blog-post:focus {
+        box-shadow: 7px 7px 10px rgba(20, 20, 20, 0.95), -7px 7px 10px rgba(20, 20, 20, 0.95);
+        border-color: black;
+    }
+
     figure {
         box-shadow: 7px 7px 10px rgba(20, 20, 20, 0.95), -7px 7px 10px rgba(20, 20, 20, 0.95);
     }
@@ -1794,9 +1851,9 @@ aside.cryterium {
         color: rgb(76, 171, 183);
     } */
 
-    fieldset {
+    /* fieldset {
         box-shadow:  0px 0px 0px 5px rgb(180, 180, 180), 0px 0px 50px 20px var(--color);
-    }
+    } */
 
     ::-webkit-scrollbar {
         background: rgb(220, 220, 220);

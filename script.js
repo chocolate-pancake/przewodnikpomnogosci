@@ -26,8 +26,8 @@ let menus = document.querySelectorAll(".menu-icon");
 // }
 
 
-menus[0].addEventListener('click', menu);
-menus[1].addEventListener('click', menu);
+// menus[0].addEventListener('click', menu);
+// menus[1].addEventListener('click', menu);
 sidebarShadow.addEventListener('click', menu);
 document.addEventListener("keydown", checkKey);
 

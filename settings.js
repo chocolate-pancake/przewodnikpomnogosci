@@ -170,7 +170,7 @@ if(localStorage.getItem('oldMenu') === 'true'){
     }
 }
 
-function menu(){
+function oldMenu(){
     if(localStorage.getItem('oldMenu') === 'true'){
         localStorage.setItem('oldMenu', 'false');
     }

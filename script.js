@@ -1,5 +1,8 @@
 let doc = document.getElementById('main');
 let sidebarShadow = document.getElementById("sidebar-shadow");
+let menus = document.querySelectorAll(".menu-icon");
+// let menu1 = document.getElementById('menu1');
+// let menu2 = document.getElementById('menu2');
 
 // let page = document.getElementById("page");
 // if(page){
@@ -23,6 +26,8 @@ let sidebarShadow = document.getElementById("sidebar-shadow");
 // }
 
 
+menus[0].addEventListener('click', menu);
+menus[1].addEventListener('click', menu);
 sidebarShadow.addEventListener('click', menu);
 document.addEventListener("keydown", checkKey);
 
@@ -57,11 +62,11 @@ function menu() {
     sidebar.classList.toggle('open');
     sidebarShadow.classList.toggle('visible');
     if(menuI){
-        setTimeout(function(){document.getElementById('menu2').focus();}, 250);
+        setTimeout(function(){menus[1].focus();}, 250);
         menuI = 0;
     }
     else {
-        setTimeout(function(){document.getElementById('menu1').focus();}, 250);
+        setTimeout(function(){menus[0].focus();}, 250);
         menuI = 1;
     }
 }

@@ -4,6 +4,7 @@
     --font-size: unset;
     --font-color: rgb(200, 200, 200);
 
+    color: var(--font-color); 
     background-color: var(--background-color);
     font-size: var(--font-size);
 
@@ -83,7 +84,7 @@
 }
 
 * {
-    color: var(--font-color); 
+    color: inherit; 
     line-height: 1.5em;
     background-color: inherit;
     font-size: inherit;
@@ -664,8 +665,21 @@ address {
     margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: top;
     flex-wrap: wrap;
+}
+
+.social-media-icon {
+    height: 1.5rem;
+    margin-right: 0.25rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#discord {
+    height: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.25rem;
 }
 
 .name {
@@ -678,6 +692,14 @@ address {
     0.1rem 0.1rem 0.1rem #E50000, 0.15rem 0.15rem 0.1rem #FF8D00,
     0.2rem 0.2rem 0.1rem #FFEE00, 0.25rem 0.25rem 0.1rem #028121,
     0.3rem 0.3rem 0.1rem #347DDE, 0.35rem 0.35rem 0.1rem #770088;
+}
+
+.morgan {
+    color: #d4e7ff;
+}
+
+.host {
+    color: #ffefc8;
 }
 
 figure {
@@ -1730,6 +1752,14 @@ aside.cryterium {
         0.1rem 0.1rem 0.1rem #FF8D00, 0.15rem 0.15rem 0.1rem #FFEE00,
         0.2rem 0.2rem 0.1rem #028121, 0.25rem 0.25rem 0.1rem #347DDE,
         0.3rem 0.3rem 0.1rem #770088;
+    }
+
+    .morgan {
+        color: #083264;
+    }
+
+    .host {
+        color: #6b5102;
     }
 
     .option:hover, .option:focus {

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Język inkluzywny dla mnogości | Przewodnik po Mnogości</title>
+        <link rel="icon" href="/ampersand-icon.png">
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://przewodnikpomnogosci.pl/plural-journey-rings.png">
+<meta property="og:image:alt" content="mnogie okręgi">
+        <meta name="twitter:domain" content="przewodnikpomnogosci.pl">
+        <meta name="color-scheme" content="dark light">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="System Tęczowego Chaosu">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Przewodnik po Mnogości">
+        <meta property="og:url" content="https://przewodnikpomnogosci.pl/blog/jezyk-inkluzywny-dla-mnogosci">
+        <meta name="twitter:title" property="og:title" content="Język inkluzywny dla mnogości">
+        <meta name="description" content="Jak mówić, żeby nie wykluczać osób mnogich i przy okazji bliźniąt syjamskich.">
+        <meta name="twitter:description" property="og:description" content="Jak mówić, żeby nie wykluczać osób mnogich i przy okazji bliźniąt syjamskich.">
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <script src="/template.js"></script>
+        <script src="/script.js" defer></script>
+        <script src="/settings.js" defer></script>
+    </head>
+    <body>
+        <div id="shadow" class="shadow"></div>
+        <div id="sidebar-shadow" class="shadow"></div>
+        
+        <a class="to-main" href="#zawartosc">Przejdź do zawartości</a>
+        
+        <header class="header">
+            <div class="divider">
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <a href="../" class="title">
+                    <div class="logo" aria-label="mnogie okręgi">
+                        <svg class="logo">
+                            <circle class="upper"></circle>
+                            <circle class="down"></circle>
+                            <circle class="left"></circle>
+                            <circle class="right"></circle>
+                        </svg>
+                    </div>
+                    <span id="title">Przewodnik po Mnogości</span>
+                </a>
+            </div>
+            <div class="divider rdiv">
+                <button class="search mobile" aria-label="wyszukaj" onclick="showSearchInput()">
+                    <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                        <circle cx="35%" cy="35%" r="30%"/>
+                        <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                    </svg>
+                </button>
+                <form class="search" action="/wyszukaj" role="search">
+                    <button type="submit" class="search" aria-label="wyszukaj">
+                        <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                            <circle cx="35%" cy="35%" r="30%"/>
+                            <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                        </svg>
+                    </button>
+                    <input type="search" class="search" name="q" minlength="1" placeholder="wyszukaj" required>
+                    
+                </form>
+                <details class="language-select">
+                    <summary><span class="for-aria">Wybierz język</span>&#127477&#127473</summary>
+                    <div class="language-options">
+                        <div  class="language-option active">&#127477&#127473</div>
+                        <!-- <a href="/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
+                        <a href="/en/" class="language-option">&#127482&#127480</a>
+                        <!-- <a href="/ru/" class="language-option">&#127479&#127482</a> -->
+                    </div>
+                </details>
+                <a href="../ustawienia" class="settings desktop">
+                    <img src="/settings.png" alt="ustawienia i dostępność">
+                </a>
+            </div>
+        </header>
+        
+            <aside class="sidebar" id="sidebar" data-nosnippet>
+                <button class="menu-icon" id="menu2" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <nav class="menu-options" data-id="jezyk-inkluzywny-dla-mnogosci">
+                    <a href="../" id="glowna" class="option">Strona główna</a>
+                    <a href="../czeste-pytania" class="option" id="czeste-pytania">Częste pytania</a>
+                    <a href="../terminologia" id="terminologia" class="option">Terminologia</a>
+                    <a href="../mnogosc" id="mnogosc" class="option">Mnogość</a>
+                    <a href="../nauka/" id="nauka" class="option">Nauka</a>       
+                    <a href="../zaburzenia/" id="zaburzenia" 
+                    class="option">Powiązane zaburzenia</a> 
+                    <a href="../powstawanie" id="powstawanie" class="option">Przyczyny powstawania</a> 
+                    <a href="../system" id="system" class="option">System</a>       
+                    <a href="../wspolosoby/" id="wspolosoby" class="option">Współosoby</a>   
+                    <a href="../frontowanie" class="option" id="frontowanie">Frontowanie</a> 
+                    <a href="../wewnetrzny-swiat" id="wewnetrzny-swiat" class="option">Wewnętrzny świat</a> 
+                    <a href="../materialy/" id="materialy" class="option">Materiały i pomoce</a>
+                    <a href="../system-teczowego-chaosu/" id="o-nas" class="option">O nas</a>
+                    <a href="../blog/" id="blog" class="option current">Blog</a>
+                </nav>
+            </aside>
+
+        <main id="zawartosc">
+
+            
+            <svg preserveAspectRatio="none" class="hidden">
+                <symbol id="ex" class="ex">
+                    <line x1="10%" y1="20%" x2="30%" y2="20%"></line>
+                    <line x1="10%" y1="20%" x2="10%" y2="90%"></line>
+                    <line x1="10%" y1="90%" x2="80%" y2="90%"></line>
+                    <line x1="80%" y1="90%" x2="80%" y2="70%"></line>
+                    <line x1="30%" y1="70%" x2="90%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="50%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="90%" y2="50%"></line>
+                </symbol>
+            </svg>
+            
+            <h1>Język inkluzywny dla mnogości
+                <p>Morgan (<a href="../system-teczowego-chaosu/host" class="internal">host</a>) (on/jego) | 10.01.2026</p>
+            </h1>
+            
+            <p>
+                „W wydarzeniu brało udział pięćset osób”, „podzielcie się na grupy po cztery osoby”, „mam sto obserwujących”, „pokój dwuosobowy”. Sam się często łapię na myśleniu w ten sposób, ale <b>takie frazy są wykluczające dla osób mnogich.</b> W końcu za jednym ciałem czy kontem w mediach społecznościowych może kryć się tych osób o wiele więcej, niż tylko jedna. Do tego <b>część z nich wyklucza też bliźnięta syjamskie,</b> które będą zajmować tylko jedno dostępne miejsce czy łóżko.
+            </p>
+
+            <p>
+                Jak więc mówić, żeby nie wykluczać? <b>W społeczności można spotkać się z zamienianiem „osób” na „ciała”</b> – bo w większości przypadków przecież właśnie to tak naprawdę mamy na myśli. Czyli na przykład: „nasza grupa znajomych liczy sześć ciał”, „miasto zamieszkuje sto tysięcy ciał”. Alternatywnie do tego można by było użyć organizm. Innym rozwiązaniem, które mi przychodzi na myśl, są „głowy”. Jest ono o tyle wygodne, że <b>w języku polskim mamy już funkcjonujące sformułowanie „na głowę”, więc możemy na spokojnie powiedzieć: „to wychodzi pięć złotych na łebka” nawet przy najbardziej nietolerancyjnych osobach,</b> nie obawiając się wyśmiania za używanie „dziwnego” języka. Wydaje mi się też, że w niektórych sytuacjach może być bardziej odpowiednie, jeśli mamy do czynienia z bliźniętami syjamskimi, na przykład: „dobierzcie się w grupy po trzy głowy”. Możemy też szukać kreatywnych zamienników pasujących do konkretnej sytuacji – <b>w cyfrowym kontekście zwykle możemy mówić o kontach: „aktorkę obserwuje milion kont”, „na serwerze jest dwieście kont”, a w przypadku konferencji zamiast o pięciu mówcach możemy powiedzieć: „wypowiadało się pięć znanych głosów”.</b>
+            </p>
+
+            <p>
+                Przyznam szczerze, że większość z tych wyrażeń nie za bardzo mi się podoba – brzmią dla mnie trochę dehumanizująco. Ale cóż, niestety żadnej lepszej alternatywy nie ma. <b>A w części przypadków możemy zamiast tego pominąć jakiekolwiek odniesienie do ciała,</b> zostawiając je jedynie w domyśle. Na przykład: „na wycieczkę jest pięćdziesiąt miejsc”, „filmik uzyskał dwieście tysięcy wyświetleń”, „sprzedano pięćset biletów na koncert tego zespołu”, „pokój dwułóżkowy”. W niektórych przypadkach jest to nawet bardziej trafne, niż mówienie o ciałach, bo ktoś mógł oglądać filmik z całą rodziną albo kupić bilet, ale nie przyjść. <b>Czasem można też zrezygnować z podawania konkretnej liczby osób,</b> jeśli nie ma ona większego znaczenia, i użyć zamiast tego „wiele”, „dużo”, „mnóstwo”. <b>Nie zawsze też istnieje konieczność zmieniania czegokolwiek – wiele planszówek dla czterech osób można na spokojnie rozegrać w cztery osoby, nie ważne, czy są one w czterech ciałach, dwóch czy jednym.</b> I też nie chciałbym, żeby wszystkie osoby wiedzące o naszej mnogości mówiły przy nas w ten sposób także wtedy, kiedy akurat rozmawiają lub spotykają się tylko ze mną – już i tak czuję, że zatraciłem w oczach wielu swoją indywidualność na rzecz bycia częścią zbiorowej masy, która postrzegają tak naprawdę jak jedną osobę używającą mnogich form (ale to już temat na inny, planowany przeze mnie wpis).
+            </p>
+
+
+
+            <footer data-nosnippet>
+                <blockquote><i>Musimy obierać strony. Neutralność pomaga oprawcy, nigdy ofierze. Cisza zachęca dręczyciela, nigdy dręczonego.</i> ~ Elie Wiesel (on/jego)</blockquote>
+
+
+
+
+<div class="flex"><address><p>Kontakt:</p>
+    <p><a href="mailto:systemteczowegochaosu@gmail.com" class="internal">systemteczowegochaosu@gmail.com</a></p>
+    
+    
+        <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><img src="/yt_icon_red_digital.png" class="social-media-icon" alt="YT" role="presentation">Kanał na YouTube</a></p>
+    
+    <p><a href="https://discord.gg/5gbrwTgDzp" target="_blank" rel="noopener noreferrer" class="external"><img src="/Discord-Symbol-Blurple.svg" class="social-media-icon" id="discord" alt="dicord" role="presentation">Serwer na Discordzie</a></p>
+    
+    </address>
+    
+    <div>
+        <p><a href="/#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
+        <p><a href="/#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
+        <p><a href="/nauka/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
+        <p><a href="/dziennik-zmian" class="internal">Dziennik zmian</a></p>
+        <p><a href="/poprawki-bledow" class="internal">Poprawki błędów</a></p>
+    </div>
+    <div>
+        <p><a href="/zastrzezenia" class="internal">Zastrzeżenia</a></p>
+        <p><a href="/deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
+        <p><a href="/deklaracja-tolerancyjnosci" class="internal">Deklaracja tolerancyjności</a></p>
+        <p><a href="/polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
+    </div>
+
+    </div>
+
+    <p>©2023-2026 <a href="/system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
+
+</footer>
+
+
+
+        </main>
+    </body>
+</html>

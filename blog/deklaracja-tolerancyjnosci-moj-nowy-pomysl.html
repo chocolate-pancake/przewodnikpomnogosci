@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Deklaracja tolerancyjności – mój nowy pomysł | Przewodnik po Mnogości</title>
+        <link rel="icon" href="/ampersand-icon.png">
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://przewodnikpomnogosci.pl/plural-journey-rings.png">
+        <meta property="og:image:alt" content="mnogie okręgi">
+        <meta name="twitter:domain" content="przewodnikpomnogosci.pl">
+        <meta name="color-scheme" content="dark light">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="System Tęczowego Chaosu">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Przewodnik po Mnogości">
+        <meta property="og:url" content="https://przewodnikpomnogosci.pl/blog/deklaracja-tolerancyjnosci-moj-nowy-pomysl">
+        <meta name="twitter:title" property="og:title" content="Deklaracja tolerancyjności – mój nowy pomysł">
+        <meta name="description" content="Czym jest deklaracja tolerancyjności i dlaczego każda strona powinna ją posiadać?">
+        <meta name="twitter:description" property="og:description" content="Czym jest deklaracja tolerancyjności i dlaczego każda strona powinna ją posiadać?">
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <script src="/template.js"></script>
+        <script src="/script.js" defer></script>
+        <script src="/settings.js" defer></script>
+    </head>
+    <body>
+        <div id="shadow" class="shadow"></div>
+        <div id="sidebar-shadow" class="shadow"></div>
+        
+        <a class="to-main" href="#zawartosc">Przejdź do zawartości</a>
+        
+        <header class="header">
+            <div class="divider">
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <a href="../" class="title">
+                    <div class="logo" aria-label="mnogie okręgi">
+                        <svg class="logo">
+                            <circle class="upper"></circle>
+                            <circle class="down"></circle>
+                            <circle class="left"></circle>
+                            <circle class="right"></circle>
+                        </svg>
+                    </div>
+                    <span id="title">Przewodnik po Mnogości</span>
+                </a>
+            </div>
+            <div class="divider rdiv">
+                <button class="search mobile" aria-label="wyszukaj" onclick="showSearchInput()">
+                    <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                        <circle cx="35%" cy="35%" r="30%"/>
+                        <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                    </svg>
+                </button>
+                <form class="search" action="/wyszukaj" role="search">
+                    <button type="submit" class="search" aria-label="wyszukaj">
+                        <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                            <circle cx="35%" cy="35%" r="30%"/>
+                            <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                        </svg>
+                    </button>
+                    <input type="search" class="search" name="q" minlength="1" placeholder="wyszukaj" required>
+                    
+                </form>
+                <details class="language-select">
+                    <summary><span class="for-aria">Wybierz język</span>&#127477&#127473</summary>
+                    <div class="language-options">
+                        <div  class="language-option active">&#127477&#127473</div>
+                        <!-- <a href="/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
+                        <a href="/en/" class="language-option">&#127482&#127480</a>
+                        <!-- <a href="/ru/" class="language-option">&#127479&#127482</a> -->
+                    </div>
+                </details>
+                <a href="../ustawienia" class="settings desktop">
+                    <img src="/settings.png" alt="ustawienia i dostępność">
+                </a>
+            </div>
+        </header>
+        
+            <aside class="sidebar" id="sidebar" data-nosnippet>
+                <button class="menu-icon" id="menu2" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <nav class="menu-options" data-id="deklaracja-tolerancyjnosci-moj-nowy-pomysl">
+                    <a href="../" id="glowna" class="option">Strona główna</a>
+                    <a href="../czeste-pytania" class="option" id="czeste-pytania">Częste pytania</a>
+                    <a href="../terminologia" id="terminologia" class="option">Terminologia</a>
+                    <a href="../mnogosc" id="mnogosc" class="option">Mnogość</a>
+                    <a href="../nauka/" id="nauka" class="option">Nauka</a>       
+                    <a href="../zaburzenia/" id="zaburzenia" 
+                    class="option">Powiązane zaburzenia</a> 
+                    <a href="../powstawanie" id="powstawanie" class="option">Przyczyny powstawania</a> 
+                    <a href="../system" id="system" class="option">System</a>       
+                    <a href="../wspolosoby/" id="wspolosoby" class="option">Współosoby</a>   
+                    <a href="../frontowanie" class="option" id="frontowanie">Frontowanie</a> 
+                    <a href="../wewnetrzny-swiat" id="wewnetrzny-swiat" class="option">Wewnętrzny świat</a> 
+                    <a href="../materialy/" id="materialy" class="option">Materiały i pomoce</a>
+                    <a href="../system-teczowego-chaosu/" id="o-nas" class="option">O nas</a>
+                    <a href="../blog/" id="blog" class="option current">Blog</a>
+                </nav>
+            </aside>
+
+        <main id="zawartosc">
+
+            
+            <svg preserveAspectRatio="none" class="hidden">
+                <symbol id="ex" class="ex">
+                    <line x1="10%" y1="20%" x2="30%" y2="20%"></line>
+                    <line x1="10%" y1="20%" x2="10%" y2="90%"></line>
+                    <line x1="10%" y1="90%" x2="80%" y2="90%"></line>
+                    <line x1="80%" y1="90%" x2="80%" y2="70%"></line>
+                    <line x1="30%" y1="70%" x2="90%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="50%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="90%" y2="50%"></line>
+                </symbol>
+            </svg>
+            
+            <h1>Deklaracja tolerancyjności – mój nowy pomysł
+                <p><span class="morgan colored-font">Morgan</span>/<span class="host colored-font">host</span> (<a href="/system-teczowego-chaosu/host" class="internal">host</a>) (on/jego) | 20.02.2026</p>
+            </h1>
+            <fieldset class="warning" data-nosnippet>
+                <legend>Ostrzeżenie!</legend>
+                Wpis porusza temat uprzedzeń wobec najróżniejszych grup.
+                <a href="../zaburzenia/zespol-stresu-pourazowego#ostrzezenia" class="internal">Dlaczego to ostrzeżenie jest ważne?</a>
+            </fieldset>
+<!-- PAMIĘTAĆ O USTAWIENIU DLA WYŁĄCZENIA KOLOROWEGO TEKSTU -->
+
+            <p><i>Jeśli kolory tekstu utrudniają ci czytanie, możesz je wyłączyć w <a href="/ustawienia" class="internal">ustawieniach</a>.</i></p>
+
+            <p>
+                <span class="morgan colored-font">Kilka miesięcy temu wrzuciłem na stronę <a href="/deklaracja-tolerancyjnosci" class="internal">deklarację tolerancyjności</a>.</span> <b class="host colored-font">Jest to dokument, który pozwala nam wprost i dobitnie wyrazić nasze zdanie na temat różnych marginalizowanych grup oraz poglądów.</b> <span class="morgan colored-font">Chciałem napisać trochę o tym, skąd się ten pomysł wziął i dlaczego chciałbym, żeby każda strona coś takiego posiadała.</span>
+            </p>
+
+            <p class="morgan colored-font">
+                Jeśli znacie Przewodnik od dłuższego czasu, być może pamiętacie, że na głównej stronie kiedyś znajdował się podrozdział zatytułowany „Kilka słów o religiach i wierzeniach”. Wykomentowałem go już dość dawno, początkowo z zamiarem przeniesienia go później na blog. Przestałem czuć potrzebę tłumaczenia się z tego, że nie stawiam duchowych wierzeń na równi z doświadczalnie potwierdzonymi faktami, oraz zacząłem przepracowywać swoją religijną traumę i doszedłem do wniosku, że ten tekst teraz niewystarczająco oddaje moje obecne poglądy na temat tego, jak krzywdzące i niebezpieczne są niektóre wierzenia. I jak trudno nie byłoby się do tego przyznać, nie ukrywam, że odblokowane w tym procesie wściekłość i nienawiść z pewnością przyczyniły się do tego, że nie chciałem dłużej mieć całej sekcji poświęconej religii na swojej stronie głównej. Z czasem pojawiło się też pytanie: „dlaczego tylko religia?”. Myślę, że z moich tekstów da się wyczytać, że uważam wszystkie nadnaturalne wierzenia za zasługujące na szacunek, a jest wiele innych takich poglądów, które można wywnioskować, ale nigdy nie wyraziłem ich wprost. <b>Stąd zrodził się pomysł, żeby w miejsce tamtego tekstu umieścić coś w stylu deklaracji etycznej, wyrażającej też nasze poparcie dla różnych marginalizowanych grup czy sprzeciw wobec zbrodni wojennych.</b>
+            </p>
+
+            <p>
+                <span class="morgan colored-font">Pomysł oczekiwał na wprowadzenie w życie, kiedy ja zajmowałem się innymi rzeczami. I to, że w końcu został zrealizowany w innej formie, zawdzięczamy właściwie nowej wersji menu, która wymagała ode mnie zmian w każdym pliku na stronie. I jako że wrzucenie wszystkich folderów na githuba wymaga trochę czasu i energii, zacząłem się zastanawiać, czy nie mam czegoś jeszcze, co mógłbym za jednym zamachem dodać. <b>Mój wzrok padł na deklarację dostępności i tak skrystalizował się pomysł, aby, wzorując się na jej idei,</span> <span class="host colored-font">utworzyć osobną stronę na zadeklarowanie naszego wsparcia wobec najróżniejszych grup.</span></b> <span class="host colored-font">Nad nazwą trochę się zastanawiałem i początkowo myślałem nad deklaracją inkluzywności,</span> <span class="morgan colored-font">jednakże doszedłem do wniosku, że marginalizacja obejmuje więcej, niż tylko wykluczanie. Tolerancyjności też nie uważam za idealny wybór, jako że część osób rozumie to słowo bardziej jako łaskawe znoszenie, niż aktywne wspieranie, no i dodałośmy tam też rzeczy należące bardziej do zakresu etyki czy moralności. Ale lepszego pomysłu nie znalazłem, bo to jednak dużo bardziej kojarzy się z grupami mniejszościowymi, podczas gdy etyczność czy moralność mogłyby przywodzić na myśl, że na przykład nie publikujemy na stronie kradzionych tekstów.</span>
+            </p>
+
+            <p>
+                <span class="morgan colored-font">Taka forma podoba mi się bardziej, niż umieszczenie tego na stronie głównej, bo jest dostępna z każdego miejsca i myślę, że wygląda bardziej profesjonalnie. I cóż, trzeba przyznać, że trochę mniej rzuca się w oczy. Nie zaprzeczę, że stresuje mnie wyrażanie wprost moich kontrowersyjnych nawet jak na lewicowe przestrzenie poglądów, bo wiem, że sporo osób mnie za nie znienawidzi. Ale wolę tak, niż żeby po latach wynikła wielka drama, bo ludzie się nagle dowiedzą, że potępiam ich uprzedzenia wobec grupy X albo że sam posiadam zaburzenie osobowości czy parafilne. Będę szczery, poświęcanie tyle czasu, energii i własnego zdrowia psychicznego na próby wykorzenienia ze społeczeństwa uprzedzeń wobec wybranych grup staje się coraz trudniejsze, im bardziej do mnie dociera, że pewnie nawet ponad połowa z tych osób, o które tak walczę, nie jest gotowa do porzucenia swoich nawet bardziej zaciekłych uprzedzeń wobec innych grup. Także jeśli takie osoby postanowią mnie z tego powodu skreślić, raczej nie będę żałować, prędzej poczuję ulgę, że nie muszę marnować na nie swojego czasu.</span>
+            </p>
+
+            <p>
+                <span class="morgan colored-font">To teraz trochę o tym, dlaczego chciałbym, żeby więcej osób zainspirowało się moim pomysłem i dodało u siebie podobne deklaracje. Skoro to czytacie, większość z was pewnie należy do jakieś grupy mniejszościowej. Na pewno wiecie, jak to jest, w zwyczajnej codzienności czuć się jak na polu minowym. Czy to książka, film, gra czy kanał na YouTubie, zawsze istnieje ryzyko, że od osoby tworzącej wasze ulubione treści, którą cenicie i podziwiacie, nieoczekiwanie usłyszycie skierowaną w waszą stronę mowę nienawiści. Wiecie, jak okropne jest takie życie. Ale – czego być może nie doceniacie – w dzisiejszych czasach wielu z was posiada przestrzenie, w których możecie się czuć naprawdę bezpiecznie. Wiecie, że nie musicie obawiać się homofobii na kanale prowadzonym przez jednopłciową parę, czy ableizmu na stronie poświęconej osobom z niepełnosprawnościami. <b>Ale osoby takie jak ja, które należą do wielu różnych mniejszościowych grup lub nie potrafią obojętnie przejść nad stygmatyzacją <em>którejkolwiek</em> z nich, nie za bardzo posiadają takie bezpieczne przestrzenie.</b> Ostatnie lata nauczyły mnie jednego – lewicowe osoby wcale nie są mniej skłonne do uprzedzeń, mają może jedynie trochę węższy zakres tożsamości, wobec których są uprzedzone.</span> <span class="host colored-font">To, że ktoś wspiera nawet szeroki zakres grup, nie daje żadnej gwarancji, że nagle nie zacznie pluć nienawiścią wobec innej. Osoby autystyczne stygmatyzujące zaburzenia osobowości, osoby homoseksualne wyrażające obrzydzenie wobec praktyk BDSM, systemy z DID prześladujące systemy endogeniczne, systemy endogeniczne wyskakujące z mową nienawiści wobec osób Furry, osoby trans używające kropka w kropkę transfobicznych argumentów wobec osób transrasowych i transniepełnosprawnych i nawet nie zauważające swojej hipokryzji, wszystko jasno dało mi do zrozumienia, że nikomu nie można w tych kwestiach po prostu ufać. Nie wspominając już nawet o zoofilii i pedofilii, które są tak stygmatyzowane, że boję się w ogóle poruszyć ten temat bez tłumaczenia za każdym razem, że te słowa oznaczają orientację i nie są synonimiczne z czynem seksualnego krzywdzenia.</span> <b class="host colored-font">Nigdzie się już nie czuję bezpiecznie, a wciąż popełniam błąd przywiązywania się do niektórych przestrzeni, podziwiania pewnych osób. I jeśli jeszcze nie skończyło się to bólem, w 9 przypadkach na 10 prędzej czy później się skończy.</b> <span class="host colored-font">Bo nawet jeśli chodzi o osoby gotowe do pozbycia się swoich uprzedzeń, ludzie niestety rzadko podejmują wysiłek, żeby się doedukować na temat wszystkich marginalizowanych grup, <em>zanim</em> kogoś zranią. Sam tak nie robiłem, dopóki życie w tym świecie mnie nie straumatyzowało. Wbrew pozorom tolerancyjność wcale nie jest taka prosta, jeśli człowiek w ogóle nie podejrzewa, że ma jeszcze jakieś głębokie uprzedzenia. A niestety „przepraszam” nie cofa wyrządzonej krzywdy.</span>
+            </p>
+
+            <p>
+                <b class="host colored-font">Dlatego tak bardzo pomogłoby mi, gdybym miał dostępną taką deklarację i mógł od razu się przekonać, czy jestem bezpieczny, zanim się przywiążę do nowej strony, bloga czy kanału.</b> <span class="host colored-font">Bo mówię, że chciałbym, żeby każda strona taką posiadała, mając na myśli każdą stronę, nie tylko te wyrażające swoje wsparcie wobec wszystkich grup mniejszościowych. Deklaracje dostępności też wymieniają potencjalne problemy z dostępnością, więc tu też powinno znaleźć się miejsce na wymienienie grup, które nie są wspierane. Jeśli ktoś jest homofobiczny, transfobiczny, endofobiczny etc., też chciałbym o tym wiedzieć.</span> <span class="morgan colored-font">Ja opisałem tam swoje poglądy na temat religii, bo zmieniać ich nie zamierzam, ale zdaję sobie sprawę, że mogą one być raniące dla niektórych osób i wolę je o tym zawczasu uprzedzić. Wspomniałem też o swoich emocjonalnych uprzedzeniach, bo chociaż na Przewodniku staram się trzymać swojej racjonalnej moralności, nie mogę się całkowicie oddzielić od tej drugiej części mnie i to się będzie trochę tutaj przelewać. A chociaż podświadome uprzedzenia wobec stygmatyzowanych grup staram się powoli rozpracowywać, z moją nienawiścią i pogardą do aktualnie już całej ludzkości jest raczej coraz gorzej, w dużej mierze z powodów wymienionych powyżej (aczkolwiek na początku roku postanowiłem trochę ograniczyć aktywizm i zauważam pewną poprawę w porównaniu do mojego stanu w momencie, kiedy pisałem ten akapit, a więc może jeszcze jest dla mnie nadzieja). Wahałem się, czy w ogóle się do tego tutaj przyznawać, bo nie chcę zawieść osób, które mnie idealizują, ale jednak wolę być z wami szczery. Jestem tylko człowiekiem i to prędzej czy później by wyszło. </span>
+            </p>
+<!-- Nie wiem, ile bolesnych rozczarowań jestem jeszcze w stanie znieść, zanim emocje przejmą górę i zacznę się za to mścić na kimkolwiek, kto się tylko nawinie. -->
+            <p>
+                <span class="morgan colored-font">Szczerze nie robię sobie za dużych nadziei, żeby ten pomysł został przez kogoś podłapany, nie mówiąc już na większą skalę. Raczej mam do tego zbyt małe zasięgi, przynajmniej na razie. Chyba napisałem to bardziej po to, żeby poopowiadać o swoim pomyśle i wykrzyczeć w próżnię choć trochę swojego bólu, bo na zewnątrz nie za bardzo mam z kim o takich rzeczach porozmawiać. Jeśli to czytasz, wiedz, że świadomość, że być może ktoś po drugiej stronie internetu poświęci swój czas na wysłuchanie moich wizji i narzekań, chociaż trochę pomaga. Jest coraz ciężej, ale staram się trzymać myśli, że mimo wszystko sporo osób na tym świecie nie wybiera drogi ślepej nienawiści, kiedy tylko spotkają grupę, która dla nich już przekracza granicę. Jak bardzo mnie to nie wyniszcza psychicznie, nadal chcę zmienić ten świat na lepsze, a nie mógłbym tego zrobić bez osób takich jak ty. A więc dziękuję, że tu jesteś. A jeśli należysz do tych osób, dla których niektóre tożsamości przekraczają granicę, proszę, pamiętaj, że po drugiej stronie są osoby, które wcale się od ciebie tak bardzo nie różnią, jak ci się wydaje. Osoby, które nie są jednowymiarowymi uosobieniami cechy, której nie lubisz, które w większości przypadków sobie tych tożsamości nie wybrały i często też musiały przejść długą i bolesną drogę do ich odkrycia i zaakceptowania. Zanim zaczniesz oceniać, chociaż wysłuchaj ich historii i spróbuj użyć odrobiny wyobraźni, żeby postawić się na ich miejscu. Żadna stygmatyzacja mnie tak nie boli, jak ta pochodząca od innych marginalizowanych grup. Wiesz, jak to jest żyć w tym piekle, czy naprawdę uważasz, że ktokolwiek inny zasługuje na to samo?</span>
+            </p>
+
+            <footer data-nosnippet>
+                <blockquote><i>Musimy obierać strony. Neutralność pomaga oprawcy, nigdy ofierze. Cisza zachęca dręczyciela, nigdy dręczonego.</i> ~ Elie Wiesel (on/jego)</blockquote>
+
+
+
+
+<div class="flex"><address><p>Kontakt:</p>
+    <p><a href="mailto:systemteczowegochaosu@gmail.com" class="internal">systemteczowegochaosu@gmail.com</a></p>
+    
+    
+        <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><img src="/yt_icon_red_digital.png" class="social-media-icon" alt="YT" role="presentation">Kanał na YouTube</a></p>
+    
+    <p><a href="https://discord.gg/5gbrwTgDzp" target="_blank" rel="noopener noreferrer" class="external"><img src="/Discord-Symbol-Blurple.svg" class="social-media-icon" id="discord" alt="dicord" role="presentation">Serwer na Discordzie</a></p>
+    
+    </address>
+    
+    <div>
+        <p><a href="/#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
+        <p><a href="/#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
+        <p><a href="/nauka/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
+        <p><a href="/dziennik-zmian" class="internal">Dziennik zmian</a></p>
+        <p><a href="/poprawki-bledow" class="internal">Poprawki błędów</a></p>
+    </div>
+    <div>
+        <p><a href="/zastrzezenia" class="internal">Zastrzeżenia</a></p>
+        <p><a href="/deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
+        <p><a href="/deklaracja-tolerancyjnosci" class="internal">Deklaracja tolerancyjności</a></p>
+        <p><a href="/polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
+    </div>
+
+    </div>
+
+    <p>©2023-2026 <a href="/system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
+
+</footer>
+
+
+
+        </main>
+    </body>
+</html>

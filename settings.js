@@ -178,3 +178,28 @@ function oldMenu(){
         localStorage.setItem('oldMenu', 'true');
     }
 }
+
+
+if(!localStorage.getItem('coloredText')){
+    localStorage.setItem('coloredText', 'true');
+}
+
+if(localStorage.getItem('coloredText') === 'false'){
+    let colorCheck = document.getElementById('coloredText');
+    if(colorCheck){
+        colorCheck.checked = false;
+    }
+    let texts = document.querySelectorAll(".colored-font");
+    for(let i = 0; i < texts.length; i ++){
+        texts[i].style.color = "inherit";
+    }
+}
+
+function coloredText(){
+    if(localStorage.getItem('coloredText') === 'true'){
+        localStorage.setItem('coloredText', 'false');
+    }
+    else{
+        localStorage.setItem('coloredText', 'true');
+    }
+}

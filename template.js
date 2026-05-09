@@ -37,7 +37,7 @@ if(!localStorage.getItem('oldMenu') || localStorage.getItem('oldMenu') === 'fals
     }
 
     async function get_template(){
-        let promise = await fetch("https://przewodnikpomnogosci.pl/szablon");
+        let promise = await fetch("/szablon");
         let text = await promise.text();
         template = await parser.parseFromString(text, "text/html");
         ready = true;

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Nie normalizujmy, zniszczmy koncept normalności | Przewodnik po Mnogości</title>
+        <link rel="icon" href="/ampersand-icon.png">
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://przewodnikpomnogosci.pl/plural-journey-rings.png">
+        <meta property="og:image:alt" content="mnogie okręgi">
+        <meta name="twitter:domain" content="przewodnikpomnogosci.pl">
+        <meta name="color-scheme" content="dark light">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="System Tęczowego Chaosu">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Przewodnik po Mnogości">
+        <meta property="og:url" content="https://przewodnikpomnogosci.pl/blog/nie-normalizujmy-zniszczmy-normalnosc">
+        <meta name="twitter:title" property="og:title" content="Nie normalizujmy, zniszczmy koncept normalności">
+        <meta name="description" content="O negatywnych skutkach ubocznych normalizacji i lepszym rozwiązaniu na uprzedzenia wobec stygmatyzowanych grup.">
+        <meta name="twitter:description" property="og:description" content="O negatywnych skutkach ubocznych normalizacji i lepszym rozwiązaniu na uprzedzenia wobec stygmatyzowanych grup.">
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <script src="/template.js"></script>
+        <script src="/script.js" defer></script>
+        <script src="/settings.js" defer></script>
+    </head>
+    <body>
+        <div id="shadow" class="shadow"></div>
+        <div id="sidebar-shadow" class="shadow"></div>
+        
+        <a class="to-main" href="#zawartosc">Przejdź do zawartości</a>
+        
+        <header class="header">
+            <div class="divider">
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <a href="../" class="title">
+                    <div class="logo" aria-label="mnogie okręgi">
+                        <svg class="logo">
+                            <circle class="upper"></circle>
+                            <circle class="down"></circle>
+                            <circle class="left"></circle>
+                            <circle class="right"></circle>
+                        </svg>
+                    </div>
+                    <span id="title">Przewodnik po Mnogości</span>
+                </a>
+            </div>
+            <div class="divider rdiv">
+                <button class="search mobile" aria-label="wyszukaj" onclick="showSearchInput()">
+                    <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                        <circle cx="35%" cy="35%" r="30%"/>
+                        <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                    </svg>
+                </button>
+                <form class="search" action="/wyszukaj" role="search">
+                    <button type="submit" class="search" aria-label="wyszukaj">
+                        <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                            <circle cx="35%" cy="35%" r="30%"/>
+                            <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                        </svg>
+                    </button>
+                    <input type="search" class="search" name="q" minlength="1" placeholder="wyszukaj" required>
+                    
+                </form>
+                <details class="language-select">
+                    <summary><span class="for-aria">Wybierz język</span>&#127477&#127473</summary>
+                    <div class="language-options">
+                        <div  class="language-option active">&#127477&#127473</div>
+                        <!-- <a href="/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
+                        <a href="/en/" class="language-option">&#127482&#127480</a>
+                        <!-- <a href="/ru/" class="language-option">&#127479&#127482</a> -->
+                    </div>
+                </details>
+                <a href="../ustawienia" class="settings desktop">
+                    <img src="/settings.png" alt="ustawienia i dostępność">
+                </a>
+            </div>
+        </header>
+        
+            <aside class="sidebar" id="sidebar" data-nosnippet>
+                <button class="menu-icon" id="menu2" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <nav class="menu-options" data-id="nie-normalizujmy-zniszczmy-normalnosc">
+                    <a href="../" id="glowna" class="option">Strona główna</a>
+                    <a href="../czeste-pytania" class="option" id="czeste-pytania">Częste pytania</a>
+                    <a href="../terminologia" id="terminologia" class="option">Terminologia</a>
+                    <a href="../mnogosc" id="mnogosc" class="option">Mnogość</a>
+                    <a href="../nauka/" id="nauka" class="option">Nauka</a>       
+                    <a href="../zaburzenia/" id="zaburzenia" 
+                    class="option">Powiązane zaburzenia</a> 
+                    <a href="../powstawanie" id="powstawanie" class="option">Przyczyny powstawania</a> 
+                    <a href="../system" id="system" class="option">System</a>       
+                    <a href="../wspolosoby/" id="wspolosoby" class="option">Współosoby</a>   
+                    <a href="../frontowanie" class="option" id="frontowanie">Frontowanie</a> 
+                    <a href="../wewnetrzny-swiat" id="wewnetrzny-swiat" class="option">Wewnętrzny świat</a> 
+                    <a href="../materialy/" id="materialy" class="option">Materiały i pomoce</a>
+                    <a href="../system-teczowego-chaosu/" id="o-nas" class="option">O nas</a>
+                    <a href="../blog/" id="blog" class="option current">Blog</a>
+                </nav>
+            </aside>
+
+        <main id="zawartosc">
+
+            
+            <svg preserveAspectRatio="none" class="hidden">
+                <symbol id="ex" class="ex">
+                    <line x1="10%" y1="20%" x2="30%" y2="20%"></line>
+                    <line x1="10%" y1="20%" x2="10%" y2="90%"></line>
+                    <line x1="10%" y1="90%" x2="80%" y2="90%"></line>
+                    <line x1="80%" y1="90%" x2="80%" y2="70%"></line>
+                    <line x1="30%" y1="70%" x2="90%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="50%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="90%" y2="50%"></line>
+                </symbol>
+            </svg>
+            
+            <h1>Nie normalizujmy, zniszczmy koncept normalności
+                <p><span class="morgan colored-font">Morgan</span>/<span class="host colored-font">host</span> (<a href="../system-teczowego-chaosu/host" class="internal">host</a>) (on/jego) | 09.05.2026</p>
+            </h1>
+            <fieldset class="warning" data-nosnippet>
+                <legend>Ostrzeżenie!</legend>
+                Wpis porusza temat uprzedzeń wobec najróżniejszych grup mniejszościowych, wspomina o śmierci i przemocy, w tym seksualnej i wobec zwierząt.
+                <a href="../zaburzenia/zespol-stresu-pourazowego#ostrzezenia" class="internal">Dlaczego to ostrzeżenie jest ważne?</a>
+            </fieldset>
+
+            <p><i>Jeśli kolory tekstu utrudniają ci czytanie, możesz je wyłączyć w <a href="/ustawienia" class="internal">ustawieniach</a>.</i></p>
+
+            <p class="morgan colored-font">
+                Normalizacja, jak nazwa wskazuje, to proces, w którym pewne tożsamości lub zachowania tracą w oczach społeczeństwa status nienormalnych i przestają być postrzegane jako coś dziwnego, nienaturalnego, potrzebującego leczenia czy wykorzenienia. W odniesieniu do grup mniejszościowych, czego dotyczy główny temat tego wpisu, to zjawisko pozytywne, chociaż normalizacja może być także negatywna, na przykład kiedy w danym społeczeństwie przemoc postrzegana jest jako coś normalnego. <b>Oczywiście tytuł to wyłącznie skrót myślowy, bo niestety nie sądzę, żeby udało się wdrożyć lepsze rozwiązanie dla wykorzeniania uprzedzeń na skali całego społeczeństwa i normalizacja pozostaje najskuteczniejszym dostępnym dla nas środkiem.</b> Ale chcę omówić, jakie są negatywne skutki uboczne tego procesu, i co moim zdaniem powinniśmy próbować wdrożyć zamiast niego, przynajmniej w swoim własnym życiu.
+            </p>
+
+            <p class="morgan colored-font">
+                Po pierwsze, jak sama nazwa wskazuje, cały proces normalizacji opiera się na koncepcie, że są pewne rzeczy, które należy uznawać za normalne, co prowadzi do oczywistego wniosku, że pewne rzeczy nadal normalne nie są. <b>I nawet jeśli proces przeprowadzany jest w sposób, który nie utwierdza tego głęboko zakorzenionego przekonania, nie robi nic, żeby je w jakikolwiek sposób wykorzenić – normalizacja pomaga jedynie tej aktualnie normalizowanej grupie, ale nie sięga do przyczyn uprzedzeń wobec wszelakiej inności ogólnie.</b> W moim artykule „<a href="/blog/podatnosc-na-obrzydzenie-a-homofobia" class="internal">Podatność na obrzydzenie a homofobia</a>” pisałem już, jak moim zdaniem proces normalizacji zniwelował w lewicowych przestrzeniach wpływ podatności na obrzydzenie na uprzedzenia wobec osób homoseksualnych, ale nie wobec bardziej marginalizowanych mniejszości seksualnych. Chociażby przykład z mojego życia – koleżanka wyrażała niezrozumienie wobec faktu, że ludziom może przeszkadzać to, że ktoś chodzi z osobą tej samej płci, zaledwie kilka tygodni po tym, jak sama wykazywała obrzydzenie wobec kolegi w poliamorycznym związku. Na jednym serwerze zauważyłem już nawet, że związki jednopłciowe są akceptowane nie dlatego, że nikomu nie robią krzywdy, ale dlatego, że „nie czuję, żeby to było złe” – po czym rozmowa płynnie przeszła w mowę nienawiści wobec osób Furry. <b>Wynika to z podstawowego mechanizmu stojącego za działaniem normalizacji – poprzez częste wystawienie na bodziec i akceptujące postawy ze strony innych osób zmienia ona wywoływane nim emocje, ale nie skłania nikogo do pytania: czy naprawdę powinniśmy opierać swoją moralność na emocjach?</b>
+            </p>
+
+            <p class="morgan colored-font">
+                To o procesie, który prowadzony jest w sposób niekrzywdzący innych grup mniejszościowych. Ale niestety często normalizacja jednych grup utwierdza w ludziach uprzedzenia do innych, bardziej marginalizowanych. Często jest to proces nieumyślny, ale czasami jak najbardziej świadomy – <b>niestety tak wiele osób stosuje taktykę „wrzucania pod autobus”, bo jest ona skuteczna.</b> Wskazanie na „bardziej nienormalną” grupę pomaga znormalizować w oczach społeczeństwa naszą, bo sporo osób może dojść do wniosku, że „faktycznie, w porównaniu do tamtych dziwaków wy to jesteście całkiem spoko”. <b>Przykładem nieumyślnego działania, który spotykam bardzo często, jest nacisk na pociąg romantyczny i monogamię przy normalizowaniu homoseksualności.</b> Znalezienie wspólnych cech, z którymi w większości alloromantyczne i monogamiczne społeczeństwo może się utożsamić, pomaga w humanizacji osób homoseksualnych i w konsekwencji odczuwania wobec nich empatii, co przeciwdziała uprzedzeniom. Z drugiej strony pogłębia przekonania, że prawdziwa miłość może mieć miejsce tylko w dwuosobowym związku i że osoby zainteresowane wyłącznie przygodnym seksem są w jakiś sposób gorsze, traktują swoje osoby partnerskie przedmiotowo i zależy im w życiu tylko na jednym. <b>Z kolei przykładami aktywnego pogłębiania uprzedzeń, z którymi też często się spotykam, jest u osób autystycznych wobec osób z zaburzeniami osobowości, i u systemów z DID wobec osób ze schizofrenią.</b> Wychodzą tutaj często ich własne uprzedzenia: „czasem mówię raniące rzeczy, ale nigdy nie chcę celowo kogoś zranić, nie jak ci psychopaci”, „potrafię odróżnić rzeczywistość od wytworu mojego mózgu, nie jak ci chorzy umysłowo”. Bo niestety przynależność do stygmatyzowanej grupy nigdy nie czyni nikogo automatycznie wolnym od uprzedzeń wobec innych, a nawet wobec niej samej.
+            </p>
+
+            <p class="morgan colored-font">
+                Kilka lat przebywania w lewicowych społecznościach w bolesny sposób nauczyło mnie, że sporo należących do nich osób wcale nie jest ani trochę bardziej tolerancyjna, otwarta na nowe perspektywy i myśląca samodzielnie, i ani trochę mniej opierająca swoje moralne sądy na emocjach, niż osoby z każdego innego miejsca politycznego spektrum (jeśli z jakiegoś powodu chcecie posłuchać więcej mojego narzekania na ten temat, znajdziecie je w „<a href="/blog/podatnosc-na-obrzydzenie-a-homofobia" class="internal">Deklaracja tolerancyjności — mój nowy pomysł</a>”). Podstawowa różnica to jedynie szerszy zakres tego, co uznaje się za „normalne” — który także potrafi się bardzo różnić w zależności od konkretnych społeczności. <b>I to, co z tego powodu chciałbym zobaczyć w miejsce normalizacji, to ciągłe odszukiwanie i rewidowanie własnych uprzedzeń, a nie czekanie, aż ktoś poda nam na tacy: „ta osoba jest takim samym człowiekiem, jak ty, i zasługuje na godne traktowanie”. Jeśli uważasz, że już jesteś tolerancyjną osobą i nie musisz niczego zmieniać w swoich poglądach, najprawdopodobniej jesteś w błędzie.</b> Zawsze się jeszcze znajdą nowe rzeczy, których możemy się nauczyć, nowe doświadczenia, o których nigdy wcześniej nie słyszeliśmy. Sam się całkiem niedawno złapałem na tym, że nigdy nawet nie sprawdziłem, co pewna „kompletnie zła i bardzo krzywdząca” grupa <i>naprawdę</i> próbuje powiedzieć — a myślałem już, że żadnych tak głębokich uprzedzeń nie mam. Chciałbym, żeby ludzie przestali rozumieć tolerancyjność jako „nie mam nic przeciwko gejom”. Moim zdaniem osoba tolerancyjna to taka, która jest gotowa do zaakceptowania nawet tych tożsamości, ekspresji czy zachowań, których nie rozumie lub które jej się nie podobają, ale nie robią nikomu krzywdy. 
+            </p>
+
+            <p class="morgan colored-font">
+                To teraz tak bardziej szczegółowo o tym, jak moglibyśmy wdrożyć to w życie. <b>Po pierwsze — edukacja o tym, skąd uprzedzenia się biorą.</b> We wspomnianym już artykule opisałem wpływ podatności na obrzydzenie na uprzedzenia wobec różnych mniejszości (nie tylko seksualnych), ale różnych mechanizmów istnieje więcej. Na przykład bardzo często ma miejsce dehumanizacja zewnętrznej grupy, gdzie skupiamy się na jej cechach odmiennych od naszych i nie zauważamy, że o wiele więcej cech mamy wspólnych, przez co możemy nie odczuwać wobec nich empatii. Inny, bardzo prosty mechanizm działa, kiedy bez zweryfikowania po prostu wierzymy temu, co wszyscy o danej grupie mówią. <b>Dalej, zachęcanie do zastanawiania się, czy ich myśli na temat konkretnej grupy nie biorą się z uprzedzeń.</b> Tutaj może pomóc prosta zasada — prawie każde zdanie zaczynające się od „wszyscy z grupy X”, po którym następuje cokolwiek innego, niż cechy definiujące przynależność do tej grupy, jest błędne, bo wewnątrz każdej grupy istnieje spore zróżnicowanie cech, poglądów i zachowań (tak, nawet jeśli to incele, osoby religijne, konfederackie, stosujące przemoc, itp. itd.). <b>Niezwykle ważne jest także zachęcanie do podejmowania własnych moralnych sądów, bo większość z nas ma skłonności po prostu iść za tłumem</b> — a niektóre społeczności noszą aż znamiona sekty, gdzie narzucana jest nienawiść do poszczególnych grup (np. systemy endogeniczne) lub „prawidłowa” odpowiedź na złożone moralne kwestie (np. czy powinno się ukarać oskarżoną osobę na podstawie niezweryfikowanego w żaden sposób zeznania ofiary), i jeśli ktokolwiek się nie zgadza, zostaje wykluczony. Większość lewicy wierzy, że opiera swoją moralność na kwestii, czy dana rzecz wyrządza komuś krzywdę, dlatego zachęcałbym do zastanawiania się nad tym, czy coś naprawdę jest krzywdzące, czy tylko w ten sposób usprawiedliwiamy swoje emocjonalne sądy (więcej o tym za chwilę). <b>I na koniec, edukacja o tym, jak skutecznie rewidować uprzedzenia.</b> Na poziomie racjonalnym najskuteczniejsze będzie czerpanie informacji z osobistych historii osób należących do danej grupy lub artykułów naukowych (tu ostrożnie, bo osoby naukowe to ludzie jak wszyscy inni i też często posiadają własne uprzedzenia). Wtedy zotają jeszcze uprzedzenia na poziomie emocjonalnym, których większość osób już nie dotyka, a szkoda, bo mogą mieć one wpływ na podświadome, aczkolwiek wciąż bolesne działania, takie jak zachowywanie większego społecznego dystansu od osób z danej grupy. W wymienionym wcześniej artykule o homofobii pisałem o technikach na zmiejszenie obrzydzenia, a także o tym, jak nawet wyobrażony pozytywny kontakt ma potencjał zmniejszyć negatywne nastawienie do różnych grup. 
+            </p>
+
+            <p>
+                <span class="morgan colored-font">Takie podejście pozwala zająć się wszystkimi uprzedzeniami jednocześnie, bo niezależnie od zróżnicowania marginalizowanych grup, uderzamy tutaj w mechanizm stojący za stygmatyzacją, który we wszystkich przypadkach jest podobny. <b>Oprócz tego przerzuca odpowiedzialność za zwalczanie krzywdzących postaw z osób, które już są nimi wystarczająco pokrzywdzone, na osoby, które te postawy wykazują.</b> Oczywiście nadal musimy zapewnić informacje na temat naszych doświadczeń, ale na dobrą sprawę do wielu rzeczy można naprawdę dojść samemu, jak się ma już trochę ogólnej wiedzy i poświęci się choć chwilę, żeby się porządnie nad pewnymi kwestiami zastanowić. Nie muszę usłyszeć od osoby poliamorycznej, że boli ją brak możliwości zawarcia formalnego związku małżeńskiego, żeby się domyśleć, że dla wielu z nich tak jest, bo wiem, jak istotna ta sprawa jest dla osób homoseksualnych. Nie muszę tego usłyszeć od osoby otherkin, żeby się domyśleć, że dla wielu z nich przebywanie w ludzkim ciele sprawia im cierpienie, tak samo jak dla osób trans w ciele o niezgodnej płci. Nie muszę tego usłyszeć od osoby nekrofilnej, żeby domyślać się, że większość z nich byłaby tak samo zdruzgotana śmiercią swojej osoby partnerskiej, co ja. Bo świadomie staram się pamiętać, że osoby z tych grup wcale się aż tak bardzo nie różnią ode mnie i od całej reszty ludzkości, jak moje emocje mi podpowiadają. Niewielki mentalny wysiłek, a zdejmuje z tych osób konieczność ciągłego tłumaczenia podstawowych kwestii, co jest dla wielu wyczerpujące. <b>I, co może najważniejsze, takie podejście daje większą możliwość zrewidowania uprzedzeń, zanim się nimi kogoś skrzywdzi.</b> Może część z was nie należy do mniejszościowych grup i popełnianie takich błędów nie wydawaje się wam aż tak dużym problemem — myliliście się, ktoś wam wytłumaczył, jak wygląda rzeczywistość, poprawiliście się i żyjecie dalej, nic wielkiego. Ale życie w uprzedzonym świecie to dla nas nie błahostka i kosztuje nas często zdrowie psychiczne, a nawet życie. Większość z nas dołożyła się kiedyś do tej krzywdy i niestety już tego nie cofniemy, ale ucząc się myśleć, zanim powiemy, i sami szukając informacji, których mnóstwo jest w obecnych czasach już dostępnych w internecie, możemy zapobiec przyszłym tragediom. </span>
+            </p>
+
+            <p>
+                <span class="host colored-font"><b>I teraz pytanie, które na pewno sobie zadajecie: „A co ze krzywdzącymi/szkodliwymi tożsamościami? Mamy normalizować też X albo Y?”. Po pierwsze, kiedy ktoś nazywa coś krzywdzącym, radziłbym się najpierw porządnie zastanowić, czy naprawdę tak jest.</b> Bo mam wrażenie, że część osób zaczęła zrównywać swoje opinie z obiektywną moralnością (która, nawiasem mówiąc, nie istnieje), a kiedy tylko ktoś wskaże coś palcem i zawoła: „krzywdzące!”, większość się nawet nie zastanawia i nie daje sobie szansy na zrewidowanie swoich nieuświadomionych uprzedzeń. Ksenopłcie są szkodliwe, neozaimki są szkodliwe, systemy endogeniczne, kultura Furry, BDSM, autism creature, a słyszałem nawet, że PluralKit — pewnie o każdej istniejącej tożsamości czy ekspresji ktoś coś takiego w internecie mówi. <b>A kiedy jakaś grupa zostaje wryta w nasz umysł jako zło absolutne, myślimy, że nasze uprzedzenia są w pełni usprawiedliwione i nie ma co rewidować.</b> Szczególnie to widać w przypadku zaburzeń osobowości czy parafilnych, które w społeczeństwie są tak często zrównywane z krzywdzeniem innych osób, że wielu osobom nawet nie przyjdzie do głowy, że to też krzywdzący stereotyp. Przypominam, że wiele osób homofobicznych i transfobicznych też uważa swoje uprzedzenia za w pełni usprawiedliwone, bo przecież ci geje chcą seksualizować dzieci, a trans kobiety wykorzystywać cis kobiety w łazienkach. </span>
+            </p>
+
+            <p>
+                <span class="host colored-font"><b>Po drugie, w wielu przypadkach to w ogóle nie jest kwestia krzywdy, a normalizacji.</b> Weźmy przykład, w którym jedna osoba potrzebuje wyrazić swoją tożsamość związaną z grupą, do której według społeczeństwa nie przynależy na podstawie cech jej ciała, bo inaczej nie może czuć się w swoim ciele szczęśliwa. Druga osoba, która na podstawie cech jej ciała do tej grupy przynależy, jest tym wielce oburzona i wypowiada się, jak akceptowanie czegoś takiego jest dla niej krzywdzące. Czyja krzywda jest tutaj ważniejsza i zasługuje na współczucie i przeciwdziałanie jej? Pewnie powiecie, że tej pierwszej, bo pomyśleliście o transpłciowości. Być może nawet oburza was, że nazwałem sytuację tej drugiej osoby „krzywdą”. <b>Ale kiedy dokładnie ta sama sytuacja dotyczy transrasowości, wtedy w wielu „tolerancyjnych” społecznościach to ta pierwsza osoba jest okrutnym oprawcą, którego krzywda zostaje wyparta, a ta druga biedną, pokrzywdzoną ofiarą, którą należy chronić przed przed dyskryminacją.</b> Dlaczego? Transpłciwość została znormalizowana i znormalizowana została postawa, że osoby transfobiczne nie zasługują na żadną wyrozumiałość, z kolei transrasowość znormalizowana jeszcze nie została. Analogicznie, weźmy osobę, która chce się pozbyć pewnej części swojego ciała, bo nie oddaje ona jej wewnętrznego obrazu siebie i tylko bez niej będzie mogła się czuć w pełni sobą. Czy pozwolenie jej na to jest krzywdzące? <b>W przypadku transpłciowości cała lewica odpowie, że nie, ale kiedy rzecz dotyczy transniepełnosprawności, to nagle coś takiego staje się niedopuszczalne i takie osoby potrzebują pomocy, żeby to wyleczyć (czyli nagle terapia konwersyjna jest okej).</b> Dlaczego? Większość z nas czuje się źle na samą myśl o utracie jakiejś części swojego ciała i patrzymy na inne osoby przez swój własny pryzmat, ale transpłciowość została znormalizowana i te osoby, które się nie mogą z takimi pragnieniami utożsamić, nauczyły się rozumieć, że ktoś może mieć zupełnie inne potrzeby i wcale potem nie żałować. A transniepełnosprawność jeszcze znormalizowana nie jest. </span><span class="morgan colored-font">Naprawdę przykro patrzeć na takie postawy ze strony grupy, która argumentuje, że każde ma prawo robić ze swoim ciałem, co tylko się mu podoba. Cóż, najwyraźniej te argumenty w wielu przypadkach nie były szczere.</span>
+            </p>
+
+            <p>
+                <span class="host colored-font">Jeszcze bardziej dobitny przykład, że w ogóle nie chodzi o krzywdzę i jest ona tylko próbą racjonalnego usprawiedliwienia emocjonalnie podjętych decyzji.</span> <span class="morgan colored-font">Wiele osób z pasją sprzeciwia się animowanej pornografii zwierzęcej — podkreślam, animowanej; nie ma tutaj nawet miejsca na debatę, czy można uprawiać seks ze zwierzęciem bez szkody dla niego, bo materiał jest fikcyjny i żadne zwierzę w nim nie uczestniczy. Ba, protestują nawet prawo do masturbacji dla osób zoofilnych. A większość z tych osób idzie potem zajadać się kotletami, burgerami i żelkami, i nie ma najmniejszego poczucia, że robi cokolwiek złego. Dlaczego? <b>Bo nie chodzi o krzywdę zwierzęcia, a o obrzydzenie seksulne, które sama myśl o takich zachowaniach w większości z nas wywołuje.</b> Krzywda innych gatunków zwierząt niekoniecznie utrudniała nasze przetrwanie, a w przypadku zabijania ich na mięso było wręcz odwrotnie, dlatego w większości z nas takie zachowanie nie wywołuje sprzeciwu moralnego (wyłączając zwierzęta, co do których zostało ono w naszej kulturze zdenormalizowane, na przykład psy i koty). Z kolei seks, nieprzynoszący korzyści w kierunku rozrodu gatunku, wprowadzał niepotrzebne ryzyko zakażenia chorobami, stąd obrzydzenie, mówiące nam: „nie rób”, „trzymaj się z daleka”. <b>W dzisiejszych czasach krzyczenie o krzywdzie zostało po prostu nałożone na ten ewolucyjny mechanizm, bo w lewicowych społecznościach zło często definiuje się jako krzywdę. W naszym mózgu jednak definicja zła jest o wiele bardziej złożona i jeśli chcemy faktycznie opierać swoją moralność na pytaniu: „czy to wyrządza komuś krzywdę?” (co mam nadzieję chcecie robić, jeśli tutaj jesteście), musimy walczyć przeciwko wielu różnym, głęboko zakorzenionym emocjonalnym mechanizmom.</b> A jeśli po przeczytaniu tego nadal czujecie się wbzurzeni, że mogę popierać takie rzeczy, bo „przecież to może popchnąć kogoś do wyrządzenia krzywdy prawdziwemu zwierzęciu!” — musicie poćwiczyć czytanie ze zrozumieniem, bo zupełnie się rozminęliście z sednem mojej wypowiedzi. Gdzie wasze protesty przeciwko pokazywaniu mięsnych potraw w kreskówkach, żeby dzieci przypadkiem nie pomyślały, że zabijanie zwierząt jest akceptowalne?</span>
+            </p>
+
+            <p>
+                <span class="morgan colored-font">A więc, kiedy lekcję o emocjonalnych podstawach naszych decyzji moralnych mamy już za sobą, możemy przejść do odpowiedzi na pytanie, co z osobami, które <i>naprawdę</i> wyrządzają komuś krzywdę. <b>Rzecz jasna uważam, że powinniśmy denormalizować krzywdzące zachowania — przemoc wobec dzieci jest nieakceptowalna, gwałt jest nieakceptowalny, dyskryminacja, uprzedzenia, szerzenie dezinformacji, zatruwanie środowiska, krzywdzenie i zabijanie zwierząt, i tak dalej, i tak dalej.</b> Ale, chociaż uważam, że ofiary nie powinny mieć obowiązku humanizowania osób, które je skrzywdziły, nie sądzę, że na poziomie społeczeństwa powinniśmy dehumanizować osoby, które krzywdzą innych. Jak bardzo by się nam to nie podobało, najróżniejsze takie zachowania są dla naszego gatunku po prostu naturalne (niesynonimiczne z „akceptowalne”) i traktowanie ich jako nieludzkich jest cóż, po prostu błędne. <b>Uważam, że ignorowanie ewolucyjnych, genetycznych, społecznych i okolicznościowych przyczyn, dla których dana osoba skończyła tak, a nie inaczej, jest po pierwsze niesprawiedliwe wobec niej, po drugie odbiera nam możliwość rozwiązania problemu i zapobiegania mu w przyszłości, i po trzecie pozwala nam żyć w iluzji, że my się od tych osób tak skrajnie różnimy, przez którą nie dostrzegamy, jak sami czasem krzywdzimy innych.</b> Nie jest łatwo pozbyć się uprzedzeń, o których się nawet nie wiedziało, że są uprzedzeniami, nieprawdaż? Nie jest łatwo przejść na wegetarianizm, kiedy z naturalnych przyczyn po prostu nie czujemy takiej potrzeby, a możemy spotkać się z ostracyzmem i gotowe potrawy są zwykle droższe i w wielu miejscach niedostępne. Wiadomo, że część osób nigdy nie zmieni swoich poglądów czy zachowań, ale jeśli chcemy w jakiś sposób dotrzeć do całej reszty, traktowanie ich jak potwory jest mało skutecznym sposobem przekonywania do swojego zdania czy motywowania do zmiany. Nie ważne, jak ciężko by nam czasem nie przychodziło cokolwiek innego. </span>
+            </p>
+
+
+            <footer data-nosnippet>
+                <blockquote><i>Musimy obierać strony. Neutralność pomaga oprawcy, nigdy ofierze. Cisza zachęca dręczyciela, nigdy dręczonego.</i> ~ Elie Wiesel (on/jego)</blockquote>
+
+
+
+
+<div class="flex"><address><p>Kontakt:</p>
+    <p><a href="mailto:systemteczowegochaosu@gmail.com" class="internal">systemteczowegochaosu@gmail.com</a></p>
+    
+    
+        <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><img src="/yt_icon_red_digital.png" class="social-media-icon" alt="YT" role="presentation">Kanał na YouTube</a></p>
+    
+    <p><a href="https://discord.gg/5gbrwTgDzp" target="_blank" rel="noopener noreferrer" class="external"><img src="/Discord-Symbol-Blurple.svg" class="social-media-icon" id="discord" alt="dicord" role="presentation">Serwer na Discordzie</a></p>
+    
+    </address>
+    
+    <div>
+        <p><a href="/#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
+        <p><a href="/#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
+        <p><a href="/nauka/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
+        <p><a href="/dziennik-zmian" class="internal">Dziennik zmian</a></p>
+        <p><a href="/poprawki-bledow" class="internal">Poprawki błędów</a></p>
+    </div>
+    <div>
+        <p><a href="/zastrzezenia" class="internal">Zastrzeżenia</a></p>
+        <p><a href="/deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
+        <p><a href="/deklaracja-tolerancyjnosci" class="internal">Deklaracja tolerancyjności</a></p>
+        <p><a href="/polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
+    </div>
+
+    </div>
+
+    <p>©2023-2026 <a href="/system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
+
+</footer>
+
+
+
+        </main>
+    </body>
+</html>

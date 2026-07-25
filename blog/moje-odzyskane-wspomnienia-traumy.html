@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Moje odzyskane wspomnienia traumy | Przewodnik po Mnogości</title>
+        <link rel="icon" href="/ampersand-icon.png">
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="https://przewodnikpomnogosci.pl/plural-journey-rings.png">
+        <meta property="og:image:alt" content="mnogie okręgi">
+        <meta name="twitter:domain" content="przewodnikpomnogosci.pl">
+        <meta name="color-scheme" content="dark light">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="System Tęczowego Chaosu">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Przewodnik po Mnogości">
+        <meta property="og:url" content="https://przewodnikpomnogosci.pl/blog/moje-odzyskane-wspomnienia-traumy">
+        <meta name="twitter:title" property="og:title" content="Moje odzyskane wspomnienia traumy">
+        <meta name="description" content="Jakie to uczucie, odzyskać wspomnienie? Skąd wiem, że są prawdziwe?">
+        <meta name="twitter:description" property="og:description" content="Jakie to uczucie, odzyskać wspomnienie? Skąd wiem, że są prawdziwe?">
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <script src="/template.js"></script>
+        <script src="/script.js" defer></script>
+        <script src="/settings.js" defer></script>
+    </head>
+    <body>
+        <div id="shadow" class="shadow"></div>
+        <div id="sidebar-shadow" class="shadow"></div>
+        
+        <a class="to-main" href="#zawartosc">Przejdź do zawartości</a>
+        
+        <header class="header">
+            <div class="divider">
+                <button class="menu-icon" id="menu1" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <a href="../" class="title">
+                    <div class="logo" aria-label="mnogie okręgi">
+                        <svg class="logo">
+                            <circle class="upper"></circle>
+                            <circle class="down"></circle>
+                            <circle class="left"></circle>
+                            <circle class="right"></circle>
+                        </svg>
+                    </div>
+                    <span id="title">Przewodnik po Mnogości</span>
+                </a>
+            </div>
+            <div class="divider rdiv">
+                <button class="search mobile" aria-label="wyszukaj" onclick="showSearchInput()">
+                    <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                        <circle cx="35%" cy="35%" r="30%"/>
+                        <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                    </svg>
+                </button>
+                <form class="search" action="/wyszukaj" role="search">
+                    <button type="submit" class="search" aria-label="wyszukaj">
+                        <svg vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%">
+                            <circle cx="35%" cy="35%" r="30%"/>
+                            <line x1="56.5%" y1="56.5%" x2="90%" y2="90%"/>
+                        </svg>
+                    </button>
+                    <input type="search" class="search" name="q" minlength="1" placeholder="wyszukaj" required>
+                    
+                </form>
+                <details class="language-select">
+                    <summary><span class="for-aria">Wybierz język</span>&#127477&#127473</summary>
+                    <div class="language-options">
+                        <div  class="language-option active">&#127477&#127473</div>
+                        <!-- <a href="/pjm/" class="language-option">&#127477<span class="for-aria">polski język migowy</span>&#127473<span aria-hidden="true" class="hand lhand">&#128076</span><span aria-hidden="true" class="hand rhand">&#128076</span></a> -->
+                        <a href="/en/" class="language-option">&#127482&#127480</a>
+                        <!-- <a href="/ru/" class="language-option">&#127479&#127482</a> -->
+                    </div>
+                </details>
+                <a href="../ustawienia" class="settings desktop">
+                    <img src="/settings.png" alt="ustawienia i dostępność">
+                </a>
+            </div>
+        </header>
+        
+            <aside class="sidebar" id="sidebar" data-nosnippet>
+                <button class="menu-icon" id="menu2" type="button" onclick="menu()">
+                    <svg class="menu" vievBox="0 0 30 30" preserveAspectRatio="none" width="100%" height="100%" aria-label="menu">
+                        <line x1="25%" y1="35%" x2="75%" y2="35%"/>
+                        <line x1="25%" y1="50%" x2="75%" y2="50%"/>
+                        <line x1="25%" y1="65%" x2="75%" y2="65%"/>
+                    </svg>
+                </button>
+                <nav class="menu-options" data-id="moje-odzyskane-wspomnienia-traumy">
+                    <a href="../" id="glowna" class="option">Strona główna</a>
+                    <a href="../czeste-pytania" class="option" id="czeste-pytania">Częste pytania</a>
+                    <a href="../terminologia" id="terminologia" class="option">Terminologia</a>
+                    <a href="../mnogosc" id="mnogosc" class="option">Mnogość</a>
+                    <a href="../nauka/" id="nauka" class="option">Nauka</a>       
+                    <a href="../zaburzenia/" id="zaburzenia" 
+                    class="option">Powiązane zaburzenia</a> 
+                    <a href="../powstawanie" id="powstawanie" class="option">Przyczyny powstawania</a> 
+                    <a href="../system" id="system" class="option">System</a>       
+                    <a href="../wspolosoby/" id="wspolosoby" class="option">Współosoby</a>   
+                    <a href="../frontowanie" class="option" id="frontowanie">Frontowanie</a> 
+                    <a href="../wewnetrzny-swiat" id="wewnetrzny-swiat" class="option">Wewnętrzny świat</a> 
+                    <a href="../materialy/" id="materialy" class="option">Materiały i pomoce</a>
+                    <a href="../system-teczowego-chaosu/" id="o-nas" class="option">O nas</a>
+                    <a href="../blog/" id="blog" class="option current">Blog</a>
+                </nav>
+            </aside>
+
+        <main id="zawartosc">
+
+            
+            <svg preserveAspectRatio="none" class="hidden">
+                <symbol id="ex" class="ex">
+                    <line x1="10%" y1="20%" x2="30%" y2="20%"></line>
+                    <line x1="10%" y1="20%" x2="10%" y2="90%"></line>
+                    <line x1="10%" y1="90%" x2="80%" y2="90%"></line>
+                    <line x1="80%" y1="90%" x2="80%" y2="70%"></line>
+                    <line x1="30%" y1="70%" x2="90%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="50%" y2="10%"></line>
+                    <line x1="90%" y1="10%" x2="90%" y2="50%"></line>
+                </symbol>
+            </svg>
+            
+            <h1>Moje odzyskane wspomnienia traumy
+                <p>Wiktor/host/Morgan (<a href="../system-teczowego-chaosu/host" class="internal">host</a>) (on/jego) | 25.07.2026</p>
+            </h1>
+            
+            <fieldset class="warning" data-nosnippet>
+                <legend>Ostrzeżenie!</legend>
+                Wpis porusza tematy podważania doświadczeń ofiar, przemocy fizycznej wobec dzieci i wykorzystywania seksualnego.
+                <a href="../zaburzenia/zespol-stresu-pourazowego#ostrzezenia" class="internal">Dlaczego to ostrzeżenie jest ważne?</a>
+            </fieldset>
+
+            <p>
+                <b>Niezwykle frustrujące jest patrzeć, jak ludzie debatują o możliwości istnienia zjawiska, którego doświadczasz bardzo często i wiesz ponad wszelką wątpliwość, że jest ono prawdziwe.</b> Jeszcze bardziej frustruje fakt, że jest to zjawisko subiektywne i wydaje się, że nie da się go dobitnie udowodnić. Mogę wskazać na rzeczy, dzięki którym mam pewność, że pewne wydarzenia się naprawdę stały, ale jak mam dokazać, że ich kiedyś nie pamiętałem? Na szczęście część środowiska naukowego potrafi sobie wyobrazić, że niektóre osoby doświadczają rzeczy, które się im samym nigdy nie przydarzyły, i zbiera na potwierdzenie dowody, które mi nawet by nie przyszły do głowy (jak to, że pewne cechy budowy mózgu osób z dysocjacyjnym zaburzeniem tożsamości odpowiadają tym u osób z zespołem stresu pourazowego). <b>Ale podsumowanie literatury na razie odkładam na później, ponieważ po pierwsze, jest to dla mnie trudny temat, a po drugie, większość osób i tak nie zostaje przekonana przez badania i statystyki, a przez osobiste historie innych.</b> A więc może bardziej produktywnie spędzę ten czas, opowiadając wam o wspomnieniach, które odzyskałem, i tym, skąd wiem, że nie są fałszywe.
+            </p>
+
+            <p>
+                Można zauważyć, że cała ta debata skupia się najbardziej wokół odzyskanych wspomnień wykorzystywania seksualnego. Wynika to trochę z faktu, że niektórym osobom zależy, żeby nikt w tej kwestii nie wierzył ofiarom, zwłaszcza w sądzie. Przemoc fizyczna nie jest tematem tabu i niestety jest nadal w niektórych kręgach znormalizowana. Uderzanie w nią nie jest więc tak skuteczne w karmieniu społecznego wyparcia, istniejącego, ponieważ ludzie nie chcą przyjąć do świadomości, że ktoś może zrobić coś takiego dziecku, a w szczególności własnemu dziecku. A ten rodzaj przemocy występuje przy złożonych zaburzeniach dysocjacyjnych równie często, co gwałt. W moim dzieciństwie to była właśnie główna trauma, jeśli mogę ją tak nazwać. <b>Ale różnych rzeczy, których nie pamiętałem i które sobie przypomniałem, a także tych, których nadal nie pamiętam, było tak wiele, że nie sposób opowiedzieć o każdej z nich. Trauma to subiektywne pojęcie, a ja od dziecka byłem niezwykle wrażliwą osobą, nie miałem też żadnego wsparcia w przetwarzaniu tych doświadczeń i w konsekwencji przekraczały one moje zdolności radzenia sobie, nawet jeśli dla wielu osób niektóre z nich byłyby zaledwie niewygodą</b> (patrz <a href="
+                /nauka/teoria-czterech-czynnikow" class="internal">teoria czterech czynników etiologii</a> po wyjaśnienie, co decyduje o używaniu dysocjacyjnych mechanizmów obronnych).
+            </p>
+
+            <p>
+                <b>Osobiście nie doświadczam flashbacków i w większości sytuacji wspomnienie wraca dokładnie w taki sam sposób, jak nietraumatyczne wspomnienia, które były gdzieś głęboko w podświadomości.</b> Na pewno mieliście takie doświadczenie nie raz — jakaś rzecz lub rozmowa nagle przypomina wam o zabawce z dzieciństwa, ulubionej bajce czy koledze z klasy, o których kompletnie zapomnieliście i gdyby nie ten zewnętrzny bodziec, moglibyście do końca życia o tym nie pamiętać. I pewnie wiele razy przypomniały się wam jakieś nieprzyjemne sytuacje, na przykład jak nauczycielka potraktowała was niesprawieliwie albo zgubiliście ważny dla was przedmiot. <b>Mechanizm działa ten sam, ale w przypadku tych większych, traumatycznych wspomnień ich odbiór nie jest zwyczajnie nieprzyjemny, a szokujący — trochę jakby ktoś was uderzył nową informacją w twarz.</b> Czasem pojawia się wyparcie, bo chociaż logicznie wiem, że to się wydarzyło, emocjonalnie jeszcze nie jestem w stanie tego przyjąć. <b>Bierze się to z faktu, że takie wspomnienia nie zostały zintegrowane, to znaczy włączone w mój model świata, innych osób i samego siebie.</b> Przypomnienie sobie, że matka miała cięższe dni i czasami nas ignorowała, udając, że śpi, było smutne, ale nie było szokujące. Nie przeczyło w żaden sposób temu, co o niej świadomie wiedziałem. Ale z kolei wspomnienie, które dało mi odpowiedź na pytanie, dlaczego nie czuję się bezpiecznie, pochylając się w obecności innych ludzi, było szokiem i wciąż zadaję sobie pytanie, czy to się naprawdę stało. Bo to nie pasowało do obrazu osoby, który sobie utworzyłem i który przez lata pielęgnowałem. A z pewnością nie był to izolowany przypadek, bo chociaż do wcześniejszych wspomnień utraciłem już dostęp, wtedy musiałem je jeszcze posiadać, bo byłem nieprzyjemnie zaskoczony tą sytuacją — nie spodziewałem się, że w takim wieku nadal jestem na to narażony. 
+            </p>
+<!-- U mnie ciekawym tego przykładem są sterowce — jakiś czas temu wykładowca się do nich odwołał, przypominając mi o ich istnieniu, i gdybym nie postanowił o tym napisać w tym poście, pewnie znowu bym o nich zapomniał, bo nie potrafię przyjąć do świadomości,  -->
+
+            <p>
+                <b>Jeśli chodzi o przemoc fizyczną, ten aspekt mojego dzieciństwa akurat nigdy nie był dla mnie szokiem, zaskoczony byłem dopiero, kiedy dowiedziałem się, że bicie dzieci <span class="for-aria">(w cudzysłowie)</span> „za karę” nie jest normalne.</b> Jej świadomość musiała czasem schodzić na dalszy plan, pamiętam, jak raz rodzice przypomnieli mi o tym przy stole, narzekając, że najwyraźniej nie lali nas wystarczająco, bo nie wyplenili z nas <span class="for-aria">(w cudzysłowie)</span> „pyskowania”. Ale informacja nie była dla mnie szokiem, moją reakcję najlepiej można by opisać jako: „ach, no tak”. <b>Z tym że dostępu do samych wspomnień przez lata nie miałem. Zacząłem je odzyskiwać dopiero po owym odkryciu, że usprawiedliwianie tej przemocy wychowywaniem według bibilijnych zaleceń wcale nie czyni jej ani trochę mniej przemocą i ani trochę mniej szkodliwą.</b> Nadal pamiętam tylko ułamek tego, co musiało się dziać, często są to pojedyncze elementy i tylko do dwóch wydarzeń pamiętam, co w ogóle było przyczyną tego, że dostawałem (właściwie to trzech, ale to trzecie wciąż trochę wypieram). <b>Szokiem były emocje, które wraz z nimi wróciły, przede wszystkim wściekłość i nienawiść.</b> Nie miałem wtedy innego wyjścia, jak je zdysocjować, bo okazywanie naturalnych reakcji emocjonalnych na przemoc tylko ją pogarszało (jednym z tych powodów lania, który pamiętam, było to, że pokazałem im język po tym, jak skończyli pierwszą rundę). Przez to byłem wcześniej przekonany, że nie miało to na mnie aż tak dużego wpływu, jakoś przeżyłem i nie było aż tak źle — myliłem się. I w tej sprawie akurat nigdy nie miałem powodów, żeby wątpić, ale mam to szczęście, że udało mi się znaleźć na dysku rodziców nagrania pośrednio potwierdzające udział obojga z nich, na wypadek gdyby oni mieli kiedyś się tego wyprzeć (moja matka także wykazuje objawy dysocjacyjnej amnezji i może się zdarzyć, że naprawdę nie będzie pamiętać). Obu wydarzeń nadal nie pamiętam. Uczucie jest dokładnie takie samo, jak kiedy oglądam nagrania z okresu, kiedy miałem roczek, dwa — wiem, że to ja i że to się wydarzyło, może wydaje mi się, że coś trochę kojarzę, ale pełnego wspomnienia nie mam. 
+            </p>
+
+            <p>
+                <b>Największą rzeczą, której nie pamiętałem do tego stopnia, że była zupełnie wyjęta z mojego obrazu samego siebie, było moje zaburzenie parafilne.</b> Na początku średniej szkoły odnalazłem się jako część aseksualnej społeczności i byłem w pełni przekonany, że nie posiadam i nigdy nie posiadałem żadnej seksualności. Miałem jakieś 17 lat, kiedy zacząłem ją (ponownie) odkrywać; myślałem, że ten aspekt dojrzewania przyszedł do mnie w życiu wyjątkowo późno. <b>Dopiero jakieś miesiące po tym, kiedy już zacząłem rozumieć, że to jest seksualność (co też zajęło mi sporo czasu), uderzyło mnie, że to przecież nie jest pierwszy raz.</b> Nie pamiętam już, które wspomnienie wróciło jako pierwsze, ale powoli, na przestrzeni czasu odzyskałem myślę że większość z nich, jeśli nie wszystkie. Siegając od wieku jakichś 4-5 lat, kiedy moje preferencje zaczęły się po raz pierwszy przejawiać, do może 12-13, kiedy zacząłem się masturbować (jeśli mogę tak to nazwać) i osiągnąłem pierwsze orgazmy w życiu, nie mając jeszcze zupełnie pojęcia, co to jest i jak się nazywa. I o ile we wspomnieniach przemocy fizycznej trudno o szczegóły, które mógłbym jakkolwiek zweryfikować, tak tutaj mogę wskazać liczne bajki i książki, z których pamiętam czerpanie inspiracji. <b>Kilka z nich bez problemu odszukałem i potwierdziłem sceny, które pamiętam (na potrzeby tego posta, bo nigdy nie miałem żadnego powodu, żeby wątpić w ich istnienie).</b> Co prawda moja pamięć nie jest idealna — po zajrzeniu do jednej książki przekonałem się, że zakończenie sceny zostało jedynie zasugerowane, nie opisane (co ma sens, to wszakże książka dla dzieci). Musiałem je sobie tyle razy wyobrażać, że pomieszało mi się, co faktycznie było w książce, a co dopowiedziałem sobie sam. Jakby tego było mało, mam nadal grę zrobioną w Scratchu, do której przemyciłem swoje fantazje, o której istnieniu przypomniałem sobie chyba najpóźniej ze wszystkiego. Były też rzeczy, których nigdy nie zapomniałem, bo nie miałem wtedy pojęcia, że są z tym powiązane — myślałem, że moje motylki w niektórych sytuacjach biorą się z lęku, bo chociaż nie miało to za dużo sensu, było i tak najbardziej sensownym wytłumaczeniem, które potrafiłem wtedy znaleźć. <b>I cóż, chociaż moja seksualność trochę się zmieniła i chociaż zacząłem eksplorować, jak daleko różnice między moimi osobowościami mogą w tej kwestii zajść, nadal nie jestem w stanie dojść do myślenia o, nazwijmy to, klasycznym seksie.</b> Myśl mnie w ogóle nie podnieca. Dlatego nigdy nie miałem powodu sądzić, że te wspomnienia są tylko fałszywym wytworem mojego mózgu. 
+            </p>
+
+            <p>
+                Niektóre osoby próbują odmalować obraz, że takie wspomnienia są wmawiane biednej ofierze przez złego terapeutę, który chce ją odizolować od rodziny i zarabiać więcej pieniędzy na jej leczeniu (widzieliście kolejki na NFZ? Ta branża naprawdę nie musi narzekać na brak klientów, żeby trzeba było ich samemu sobie tworzyć) albo w jakichś innych podłych celach. Ma to na celu podważenie autorytetu osób, które zajmują się faktycznymi badaniami nad dysocjacyjną amnezją. <b>W moim przypadku ani jedno z odzyskanych wspomnień nie wróciło do mnie w trakcie żadnej z krótkich i niefortunnych prób uzyskania profesjonalnej pomocy psychologicznej, które w życiu podjąłem.</b> Zaczęły wracać same, kiedy zacząłem grzebać w przeszłości i myśleć o zbliżonych tematach. Ale jeśli ktoś teraz zmieni argument, że naczytałem się o zjawisku w internecie i dlatego sobie je wmówiłem — <b>pierwsze wspomnienia odzyskałem lata temu, jeszcze w podstawówce, na długo przed tym, zanim wiedziałem, czym jest trauma i odzyskane wspomnienia.</b> I jeszcze kiedy byłem przekonany, że osoby psychologiczne wmawiają ludziom „szkodliwe głupoty” i że jedynym, kto może naprawdę człowiekowi pomóc, jest Bóg. Wspominałem już, jak rodzice sami mi przypomnieli o przemocy fizycznej. Ale były jeszcze dwa wydarzenia, które zupełnie wyparłem ze świadomości i ciężko mi było uwierzyć, że mogłem zapomnieć coś takiego. Nie pamiętam już, które miało miejsce jako pierwsze, ale w jednym koleżanka z klasy, nazwijmy ją Weronika, przyszła do szkoły ze złamaną ręką. Oficjalna wersja była taka, że spadła ze schodów, ale tak naprawdę inna koleżanka przypadkiem jej ją złamała (dziewczyna nie miała szczęścia do takich rzeczy). Kiedy wyraziłem swoje niedowierzenie, że jak można złamać komuś rękę, Weronika rzuciła w moją stronę bardzo sarkastyczne i jadowite „no nie wiem, jak można złamać komuś rękę?”. <b>I wtedy sobie przypomniałem, jak w młodszej klasie niechcący zrobiłem to samo, bo nie mam pojęcia dlaczego nagle mi zaświatała w głowie głupia myśl, że bardzo śmiesznie będzie na nią z rozpędu wpaść, i bez przemyślenia od razu wprowadziłem ją w życie.</b> I w tym samym momencie wróciło też, jak potem dawałem się jej wykorzystywać, żeby jej to wynagrodzić, dopóki matka się nie dowiedziała i się na mnie nie wściekła. Druga sytuacja dotyczyła dziewczyny, z którą w młodszych klasach się przyjaźniłem, nazwijmy ją Kasia. Nie pamiętam, czego ta drama dotyczyła, ale dziewczyny miały wtedy do Kasi jakiś duży problem i próbowały mnie przeciągnąć na swoją stronę. <b>I tak się złożyło, że znowu Weronika przypomniała mi, jak kiedyś Kasia nagle zaczęła mnie ignorować. Wróciły fragmenty, jak próbowałem na przerwach zwrócić jej uwagę, ale kazała mi się odczepić i na powrót chowała się w słuchawkach, i jak było mi przykro i nie rozumiałem, co się stało.</b> Ale miałem duży problem uwierzyć, że coś takiego miało miejsce, chociaż to wyjaśniało, dlaczego nie byłyśmy już tak blisko. Dlatego poszedłem do Kasi i zapytałem ją, czy taka sytuacja naprawdę miała miejsce, na co ona potwierdziła i przeprosiła, pzyznając, że wtedy myślała, że tylko muzyka może ją uratować.
+            </p>
+
+            <p>
+                Jak już mówiłem, co do części rzeczy mam zewnętrzne potwierdzenie co do wydarzeń, które mi się przypomniały. <b>Ale kiedy nie mam możliwości potwierdzić, skąd wiem, że to się naprawdę wydarzyło?</b> Szczera odpowiedź brzmi, że ludzka pamięć nie jest doskonała i jeśli nie mam obiektywnych dowodów, nie mogę mieć stuprocentowej pewności, czy wszystkie szczegóły się zgadzają. I odnosi się to do każdego rodzaju wspomnień — przeglądanie filmików z dzieciństwa uświadomiło mi, jak zupełnie inaczej potrafię wspominać niektóre wydarzenia, których przecież nigdy nie zapomniałem. Są rzeczy, co do których nie mam pewności — na przykład pewnego razu uderzyło mnie wrażenie, że raz u znajomych rodziców próbował ugryźć mnie kucyk. Zapytałem o to rodziców, ale oboje odpowiedzieli, że coś takiego mogło się wydarzyć, ale nie są pewni (też nie mają najlepszej pamięci). A więc to wspomnienie stanęło pod znakiem zapytania i pogodziłem się z tym, że tak pewnie pozostanie. <b>Ale co do wielu wspomnień mam taką samą pewność, jak do wspomnień, do których dostępu nigdy nie utraciłem. Mając część z nich już potwierdzonych, mogę porównać sposób, w jaki do mnie wracają, ze sposobem tworzenia się fałszywych wspomnień</b>. Pierwsze fałszywe „wspomnienie” utworzyłem sobie już jako dziecko, kiedy matka opowiadała, że jak byłem mały, bardzo mnie fascynował mechanizm pozwalający zabawkowym samochodzikom jeździć. Chciałem to sobie przypomnieć i uparcie zacząłem sobie wyobrażać, jak jadę samochodzikem po brzegu kanapy i próbuję zajrzeć pod jego spód, chociaż matka tłumaczyła mi, że byłem zbyt mały, żeby to pamiętać. I w tym przypadku akurat dobrze pamiętam, jak sobie to wyobrażałem, ale pewnie mam sporo drobnych wspomnień, które sobie w ten sposób utworzyłem i sam już o tym nie wiem. <b>I tutaj leży podstawowa różnica — prawdziwe wspomnienia lub ich fragmenty wracają natychmiastowo i często dotyczą rzeczy, których się nawet zupełnie nie spodziewałem, nie mówiąc już o szczegółowym wyobrażaniu ich sobie.</b> Druga wskazówka, na wypadek gdybym zapomniał sam proces wyobrażania sobie, to że <b>takie fałszywe wspomnienia posiadają wszystkie wady mojej wyobraźni</b> (u osób z dobrą wyobraźnią i dużą wiedzą na zadany temat może nie występować). Kiedy nie raz zadawałem sobie pytanie, czy ta i ta osoba mnie seksualnie wykorzystała, nie zadawałem sobie specjalnego trudu, żeby wyobrażać sobie to bardzo realistycznie i szczegółowo. I dlatego te obrazy przedstawiają bardziej ogólny koncept takiej sytuacji, niż coś, co można by było pomylić z rzeczywistością. Nie ma konkretnego miejsca, konkretnego ciągu wydarzeń, zupełnie nic na temat co było przed, co było po, zupełnie nic na temat moich reakcji, żadnej mowy o bólu ani o spermie, ani nawet intymnym owłosieniu u sprawcy, bo nie miałem za dużej wiedzy na temat takich tematów w okresie, w którym to kwestionowałem. Nawet kiedy przychodziły wątpliwości, czy to się nie stało naprawdę, mogłem potem racjonalnie spojrzeć na te wszystkie niedociągnięcia i stwierdzić, że nie ma szans. I ostatnia, bardzo istotna wskazówka, to towarzyszące wspomnieniu emocje. Być może część osób z realistyczną wyobraźnią mogłaby się tak wczuć w wyobrażaną rolę, że czułaby intensywne emocje, ale ja nie czułem prawie nic, kiedy rozważałem, czy może przypadkiem nie zgwałcił mnie dziadek albo wujek. Angażowałem głównie logiczne obszary mózgu i może myślenie o tym było trochę nieprzyjemne, ale nie było przerażenia, szoku, wściekłości, nienawiści. <b>Z kolei z prawdziwymi wspomnieniami często wracają też nieprzerobione emocje, które w tamtym momencie odczuwałem. I chociaż potrafię się czasem zdenerwować albo zestresować od rozważania sytuacji, które nigdy się nie wydarzyły, nie przypominam sobie, żebym kiedykolwiek potrafił wywołać w sobie tak intensywne emocje samym wyobrażaniem sobie.</b> 
+            </p>
+
+            <p>
+                <b>To wszystko nie znaczy, że nie da się sobie wmówić, że przydarzyło nam się coś, co się nigdy nie wydarzyło.</b> W początkach odkrywania systemu często z jakiegoś powodu przekonywałem sam siebie, że musi on funkcjonować w konkretny sposób. <b>A że mieliśmy wtedy bardzo niski próg podziału, często pojawiały się fragmenty, których celem istnienia było „potwierdzenie” moich przypuszczeń,</b> od tych przyjmujących na siebie zdysocjowane emocje, które „przecież na pewno nie są moje”, poprzez te twierdzące, że istniały od mojego dzieciństwa albo potrafią kontrolować moje sny, aż do tych potwierdzających dokładnie te traumatyczne wydarzenia, które od jakiegoś czasu rozważałem. Nie wiem do końca, dlaczego tak było, być może czułem, że moja trauma nie była „wystarczająco poważna” do wywołania objawów, które mam, a może podświadomie chciałem, żeby to było coś takiego, bo tylko wtedy czułbym, że zerwanie kontaktu z rodzicami byłoby w pełni usprawiedliwione. W każdym razie kiedy pojawiły się te dwie współosoby ze swoimi zeznaniami, od początku czułem, że to nieprawda. Nie potrafiły mi podać żadnych szczegółów — albo wykręcały się od dalszej rozmowy, albo próbowały wymyślać na bieżąco — najbardziej oczywiste było, kiedy jedna z nich jako okoliczności rzekomego wykorzystania seksualnego przez mojego znajomego podała oglądanie u niego Mulan, bo dobrze pamiętałem oglądanie u nich właśnie tej bajki w dzieciństwie (fałszywe wspomnienia często powstają z fragmentów prawdziwych wspomnień). <b>Jedyną przyczyną, dla której pomimo sceptycyzmu zacząłem sobie wmawiać, że te rzeczy stały się naprawdę, była chęć uniknięcia zrobienia im przykrości na wypadek gdyby jednak mieli rację — wiedziałem, że wyparcie jest częste u osób z DID, więc skąd miałem wiedzieć, czy po prostu nie wypieram?</b> Ale też nie bez przyczyny moją pierwszą reakcją na takie oskarżenie nie było: „on nigdy by czegoś takiego nie zrobił!”. Historia stworzona przez jedną z tych współosób była na tyle rozbudowana, że bez problemu potwierdziłem później u dwóch niezależnych osób, że opisywane przez nią wydarzenia nie miały miejsca. W takim razie nie miałem powodu sądzić, żeby w przypadku drugiej sytuacji miało być inaczej. Zaczęliśmy z czasem bardziej rozumieć funkcjonowanie naszego systemu i zaczęło się uwidaczniać, że wszystkie zablokowane wspomnienia znajdują się w obrębie mojego podsystemu, a nie są trzymane przez inne współosoby, które w ogóle najprawdopodobniej nigdy samodzielnie nie frontowały. Nie mogę więc na podstawie osobistych doświadczeń zrobić porównania fałszywych a prawdziwych wspomnień trzymanych przez inne osoby w amnezyjnym systemie, ale powiem jedno: nie bójcie się mówić „nie wiem”. Na dojście do sedna może być potrzebne trochę czasu.
+            </p>
+
+            <!-- <p>
+                To teraz pewnie najważniejsze dla was pytanie: skąd wiem, że te rzeczy naprawdę się wydarzyły? Szczera odpowiedź brzmi, że ludzka pamięć jest na ogół mało wiarygodna i jeśli nie mam obiektywnych dowodów, nie mam stuprocentowej pewności, czy wszystkie szczegóły się zgadzają, i to w odniesieniu do każdego rodzaju wspomnień — przeglądanie filmików z dzieciństwa uświadomiło mi, jak zupełnie inaczej wspominam niektóre wydarzenia, których przecież nigdy nie zapomniałem. I są rzeczy, co do których nie mam pewności — na przykład pewnego razu uderzyło mnie wrażenie, że raz u znajomych rodziców próbował ugryźć mnie kucyk, i mętne wspomnienie siedzenia potem w ich ogródku, w którym chyba nigdy wcześniej nie byłem. Zapytałem o to rodziców, ale oboje odpowiedzieli, że coś takiego mogło się wydarzyć, ale nie są pewni (też nie mają najlepszej pamięci). A więc to wspomnienie stanęło pod znakiem zapytania i pewnie tak już pozostanie. Ale co do wielu wspomnień mam taką samą pewność, jak do wspomnień, do których dostępu nigdy nie utraciłem, i wiąże się to w sporym stopniu ze sposobem, w jaki wspomnienia do mnie wracają, w odróżnieniu od wydarzeń, które sobie wyobrażam i zaczynam wątpić, czy to się faktycznie nie stało. Idealnym tego przykładem będzie wspomnienie, którego brak niedawno odkryłem i próbowałem je na siłę odzyskać.
+            </p> -->
+            <!-- Ale tak, co do części zdarzeń inne osoby potwierdzają to, co mi się przypomniało — tak jak mówiłem, rodzice nigdy się nie kryli z tym, że stosują przemoc fizyczną.  -->
+
+            <!-- <p>
+                Zaczęło się od tego, że wspominałem obóz wakacyjny, na którym byłem z bratem dwa razy w podstawówce. I ni stąd, ni zowąd uświadomiłem sobie, że nie pamiętam, gdzie były prysznice i w ogóle łazienki (chociaż poza tym rozkład wszystkich istotnych budynków w miarę kojarzyłem). Na pewno nie w domkach, bo te były jednopiętrowe, z jednym pomieszczeniem na cztery piętrowe łóżka, nic by się tam takiego nie zmieściło. Mętnie kojarzył mi się jeden budynek tuż za domkiem, w którym mieszkał mój brat, ale nie mogłem sobie przypomnieć, jak wyglądał w środku — teraz myślę, że może dlatego, że tam były męskie łazienki. Zacząłem sobie wyobrażać, jak chodzę w tamto miejsce w japonkach i z ręcznikiem i biorę tam prysznic. Mam w tej kwestii takie szczęście, że moja wyobraźnia nie jest zbyt realistyczna, a nie zadałem sobie trudu, żeby ją zmusić do trzymania się logiki. Skończyłem więc z obrazem tylko jednego prysznica, który znajdował się na zewnątrz budynku i nawet nie miał przymocowanej żadnej zasłonki — jak czasem mogę nawet nie zauważyć, że coś sobie w taki sposób dopowiedziałem, w tym przypadku nie trudno się było domyśleć, że to bzdura totalna. Ale dzięki temu, że spędziłem trochę czasu na myśleniu o temacie, nagle przypomniało mi się, gdzie był ten budynek, i jednocześnie o rozmowie z jedną dziewczyną przy myciu zębów, kiedy reszta już opuściła miejsce, która nie pamiętam, czego dotyczyła, ale miała wtedy dla mnie duże znaczenie. I właśnie tutaj nacisk jest na „nagle” — przy wyobrażaniu sobie czuję, jak stopniowo tworzę ciąg wydarzeń, z kolei fragmenty wspomnień wracają praktycznie natychmiastowo. Nadal nie pamiętałem, gdzie były prysznice. Zacząłem się zastanawiać, czy nie przed umywalkami, ale wtedy wróciło do mnie, że tam były toalety, a prysznice były jeszcze bardziej z tyłu, w osobnym pomieszczeniu. I razem z tym przyszło wrażenie, że ciężko było ustawić dobrą temperaturę wody i przez to kąpiele nie należały do przyjemnych. Co uznałem za główny powód, dla którego w ogóle nie pamiętałem położenia łazienek (często amnezja nie dotyczy wyłącznie samego wydarzenia, ale także rzeczy silnie z nim związanych), i postanowiłem dalej nie grzebać, obawiając się, że może być tam coś więcej. Ale cóż, teraz w trakcie pisania przyszło wrażenie, że któraś z koleżanek zrobiła mi „żart”, zabierając moje rzeczy do przebrania w trakcie mojej kąpieli. Być może właśnie zacząłęm żałować, że wybrałem akurat ten przykład... Wrażenie jest mętne, nie byłbym w stanie nic konkretnego o tej dziewczynie powiedzieć i głowy bym nie dał, czy mi się nie pomieszało z jakimś wydarzeniem na kolonii, gdzie były podobne prysznice (chociaż wątpię, bo bez żadnego problemu pamiętałem ich lokalizację i wystawanie w długich kolejkach). Ale jeszcze jedną silną wskazówką, o której kompletnie bym zapomniał, gdyby mi się to nie przypomniało, są emocje. Kiedy sobie coś wyobrażam w próbie odpowiedzi na pytanie: „czy coś takiego mi się przydarzyło?”, zwykle nie czuję zbyt wiele, nawet jeśli wydarzenie, o którym mowa, to potencjalne wykorzystanie seksualne przez członka rodziny. A teraz nawet nie mam pewności, co się dokładnie stało, ale jestem pewny, że coś niemiłego się stało, bo byłem wkurzony przez kilka dobrych minut od tego odkrycia i ślad tych emocji nadal wraca, kiedy tylko o tym pomyślę. Z tym że pragnę tutaj zaznaczyć, że taki sposób rozróżniania działa u mnie, ale prawdopodobnie są osoby, które odczuwają równie intensywne emocje na myśl o zupełnie fikcyjnych scenariuszach. I tutaj akurat nie mam problemu uwierzyć, że coś takiego mogło mi się stać, bo wszyscy wiemy, że dzieci takie rzeczy robią. Ale gdybym miał i bardzo by mi zależało, żeby uzyskać potwierdzenie, spróbowałbym po znajomości załatwić sobie wizytę w tym ośrodku i sprawdziłbym, czy położenie i rozkład łazienek odpowiada temu, który sobie przypomniałem — gdyby się zgadzał, nie miałbym powodu sądzić, że tylko ten jeden aspekt wspomnienia sobie wymyśliłem. 
+            </p> -->
+
+            <p>
+                Czasem wydaje mi się, że część osób nie chce przyjąć, że coś takiego jest możliwe, zwyczajnie z czystej zazdrości. Jak wiele większość osób by nie oddało, żeby móc zapomnieć swoje traumatyczne przeżycia albo niezręczne sytuacje, od myślenia o których wciąż chcą zapaść się pod ziemię. <b>Ale skłonność do dysocjacji jest w pewnym stopniu warunkowana dziedzicznie i to, że dla ciebie coś jest niemożliwe, nie znaczy, że jest niemożliwe dla wszystkich.</b> Ot, weźmy chociażby klasyczny przykład zwijania języka w rurkę z podstaw genetyki na lekcji biologii. Poza tym, pierwsza sprawa, ja też nie raz miewałem rzeczy, które chciałem móc zapomnieć, ale nie mogłem. Ten mechanizm nie jest super-umiejętnością, którą mogę sobie uruchomić wedle woli. Chociaż mam już ogólne pojęcie o tym, jak to działa (podstawą wydaje się być odwrócenie swojej uwagi tak mocno, żeby w ogóle nie myśleć o wydarzeniu) i być może byłoby to coś, czego można się nauczyć, nie wiem. Ale chociaż pozbycie się niektórych wspomnień mogłoby nie mieć negatywnych konsekwencji, ogólnie nie jest zdrowym rozwiązaniem. <b>Nie ważne, jak bolesne, przyczyna, dla którego nie zostaliśmy uwolnieni od pamiętania przykrych wydarzeń w procesie ewolucji, leży w tym, że zawierają one w sobie istotne informacje o świecie, innych ludziach, nas samych.</b> Jeśli nie pamiętasz błędów, których popełnienia żałujesz, pewnie w końcu popełnisz je drugi raz. Jeśli nie pamiętasz, że bliska osoba cię skrzywdziła, ryzykujesz wystawić siebie, albo swoje dzieci, na jeszcze więcej krzywdy. Dlatego wspomnienia często zaczynają wracać same, kiedy nie jest się już w sytuacji, z której nie ma się możliwości ucieczki.
+            </p>
+<!-- Prowadzenie pamiętnika uświadomiło mi, jaki mechanizm najprawdopodobniej stoi za tym, że zapominam. Wydarzeń, o których nie mogę przestać myśleć bezpośrednio po, które obracam wciąż w pamięci, próbując zrozumieć, dlaczego, co zrobiłem nie tak, najczęściej nie zapominam. Ale o sytuacjach, po których odruchowo od razu skupiam całą uwagę na myśleniu o czymś innym lub robieniu czegoś innego, potrafię zapomnieć już nawet parę minut później i nie pamiętać, dopóki coś mi nie przypomni (na przykład właśnie pisanie w pamiętniku i próbowanie wygrzebać z pamięci wszystko, co się wydarzyło w ostatnich dniach). -->
+            <p>
+                Druga kwestia, z której, mam wrażenie, wiele osób nie zdaje sobie sprawy, to że <b>za taką możliwość płaci się wysoką cenę.</b> Być może zauważyliście w tym poście, że nie pamiętam szczegółów nie tylko na temat odzyskanych wspomnień, ale także takich rzeczy, jak które sytuacja wydarzyła się jako pierwsza. A to tylko wierzchołek góry lodowej. Na ogół nie mam problemu z pamiętaniem, kiedy zewnętrzny bodziec mi o czymś przypomina — na przykład kiedy spojrzę na leżące na biurku zakupy z mojej wyprawy do Rossmanna. <b>Ale jeśli dostanę pytanie, jak spędziłem ostatni weekend, to w pierwszej chwili zdarza mi się mieć zupełną pustkę w głowie.</b> Potrzebuję trochę czasu, żeby mozolnie wygrzebać wszystkie wydarzenia danego dnia z pamięci (nawet jeśli to było wczoraj) i przypomnieć sobie, że byłem w Rossmannie. Zwykle zaczynam od rzeczy, które wiem, że musiałem robić, jak pójście na zajęcia albo zjedzenie obiadu, bo w pierwszej chwili potrafię nie mieć żadnego punktu zaczepienia. Zdarzało mi się na takie pytania po prostu odpowiadać, że oglądałem YouTube'a, bo kiedyś robiłem to praktycznie codziennie, więc się zawsze zgadzało i nie musiałem po sobie pokazywać, że potrzebuję dobrej chwili na przypomnienie sobie tak prostej rzeczy. Raz babcia zapytała, jakie mam tam przedmioty na tych studiach, to w panice zacząłem wymieniać te z pierwszego roku, bo nie potrafiłem sobie przypomnieć nazw tych, które aktualnie robiłem. Rozmawiając o rozszerzeniach z koleżanką, z całą pewnością wymieniłem wśród swoich przedmiot, którego nie rozszerzałem, tylko pisałem na maturze. Ale takie społecznie niezręczne sytuacje nie są dla mnie najgorsze, najgorsze jest codzienne zapominanie. <b>Już od podstawówki notorycznie zapominałem, że miałem powiesić pranie, że trzeba było przynieść to i to na plastykę, że jest dzisiaj sprawdzian z przyrody </b>(to akurat niewiele mi przeszkadzało, bo wtedy jeszcze do mało czego musiałem się uczyć). Gdyby nie dar techniki w postaci kalendarza w telefonie, nie byłbym w stanie sprawnie funkcjonować w dorosłym życiu, ale nadal nie zastępuje mi on w pełni działającej pamięci (w sam raz do zilustrowania, przypomniało mi się teraz, że do końca miesiąca miałem załatwić jedną sprawę, o której powiadomienie przypadkiem odrzuciłem i już zdążyłem o tym zapomnieć; został mi jeden dzień). A dużo rzeczy może i nie ma tak negatywnych konsekwencji, jak nie przyjście na ważny egzamin, ale jak zdarzają się często, zaczynają być naprawdę upierdliwe. Jak kiedy zapominam wziąć ze sobą ręcznik pod prysznic, albo słuchawek wygłuszających do sklepu, albo jak się orientuję, że zacząłem myć włosy, a nie planowałem tego robić (mamy kręcone i suszenie często trwa koło godziny). <b>A moje objawy są względnie dość łagodne — część osób z zaburzeniami dysocjacyjnymi przez takie rzeczy w ogóle nie jest w stanie funkcjonować w codziennym życiu.</b>
+            </p>
+
+<!-- Często zaskakuje mnie, że ludzie po prostu pamiętają, w jakim wieku byli, kiedy dana sytuacja miała miejsce. Ja często muszę się posługiwać wskazówkami obecnymi w samym wspomnieniu, żeby to wydedukować. Z przemocą fizyczną takich za bardzo nie miałem i przez długi czas byłem przekonany, że miała miejsce, zanim zacząłem chodzić do podstawówki. A potem znalazłem już wcześniej wspomniane nagrania i z ich dat wykonania wynika, że z pewnością działo się to jeszcze w klasach 1-3, a może nawet dopiero wtedy się zaczęło.  -->
+
+            <p>
+                Obawiam się, że mimo wszystko pojawią się osoby, które i tak stwierdzą, że po prostu to wszystko zmyśliłem. Jeśli się nad tym zastanawiacie, zadajcie sobie pytanie: po co? Dla atencji? <b>Jeśli chciałbym zwrócić uwagę jak największej liczby osób, wrzuciłbym to od razu na YouTube'a,</b> zamiast pisać o tym na blogu, gdzie sukcesem będzie, jak dojdzie do kilkunastu kliknięć przez Google, zwłaszcza w czasach genAI, jak ruch na stronach coraz bardziej spada. Nie mówię, że nigdy tego nie zrobię, bo zależy mi na dotarciu z wiedzą do jak największej liczby osób, ale na razie nie jestem w nastroju na stykanie się z ludźmi, podważającymi prawdziwość albo traumatyczność moich doświadczeń. <b>I jeśli bym wymyślał, wybrałbym najbardziej emocjonalny temat, czyli sadystyczne wykorzystanie seksualne przez własnego ojca, i opisywałbym wydarzenia w jak największych szczegółach</b> (czego teraz nie robię, bo nie czuję się z tym komfortowo). „Nie pamiętał, jak się czuł, kiedy rodzice go bili” nie brzmi jak tytuł na pierwsze strony gazet tak, jak „Gwałcił go własny ojciec. Wspomnienia wróciły dopiero po latach”, prawda? Dalej: dla korzyści finansowej? <b>Na razie ładuję pieniądzę w ten projekt, a nie odwrotnie,</b> i wątpię, żebym z YouTube'a kiedykolwiek zarobił tyle, żeby zwróciło mi się za mikrofon, nie mówiąc już o utrzymaniu domeny (i wtedy znowu, wrzuciłbym to tam, żeby jakkolwiek zwiększyć swoje szanse dojścia do 1000 subskrypcji, do których mi jeszcze bardzo daleko). I ostatnie, jakie mi przychodzi do głowy: żeby wmówić ludziom możliwość czegoś niemożliwego? Wierzcie mi lub nie, ale <b>naprawdę w żadnym stopniu mi nie zależy na tym, żeby niewinne osoby trafiały do więzienia czy w inny sposób cierpiały przez nieprawdziwe oskarżenia.</b> Dlatego zawsze podkreślam, że istnieje możliwość wmówienia sobie, że wydarzyło się coś, co się nie wydarzyło, i jestem otwarty o swoim doświadczeniu, kiedy prawie to zrobiłem, chociaż obawiam się, że niektórzy będą próbować je wykorzystać do podważania prawdziwych odzyskanych wspomnień. Żadnych korzyści finansowych z powszechnej akceptacji tej wiedzy też nie będę mieć, bo nie planuję pozywać moich rodziców do sądu dla odszkodowania, a gdybym zmienił zdanie, mam na potwierdzenie dwa nagrania i prawdopodobnie co najmniej kilku świadków. Zresztą nie wiem, czy przemoc fizyczna się już nie przedawniła po tylu latach. Ale cóż, jeśli to wszystko nadal was nie przekonuje, to mogę mieć tylko nadzieję, że nauka do was trafi. Nie mam pojęcia, kiedy się zabiorę do podsumowania literatury, ale kiedy to zrobię, postaram się pamiętać, żeby podlinkować tutaj artykuł.
+            </p>
+
+            <!-- I dlatego na naszym serwerze jasno postawiłem sprawę, że nie zamierzam nikogo banować na podstawie niepotwierdzonych oskarżeń, chociaż widziałem, jaki hejt spadł na jeden system w społeczności za to, że się jedynie ociągał ze zrobieniem czegoś takiego. -->
+
+
+            <footer data-nosnippet>
+                <blockquote><i>Musimy obierać strony. Neutralność pomaga oprawcy, nigdy ofierze. Cisza zachęca dręczyciela, nigdy dręczonego.</i> ~ Elie Wiesel (on/jego)</blockquote>
+
+
+
+
+<div class="flex"><address><p>Kontakt:</p>
+    <p><a href="mailto:systemteczowegochaosu@gmail.com" class="internal">systemteczowegochaosu@gmail.com</a></p>
+    
+    
+        <p><a href="https://www.youtube.com/channel/UCtyMdp56oEJFtVTqp4G4USQ" target="_blank" rel="noopener noreferrer" class="external"><img src="/yt_icon_red_digital.png" class="social-media-icon" alt="YT" role="presentation">Kanał na YouTube</a></p>
+    
+    <p><a href="https://discord.gg/5gbrwTgDzp" target="_blank" rel="noopener noreferrer" class="external"><img src="/Discord-Symbol-Blurple.svg" class="social-media-icon" id="discord" alt="dicord" role="presentation">Serwer na Discordzie</a></p>
+    
+    </address>
+    
+    <div>
+        <p><a href="/#jezyk-neutralny-plciowo" class="internal">O języku neutralnym płciowo</a></p>
+        <p><a href="/#przewodnik-po-przewodniku" class="internal">Przewodnik po stronie</a></p>
+        <p><a href="/nauka/lista-artykulow-naukowych" class="internal">Źródła naukowe</a></p>
+        <p><a href="/dziennik-zmian" class="internal">Dziennik zmian</a></p>
+        <p><a href="/poprawki-bledow" class="internal">Poprawki błędów</a></p>
+    </div>
+    <div>
+        <p><a href="/zastrzezenia" class="internal">Zastrzeżenia</a></p>
+        <p><a href="/deklaracja-dostepnosci" class="internal">Deklaracja dostępności</a></p>
+        <p><a href="/deklaracja-tolerancyjnosci" class="internal">Deklaracja tolerancyjności</a></p>
+        <p><a href="/polityka-prywatnosci" class="internal">Polityka prywatności</a></p>
+    </div>
+
+    </div>
+
+    <p>©2023-2026 <a href="/system-teczowego-chaosu" class="internal">System Tęczowego Chaosu</a>. Wszelkie prawa zastrzeżone.</p>
+
+</footer>
+
+
+
+        </main>
+    </body>
+</html>

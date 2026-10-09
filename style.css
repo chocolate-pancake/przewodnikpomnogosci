@@ -702,6 +702,14 @@ address {
     color: #ffefc8;
 }
 
+.slawek {
+    color: #fcf4de;
+}
+
+.natasza {
+    color: rgb(248, 202, 250);
+}
+
 figure {
     margin: 4rem auto;
     padding: 1.5rem;
@@ -1204,6 +1212,7 @@ h1 p {
     margin-left: inherit;
     margin-bottom: 0;
     text-align: center;
+    color: var(--font-color);
 }
 
 .target {
@@ -1760,6 +1769,14 @@ aside.cryterium {
 
     .host {
         color: #6b5102;
+    }
+
+    .slawek {
+        color: #cfb700;
+    }
+
+    .natasza {
+        color: rgb(172, 0, 178);
     }
 
     .option:hover, .option:focus {
